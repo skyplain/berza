@@ -1,0 +1,18 @@
+/* tema rune (Runes): generisana, tools/teme.py */
+:root[data-theme="rune"] { color-scheme: dark; --back: #101317; --card: #1c1f23; --head: #282b2f; --edge: #33363a; --alt: #222529; --text1: #eceef1; --text2: #b5b7ba; --faint: #828588; --up: #4ade80; --down: #f87171; --accent: #94a3b8; --hot: #2d3138; --tip: #eceef1; --tipfg: #101317; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="rune"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="rune"] .overview .left { align-self: start; }
+[data-theme="rune"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rune"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="rune"] .bar h1 { font-size: 24px; }
+[data-theme="rune"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="rune"] .bar h1::before { content: "ᛟ "; color: #94a3b8; }
+[data-theme="rune"] :is(h2, h3)::before { content: "ᚠ "; color: #94a3b8; }
+[data-theme="rune"] .block:nth-child(even) h2::before { content: "ᚱ "; }
+[data-theme="rune"] .big .value, [data-theme="rune"] .detail .price { font-weight: 400; }
+[data-theme="rune"] .chart .line { stroke-width: 3; }
+[data-theme="rune"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="rune"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefef; --edge: #d1d2d3; --alt: #f5f5f5; --text1: #2c3038; --text2: #5d6066; --faint: #83868a; --up: #15803d; --down: #c81e1e; --accent: #737f8f; --hot: #e8eaec; --tip: #2c3038; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="rune"][data-scheme="light"] .bar h1::before { content: "ᛟ "; color: #737f8f; }
+[data-theme="rune"][data-scheme="light"] :is(h2, h3)::before { content: "ᚠ "; color: #737f8f; }

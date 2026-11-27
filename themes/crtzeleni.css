@@ -1,0 +1,20 @@
+/* tema crt zeleni (Green CRT): generisana, tools/teme.py */
+:root[data-theme="crtzeleni"] { color-scheme: dark; --back: #112e11; --card: #1d381d; --head: #294329; --edge: #334e33; --alt: #233e23; --text1: #e5f5e4; --text2: #b0c3af; --faint: #7f957f; --up: #4ade80; --down: #f87171; --accent: #39ff14; --hot: #21541c; --tip: #e5f5e4; --tipfg: #112e11; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="crtzeleni"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="crtzeleni"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="crtzeleni"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="crtzeleni"] .bar h1 { font-weight: 800; }
+[data-theme="crtzeleni"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="crtzeleni"] body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 30; background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); }
+[data-theme="crtzeleni"] .bar h1::after { content: "▌"; color: #39ff14; animation: tblink 1s steps(1) infinite; }
+@keyframes tblink { 50% { opacity: 0; } }
+[data-theme="crtzeleni"] .big .value { text-shadow: 0 0 18px rgba(57,255,20,0.55); }
+[data-theme="crtzeleni"] .chart .line { filter: drop-shadow(0 0 5px rgba(57,255,20,0.7)); }
+[data-theme="crtzeleni"] .big .value, [data-theme="crtzeleni"] .detail .price { font-weight: 900; }
+[data-theme="crtzeleni"] .chart .line { stroke-width: 2.5; }
+[data-theme="crtzeleni"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="crtzeleni"][data-scheme="light"] { color-scheme: light; --back: #ebffe8; --card: #e7ffe4; --head: #dbf4d8; --edge: #cae1c7; --alt: #e1f9de; --text1: #1b411b; --text2: #4f704e; --faint: #779575; --up: #15803d; --down: #c81e1e; --accent: #229b0d; --hot: #cbf1c6; --tip: #1b411b; --tipfg: #ebffe8; --accentfg: #111111; }
+[data-theme="crtzeleni"][data-scheme="light"] .bar h1::after { content: "▌"; color: #229b0d; animation: tblink 1s steps(1) infinite; }
+[data-theme="crtzeleni"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(34,155,13,0.55); }
+[data-theme="crtzeleni"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(34,155,13,0.7)); }

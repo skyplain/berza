@@ -1,0 +1,23 @@
+/* tema memfis: razigrani osamdesete: tačkice, cik-cak, jarke boje i senke */
+:root[data-theme="memfis"] { color-scheme: light; --back: #fff8ec; --card: #fff; --head: #fff; --edge: #1a1a1a; --alt: #fff4f9; --text1: #1a1a1a; --text2: #3a3a3a; --faint: #6b6b6b; --up: #00a37a; --down: #ff3d7f; --accent: #7b5cff; --hot: #e9e3ff; --tip: #1a1a1a; --tipfg: #ffd23f; --accentfg: #fff; --font: "Avenir Next",Futura,system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; --panel-bg: var(--card); --panel-border: 2px solid #1a1a1a; --panel-shadow: 6px 6px 0 #ffd23f; --h-color: #1a1a1a; --h-transform: uppercase; --h-spacing: .04em; --h-size: 14px; --h-weight: 800; --h-font: inherit; --big-font: inherit; --big-weight: 800; }
+[data-theme="memfis"] body { background-color:#fff8ec;background-image:radial-gradient(#ff3d7f 1.5px,transparent 1.6px),radial-gradient(#00c2c7 1.5px,transparent 1.6px);background-size:36px 36px;background-position:0 0,18px 18px;background-attachment:fixed }
+[data-theme="memfis"] .bar { border-bottom:0;background:#fff;border:2px solid #1a1a1a;border-radius:10px;padding:10px 14px;margin-top:12px;box-shadow:6px 6px 0 #00c2c7 }
+[data-theme="memfis"] .bar h1 { font-weight:900;font-size:24px }
+[data-theme="memfis"] .bar h1::after { content:" ▲●■";color:#ff3d7f;letter-spacing:.2em;font-size:14px }
+[data-theme="memfis"] button { border:2px solid #1a1a1a;background:#fff;font-weight:700;box-shadow:3px 3px 0 #7b5cff }
+[data-theme="memfis"] .block:nth-of-type(2n) { box-shadow:6px 6px 0 #00c2c7 }
+[data-theme="memfis"] .block:nth-of-type(3n) { box-shadow:6px 6px 0 #ff3d7f }
+[data-theme="memfis"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="memfis"] .chart .line { stroke-width:3 }
+[data-theme="memfis"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="memfis"] .overview .left { align-self: start; }
+[data-theme="memfis"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="memfis"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="memfis"][data-scheme="dark"] { color-scheme: dark; --back: #0c0803; --card: #060606; --head: #060606; --edge: #dfdfdf; --alt: #0e080b; --text1: #dfdfdf; --text2: #b5b5b5; --faint: #7e7e7e; --up: #4ade80; --down: #f87171; --accent: #7658f5; --hot: #151023; --tip: #dfdfdf; --tipfg: #281e01; --accentfg: #ffffff; --panel-border: 2px solid #dfdfdf; --panel-shadow: 6px 6px 0 #281e01; --h-color: #dfdfdf; }
+[data-theme="memfis"][data-scheme="dark"] body { background-color:#0c0803;background-image:radial-gradient(#9c0e46 1.5px,transparent 1.6px),radial-gradient(#054d4f 1.5px,transparent 1.6px);background-size:36px 36px;background-position:0 0,18px 18px;background-attachment:fixed }
+[data-theme="memfis"][data-scheme="dark"] .bar { border-bottom:0;background:#060606;border:2px solid #dfdfdf;border-radius:10px;padding:10px 14px;margin-top:12px;box-shadow:6px 6px 0 #054d4f }
+[data-theme="memfis"][data-scheme="dark"] .bar h1::after { content:" ▲●■";color:#9c0e46;letter-spacing:.2em;font-size:14px }
+[data-theme="memfis"][data-scheme="dark"] button { border:2px solid #dfdfdf;background:#060606;font-weight:700;box-shadow:3px 3px 0 #7658f5 }
+[data-theme="memfis"][data-scheme="dark"] .block:nth-of-type(2n) { box-shadow:6px 6px 0 #054d4f }
+[data-theme="memfis"][data-scheme="dark"] .block:nth-of-type(3n) { box-shadow:6px 6px 0 #9c0e46 }

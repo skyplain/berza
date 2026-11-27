@@ -1,0 +1,15 @@
+/* tema leto na plaži (Beach summer): generisana, tools/teme.py */
+:root[data-theme="letonaplazi"] { color-scheme: light; --back: #fef8e6; --card: #fffdf8; --head: #f1f1ed; --edge: #d9d8cc; --alt: #f8f7f3; --text1: #143141; --text2: #4e636a; --faint: #849190; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #ddedf1; --tip: #143141; --tipfg: #fef8e6; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="letonaplazi"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="letonaplazi"] .overview .left { align-self: start; }
+[data-theme="letonaplazi"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="letonaplazi"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="letonaplazi"] .bar h1 { font-size: 24px; }
+[data-theme="letonaplazi"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="letonaplazi"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(12,140,197,0.14) 9px 10px, transparent 11px 16px, rgba(12,140,197,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, repeating-conic-gradient(from 0deg at 50% -10%, rgba(12,140,197,0.08) 0 6deg, transparent 6deg 12deg); background-color: #fef8e6; background-attachment: fixed; }
+[data-theme="letonaplazi"] .big .value, [data-theme="letonaplazi"] .detail .price { font-weight: 200; }
+[data-theme="letonaplazi"] .chart .line { stroke-width: 2.5; }
+[data-theme="letonaplazi"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="letonaplazi"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #393a3c; --edge: #424446; --alt: #333536; --text1: #e2eef5; --text2: #b2bcc1; --faint: #868d91; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #2a404a; --tip: #e2eef5; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="letonaplazi"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(14,165,233,0.14) 9px 10px, transparent 11px 16px, rgba(14,165,233,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, repeating-conic-gradient(from 0deg at 50% -10%, rgba(14,165,233,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232425; background-attachment: fixed; }

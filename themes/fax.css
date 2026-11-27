@@ -1,0 +1,16 @@
+/* tema fax (Fax): generisana, tools/teme.py */
+:root[data-theme="fax"] { color-scheme: light; --back: #fafaf7; --card: #f6f6f3; --head: #e9e9e6; --edge: #d6d6d5; --alt: #efefed; --text1: #171a21; --text2: #505256; --faint: #848688; --up: #15803d; --down: #c81e1e; --accent: #1f2937; --hot: #d8d9d9; --tip: #171a21; --tipfg: #fafaf7; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 8px; }
+[data-theme="fax"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fax"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="fax"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="fax"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="fax"] .bar button { background: transparent; color: var(--back); border-color: rgba(250,250,247,0.35); box-shadow: none; }
+[data-theme="fax"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="fax"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(31,41,55,0.2) 27px 28px); background-color: #fafaf7; background-attachment: fixed; }
+[data-theme="fax"] .big .value, [data-theme="fax"] .detail .price { font-weight: 200; }
+[data-theme="fax"] .chart .line { stroke-width: 2.5; }
+[data-theme="fax"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="fax"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #424346; --alt: #333437; --text1: #e3e4e7; --text2: #b3b4b7; --faint: #87888b; --up: #4ade80; --down: #f87171; --accent: #777c86; --hot: #383a3e; --tip: #e3e4e7; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="fax"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,39,0.35); box-shadow: none; }
+[data-theme="fax"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(119,124,134,0.2) 27px 28px); background-color: #232427; background-attachment: fixed; }

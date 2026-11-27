@@ -1,0 +1,17 @@
+/* tema bundeva (Pumpkin): generisana, tools/teme.py */
+:root[data-theme="bundeva"] { color-scheme: light; --back: #fef2e5; --card: #fffbf7; --head: #f3eeea; --edge: #dfd1c4; --alt: #f9f5f0; --text1: #3b2319; --text2: #6c574c; --faint: #99867b; --up: #15803d; --down: #c81e1e; --accent: #ea580c; --hot: #fce4d6; --tip: #3b2319; --tipfg: #fef2e5; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="bundeva"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bundeva"] .overview .left { align-self: start; }
+[data-theme="bundeva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bundeva"] button { border-radius: 999px; }
+[data-theme="bundeva"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="bundeva"] .bar h1 { font-size: 24px; }
+[data-theme="bundeva"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bundeva"] body { background: repeating-linear-gradient(0deg, rgba(59,35,25,0.05) 0 2px, transparent 2px 9px); background-color: #fef2e5; background-attachment: fixed; }
+[data-theme="bundeva"] .big .value, [data-theme="bundeva"] .detail .price { font-weight: 900; }
+[data-theme="bundeva"] .chart .line { stroke-width: 1.5; }
+[data-theme="bundeva"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bundeva"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444343; --alt: #343435; --text1: #f3e8e3; --text2: #bfb7b4; --faint: #8f8988; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #48342b; --tip: #f3e8e3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="bundeva"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bundeva"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(243,232,227,0.05) 0 2px, transparent 2px 9px); background-color: #232325; background-attachment: fixed; }

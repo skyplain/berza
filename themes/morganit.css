@@ -1,0 +1,15 @@
+/* tema morganit (Morganite): generisana, tools/teme.py */
+:root[data-theme="morganit"] { color-scheme: light; --back: #fef5f9; --card: #fffcfd; --head: #f3f0f1; --edge: #dfd6db; --alt: #f9f6f7; --text1: #3e313d; --text2: #6e626c; --faint: #938790; --up: #15803d; --down: #c81e1e; --accent: #b27998; --hot: #f4eaef; --tip: #3e313d; --tipfg: #fef5f9; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="morganit"] :is(.overview .left, .block, .detail, .list) { background: rgba(255,252,253,0.6); border: 1px solid rgba(62,49,61,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="morganit"] .overview .left { align-self: start; }
+[data-theme="morganit"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="morganit"] button { border-radius: 999px; background: transparent; }
+[data-theme="morganit"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="morganit"] .bar h1 { font-size: 24px; }
+[data-theme="morganit"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="morganit"] .big .value, [data-theme="morganit"] .detail .price { font-weight: 700; }
+[data-theme="morganit"] .chart .line { stroke-width: 1.5; }
+[data-theme="morganit"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="morganit"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a3a3e; --edge: #444348; --alt: #343438; --text1: #f4eef3; --text2: #c0bbc0; --faint: #908d91; --up: #4ade80; --down: #f87171; --accent: #f9a8d4; --hot: #4a3f49; --tip: #f4eef3; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="morganit"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,46,50,0.6); border: 1px solid rgba(244,238,243,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }

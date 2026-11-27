@@ -1,0 +1,15 @@
+/* tema tornado (Tornado): generisana, tools/teme.py */
+:root[data-theme="tornado"] { color-scheme: dark; --back: #1a1a18; --card: #252524; --head: #313130; --edge: #3b3b39; --alt: #2b2b2a; --text1: #e7e7e9; --text2: #b4b4b5; --faint: #858585; --up: #4ade80; --down: #f87171; --accent: #706e69; --hot: #302f2e; --tip: #e7e7e9; --tipfg: #1a1a18; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 8px; }
+[data-theme="tornado"] :is(.overview .left, .block, .detail, .list) { background: rgba(37,37,36,0.6); border: 1px solid rgba(231,231,233,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="tornado"] .overview .left { align-self: start; }
+[data-theme="tornado"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tornado"] button { border-radius: 999px; background: transparent; }
+[data-theme="tornado"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tornado"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(112,110,105,0.07) 0 12deg, transparent 12deg 24deg); background-color: #1a1a18; background-attachment: fixed; }
+[data-theme="tornado"] .big .value, [data-theme="tornado"] .detail .price { font-weight: 400; }
+[data-theme="tornado"] .chart .line { stroke-width: 2.5; }
+[data-theme="tornado"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tornado"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #eeeeee; --edge: #d0d0d0; --alt: #f4f4f5; --text1: #212225; --text2: #555658; --faint: #858587; --up: #15803d; --down: #c81e1e; --accent: #57534e; --hot: #e4e3e3; --tip: #212225; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="tornado"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,251,251,0.6); border: 1px solid rgba(33,34,37,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="tornado"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(87,83,78,0.07) 0 12deg, transparent 12deg 24deg); background-color: #f1f1f1; background-attachment: fixed; }

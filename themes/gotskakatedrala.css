@@ -1,0 +1,15 @@
+/* tema gotska katedrala (Cathedral): generisana, tools/teme.py */
+:root[data-theme="gotskakatedrala"] { color-scheme: dark; --back: #100c18; --card: #1c1824; --head: #282430; --edge: #322f3a; --alt: #221e2a; --text1: #e6e4ed; --text2: #b0aeb8; --faint: #7f7c87; --up: #4ade80; --down: #f87171; --accent: #725c9e; --hot: #282235; --tip: #e6e4ed; --tipfg: #100c18; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="gotskakatedrala"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="gotskakatedrala"] .overview .left { align-self: start; }
+[data-theme="gotskakatedrala"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gotskakatedrala"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="gotskakatedrala"] body { background: linear-gradient(60deg, rgba(114,92,158,0.14) 25%, transparent 25% 50%, rgba(131,75,46,0.12) 50% 75%, transparent 75%) 0 0 / 80px 80px, linear-gradient(-30deg, rgba(46,131,75,0.12) 30%, transparent 30%) 0 0 / 120px 120px; background-color: #100c18; background-attachment: fixed; }
+[data-theme="gotskakatedrala"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #000000; }
+[data-theme="gotskakatedrala"] .big .value, [data-theme="gotskakatedrala"] .detail .price { font-weight: 200; }
+[data-theme="gotskakatedrala"] .chart .line { stroke-width: 3; }
+[data-theme="gotskakatedrala"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="gotskakatedrala"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #eeedef; --edge: #cfced2; --alt: #f4f3f5; --text1: #1f1b2f; --text2: #545060; --faint: #84818c; --up: #15803d; --down: #c81e1e; --accent: #4b2e83; --hot: #e2ddea; --tip: #1f1b2f; --tipfg: #f1f0f1; --accentfg: #ffffff; }
+[data-theme="gotskakatedrala"][data-scheme="light"] body { background: linear-gradient(60deg, rgba(75,46,131,0.14) 25%, transparent 25% 50%, rgba(131,75,46,0.12) 50% 75%, transparent 75%) 0 0 / 80px 80px, linear-gradient(-30deg, rgba(46,131,75,0.12) 30%, transparent 30%) 0 0 / 120px 120px; background-color: #f1f0f1; background-attachment: fixed; }
+[data-theme="gotskakatedrala"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #222222; }

@@ -1,0 +1,17 @@
+/* tema staklena kula (Glass tower): generisana, tools/teme.py */
+:root[data-theme="staklenakula"] { color-scheme: light; --back: #f5fcff; --card: #f1fbff; --head: #e4eff4; --edge: #d2dce1; --alt: #ebf5f9; --text1: #1b3544; --text2: #526773; --faint: #7c8d97; --up: #15803d; --down: #c81e1e; --accent: #2c93c1; --hot: #d5ecf6; --tip: #1b3544; --tipfg: #f5fcff; --accentfg: #111111; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="staklenakula"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="staklenakula"] .overview .left { align-self: start; }
+[data-theme="staklenakula"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="staklenakula"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="staklenakula"] .bar h1 { font-weight: 800; }
+[data-theme="staklenakula"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="staklenakula"] body { background: linear-gradient(rgba(27,53,68,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(27,53,68,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f5fcff; background-attachment: fixed; }
+[data-theme="staklenakula"] :is(.overview .left, .block, .detail, .list) { background: rgba(241,251,255,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(27,53,68,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+[data-theme="staklenakula"] .big .value, [data-theme="staklenakula"] .detail .price { font-weight: 200; }
+[data-theme="staklenakula"] .chart .line { stroke-width: 1.5; }
+[data-theme="staklenakula"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="staklenakula"][data-scheme="dark"] { color-scheme: dark; --back: #0f1c25; --card: #1b2730; --head: #27333c; --edge: #313e46; --alt: #212d36; --text1: #e5f0f6; --text2: #b0bbc2; --faint: #7e8a92; --up: #4ade80; --down: #f87171; --accent: #38bdf8; --hot: #1f3c4c; --tip: #e5f0f6; --tipfg: #0f1c25; --accentfg: #111111; }
+[data-theme="staklenakula"][data-scheme="dark"] body { background: linear-gradient(rgba(229,240,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(229,240,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #0f1c25; background-attachment: fixed; }
+[data-theme="staklenakula"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(27,39,48,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(229,240,246,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }

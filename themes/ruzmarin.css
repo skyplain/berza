@@ -1,0 +1,20 @@
+/* tema ruzmarin: generisana (paleta + oblik 5/4/5/6) */
+:root[data-theme="ruzmarin"] { color-scheme: dark; --back: #182019; --card: #212b22; --head: #2d372e; --edge: #39413a; --alt: #273128; --text1: #e5efe5; --text2: #acb5ac; --faint: #7e887f; --up: #4ade80; --down: #f87171; --accent: #7fb77e; --hot: #2e3f2f; --tip: #e5efe5; --tipfg: #182019; --accentfg: #111111; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 4px; }
+[data-theme="ruzmarin"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="ruzmarin"] .overview .left { align-self: start; }
+[data-theme="ruzmarin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ruzmarin"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ruzmarin"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="ruzmarin"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="ruzmarin"] .bar button { background: transparent; color: var(--back); border-color: rgba(24,32,25,0.35); box-shadow: none; }
+[data-theme="ruzmarin"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="ruzmarin"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="ruzmarin"] body { background: radial-gradient(600px 400px at 0 0, rgba(127,183,126,0.16), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(127,183,126,0.16), transparent 70%); background-color: #182019; background-attachment: fixed; }
+[data-theme="ruzmarin"] .big .value, [data-theme="ruzmarin"] .detail .price { font-weight: 400; }
+[data-theme="ruzmarin"] .chart .line { stroke-width: 1.5; }
+[data-theme="ruzmarin"] .chart .area { opacity: 0.12; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="ruzmarin"][data-scheme="light"] { color-scheme: light; --back: #d2ddd3; --card: #c3d0c4; --head: #b4c0b5; --edge: #a9b2aa; --alt: #bbc8bc; --text1: #0c130d; --text2: #373f37; --faint: #5e675f; --up: #15803d; --down: #c81e1e; --accent: #477c47; --hot: #a7bba8; --tip: #0c130d; --tipfg: #d2ddd3; --accentfg: #ffffff; }
+[data-theme="ruzmarin"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(255,255,255,.45); padding: 14px 16px; }
+[data-theme="ruzmarin"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(210,221,211,0.35); box-shadow: none; }
+[data-theme="ruzmarin"][data-scheme="light"] body { background: radial-gradient(600px 400px at 0 0, rgba(71,124,71,0.16), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(71,124,71,0.16), transparent 70%); background-color: #d2ddd3; background-attachment: fixed; }

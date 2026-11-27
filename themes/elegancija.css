@@ -1,0 +1,12 @@
+/* tema elegancija (Elegance): generisana, tools/teme.py */
+:root[data-theme="elegancija"] { color-scheme: light; --back: #faf9f7; --card: #fefdfd; --head: #f0efef; --edge: #d5d5d4; --alt: #f7f6f6; --text1: #14161a; --text2: #4e4f51; --faint: #828384; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dddcdc; --tip: #14161a; --tipfg: #faf9f7; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="elegancija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="elegancija"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="elegancija"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="elegancija"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="elegancija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="elegancija"] .big .value, [data-theme="elegancija"] .detail .price { font-weight: 700; }
+[data-theme="elegancija"] .chart .line { stroke-width: 2; }
+[data-theme="elegancija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="elegancija"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #424245; --alt: #333437; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #868789; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3d; --tip: #e2e2e4; --tipfg: #232427; --accentfg: #111111; }

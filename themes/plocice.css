@@ -1,0 +1,17 @@
+/* tema pločice (Tiles): generisana, tools/teme.py */
+:root[data-theme="plocice"] { color-scheme: light; --back: #f2fafe; --card: #fbfeff; --head: #edf2f4; --edge: #cedae0; --alt: #f4f8f9; --text1: #143141; --text2: #4c6370; --faint: #7f919c; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #daeef7; --tip: #143141; --tipfg: #f2fafe; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="plocice"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,254,255,0.6); border: 1px solid rgba(20,49,65,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="plocice"] .overview .left { align-self: start; }
+[data-theme="plocice"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plocice"] button { border-radius: 999px; background: transparent; }
+[data-theme="plocice"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="plocice"] .bar h1 { font-weight: 800; }
+[data-theme="plocice"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="plocice"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }
+[data-theme="plocice"] .big .value, [data-theme="plocice"] .detail .price { font-weight: 900; }
+[data-theme="plocice"] .chart .line { stroke-width: 1.5; }
+[data-theme="plocice"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plocice"][data-scheme="dark"] { color-scheme: dark; --back: #0b1a24; --card: #17252f; --head: #23313b; --edge: #2d3c45; --alt: #1d2b35; --text1: #e2eef5; --text2: #acb9c1; --faint: #7b8891; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #163749; --tip: #e2eef5; --tipfg: #0b1a24; --accentfg: #111111; }
+[data-theme="plocice"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(23,37,47,0.6); border: 1px solid rgba(226,238,245,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="plocice"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }

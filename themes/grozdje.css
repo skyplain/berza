@@ -1,0 +1,16 @@
+/* tema grožđe (Grapes): generisana, tools/teme.py */
+:root[data-theme="grozdje"] { color-scheme: dark; --back: #130a1c; --card: #1f1627; --head: #2b2233; --edge: #362d3e; --alt: #251c2d; --text1: #ebe3f3; --text2: #b5adbd; --faint: #837b8c; --up: #4ade80; --down: #f87171; --accent: #9244d6; --hot: #2f1c40; --tip: #ebe3f3; --tipfg: #130a1c; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="grozdje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="grozdje"] .overview .left { align-self: start; }
+[data-theme="grozdje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="grozdje"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="grozdje"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="grozdje"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="grozdje"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="grozdje"] body { background: radial-gradient(circle, transparent 6px, rgba(146,68,214,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(146,68,214,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #130a1c; background-attachment: fixed; }
+[data-theme="grozdje"] .big .value, [data-theme="grozdje"] .detail .price { font-weight: 400; }
+[data-theme="grozdje"] .chart .line { stroke-width: 2; }
+[data-theme="grozdje"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="grozdje"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #eeecf0; --edge: #d1ced4; --alt: #f5f3f5; --text1: #28193c; --text2: #5a4f69; --faint: #888093; --up: #15803d; --down: #c81e1e; --accent: #7e22ce; --hot: #eadcf5; --tip: #28193c; --tipfg: #f1f0f1; --accentfg: #ffffff; }
+[data-theme="grozdje"][data-scheme="light"] body { background: radial-gradient(circle, transparent 6px, rgba(126,34,206,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(126,34,206,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f1f0f1; background-attachment: fixed; }

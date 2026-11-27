@@ -1,0 +1,27 @@
+/* tema indigo (Indigo): generisana, tools/teme.py */
+:root[data-theme="indigo"] { color-scheme: dark; --back: #0b0a26; --card: #171631; --head: #23223d; --edge: #2e2d47; --alt: #1d1c37; --text1: #e7e6f5; --text2: #b0afc1; --faint: #7d7c92; --up: #4ade80; --down: #f87171; --accent: #5d55e7; --hot: #211f4a; --tip: #e7e6f5; --tipfg: #0b0a26; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="indigo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="indigo"] .overview .left { align-self: start; }
+[data-theme="indigo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="indigo"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="indigo"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="indigo"] .bar button { background: transparent; color: var(--back); border-color: rgba(11,10,38,0.35); box-shadow: none; }
+[data-theme="indigo"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="indigo"] body { background: linear-gradient(180deg, rgba(93,85,231,0.1), transparent 380px); background-color: #0b0a26; background-attachment: fixed; }
+[data-theme="indigo"] :is(.overview .left, .block, .detail, .list) { background: #1a183a; border-color: rgba(93,85,231,0.35); }
+[data-theme="indigo"] .chart .line { stroke: #5d55e7 !important; }
+[data-theme="indigo"] .chart .area { fill: #5d55e7 !important; }
+[data-theme="indigo"] .chart .vol { fill: #5d55e7; }
+[data-theme="indigo"] :is(h2, h3, .big .label) { color: #5d55e7; }
+[data-theme="indigo"] .big .value, [data-theme="indigo"] .detail .price { font-weight: 200; }
+[data-theme="indigo"] .chart .line { stroke-width: 2; }
+[data-theme="indigo"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="indigo"][data-scheme="light"] { color-scheme: light; --back: #f0f0f2; --card: #fafafb; --head: #ededf0; --edge: #cfcfd6; --alt: #f3f3f5; --text1: #1f1f40; --text2: #53536c; --faint: #838395; --up: #15803d; --down: #c81e1e; --accent: #4f46e5; --hot: #e2e1f8; --tip: #1f1f40; --tipfg: #f0f0f2; --accentfg: #ffffff; }
+[data-theme="indigo"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,242,0.35); box-shadow: none; }
+[data-theme="indigo"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(79,70,229,0.1), transparent 380px); background-color: #f0f0f2; background-attachment: fixed; }
+[data-theme="indigo"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #f1f1fa; border-color: rgba(79,70,229,0.35); }
+[data-theme="indigo"][data-scheme="light"] .chart .line { stroke: #4f46e5 !important; }
+[data-theme="indigo"][data-scheme="light"] .chart .area { fill: #4f46e5 !important; }
+[data-theme="indigo"][data-scheme="light"] .chart .vol { fill: #4f46e5; }
+[data-theme="indigo"][data-scheme="light"] :is(h2, h3, .big .label) { color: #4f46e5; }

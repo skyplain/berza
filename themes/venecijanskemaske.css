@@ -1,0 +1,20 @@
+/* tema venecijanske maske (Venetian masks): generisana, tools/teme.py */
+:root[data-theme="venecijanskemaske"] { color-scheme: dark; --back: #1a0610; --card: #25121c; --head: #311f28; --edge: #3c2b32; --alt: #2b1922; --text1: #efebe3; --text2: #bab2ae; --faint: #897d7e; --up: #4ade80; --down: #f87171; --accent: #b8860b; --hot: #3a221a; --tip: #efebe3; --tipfg: #1a0610; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="venecijanskemaske"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="venecijanskemaske"] .overview .left { align-self: start; }
+[data-theme="venecijanskemaske"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="venecijanskemaske"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="venecijanskemaske"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="venecijanskemaske"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="venecijanskemaske"] :is(.overview .left, .block, .detail, .list) { border: 4px double #b8860b; }
+[data-theme="venecijanskemaske"] .bar h1::before { content: "❦ "; color: #b8860b; }
+[data-theme="venecijanskemaske"] .bar h1::after { content: " ❦"; color: #b8860b; }
+[data-theme="venecijanskemaske"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="venecijanskemaske"] .big .value, [data-theme="venecijanskemaske"] .detail .price { font-weight: 900; }
+[data-theme="venecijanskemaske"] .chart .line { stroke-width: 1.5; }
+[data-theme="venecijanskemaske"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="venecijanskemaske"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #efeeed; --edge: #d2d0ce; --alt: #f5f4f4; --text1: #322b19; --text2: #625c4f; --faint: #8e8a81; --up: #15803d; --down: #c81e1e; --accent: #a97b0a; --hot: #f0e8d9; --tip: #322b19; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="venecijanskemaske"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 4px double #a97b0a; }
+[data-theme="venecijanskemaske"][data-scheme="light"] .bar h1::before { content: "❦ "; color: #a97b0a; }
+[data-theme="venecijanskemaske"][data-scheme="light"] .bar h1::after { content: " ❦"; color: #a97b0a; }

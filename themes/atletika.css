@@ -1,0 +1,16 @@
+/* tema atletika (Track and field): generisana, tools/teme.py */
+:root[data-theme="atletika"] { color-scheme: dark; --back: #8f3220; --card: #953c2b; --head: #9b4838; --edge: #a15344; --alt: #984231; --text1: #ffffff; --text2: #e3ccc7; --faint: #c99d94; --up: #4ade80; --down: #f98686; --accent: #facc15; --hot: #a35028; --tip: #ffffff; --tipfg: #8f3220; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="atletika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="atletika"] .overview .left { align-self: start; }
+[data-theme="atletika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="atletika"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="atletika"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="atletika"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="atletika"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="atletika"] body { background: repeating-linear-gradient(0deg, transparent 0 46px, rgba(255,255,255,0.3) 46px 48px); background-color: #8f3220; background-attachment: fixed; }
+[data-theme="atletika"] .big .value, [data-theme="atletika"] .detail .price { font-weight: 400; }
+[data-theme="atletika"] .chart .line { stroke-width: 2; }
+[data-theme="atletika"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="atletika"][data-scheme="light"] { color-scheme: light; --back: #f8f3f2; --card: #fdfbfb; --head: #f2efee; --edge: #dad5d0; --alt: #f7f5f4; --text1: #3e381b; --text2: #6c6751; --faint: #908b7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #efe9da; --tip: #3e381b; --tipfg: #f8f3f2; --accentfg: #111111; }
+[data-theme="atletika"][data-scheme="light"] body { background: repeating-linear-gradient(0deg, transparent 0 46px, rgba(255,255,255,0.3) 46px 48px); background-color: #f8f3f2; background-attachment: fixed; }

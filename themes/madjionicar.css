@@ -1,0 +1,16 @@
+/* tema mađioničar (Magician): generisana, tools/teme.py */
+:root[data-theme="madjionicar"] { color-scheme: dark; --back: #0d0718; --card: #191324; --head: #262031; --edge: #302b3b; --alt: #1f192a; --text1: #eae5f5; --text2: #b3aebe; --faint: #807a8b; --up: #4ade80; --down: #f87171; --accent: #7c3aed; --hot: #271840; --tip: #eae5f5; --tipfg: #0d0718; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="madjionicar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="madjionicar"] .overview .left { align-self: start; }
+[data-theme="madjionicar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="madjionicar"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="madjionicar"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="madjionicar"] .bar h1 { font-weight: 800; }
+[data-theme="madjionicar"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="madjionicar"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(234,229,245,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(124,58,237,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(234,229,245,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(234,229,245,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(124,58,237,0.8), transparent), repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #0d0718; background-attachment: fixed; }
+[data-theme="madjionicar"] .big .value, [data-theme="madjionicar"] .detail .price { font-weight: 900; }
+[data-theme="madjionicar"] .chart .line { stroke-width: 2.5; }
+[data-theme="madjionicar"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="madjionicar"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #ededf0; --edge: #d0ced5; --alt: #f4f3f5; --text1: #281d42; --text2: #5a526e; --faint: #888296; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #e8dff9; --tip: #281d42; --tipfg: #f0f0f1; --accentfg: #ffffff; }
+[data-theme="madjionicar"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(40,29,66,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(124,58,237,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(40,29,66,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(40,29,66,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(124,58,237,0.8), transparent), repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #f0f0f1; background-attachment: fixed; }

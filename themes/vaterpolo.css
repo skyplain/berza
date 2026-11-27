@@ -1,0 +1,19 @@
+/* tema vaterpolo (Water polo): generisana, tools/teme.py */
+:root[data-theme="vaterpolo"] { color-scheme: light; --back: #d9f0fb; --card: #f4fafe; --head: #e7edf2; --edge: #bacfdd; --alt: #edf3f8; --text1: #16213e; --text2: #47556d; --faint: #748499; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #d6e2f9; --tip: #16213e; --tipfg: #d9f0fb; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="vaterpolo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="vaterpolo"] .overview .left { align-self: start; }
+[data-theme="vaterpolo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vaterpolo"] button { border-radius: 999px; }
+[data-theme="vaterpolo"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="vaterpolo"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="vaterpolo"] .bar button { background: transparent; color: var(--back); border-color: rgba(217,240,251,0.35); box-shadow: none; }
+[data-theme="vaterpolo"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="vaterpolo"] body { background: repeating-linear-gradient(90deg, transparent 0 140px, rgba(29,78,216,0.3) 140px 144px), radial-gradient(ellipse 80px 30px at 30% 40%, rgba(255,255,255,0.35), transparent 70%) 0 0 / 220px 140px; background-color: #d9f0fb; background-attachment: fixed; }
+[data-theme="vaterpolo"] .big .value, [data-theme="vaterpolo"] .detail .price { font-weight: 200; }
+[data-theme="vaterpolo"] .chart .line { stroke-width: 3; }
+[data-theme="vaterpolo"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vaterpolo"][data-scheme="dark"] { color-scheme: dark; --back: #202328; --card: #2b2e33; --head: #36393f; --edge: #3f4249; --alt: #313439; --text1: #e3e7f4; --text2: #b2b6c1; --faint: #858992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #31394c; --tip: #e3e7f4; --tipfg: #202328; --accentfg: #111111; }
+[data-theme="vaterpolo"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="vaterpolo"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(32,35,40,0.35); box-shadow: none; }
+[data-theme="vaterpolo"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, transparent 0 140px, rgba(86,123,226,0.3) 140px 144px), radial-gradient(ellipse 80px 30px at 30% 40%, rgba(255,255,255,0.35), transparent 70%) 0 0 / 220px 140px; background-color: #202328; background-attachment: fixed; }

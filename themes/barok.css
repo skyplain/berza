@@ -1,0 +1,21 @@
+/* tema barok (Baroque): generisana, tools/teme.py */
+:root[data-theme="barok"] { color-scheme: dark; --back: #1c120a; --card: #271e16; --head: #332a22; --edge: #3e352d; --alt: #2d241c; --text1: #efebe3; --text2: #bab5ad; --faint: #8a837b; --up: #4ade80; --down: #f87171; --accent: #b8860b; --hot: #3b2d14; --tip: #efebe3; --tipfg: #1c120a; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="barok"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="barok"] .overview .left { align-self: start; }
+[data-theme="barok"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="barok"] button { border-radius: 0; }
+[data-theme="barok"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="barok"] .bar h1 { font-size: 24px; }
+[data-theme="barok"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="barok"] :is(.overview .left, .block, .detail, .list) { border: 4px double #b8860b; }
+[data-theme="barok"] .bar h1::before { content: "❦ "; color: #b8860b; }
+[data-theme="barok"] .bar h1::after { content: " ❦"; color: #b8860b; }
+[data-theme="barok"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="barok"] .big .value, [data-theme="barok"] .detail .price { font-weight: 700; }
+[data-theme="barok"] .chart .line { stroke-width: 2; }
+[data-theme="barok"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="barok"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #efefec; --edge: #d2d1ce; --alt: #f5f5f3; --text1: #322b19; --text2: #625c4f; --faint: #8e8a80; --up: #15803d; --down: #c81e1e; --accent: #a97b0a; --hot: #f0e9d8; --tip: #322b19; --tipfg: #f1f1f0; --accentfg: #111111; }
+[data-theme="barok"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 4px double #a97b0a; }
+[data-theme="barok"][data-scheme="light"] .bar h1::before { content: "❦ "; color: #a97b0a; }
+[data-theme="barok"][data-scheme="light"] .bar h1::after { content: " ❦"; color: #a97b0a; }

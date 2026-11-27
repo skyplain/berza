@@ -1,0 +1,14 @@
+/* tema bambus prostirka (Bamboo mat): generisana, tools/teme.py */
+:root[data-theme="bambusprostirka"] { color-scheme: light; --back: #f3f0d7; --card: #fbfaf3; --head: #efeee6; --edge: #d4d1ba; --alt: #f5f4ed; --text1: #2f3021; --text2: #60604e; --faint: #858571; --up: #15803d; --down: #c81e1e; --accent: #7a7a2b; --hot: #e9e8d7; --tip: #2f3021; --tipfg: #f3f0d7; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="bambusprostirka"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bambusprostirka"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="bambusprostirka"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="bambusprostirka"] .bar h1 { font-size: 24px; }
+[data-theme="bambusprostirka"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bambusprostirka"] body { background: repeating-linear-gradient(90deg, rgba(122,122,43,0.07) 0 14px, transparent 14px 40px); background-color: #f3f0d7; background-attachment: fixed; }
+[data-theme="bambusprostirka"] .big .value, [data-theme="bambusprostirka"] .detail .price { font-weight: 900; }
+[data-theme="bambusprostirka"] .chart .line { stroke-width: 2; }
+[data-theme="bambusprostirka"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bambusprostirka"][data-scheme="dark"] { color-scheme: dark; --back: #222324; --card: #2d2e2f; --head: #393a3a; --edge: #434343; --alt: #333435; --text1: #eeeee7; --text2: #bbbbb6; --faint: #8c8d89; --up: #4ade80; --down: #f87171; --accent: #a3a33a; --hot: #3e3e31; --tip: #eeeee7; --tipfg: #222324; --accentfg: #111111; }
+[data-theme="bambusprostirka"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(163,163,58,0.07) 0 14px, transparent 14px 40px); background-color: #222324; background-attachment: fixed; }

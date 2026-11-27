@@ -1,0 +1,13 @@
+/* tema papir od trske (Reed paper): generisana, tools/teme.py */
+:root[data-theme="papirodtrske"] { color-scheme: light; --back: #f1e8d0; --card: #fbf8f1; --head: #efebe4; --edge: #d2c9b3; --alt: #f5f2ea; --text1: #2e2418; --text2: #5f5546; --faint: #8c8270; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #eee3d0; --tip: #2e2418; --tipfg: #f1e8d0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="papirodtrske"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="papirodtrske"] .overview .left { align-self: start; }
+[data-theme="papirodtrske"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="papirodtrske"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="papirodtrske"] body { background: repeating-linear-gradient(0deg, rgba(46,36,24,0.05) 0 2px, transparent 2px 9px); background-color: #f1e8d0; background-attachment: fixed; }
+[data-theme="papirodtrske"] .big .value, [data-theme="papirodtrske"] .detail .price { font-weight: 900; }
+[data-theme="papirodtrske"] .chart .line { stroke-width: 2; }
+[data-theme="papirodtrske"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="papirodtrske"][data-scheme="dark"] { color-scheme: dark; --back: #222223; --card: #2d2d2e; --head: #393839; --edge: #424242; --alt: #333333; --text1: #ede8e3; --text2: #bab6b3; --faint: #8c8987; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3d362b; --tip: #ede8e3; --tipfg: #222223; --accentfg: #ffffff; }
+[data-theme="papirodtrske"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(237,232,227,0.05) 0 2px, transparent 2px 9px); background-color: #222223; background-attachment: fixed; }

@@ -1,0 +1,20 @@
+/* tema breza: generisana (paleta + oblik 7/4/1/4) */
+:root[data-theme="breza"] { color-scheme: light; --back: #f7f6f2; --card: #ffffff; --head: #f2f2f2; --edge: #d7d6d1; --alt: #f9f9f8; --text1: #2d2b26; --text2: #66645f; --faint: #92908c; --up: #15803d; --down: #c81e1e; --accent: #3d3d3d; --hot: #e4e4e4; --tip: #2d2b26; --tipfg: #f7f6f2; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="breza"] :is(.overview .left, .block, .detail, .list) { background: #f0efeb; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="breza"] .overview .left { align-self: start; }
+[data-theme="breza"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="breza"] button { border: 0; }
+[data-theme="breza"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="breza"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="breza"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="breza"] .bar button { background: transparent; color: var(--back); border-color: rgba(247,246,242,0.35); box-shadow: none; }
+[data-theme="breza"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="breza"] body { background: radial-gradient(900px 500px at 100% 0, rgba(61,61,61,0.12), transparent 70%); background-color: #f7f6f2; background-attachment: fixed; }
+[data-theme="breza"] .big .value, [data-theme="breza"] .detail .price { font-weight: 900; }
+[data-theme="breza"] .chart .line { stroke-width: 1.5; }
+[data-theme="breza"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="breza"][data-scheme="dark"] { color-scheme: dark; --back: #0b0b08; --card: #060606; --head: #0d0d0d; --edge: #21201d; --alt: #090908; --text1: #cac7c1; --text2: #878580; --faint: #64625f; --up: #4ade80; --down: #f87171; --accent: #636363; --hot: #161616; --tip: #cac7c1; --tipfg: #0b0b08; --accentfg: #ffffff; }
+[data-theme="breza"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #100f0c; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="breza"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(11,11,8,0.35); box-shadow: none; }
+[data-theme="breza"][data-scheme="dark"] body { background: radial-gradient(900px 500px at 100% 0, rgba(99,99,99,0.12), transparent 70%); background-color: #0b0b08; background-attachment: fixed; }

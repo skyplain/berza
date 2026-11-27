@@ -1,0 +1,22 @@
+/* tema visok kontrast: pristupačnost: crno-belo-žuto, krupniji tekst, jasni okviri */
+:root[data-theme="kontrast"] { color-scheme: dark; --back: #000; --card: #000; --head: #000; --edge: #fff; --alt: #1a1a1a; --text1: #fff; --text2: #fff; --faint: #e0e0e0; --up: #5dff5d; --down: #ff7070; --accent: #ffeb00; --hot: #333; --tip: #ffeb00; --tipfg: #000; --accentfg: #000; --font: Verdana,system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0; --h-color: #ffeb00; --h-transform: uppercase; --h-spacing: .04em; --h-size: 15px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 700; }
+[data-theme="kontrast"] body { font-size:17px }
+[data-theme="kontrast"] .bar { border-bottom:3px solid #fff }
+[data-theme="kontrast"] button { border:2px solid #fff;background:#000;font-weight:700 }
+[data-theme="kontrast"] button:hover,[data-theme="kontrast"] button:focus { background:#ffeb00;color:#000;outline:3px solid #fff }
+[data-theme="kontrast"] .hot { outline:3px solid #ffeb00 }
+[data-theme="kontrast"] td.name,[data-theme="kontrast"] .dim,[data-theme="kontrast"] .note { color:#e0e0e0 }
+[data-theme="kontrast"] th { color:#fff;border-bottom:2px solid #fff }
+[data-theme="kontrast"] .rows,[data-theme="kontrast"] #search { border:2px solid #fff }
+[data-theme="kontrast"] .chart .line { stroke-width:3 }
+[data-theme="kontrast"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="kontrast"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="kontrast"][data-scheme="light"] { color-scheme: light; --back: #ffffff; --card: #ffffff; --head: #ffffff; --edge: #060606; --alt: #dfdfdf; --text1: #060606; --text2: #060606; --faint: #191919; --up: #15803d; --down: #c81e1e; --accent: #9e9100; --hot: #bdbdbd; --tip: #9e9100; --tipfg: #151515; --accentfg: #111111; --h-color: #9e9100; }
+[data-theme="kontrast"][data-scheme="light"] .bar { border-bottom:3px solid #060606 }
+[data-theme="kontrast"][data-scheme="light"] button { border:2px solid #060606;background:#ffffff;font-weight:700 }
+[data-theme="kontrast"][data-scheme="light"] button:hover,[data-theme="kontrast"][data-scheme="light"] button:focus { background:#9e9100;color:#ffffff;outline:3px solid #060606 }
+[data-theme="kontrast"][data-scheme="light"] .hot { outline:3px solid #9e9100 }
+[data-theme="kontrast"][data-scheme="light"] td.name,[data-theme="kontrast"][data-scheme="light"] .dim,[data-theme="kontrast"][data-scheme="light"] .note { color:#191919 }
+[data-theme="kontrast"][data-scheme="light"] th { color:#060606;border-bottom:2px solid #060606 }
+[data-theme="kontrast"][data-scheme="light"] .rows,[data-theme="kontrast"][data-scheme="light"] #search { border:2px solid #060606 }

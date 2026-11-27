@@ -1,0 +1,16 @@
+/* tema arhiva (Archive): generisana, tools/teme.py */
+:root[data-theme="arhiva"] { color-scheme: light; --back: #ece8df; --card: #f9f8f5; --head: #ecebe9; --edge: #ccc8c1; --alt: #f3f2ef; --text1: #212225; --text2: #545454; --faint: #82817e; --up: #15803d; --down: #c81e1e; --accent: #57534e; --hot: #e2e1de; --tip: #212225; --tipfg: #ece8df; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 0px; }
+[data-theme="arhiva"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="arhiva"] .overview .left { align-self: start; }
+[data-theme="arhiva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="arhiva"] button { border-radius: 0; }
+[data-theme="arhiva"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="arhiva"] .bar h1 { font-size: 24px; }
+[data-theme="arhiva"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="arhiva"] :is(h2, h3) { display: inline-block; color: #57534e; border: 2px solid #57534e; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="arhiva"] .big .value, [data-theme="arhiva"] .detail .price { font-weight: 400; }
+[data-theme="arhiva"] .chart .line { stroke-width: 2.5; }
+[data-theme="arhiva"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="arhiva"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #424244; --alt: #333336; --text1: #e7e7e9; --text2: #b6b6b8; --faint: #88888b; --up: #4ade80; --down: #f87171; --accent: #807f7b; --hot: #39383a; --tip: #e7e7e9; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="arhiva"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #807f7b; border: 2px solid #807f7b; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

@@ -1,0 +1,17 @@
+/* tema meduza gorgona (Gorgon): generisana, tools/teme.py */
+:root[data-theme="meduzagorgona"] { color-scheme: dark; --back: #0b1306; --card: #171f12; --head: #232b1f; --edge: #2e352a; --alt: #1d2518; --text1: #e7eae4; --text2: #b0b4ac; --faint: #7d8379; --up: #4ade80; --down: #f87171; --accent: #4d7c0f; --hot: #1f2c12; --tip: #e7eae4; --tipfg: #0b1306; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="meduzagorgona"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="meduzagorgona"] .overview .left { align-self: start; }
+[data-theme="meduzagorgona"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="meduzagorgona"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="meduzagorgona"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="meduzagorgona"] .bar button { background: transparent; color: var(--back); border-color: rgba(11,19,6,0.35); box-shadow: none; }
+[data-theme="meduzagorgona"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="meduzagorgona"] body { background: radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 0 0 / 24px 12px, radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 12px 6px / 24px 12px; background-color: #0b1306; background-attachment: fixed; }
+[data-theme="meduzagorgona"] .big .value, [data-theme="meduzagorgona"] .detail .price { font-weight: 200; }
+[data-theme="meduzagorgona"] .chart .line { stroke-width: 2.5; }
+[data-theme="meduzagorgona"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="meduzagorgona"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #edeeed; --edge: #cfd1ce; --alt: #f3f5f3; --text1: #1f291a; --text2: #535b50; --faint: #838981; --up: #15803d; --down: #c81e1e; --accent: #4d7c0f; --hot: #e2e9d9; --tip: #1f291a; --tipfg: #f0f1f0; --accentfg: #ffffff; }
+[data-theme="meduzagorgona"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,241,240,0.35); box-shadow: none; }
+[data-theme="meduzagorgona"][data-scheme="light"] body { background: radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 0 0 / 24px 12px, radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 12px 6px / 24px 12px; background-color: #f0f1f0; background-attachment: fixed; }

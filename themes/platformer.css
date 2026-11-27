@@ -1,0 +1,20 @@
+/* tema platformer (Platformer): generisana, tools/teme.py */
+:root[data-theme="platformer"] { color-scheme: light; --back: #e0f2fe; --card: #f6fbff; --head: #ebeff1; --edge: #c6d3d9; --alt: #f0f5f8; --text1: #3d2f19; --text2: #666052; --faint: #85857e; --up: #15803d; --down: #c81e1e; --accent: #af7007; --hot: #ece8dc; --tip: #3d2f19; --tipfg: #e0f2fe; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="platformer"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="platformer"] .overview .left { align-self: start; }
+[data-theme="platformer"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="platformer"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="platformer"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="platformer"] .bar button { background: transparent; color: var(--back); border-color: rgba(224,242,254,0.35); box-shadow: none; }
+[data-theme="platformer"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="platformer"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.9), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.8), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.7), transparent 70%), linear-gradient(rgba(61,47,25,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(61,47,25,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #e0f2fe; background-attachment: fixed; }
+[data-theme="platformer"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #3d2f19; border-radius: 0; box-shadow: none; }
+[data-theme="platformer"] button { border-radius: 0; border-width: 2px; }
+[data-theme="platformer"] .big .value, [data-theme="platformer"] .detail .price { font-weight: 700; }
+[data-theme="platformer"] .chart .line { stroke-width: 3; }
+[data-theme="platformer"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="platformer"][data-scheme="dark"] { color-scheme: dark; --back: #202328; --card: #2b2e33; --head: #37393e; --edge: #424346; --alt: #313438; --text1: #f4ede3; --text2: #bfbab4; --faint: #8e8c89; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #473e2d; --tip: #f4ede3; --tipfg: #202328; --accentfg: #111111; }
+[data-theme="platformer"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(32,35,40,0.35); box-shadow: none; }
+[data-theme="platformer"][data-scheme="dark"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.12), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.1), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.08), transparent 70%), linear-gradient(rgba(244,237,227,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(244,237,227,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #202328; background-attachment: fixed; }
+[data-theme="platformer"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #f4ede3; border-radius: 0; box-shadow: none; }

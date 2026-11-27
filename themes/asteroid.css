@@ -1,0 +1,21 @@
+/* tema asteroid: generisana (paleta + oblik 7/4/5/4) */
+:root[data-theme="asteroid"] { color-scheme: dark; --back: #1a1917; --card: #24221f; --head: #302e2a; --edge: #3b3937; --alt: #2a2825; --text1: #e8e4dc; --text2: #aeaba5; --faint: #817e7a; --up: #4ade80; --down: #f87171; --accent: #a89f91; --hot: #36342f; --tip: #e8e4dc; --tipfg: #1a1917; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 10px; }
+[data-theme="asteroid"] :is(.overview .left, .block, .detail, .list) { background: #21201e; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="asteroid"] .overview .left { align-self: start; }
+[data-theme="asteroid"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="asteroid"] button { border: 0; }
+[data-theme="asteroid"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="asteroid"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="asteroid"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="asteroid"] .bar button { background: transparent; color: var(--back); border-color: rgba(26,25,23,0.35); box-shadow: none; }
+[data-theme="asteroid"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="asteroid"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="asteroid"] body { background: radial-gradient(900px 500px at 100% 0, rgba(168,159,145,0.16), transparent 70%); background-color: #1a1917; background-attachment: fixed; }
+[data-theme="asteroid"] .big .value, [data-theme="asteroid"] .detail .price { font-weight: 900; }
+[data-theme="asteroid"] .chart .line { stroke-width: 2.5; }
+[data-theme="asteroid"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="asteroid"][data-scheme="light"] { color-scheme: light; --back: #e1e0dd; --card: #d5d3cf; --head: #c6c3be; --edge: #b7b5b2; --alt: #cdcbc7; --text1: #191610; --text2: #44423c; --faint: #6d6a66; --up: #15803d; --down: #c81e1e; --accent: #7e7568; --hot: #bebcb6; --tip: #191610; --tipfg: #e1e0dd; --accentfg: #ffffff; }
+[data-theme="asteroid"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #d7d6d3; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="asteroid"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(225,224,221,0.35); box-shadow: none; }
+[data-theme="asteroid"][data-scheme="light"] body { background: radial-gradient(900px 500px at 100% 0, rgba(126,117,104,0.16), transparent 70%); background-color: #e1e0dd; background-attachment: fixed; }

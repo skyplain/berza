@@ -1,0 +1,21 @@
+/* tema meduza u tami (Jellyfish glow): generisana, tools/teme.py */
+:root[data-theme="meduzautami"] { color-scheme: dark; --back: #0b0414; --card: #171120; --head: #241e2d; --edge: #302938; --alt: #1e1826; --text1: #f3eaf6; --text2: #b9b0be; --faint: #847c8a; --up: #4ade80; --down: #f87171; --accent: #e879f9; --hot: #34203e; --tip: #f3eaf6; --tipfg: #0b0414; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="meduzautami"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="meduzautami"] .overview .left { align-self: start; }
+[data-theme="meduzautami"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="meduzautami"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="meduzautami"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="meduzautami"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="meduzautami"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="meduzautami"] body { background: radial-gradient(circle, transparent 6px, rgba(232,121,249,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(232,121,249,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #0b0414; background-attachment: fixed; }
+[data-theme="meduzautami"] .big .value { text-shadow: 0 0 18px rgba(232,121,249,0.55); }
+[data-theme="meduzautami"] .chart .line { filter: drop-shadow(0 0 5px rgba(232,121,249,0.7)); }
+[data-theme="meduzautami"] .big .value, [data-theme="meduzautami"] .detail .price { font-weight: 700; }
+[data-theme="meduzautami"] .chart .line { stroke-width: 3; }
+[data-theme="meduzautami"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="meduzautami"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efedf0; --edge: #d3d0d5; --alt: #f4f4f6; --text1: #3b2944; --text2: #685b6f; --faint: #8b8190; --up: #15803d; --down: #c81e1e; --accent: #b45ec2; --hot: #f0e4f3; --tip: #3b2944; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="meduzautami"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="meduzautami"][data-scheme="light"] body { background: radial-gradient(circle, transparent 6px, rgba(180,94,194,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(180,94,194,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="meduzautami"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(180,94,194,0.55); }
+[data-theme="meduzautami"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(180,94,194,0.7)); }

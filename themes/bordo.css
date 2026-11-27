@@ -1,0 +1,27 @@
+/* tema bordo (Burgundy): generisana, tools/teme.py */
+:root[data-theme="bordo"] { color-scheme: dark; --back: #15050b; --card: #211217; --head: #2d1e23; --edge: #37282e; --alt: #27181d; --text1: #ebe2e7; --text2: #b6abb0; --faint: #84787d; --up: #4ade80; --down: #f87171; --accent: #a34764; --hot: #331922; --tip: #ebe2e7; --tipfg: #15050b; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="bordo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="bordo"] .overview .left { align-self: start; }
+[data-theme="bordo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bordo"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bordo"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="bordo"] .bar button { background: transparent; color: var(--back); border-color: rgba(21,5,11,0.35); box-shadow: none; }
+[data-theme="bordo"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="bordo"] body { background: linear-gradient(180deg, rgba(163,71,100,0.1), transparent 380px); background-color: #15050b; background-attachment: fixed; }
+[data-theme="bordo"] :is(.overview .left, .block, .detail, .list) { background: #261219; border-color: rgba(163,71,100,0.35); }
+[data-theme="bordo"] .chart .line { stroke: #a34764 !important; }
+[data-theme="bordo"] .chart .area { fill: #a34764 !important; }
+[data-theme="bordo"] .chart .vol { fill: #a34764; }
+[data-theme="bordo"] :is(h2, h3, .big .label) { color: #a34764; }
+[data-theme="bordo"] .big .value, [data-theme="bordo"] .detail .price { font-weight: 200; }
+[data-theme="bordo"] .chart .line { stroke-width: 2; }
+[data-theme="bordo"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bordo"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #eeeced; --edge: #d1cdcf; --alt: #f5f3f3; --text1: #2a1621; --text2: #5c4c55; --faint: #8a7f84; --up: #15803d; --down: #c81e1e; --accent: #881337; --hot: #ebdadf; --tip: #2a1621; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="bordo"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }
+[data-theme="bordo"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(136,19,55,0.1), transparent 380px); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="bordo"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #f5eef0; border-color: rgba(136,19,55,0.35); }
+[data-theme="bordo"][data-scheme="light"] .chart .line { stroke: #881337 !important; }
+[data-theme="bordo"][data-scheme="light"] .chart .area { fill: #881337 !important; }
+[data-theme="bordo"][data-scheme="light"] .chart .vol { fill: #881337; }
+[data-theme="bordo"][data-scheme="light"] :is(h2, h3, .big .label) { color: #881337; }

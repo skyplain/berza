@@ -1,0 +1,16 @@
+/* tema gradijent dugmad (Gradient pills): generisana, tools/teme.py */
+:root[data-theme="gradijentdugmad"] { color-scheme: light; --back: #fef6fa; --card: #fffcfe; --head: #f3eff2; --edge: #dfd4da; --alt: #f9f5f8; --text1: #3c2032; --text2: #6c5664; --faint: #998792; --up: #15803d; --down: #c81e1e; --accent: #ec4899; --hot: #fce3f0; --tip: #3c2032; --tipfg: #fef6fa; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="gradijentdugmad"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="gradijentdugmad"] .overview .left { align-self: start; }
+[data-theme="gradijentdugmad"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gradijentdugmad"] button { border-radius: 999px; }
+[data-theme="gradijentdugmad"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="gradijentdugmad"] .bar h1 { font-weight: 800; }
+[data-theme="gradijentdugmad"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="gradijentdugmad"] button { border-radius: 999px; border: 0; background: linear-gradient(135deg, #ec4899, #99ec48); color: #ffffff; font-weight: 600; }
+[data-theme="gradijentdugmad"] .big .value, [data-theme="gradijentdugmad"] .detail .price { font-weight: 400; }
+[data-theme="gradijentdugmad"] .chart .line { stroke-width: 2; }
+[data-theme="gradijentdugmad"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="gradijentdugmad"][data-scheme="dark"] { color-scheme: dark; --back: #1f111c; --card: #2a1d27; --head: #362933; --edge: #41333e; --alt: #30232d; --text1: #f3e6ef; --text2: #beb1ba; --faint: #8d808a; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #452337; --tip: #f3e6ef; --tipfg: #1f111c; --accentfg: #111111; }
+[data-theme="gradijentdugmad"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

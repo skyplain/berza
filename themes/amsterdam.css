@@ -1,0 +1,16 @@
+/* tema amsterdam (Amsterdam): generisana, tools/teme.py */
+:root[data-theme="amsterdam"] { color-scheme: light; --back: #fbf8f2; --card: #fefdfb; --head: #f2f0ed; --edge: #dcd6cf; --alt: #f8f6f4; --text1: #3b2319; --text2: #6b584f; --faint: #978981; --up: #15803d; --down: #c81e1e; --accent: #ea580c; --hot: #fbe6da; --tip: #3b2319; --tipfg: #fbf8f2; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="amsterdam"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="amsterdam"] .overview .left { align-self: start; }
+[data-theme="amsterdam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="amsterdam"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="amsterdam"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="amsterdam"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="amsterdam"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="amsterdam"] body { background: linear-gradient(0deg, rgba(234,88,12,0.12) 0 70px, transparent 70px), radial-gradient(circle at 50% 100%, transparent 16px, rgba(59,35,25,0.1) 17px 19px, transparent 20px) 0 calc(100% - 70px) / 44px 24px repeat-x; background-color: #fbf8f2; background-attachment: fixed; }
+[data-theme="amsterdam"] .big .value, [data-theme="amsterdam"] .detail .price { font-weight: 400; }
+[data-theme="amsterdam"] .chart .line { stroke-width: 2; }
+[data-theme="amsterdam"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="amsterdam"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #444345; --alt: #343537; --text1: #f3e8e3; --text2: #bfb7b4; --faint: #8f8a89; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #48352d; --tip: #f3e8e3; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="amsterdam"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(234,88,12,0.12) 0 70px, transparent 70px), radial-gradient(circle at 50% 100%, transparent 16px, rgba(243,232,227,0.1) 17px 19px, transparent 20px) 0 calc(100% - 70px) / 44px 24px repeat-x; background-color: #232427; background-attachment: fixed; }

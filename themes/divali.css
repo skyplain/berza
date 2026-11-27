@@ -1,0 +1,20 @@
+/* tema divali (Diwali): generisana, tools/teme.py */
+:root[data-theme="divali"] { color-scheme: dark; --back: #1a0714; --card: #251320; --head: #31202c; --edge: #3d2c35; --alt: #2b1a26; --text1: #f4ede3; --text2: #beb4af; --faint: #8b7f80; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #42261d; --tip: #f4ede3; --tipfg: #1a0714; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="divali"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="divali"] .overview .left { align-self: start; }
+[data-theme="divali"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="divali"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="divali"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="divali"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="divali"] .bar { position: relative; }
+[data-theme="divali"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: radial-gradient(circle, #ef4444 0 3px, transparent 4px) 0 0 / 64px 10px, radial-gradient(circle, #facc15 0 3px, transparent 4px) 16px 0 / 64px 10px, radial-gradient(circle, #22c55e 0 3px, transparent 4px) 32px 0 / 64px 10px, radial-gradient(circle, #3b82f6 0 3px, transparent 4px) 48px 0 / 64px 10px; }
+[data-theme="divali"] .big .value { text-shadow: 0 0 18px rgba(245,158,11,0.55); }
+[data-theme="divali"] .chart .line { filter: drop-shadow(0 0 5px rgba(245,158,11,0.7)); }
+[data-theme="divali"] .big .value, [data-theme="divali"] .detail .price { font-weight: 700; }
+[data-theme="divali"] .chart .line { stroke-width: 2; }
+[data-theme="divali"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="divali"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #f0eeed; --edge: #d4d1ce; --alt: #f5f4f4; --text1: #3d2f19; --text2: #6a5f4f; --faint: #8c8579; --up: #15803d; --down: #c81e1e; --accent: #af7007; --hot: #f0e7d9; --tip: #3d2f19; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="divali"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="divali"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(175,112,7,0.55); }
+[data-theme="divali"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(175,112,7,0.7)); }

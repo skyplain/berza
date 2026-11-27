@@ -1,0 +1,18 @@
+/* tema košarka (Basketball): generisana, tools/teme.py */
+:root[data-theme="kosarka"] { color-scheme: light; --back: #f3e2cc; --card: #fbf6f0; --head: #efe9e3; --edge: #d6c3af; --alt: #f5f0ea; --text1: #3b2319; --text2: #695346; --faint: #937f6f; --up: #15803d; --down: #c81e1e; --accent: #d7510b; --hot: #f6dfd0; --tip: #3b2319; --tipfg: #f3e2cc; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="kosarka"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kosarka"] .overview .left { align-self: start; }
+[data-theme="kosarka"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kosarka"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kosarka"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kosarka"] .bar button { background: transparent; color: var(--back); border-color: rgba(243,226,204,0.35); box-shadow: none; }
+[data-theme="kosarka"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kosarka"] body { background: repeating-linear-gradient(45deg, rgba(215,81,11,0.12) 0 10px, rgba(215,81,11,0.04) 10px 20px) 0 0 / 40px 40px, repeating-linear-gradient(-45deg, rgba(215,81,11,0.1) 0 10px, rgba(215,81,11,0.03) 10px 20px) 20px 20px / 40px 40px; background-color: #f3e2cc; background-attachment: fixed; }
+[data-theme="kosarka"] .big .value, [data-theme="kosarka"] .detail .price { font-weight: 200; }
+[data-theme="kosarka"] .chart .line { stroke-width: 2.5; }
+[data-theme="kosarka"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kosarka"][data-scheme="dark"] { color-scheme: dark; --back: #222123; --card: #2d2c2e; --head: #393739; --edge: #434142; --alt: #333233; --text1: #f3e8e3; --text2: #bfb6b3; --faint: #8f8887; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #473229; --tip: #f3e8e3; --tipfg: #222123; --accentfg: #111111; }
+[data-theme="kosarka"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kosarka"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,33,35,0.35); box-shadow: none; }
+[data-theme="kosarka"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(234,88,12,0.12) 0 10px, rgba(234,88,12,0.04) 10px 20px) 0 0 / 40px 40px, repeating-linear-gradient(-45deg, rgba(234,88,12,0.1) 0 10px, rgba(234,88,12,0.03) 10px 20px) 20px 20px / 40px 40px; background-color: #222123; background-attachment: fixed; }

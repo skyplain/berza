@@ -1,0 +1,13 @@
+/* tema tirkizna laguna (Turquoise lagoon): generisana, tools/teme.py */
+:root[data-theme="tirkiznalaguna"] { color-scheme: light; --back: #e6fbf8; --card: #f8fefd; --head: #eaf2f1; --edge: #c5dbd9; --alt: #f1f8f7; --text1: #153435; --text2: #496666; --faint: #799493; --up: #15803d; --down: #c81e1e; --accent: #119b8d; --hot: #d8f0ed; --tip: #153435; --tipfg: #e6fbf8; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="tirkiznalaguna"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="tirkiznalaguna"] .overview .left { align-self: start; }
+[data-theme="tirkiznalaguna"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tirkiznalaguna"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tirkiznalaguna"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(17,155,141,0.14) 9px 10px, transparent 11px 16px, rgba(17,155,141,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #e6fbf8; background-attachment: fixed; }
+[data-theme="tirkiznalaguna"] .big .value, [data-theme="tirkiznalaguna"] .detail .price { font-weight: 900; }
+[data-theme="tirkiznalaguna"] .chart .line { stroke-width: 3; }
+[data-theme="tirkiznalaguna"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tirkiznalaguna"][data-scheme="dark"] { color-scheme: dark; --back: #212427; --card: #2c2f32; --head: #373b3d; --edge: #404447; --alt: #313538; --text1: #e2eff0; --text2: #b2bcbe; --faint: #858e90; --up: #4ade80; --down: #f87171; --accent: #14b8a6; --hot: #294242; --tip: #e2eff0; --tipfg: #212427; --accentfg: #111111; }
+[data-theme="tirkiznalaguna"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(20,184,166,0.14) 9px 10px, transparent 11px 16px, rgba(20,184,166,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #212427; background-attachment: fixed; }

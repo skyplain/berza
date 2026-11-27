@@ -1,0 +1,17 @@
+/* tema čarobna zima (Winter wonderland): generisana, tools/teme.py */
+:root[data-theme="carobnazima"] { color-scheme: dark; --back: #0c1024; --card: #181c2f; --head: #25293b; --edge: #303446; --alt: #1e2235; --text1: #eeeff6; --text2: #b6b7c2; --faint: #828491; --up: #4ade80; --down: #f87171; --accent: #a5b4fc; --hot: #2c314c; --tip: #eeeff6; --tipfg: #0c1024; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="carobnazima"] :is(.overview .left, .block, .detail, .list) { background: rgba(24,28,47,0.6); border: 1px solid rgba(238,239,246,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="carobnazima"] .overview .left { align-self: start; }
+[data-theme="carobnazima"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="carobnazima"] button { border-radius: 999px; background: transparent; }
+[data-theme="carobnazima"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="carobnazima"] .bar h1 { font-size: 24px; }
+[data-theme="carobnazima"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="carobnazima"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px, radial-gradient(1px 1px at 20px 30px, rgba(238,239,246,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(165,180,252,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(238,239,246,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(238,239,246,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(165,180,252,0.8), transparent); background-color: #0c1024; background-attachment: fixed; }
+[data-theme="carobnazima"] .big .value, [data-theme="carobnazima"] .detail .price { font-weight: 900; }
+[data-theme="carobnazima"] .chart .line { stroke-width: 1.5; }
+[data-theme="carobnazima"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="carobnazima"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #eeeff0; --edge: #d1d3d6; --alt: #f4f5f6; --text1: #2f3344; --text2: #5f6270; --faint: #858791; --up: #15803d; --down: #c81e1e; --accent: #7782b4; --hot: #e8eaf1; --tip: #2f3344; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="carobnazima"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,251,0.6); border: 1px solid rgba(47,51,68,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="carobnazima"][data-scheme="light"] body { background: radial-gradient(circle, rgba(165,180,252,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(165,180,252,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(165,180,252,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px, radial-gradient(1px 1px at 20px 30px, rgba(47,51,68,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(119,130,180,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(47,51,68,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(47,51,68,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(119,130,180,0.8), transparent); background-color: #f0f1f2; background-attachment: fixed; }

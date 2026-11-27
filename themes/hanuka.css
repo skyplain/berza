@@ -1,0 +1,17 @@
+/* tema hanuka (Hanukkah): generisana, tools/teme.py */
+:root[data-theme="hanuka"] { color-scheme: light; --back: #f4f7ff; --card: #fcfdff; --head: #eef0f3; --edge: #d0d5e0; --alt: #f5f6f9; --text1: #16213e; --text2: #4e566e; --faint: #81889b; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dde4fa; --tip: #16213e; --tipfg: #f4f7ff; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="hanuka"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="hanuka"] .overview .left { align-self: start; }
+[data-theme="hanuka"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hanuka"] button { border-radius: 999px; }
+[data-theme="hanuka"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="hanuka"] .bar h1 { font-size: 24px; }
+[data-theme="hanuka"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="hanuka"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(22,33,62,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(29,78,216,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(22,33,62,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(22,33,62,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(29,78,216,0.8), transparent); background-color: #f4f7ff; background-attachment: fixed; }
+[data-theme="hanuka"] .big .value, [data-theme="hanuka"] .detail .price { font-weight: 200; }
+[data-theme="hanuka"] .chart .line { stroke-width: 2; }
+[data-theme="hanuka"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="hanuka"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #414349; --alt: #323539; --text1: #e3e7f4; --text2: #b3b6c1; --faint: #868992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #333a4c; --tip: #e3e7f4; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="hanuka"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="hanuka"][data-scheme="dark"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(227,231,244,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(86,123,226,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(227,231,244,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(227,231,244,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(86,123,226,0.8), transparent); background-color: #222428; background-attachment: fixed; }

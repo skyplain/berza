@@ -1,0 +1,21 @@
+/* tema fliper sala (Pinball hall): generisana, tools/teme.py */
+:root[data-theme="flipersala"] { color-scheme: dark; --back: #120712; --card: #1e131e; --head: #2b202a; --edge: #362c34; --alt: #241a24; --text1: #f4f1e4; --text2: #bcb6b0; --faint: #88817f; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #3d2d1d; --tip: #f4f1e4; --tipfg: #120712; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="flipersala"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="flipersala"] .overview .left { align-self: start; }
+[data-theme="flipersala"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="flipersala"] button { border-radius: 999px; }
+[data-theme="flipersala"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="flipersala"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="flipersala"] .bar button { background: transparent; color: var(--back); border-color: rgba(18,7,18,0.35); box-shadow: none; }
+[data-theme="flipersala"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="flipersala"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(244,241,228,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(250,204,21,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(244,241,228,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(244,241,228,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(250,204,21,0.8), transparent); background-color: #120712; background-attachment: fixed; }
+[data-theme="flipersala"] .bar h1 { color: #fdeba1; text-shadow: 0 0 4px #facc15, 0 0 12px #facc15, 0 0 28px rgba(250,204,21,0.8); }
+[data-theme="flipersala"] .big .value, [data-theme="flipersala"] .detail .price { font-weight: 700; }
+[data-theme="flipersala"] .chart .line { stroke-width: 1.5; }
+[data-theme="flipersala"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="flipersala"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #f0eeee; --edge: #d4d3cf; --alt: #f5f4f4; --text1: #3e381b; --text2: #6b6650; --faint: #8d897a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ede8da; --tip: #3e381b; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="flipersala"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="flipersala"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,241,0.35); box-shadow: none; }
+[data-theme="flipersala"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(62,56,27,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(152,123,13,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(62,56,27,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(62,56,27,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(152,123,13,0.8), transparent); background-color: #f1f0f1; background-attachment: fixed; }
+[data-theme="flipersala"][data-scheme="light"] .bar h1 { color: #d6ca9e; text-shadow: 0 0 4px #987b0d, 0 0 12px #987b0d, 0 0 28px rgba(152,123,13,0.8); }

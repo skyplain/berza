@@ -1,0 +1,21 @@
+/* tema mint: nana zelena i belo, čista moderna finansijska aplikacija */
+:root[data-theme="mint"] { color-scheme: light; --back: #f3fbf8; --card: #fff; --head: #e5f6ef; --edge: #d3ede2; --alt: #f8fdfb; --text1: #0d2b22; --text2: #3e6357; --faint: #86a89c; --up: #00a37a; --down: #f25c54; --accent: #00b386; --hot: #e2f7ef; --tip: #0d2b22; --tipfg: #fff; --accentfg: #fff; --font: "SF Pro Text",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 12px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: none; --h-color: #3e6357; --h-transform: none; --h-spacing: 0; --h-size: 14px; --h-weight: 600; --h-font: inherit; --big-font: inherit; --big-weight: 600; }
+[data-theme="mint"] .bar { border:0 }
+[data-theme="mint"] .bar h1 { font-weight:700 }
+[data-theme="mint"] .bar h1::before { content:"❖ ";color:#00b386 }
+[data-theme="mint"] button { background:#e5f6ef;border:0;color:#00805f;font-weight:600 }
+[data-theme="mint"] button:hover { background:#00b386;color:#fff }
+[data-theme="mint"] .chg { font-weight:600 }
+[data-theme="mint"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="mint"] th { border:0 }
+[data-theme="mint"] .chart .line { stroke-width:2.5 }
+[data-theme="mint"] .chart .area { opacity:.12 }
+[data-theme="mint"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="mint"] .overview .left { align-self: start; }
+[data-theme="mint"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="mint"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="mint"][data-scheme="dark"] { color-scheme: dark; --back: #060a08; --card: #060606; --head: #05100c; --edge: #051a12; --alt: #060807; --text1: #b7d9cc; --text2: #739a8c; --faint: #48695e; --up: #4ade80; --down: #f87171; --accent: #00b386; --hot: #03110c; --tip: #b7d9cc; --tipfg: #060606; --accentfg: #111111; --h-color: #739a8c; }
+[data-theme="mint"][data-scheme="dark"] .bar h1::before { content:"❖ ";color:#00b386 }
+[data-theme="mint"][data-scheme="dark"] button { background:#05100c;border:0;color:#25916f;font-weight:600 }
+[data-theme="mint"][data-scheme="dark"] button:hover { background:#00b386;color:#060606 }

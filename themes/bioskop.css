@@ -1,0 +1,18 @@
+/* tema bioskop (Cinema): generisana, tools/teme.py */
+:root[data-theme="bioskop"] { color-scheme: dark; --back: #3a0a0f; --card: #44161b; --head: #4e2327; --edge: #572e32; --alt: #491c21; --text1: #f1eee7; --text2: #c3b5b1; --faint: #99817f; --up: #4ade80; --down: #f87171; --accent: #d4af37; --hot: #582b1f; --tip: #f1eee7; --tipfg: #3a0a0f; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="bioskop"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="bioskop"] .overview .left { align-self: start; }
+[data-theme="bioskop"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bioskop"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="bioskop"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bioskop"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="bioskop"] .bar button { background: transparent; color: var(--back); border-color: rgba(58,10,15,0.35); box-shadow: none; }
+[data-theme="bioskop"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="bioskop"] body { background: repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #3a0a0f; background-attachment: fixed; }
+[data-theme="bioskop"] .big .value, [data-theme="bioskop"] .detail .price { font-weight: 700; }
+[data-theme="bioskop"] .chart .line { stroke-width: 3; }
+[data-theme="bioskop"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bioskop"][data-scheme="light"] { color-scheme: light; --back: #f3f0f1; --card: #fbfafb; --head: #efeeee; --edge: #d5d2d0; --alt: #f5f4f4; --text1: #373221; --text2: #666255; --faint: #8a867d; --up: #15803d; --down: #c81e1e; --accent: #987d28; --hot: #ede8dd; --tip: #373221; --tipfg: #f3f0f1; --accentfg: #111111; }
+[data-theme="bioskop"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(243,240,241,0.35); box-shadow: none; }
+[data-theme="bioskop"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #f3f0f1; background-attachment: fixed; }

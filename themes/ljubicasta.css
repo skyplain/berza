@@ -1,0 +1,26 @@
+/* tema ljubičasta (Purple): generisana, tools/teme.py */
+:root[data-theme="ljubicasta"] { color-scheme: light; --back: #f4eafd; --card: #fcf9fe; --head: #efecf2; --edge: #d3c9de; --alt: #f6f2f8; --text1: #28193c; --text2: #5b4d6c; --faint: #8a7d99; --up: #15803d; --down: #c81e1e; --accent: #7e22ce; --hot: #eadbf7; --tip: #28193c; --tipfg: #f4eafd; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="ljubicasta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="ljubicasta"] .overview .left { align-self: start; }
+[data-theme="ljubicasta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ljubicasta"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ljubicasta"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="ljubicasta"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="ljubicasta"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ljubicasta"] body { background: linear-gradient(180deg, rgba(126,34,206,0.1), transparent 380px); background-color: #f4eafd; background-attachment: fixed; }
+[data-theme="ljubicasta"] :is(.overview .left, .block, .detail, .list) { background: #f6eefc; border-color: rgba(126,34,206,0.35); }
+[data-theme="ljubicasta"] .chart .line { stroke: #7e22ce !important; }
+[data-theme="ljubicasta"] .chart .area { fill: #7e22ce !important; }
+[data-theme="ljubicasta"] .chart .vol { fill: #7e22ce; }
+[data-theme="ljubicasta"] :is(h2, h3, .big .label) { color: #7e22ce; }
+[data-theme="ljubicasta"] .big .value, [data-theme="ljubicasta"] .detail .price { font-weight: 900; }
+[data-theme="ljubicasta"] .chart .line { stroke-width: 2.5; }
+[data-theme="ljubicasta"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ljubicasta"][data-scheme="dark"] { color-scheme: dark; --back: #222228; --card: #2d2d33; --head: #38383f; --edge: #424148; --alt: #333239; --text1: #ebe3f3; --text2: #b9b3c0; --faint: #8b8692; --up: #4ade80; --down: #f87171; --accent: #9b53d9; --hot: #3c324a; --tip: #ebe3f3; --tipfg: #222228; --accentfg: #ffffff; }
+[data-theme="ljubicasta"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(155,83,217,0.1), transparent 380px); background-color: #222228; background-attachment: fixed; }
+[data-theme="ljubicasta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #312c3b; border-color: rgba(155,83,217,0.35); }
+[data-theme="ljubicasta"][data-scheme="dark"] .chart .line { stroke: #9b53d9 !important; }
+[data-theme="ljubicasta"][data-scheme="dark"] .chart .area { fill: #9b53d9 !important; }
+[data-theme="ljubicasta"][data-scheme="dark"] .chart .vol { fill: #9b53d9; }
+[data-theme="ljubicasta"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #9b53d9; }

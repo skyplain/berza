@@ -1,0 +1,17 @@
+/* tema rivijera: generisana (paleta + oblik 2/1/2/1) */
+:root[data-theme="rivijera"] { color-scheme: light; --back: #e8f6fb; --card: #ffffff; --head: #f0f3f4; --edge: #c5d6dd; --alt: #f8f9f9; --text1: #0b3142; --text2: #496876; --faint: #7a949e; --up: #15803d; --down: #c81e1e; --accent: #e8702a; --hot: #fcebe1; --tip: #0b3142; --tipfg: #e8f6fb; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 6px; }
+[data-theme="rivijera"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="rivijera"] .overview .left { align-self: start; }
+[data-theme="rivijera"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rivijera"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="rivijera"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="rivijera"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="rivijera"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="rivijera"] body { background: radial-gradient(#d2e2e8 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #e8f6fb; background-attachment: fixed; }
+[data-theme="rivijera"] .big .value, [data-theme="rivijera"] .detail .price { font-weight: 700; }
+[data-theme="rivijera"] .chart .line { stroke-width: 2; }
+[data-theme="rivijera"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="rivijera"][data-scheme="dark"] { color-scheme: dark; --back: #050e11; --card: #060606; --head: #0b0d0e; --edge: #18252a; --alt: #080909; --text1: #a5cce2; --text2: #6c8c9b; --faint: #4f6873; --up: #4ade80; --down: #f87171; --accent: #e8702a; --hot: #170c06; --tip: #a5cce2; --tipfg: #050e11; --accentfg: #111111; }
+[data-theme="rivijera"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="rivijera"][data-scheme="dark"] body { background: radial-gradient(#101c20 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #050e11; background-attachment: fixed; }

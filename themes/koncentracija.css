@@ -1,0 +1,15 @@
+/* tema koncentracija (Concentration): generisana, tools/teme.py */
+:root[data-theme="koncentracija"] { color-scheme: dark; --back: #070b19; --card: #131724; --head: #1f2330; --edge: #2a2e3b; --alt: #191d2a; --text1: #e3e5ed; --text2: #acaeb8; --faint: #797c87; --up: #4ade80; --down: #f87171; --accent: #5065a4; --hot: #1c2236; --tip: #e3e5ed; --tipfg: #070b19; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="koncentracija"] :is(.overview .left, .block, .detail, .list) { background: rgba(19,23,36,0.6); border: 1px solid rgba(227,229,237,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="koncentracija"] .overview .left { align-self: start; }
+[data-theme="koncentracija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="koncentracija"] button { border-radius: 999px; background: transparent; }
+[data-theme="koncentracija"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="koncentracija"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="koncentracija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="koncentracija"] .big .value, [data-theme="koncentracija"] .detail .price { font-weight: 200; }
+[data-theme="koncentracija"] .chart .line { stroke-width: 2; }
+[data-theme="koncentracija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="koncentracija"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #ecedef; --edge: #cdced2; --alt: #f3f3f5; --text1: #171d30; --text2: #4d5260; --faint: #7f828d; --up: #15803d; --down: #c81e1e; --accent: #1e3a8a; --hot: #dbdfeb; --tip: #171d30; --tipfg: #f0f0f1; --accentfg: #ffffff; }
+[data-theme="koncentracija"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,250,251,0.6); border: 1px solid rgba(23,29,48,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }

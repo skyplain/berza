@@ -1,0 +1,18 @@
+/* tema oslo: generisana (paleta + oblik 6/1/2/5) */
+:root[data-theme="oslo"] { color-scheme: light; --back: #f4f6f8; --card: #ffffff; --head: #f2f2f3; --edge: #d2d5d9; --alt: #f8f9f9; --text1: #1e2a36; --text2: #5a636c; --faint: #899097; --up: #15803d; --down: #c81e1e; --accent: #ba0c2f; --hot: #f5dde2; --tip: #1e2a36; --tipfg: #f4f6f8; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 0px; }
+[data-theme="oslo"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="oslo"] .overview .left { align-self: start; }
+[data-theme="oslo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="oslo"] button { border-radius: 0; }
+[data-theme="oslo"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="oslo"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="oslo"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="oslo"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="oslo"] body { background: linear-gradient(180deg, #eedfe4, #f4f6f8 420px); background-color: #f4f6f8; background-attachment: fixed; }
+[data-theme="oslo"] .big .value, [data-theme="oslo"] .detail .price { font-weight: 700; }
+[data-theme="oslo"] .chart .line { stroke-width: 3; }
+[data-theme="oslo"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="oslo"][data-scheme="dark"] { color-scheme: dark; --back: #0a0b0c; --card: #060606; --head: #0d0d0d; --edge: #1f2124; --alt: #080909; --text1: #bdcddc; --text2: #7f8992; --faint: #5d656c; --up: #4ade80; --down: #f87171; --accent: #c11a35; --hot: #211115; --tip: #bdcddc; --tipfg: #0a0b0c; --accentfg: #ffffff; }
+[data-theme="oslo"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="oslo"][data-scheme="dark"] body { background: linear-gradient(180deg, #1d1317, #0a0b0c 420px); background-color: #0a0b0c; background-attachment: fixed; }

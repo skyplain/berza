@@ -1,0 +1,18 @@
+/* tema pikado (Darts): generisana, tools/teme.py */
+:root[data-theme="pikado"] { color-scheme: dark; --back: #100f0f; --card: #1c1b1b; --head: #292727; --edge: #343131; --alt: #222121; --text1: #f2e4e5; --text2: #baafb0; --faint: #867e7e; --up: #4ade80; --down: #f87171; --accent: #dc2626; --hot: #371d1d; --tip: #f2e4e5; --tipfg: #100f0f; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="pikado"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="pikado"] .overview .left { align-self: start; }
+[data-theme="pikado"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pikado"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pikado"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="pikado"] .bar button { background: transparent; color: var(--back); border-color: rgba(16,15,15,0.35); box-shadow: none; }
+[data-theme="pikado"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="pikado"] body { background: repeating-radial-gradient(circle at 85% 30%, rgba(220,38,38,0.12) 0 16px, transparent 16px 32px); background-color: #100f0f; background-attachment: fixed; }
+[data-theme="pikado"] .big .value, [data-theme="pikado"] .detail .price { font-weight: 900; }
+[data-theme="pikado"] .chart .line { stroke-width: 2.5; }
+[data-theme="pikado"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pikado"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efeeee; --edge: #d4cfcf; --alt: #f5f4f4; --text1: #391a1e; --text2: #675053; --faint: #918183; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f7dddd; --tip: #391a1e; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="pikado"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="pikado"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,241,241,0.35); box-shadow: none; }
+[data-theme="pikado"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 30%, rgba(220,38,38,0.12) 0 16px, transparent 16px 32px); background-color: #f1f1f1; background-attachment: fixed; }

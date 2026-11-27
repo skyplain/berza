@@ -1,0 +1,15 @@
+/* tema avalon (Avalon): generisana, tools/teme.py */
+:root[data-theme="avalon"] { color-scheme: light; --back: #f8f6ff; --card: #fdfcff; --head: #f1f0f4; --edge: #d8d6e1; --alt: #f7f6f9; --text1: #2f2c44; --text2: #615e73; --faint: #8f8d9e; --up: #15803d; --down: #c81e1e; --accent: #8e76d4; --hot: #ede9f9; --tip: #2f2c44; --tipfg: #f8f6ff; --accentfg: #111111; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 4px; }
+[data-theme="avalon"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="avalon"] .overview .left { align-self: start; }
+[data-theme="avalon"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="avalon"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="avalon"] .bar h1 { font-size: 24px; }
+[data-theme="avalon"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="avalon"] body { background: linear-gradient(0deg, rgba(47,44,68,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(47,44,68,0.08), transparent 70%); background-color: #f8f6ff; background-attachment: fixed; }
+[data-theme="avalon"] .big .value, [data-theme="avalon"] .detail .price { font-weight: 400; }
+[data-theme="avalon"] .chart .line { stroke-width: 3; }
+[data-theme="avalon"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="avalon"][data-scheme="dark"] { color-scheme: dark; --back: #232328; --card: #2e2e33; --head: #3a393f; --edge: #434349; --alt: #343439; --text1: #eeecf6; --text2: #bbbac2; --faint: #8d8c93; --up: #4ade80; --down: #f87171; --accent: #a78bfa; --hot: #3f3b4f; --tip: #eeecf6; --tipfg: #232328; --accentfg: #111111; }
+[data-theme="avalon"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(238,236,246,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(238,236,246,0.08), transparent 70%); background-color: #232328; background-attachment: fixed; }

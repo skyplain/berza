@@ -1,0 +1,14 @@
+/* tema visoka čitljivost (Readable): generisana, tools/teme.py */
+:root[data-theme="visokacitljivost"] { color-scheme: light; --back: #fffff8; --card: #fafbf7; --head: #eceeec; --edge: #dadbda; --alt: #f3f4f1; --text1: #16213e; --text2: #50586c; --faint: #868c97; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dbe3f3; --tip: #16213e; --tipfg: #fffff8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="visokacitljivost"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="visokacitljivost"] .overview .left { align-self: start; }
+[data-theme="visokacitljivost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="visokacitljivost"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="visokacitljivost"] .bar h1 { font-weight: 800; }
+[data-theme="visokacitljivost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="visokacitljivost"] .big .value, [data-theme="visokacitljivost"] .detail .price { font-weight: 900; }
+[data-theme="visokacitljivost"] .chart .line { stroke-width: 2; }
+[data-theme="visokacitljivost"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="visokacitljivost"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3e; --edge: #424348; --alt: #333538; --text1: #e3e7f4; --text2: #b3b6c1; --faint: #878992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #343a4b; --tip: #e3e7f4; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="visokacitljivost"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

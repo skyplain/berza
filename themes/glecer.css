@@ -1,0 +1,18 @@
+/* tema glečer: generisana (paleta + oblik 4/1/0/7) */
+:root[data-theme="glecer"] { color-scheme: light; --back: #f0f8fc; --card: #ffffff; --head: #f1f3f3; --edge: #ccd8de; --alt: #f8f9f9; --text1: #12303f; --text2: #506874; --faint: #81949e; --up: #15803d; --down: #c81e1e; --accent: #2f95c0; --hot: #e2f0f6; --tip: #12303f; --tipfg: #f0f8fc; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="glecer"] :is(.overview .left, .block, .detail, .list) { background: rgba(255,255,255,0.6); border: 1px solid rgba(18,48,63,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="glecer"] .overview .left { align-self: start; }
+[data-theme="glecer"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="glecer"] button { border-radius: 999px; background: transparent; }
+[data-theme="glecer"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="glecer"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="glecer"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="glecer"] body { background: conic-gradient(rgba(18,48,63,0.025) 25%, transparent 0 50%, rgba(18,48,63,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #f0f8fc; background-attachment: fixed; }
+[data-theme="glecer"] .big .value, [data-theme="glecer"] .detail .price { font-weight: 200; }
+[data-theme="glecer"] .chart .line { stroke-width: 1.5; }
+[data-theme="glecer"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="glecer"][data-scheme="dark"] { color-scheme: dark; --back: #060b0e; --card: #060606; --head: #0c0d0d; --edge: #192226; --alt: #080909; --text1: #aaccdf; --text2: #718a96; --faint: #536570; --up: #4ade80; --down: #f87171; --accent: #2f95c0; --hot: #081216; --tip: #aaccdf; --tipfg: #060b0e; --accentfg: #111111; }
+[data-theme="glecer"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(6,6,6,0.6); border: 1px solid rgba(170,204,223,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="glecer"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="glecer"][data-scheme="dark"] body { background: conic-gradient(rgba(170,204,223,0.025) 25%, transparent 0 50%, rgba(170,204,223,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #060b0e; background-attachment: fixed; }

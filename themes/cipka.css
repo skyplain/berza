@@ -1,0 +1,18 @@
+/* tema čipka (Lace): generisana, tools/teme.py */
+:root[data-theme="cipka"] { color-scheme: light; --back: #fff9fb; --card: #fdf4f8; --head: #f1e7eb; --edge: #ddd5d9; --alt: #f7edf2; --text1: #2d1725; --text2: #62505a; --faint: #92838c; --up: #15803d; --down: #c81e1e; --accent: #9d174d; --hot: #f0d5e0; --tip: #2d1725; --tipfg: #fff9fb; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="cipka"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="cipka"] .overview .left { align-self: start; }
+[data-theme="cipka"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cipka"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="cipka"] .bar h1 { font-size: 24px; }
+[data-theme="cipka"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="cipka"] body { background: radial-gradient(circle, transparent 3px, rgba(157,23,77,0.15) 4px 5px, transparent 6px) 0 0 / 16px 16px; background-color: #fff9fb; background-attachment: fixed; }
+[data-theme="cipka"] .bar { position: relative; }
+[data-theme="cipka"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -8px; height: 8px; background: radial-gradient(circle at 50% 0, rgba(157,23,77,0.5) 6px, transparent 7px) 0 0 / 14px 8px; }
+[data-theme="cipka"] .big .value, [data-theme="cipka"] .detail .price { font-weight: 400; }
+[data-theme="cipka"] .chart .line { stroke-width: 1.5; }
+[data-theme="cipka"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="cipka"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #434247; --alt: #343438; --text1: #ede2e8; --text2: #bab2b8; --faint: #8c878c; --up: #4ade80; --down: #f87171; --accent: #bc6084; --hot: #42363e; --tip: #ede2e8; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="cipka"][data-scheme="dark"] body { background: radial-gradient(circle, transparent 3px, rgba(188,96,132,0.15) 4px 5px, transparent 6px) 0 0 / 16px 16px; background-color: #232428; background-attachment: fixed; }
+[data-theme="cipka"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -8px; height: 8px; background: radial-gradient(circle at 50% 0, rgba(188,96,132,0.5) 6px, transparent 7px) 0 0 / 14px 8px; }

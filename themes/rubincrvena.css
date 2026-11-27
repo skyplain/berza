@@ -1,0 +1,23 @@
+/* tema rubin crvena (Ruby red): generisana, tools/teme.py */
+:root[data-theme="rubincrvena"] { color-scheme: dark; --back: #16030a; --card: #221016; --head: #2e1d23; --edge: #39272e; --alt: #28161c; --text1: #f2e3e8; --text2: #bbabb0; --faint: #88777d; --up: #4ade80; --down: #f87171; --accent: #e11d48; --hot: #3d121d; --tip: #f2e3e8; --tipfg: #16030a; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="rubincrvena"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="rubincrvena"] .overview .left { align-self: start; }
+[data-theme="rubincrvena"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rubincrvena"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="rubincrvena"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="rubincrvena"] .bar button { background: transparent; color: var(--back); border-color: rgba(22,3,10,0.35); box-shadow: none; }
+[data-theme="rubincrvena"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="rubincrvena"] body { background: linear-gradient(180deg, rgba(225,29,72,0.1), transparent 380px); background-color: #16030a; background-attachment: fixed; }
+[data-theme="rubincrvena"] :is(.overview .left, .block, .detail, .list) { background: #2c1118; border-color: rgba(225,29,72,0.35); }
+[data-theme="rubincrvena"] .chart .line { stroke: #e11d48 !important; }
+[data-theme="rubincrvena"] .chart .area { fill: #e11d48 !important; }
+[data-theme="rubincrvena"] .chart .vol { fill: #e11d48; }
+[data-theme="rubincrvena"] :is(h2, h3, .big .label) { color: #e11d48; }
+[data-theme="rubincrvena"] .big .value, [data-theme="rubincrvena"] .detail .price { font-weight: 200; }
+[data-theme="rubincrvena"] .chart .line { stroke-width: 3; }
+[data-theme="rubincrvena"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="rubincrvena"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeced; --edge: #d4cdcf; --alt: #f5f3f4; --text1: #3a1824; --text2: #684e57; --faint: #928086; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #f7dbe1; --tip: #3a1824; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="rubincrvena"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }
+[data-theme="rubincrvena"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(225,29,72,0.1), transparent 380px); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="rubincrvena"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #faeff1; border-color: rgba(225,29,72,0.35); }

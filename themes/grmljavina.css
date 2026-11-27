@@ -1,0 +1,18 @@
+/* tema grmljavina (Thunder): generisana, tools/teme.py */
+:root[data-theme="grmljavina"] { color-scheme: dark; --back: #0f1115; --card: #1b1d21; --head: #282a2d; --edge: #343536; --alt: #222327; --text1: #f4f1e4; --text2: #bbb9b0; --faint: #868581; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #3a361f; --tip: #f4f1e4; --tipfg: #0f1115; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 0px; }
+[data-theme="grmljavina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="grmljavina"] .overview .left { align-self: start; }
+[data-theme="grmljavina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="grmljavina"] button { border-radius: 999px; }
+[data-theme="grmljavina"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="grmljavina"] .bar h1::after { content: " ↯"; color: #facc15; }
+[data-theme="grmljavina"] .bar { position: relative; }
+[data-theme="grmljavina"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="grmljavina"] .big .value, [data-theme="grmljavina"] .detail .price { font-weight: 900; }
+[data-theme="grmljavina"] .chart .line { stroke-width: 2.5; }
+[data-theme="grmljavina"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="grmljavina"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #f0efee; --edge: #d4d3cf; --alt: #f5f5f4; --text1: #3e381b; --text2: #6b6650; --faint: #8d8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ede9da; --tip: #3e381b; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="grmljavina"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="grmljavina"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #987b0d; }
+[data-theme="grmljavina"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px; }

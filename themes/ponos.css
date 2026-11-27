@@ -1,0 +1,19 @@
+/* tema ponos (Pride): generisana, tools/teme.py */
+:root[data-theme="ponos"] { color-scheme: dark; --back: #130f04; --card: #1f1b11; --head: #2c281e; --edge: #373228; --alt: #252117; --text1: #f1ece3; --text2: #bab5ab; --faint: #868278; --up: #4ade80; --down: #f87171; --accent: #ca8a04; --hot: #372b0f; --tip: #f1ece3; --tipfg: #130f04; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="ponos"] :is(.overview .left, .block, .detail, .list) { background: rgba(31,27,17,0.6); border: 1px solid rgba(241,236,227,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="ponos"] .overview .left { align-self: start; }
+[data-theme="ponos"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ponos"] button { border-radius: 999px; background: transparent; }
+[data-theme="ponos"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ponos"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ponos"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="ponos"] .big .value { text-shadow: 0 0 18px rgba(202,138,4,0.55); }
+[data-theme="ponos"] .chart .line { filter: drop-shadow(0 0 5px rgba(202,138,4,0.7)); }
+[data-theme="ponos"] .big .value, [data-theme="ponos"] .detail .price { font-weight: 200; }
+[data-theme="ponos"] .chart .line { stroke-width: 3; }
+[data-theme="ponos"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ponos"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #efefec; --edge: #d3d1cd; --alt: #f5f5f3; --text1: #362c18; --text2: #655d4e; --faint: #908b80; --up: #15803d; --down: #c81e1e; --accent: #ab7504; --hot: #f0e8d8; --tip: #362c18; --tipfg: #f1f1f0; --accentfg: #111111; }
+[data-theme="ponos"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,251,250,0.6); border: 1px solid rgba(54,44,24,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="ponos"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(171,117,4,0.55); }
+[data-theme="ponos"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(171,117,4,0.7)); }

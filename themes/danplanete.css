@@ -1,0 +1,17 @@
+/* tema dan planete (Earth Day): generisana, tools/teme.py */
+:root[data-theme="danplanete"] { color-scheme: light; --back: #f1fbf3; --card: #fbfefb; --head: #edf2ee; --edge: #cedbd2; --alt: #f4f8f5; --text1: #153024; --text2: #4c6358; --faint: #7f9187; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #dbefe1; --tip: #153024; --tipfg: #f1fbf3; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="danplanete"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="danplanete"] .overview .left { align-self: start; }
+[data-theme="danplanete"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="danplanete"] button { border-radius: 999px; }
+[data-theme="danplanete"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="danplanete"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="danplanete"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="danplanete"] body { background: radial-gradient(ellipse 8px 18px, rgba(20,150,68,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(20,150,68,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f1fbf3; background-attachment: fixed; }
+[data-theme="danplanete"] .big .value, [data-theme="danplanete"] .detail .price { font-weight: 200; }
+[data-theme="danplanete"] .chart .line { stroke-width: 1.5; }
+[data-theme="danplanete"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="danplanete"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414446; --alt: #323537; --text1: #e2eee8; --text2: #b2bcb8; --faint: #868d8b; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #2a3f35; --tip: #e2eee8; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="danplanete"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="danplanete"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(22,163,74,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(22,163,74,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222427; background-attachment: fixed; }

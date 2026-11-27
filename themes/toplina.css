@@ -1,0 +1,18 @@
+/* tema toplina (Warmth): generisana, tools/teme.py */
+:root[data-theme="toplina"] { color-scheme: light; --back: #fef3e9; --card: #fffbf8; --head: #f3eeeb; --edge: #dfd2c8; --alt: #f9f5f1; --text1: #3b2319; --text2: #6c574d; --faint: #99877d; --up: #15803d; --down: #c81e1e; --accent: #ea580c; --hot: #fce4d7; --tip: #3b2319; --tipfg: #fef3e9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="toplina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="toplina"] .overview .left { align-self: start; }
+[data-theme="toplina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="toplina"] button { border-radius: 999px; }
+[data-theme="toplina"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="toplina"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="toplina"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="toplina"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="toplina"] body { background: linear-gradient(0deg, rgba(234,88,12,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(234,88,12,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #fef3e9; background-attachment: fixed; }
+[data-theme="toplina"] .big .value, [data-theme="toplina"] .detail .price { font-weight: 400; }
+[data-theme="toplina"] .chart .line { stroke-width: 3; }
+[data-theme="toplina"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="toplina"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444344; --alt: #343436; --text1: #f3e8e3; --text2: #bfb7b4; --faint: #8f8988; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #48342c; --tip: #f3e8e3; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="toplina"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="toplina"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(234,88,12,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(234,88,12,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #232326; background-attachment: fixed; }

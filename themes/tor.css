@@ -1,0 +1,24 @@
+/* tema tor (Thor): generisana, tools/teme.py */
+:root[data-theme="tor"] { color-scheme: dark; --back: #0e1018; --card: #1a1c24; --head: #272930; --edge: #333439; --alt: #21222a; --text1: #f4f1e4; --text2: #bab9b1; --faint: #868582; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #393522; --tip: #f4f1e4; --tipfg: #0e1018; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="tor"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="tor"] .overview .left { align-self: start; }
+[data-theme="tor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tor"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="tor"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="tor"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="tor"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tor"] .bar h1::after { content: " ↯"; color: #facc15; }
+[data-theme="tor"] .bar { position: relative; }
+[data-theme="tor"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="tor"] .bar h1::before { content: "ᛟ "; color: #facc15; }
+[data-theme="tor"] :is(h2, h3)::before { content: "ᚠ "; color: #facc15; }
+[data-theme="tor"] .block:nth-child(even) h2::before { content: "ᚱ "; }
+[data-theme="tor"] .big .value, [data-theme="tor"] .detail .price { font-weight: 400; }
+[data-theme="tor"] .chart .line { stroke-width: 1.5; }
+[data-theme="tor"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tor"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #f0efee; --edge: #d4d3cf; --alt: #f5f5f4; --text1: #3e381b; --text2: #6b6650; --faint: #8d8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ede9da; --tip: #3e381b; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="tor"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #987b0d; }
+[data-theme="tor"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="tor"][data-scheme="light"] .bar h1::before { content: "ᛟ "; color: #987b0d; }
+[data-theme="tor"][data-scheme="light"] :is(h2, h3)::before { content: "ᚠ "; color: #987b0d; }

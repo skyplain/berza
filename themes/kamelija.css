@@ -1,0 +1,15 @@
+/* tema kamelija (Camellia): generisana, tools/teme.py */
+:root[data-theme="kamelija"] { color-scheme: dark; --back: #1a0a0f; --card: #25161b; --head: #312227; --edge: #3c2d32; --alt: #2b1c21; --text1: #f0e2e7; --text2: #baacb1; --faint: #897a7f; --up: #4ade80; --down: #f87171; --accent: #c3254c; --hot: #3b1822; --tip: #f0e2e7; --tipfg: #1a0a0f; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="kamelija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="kamelija"] .overview .left { align-self: start; }
+[data-theme="kamelija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kamelija"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="kamelija"] .bar h1 { font-size: 24px; }
+[data-theme="kamelija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kamelija"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(195,37,76,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(60,190,18,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #1a0a0f; background-attachment: fixed; }
+[data-theme="kamelija"] .big .value, [data-theme="kamelija"] .detail .price { font-weight: 700; }
+[data-theme="kamelija"] .chart .line { stroke-width: 2; }
+[data-theme="kamelija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kamelija"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #efecee; --edge: #d3cdd0; --alt: #f5f3f4; --text1: #331622; --text2: #624c56; --faint: #8e7f85; --up: #15803d; --down: #c81e1e; --accent: #be123c; --hot: #f2dae0; --tip: #331622; --tipfg: #f1f0f1; --accentfg: #ffffff; }
+[data-theme="kamelija"][data-scheme="light"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(190,18,60,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(60,190,18,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #f1f0f1; background-attachment: fixed; }

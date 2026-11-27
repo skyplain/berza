@@ -1,0 +1,17 @@
+/* tema sudoku (Sudoku): generisana, tools/teme.py */
+:root[data-theme="sudoku"] { color-scheme: light; --back: #fafafb; --card: #f6f6f8; --head: #e9e9eb; --edge: #d6d7d9; --alt: #eff0f2; --text1: #1a1f26; --text2: #52565b; --faint: #86888c; --up: #15803d; --down: #c81e1e; --accent: #334155; --hot: #dbdde1; --tip: #1a1f26; --tipfg: #fafafb; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="sudoku"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="sudoku"] .overview .left { align-self: start; }
+[data-theme="sudoku"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sudoku"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sudoku"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="sudoku"] .bar button { background: transparent; color: var(--back); border-color: rgba(250,250,251,0.35); box-shadow: none; }
+[data-theme="sudoku"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sudoku"] body { background: linear-gradient(rgba(51,65,85,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(51,65,85,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(51,65,85,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(51,65,85,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #fafafb; background-attachment: fixed; }
+[data-theme="sudoku"] .big .value, [data-theme="sudoku"] .detail .price { font-weight: 900; }
+[data-theme="sudoku"] .chart .line { stroke-width: 2; }
+[data-theme="sudoku"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sudoku"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424347; --alt: #333438; --text1: #e5e6e9; --text2: #b4b6b9; --faint: #88898c; --up: #4ade80; --down: #f87171; --accent: #798290; --hot: #383b40; --tip: #e5e6e9; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="sudoku"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="sudoku"][data-scheme="dark"] body { background: linear-gradient(rgba(121,130,144,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(121,130,144,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(121,130,144,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(121,130,144,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #232428; background-attachment: fixed; }

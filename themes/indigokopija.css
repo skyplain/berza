@@ -1,0 +1,13 @@
+/* tema indigo kopija (Carbon copy): generisana, tools/teme.py */
+:root[data-theme="indigokopija"] { color-scheme: light; --back: #eef0fa; --card: #fafafe; --head: #ecedf2; --edge: #ccceda; --alt: #f3f3f8; --text1: #191d30; --text2: #4e5262; --faint: #7f8291; --up: #15803d; --down: #c81e1e; --accent: #2b3a8c; --hot: #dddfee; --tip: #191d30; --tipfg: #eef0fa; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 8px; }
+[data-theme="indigokopija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="indigokopija"] .overview .left { align-self: start; }
+[data-theme="indigokopija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="indigokopija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="indigokopija"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(43,58,140,0.55), -2px -1px 0 rgba(140,43,58,0.45); }
+[data-theme="indigokopija"] .big .value, [data-theme="indigokopija"] .detail .price { font-weight: 200; }
+[data-theme="indigokopija"] .chart .line { stroke-width: 1.5; }
+[data-theme="indigokopija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="indigokopija"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414247; --alt: #323338; --text1: #e4e5ee; --text2: #b4b4bc; --faint: #87888e; --up: #4ade80; --down: #f87171; --accent: #737cb3; --hot: #373944; --tip: #e4e5ee; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="indigokopija"][data-scheme="dark"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(115,124,179,0.55), -2px -1px 0 rgba(140,43,58,0.45); }

@@ -1,0 +1,17 @@
+/* tema strast (Passion): generisana, tools/teme.py */
+:root[data-theme="strast"] { color-scheme: dark; --back: #1a040b; --card: #251117; --head: #311e23; --edge: #3c282e; --alt: #2b171d; --text1: #f0e2e7; --text2: #baaab0; --faint: #89777d; --up: #4ade80; --down: #f87171; --accent: #c3254c; --hot: #3b141e; --tip: #f0e2e7; --tipfg: #1a040b; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="strast"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="strast"] .overview .left { align-self: start; }
+[data-theme="strast"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="strast"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="strast"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="strast"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="strast"] .big .value { text-shadow: 0 0 18px rgba(195,37,76,0.55); }
+[data-theme="strast"] .chart .line { filter: drop-shadow(0 0 5px rgba(195,37,76,0.7)); }
+[data-theme="strast"] .big .value, [data-theme="strast"] .detail .price { font-weight: 900; }
+[data-theme="strast"] .chart .line { stroke-width: 1.5; }
+[data-theme="strast"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="strast"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeced; --edge: #d3cdcf; --alt: #f5f3f4; --text1: #331622; --text2: #624c56; --faint: #8e7f85; --up: #15803d; --down: #c81e1e; --accent: #be123c; --hot: #f2dadf; --tip: #331622; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="strast"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(190,18,60,0.55); }
+[data-theme="strast"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(190,18,60,0.7)); }

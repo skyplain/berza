@@ -1,0 +1,26 @@
+/* tema žuta (Yellow): generisana, tools/teme.py */
+:root[data-theme="zuta"] { color-scheme: light; --back: #fff9d6; --card: #fffdf3; --head: #f3f0e6; --edge: #dfd8b8; --alt: #f9f7ec; --text1: #362c18; --text2: #685f48; --faint: #968e73; --up: #15803d; --down: #c81e1e; --accent: #ba7f04; --hot: #f5ebd2; --tip: #362c18; --tipfg: #fff9d6; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="zuta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zuta"] .overview .left { align-self: start; }
+[data-theme="zuta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zuta"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="zuta"] .bar h1 { font-weight: 800; }
+[data-theme="zuta"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="zuta"] body { background: linear-gradient(180deg, rgba(186,127,4,0.1), transparent 380px); background-color: #fff9d6; background-attachment: fixed; }
+[data-theme="zuta"] :is(.overview .left, .block, .detail, .list) { background: #fcf7e7; border-color: rgba(186,127,4,0.35); }
+[data-theme="zuta"] .chart .line { stroke: #ba7f04 !important; }
+[data-theme="zuta"] .chart .area { fill: #ba7f04 !important; }
+[data-theme="zuta"] .chart .vol { fill: #ba7f04; }
+[data-theme="zuta"] :is(h2, h3, .big .label) { color: #ba7f04; }
+[data-theme="zuta"] .big .value, [data-theme="zuta"] .detail .price { font-weight: 200; }
+[data-theme="zuta"] .chart .line { stroke-width: 2; }
+[data-theme="zuta"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zuta"][data-scheme="dark"] { color-scheme: dark; --back: #232424; --card: #2e2f2f; --head: #3a3a3a; --edge: #444443; --alt: #343534; --text1: #f1ece3; --text2: #bebab3; --faint: #8e8c87; --up: #4ade80; --down: #f87171; --accent: #ca8a04; --hot: #443c29; --tip: #f1ece3; --tipfg: #232424; --accentfg: #111111; }
+[data-theme="zuta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zuta"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(202,138,4,0.1), transparent 380px); background-color: #232424; background-attachment: fixed; }
+[data-theme="zuta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #36342d; border-color: rgba(202,138,4,0.35); }
+[data-theme="zuta"][data-scheme="dark"] .chart .line { stroke: #ca8a04 !important; }
+[data-theme="zuta"][data-scheme="dark"] .chart .area { fill: #ca8a04 !important; }
+[data-theme="zuta"][data-scheme="dark"] .chart .vol { fill: #ca8a04; }
+[data-theme="zuta"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #ca8a04; }

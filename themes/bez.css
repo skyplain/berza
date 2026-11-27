@@ -1,0 +1,28 @@
+/* tema bež (Beige): generisana, tools/teme.py */
+:root[data-theme="bez"] { color-scheme: light; --back: #f6efe2; --card: #fcfaf6; --head: #f0eeea; --edge: #d6d0c4; --alt: #f6f4f0; --text1: #2f2b28; --text2: #615c56; --faint: #8f8981; --up: #15803d; --down: #c81e1e; --accent: #9b7c56; --hot: #eee8e0; --tip: #2f2b28; --tipfg: #f6efe2; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="bez"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bez"] .overview .left { align-self: start; }
+[data-theme="bez"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bez"] button { border-radius: 999px; }
+[data-theme="bez"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bez"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="bez"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="bez"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bez"] body { background: linear-gradient(180deg, rgba(155,124,86,0.1), transparent 380px); background-color: #f6efe2; background-attachment: fixed; }
+[data-theme="bez"] :is(.overview .left, .block, .detail, .list) { background: #f8f4ee; border-color: rgba(155,124,86,0.35); }
+[data-theme="bez"] .chart .line { stroke: #9b7c56 !important; }
+[data-theme="bez"] .chart .area { fill: #9b7c56 !important; }
+[data-theme="bez"] .chart .vol { fill: #9b7c56; }
+[data-theme="bez"] :is(h2, h3, .big .label) { color: #9b7c56; }
+[data-theme="bez"] .big .value, [data-theme="bez"] .detail .price { font-weight: 700; }
+[data-theme="bez"] .chart .line { stroke-width: 3; }
+[data-theme="bez"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bez"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #39393b; --edge: #434345; --alt: #333436; --text1: #eeebea; --text2: #bbb9b9; --faint: #8c8b8b; --up: #4ade80; --down: #f87171; --accent: #a8875e; --hot: #3e3a36; --tip: #eeebea; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="bez"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bez"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(168,135,94,0.1), transparent 380px); background-color: #222325; background-attachment: fixed; }
+[data-theme="bez"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #333232; border-color: rgba(168,135,94,0.35); }
+[data-theme="bez"][data-scheme="dark"] .chart .line { stroke: #a8875e !important; }
+[data-theme="bez"][data-scheme="dark"] .chart .area { fill: #a8875e !important; }
+[data-theme="bez"][data-scheme="dark"] .chart .vol { fill: #a8875e; }
+[data-theme="bez"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #a8875e; }

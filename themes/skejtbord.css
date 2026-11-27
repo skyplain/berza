@@ -1,0 +1,18 @@
+/* tema skejtbord (Skateboarding): generisana, tools/teme.py */
+:root[data-theme="skejtbord"] { color-scheme: light; --back: #f1f1ef; --card: #fbfbfa; --head: #f0eeed; --edge: #d4cfcf; --alt: #f5f4f4; --text1: #3d1e28; --text2: #6a535a; --faint: #938388; --up: #15803d; --down: #c81e1e; --accent: #f43f5e; --hot: #fae1e4; --tip: #3d1e28; --tipfg: #f1f1ef; --accentfg: #111111; --font: "Marker Felt", "Segoe Print", "Comic Sans MS", cursive; --radius: 4px; }
+[data-theme="skejtbord"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="skejtbord"] .overview .left { align-self: start; }
+[data-theme="skejtbord"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="skejtbord"] button { border-radius: 999px; }
+[data-theme="skejtbord"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="skejtbord"] .bar h1 { font-weight: 800; }
+[data-theme="skejtbord"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="skejtbord"] body { background: radial-gradient(160px 120px at 20% 30%, rgba(244,63,94,0.22), transparent 70%), radial-gradient(200px 140px at 80% 70%, rgba(94,244,63,0.2), transparent 70%), radial-gradient(120px 90px at 60% 15%, rgba(63,94,244,0.2), transparent 70%); background-color: #f1f1ef; background-attachment: fixed; }
+[data-theme="skejtbord"] .bar h1 { text-shadow: 0 0 6px rgba(244,63,94,0.8); }
+[data-theme="skejtbord"] .big .value, [data-theme="skejtbord"] .detail .price { font-weight: 900; }
+[data-theme="skejtbord"] .chart .line { stroke-width: 2.5; }
+[data-theme="skejtbord"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="skejtbord"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #444245; --alt: #333437; --text1: #f4e6ea; --text2: #c0b5b9; --faint: #8f888c; --up: #4ade80; --down: #f87171; --accent: #f43f5e; --hot: #493037; --tip: #f4e6ea; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="skejtbord"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="skejtbord"][data-scheme="dark"] body { background: radial-gradient(160px 120px at 20% 30%, rgba(244,63,94,0.22), transparent 70%), radial-gradient(200px 140px at 80% 70%, rgba(94,244,63,0.2), transparent 70%), radial-gradient(120px 90px at 60% 15%, rgba(63,94,244,0.2), transparent 70%); background-color: #222326; background-attachment: fixed; }

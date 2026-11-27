@@ -1,0 +1,14 @@
+/* tema vilinski krug (Fairy ring): generisana, tools/teme.py */
+:root[data-theme="vilinskikrug"] { color-scheme: dark; --back: #0b1508; --card: #172114; --head: #242d20; --edge: #2f382b; --alt: #1d271a; --text1: #e9eee3; --text2: #b2b8ac; --faint: #7e867a; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #223313; --tip: #e9eee3; --tipfg: #0b1508; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="vilinskikrug"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vilinskikrug"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="vilinskikrug"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="vilinskikrug"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="vilinskikrug"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="vilinskikrug"] body { background: radial-gradient(circle at 50% 60%, rgba(101,163,13,0.28) 6px, transparent 7px) 0 0 / 70px 60px, radial-gradient(circle, rgba(233,238,227,0.5) 1px, transparent 1.5px) 33px 34px / 70px 60px; background-color: #0b1508; background-attachment: fixed; }
+[data-theme="vilinskikrug"] .big .value, [data-theme="vilinskikrug"] .detail .price { font-weight: 400; }
+[data-theme="vilinskikrug"] .chart .line { stroke-width: 2; }
+[data-theme="vilinskikrug"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="vilinskikrug"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #edefec; --edge: #cfd2ce; --alt: #f4f5f3; --text1: #233019; --text2: #56604f; --faint: #858d80; --up: #15803d; --down: #c81e1e; --accent: #568a0b; --hot: #e3ebd9; --tip: #233019; --tipfg: #f0f1f0; --accentfg: #111111; }
+[data-theme="vilinskikrug"][data-scheme="light"] body { background: radial-gradient(circle at 50% 60%, rgba(86,138,11,0.28) 6px, transparent 7px) 0 0 / 70px 60px, radial-gradient(circle, rgba(35,48,25,0.5) 1px, transparent 1.5px) 33px 34px / 70px 60px; background-color: #f0f1f0; background-attachment: fixed; }

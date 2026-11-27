@@ -1,0 +1,22 @@
+/* tema e-papir: sivi ekran čitača knjiga, bez boja, rast i pad oblikom */
+:root[data-theme="epapir"] { color-scheme: light; --back: #e8e6e0; --card: #eeece6; --head: #dddbd4; --edge: #9a978f; --alt: #e2e0d9; --text1: #111; --text2: #333; --faint: #666; --up: #111; --down: #111; --accent: #111; --hot: #d2d0c8; --tip: #111; --tipfg: #e8e6e0; --accentfg: #e8e6e0; --font: "Iowan Old Style","Bookerly",Georgia,serif; --radius: 0; --h-color: #111; --h-transform: uppercase; --h-spacing: .1em; --h-size: 12px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="epapir"] * { transition:none!important;animation:none!important }
+[data-theme="epapir"] .bar { border-bottom:2px solid #111 }
+[data-theme="epapir"] button { background:transparent;border:1px solid #111 }
+[data-theme="epapir"] .chg.down { text-decoration:underline }
+[data-theme="epapir"] .chg.up { font-weight:700 }
+[data-theme="epapir"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="epapir"] tbody tr { border-bottom:1px solid #c9c6be }
+[data-theme="epapir"] .chart .line { stroke:#111!important;stroke-width:1.5 }
+[data-theme="epapir"] .chart .area { fill:#111!important;opacity:.07 }
+[data-theme="epapir"] .chart .vol { fill:#555 }
+[data-theme="epapir"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="epapir"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="epapir"][data-scheme="dark"] { color-scheme: dark; --back: #161511; --card: #12110d; --head: #1e1d18; --edge: #56534c; --alt: #1b1914; --text1: #ececec; --text2: #bdbdbd; --faint: #838383; --up: #4ade80; --down: #f87171; --accent: #686868; --hot: #26251f; --tip: #686868; --tipfg: #ececec; --accentfg: #ffffff; --h-color: #686868; }
+[data-theme="epapir"][data-scheme="dark"] .bar { border-bottom:2px solid #686868 }
+[data-theme="epapir"][data-scheme="dark"] button { background:transparent;border:1px solid #686868 }
+[data-theme="epapir"][data-scheme="dark"] tbody tr { border-bottom:1px solid #2e2c26 }
+[data-theme="epapir"][data-scheme="dark"] .chart .line { stroke:#686868!important;stroke-width:1.5 }
+[data-theme="epapir"][data-scheme="dark"] .chart .area { fill:#686868!important;opacity:.07 }
+[data-theme="epapir"][data-scheme="dark"] .chart .vol { fill:#959595 }

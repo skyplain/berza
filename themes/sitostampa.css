@@ -1,0 +1,17 @@
+/* tema sitoštampa (Screen print): generisana, tools/teme.py */
+:root[data-theme="sitostampa"] { color-scheme: light; --back: #f8f1e3; --card: #fdfbf7; --head: #f2eeea; --edge: #dad0c2; --alt: #f7f4f0; --text1: #3f2117; --text2: #6d554a; --faint: #988579; --up: #15803d; --down: #c81e1e; --accent: #eb4900; --hot: #fae2d4; --tip: #3f2117; --tipfg: #f8f1e3; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 10px; }
+[data-theme="sitostampa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sitostampa"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="sitostampa"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sitostampa"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="sitostampa"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="sitostampa"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="sitostampa"] body { background: radial-gradient(rgba(235,73,0,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #f8f1e3; background-attachment: fixed; }
+[data-theme="sitostampa"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(235,73,0,0.55), -2px -1px 0 rgba(0,255,79,0.45); }
+[data-theme="sitostampa"] .big .value, [data-theme="sitostampa"] .detail .price { font-weight: 200; }
+[data-theme="sitostampa"] .chart .line { stroke-width: 2.5; }
+[data-theme="sitostampa"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sitostampa"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #454243; --alt: #343435; --text1: #f5e7e2; --text2: #c0b6b3; --faint: #908987; --up: #4ade80; --down: #f87171; --accent: #ff4f00; --hot: #4b3329; --tip: #f5e7e2; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="sitostampa"][data-scheme="dark"] body { background: radial-gradient(rgba(255,79,0,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #232325; background-attachment: fixed; }
+[data-theme="sitostampa"][data-scheme="dark"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(255,79,0,0.55), -2px -1px 0 rgba(0,255,79,0.45); }

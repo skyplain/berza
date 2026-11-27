@@ -1,0 +1,16 @@
+/* tema ada ciganlija (Ada Ciganlija): generisana, tools/teme.py */
+:root[data-theme="adaciganlija"] { color-scheme: light; --back: #effaf9; --card: #fafefd; --head: #ecf1f1; --edge: #ccd9da; --alt: #f3f8f7; --text1: #132d37; --text2: #4a6068; --faint: #7d8f94; --up: #15803d; --down: #c81e1e; --accent: #0891b2; --hot: #d8eff2; --tip: #132d37; --tipfg: #effaf9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="adaciganlija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="adaciganlija"] .overview .left { align-self: start; }
+[data-theme="adaciganlija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="adaciganlija"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="adaciganlija"] .bar h1 { font-weight: 800; }
+[data-theme="adaciganlija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="adaciganlija"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(8,145,178,0.14) 9px 10px, transparent 11px 16px, rgba(8,145,178,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #effaf9; background-attachment: fixed; }
+[data-theme="adaciganlija"] .big .value, [data-theme="adaciganlija"] .detail .price { font-weight: 700; }
+[data-theme="adaciganlija"] .chart .line { stroke-width: 2; }
+[data-theme="adaciganlija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="adaciganlija"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414447; --alt: #323538; --text1: #e1ecf1; --text2: #b1babe; --faint: #858c90; --up: #4ade80; --down: #f87171; --accent: #0891b2; --hot: #283d44; --tip: #e1ecf1; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="adaciganlija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="adaciganlija"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(8,145,178,0.14) 9px 10px, transparent 11px 16px, rgba(8,145,178,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222427; background-attachment: fixed; }

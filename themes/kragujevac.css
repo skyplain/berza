@@ -1,0 +1,17 @@
+/* tema kragujevac (Kragujevac): generisana, tools/teme.py */
+:root[data-theme="kragujevac"] { color-scheme: light; --back: #f3f5f9; --card: #fbfcfd; --head: #edeff1; --edge: #d0d2d9; --alt: #f4f5f7; --text1: #171d30; --text2: #4e5362; --faint: #818590; --up: #15803d; --down: #c81e1e; --accent: #1e3a8a; --hot: #dce1ed; --tip: #171d30; --tipfg: #f3f5f9; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="kragujevac"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kragujevac"] .overview .left { align-self: start; }
+[data-theme="kragujevac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kragujevac"] button { border-radius: 999px; }
+[data-theme="kragujevac"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kragujevac"] .bar h1 { font-weight: 800; }
+[data-theme="kragujevac"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kragujevac"] body { background: linear-gradient(rgba(23,29,48,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(23,29,48,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f3f5f9; background-attachment: fixed; }
+[data-theme="kragujevac"] .big .value, [data-theme="kragujevac"] .detail .price { font-weight: 700; }
+[data-theme="kragujevac"] .chart .line { stroke-width: 3; }
+[data-theme="kragujevac"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kragujevac"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414247; --alt: #323338; --text1: #e3e5ed; --text2: #b3b4bc; --faint: #86888e; --up: #4ade80; --down: #f87171; --accent: #6b7cb2; --hot: #363944; --tip: #e3e5ed; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="kragujevac"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kragujevac"][data-scheme="dark"] body { background: linear-gradient(rgba(227,229,237,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(227,229,237,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #222327; background-attachment: fixed; }

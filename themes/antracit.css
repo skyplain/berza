@@ -1,0 +1,28 @@
+/* tema antracit (Anthracite): generisana, tools/teme.py */
+:root[data-theme="antracit"] { color-scheme: dark; --back: #1d2024; --card: #282b2f; --head: #34373b; --edge: #3e4145; --alt: #2e3135; --text1: #edeef0; --text2: #b9babd; --faint: #898b8e; --up: #4ade80; --down: #f87171; --accent: #9ca3af; --hot: #383c41; --tip: #edeef0; --tipfg: #1d2024; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="antracit"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="antracit"] .overview .left { align-self: start; }
+[data-theme="antracit"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="antracit"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="antracit"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="antracit"] .bar button { background: transparent; color: var(--back); border-color: rgba(29,32,36,0.35); box-shadow: none; }
+[data-theme="antracit"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="antracit"] body { background: linear-gradient(180deg, rgba(156,163,175,0.1), transparent 380px); background-color: #1d2024; background-attachment: fixed; }
+[data-theme="antracit"] :is(.overview .left, .block, .detail, .list) { background: #2e3135; border-color: rgba(156,163,175,0.35); }
+[data-theme="antracit"] .chart .line { stroke: #9ca3af !important; }
+[data-theme="antracit"] .chart .area { fill: #9ca3af !important; }
+[data-theme="antracit"] .chart .vol { fill: #9ca3af; }
+[data-theme="antracit"] :is(h2, h3, .big .label) { color: #9ca3af; }
+[data-theme="antracit"] .big .value, [data-theme="antracit"] .detail .price { font-weight: 200; }
+[data-theme="antracit"] .chart .line { stroke-width: 3; }
+[data-theme="antracit"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="antracit"][data-scheme="light"] { color-scheme: light; --back: #f1f2f2; --card: #fbfbfb; --head: #efefef; --edge: #d2d3d4; --alt: #f5f5f5; --text1: #2d3036; --text2: #5e6065; --faint: #838689; --up: #15803d; --down: #c81e1e; --accent: #797f88; --hot: #e9eaeb; --tip: #2d3036; --tipfg: #f1f2f2; --accentfg: #111111; }
+[data-theme="antracit"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="antracit"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,242,242,0.35); box-shadow: none; }
+[data-theme="antracit"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(121,127,136,0.1), transparent 380px); background-color: #f1f2f2; background-attachment: fixed; }
+[data-theme="antracit"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #f6f7f7; border-color: rgba(121,127,136,0.35); }
+[data-theme="antracit"][data-scheme="light"] .chart .line { stroke: #797f88 !important; }
+[data-theme="antracit"][data-scheme="light"] .chart .area { fill: #797f88 !important; }
+[data-theme="antracit"][data-scheme="light"] .chart .vol { fill: #797f88; }
+[data-theme="antracit"][data-scheme="light"] :is(h2, h3, .big .label) { color: #797f88; }

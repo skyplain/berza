@@ -1,0 +1,18 @@
+/* tema zevs (Zeus): generisana, tools/teme.py */
+:root[data-theme="zevs"] { color-scheme: dark; --back: #0c1020; --card: #181c2b; --head: #252936; --edge: #31343f; --alt: #1f2231; --text1: #f4f1e4; --text2: #bab9b3; --faint: #858586; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #383528; --tip: #f4f1e4; --tipfg: #0c1020; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="zevs"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="zevs"] .overview .left { align-self: start; }
+[data-theme="zevs"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zevs"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="zevs"] .bar h1 { font-size: 24px; }
+[data-theme="zevs"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="zevs"] .bar h1::after { content: " ↯"; color: #facc15; }
+[data-theme="zevs"] .bar { position: relative; }
+[data-theme="zevs"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="zevs"] .big .value, [data-theme="zevs"] .detail .price { font-weight: 900; }
+[data-theme="zevs"] .chart .line { stroke-width: 2.5; }
+[data-theme="zevs"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zevs"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #efefee; --edge: #d4d3d0; --alt: #f4f5f4; --text1: #3e381b; --text2: #6a6651; --faint: #8c8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ece9da; --tip: #3e381b; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="zevs"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #987b0d; }
+[data-theme="zevs"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px; }

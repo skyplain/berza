@@ -1,0 +1,17 @@
+/* tema tajga (Taiga): generisana, tools/teme.py */
+:root[data-theme="tajga"] { color-scheme: dark; --back: #08140c; --card: #142018; --head: #202c24; --edge: #2b362f; --alt: #1a261e; --text1: #e2e7e6; --text2: #acb2b0; --faint: #79827d; --up: #4ade80; --down: #f87171; --accent: #487a5b; --hot: #1b2d21; --tip: #e2e7e6; --tipfg: #08140c; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="tajga"] :is(.overview .left, .block, .detail, .list) { background: rgba(20,32,24,0.6); border: 1px solid rgba(226,231,230,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="tajga"] .overview .left { align-self: start; }
+[data-theme="tajga"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tajga"] button { border-radius: 999px; background: transparent; }
+[data-theme="tajga"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="tajga"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="tajga"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tajga"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px, linear-gradient(135deg, transparent 50%, rgba(72,122,91,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(72,122,91,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(72,122,91,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(72,122,91,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #08140c; background-attachment: fixed; }
+[data-theme="tajga"] .big .value, [data-theme="tajga"] .detail .price { font-weight: 700; }
+[data-theme="tajga"] .chart .line { stroke-width: 2.5; }
+[data-theme="tajga"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tajga"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #eceeed; --edge: #cdd0cf; --alt: #f3f4f3; --text1: #15221f; --text2: #4c5653; --faint: #7e8583; --up: #15803d; --down: #c81e1e; --accent: #14532d; --hot: #dae3dd; --tip: #15221f; --tipfg: #f0f1f0; --accentfg: #ffffff; }
+[data-theme="tajga"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,250,0.6); border: 1px solid rgba(21,34,31,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="tajga"][data-scheme="light"] body { background: radial-gradient(circle, rgba(20,83,45,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(20,83,45,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(20,83,45,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px, linear-gradient(135deg, transparent 50%, rgba(20,83,45,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(20,83,45,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(20,83,45,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(20,83,45,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #f0f1f0; background-attachment: fixed; }

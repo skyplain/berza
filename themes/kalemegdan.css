@@ -1,0 +1,14 @@
+/* tema kalemegdan (Kalemegdan): generisana, tools/teme.py */
+:root[data-theme="kalemegdan"] { color-scheme: light; --back: #efe9de; --card: #faf8f5; --head: #edebe9; --edge: #cec9c0; --alt: #f3f2ef; --text1: #212225; --text2: #545453; --faint: #84827e; --up: #15803d; --down: #c81e1e; --accent: #57534e; --hot: #e3e1de; --tip: #212225; --tipfg: #efe9de; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="kalemegdan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kalemegdan"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="kalemegdan"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="kalemegdan"] .bar h1 { font-size: 24px; }
+[data-theme="kalemegdan"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kalemegdan"] body { background: linear-gradient(rgba(87,83,78,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(87,83,78,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(87,83,78,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #efe9de; background-attachment: fixed; }
+[data-theme="kalemegdan"] .big .value, [data-theme="kalemegdan"] .detail .price { font-weight: 700; }
+[data-theme="kalemegdan"] .chart .line { stroke-width: 3; }
+[data-theme="kalemegdan"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kalemegdan"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #424244; --alt: #333336; --text1: #e7e7e9; --text2: #b6b6b8; --faint: #88888b; --up: #4ade80; --down: #f87171; --accent: #807f7b; --hot: #39383a; --tip: #e7e7e9; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="kalemegdan"][data-scheme="dark"] body { background: linear-gradient(rgba(128,127,123,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(128,127,123,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(128,127,123,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222225; background-attachment: fixed; }

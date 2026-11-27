@@ -1,0 +1,16 @@
+/* tema kokosova palma (Coconut palm): generisana, tools/teme.py */
+:root[data-theme="kokosovapalma"] { color-scheme: light; --back: #fcf6e3; --card: #fefcf7; --head: #f0f0eb; --edge: #d7d6c6; --alt: #f7f6f1; --text1: #142e2f; --text2: #4e605c; --faint: #838e85; --up: #15803d; --down: #c81e1e; --accent: #0d9488; --hot: #dcede7; --tip: #142e2f; --tipfg: #fcf6e3; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="kokosovapalma"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="kokosovapalma"] .overview .left { align-self: start; }
+[data-theme="kokosovapalma"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kokosovapalma"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kokosovapalma"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kokosovapalma"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kokosovapalma"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kokosovapalma"] body { background: radial-gradient(ellipse 8px 18px, rgba(13,148,136,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(13,148,136,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #fcf6e3; background-attachment: fixed; }
+[data-theme="kokosovapalma"] .big .value, [data-theme="kokosovapalma"] .detail .price { font-weight: 200; }
+[data-theme="kokosovapalma"] .chart .line { stroke-width: 1.5; }
+[data-theme="kokosovapalma"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kokosovapalma"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #424345; --alt: #333436; --text1: #e2eced; --text2: #b2babb; --faint: #868c8d; --up: #4ade80; --down: #f87171; --accent: #0d9488; --hot: #293c3c; --tip: #e2eced; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="kokosovapalma"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(13,148,136,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(13,148,136,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #232325; background-attachment: fixed; }

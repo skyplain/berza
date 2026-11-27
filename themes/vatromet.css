@@ -1,0 +1,17 @@
+/* tema vatromet (Fireworks): generisana, tools/teme.py */
+:root[data-theme="vatromet"] { color-scheme: dark; --back: #050510; --card: #12121c; --head: #201f29; --edge: #2b2a34; --alt: #191822; --text1: #f4eaf1; --text2: #b8b1b9; --faint: #817c85; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #321f32; --tip: #f4eaf1; --tipfg: #050510; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="vatromet"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="vatromet"] .overview .left { align-self: start; }
+[data-theme="vatromet"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vatromet"] button { border-radius: 999px; }
+[data-theme="vatromet"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="vatromet"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="vatromet"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="vatromet"] body { background: repeating-conic-gradient(from 0deg at 20% 25%, rgba(244,114,182,0.25) 0 3deg, transparent 3deg 18deg), repeating-conic-gradient(from 0deg at 78% 18%, rgba(182,244,114,0.22) 0 3deg, transparent 3deg 20deg); background-color: #050510; background-attachment: fixed; }
+[data-theme="vatromet"] .big .value, [data-theme="vatromet"] .detail .price { font-weight: 700; }
+[data-theme="vatromet"] .chart .line { stroke-width: 1.5; }
+[data-theme="vatromet"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="vatromet"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efedef; --edge: #d3d0d3; --alt: #f4f4f5; --text1: #3d2738; --text2: #6a5966; --faint: #938791; --up: #15803d; --down: #c81e1e; --accent: #be598e; --hot: #f2e3ec; --tip: #3d2738; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="vatromet"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="vatromet"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 20% 25%, rgba(190,89,142,0.25) 0 3deg, transparent 3deg 18deg), repeating-conic-gradient(from 0deg at 78% 18%, rgba(182,244,114,0.22) 0 3deg, transparent 3deg 20deg); background-color: #f0f0f1; background-attachment: fixed; }

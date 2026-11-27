@@ -1,0 +1,14 @@
+/* tema sakura: belo i nežno roze, tanak font, mnogo prostora */
+:root[data-theme="sakura"] { color-scheme: light; --back: #fffafb; --card: #fff; --head: #fdeef2; --edge: #f6dbe3; --alt: #fff5f8; --text1: #3d2a31; --text2: #7d6169; --faint: #b9a0a8; --up: #5b9b7a; --down: #d05473; --accent: #e27396; --hot: #fdeef2; --tip: #3d2a31; --tipfg: #fff; --accentfg: #fff; --font: "Hiragino Sans","Helvetica Neue",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 20px; --h-color: #e27396; --h-transform: none; --h-spacing: .08em; --h-size: 13px; --h-weight: 300; --h-font: inherit; --big-font: inherit; --big-weight: 200; }
+[data-theme="sakura"] .bar { border-bottom:1px solid var(--edge);padding:20px 0 }
+[data-theme="sakura"] .bar h1 { font-weight:300;letter-spacing:.2em }
+[data-theme="sakura"] .bar h1::after { content:" ❀";color:var(--accent) }
+[data-theme="sakura"] button { background:transparent;border-color:var(--edge) }
+[data-theme="sakura"] button:hover { background:var(--hot) }
+[data-theme="sakura"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="sakura"] .block { margin-bottom:32px }
+[data-theme="sakura"] .chart .line { stroke-width:1.5 }
+[data-theme="sakura"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="sakura"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="sakura"][data-scheme="dark"] { color-scheme: dark; --back: #090707; --card: #060606; --head: #130a0d; --edge: #231117; --alt: #0d0809; --text1: #d2b9c2; --text2: #93767e; --faint: #6f5960; --up: #4ade80; --down: #f87171; --accent: #e27396; --hot: #130a0d; --tip: #d2b9c2; --tipfg: #060606; --accentfg: #111111; --h-color: #e27396; }

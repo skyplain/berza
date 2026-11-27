@@ -1,0 +1,17 @@
+/* tema stari os (Classic OS): generisana, tools/teme.py */
+:root[data-theme="starios"] { color-scheme: light; --back: #c3c7cb; --card: #edeeef; --head: #e0e1e3; --edge: #a7aab2; --alt: #e6e7e9; --text1: #11132e; --text2: #3e4055; --faint: #666979; --up: #137638; --down: #c81e1e; --accent: #000080; --hot: #cccddf; --tip: #11132e; --tipfg: #c3c7cb; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="starios"] :is(.overview .left, .block, .detail, .list) { background: #bdc1c6; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="starios"] .overview .left { align-self: start; }
+[data-theme="starios"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="starios"] button { border: 0; }
+[data-theme="starios"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="starios"] .bar h1 { font-weight: 800; }
+[data-theme="starios"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="starios"] button, [data-theme="starios"] :is(.overview .left, .block, .detail) { border: 0; box-shadow: inset -1px -1px rgba(0,0,0,.45), inset 1px 1px rgba(255,255,255,.7), inset -2px -2px rgba(0,0,0,.2), inset 2px 2px rgba(255,255,255,.35); border-radius: 0; }
+[data-theme="starios"] :is(.overview .left, .block, .detail) { padding: 12px 14px; background: var(--card); }
+[data-theme="starios"] .big .value, [data-theme="starios"] .detail .price { font-weight: 700; }
+[data-theme="starios"] .chart .line { stroke-width: 1.5; }
+[data-theme="starios"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="starios"][data-scheme="dark"] { color-scheme: dark; --back: #1d1f23; --card: #282a2e; --head: #333539; --edge: #3c3e43; --alt: #2e2f34; --text1: #e0e0ed; --text2: #afb0ba; --faint: #82838c; --up: #4ade80; --down: #f87171; --accent: #6c6cb1; --hot: #323340; --tip: #e0e0ed; --tipfg: #1d1f23; --accentfg: #ffffff; }
+[data-theme="starios"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #24262a; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }

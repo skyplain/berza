@@ -1,0 +1,17 @@
+/* tema kamilica (Chamomile): generisana, tools/teme.py */
+:root[data-theme="kamilica"] { color-scheme: light; --back: #fffef2; --card: #fefced; --head: #f2f0e0; --edge: #dfdccf; --alt: #f8f6e7; --text1: #362c18; --text2: #68604e; --faint: #969181; --up: #15803d; --down: #c81e1e; --accent: #ba7f04; --hot: #f4eacc; --tip: #362c18; --tipfg: #fffef2; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="kamilica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kamilica"] .overview .left { align-self: start; }
+[data-theme="kamilica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kamilica"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kamilica"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kamilica"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kamilica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kamilica"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(186,127,4,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(4,202,138,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #fffef2; background-attachment: fixed; }
+[data-theme="kamilica"] .big .value, [data-theme="kamilica"] .detail .price { font-weight: 200; }
+[data-theme="kamilica"] .chart .line { stroke-width: 3; }
+[data-theme="kamilica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kamilica"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #444445; --alt: #343537; --text1: #f1ece3; --text2: #bebab4; --faint: #8e8c89; --up: #4ade80; --down: #f87171; --accent: #ca8a04; --hot: #443c2c; --tip: #f1ece3; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="kamilica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kamilica"][data-scheme="dark"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(202,138,4,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(4,202,138,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #232427; background-attachment: fixed; }

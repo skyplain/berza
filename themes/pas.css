@@ -1,0 +1,15 @@
+/* tema pas (Dog): generisana, tools/teme.py */
+:root[data-theme="pas"] { color-scheme: light; --back: #fbf4ea; --card: #fefcf9; --head: #f2efec; --edge: #dbd2c9; --alt: #f8f5f2; --text1: #322219; --text2: #64564d; --faint: #92877d; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f4e4d7; --tip: #322219; --tipfg: #fbf4ea; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="pas"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="pas"] .overview .left { align-self: start; }
+[data-theme="pas"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pas"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="pas"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pas"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="pas"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="pas"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pas"] .big .value, [data-theme="pas"] .detail .price { font-weight: 700; }
+[data-theme="pas"] .chart .line { stroke-width: 2; }
+[data-theme="pas"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pas"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444244; --alt: #343436; --text1: #efe7e3; --text2: #bcb6b4; --faint: #8d8988; --up: #4ade80; --down: #f87171; --accent: #bd6726; --hot: #42362f; --tip: #efe7e3; --tipfg: #232326; --accentfg: #111111; }

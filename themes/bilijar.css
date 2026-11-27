@@ -1,0 +1,18 @@
+/* tema bilijar (Billiards): generisana, tools/teme.py */
+:root[data-theme="bilijar"] { color-scheme: dark; --back: #0a3a1f; --card: #16442a; --head: #224e35; --edge: #2d573f; --alt: #1c4930; --text1: #e2eee8; --text2: #acc1b6; --faint: #7a9888; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #16512e; --tip: #e2eee8; --tipfg: #0a3a1f; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="bilijar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bilijar"] .overview .left { align-self: start; }
+[data-theme="bilijar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bilijar"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bilijar"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="bilijar"] .bar button { background: transparent; color: var(--back); border-color: rgba(10,58,31,0.35); box-shadow: none; }
+[data-theme="bilijar"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bilijar"] body { background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.35) 100%), repeating-radial-gradient(circle at 37% 53%, rgba(226,238,232,0.03) 0 1px, transparent 1px 3px); background-color: #0a3a1f; background-attachment: fixed; }
+[data-theme="bilijar"] .big .value, [data-theme="bilijar"] .detail .price { font-weight: 900; }
+[data-theme="bilijar"] .chart .line { stroke-width: 2; }
+[data-theme="bilijar"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bilijar"][data-scheme="light"] { color-scheme: light; --back: #f0f3f2; --card: #fafbfb; --head: #ecefee; --edge: #cdd4d1; --alt: #f3f5f5; --text1: #153024; --text2: #4c6158; --faint: #7e8e87; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #daede1; --tip: #153024; --tipfg: #f0f3f2; --accentfg: #111111; }
+[data-theme="bilijar"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bilijar"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,243,242,0.35); box-shadow: none; }
+[data-theme="bilijar"][data-scheme="light"] body { background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.35) 100%), repeating-radial-gradient(circle at 37% 53%, rgba(21,48,36,0.03) 0 1px, transparent 1px 3px); background-color: #f0f3f2; background-attachment: fixed; }

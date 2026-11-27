@@ -1,0 +1,12 @@
+/* tema usamljenost (Loneliness): generisana, tools/teme.py */
+:root[data-theme="usamljenost"] { color-scheme: dark; --back: #0e1116; --card: #1a1d22; --head: #272a2e; --edge: #323439; --alt: #202328; --text1: #eceef1; --text2: #b4b7ba; --faint: #818488; --up: #4ade80; --down: #f87171; --accent: #94a3b8; --hot: #2b3037; --tip: #eceef1; --tipfg: #0e1116; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="usamljenost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="usamljenost"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="usamljenost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="usamljenost"] body { background: linear-gradient(0deg, rgba(236,238,241,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(236,238,241,0.08), transparent 70%); background-color: #0e1116; background-attachment: fixed; }
+[data-theme="usamljenost"] .big .value, [data-theme="usamljenost"] .detail .price { font-weight: 900; }
+[data-theme="usamljenost"] .chart .line { stroke-width: 3; }
+[data-theme="usamljenost"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="usamljenost"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefef; --edge: #d1d2d3; --alt: #f5f5f5; --text1: #2c3038; --text2: #5d6066; --faint: #83868a; --up: #15803d; --down: #c81e1e; --accent: #737f8f; --hot: #e8eaec; --tip: #2c3038; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="usamljenost"][data-scheme="light"] body { background: linear-gradient(0deg, rgba(44,48,56,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(44,48,56,0.08), transparent 70%); background-color: #f1f1f1; background-attachment: fixed; }

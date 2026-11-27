@@ -1,0 +1,16 @@
+/* tema komandna linija (Command line): generisana, tools/teme.py */
+:root[data-theme="komandnalinija"] { color-scheme: dark; --back: #0c0c0c; --card: #181818; --head: #252525; --edge: #313131; --alt: #1f1f1f; --text1: #f3f3f5; --text2: #b9b9bb; --faint: #848485; --up: #4ade80; --down: #f87171; --accent: #e5e5e5; --hot: #353535; --tip: #f3f3f5; --tipfg: #0c0c0c; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="komandnalinija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="komandnalinija"] .overview .left { align-self: start; }
+[data-theme="komandnalinija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="komandnalinija"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="komandnalinija"] .bar h1::after { content: "▌"; color: #e5e5e5; animation: tblink 1s steps(1) infinite; }
+@keyframes tblink { 50% { opacity: 0; } }
+[data-theme="komandnalinija"] :is(h2, h3)::before { content: "> "; color: #e5e5e5; }
+[data-theme="komandnalinija"] .big .value, [data-theme="komandnalinija"] .detail .price { font-weight: 700; }
+[data-theme="komandnalinija"] .chart .line { stroke-width: 2.5; }
+[data-theme="komandnalinija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="komandnalinija"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #eeefef; --edge: #d3d3d4; --alt: #f4f4f4; --text1: #3a3c40; --text2: #68696c; --faint: #848587; --up: #15803d; --down: #c81e1e; --accent: #808080; --hot: #e9e9e9; --tip: #3a3c40; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="komandnalinija"][data-scheme="light"] .bar h1::after { content: "▌"; color: #808080; animation: tblink 1s steps(1) infinite; }
+[data-theme="komandnalinija"][data-scheme="light"] :is(h2, h3)::before { content: "> "; color: #808080; }

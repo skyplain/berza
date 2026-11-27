@@ -1,0 +1,15 @@
+/* tema severno more (North sea): generisana, tools/teme.py */
+:root[data-theme="severnomore"] { color-scheme: light; --back: #eef2f5; --card: #fafbfc; --head: #edeeef; --edge: #cdd1d5; --alt: #f3f4f6; --text1: #1e222a; --text2: #52565d; --faint: #82868b; --up: #15803d; --down: #c81e1e; --accent: #475569; --hot: #e1e4e7; --tip: #1e222a; --tipfg: #eef2f5; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="severnomore"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="severnomore"] .overview .left { align-self: start; }
+[data-theme="severnomore"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="severnomore"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="severnomore"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="severnomore"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="severnomore"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(71,85,105,0.14) 9px 10px, transparent 11px 16px, rgba(71,85,105,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #eef2f5; background-attachment: fixed; }
+[data-theme="severnomore"] .big .value, [data-theme="severnomore"] .detail .price { font-weight: 400; }
+[data-theme="severnomore"] .chart .line { stroke-width: 2.5; }
+[data-theme="severnomore"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="severnomore"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414246; --alt: #333438; --text1: #e6e7eb; --text2: #b5b6ba; --faint: #88898d; --up: #4ade80; --down: #f87171; --accent: #76808f; --hot: #37393f; --tip: #e6e7eb; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="severnomore"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(118,128,143,0.14) 9px 10px, transparent 11px 16px, rgba(118,128,143,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222327; background-attachment: fixed; }

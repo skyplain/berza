@@ -1,0 +1,14 @@
+/* tema polje lavande (Lavender field): generisana, tools/teme.py */
+:root[data-theme="poljelavande"] { color-scheme: light; --back: #f6f2fd; --card: #fcfbfe; --head: #efeef3; --edge: #d5d0df; --alt: #f6f4f8; --text1: #281d42; --text2: #5c5271; --faint: #8b839c; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #eae0fc; --tip: #281d42; --tipfg: #f6f2fd; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="poljelavande"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="poljelavande"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="poljelavande"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="poljelavande"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="poljelavande"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="poljelavande"] body { background: repeating-linear-gradient(100deg, rgba(124,58,237,0.12) 0 6px, transparent 6px 24px); background-color: #f6f2fd; background-attachment: fixed; }
+[data-theme="poljelavande"] .big .value, [data-theme="poljelavande"] .detail .price { font-weight: 700; }
+[data-theme="poljelavande"] .chart .line { stroke-width: 2.5; }
+[data-theme="poljelavande"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="poljelavande"][data-scheme="dark"] { color-scheme: dark; --back: #222328; --card: #2d2e33; --head: #38393f; --edge: #424249; --alt: #333339; --text1: #eae5f5; --text2: #b8b4c2; --faint: #8a8893; --up: #4ade80; --down: #f87171; --accent: #945ff0; --hot: #3b354d; --tip: #eae5f5; --tipfg: #222328; --accentfg: #111111; }
+[data-theme="poljelavande"][data-scheme="dark"] body { background: repeating-linear-gradient(100deg, rgba(148,95,240,0.12) 0 6px, transparent 6px 24px); background-color: #222328; background-attachment: fixed; }

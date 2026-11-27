@@ -1,0 +1,17 @@
+/* tema kolačići (Cookies): generisana, tools/teme.py */
+:root[data-theme="kolacici"] { color-scheme: light; --back: #fbf2e4; --card: #fefbf7; --head: #f1eeea; --edge: #dad0c4; --alt: #f8f4f0; --text1: #2c1e19; --text2: #60534c; --faint: #8f847a; --up: #15803d; --down: #c81e1e; --accent: #92400e; --hot: #efe1d6; --tip: #2c1e19; --tipfg: #fbf2e4; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="kolacici"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kolacici"] .overview .left { align-self: start; }
+[data-theme="kolacici"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kolacici"] button { border-radius: 999px; }
+[data-theme="kolacici"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kolacici"] .bar h1 { font-weight: 800; }
+[data-theme="kolacici"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="kolacici"] body { background: radial-gradient(circle, rgba(44,30,25,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(44,30,25,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #fbf2e4; background-attachment: fixed; }
+[data-theme="kolacici"] .big .value, [data-theme="kolacici"] .detail .price { font-weight: 400; }
+[data-theme="kolacici"] .chart .line { stroke-width: 3; }
+[data-theme="kolacici"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kolacici"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #434243; --alt: #343435; --text1: #ece6e3; --text2: #bab5b4; --faint: #8c8888; --up: #4ade80; --down: #f87171; --accent: #ad704b; --hot: #403734; --tip: #ece6e3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="kolacici"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kolacici"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(236,230,227,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(236,230,227,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #232325; background-attachment: fixed; }

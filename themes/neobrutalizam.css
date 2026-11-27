@@ -1,0 +1,15 @@
+/* tema neobrutalizam (Neobrutalism): generisana, tools/teme.py */
+:root[data-theme="neobrutalizam"] { color-scheme: light; --back: #fffbe8; --card: #fff9e8; --head: #f3edde; --edge: #e0dacd; --alt: #f9f3e3; --text1: #3f2d41; --text2: #6f606b; --faint: #94888b; --up: #15803d; --down: #c81e1e; --accent: #b766a6; --hot: #f5e4df; --tip: #3f2d41; --tipfg: #fffbe8; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="neobrutalizam"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="neobrutalizam"] .overview .left { align-self: start; }
+[data-theme="neobrutalizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="neobrutalizam"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="neobrutalizam"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #3f2d41; box-shadow: 6px 6px 0 #3f2d41; border-radius: 6px; background: var(--card); }
+[data-theme="neobrutalizam"] button { border: 2px solid #3f2d41; box-shadow: 2px 2px 0 #3f2d41; }
+[data-theme="neobrutalizam"] .big .value, [data-theme="neobrutalizam"] .detail .price { font-weight: 700; }
+[data-theme="neobrutalizam"] .chart .line { stroke-width: 3; }
+[data-theme="neobrutalizam"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="neobrutalizam"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3d; --edge: #454447; --alt: #343537; --text1: #f5ecf5; --text2: #c0bac1; --faint: #908c92; --up: #4ade80; --down: #f87171; --accent: #ff90e8; --hot: #4b3d4b; --tip: #f5ecf5; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="neobrutalizam"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #f5ecf5; box-shadow: 6px 6px 0 #f5ecf5; border-radius: 6px; background: var(--card); }
+[data-theme="neobrutalizam"][data-scheme="dark"] button { border: 2px solid #f5ecf5; box-shadow: 2px 2px 0 #f5ecf5; }

@@ -1,0 +1,16 @@
+/* tema san francisko (San Francisco): generisana, tools/teme.py */
+:root[data-theme="sanfrancisko"] { color-scheme: light; --back: #f5f3f0; --card: #fcfbfa; --head: #f0eeed; --edge: #d7d0ce; --alt: #f6f4f3; --text1: #391a1e; --text2: #685052; --faint: #938283; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f8dddc; --tip: #391a1e; --tipfg: #f5f3f0; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="sanfrancisko"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="sanfrancisko"] .overview .left { align-self: start; }
+[data-theme="sanfrancisko"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sanfrancisko"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sanfrancisko"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="sanfrancisko"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="sanfrancisko"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="sanfrancisko"] body { background: linear-gradient(0deg, rgba(57,26,30,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(57,26,30,0.08), transparent 70%); background-color: #f5f3f0; background-attachment: fixed; }
+[data-theme="sanfrancisko"] .big .value, [data-theme="sanfrancisko"] .detail .price { font-weight: 200; }
+[data-theme="sanfrancisko"] .chart .line { stroke-width: 2; }
+[data-theme="sanfrancisko"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sanfrancisko"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #434245; --alt: #333336; --text1: #f2e4e5; --text2: #beb4b5; --faint: #8e8789; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #463234; --tip: #f2e4e5; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="sanfrancisko"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(242,228,229,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(242,228,229,0.08), transparent 70%); background-color: #222326; background-attachment: fixed; }

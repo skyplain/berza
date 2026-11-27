@@ -1,0 +1,13 @@
+/* tema tamni režim (Dark mode): generisana, tools/teme.py */
+:root[data-theme="tamnirezim"] { color-scheme: dark; --back: #18181b; --card: #242426; --head: #303032; --edge: #3a3a3d; --alt: #2a2a2c; --text1: #ededf0; --text2: #b8b8bb; --faint: #87878a; --up: #4ade80; --down: #f87171; --accent: #a1a1aa; --hot: #363638; --tip: #ededf0; --tipfg: #18181b; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="tamnirezim"] :is(.overview .left, .block, .detail, .list) { background: rgba(36,36,38,0.6); border: 1px solid rgba(237,237,240,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="tamnirezim"] .overview .left { align-self: start; }
+[data-theme="tamnirezim"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tamnirezim"] button { border-radius: 999px; background: transparent; }
+[data-theme="tamnirezim"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="tamnirezim"] .big .value, [data-theme="tamnirezim"] .detail .price { font-weight: 200; }
+[data-theme="tamnirezim"] .chart .line { stroke-width: 1.5; }
+[data-theme="tamnirezim"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tamnirezim"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefef; --edge: #d2d2d3; --alt: #f5f5f5; --text1: #2e3036; --text2: #5f6065; --faint: #848689; --up: #15803d; --down: #c81e1e; --accent: #7d7d84; --hot: #e9e9ea; --tip: #2e3036; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="tamnirezim"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,251,251,0.6); border: 1px solid rgba(46,48,54,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }

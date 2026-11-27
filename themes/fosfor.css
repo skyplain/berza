@@ -1,0 +1,18 @@
+/* tema fosfor: zeleni ekran starog monitora, linije skeniranja, sjaj */
+:root[data-theme="fosfor"] { color-scheme: dark; --back: #031a09; --card: #04200c; --head: #062a10; --edge: #0f5a24; --alt: #05230d; --text1: #33ff66; --text2: #22cc55; --faint: #1a8a3c; --up: #b6ff9e; --down: #ffcf33; --accent: #33ff66; --hot: #0a3a17; --tip: #33ff66; --tipfg: #031a09; --accentfg: #031a09; --font: "VT323","Courier New",ui-monospace,monospace; --radius: 0; --h-color: #33ff66; --h-transform: uppercase; --h-spacing: .15em; --h-size: 13px; --h-weight: 400; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="fosfor"] body { text-shadow:0 0 6px rgba(51,255,102,.55) }
+[data-theme="fosfor"] body::after { content:"";position:fixed;inset:0;pointer-events:none;z-index:30;background:repeating-linear-gradient(0deg,rgba(0,0,0,.25) 0 1px,transparent 1px 3px) }
+[data-theme="fosfor"] .bar { border-bottom:1px solid var(--accent) }
+[data-theme="fosfor"] .bar h1::before { content:"> " }
+[data-theme="fosfor"] button { background:transparent;border-color:var(--accent) }
+[data-theme="fosfor"] button:hover { background:var(--accent);color:#031a09;text-shadow:none }
+[data-theme="fosfor"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="fosfor"] .chart .line { stroke-width:1.5;filter:drop-shadow(0 0 3px currentColor) }
+[data-theme="fosfor"] .chart .area { opacity:.1 }
+[data-theme="fosfor"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="fosfor"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="fosfor"][data-scheme="light"] { color-scheme: light; --back: #d2f0d7; --card: #c8eace; --head: #b8e0bd; --edge: #6fb479; --alt: #c3e7c8; --text1: #002907; --text2: #0b501e; --faint: #1e8c3e; --up: #15803d; --down: #c81e1e; --accent: #1c9138; --hot: #9fd0a5; --tip: #1c9138; --tipfg: #111311; --accentfg: #111111; --h-color: #1c9138; }
+[data-theme="fosfor"][data-scheme="light"] body { text-shadow:0 0 6px rgba(28,145,56,.55) }
+[data-theme="fosfor"][data-scheme="light"] body::after { content:"";position:fixed;inset:0;pointer-events:none;z-index:30;background:repeating-linear-gradient(0deg,rgba(255,255,255,.25) 0 1px,transparent 1px 3px) }
+[data-theme="fosfor"][data-scheme="light"] button:hover { background:var(--accent);color:#d2f0d7;text-shadow:none }

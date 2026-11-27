@@ -1,0 +1,15 @@
+/* tema limeta (Lime): generisana, tools/teme.py */
+:root[data-theme="limeta"] { color-scheme: light; --back: #f7fde9; --card: #f4fbe5; --head: #e7efd9; --edge: #d5dcc8; --alt: #eef5df; --text1: #233019; --text2: #58634d; --faint: #89927d; --up: #15803d; --down: #c81e1e; --accent: #5d960c; --hot: #dfedc7; --tip: #233019; --tipfg: #f7fde9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="limeta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="limeta"] .overview .left { align-self: start; }
+[data-theme="limeta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="limeta"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="limeta"] .bar h1 { font-weight: 800; }
+[data-theme="limeta"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="limeta"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(93,150,12,0.08) 0 6deg, transparent 6deg 12deg); background-color: #f7fde9; background-attachment: fixed; }
+[data-theme="limeta"] .big .value, [data-theme="limeta"] .detail .price { font-weight: 200; }
+[data-theme="limeta"] .chart .line { stroke-width: 2; }
+[data-theme="limeta"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="limeta"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #393a3c; --edge: #434444; --alt: #343536; --text1: #e9eee3; --text2: #b8bcb4; --faint: #8a8d88; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #363f2c; --tip: #e9eee3; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="limeta"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(101,163,13,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232426; background-attachment: fixed; }

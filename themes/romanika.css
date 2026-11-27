@@ -1,0 +1,14 @@
+/* tema romanika (Romanesque): generisana, tools/teme.py */
+:root[data-theme="romanika"] { color-scheme: light; --back: #efe6d6; --card: #faf8f3; --head: #eeebe7; --edge: #cfc7ba; --alt: #f4f2ed; --text1: #2a2624; --text2: #5b5650; --faint: #898279; --up: #15803d; --down: #c81e1e; --accent: #8a6a4a; --hot: #eae4db; --tip: #2a2624; --tipfg: #efe6d6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="romanika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="romanika"] .overview .left { align-self: start; }
+[data-theme="romanika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="romanika"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="romanika"] body { background: linear-gradient(rgba(138,106,74,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(138,106,74,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(138,106,74,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #efe6d6; background-attachment: fixed; }
+[data-theme="romanika"] .big .value, [data-theme="romanika"] .detail .price { font-weight: 400; }
+[data-theme="romanika"] .chart .line { stroke-width: 2.5; }
+[data-theme="romanika"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="romanika"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424243; --alt: #333335; --text1: #ece9e8; --text2: #bab7b7; --faint: #8b898a; --up: #4ade80; --down: #f87171; --accent: #8d7154; --hot: #3a3734; --tip: #ece9e8; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="romanika"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="romanika"][data-scheme="dark"] body { background: linear-gradient(rgba(141,113,84,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(141,113,84,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(141,113,84,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222224; background-attachment: fixed; }

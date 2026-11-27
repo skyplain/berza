@@ -1,0 +1,17 @@
+/* tema morska trava (Seaweed): generisana, tools/teme.py */
+:root[data-theme="morskatrava"] { color-scheme: dark; --back: #051510; --card: #12211c; --head: #1e2d28; --edge: #283732; --alt: #182722; --text1: #e2ebe7; --text2: #abb6b1; --faint: #788480; --up: #4ade80; --down: #f87171; --accent: #15803d; --hot: #122e21; --tip: #e2ebe7; --tipfg: #051510; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="morskatrava"] :is(.overview .left, .block, .detail, .list) { background: rgba(18,33,28,0.6); border: 1px solid rgba(226,235,231,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="morskatrava"] .overview .left { align-self: start; }
+[data-theme="morskatrava"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="morskatrava"] button { border-radius: 999px; background: transparent; }
+[data-theme="morskatrava"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="morskatrava"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="morskatrava"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="morskatrava"] body { background: repeating-linear-gradient(90deg, rgba(21,128,61,0.07) 0 14px, transparent 14px 40px); background-color: #051510; background-attachment: fixed; }
+[data-theme="morskatrava"] .big .value, [data-theme="morskatrava"] .detail .price { font-weight: 700; }
+[data-theme="morskatrava"] .chart .line { stroke-width: 1.5; }
+[data-theme="morskatrava"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="morskatrava"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eceeee; --edge: #cdd1d0; --alt: #f3f5f4; --text1: #152a22; --text2: #4c5c56; --faint: #7e8a85; --up: #15803d; --down: #c81e1e; --accent: #15803d; --hot: #daeae0; --tip: #152a22; --tipfg: #f0f1f1; --accentfg: #ffffff; }
+[data-theme="morskatrava"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,251,0.6); border: 1px solid rgba(21,42,34,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="morskatrava"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(21,128,61,0.07) 0 14px, transparent 14px 40px); background-color: #f0f1f1; background-attachment: fixed; }

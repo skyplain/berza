@@ -1,0 +1,16 @@
+/* tema tehnikolor (Technicolor): generisana, tools/teme.py */
+:root[data-theme="tehnikolor"] { color-scheme: light; --back: #fff4e0; --card: #fffcf6; --head: #f3efe9; --edge: #e0d2c2; --alt: #f9f5f0; --text1: #3b1d24; --text2: #6c5353; --faint: #99847e; --up: #15803d; --down: #c81e1e; --accent: #e63946; --hot: #fce1dd; --tip: #3b1d24; --tipfg: #fff4e0; --accentfg: #111111; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 0px; }
+[data-theme="tehnikolor"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="tehnikolor"] .overview .left { align-self: start; }
+[data-theme="tehnikolor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tehnikolor"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="tehnikolor"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="tehnikolor"] .bar h1 { font-size: 24px; }
+[data-theme="tehnikolor"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tehnikolor"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(230,57,70,0.08) 0 6deg, transparent 6deg 12deg); background-color: #fff4e0; background-attachment: fixed; }
+[data-theme="tehnikolor"] .big .value, [data-theme="tehnikolor"] .detail .price { font-weight: 700; }
+[data-theme="tehnikolor"] .chart .line { stroke-width: 2.5; }
+[data-theme="tehnikolor"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tehnikolor"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444244; --alt: #343336; --text1: #f3e5e8; --text2: #bfb4b7; --faint: #8f888a; --up: #4ade80; --down: #f87171; --accent: #e63946; --hot: #483033; --tip: #f3e5e8; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="tehnikolor"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(230,57,70,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232325; background-attachment: fixed; }

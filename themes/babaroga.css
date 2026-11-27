@@ -1,0 +1,19 @@
+/* tema baba roga (Baba Roga): generisana, tools/teme.py */
+:root[data-theme="babaroga"] { color-scheme: dark; --back: #0f0d0c; --card: #1b1918; --head: #272525; --edge: #32302f; --alt: #211f1e; --text1: #e7e7e9; --text2: #b1b0b2; --faint: #7f7e7f; --up: #4ade80; --down: #f87171; --accent: #706e69; --hot: #272523; --tip: #e7e7e9; --tipfg: #0f0d0c; --accentfg: #ffffff; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 8px; }
+[data-theme="babaroga"] :is(.overview .left, .block, .detail, .list) { background: #171514; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="babaroga"] .overview .left { align-self: start; }
+[data-theme="babaroga"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="babaroga"] button { border: 0; }
+[data-theme="babaroga"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="babaroga"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="babaroga"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="babaroga"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(231,231,233,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(231,231,233,0.03) 0 1px, transparent 1px 5px); background-color: #0f0d0c; background-attachment: fixed; }
+[data-theme="babaroga"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(231,231,233,0.9), rgba(231,231,233,0.55)); box-shadow: 0 0 60px rgba(231,231,233,0.35); opacity: .55; }
+[data-theme="babaroga"] .big .value, [data-theme="babaroga"] .detail .price { font-weight: 400; }
+[data-theme="babaroga"] .chart .line { stroke-width: 3; }
+[data-theme="babaroga"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="babaroga"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #eeeded; --edge: #d0cfd0; --alt: #f4f4f4; --text1: #212225; --text2: #555658; --faint: #858586; --up: #15803d; --down: #c81e1e; --accent: #57534e; --hot: #e4e3e2; --tip: #212225; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="babaroga"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #eae9e9; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="babaroga"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(33,34,37,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(33,34,37,0.03) 0 1px, transparent 1px 5px); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="babaroga"][data-scheme="light"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(33,34,37,0.9), rgba(33,34,37,0.55)); box-shadow: 0 0 60px rgba(33,34,37,0.35); opacity: .55; }

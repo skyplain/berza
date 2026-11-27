@@ -1,0 +1,14 @@
+/* tema gamzigrad (Gamzigrad): generisana, tools/teme.py */
+:root[data-theme="gamzigrad"] { color-scheme: light; --back: #f2e9da; --card: #fbf8f4; --head: #efebe7; --edge: #d3c9bb; --alt: #f5f2ed; --text1: #2e2418; --text2: #5f5548; --faint: #8c8375; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #eee3d3; --tip: #2e2418; --tipfg: #f2e9da; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="gamzigrad"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gamzigrad"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="gamzigrad"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="gamzigrad"] .bar h1 { font-size: 24px; }
+[data-theme="gamzigrad"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="gamzigrad"] body { background: conic-gradient(rgba(46,36,24,0.07) 25%, transparent 0 50%, rgba(46,36,24,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #f2e9da; background-attachment: fixed; }
+[data-theme="gamzigrad"] .big .value, [data-theme="gamzigrad"] .detail .price { font-weight: 700; }
+[data-theme="gamzigrad"] .chart .line { stroke-width: 2; }
+[data-theme="gamzigrad"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="gamzigrad"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #424243; --alt: #333334; --text1: #ede8e3; --text2: #bab6b3; --faint: #8c8987; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3d362c; --tip: #ede8e3; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="gamzigrad"][data-scheme="dark"] body { background: conic-gradient(rgba(237,232,227,0.07) 25%, transparent 0 50%, rgba(237,232,227,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #222224; background-attachment: fixed; }

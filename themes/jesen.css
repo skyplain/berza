@@ -1,0 +1,22 @@
+/* tema jesen: narandžasto, kestenjasto i oker, topao serif */
+:root[data-theme="jesen"] { color-scheme: light; --back: #f7eee2; --card: #fdf7ef; --head: #efdcc4; --edge: #dfc1a0; --alt: #f6e9d8; --text1: #3d1f0f; --text2: #6e3f22; --faint: #a57a58; --up: #6b8e23; --down: #b5341b; --accent: #cc5a14; --hot: #f6dcc1; --tip: #3d1f0f; --tipfg: #fdf7ef; --accentfg: #fff; --font: "Hoefler Text",Baskerville,Georgia, "Times New Roman", serif; --radius: 6px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: 0 2px 0 #e7cfb2; --h-color: #9c3d10; --h-transform: none; --h-spacing: 0; --h-size: 18px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="jesen"] body { background:radial-gradient(500px 300px at 100% 0,rgba(204,90,20,.18),transparent 70%),radial-gradient(500px 300px at 0 100%,rgba(156,61,16,.15),transparent 70%) fixed #f7eee2 }
+[data-theme="jesen"] .bar { border-bottom:3px solid #cc5a14 }
+[data-theme="jesen"] .bar h1 { font-size:28px;font-style:italic;color:#9c3d10 }
+[data-theme="jesen"] .bar h1::after { content:" ❧";color:#cc5a14 }
+[data-theme="jesen"] button { background:#efdcc4;border-color:#dfc1a0 }
+[data-theme="jesen"] .num,[data-theme="jesen"] .chg,[data-theme="jesen"] .kv .v { font-family:system-ui, -apple-system, "Segoe UI", sans-serif }
+[data-theme="jesen"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="jesen"] .chart .vol { fill:#cc5a14;opacity:.35 }
+[data-theme="jesen"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="jesen"] .overview .left { align-self: start; }
+[data-theme="jesen"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="jesen"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="jesen"][data-scheme="dark"] { color-scheme: dark; --back: #140e06; --card: #0c0905; --head: #241704; --edge: #3d2607; --alt: #191005; --text1: #eac2ae; --text2: #c79172; --faint: #845b39; --up: #4ade80; --down: #f87171; --accent: #cc5a14; --hot: #261400; --tip: #eac2ae; --tipfg: #0c0905; --accentfg: #111111; --panel-shadow: 0 2px 0 #301e05; --h-color: #ce6b43; }
+[data-theme="jesen"][data-scheme="dark"] body { background:radial-gradient(500px 300px at 100% 0,rgba(204,90,20,.18),transparent 70%),radial-gradient(500px 300px at 0 100%,rgba(206,107,67,.15),transparent 70%) fixed #140e06 }
+[data-theme="jesen"][data-scheme="dark"] .bar { border-bottom:3px solid #cc5a14 }
+[data-theme="jesen"][data-scheme="dark"] .bar h1 { font-size:28px;font-style:italic;color:#ce6b43 }
+[data-theme="jesen"][data-scheme="dark"] .bar h1::after { content:" ❧";color:#cc5a14 }
+[data-theme="jesen"][data-scheme="dark"] button { background:#241704;border-color:#3d2607 }
+[data-theme="jesen"][data-scheme="dark"] .chart .vol { fill:#cc5a14;opacity:.35 }

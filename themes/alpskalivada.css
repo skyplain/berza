@@ -1,0 +1,12 @@
+/* tema alpska livada (Alpine meadow): generisana, tools/teme.py */
+:root[data-theme="alpskalivada"] { color-scheme: light; --back: #f7fbe9; --card: #fdfef8; --head: #f0f2eb; --edge: #d5dbc8; --alt: #f6f8f1; --text1: #233019; --text2: #58634d; --faint: #89917d; --up: #15803d; --down: #c81e1e; --accent: #5d960c; --hot: #e7efd7; --tip: #233019; --tipfg: #f7fbe9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="alpskalivada"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="alpskalivada"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="alpskalivada"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="alpskalivada"] body { background: radial-gradient(circle, rgba(250,204,21,0.5) 0 2px, rgba(93,150,12,0.3) 3px 6px, transparent 7px) 0 0 / 54px 54px, radial-gradient(circle, rgba(255,255,255,0.5) 0 2px, rgba(13,101,163,0.25) 3px 5px, transparent 6px) 27px 27px / 54px 54px; background-color: #f7fbe9; background-attachment: fixed; }
+[data-theme="alpskalivada"] .big .value, [data-theme="alpskalivada"] .detail .price { font-weight: 900; }
+[data-theme="alpskalivada"] .chart .line { stroke-width: 1.5; }
+[data-theme="alpskalivada"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="alpskalivada"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #393a3c; --edge: #434444; --alt: #343536; --text1: #e9eee3; --text2: #b8bcb4; --faint: #8a8d88; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #363f2c; --tip: #e9eee3; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="alpskalivada"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(250,204,21,0.5) 0 2px, rgba(101,163,13,0.3) 3px 6px, transparent 7px) 0 0 / 54px 54px, radial-gradient(circle, rgba(255,255,255,0.5) 0 2px, rgba(13,101,163,0.25) 3px 5px, transparent 6px) 27px 27px / 54px 54px; background-color: #232426; background-attachment: fixed; }

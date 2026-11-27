@@ -1,0 +1,18 @@
+/* tema kriminalistički dosije (Case file): generisana, tools/teme.py */
+:root[data-theme="kriminalistickidosije"] { color-scheme: light; --back: #e7d6a8; --card: #f8f3e5; --head: #ece7d9; --edge: #c9ba93; --alt: #f2eddf; --text1: #2a2622; --text2: #595244; --faint: #7e735d; --up: #15803d; --down: #c81e1e; --accent: #8a6d3b; --hot: #e9e0cd; --tip: #2a2622; --tipfg: #e7d6a8; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 4px; }
+[data-theme="kriminalistickidosije"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kriminalistickidosije"] .overview .left { align-self: start; }
+[data-theme="kriminalistickidosije"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kriminalistickidosije"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="kriminalistickidosije"] .bar h1 { font-size: 24px; }
+[data-theme="kriminalistickidosije"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kriminalistickidosije"] :is(h2, h3) { display: inline-block; color: #8a6d3b; border: 2px solid #8a6d3b; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="kriminalistickidosije"] .bar { position: relative; }
+[data-theme="kriminalistickidosije"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: repeating-linear-gradient(45deg, #f7d417 0 18px, #111111 18px 36px); }
+[data-theme="kriminalistickidosije"] .big .value, [data-theme="kriminalistickidosije"] .detail .price { font-weight: 700; }
+[data-theme="kriminalistickidosije"] .chart .line { stroke-width: 3; }
+[data-theme="kriminalistickidosije"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kriminalistickidosije"][data-scheme="dark"] { color-scheme: dark; --back: #21201f; --card: #2c2b2a; --head: #383635; --edge: #41403f; --alt: #323130; --text1: #ece9e7; --text2: #b9b7b5; --faint: #8b8987; --up: #4ade80; --down: #f87171; --accent: #93794b; --hot: #3a362f; --tip: #ece9e7; --tipfg: #21201f; --accentfg: #111111; }
+[data-theme="kriminalistickidosije"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kriminalistickidosije"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #93794b; border: 2px solid #93794b; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

@@ -1,0 +1,20 @@
+/* tema festival lampiona (Lantern festival): generisana, tools/teme.py */
+:root[data-theme="festivallampiona"] { color-scheme: dark; --back: #0e0a1a; --card: #1a1625; --head: #272330; --edge: #332e3a; --alt: #211c2b; --text1: #f4eae4; --text2: #bab2b2; --faint: #867e83; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #392323; --tip: #f4eae4; --tipfg: #0e0a1a; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="festivallampiona"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="festivallampiona"] .overview .left { align-self: start; }
+[data-theme="festivallampiona"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="festivallampiona"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="festivallampiona"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="festivallampiona"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="festivallampiona"] .bar { position: relative; }
+[data-theme="festivallampiona"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -20px; height: 20px; background: radial-gradient(circle, #f97316 0 5px, rgba(249,115,22,0.35) 6px 9px, transparent 10px) 0 0 / 46px 20px; }
+[data-theme="festivallampiona"] .big .value { text-shadow: 0 0 18px rgba(249,115,22,0.55); }
+[data-theme="festivallampiona"] .chart .line { filter: drop-shadow(0 0 5px rgba(249,115,22,0.7)); }
+[data-theme="festivallampiona"] .big .value, [data-theme="festivallampiona"] .detail .price { font-weight: 700; }
+[data-theme="festivallampiona"] .chart .line { stroke-width: 3; }
+[data-theme="festivallampiona"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="festivallampiona"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #f0edee; --edge: #d4d0cf; --alt: #f5f4f4; --text1: #3e281b; --text2: #6b5a50; --faint: #948882; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f5e5da; --tip: #3e281b; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="festivallampiona"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -20px; height: 20px; background: radial-gradient(circle, #d36212 0 5px, rgba(211,98,18,0.35) 6px 9px, transparent 10px) 0 0 / 46px 20px; }
+[data-theme="festivallampiona"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(211,98,18,0.55); }
+[data-theme="festivallampiona"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(211,98,18,0.7)); }

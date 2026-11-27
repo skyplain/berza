@@ -1,0 +1,15 @@
+/* tema višnja (Sour cherry): generisana, tools/teme.py */
+:root[data-theme="visnja"] { color-scheme: light; --back: #fef0f2; --card: #fffafb; --head: #f2ecee; --edge: #ddcdd1; --alt: #f9f3f4; --text1: #2e1621; --text2: #624c55; --faint: #927f85; --up: #15803d; --down: #c81e1e; --accent: #9f1239; --hot: #f2dae0; --tip: #2e1621; --tipfg: #fef0f2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="visnja"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="visnja"] .overview .left { align-self: start; }
+[data-theme="visnja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="visnja"] button { border-radius: 999px; }
+[data-theme="visnja"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="visnja"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="visnja"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="visnja"] .big .value, [data-theme="visnja"] .detail .price { font-weight: 400; }
+[data-theme="visnja"] .chart .line { stroke-width: 2.5; }
+[data-theme="visnja"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="visnja"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #39393d; --edge: #434246; --alt: #343337; --text1: #ede2e7; --text2: #bab2b7; --faint: #8c868b; --up: #4ade80; --down: #f87171; --accent: #c0637c; --hot: #42353c; --tip: #ede2e7; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="visnja"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

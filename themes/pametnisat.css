@@ -1,0 +1,16 @@
+/* tema pametni sat (Smartwatch): generisana, tools/teme.py */
+:root[data-theme="pametnisat"] { color-scheme: dark; --back: #000000; --card: #0d0d0d; --head: #1a1b1a; --edge: #242725; --alt: #131414; --text1: #e4f1e9; --text2: #abb5af; --faint: #777d79; --up: #4ade80; --down: #f87171; --accent: #30d158; --hot: #122818; --tip: #e4f1e9; --tipfg: #000000; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="pametnisat"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="pametnisat"] .overview .left { align-self: start; }
+[data-theme="pametnisat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pametnisat"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="pametnisat"] .bar h1 { font-weight: 800; }
+[data-theme="pametnisat"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pametnisat"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }
+[data-theme="pametnisat"] .big .value, [data-theme="pametnisat"] .detail .price { font-weight: 700; }
+[data-theme="pametnisat"] .chart .line { stroke-width: 2; }
+[data-theme="pametnisat"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pametnisat"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #edeeed; --edge: #ced3d0; --alt: #f3f4f4; --text1: #1a3827; --text2: #506659; --faint: #79897f; --up: #15803d; --down: #c81e1e; --accent: #22963f; --hot: #dcece0; --tip: #1a3827; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="pametnisat"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="pametnisat"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }

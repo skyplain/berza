@@ -1,0 +1,19 @@
+/* tema tanzanit (Tanzanite): generisana, tools/teme.py */
+:root[data-theme="tanzanit"] { color-scheme: dark; --back: #0e0821; --card: #1a142c; --head: #262038; --edge: #312b43; --alt: #201a32; --text1: #e9e4f4; --text2: #b2adbf; --faint: #807a8f; --up: #4ade80; --down: #f87171; --accent: #8449df; --hot: #291b45; --tip: #e9e4f4; --tipfg: #0e0821; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="tanzanit"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="tanzanit"] .overview .left { align-self: start; }
+[data-theme="tanzanit"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tanzanit"] button { border-radius: 999px; }
+[data-theme="tanzanit"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tanzanit"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="tanzanit"] .bar button { background: transparent; color: var(--back); border-color: rgba(14,8,33,0.35); box-shadow: none; }
+[data-theme="tanzanit"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="tanzanit"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(132,73,223,0.08) 40% 46%, transparent 46%); background-color: #0e0821; background-attachment: fixed; }
+[data-theme="tanzanit"] .big .value, [data-theme="tanzanit"] .detail .price { font-weight: 900; }
+[data-theme="tanzanit"] .chart .line { stroke-width: 1.5; }
+[data-theme="tanzanit"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tanzanit"][data-scheme="light"] { color-scheme: light; --back: #f1f0f2; --card: #fbfafb; --head: #eeedf0; --edge: #d0ced5; --alt: #f5f3f5; --text1: #251a3e; --text2: #58506b; --faint: #878194; --up: #15803d; --down: #c81e1e; --accent: #6d28d9; --hot: #e7ddf6; --tip: #251a3e; --tipfg: #f1f0f2; --accentfg: #ffffff; }
+[data-theme="tanzanit"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="tanzanit"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,242,0.35); box-shadow: none; }
+[data-theme="tanzanit"][data-scheme="light"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(109,40,217,0.08) 40% 46%, transparent 46%); background-color: #f1f0f2; background-attachment: fixed; }

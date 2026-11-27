@@ -1,0 +1,16 @@
+/* tema kvantni (Quantum): generisana, tools/teme.py */
+:root[data-theme="kvantni"] { color-scheme: dark; --back: #211e31; --card: #2c293b; --head: #383546; --edge: #423f51; --alt: #322f41; --text1: #eeecf6; --text2: #bbb8c5; --faint: #8c8997; --up: #4ade80; --down: #f87171; --accent: #a78bfa; --hot: #3d3756; --tip: #eeecf6; --tipfg: #211e31; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="kvantni"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kvantni"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="kvantni"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="kvantni"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(238,236,246,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(167,139,250,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(238,236,246,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(238,236,246,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(167,139,250,0.8), transparent); background-color: #211e31; background-attachment: fixed; }
+[data-theme="kvantni"] .big .value { text-shadow: 0 0 18px rgba(167,139,250,0.55); }
+[data-theme="kvantni"] .chart .line { filter: drop-shadow(0 0 5px rgba(167,139,250,0.7)); }
+[data-theme="kvantni"] .big .value, [data-theme="kvantni"] .detail .price { font-weight: 200; }
+[data-theme="kvantni"] .chart .line { stroke-width: 1.5; }
+[data-theme="kvantni"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kvantni"][data-scheme="light"] { color-scheme: light; --back: #f6f3fe; --card: #fcfbff; --head: #f0eff4; --edge: #d6d3e0; --alt: #f6f5f9; --text1: #2f2c44; --text2: #615e72; --faint: #878496; --up: #15803d; --down: #c81e1e; --accent: #8e76d4; --hot: #ede8f9; --tip: #2f2c44; --tipfg: #f6f3fe; --accentfg: #111111; }
+[data-theme="kvantni"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(47,44,68,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(142,118,212,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(47,44,68,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(47,44,68,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(142,118,212,0.8), transparent); background-color: #f6f3fe; background-attachment: fixed; }
+[data-theme="kvantni"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(142,118,212,0.55); }
+[data-theme="kvantni"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(142,118,212,0.7)); }

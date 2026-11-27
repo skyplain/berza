@@ -1,0 +1,18 @@
+/* tema igraonica (Playroom): generisana, tools/teme.py */
+:root[data-theme="igraonica"] { color-scheme: light; --back: #fff7ee; --card: #fffdfa; --head: #f3f0ed; --edge: #e0d4ce; --alt: #f9f6f4; --text1: #3d1e28; --text2: #6e545a; --faint: #9a8687; --up: #15803d; --down: #c81e1e; --accent: #f43f5e; --hot: #fde2e4; --tip: #3d1e28; --tipfg: #fff7ee; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="igraonica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="igraonica"] .overview .left { align-self: start; }
+[data-theme="igraonica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="igraonica"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="igraonica"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="igraonica"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="igraonica"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,247,238,0.35); box-shadow: none; }
+[data-theme="igraonica"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="igraonica"] body { background: radial-gradient(rgba(244,63,94,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(94,244,63,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(63,94,244,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #fff7ee; background-attachment: fixed; }
+[data-theme="igraonica"] .big .value, [data-theme="igraonica"] .detail .price { font-weight: 400; }
+[data-theme="igraonica"] .chart .line { stroke-width: 3; }
+[data-theme="igraonica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="igraonica"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444345; --alt: #343437; --text1: #f4e6ea; --text2: #c0b6b9; --faint: #90898c; --up: #4ade80; --down: #f87171; --accent: #f43f5e; --hot: #4a3137; --tip: #f4e6ea; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="igraonica"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,38,0.35); box-shadow: none; }
+[data-theme="igraonica"][data-scheme="dark"] body { background: radial-gradient(rgba(244,63,94,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(94,244,63,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(63,94,244,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #232426; background-attachment: fixed; }

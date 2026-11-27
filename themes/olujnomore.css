@@ -1,0 +1,17 @@
+/* tema olujno more (Stormy sea): generisana, tools/teme.py */
+:root[data-theme="olujnomore"] { color-scheme: dark; --back: #0d141c; --card: #192027; --head: #252c33; --edge: #30363d; --alt: #1f262d; --text1: #e5e6e9; --text2: #afb2b6; --faint: #7d8187; --up: #4ade80; --down: #f87171; --accent: #606b7b; --hot: #232a33; --tip: #e5e6e9; --tipfg: #0d141c; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="olujnomore"] :is(.overview .left, .block, .detail, .list) { background: rgba(25,32,39,0.6); border: 1px solid rgba(229,230,233,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="olujnomore"] .overview .left { align-self: start; }
+[data-theme="olujnomore"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="olujnomore"] button { border-radius: 999px; background: transparent; }
+[data-theme="olujnomore"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="olujnomore"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="olujnomore"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="olujnomore"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(96,107,123,0.14) 9px 10px, transparent 11px 16px, rgba(96,107,123,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, repeating-radial-gradient(circle at 17% 32%, rgba(229,230,233,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(229,230,233,0.03) 0 1px, transparent 1px 5px); background-color: #0d141c; background-attachment: fixed; }
+[data-theme="olujnomore"] .big .value, [data-theme="olujnomore"] .detail .price { font-weight: 900; }
+[data-theme="olujnomore"] .chart .line { stroke-width: 1.5; }
+[data-theme="olujnomore"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="olujnomore"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #edeeee; --edge: #cecfd1; --alt: #f3f4f5; --text1: #1a1f26; --text2: #505459; --faint: #818487; --up: #15803d; --down: #c81e1e; --accent: #334155; --hot: #dee1e4; --tip: #1a1f26; --tipfg: #f0f1f1; --accentfg: #ffffff; }
+[data-theme="olujnomore"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,251,0.6); border: 1px solid rgba(26,31,38,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="olujnomore"][data-scheme="light"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(51,65,85,0.14) 9px 10px, transparent 11px 16px, rgba(51,65,85,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, repeating-radial-gradient(circle at 17% 32%, rgba(26,31,38,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(26,31,38,0.03) 0 1px, transparent 1px 5px); background-color: #f0f1f1; background-attachment: fixed; }

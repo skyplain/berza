@@ -1,0 +1,17 @@
+/* tema herbarijum (Herbarium): generisana, tools/teme.py */
+:root[data-theme="herbarijum"] { color-scheme: light; --back: #f4efdf; --card: #fcfaf5; --head: #efede8; --edge: #d2cfbf; --alt: #f5f4ee; --text1: #1f291a; --text2: #545a4b; --faint: #858879; --up: #15803d; --down: #c81e1e; --accent: #4d7c0f; --hot: #e4e8d5; --tip: #1f291a; --tipfg: #f4efdf; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="herbarijum"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="herbarijum"] .overview .left { align-self: start; }
+[data-theme="herbarijum"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="herbarijum"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="herbarijum"] .bar h1 { font-size: 24px; }
+[data-theme="herbarijum"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="herbarijum"] body { background: radial-gradient(ellipse 8px 18px, rgba(77,124,15,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(77,124,15,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f4efdf; background-attachment: fixed; }
+[data-theme="herbarijum"] :is(.overview .left, .block, .detail, .list) { position: relative; }
+[data-theme="herbarijum"] :is(.overview .left, .block, .detail)::after { content: ""; position: absolute; top: -10px; left: 50%; width: 90px; height: 22px; margin-left: -45px; background: rgba(255,247,194,0.65); transform: rotate(-3deg); box-shadow: 0 1px 2px rgba(0,0,0,.15); }
+[data-theme="herbarijum"] .big .value, [data-theme="herbarijum"] .detail .price { font-weight: 700; }
+[data-theme="herbarijum"] .chart .line { stroke-width: 1.5; }
+[data-theme="herbarijum"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="herbarijum"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #424344; --alt: #333435; --text1: #e7eae4; --text2: #b6b8b4; --faint: #888a88; --up: #4ade80; --down: #f87171; --accent: #628b2b; --hot: #343b2f; --tip: #e7eae4; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="herbarijum"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(98,139,43,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(98,139,43,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222325; background-attachment: fixed; }

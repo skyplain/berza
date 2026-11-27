@@ -1,0 +1,15 @@
+/* tema špijunski (Spy thriller): generisana, tools/teme.py */
+:root[data-theme="spijunski"] { color-scheme: light; --back: #e9dcb5; --card: #f8f4e9; --head: #ece8dd; --edge: #ccc09e; --alt: #f2eee3; --text1: #343028; --text2: #615b4b; --faint: #847c67; --up: #15803d; --down: #c81e1e; --accent: #8a7245; --hot: #e9e2d2; --tip: #343028; --tipfg: #e9dcb5; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 0px; }
+[data-theme="spijunski"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="spijunski"] .overview .left { align-self: start; }
+[data-theme="spijunski"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="spijunski"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="spijunski"] .bar h1 { font-size: 24px; }
+[data-theme="spijunski"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="spijunski"] :is(h2, h3) { display: inline-block; color: #8a7245; border: 2px solid #8a7245; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="spijunski"] .big .value, [data-theme="spijunski"] .detail .price { font-weight: 200; }
+[data-theme="spijunski"] .chart .line { stroke-width: 2.5; }
+[data-theme="spijunski"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="spijunski"][data-scheme="dark"] { color-scheme: dark; --back: #212120; --card: #2c2c2b; --head: #383836; --edge: #424240; --alt: #323231; --text1: #f0edea; --text2: #bcbab8; --faint: #8d8b89; --up: #4ade80; --down: #f87171; --accent: #c0a060; --hot: #413c32; --tip: #f0edea; --tipfg: #212120; --accentfg: #111111; }
+[data-theme="spijunski"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #c0a060; border: 2px solid #c0a060; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

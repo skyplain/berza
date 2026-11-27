@@ -1,0 +1,16 @@
+/* tema neonski grad (Neon city): generisana, tools/teme.py */
+:root[data-theme="neonskigrad"] { color-scheme: dark; --back: #0b0618; --card: #171224; --head: #241f31; --edge: #302b3c; --alt: #1e192a; --text1: #f4eef6; --text2: #bab4be; --faint: #847f8b; --up: #4ade80; --down: #f87171; --accent: #f0abfc; --hot: #352742; --tip: #f4eef6; --tipfg: #0b0618; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 8px; }
+[data-theme="neonskigrad"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="neonskigrad"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="neonskigrad"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="neonskigrad"] .bar h1 { font-weight: 800; }
+[data-theme="neonskigrad"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="neonskigrad"] body { background: linear-gradient(rgba(244,238,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(244,238,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #0b0618; background-attachment: fixed; }
+[data-theme="neonskigrad"] .bar h1 { color: #f9ddfe; text-shadow: 0 0 4px #f0abfc, 0 0 12px #f0abfc, 0 0 28px rgba(240,171,252,0.8); }
+[data-theme="neonskigrad"] .big .value, [data-theme="neonskigrad"] .detail .price { font-weight: 400; }
+[data-theme="neonskigrad"] .chart .line { stroke-width: 1.5; }
+[data-theme="neonskigrad"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="neonskigrad"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efeef0; --edge: #d3d2d5; --alt: #f4f4f6; --text1: #3c3244; --text2: #69626f; --faint: #8b8690; --up: #15803d; --down: #c81e1e; --accent: #9e6fa6; --hot: #ede7ef; --tip: #3c3244; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="neonskigrad"][data-scheme="light"] body { background: linear-gradient(rgba(60,50,68,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(60,50,68,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="neonskigrad"][data-scheme="light"] .bar h1 { color: #d8c5db; text-shadow: 0 0 4px #9e6fa6, 0 0 12px #9e6fa6, 0 0 28px rgba(158,111,166,0.8); }

@@ -1,0 +1,17 @@
+/* tema lcd (LCD): generisana, tools/teme.py */
+:root[data-theme="lcd"] { color-scheme: light; --back: #c7d3a3; --card: #eef2e3; --head: #e2e6d6; --edge: #acb88c; --alt: #e8ecdd; --text1: #1f2a12; --text2: #495436; --faint: #6a7552; --up: #137638; --down: #c81e1e; --accent: #3b4a2a; --hot: #d5dac9; --tip: #1f2a12; --tipfg: #c7d3a3; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="lcd"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="lcd"] .overview .left { align-self: start; }
+[data-theme="lcd"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lcd"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="lcd"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="lcd"] body { background: linear-gradient(rgba(31,42,18,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(31,42,18,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #c7d3a3; background-attachment: fixed; }
+[data-theme="lcd"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #1f2a12; border-radius: 0; box-shadow: none; }
+[data-theme="lcd"] button { border-radius: 0; border-width: 2px; }
+[data-theme="lcd"] .big .value, [data-theme="lcd"] .detail .price { font-weight: 700; }
+[data-theme="lcd"] .chart .line { stroke-width: 2.5; }
+[data-theme="lcd"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lcd"][data-scheme="dark"] { color-scheme: dark; --back: #1e201f; --card: #292b2a; --head: #343635; --edge: #3e403f; --alt: #2f3130; --text1: #e5e6e6; --text2: #b3b4b4; --faint: #858786; --up: #4ade80; --down: #f87171; --accent: #6d7762; --hot: #333632; --tip: #e5e6e6; --tipfg: #1e201f; --accentfg: #ffffff; }
+[data-theme="lcd"][data-scheme="dark"] body { background: linear-gradient(rgba(229,230,230,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(229,230,230,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #1e201f; background-attachment: fixed; }
+[data-theme="lcd"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #e5e6e6; border-radius: 0; box-shadow: none; }

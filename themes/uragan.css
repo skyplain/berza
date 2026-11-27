@@ -1,0 +1,15 @@
+/* tema uragan (Hurricane): generisana, tools/teme.py */
+:root[data-theme="uragan"] { color-scheme: dark; --back: #08151a; --card: #142125; --head: #202d31; --edge: #2b373b; --alt: #1a272b; --text1: #e2eaeb; --text2: #acb5b7; --faint: #798487; --up: #4ade80; --down: #f87171; --accent: #0f766e; --hot: #132d2f; --tip: #e2eaeb; --tipfg: #08151a; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="uragan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="uragan"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="uragan"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="uragan"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="uragan"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="uragan"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="uragan"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(15,118,110,0.07) 0 12deg, transparent 12deg 24deg); background-color: #08151a; background-attachment: fixed; }
+[data-theme="uragan"] .big .value, [data-theme="uragan"] .detail .price { font-weight: 200; }
+[data-theme="uragan"] .chart .line { stroke-width: 1.5; }
+[data-theme="uragan"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="uragan"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eceeef; --edge: #cdd1d1; --alt: #f3f5f5; --text1: #14282b; --text2: #4b5a5c; --faint: #7e888a; --up: #15803d; --down: #c81e1e; --accent: #0f766e; --hot: #d9e8e7; --tip: #14282b; --tipfg: #f0f1f1; --accentfg: #ffffff; }
+[data-theme="uragan"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(15,118,110,0.07) 0 12deg, transparent 12deg 24deg); background-color: #f0f1f1; background-attachment: fixed; }

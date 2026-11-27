@@ -1,0 +1,17 @@
+/* tema sidnej (Sydney): generisana, tools/teme.py */
+:root[data-theme="sidnej"] { color-scheme: light; --back: #f2faff; --card: #fbfeff; --head: #edf1f3; --edge: #ced9e0; --alt: #f4f8f9; --text1: #122b3b; --text2: #4a5f6c; --faint: #7e8e99; --up: #15803d; --down: #c81e1e; --accent: #0284c7; --hot: #d8edf7; --tip: #122b3b; --tipfg: #f2faff; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="sidnej"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="sidnej"] .overview .left { align-self: start; }
+[data-theme="sidnej"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sidnej"] button { border-radius: 0; }
+[data-theme="sidnej"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sidnej"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="sidnej"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="sidnej"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sidnej"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(2,132,199,0.14) 9px 10px, transparent 11px 16px, rgba(2,132,199,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f2faff; background-attachment: fixed; }
+[data-theme="sidnej"] .big .value, [data-theme="sidnej"] .detail .price { font-weight: 400; }
+[data-theme="sidnej"] .chart .line { stroke-width: 3; }
+[data-theme="sidnej"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sidnej"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414448; --alt: #323539; --text1: #e1ebf2; --text2: #b1b9c0; --faint: #858b91; --up: #4ade80; --down: #f87171; --accent: #0284c7; --hot: #273b48; --tip: #e1ebf2; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="sidnej"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(2,132,199,0.14) 9px 10px, transparent 11px 16px, rgba(2,132,199,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222428; background-attachment: fixed; }

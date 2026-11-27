@@ -1,0 +1,18 @@
+/* tema hevi metal (Heavy metal): generisana, tools/teme.py */
+:root[data-theme="hevimetal"] { color-scheme: dark; --back: #070707; --card: #131313; --head: #202020; --edge: #2c2c2c; --alt: #1a1a1a; --text1: #ededf0; --text2: #b4b4b6; --faint: #7f7f80; --up: #4ade80; --down: #f87171; --accent: #a1a1aa; --hot: #272728; --tip: #ededf0; --tipfg: #070707; --accentfg: #111111; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 10px; }
+[data-theme="hevimetal"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="hevimetal"] .overview .left { align-self: start; }
+[data-theme="hevimetal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hevimetal"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="hevimetal"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="hevimetal"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="hevimetal"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="hevimetal"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.06), transparent 40%); background-color: #070707; background-attachment: fixed; }
+[data-theme="hevimetal"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #262626, #131313); border: 1px solid rgba(237,237,240,0.18); }
+[data-theme="hevimetal"] .big .value, [data-theme="hevimetal"] .detail .price { font-weight: 900; }
+[data-theme="hevimetal"] .chart .line { stroke-width: 1.5; }
+[data-theme="hevimetal"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="hevimetal"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #eeeeee; --edge: #d1d1d2; --alt: #f4f4f4; --text1: #2e3036; --text2: #5e6064; --faint: #848588; --up: #15803d; --down: #c81e1e; --accent: #7d7d84; --hot: #e8e8e9; --tip: #2e3036; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="hevimetal"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.4), transparent 40%); background-color: #f0f0f0; background-attachment: fixed; }
+[data-theme="hevimetal"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #fafafa, #fafafa); border: 1px solid rgba(46,48,54,0.18); }

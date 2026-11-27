@@ -1,0 +1,18 @@
+/* tema letnja oluja (Summer storm): generisana, tools/teme.py */
+:root[data-theme="letnjaoluja"] { color-scheme: dark; --back: #120f22; --card: #1e1b2d; --head: #2a2739; --edge: #353144; --alt: #242133; --text1: #eae5f5; --text2: #b4b0c0; --faint: #827e90; --up: #4ade80; --down: #f87171; --accent: #864aee; --hot: #2d2248; --tip: #eae5f5; --tipfg: #120f22; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="letnjaoluja"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="letnjaoluja"] .overview .left { align-self: start; }
+[data-theme="letnjaoluja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="letnjaoluja"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="letnjaoluja"] body { background: linear-gradient(100deg, transparent 48%, rgba(134,74,238,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #120f22; background-attachment: fixed; }
+[data-theme="letnjaoluja"] .bar h1::after { content: " ↯"; color: #864aee; }
+[data-theme="letnjaoluja"] .bar { position: relative; }
+[data-theme="letnjaoluja"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #864aee 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #864aee 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="letnjaoluja"] .big .value, [data-theme="letnjaoluja"] .detail .price { font-weight: 700; }
+[data-theme="letnjaoluja"] .chart .line { stroke-width: 2.5; }
+[data-theme="letnjaoluja"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="letnjaoluja"][data-scheme="light"] { color-scheme: light; --back: #f1f1f2; --card: #fbfbfb; --head: #eeeef0; --edge: #d1cfd6; --alt: #f5f4f5; --text1: #281d42; --text2: #5a526e; --faint: #888396; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #e9e0f9; --tip: #281d42; --tipfg: #f1f1f2; --accentfg: #ffffff; }
+[data-theme="letnjaoluja"][data-scheme="light"] body { background: linear-gradient(100deg, transparent 48%, rgba(124,58,237,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #f1f1f2; background-attachment: fixed; }
+[data-theme="letnjaoluja"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #7c3aed; }
+[data-theme="letnjaoluja"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #7c3aed 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #7c3aed 25%, transparent 25%) -10px 0 / 20px 10px; }

@@ -1,0 +1,18 @@
+/* tema nadrealizam (Surrealism): generisana, tools/teme.py */
+:root[data-theme="nadrealizam"] { color-scheme: light; --back: #f3e6d0; --card: #fbf8f1; --head: #eeece6; --edge: #d2c8b9; --alt: #f4f2ec; --text1: #222c3e; --text2: #565a62; --faint: #7e7e7e; --up: #15803d; --down: #c81e1e; --accent: #5480c8; --hot: #e4e7eb; --tip: #222c3e; --tipfg: #f3e6d0; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="nadrealizam"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="nadrealizam"] .overview .left { align-self: start; }
+[data-theme="nadrealizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nadrealizam"] button { border-radius: 0; }
+[data-theme="nadrealizam"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="nadrealizam"] .bar h1 { font-size: 24px; }
+[data-theme="nadrealizam"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="nadrealizam"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(84,128,200,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(217,91,139,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(139,217,91,0.14), transparent 70%); background-color: #f3e6d0; background-attachment: fixed; }
+[data-theme="nadrealizam"] .block:nth-child(odd), [data-theme="nadrealizam"] .overview .left { transform: rotate(-.6deg); }
+[data-theme="nadrealizam"] .block:nth-child(even) { transform: rotate(.5deg); }
+[data-theme="nadrealizam"] .big .value, [data-theme="nadrealizam"] .detail .price { font-weight: 200; }
+[data-theme="nadrealizam"] .chart .line { stroke-width: 3; }
+[data-theme="nadrealizam"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="nadrealizam"][data-scheme="dark"] { color-scheme: dark; --back: #222223; --card: #2d2d2e; --head: #38383a; --edge: #424244; --alt: #333334; --text1: #e8ecf4; --text2: #b6bac0; --faint: #898b90; --up: #4ade80; --down: #f87171; --accent: #5b8bd9; --hot: #333a46; --tip: #e8ecf4; --tipfg: #222223; --accentfg: #111111; }
+[data-theme="nadrealizam"][data-scheme="dark"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(91,139,217,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(217,91,139,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(139,217,91,0.14), transparent 70%); background-color: #222223; background-attachment: fixed; }

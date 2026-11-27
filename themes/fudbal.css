@@ -1,0 +1,16 @@
+/* tema fudbal (Football): generisana, tools/teme.py */
+:root[data-theme="fudbal"] { color-scheme: dark; --back: #0b3d1c; --card: #174727; --head: #235133; --edge: #2d593d; --alt: #1d4c2d; --text1: #e2eee8; --text2: #acc2b5; --faint: #7b9986; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #17542c; --tip: #e2eee8; --tipfg: #0b3d1c; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="fudbal"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="fudbal"] .overview .left { align-self: start; }
+[data-theme="fudbal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fudbal"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="fudbal"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="fudbal"] .bar h1 { font-weight: 800; }
+[data-theme="fudbal"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="fudbal"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 80px, transparent 80px 160px), radial-gradient(circle at 50% 55%, transparent 90px, rgba(255,255,255,0.4) 90px 92px, transparent 92px), linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.4) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #0b3d1c; background-attachment: fixed; }
+[data-theme="fudbal"] .big .value, [data-theme="fudbal"] .detail .price { font-weight: 400; }
+[data-theme="fudbal"] .chart .line { stroke-width: 2.5; }
+[data-theme="fudbal"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="fudbal"][data-scheme="light"] { color-scheme: light; --back: #f0f3f1; --card: #fafbfb; --head: #ecefee; --edge: #cdd4d0; --alt: #f3f5f5; --text1: #153024; --text2: #4c6157; --faint: #7e8e86; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #daede1; --tip: #153024; --tipfg: #f0f3f1; --accentfg: #111111; }
+[data-theme="fudbal"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 80px, transparent 80px 160px), radial-gradient(circle at 50% 55%, transparent 90px, rgba(255,255,255,0.4) 90px 92px, transparent 92px), linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.4) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #f0f3f1; background-attachment: fixed; }

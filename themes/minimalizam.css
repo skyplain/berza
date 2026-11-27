@@ -1,0 +1,14 @@
+/* tema minimalizam (Minimalism): generisana, tools/teme.py */
+:root[data-theme="minimalizam"] { color-scheme: light; --back: #f9f9f9; --card: #fdfdfd; --head: #f0f0f0; --edge: #d6d7d7; --alt: #f6f6f7; --text1: #212226; --text2: #57585b; --faint: #89898b; --up: #15803d; --down: #c81e1e; --accent: #555555; --hot: #e5e5e5; --tip: #212226; --tipfg: #f9f9f9; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="minimalizam"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="minimalizam"] .overview .left { align-self: start; }
+[data-theme="minimalizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="minimalizam"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="minimalizam"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="minimalizam"] .bar h1 { font-weight: 800; }
+[data-theme="minimalizam"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="minimalizam"] .big .value, [data-theme="minimalizam"] .detail .price { font-weight: 400; }
+[data-theme="minimalizam"] .chart .line { stroke-width: 3; }
+[data-theme="minimalizam"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="minimalizam"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424347; --alt: #343538; --text1: #e7e7e9; --text2: #b6b6b9; --faint: #89898c; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3e; --tip: #e7e7e9; --tipfg: #232428; --accentfg: #111111; }

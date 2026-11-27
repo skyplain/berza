@@ -1,0 +1,15 @@
+/* tema pun mesec (Full moon): generisana, tools/teme.py */
+:root[data-theme="punmesec"] { color-scheme: dark; --back: #0b1020; --card: #171c2b; --head: #242937; --edge: #303442; --alt: #1e2231; --text1: #f4f4f6; --text2: #babbc0; --faint: #84878f; --up: #4ade80; --down: #f87171; --accent: #f1f5f9; --hot: #363a48; --tip: #f4f4f6; --tipfg: #0b1020; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="punmesec"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="punmesec"] .overview .left { align-self: start; }
+[data-theme="punmesec"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="punmesec"] button { border-radius: 999px; }
+[data-theme="punmesec"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="punmesec"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(244,244,246,0.9), rgba(244,244,246,0.55)); box-shadow: 0 0 60px rgba(244,244,246,0.35); opacity: .55; }
+[data-theme="punmesec"] .big .value, [data-theme="punmesec"] .detail .price { font-weight: 700; }
+[data-theme="punmesec"] .chart .line { stroke-width: 2; }
+[data-theme="punmesec"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="punmesec"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #eff0f0; --edge: #d3d5d6; --alt: #f4f5f6; --text1: #3d3f44; --text2: #6a6c70; --faint: #86878b; --up: #15803d; --down: #c81e1e; --accent: #7b7d80; --hot: #e8e9ea; --tip: #3d3f44; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="punmesec"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="punmesec"][data-scheme="light"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(61,63,68,0.9), rgba(61,63,68,0.55)); box-shadow: 0 0 60px rgba(61,63,68,0.35); opacity: .55; }

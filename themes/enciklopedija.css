@@ -1,0 +1,18 @@
+/* tema enciklopedija (Encyclopedia): generisana, tools/teme.py */
+:root[data-theme="enciklopedija"] { color-scheme: light; --back: #f8f3ea; --card: #fdfbf9; --head: #f0edec; --edge: #d7d0c9; --alt: #f7f4f2; --text1: #27181d; --text2: #5b4f50; --faint: #8b817f; --up: #15803d; --down: #c81e1e; --accent: #7a1f1f; --hot: #ebdcda; --tip: #27181d; --tipfg: #f8f3ea; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="enciklopedija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="enciklopedija"] .overview .left { align-self: start; }
+[data-theme="enciklopedija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="enciklopedija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="enciklopedija"] :is(.overview .left, .block, .detail, .list) { border: 4px double #7a1f1f; }
+[data-theme="enciklopedija"] .bar h1::before { content: "❦ "; color: #7a1f1f; }
+[data-theme="enciklopedija"] .bar h1::after { content: " ❦"; color: #7a1f1f; }
+[data-theme="enciklopedija"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="enciklopedija"] .big .value, [data-theme="enciklopedija"] .detail .price { font-weight: 200; }
+[data-theme="enciklopedija"] .chart .line { stroke-width: 1.5; }
+[data-theme="enciklopedija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="enciklopedija"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #39393c; --edge: #434245; --alt: #343336; --text1: #eae3e5; --text2: #b8b3b5; --faint: #8a8789; --up: #4ade80; --down: #f87171; --accent: #ab7171; --hot: #40373a; --tip: #eae3e5; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="enciklopedija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #ab7171; }
+[data-theme="enciklopedija"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #ab7171; }
+[data-theme="enciklopedija"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #ab7171; }

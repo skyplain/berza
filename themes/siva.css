@@ -1,0 +1,26 @@
+/* tema siva (Gray): generisana, tools/teme.py */
+:root[data-theme="siva"] { color-scheme: light; --back: #efeff1; --card: #fafafb; --head: #ededef; --edge: #cfcfd2; --alt: #f4f4f5; --text1: #24272e; --text2: #57595f; --faint: #85878c; --up: #15803d; --down: #c81e1e; --accent: #6b7280; --hot: #e6e7ea; --tip: #24272e; --tipfg: #efeff1; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="siva"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="siva"] .overview .left { align-self: start; }
+[data-theme="siva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="siva"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="siva"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="siva"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="siva"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="siva"] body { background: linear-gradient(180deg, rgba(107,114,128,0.1), transparent 380px); background-color: #efeff1; background-attachment: fixed; }
+[data-theme="siva"] :is(.overview .left, .block, .detail, .list) { background: #f3f3f5; border-color: rgba(107,114,128,0.35); }
+[data-theme="siva"] .chart .line { stroke: #6b7280 !important; }
+[data-theme="siva"] .chart .area { fill: #6b7280 !important; }
+[data-theme="siva"] .chart .vol { fill: #6b7280; }
+[data-theme="siva"] :is(h2, h3, .big .label) { color: #6b7280; }
+[data-theme="siva"] .big .value, [data-theme="siva"] .detail .price { font-weight: 900; }
+[data-theme="siva"] .chart .line { stroke-width: 2; }
+[data-theme="siva"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="siva"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #424346; --alt: #333437; --text1: #e9eaed; --text2: #b7b8bb; --faint: #898a8d; --up: #4ade80; --down: #f87171; --accent: #777d8a; --hot: #37393d; --tip: #e9eaed; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="siva"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(119,125,138,0.1), transparent 380px); background-color: #222326; background-attachment: fixed; }
+[data-theme="siva"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #303135; border-color: rgba(119,125,138,0.35); }
+[data-theme="siva"][data-scheme="dark"] .chart .line { stroke: #777d8a !important; }
+[data-theme="siva"][data-scheme="dark"] .chart .area { fill: #777d8a !important; }
+[data-theme="siva"][data-scheme="dark"] .chart .vol { fill: #777d8a; }
+[data-theme="siva"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #777d8a; }

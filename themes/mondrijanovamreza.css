@@ -1,0 +1,17 @@
+/* tema mondrijanova mreža (Grid painting): generisana, tools/teme.py */
+:root[data-theme="mondrijanovamreza"] { color-scheme: light; --back: #fafafa; --card: #f5f6f8; --head: #e7e9ec; --edge: #d5d7db; --alt: #eef0f2; --text1: #112036; --text2: #4b5667; --faint: #818994; --up: #15803d; --down: #c81e1e; --accent: #0047ab; --hot: #d3deed; --tip: #112036; --tipfg: #fafafa; --accentfg: #ffffff; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 10px; }
+[data-theme="mondrijanovamreza"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="mondrijanovamreza"] .overview .left { align-self: start; }
+[data-theme="mondrijanovamreza"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mondrijanovamreza"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="mondrijanovamreza"] .bar h1 { font-size: 24px; }
+[data-theme="mondrijanovamreza"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="mondrijanovamreza"] :is(.overview .left, .block, .detail, .list) { border: 5px solid #111111; border-radius: 0; }
+[data-theme="mondrijanovamreza"] :is(h2, h3)::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 8px; background: #d40920; }
+[data-theme="mondrijanovamreza"] .block:nth-child(3n+2) h2::before { background: #f7d842; }
+[data-theme="mondrijanovamreza"] .block:nth-child(3n) h2::before { background: #1356a2; }
+[data-theme="mondrijanovamreza"] .big .value, [data-theme="mondrijanovamreza"] .detail .price { font-weight: 700; }
+[data-theme="mondrijanovamreza"] .chart .line { stroke-width: 2.5; }
+[data-theme="mondrijanovamreza"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mondrijanovamreza"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #414347; --alt: #333438; --text1: #e0e6f0; --text2: #b1b6be; --faint: #858990; --up: #4ade80; --down: #f87171; --accent: #4f80c5; --hot: #333a47; --tip: #e0e6f0; --tipfg: #232427; --accentfg: #111111; }

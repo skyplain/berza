@@ -1,0 +1,17 @@
+/* tema školjka: generisana (paleta + oblik 6/1/0/5) */
+:root[data-theme="skoljka"] { color-scheme: light; --back: #fff5f0; --card: #fffbf8; --head: #f4efec; --edge: #e0d5d0; --alt: #f9f5f2; --text1: #40302a; --text2: #756761; --faint: #a0928d; --up: #15803d; --down: #c81e1e; --accent: #cf7c6c; --hot: #f8e9e4; --tip: #40302a; --tipfg: #fff5f0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="skoljka"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="skoljka"] .overview .left { align-self: start; }
+[data-theme="skoljka"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="skoljka"] button { border-radius: 0; }
+[data-theme="skoljka"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="skoljka"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="skoljka"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="skoljka"] body { background: linear-gradient(180deg, #fae9e3, #fff5f0 420px); background-color: #fff5f0; background-attachment: fixed; }
+[data-theme="skoljka"] .big .value, [data-theme="skoljka"] .detail .price { font-weight: 700; }
+[data-theme="skoljka"] .chart .line { stroke-width: 2.5; }
+[data-theme="skoljka"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="skoljka"][data-scheme="dark"] { color-scheme: dark; --back: #0e0806; --card: #090705; --head: #110e0c; --edge: #251d1a; --alt: #0d0a08; --text1: #cbb7af; --text2: #8a7b75; --faint: #675a55; --up: #4ade80; --down: #f87171; --accent: #cf7c6c; --hot: #170e0b; --tip: #cbb7af; --tipfg: #0e0806; --accentfg: #111111; }
+[data-theme="skoljka"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="skoljka"][data-scheme="dark"] body { background: linear-gradient(180deg, #180d09, #0e0806 420px); background-color: #0e0806; background-attachment: fixed; }

@@ -1,0 +1,18 @@
+/* tema kolo (Kolo): generisana, tools/teme.py */
+:root[data-theme="kolo"] { color-scheme: light; --back: #faf1e6; --card: #fefbf8; --head: #f2edeb; --edge: #dacec6; --alt: #f8f4f1; --text1: #33181c; --text2: #654e4e; --faint: #93807d; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f4dcd9; --tip: #33181c; --tipfg: #faf1e6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="kolo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="kolo"] .overview .left { align-self: start; }
+[data-theme="kolo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kolo"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="kolo"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="kolo"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kolo"] body { background: linear-gradient(135deg, rgba(185,28,28,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(225deg, rgba(185,28,28,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(315deg, rgba(185,28,28,0.11) 25%, transparent 25%) 0 0 / 40px 40px, linear-gradient(45deg, rgba(185,28,28,0.11) 25%, transparent 25%) 0 0 / 40px 40px; background-color: #faf1e6; background-attachment: fixed; }
+[data-theme="kolo"] .bar { position: relative; }
+[data-theme="kolo"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #b91c1c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(225deg, #b91c1c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(90deg, rgba(28,185,28,0.8), rgba(28,28,185,0.8)); }
+[data-theme="kolo"] .big .value, [data-theme="kolo"] .detail .price { font-weight: 200; }
+[data-theme="kolo"] .chart .line { stroke-width: 3; }
+[data-theme="kolo"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kolo"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444244; --alt: #343335; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #443436; --tip: #efe3e5; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="kolo"][data-scheme="dark"] body { background: linear-gradient(135deg, rgba(205,92,92,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(225deg, rgba(205,92,92,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(315deg, rgba(205,92,92,0.11) 25%, transparent 25%) 0 0 / 40px 40px, linear-gradient(45deg, rgba(205,92,92,0.11) 25%, transparent 25%) 0 0 / 40px 40px; background-color: #232325; background-attachment: fixed; }
+[data-theme="kolo"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #cd5c5c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(225deg, #cd5c5c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(90deg, rgba(28,185,28,0.8), rgba(28,28,185,0.8)); }

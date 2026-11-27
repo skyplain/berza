@@ -1,0 +1,18 @@
+/* tema somot: generisana (paleta + oblik 6/1/4/5) */
+:root[data-theme="somot"] { color-scheme: dark; --back: #1a0a14; --card: #26101d; --head: #331d29; --edge: #3d2c37; --alt: #2c1623; --text1: #f7e1ec; --text2: #b9a5b0; --faint: #887680; --up: #4ade80; --down: #f87171; --accent: #e04585; --hot: #40172c; --tip: #f7e1ec; --tipfg: #1a0a14; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="somot"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="somot"] .overview .left { align-self: start; }
+[data-theme="somot"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="somot"] button { border-radius: 0; }
+[data-theme="somot"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="somot"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="somot"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="somot"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="somot"] body { background: linear-gradient(180deg, #2e101f, #1a0a14 420px); background-color: #1a0a14; background-attachment: fixed; }
+[data-theme="somot"] .big .value, [data-theme="somot"] .detail .price { font-weight: 700; }
+[data-theme="somot"] .chart .line { stroke-width: 3.5; }
+[data-theme="somot"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="somot"][data-scheme="light"] { color-scheme: light; --back: #fee5f3; --card: #f7d6e7; --head: #e4c6d5; --edge: #cdb7c5; --alt: #eecedf; --text1: #1d0e16; --text2: #4d3c45; --faint: #796771; --up: #15803d; --down: #c81e1e; --accent: #dc4182; --hot: #f1bad2; --tip: #1d0e16; --tipfg: #fee5f3; --accentfg: #111111; }
+[data-theme="somot"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="somot"][data-scheme="light"] body { background: linear-gradient(180deg, #f9cee0, #fee5f3 420px); background-color: #fee5f3; background-attachment: fixed; }

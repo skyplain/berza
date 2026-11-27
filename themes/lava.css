@@ -1,0 +1,19 @@
+/* tema lava: crno sa narandžasto-crvenim sjajem, kao užarena stena */
+:root[data-theme="lava"] { color-scheme: dark; --back: #120806; --card: #1b0d09; --head: #26110b; --edge: #4a1d10; --alt: #170a07; --text1: #ffe7d6; --text2: #ffb38a; --faint: #a86a4c; --up: #ffd166; --down: #ff3b1f; --accent: #ff6a1a; --hot: #33140b; --tip: #ff6a1a; --tipfg: #120806; --accentfg: #120806; --font: "Avenir Next Condensed","Arial Narrow",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: inset 0 -30px 60px -40px rgba(255,90,20,.35); --h-color: #ff6a1a; --h-transform: uppercase; --h-spacing: .14em; --h-size: 12.5px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 700; }
+[data-theme="lava"] body { background:radial-gradient(900px 500px at 50% 120%,rgba(255,80,20,.35),transparent 70%) fixed #120806 }
+[data-theme="lava"] .bar { border-bottom:2px solid #ff6a1a;box-shadow:0 2px 18px rgba(255,90,20,.4) }
+[data-theme="lava"] .bar h1 { text-transform:uppercase;letter-spacing:.1em;background:linear-gradient(90deg,#ffd166,#ff6a1a,#ff3b1f);-webkit-background-clip:text;background-clip:text;color:transparent }
+[data-theme="lava"] .big .value { text-shadow:0 0 18px rgba(255,106,26,.7) }
+[data-theme="lava"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="lava"] .chart .line { stroke-width:2.5;filter:drop-shadow(0 0 5px #ff6a1a) }
+[data-theme="lava"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="lava"] .overview .left { align-self: start; }
+[data-theme="lava"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="lava"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="lava"][data-scheme="light"] { color-scheme: light; --back: #fff2ef; --card: #fce6e0; --head: #fadad1; --edge: #f0b6a5; --alt: #ffece7; --text1: #1c0d02; --text2: #491d00; --faint: #985c3e; --up: #15803d; --down: #c81e1e; --accent: #e55a04; --hot: #f9cdc0; --tip: #e55a04; --tipfg: #151313; --accentfg: #111111; --panel-shadow: inset 0 -30px 60px -40px rgba(141,45,4,.35); --h-color: #e55a04; }
+[data-theme="lava"][data-scheme="light"] body { background:radial-gradient(900px 500px at 50% 120%,rgba(151,39,0,.35),transparent 70%) fixed #fff2ef }
+[data-theme="lava"][data-scheme="light"] .bar { border-bottom:2px solid #e55a04;box-shadow:0 2px 18px rgba(141,45,4,.4) }
+[data-theme="lava"][data-scheme="light"] .bar h1 { text-transform:uppercase;letter-spacing:.1em;background:linear-gradient(90deg,#2a1d00,#e55a04,#a61b06);-webkit-background-clip:text;background-clip:text;color:transparent }
+[data-theme="lava"][data-scheme="light"] .big .value { text-shadow:0 0 18px rgba(229,90,4,.7) }
+[data-theme="lava"][data-scheme="light"] .chart .line { stroke-width:2.5;filter:drop-shadow(0 0 5px #e55a04) }

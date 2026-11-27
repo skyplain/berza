@@ -1,0 +1,18 @@
+/* tema magnetizam (Magnetism): generisana, tools/teme.py */
+:root[data-theme="magnetizam"] { color-scheme: light; --back: #f1f5fe; --card: #fbfcff; --head: #edeff4; --edge: #ced4e0; --alt: #f4f6f9; --text1: #182541; --text2: #4e5970; --faint: #80899c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dde7fc; --tip: #182541; --tipfg: #f1f5fe; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="magnetizam"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="magnetizam"] .overview .left { align-self: start; }
+[data-theme="magnetizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="magnetizam"] button { border-radius: 999px; }
+[data-theme="magnetizam"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="magnetizam"] .bar h1 { font-weight: 800; }
+[data-theme="magnetizam"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="magnetizam"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="magnetizam"] body { background: repeating-radial-gradient(ellipse at 25% 50%, transparent 0 30px, rgba(37,99,235,0.12) 30px 31px), repeating-radial-gradient(ellipse at 75% 50%, transparent 0 30px, rgba(235,37,99,0.1) 30px 31px); background-color: #f1f5fe; background-attachment: fixed; }
+[data-theme="magnetizam"] .big .value, [data-theme="magnetizam"] .detail .price { font-weight: 200; }
+[data-theme="magnetizam"] .chart .line { stroke-width: 3; }
+[data-theme="magnetizam"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="magnetizam"][data-scheme="dark"] { color-scheme: dark; --back: #0e1526; --card: #1a2131; --head: #262d3d; --edge: #303747; --alt: #202737; --text1: #e3e8f5; --text2: #aeb3c1; --faint: #7d8392; --up: #4ade80; --down: #f87171; --accent: #2563eb; --hot: #1c2a4b; --tip: #e3e8f5; --tipfg: #0e1526; --accentfg: #ffffff; }
+[data-theme="magnetizam"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="magnetizam"][data-scheme="dark"] body { background: repeating-radial-gradient(ellipse at 25% 50%, transparent 0 30px, rgba(37,99,235,0.12) 30px 31px), repeating-radial-gradient(ellipse at 75% 50%, transparent 0 30px, rgba(235,37,99,0.1) 30px 31px); background-color: #0e1526; background-attachment: fixed; }

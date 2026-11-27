@@ -1,0 +1,15 @@
+/* tema borovnica: generisana (paleta + oblik 0/1/0/3) */
+:root[data-theme="borovnica"] { color-scheme: dark; --back: #12132e; --card: #1b1d42; --head: #27294d; --edge: #34354f; --alt: #212348; --text1: #e6e8ff; --text2: #abacc4; --faint: #7c7e96; --up: #4ade80; --down: #f87171; --accent: #6c72ff; --hot: #26295c; --tip: #e6e8ff; --tipfg: #12132e; --accentfg: #ffffff; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 4px; }
+[data-theme="borovnica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="borovnica"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="borovnica"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="borovnica"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="borovnica"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="borovnica"] body { background: repeating-linear-gradient(45deg, rgba(230,232,255,0.03) 0 12px, transparent 12px 24px); background-color: #12132e; background-attachment: fixed; }
+[data-theme="borovnica"] .big .value, [data-theme="borovnica"] .detail .price { font-weight: 200; }
+[data-theme="borovnica"] .chart .line { stroke-width: 2.5; }
+[data-theme="borovnica"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="borovnica"][data-scheme="light"] { color-scheme: light; --back: #dde2ff; --card: #c9d0ff; --head: #bbc1ef; --edge: #b2b4d5; --alt: #c2c8f8; --text1: #101120; --text2: #3d3d51; --faint: #65677e; --up: #15803d; --down: #c81e1e; --accent: #6165f1; --hot: #b2bcfb; --tip: #101120; --tipfg: #dde2ff; --accentfg: #ffffff; }
+[data-theme="borovnica"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="borovnica"][data-scheme="light"] body { background: repeating-linear-gradient(45deg, rgba(16,17,32,0.03) 0 12px, transparent 12px 24px); background-color: #dde2ff; background-attachment: fixed; }

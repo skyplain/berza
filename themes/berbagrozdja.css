@@ -1,0 +1,17 @@
+/* tema berba grožđa (Grape harvest): generisana, tools/teme.py */
+:root[data-theme="berbagrozdja"] { color-scheme: light; --back: #f8f2ef; --card: #fdfbfa; --head: #f0edef; --edge: #d7cfd2; --alt: #f7f4f4; --text1: #28193c; --text2: #5c4f69; --faint: #8c8192; --up: #15803d; --down: #c81e1e; --accent: #7e22ce; --hot: #ebddf4; --tip: #28193c; --tipfg: #f8f2ef; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="berbagrozdja"] :is(.overview .left, .block, .detail, .list) { background: rgba(253,251,250,0.6); border: 1px solid rgba(40,25,60,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="berbagrozdja"] .overview .left { align-self: start; }
+[data-theme="berbagrozdja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="berbagrozdja"] button { border-radius: 999px; background: transparent; }
+[data-theme="berbagrozdja"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="berbagrozdja"] .bar h1 { font-size: 24px; }
+[data-theme="berbagrozdja"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="berbagrozdja"] body { background: radial-gradient(circle, transparent 6px, rgba(126,34,206,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(126,34,206,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f8f2ef; background-attachment: fixed; }
+[data-theme="berbagrozdja"] .big .value, [data-theme="berbagrozdja"] .detail .price { font-weight: 700; }
+[data-theme="berbagrozdja"] .chart .line { stroke-width: 3; }
+[data-theme="berbagrozdja"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="berbagrozdja"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #39393d; --edge: #434247; --alt: #343337; --text1: #ebe3f3; --text2: #b9b3c0; --faint: #8b8791; --up: #4ade80; --down: #f87171; --accent: #a361dc; --hot: #3e3549; --tip: #ebe3f3; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="berbagrozdja"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,46,49,0.6); border: 1px solid rgba(235,227,243,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="berbagrozdja"][data-scheme="dark"] body { background: radial-gradient(circle, transparent 6px, rgba(163,97,220,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(163,97,220,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #232326; background-attachment: fixed; }

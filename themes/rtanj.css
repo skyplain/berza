@@ -1,0 +1,15 @@
+/* tema rtanj (Rtanj): generisana, tools/teme.py */
+:root[data-theme="rtanj"] { color-scheme: light; --back: #f1f5e8; --card: #fbfcf8; --head: #eeefeb; --edge: #cfd4c7; --alt: #f4f6f1; --text1: #1f291a; --text2: #545c4e; --faint: #848b7d; --up: #15803d; --down: #c81e1e; --accent: #4d7c0f; --hot: #e3ead7; --tip: #1f291a; --tipfg: #f1f5e8; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="rtanj"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rtanj"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="rtanj"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="rtanj"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="rtanj"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="rtanj"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="rtanj"] body { background: linear-gradient(135deg, transparent 50%, rgba(77,124,15,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(77,124,15,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(77,124,15,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(77,124,15,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #f1f5e8; background-attachment: fixed; }
+[data-theme="rtanj"] .big .value, [data-theme="rtanj"] .detail .price { font-weight: 900; }
+[data-theme="rtanj"] .chart .line { stroke-width: 2.5; }
+[data-theme="rtanj"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="rtanj"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #424344; --alt: #333436; --text1: #e7eae4; --text2: #b6b8b4; --faint: #888a89; --up: #4ade80; --down: #f87171; --accent: #628b2b; --hot: #343b30; --tip: #e7eae4; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="rtanj"][data-scheme="dark"] body { background: linear-gradient(135deg, transparent 50%, rgba(98,139,43,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(98,139,43,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(98,139,43,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(98,139,43,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #222326; background-attachment: fixed; }

@@ -1,0 +1,15 @@
+/* tema monopol (Property game): generisana, tools/teme.py */
+:root[data-theme="monopol"] { color-scheme: light; --back: #e6f2e2; --card: #f8fbf6; --head: #eaefe9; --edge: #c5d3c4; --alt: #f1f5f0; --text1: #153024; --text2: #496054; --faint: #798d7f; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #d8eddd; --tip: #153024; --tipfg: #e6f2e2; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="monopol"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="monopol"] .overview .left { align-self: start; }
+[data-theme="monopol"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="monopol"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="monopol"] .bar h1 { font-weight: 800; }
+[data-theme="monopol"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="monopol"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }
+[data-theme="monopol"] .big .value, [data-theme="monopol"] .detail .price { font-weight: 400; }
+[data-theme="monopol"] .chart .line { stroke-width: 1.5; }
+[data-theme="monopol"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="monopol"][data-scheme="dark"] { color-scheme: dark; --back: #212325; --card: #2c2e30; --head: #373a3b; --edge: #404344; --alt: #313436; --text1: #e2eee8; --text2: #b2bbb7; --faint: #858d8a; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #293e34; --tip: #e2eee8; --tipfg: #212325; --accentfg: #111111; }
+[data-theme="monopol"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }

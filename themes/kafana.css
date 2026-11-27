@@ -1,0 +1,17 @@
+/* tema kafana (Tavern): generisana, tools/teme.py */
+:root[data-theme="kafana"] { color-scheme: dark; --back: #170c06; --card: #231812; --head: #2f241f; --edge: #392f2a; --alt: #291e18; --text1: #ede5e4; --text2: #b8afac; --faint: #867d79; --up: #4ade80; --down: #f87171; --accent: #a95336; --hot: #362017; --tip: #ede5e4; --tipfg: #170c06; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="kafana"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="kafana"] .overview .left { align-self: start; }
+[data-theme="kafana"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kafana"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="kafana"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kafana"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kafana"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kafana"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="kafana"] body { background: repeating-linear-gradient(90deg, rgba(169,83,54,0.07) 0 2px, transparent 2px 9px, rgba(169,83,54,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(169,83,54,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #170c06; background-attachment: fixed; }
+[data-theme="kafana"] .big .value, [data-theme="kafana"] .detail .price { font-weight: 400; }
+[data-theme="kafana"] .chart .line { stroke-width: 2; }
+[data-theme="kafana"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kafana"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeded; --edge: #d2cece; --alt: #f5f3f3; --text1: #2d1c1a; --text2: #5e5150; --faint: #8b8281; --up: #15803d; --down: #c81e1e; --accent: #9a3412; --hot: #eddeda; --tip: #2d1c1a; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="kafana"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(154,52,18,0.07) 0 2px, transparent 2px 9px, rgba(154,52,18,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(154,52,18,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #f1f0f0; background-attachment: fixed; }

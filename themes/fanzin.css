@@ -1,0 +1,14 @@
+/* tema fanzin (Fanzine): generisana, tools/teme.py */
+:root[data-theme="fanzin"] { color-scheme: light; --back: #f4f4f0; --card: #fcfcfa; --head: #f1eeed; --edge: #d7d1d0; --alt: #f6f5f4; --text1: #3f1b26; --text2: #6c5158; --faint: #968387; --up: #15803d; --down: #c81e1e; --accent: #ff2d55; --hot: #fcdfe3; --tip: #3f1b26; --tipfg: #f4f4f0; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 0px; }
+[data-theme="fanzin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fanzin"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="fanzin"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="fanzin"] .bar h1 { font-size: 24px; }
+[data-theme="fanzin"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(255,45,85,0.55), -2px -1px 0 rgba(85,255,45,0.45); }
+[data-theme="fanzin"] .block:nth-child(odd), [data-theme="fanzin"] .overview .left { transform: rotate(-.6deg); }
+[data-theme="fanzin"] .block:nth-child(even) { transform: rotate(.5deg); }
+[data-theme="fanzin"] .big .value, [data-theme="fanzin"] .detail .price { font-weight: 900; }
+[data-theme="fanzin"] .chart .line { stroke-width: 2; }
+[data-theme="fanzin"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="fanzin"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #444245; --alt: #333337; --text1: #f5e4e9; --text2: #c0b4b8; --faint: #90878b; --up: #4ade80; --down: #f87171; --accent: #ff2d55; --hot: #4a2e36; --tip: #f5e4e9; --tipfg: #222326; --accentfg: #111111; }

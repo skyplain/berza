@@ -1,0 +1,20 @@
+/* tema beton i staklo (Concrete & glass): generisana, tools/teme.py */
+:root[data-theme="betonistaklo"] { color-scheme: light; --back: #e7e7e5; --card: #f8f8f7; --head: #ebeceb; --edge: #c8c8c8; --alt: #f2f2f1; --text1: #232830; --text2: #54585d; --faint: #818487; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e3e6e8; --tip: #232830; --tipfg: #e7e7e5; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 8px; }
+[data-theme="betonistaklo"] :is(.overview .left, .block, .detail, .list) { background: #e0e0df; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="betonistaklo"] .overview .left { align-self: start; }
+[data-theme="betonistaklo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="betonistaklo"] button { border: 0; }
+[data-theme="betonistaklo"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="betonistaklo"] .bar h1 { font-size: 24px; }
+[data-theme="betonistaklo"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="betonistaklo"] body { background: repeating-linear-gradient(0deg, rgba(35,40,48,0.05) 0 1px, transparent 1px 120px), repeating-radial-gradient(circle at 23% 41%, rgba(35,40,48,0.04) 0 1px, transparent 1px 3px); background-color: #e7e7e5; background-attachment: fixed; }
+[data-theme="betonistaklo"] :is(.overview .left, .block, .detail, .list) { border-radius: 0; }
+[data-theme="betonistaklo"] :is(.overview .left, .block, .detail, .list) { background: rgba(248,248,247,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(35,40,48,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+[data-theme="betonistaklo"] .big .value, [data-theme="betonistaklo"] .detail .price { font-weight: 700; }
+[data-theme="betonistaklo"] .chart .line { stroke-width: 1.5; }
+[data-theme="betonistaklo"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="betonistaklo"][data-scheme="dark"] { color-scheme: dark; --back: #212225; --card: #2c2d30; --head: #37383b; --edge: #414245; --alt: #323336; --text1: #e8eaed; --text2: #b6b8bb; --faint: #888a8d; --up: #4ade80; --down: #f87171; --accent: #707f94; --hot: #36383e; --tip: #e8eaed; --tipfg: #212225; --accentfg: #111111; }
+[data-theme="betonistaklo"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #28292c; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="betonistaklo"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(232,234,237,0.05) 0 1px, transparent 1px 120px), repeating-radial-gradient(circle at 23% 41%, rgba(232,234,237,0.04) 0 1px, transparent 1px 3px); background-color: #212225; background-attachment: fixed; }
+[data-theme="betonistaklo"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(44,45,48,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(232,234,237,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }

@@ -1,0 +1,19 @@
+/* tema školski raspust (School holidays): generisana, tools/teme.py */
+:root[data-theme="skolskiraspust"] { color-scheme: light; --back: #fff8ed; --card: #fffdfa; --head: #f3f0ed; --edge: #e0d7cb; --alt: #f9f7f3; --text1: #3e281b; --text2: #6e5c50; --faint: #9b8c80; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f9e7da; --tip: #3e281b; --tipfg: #fff8ed; --accentfg: #111111; --font: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; --radius: 4px; }
+[data-theme="skolskiraspust"] :is(.overview .left, .block, .detail, .list) { background: rgba(255,253,250,0.6); border: 1px solid rgba(62,40,27,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="skolskiraspust"] .overview .left { align-self: start; }
+[data-theme="skolskiraspust"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="skolskiraspust"] button { border-radius: 999px; background: transparent; }
+[data-theme="skolskiraspust"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="skolskiraspust"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="skolskiraspust"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="skolskiraspust"] body { background: linear-gradient(90deg, transparent 54px, rgba(220,60,60,.45) 54px 56px, transparent 56px), repeating-linear-gradient(180deg, transparent 0 27px, rgba(211,98,18,0.18) 27px 28px); background-color: #fff8ed; background-attachment: fixed; }
+[data-theme="skolskiraspust"] .app { padding-left: 72px; }
+@media (max-width: 800px) { [data-theme="skolskiraspust"] .app { padding-left: var(--gut, 16px); } }
+[data-theme="skolskiraspust"] .big .value, [data-theme="skolskiraspust"] .detail .price { font-weight: 200; }
+[data-theme="skolskiraspust"] .chart .line { stroke-width: 1.5; }
+[data-theme="skolskiraspust"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="skolskiraspust"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f4eae4; --text2: #c0b8b4; --faint: #908b89; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #4a392d; --tip: #f4eae4; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="skolskiraspust"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,47,49,0.6); border: 1px solid rgba(244,234,228,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="skolskiraspust"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent 54px, rgba(220,60,60,.45) 54px 56px, transparent 56px), repeating-linear-gradient(180deg, transparent 0 27px, rgba(249,115,22,0.18) 27px 28px); background-color: #232426; background-attachment: fixed; }

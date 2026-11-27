@@ -1,0 +1,16 @@
+/* tema avala (Avala): generisana, tools/teme.py */
+:root[data-theme="avala"] { color-scheme: light; --back: #f2f7f1; --card: #fbfdfb; --head: #edf0ee; --edge: #cfd5d0; --alt: #f4f7f4; --text1: #152520; --text2: #4c5a54; --faint: #7f8a84; --up: #15803d; --down: #c81e1e; --accent: #166534; --hot: #dbe8df; --tip: #152520; --tipfg: #f2f7f1; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="avala"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="avala"] .overview .left { align-self: start; }
+[data-theme="avala"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="avala"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="avala"] .bar h1 { font-weight: 800; }
+[data-theme="avala"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="avala"] body { background: linear-gradient(135deg, transparent 50%, rgba(22,101,52,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(22,101,52,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(22,101,52,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(22,101,52,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #f2f7f1; background-attachment: fixed; }
+[data-theme="avala"] .big .value, [data-theme="avala"] .detail .price { font-weight: 400; }
+[data-theme="avala"] .chart .line { stroke-width: 2; }
+[data-theme="avala"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="avala"][data-scheme="dark"] { color-scheme: dark; --back: #222426; --card: #2d2f31; --head: #383a3c; --edge: #414445; --alt: #323536; --text1: #e2e9e6; --text2: #b2b8b6; --faint: #868a8a; --up: #4ade80; --down: #f87171; --accent: #518b67; --hot: #323c39; --tip: #e2e9e6; --tipfg: #222426; --accentfg: #111111; }
+[data-theme="avala"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="avala"][data-scheme="dark"] body { background: linear-gradient(135deg, transparent 50%, rgba(81,139,103,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(81,139,103,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(81,139,103,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(81,139,103,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #222426; background-attachment: fixed; }

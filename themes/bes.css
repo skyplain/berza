@@ -1,0 +1,18 @@
+/* tema bes (Rage): generisana, tools/teme.py */
+:root[data-theme="bes"] { color-scheme: dark; --back: #140303; --card: #201010; --head: #2d1d1d; --edge: #382728; --alt: #261616; --text1: #f4e6e8; --text2: #bcadaf; --faint: #88797a; --up: #4ade80; --down: #f87171; --accent: #ef4444; --hot: #3d1717; --tip: #f4e6e8; --tipfg: #140303; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 8px; }
+[data-theme="bes"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="bes"] .overview .left { align-self: start; }
+[data-theme="bes"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bes"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bes"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="bes"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="bes"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bes"] body { background: linear-gradient(125deg, rgba(239,68,68,0.13) 0 28%, transparent 28%); background-color: #140303; background-attachment: fixed; }
+[data-theme="bes"] :is(h2, h3) { border-left: 8px solid #ef4444; padding-left: 8px; }
+[data-theme="bes"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="bes"] .big .value, [data-theme="bes"] .detail .price { font-weight: 700; }
+[data-theme="bes"] .chart .line { stroke-width: 2; }
+[data-theme="bes"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bes"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #f0eded; --edge: #d4cfcf; --alt: #f5f3f4; --text1: #3c1f23; --text2: #695356; --faint: #938385; --up: #15803d; --down: #c81e1e; --accent: #ef4444; --hot: #f9e1e1; --tip: #3c1f23; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="bes"][data-scheme="light"] body { background: linear-gradient(125deg, rgba(239,68,68,0.13) 0 28%, transparent 28%); background-color: #f1f0f0; background-attachment: fixed; }

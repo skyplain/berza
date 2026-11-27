@@ -1,0 +1,18 @@
+/* tema scenario (Screenplay): generisana, tools/teme.py */
+:root[data-theme="scenario"] { color-scheme: light; --back: #f7f7f7; --card: #fdfdfd; --head: #efefef; --edge: #d3d3d4; --alt: #f6f6f6; --text1: #14161a; --text2: #4d4e51; --faint: #818284; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dcdcdc; --tip: #14161a; --tipfg: #f7f7f7; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="scenario"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="scenario"] .overview .left { align-self: start; }
+[data-theme="scenario"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="scenario"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="scenario"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="scenario"] .bar button { background: transparent; color: var(--back); border-color: rgba(247,247,247,0.35); box-shadow: none; }
+[data-theme="scenario"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="scenario"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(17,17,17,0.2) 27px 28px); background-color: #f7f7f7; background-attachment: fixed; }
+[data-theme="scenario"] .big .value, [data-theme="scenario"] .detail .price { font-weight: 200; }
+[data-theme="scenario"] .chart .line { stroke-width: 2.5; }
+[data-theme="scenario"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="scenario"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3e; --tip: #e2e2e4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="scenario"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="scenario"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="scenario"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(128,128,128,0.2) 27px 28px); background-color: #232428; background-attachment: fixed; }

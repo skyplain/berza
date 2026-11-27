@@ -1,0 +1,13 @@
+/* tema železnička stanica (Railway station): generisana, tools/teme.py */
+:root[data-theme="zeleznickastanica"] { color-scheme: dark; --back: #141a14; --card: #202520; --head: #2c312c; --edge: #353b36; --alt: #262b26; --text1: #e2e7e6; --text2: #aeb4b2; --faint: #7f8581; --up: #4ade80; --down: #f87171; --accent: #487a5b; --hot: #263128; --tip: #e2e7e6; --tipfg: #141a14; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="zeleznickastanica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zeleznickastanica"] .overview .left { align-self: start; }
+[data-theme="zeleznickastanica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zeleznickastanica"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="zeleznickastanica"] :is(h2, h3), [data-theme="zeleznickastanica"] .big .value { background: #111111; color: #ffd400; padding: 2px 8px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .08em; display: inline-block; }
+[data-theme="zeleznickastanica"] .big .value, [data-theme="zeleznickastanica"] .detail .price { font-weight: 700; }
+[data-theme="zeleznickastanica"] .chart .line { stroke-width: 1.5; }
+[data-theme="zeleznickastanica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zeleznickastanica"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #edeeee; --edge: #ced0cf; --alt: #f4f4f4; --text1: #15221f; --text2: #4c5654; --faint: #7f8584; --up: #15803d; --down: #c81e1e; --accent: #14532d; --hot: #dbe3de; --tip: #15221f; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="zeleznickastanica"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }

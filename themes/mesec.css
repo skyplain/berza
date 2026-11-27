@@ -1,0 +1,19 @@
+/* tema mesec: generisana (paleta + oblik 4/1/2/7) */
+:root[data-theme="mesec"] { color-scheme: dark; --back: #121316; --card: #1b1d21; --head: #27292d; --edge: #343539; --alt: #212327; --text1: #e9eaee; --text2: #adaeb2; --faint: #7e7e82; --up: #4ade80; --down: #f87171; --accent: #c0c4cc; --hot: #323439; --tip: #e9eaee; --tipfg: #121316; --accentfg: #111111; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="mesec"] :is(.overview .left, .block, .detail, .list) { background: rgba(27,29,33,0.6); border: 1px solid rgba(233,234,238,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="mesec"] .overview .left { align-self: start; }
+[data-theme="mesec"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mesec"] button { border-radius: 999px; background: transparent; }
+[data-theme="mesec"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mesec"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="mesec"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="mesec"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mesec"] body { background: conic-gradient(rgba(233,234,238,0.025) 25%, transparent 0 50%, rgba(233,234,238,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #121316; background-attachment: fixed; }
+[data-theme="mesec"] .big .value, [data-theme="mesec"] .detail .price { font-weight: 200; }
+[data-theme="mesec"] .chart .line { stroke-width: 3.5; }
+[data-theme="mesec"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="mesec"][data-scheme="light"] { color-scheme: light; --back: #e7e9ed; --card: #d8dbe0; --head: #c8cad0; --edge: #b9babf; --alt: #d0d2d8; --text1: #111215; --text2: #3e3f43; --faint: #6a6a6e; --up: #15803d; --down: #c81e1e; --accent: #72757d; --hot: #b9bcc2; --tip: #111215; --tipfg: #e7e9ed; --accentfg: #ffffff; }
+[data-theme="mesec"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(216,219,224,0.6); border: 1px solid rgba(17,18,21,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="mesec"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="mesec"][data-scheme="light"] body { background: conic-gradient(rgba(17,18,21,0.025) 25%, transparent 0 50%, rgba(17,18,21,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #e7e9ed; background-attachment: fixed; }

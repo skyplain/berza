@@ -1,0 +1,19 @@
+/* tema citrin (Citrine): generisana, tools/teme.py */
+:root[data-theme="citrin"] { color-scheme: light; --back: #fffbe9; --card: #fffae4; --head: #f3eed8; --edge: #e0dbc8; --alt: #f9f4de; --text1: #3b3318; --text2: #6c654c; --faint: #918b74; --up: #15803d; --down: #c81e1e; --accent: #a78106; --hot: #f3e9c5; --tip: #3b3318; --tipfg: #fffbe9; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="citrin"] :is(.overview .left, .block, .detail, .list) { background: #f8f4e2; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="citrin"] .overview .left { align-self: start; }
+[data-theme="citrin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="citrin"] button { border: 0; }
+[data-theme="citrin"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="citrin"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="citrin"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,251,233,0.35); box-shadow: none; }
+[data-theme="citrin"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="citrin"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(167,129,6,0.08) 40% 46%, transparent 46%); background-color: #fffbe9; background-attachment: fixed; }
+[data-theme="citrin"] .big .value, [data-theme="citrin"] .detail .price { font-weight: 900; }
+[data-theme="citrin"] .chart .line { stroke-width: 1.5; }
+[data-theme="citrin"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="citrin"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3b3c; --edge: #444444; --alt: #343536; --text1: #f3efe3; --text2: #bfbcb4; --faint: #8f8e88; --up: #4ade80; --down: #f87171; --accent: #eab308; --hot: #48412b; --tip: #f3efe3; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="citrin"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2a2b2d; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="citrin"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,38,0.35); box-shadow: none; }
+[data-theme="citrin"][data-scheme="dark"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(234,179,8,0.08) 40% 46%, transparent 46%); background-color: #232426; background-attachment: fixed; }

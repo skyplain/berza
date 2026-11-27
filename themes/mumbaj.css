@@ -1,0 +1,16 @@
+/* tema mumbaj (Mumbai): generisana, tools/teme.py */
+:root[data-theme="mumbaj"] { color-scheme: light; --back: #fff3e9; --card: #fffbf8; --head: #f3eeeb; --edge: #e0d3c8; --alt: #f9f5f1; --text1: #3e281b; --text2: #6e5b4e; --faint: #9b897e; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f9e6d8; --tip: #3e281b; --tipfg: #fff3e9; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="mumbaj"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="mumbaj"] .overview .left { align-self: start; }
+[data-theme="mumbaj"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mumbaj"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mumbaj"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="mumbaj"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="mumbaj"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="mumbaj"] body { background: radial-gradient(rgba(211,98,18,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(22,249,115,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(115,22,249,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #fff3e9; background-attachment: fixed; }
+[data-theme="mumbaj"] .big .value, [data-theme="mumbaj"] .detail .price { font-weight: 900; }
+[data-theme="mumbaj"] .chart .line { stroke-width: 2.5; }
+[data-theme="mumbaj"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mumbaj"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444344; --alt: #343436; --text1: #f4eae4; --text2: #c0b8b4; --faint: #908a89; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #4a382d; --tip: #f4eae4; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="mumbaj"][data-scheme="dark"] body { background: radial-gradient(rgba(249,115,22,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(22,249,115,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(115,22,249,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #232326; background-attachment: fixed; }

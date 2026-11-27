@@ -1,0 +1,16 @@
+/* tema ruža (Rose): generisana, tools/teme.py */
+:root[data-theme="ruza"] { color-scheme: light; --back: #fff1f3; --card: #fffbfb; --head: #f3edee; --edge: #dfced2; --alt: #f9f4f5; --text1: #3a1824; --text2: #6b4e58; --faint: #998087; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #fbdce2; --tip: #3a1824; --tipfg: #fff1f3; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="ruza"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="ruza"] .overview .left { align-self: start; }
+[data-theme="ruza"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ruza"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ruza"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ruza"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="ruza"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(225,29,72,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(72,225,29,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #fff1f3; background-attachment: fixed; }
+[data-theme="ruza"] .big .value, [data-theme="ruza"] .detail .price { font-weight: 700; }
+[data-theme="ruza"] .chart .line { stroke-width: 2; }
+[data-theme="ruza"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ruza"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444246; --alt: #343337; --text1: #f2e3e8; --text2: #beb3b8; --faint: #8f878b; --up: #4ade80; --down: #f87171; --accent: #e4375e; --hot: #472f38; --tip: #f2e3e8; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="ruza"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="ruza"][data-scheme="dark"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(228,55,94,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(72,225,29,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #232327; background-attachment: fixed; }

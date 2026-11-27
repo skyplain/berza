@@ -1,0 +1,15 @@
+/* tema milimetarski papir (Graph paper): generisana, tools/teme.py */
+:root[data-theme="milimetarskipapir"] { color-scheme: light; --back: #fbfdf8; --card: #fbfaf4; --head: #efede7; --edge: #dcdad5; --alt: #f5f4ee; --text1: #3a231f; --text2: #6a5a55; --faint: #978c87; --up: #15803d; --down: #c81e1e; --accent: #e4572e; --hot: #f8e3d8; --tip: #3a231f; --tipfg: #fbfdf8; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="milimetarskipapir"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="milimetarskipapir"] .overview .left { align-self: start; }
+[data-theme="milimetarskipapir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="milimetarskipapir"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="milimetarskipapir"] .bar h1 { font-size: 24px; }
+[data-theme="milimetarskipapir"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="milimetarskipapir"] body { background: linear-gradient(rgba(228,87,46,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(228,87,46,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(228,87,46,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(228,87,46,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #fbfdf8; background-attachment: fixed; }
+[data-theme="milimetarskipapir"] .big .value, [data-theme="milimetarskipapir"] .detail .price { font-weight: 700; }
+[data-theme="milimetarskipapir"] .chart .line { stroke-width: 1.5; }
+[data-theme="milimetarskipapir"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="milimetarskipapir"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #444346; --alt: #343537; --text1: #f3e7e6; --text2: #bfb6b6; --faint: #8f898a; --up: #4ade80; --down: #f87171; --accent: #e4572e; --hot: #473531; --tip: #f3e7e6; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="milimetarskipapir"][data-scheme="dark"] body { background: linear-gradient(rgba(228,87,46,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(228,87,46,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(228,87,46,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(228,87,46,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #232427; background-attachment: fixed; }

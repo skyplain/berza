@@ -1,0 +1,16 @@
+/* tema rubin: generisana (paleta + oblik 0/1/2/3) */
+:root[data-theme="rubin"] { color-scheme: dark; --back: #1a0509; --card: #240a10; --head: #31171d; --edge: #3f292d; --alt: #2b1117; --text1: #ffe4ea; --text2: #bfa6ab; --faint: #8c747a; --up: #4ade80; --down: #f87171; --accent: #e0115f; --hot: #3e0b1b; --tip: #ffe4ea; --tipfg: #1a0509; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="rubin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rubin"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="rubin"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="rubin"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="rubin"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="rubin"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="rubin"] body { background: repeating-linear-gradient(45deg, rgba(255,228,234,0.03) 0 12px, transparent 12px 24px); background-color: #1a0509; background-attachment: fixed; }
+[data-theme="rubin"] .big .value, [data-theme="rubin"] .detail .price { font-weight: 200; }
+[data-theme="rubin"] .chart .line { stroke-width: 1.5; }
+[data-theme="rubin"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="rubin"][data-scheme="light"] { color-scheme: light; --back: #ffeef0; --card: #fedee3; --head: #f0cbd2; --edge: #d6b9bd; --alt: #f9d3d9; --text1: #1c0b10; --text2: #4e3a3e; --faint: #7e666c; --up: #15803d; --down: #c81e1e; --accent: #e0115f; --hot: #fdc3ce; --tip: #1c0b10; --tipfg: #ffeef0; --accentfg: #ffffff; }
+[data-theme="rubin"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="rubin"][data-scheme="light"] body { background: repeating-linear-gradient(45deg, rgba(28,11,16,0.03) 0 12px, transparent 12px 24px); background-color: #ffeef0; background-attachment: fixed; }

@@ -1,0 +1,14 @@
+/* tema bonsai (Bonsai): generisana, tools/teme.py */
+:root[data-theme="bonsai"] { color-scheme: light; --back: #f5f3ec; --card: #fcfbf9; --head: #efeeec; --edge: #d2d2ca; --alt: #f5f5f2; --text1: #1d241a; --text2: #53584e; --faint: #85877f; --up: #15803d; --down: #c81e1e; --accent: #3f6212; --hot: #e2e6d9; --tip: #1d241a; --tipfg: #f5f3ec; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="bonsai"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bonsai"] .overview .left { align-self: start; }
+[data-theme="bonsai"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bonsai"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="bonsai"] .bar h1 { font-size: 24px; }
+[data-theme="bonsai"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="bonsai"] .big .value, [data-theme="bonsai"] .detail .price { font-weight: 700; }
+[data-theme="bonsai"] .chart .line { stroke-width: 1.5; }
+[data-theme="bonsai"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bonsai"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414344; --alt: #333436; --text1: #e6e8e4; --text2: #b5b7b4; --faint: #888989; --up: #4ade80; --down: #f87171; --accent: #698646; --hot: #353a34; --tip: #e6e8e4; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="bonsai"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

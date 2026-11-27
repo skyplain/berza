@@ -1,0 +1,16 @@
+/* tema tokio: generisana (paleta + oblik 0/1/2/3) */
+:root[data-theme="tokio"] { color-scheme: dark; --back: #0f0f1a; --card: #181828; --head: #252535; --edge: #33333f; --alt: #1e1e2e; --text1: #f0f0ff; --text2: #b1b1bf; --faint: #80808c; --up: #4ade80; --down: #f87171; --accent: #ff2e63; --hot: #381b30; --tip: #f0f0ff; --tipfg: #0f0f1a; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="tokio"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tokio"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="tokio"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tokio"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="tokio"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tokio"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="tokio"] body { background: repeating-linear-gradient(45deg, rgba(240,240,255,0.03) 0 12px, transparent 12px 24px); background-color: #0f0f1a; background-attachment: fixed; }
+[data-theme="tokio"] .big .value, [data-theme="tokio"] .detail .price { font-weight: 200; }
+[data-theme="tokio"] .chart .line { stroke-width: 2.5; }
+[data-theme="tokio"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="tokio"][data-scheme="light"] { color-scheme: light; --back: #ebebfc; --card: #dcddf4; --head: #cacbe0; --edge: #babac9; --alt: #d3d4eb; --text1: #0d0c16; --text2: #3b3b46; --faint: #676772; --up: #15803d; --down: #c81e1e; --accent: #f41c5a; --hot: #e7c0da; --tip: #0d0c16; --tipfg: #ebebfc; --accentfg: #111111; }
+[data-theme="tokio"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tokio"][data-scheme="light"] body { background: repeating-linear-gradient(45deg, rgba(13,12,22,0.03) 0 12px, transparent 12px 24px); background-color: #ebebfc; background-attachment: fixed; }

@@ -1,0 +1,21 @@
+/* tema belo zlato (White gold): generisana, tools/teme.py */
+:root[data-theme="belozlato"] { color-scheme: light; --back: #faf9f6; --card: #fefdfc; --head: #f2f1f0; --edge: #dad9d7; --alt: #f8f7f6; --text1: #2f3033; --text2: #626264; --faint: #909091; --up: #15803d; --down: #c81e1e; --accent: #8f8985; --hot: #eeedeb; --tip: #2f3033; --tipfg: #faf9f6; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="belozlato"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="belozlato"] .overview .left { align-self: start; }
+[data-theme="belozlato"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="belozlato"] button { border-radius: 999px; }
+[data-theme="belozlato"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="belozlato"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="belozlato"] .bar button { background: transparent; color: var(--back); border-color: rgba(250,249,246,0.35); box-shadow: none; }
+[data-theme="belozlato"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="belozlato"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.4), transparent 40%); background-color: #faf9f6; background-attachment: fixed; }
+[data-theme="belozlato"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #fefdfc, #fefdfc); border: 1px solid rgba(47,48,51,0.18); }
+[data-theme="belozlato"] .big .value, [data-theme="belozlato"] .detail .price { font-weight: 700; }
+[data-theme="belozlato"] .chart .line { stroke-width: 3; }
+[data-theme="belozlato"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="belozlato"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #434447; --alt: #343538; --text1: #eeedef; --text2: #bbbbbd; --faint: #8d8d8f; --up: #4ade80; --down: #f87171; --accent: #a8a29e; --hot: #3f3f41; --tip: #eeedef; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="belozlato"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="belozlato"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,39,0.35); box-shadow: none; }
+[data-theme="belozlato"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.06), transparent 40%); background-color: #232427; background-attachment: fixed; }
+[data-theme="belozlato"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #3f4042, #2e2f32); border: 1px solid rgba(238,237,239,0.18); }

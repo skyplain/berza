@@ -1,0 +1,21 @@
+/* tema rokoko (Rococo): generisana, tools/teme.py */
+:root[data-theme="rokoko"] { color-scheme: light; --back: #fbf2f4; --card: #fefbfc; --head: #f2eff0; --edge: #dcd3d6; --alt: #f8f5f6; --text1: #383038; --text2: #696067; --faint: #8e868b; --up: #15803d; --down: #c81e1e; --accent: #9b7383; --hot: #f0e8eb; --tip: #383038; --tipfg: #fbf2f4; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="rokoko"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="rokoko"] .overview .left { align-self: start; }
+[data-theme="rokoko"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rokoko"] button { border-radius: 0; }
+[data-theme="rokoko"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="rokoko"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="rokoko"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="rokoko"] :is(.overview .left, .block, .detail, .list) { border: 4px double #9b7383; }
+[data-theme="rokoko"] .bar h1::before { content: "❦ "; color: #9b7383; }
+[data-theme="rokoko"] .bar h1::after { content: " ❦"; color: #9b7383; }
+[data-theme="rokoko"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="rokoko"] .big .value, [data-theme="rokoko"] .detail .price { font-weight: 900; }
+[data-theme="rokoko"] .chart .line { stroke-width: 2; }
+[data-theme="rokoko"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="rokoko"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444347; --alt: #343438; --text1: #f2edf1; --text2: #bebabe; --faint: #8f8c90; --up: #4ade80; --down: #f87171; --accent: #d8a1b5; --hot: #463e44; --tip: #f2edf1; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="rokoko"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #d8a1b5; }
+[data-theme="rokoko"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #d8a1b5; }
+[data-theme="rokoko"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #d8a1b5; }

@@ -1,0 +1,16 @@
+/* tema kosmička opera (Space opera): generisana, tools/teme.py */
+:root[data-theme="kosmickaopera"] { color-scheme: dark; --back: #05051a; --card: #121225; --head: #201f31; --edge: #2b2b3b; --alt: #19192b; --text1: #f5f1e6; --text2: #b9b6b3; --faint: #828084; --up: #4ade80; --down: #f87171; --accent: #ffcc33; --hot: #332c27; --tip: #f5f1e6; --tipfg: #05051a; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="kosmickaopera"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kosmickaopera"] .overview .left { align-self: start; }
+[data-theme="kosmickaopera"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kosmickaopera"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kosmickaopera"] .bar h1 { font-weight: 800; }
+[data-theme="kosmickaopera"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kosmickaopera"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(245,241,230,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(255,204,51,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(245,241,230,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(245,241,230,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(255,204,51,0.8), transparent); background-color: #05051a; background-attachment: fixed; }
+[data-theme="kosmickaopera"] .big .value, [data-theme="kosmickaopera"] .detail .price { font-weight: 700; }
+[data-theme="kosmickaopera"] .chart .line { stroke-width: 1.5; }
+[data-theme="kosmickaopera"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kosmickaopera"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efeeee; --edge: #d4d3d0; --alt: #f4f4f4; --text1: #3f3820; --text2: #6b6654; --faint: #8d897c; --up: #15803d; --down: #c81e1e; --accent: #9b7b1f; --hot: #ede8dc; --tip: #3f3820; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="kosmickaopera"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kosmickaopera"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(63,56,32,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(155,123,31,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(63,56,32,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(63,56,32,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(155,123,31,0.8), transparent); background-color: #f0f0f1; background-attachment: fixed; }

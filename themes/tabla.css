@@ -1,0 +1,22 @@
+/* tema tabla: školska tabla, kreda, rukopis */
+:root[data-theme="tabla"] { color-scheme: dark; --back: #22372b; --card: #26402f; --head: #2d4a37; --edge: rgba(255,255,255,.25); --alt: rgba(255,255,255,.03); --text1: #f4f1e8; --text2: #d8d4c6; --faint: #a7b3a4; --up: #b8f2a0; --down: #ffb0a0; --accent: #ffe98a; --hot: rgba(255,255,255,.08); --tip: #f4f1e8; --tipfg: #22372b; --accentfg: #22372b; --font: "Chalkboard SE","Chalkboard","Comic Sans MS","Segoe Print",cursive; --radius: 6px; --h-color: #ffe98a; --h-transform: none; --h-spacing: .03em; --h-size: 17px; --h-weight: 400; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="tabla"] body { background:radial-gradient(ellipse at 30% 20%,#2c4636 0%,#1d3025 80%) fixed #22372b;border:14px solid #8a5a33;min-height:100vh }
+[data-theme="tabla"] .bar { border-bottom:2px solid rgba(255,255,255,.35) }
+[data-theme="tabla"] .bar h1 { font-size:26px }
+[data-theme="tabla"] button { background:transparent;border:2px solid rgba(255,255,255,.5);border-radius:14px 6px 12px 8px }
+[data-theme="tabla"] h2,[data-theme="tabla"] h3 { text-decoration:underline wavy rgba(255,233,138,.5) }
+[data-theme="tabla"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="tabla"] .chart .line { stroke:#f4f1e8!important;stroke-width:2.5;stroke-dasharray:14 2 }
+[data-theme="tabla"] .chart .area { fill:#f4f1e8!important;opacity:.06 }
+[data-theme="tabla"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="tabla"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="tabla"][data-scheme="light"] { color-scheme: light; --back: #aec7b7; --card: #a1bfaa; --head: #94b49e; --edge: rgba(6,6,6,.25); --alt: rgba(6,6,6,.03); --text1: #100e08; --text2: #252217; --faint: #384236; --up: #116d34; --down: #b81c1c; --accent: #716003; --hot: rgba(6,6,6,.08); --tip: #100e08; --tipfg: #aec7b7; --accentfg: #ffffff; --h-color: #716003; }
+[data-theme="tabla"][data-scheme="light"] body { background:radial-gradient(ellipse at 30% 20%,#9ab7a4 0%,#b7cec0 80%) fixed #aec7b7;border:14px solid #a8764f;min-height:100vh }
+[data-theme="tabla"][data-scheme="light"] .bar { border-bottom:2px solid rgba(6,6,6,.35) }
+[data-theme="tabla"][data-scheme="light"] button { background:transparent;border:2px solid rgba(6,6,6,.5);border-radius:14px 6px 12px 8px }
+[data-theme="tabla"][data-scheme="light"] h2,[data-theme="tabla"][data-scheme="light"] h3 { text-decoration:underline wavy rgba(113,96,3,.5) }
+[data-theme="tabla"][data-scheme="light"] .chart .line { stroke:#100e08!important;stroke-width:2.5;stroke-dasharray:14 2 }
+[data-theme="tabla"][data-scheme="light"] .chart .area { fill:#100e08!important;opacity:.06 }
+/* telefon: uži okvir table */
+@media (max-width: 600px) { [data-theme="tabla"] body { border-width: 6px } }

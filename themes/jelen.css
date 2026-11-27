@@ -1,0 +1,16 @@
+/* tema jelen (Deer): generisana, tools/teme.py */
+:root[data-theme="jelen"] { color-scheme: light; --back: #f7efe2; --card: #fdfaf6; --head: #f1ede9; --edge: #d7cfc2; --alt: #f7f4ef; --text1: #2e2418; --text2: #60574a; --faint: #8e8579; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #f0e5d5; --tip: #2e2418; --tipfg: #f7efe2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="jelen"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="jelen"] .overview .left { align-self: start; }
+[data-theme="jelen"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="jelen"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="jelen"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="jelen"] .bar h1 { font-weight: 800; }
+[data-theme="jelen"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="jelen"] body { background: radial-gradient(ellipse 8px 18px, rgba(161,98,7,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(161,98,7,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f7efe2; background-attachment: fixed; }
+[data-theme="jelen"] .big .value, [data-theme="jelen"] .detail .price { font-weight: 200; }
+[data-theme="jelen"] .chart .line { stroke-width: 2; }
+[data-theme="jelen"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="jelen"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #434343; --alt: #343435; --text1: #ede8e3; --text2: #bab7b4; --faint: #8c8988; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3e372d; --tip: #ede8e3; --tipfg: #232325; --accentfg: #ffffff; }
+[data-theme="jelen"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(162,107,26,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(162,107,26,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #232325; background-attachment: fixed; }

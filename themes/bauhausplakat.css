@@ -1,0 +1,15 @@
+/* tema bauhaus plakat (Bauhaus poster): generisana, tools/teme.py */
+:root[data-theme="bauhausplakat"] { color-scheme: light; --back: #efe8da; --card: #faf8f4; --head: #efece7; --edge: #d3ccbb; --alt: #f4f2ed; --text1: #3d3617; --text2: #6a6248; --faint: #8b846d; --up: #15803d; --down: #c81e1e; --accent: #8e7300; --hot: #ebe5d2; --tip: #3d3617; --tipfg: #efe8da; --accentfg: #ffffff; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 0px; }
+[data-theme="bauhausplakat"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="bauhausplakat"] .overview .left { align-self: start; }
+[data-theme="bauhausplakat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bauhausplakat"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="bauhausplakat"] .bar h1 { font-weight: 800; }
+[data-theme="bauhausplakat"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="bauhausplakat"] body::before { content: ""; position: fixed; z-index: -1; right: 6%; top: 18%; width: 180px; height: 60px; background: #8e7300; transform: rotate(-18deg); opacity: .18; box-shadow: -260px 220px 0 -10px #3d3617, 120px 340px 0 -20px #00f5c4; }
+[data-theme="bauhausplakat"] .big .value, [data-theme="bauhausplakat"] .detail .price { font-weight: 700; }
+[data-theme="bauhausplakat"] .chart .line { stroke-width: 2.5; }
+[data-theme="bauhausplakat"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bauhausplakat"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39393a; --edge: #444342; --alt: #333334; --text1: #f4f0e2; --text2: #c0bcb2; --faint: #8f8d87; --up: #4ade80; --down: #f87171; --accent: #f5c400; --hot: #494228; --tip: #f4f0e2; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="bauhausplakat"][data-scheme="dark"] body::before { content: ""; position: fixed; z-index: -1; right: 6%; top: 18%; width: 180px; height: 60px; background: #f5c400; transform: rotate(-18deg); opacity: .18; box-shadow: -260px 220px 0 -10px #f4f0e2, 120px 340px 0 -20px #00f5c4; }

@@ -1,0 +1,17 @@
+/* tema ivanjdan (Midsummer): generisana, tools/teme.py */
+:root[data-theme="ivanjdan"] { color-scheme: dark; --back: #061a0e; --card: #12251a; --head: #203126; --edge: #2c3c30; --alt: #192b20; --text1: #f4f1e4; --text2: #b8bbae; --faint: #828a7d; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #323c19; --tip: #f4f1e4; --tipfg: #061a0e; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="ivanjdan"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="ivanjdan"] .overview .left { align-self: start; }
+[data-theme="ivanjdan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ivanjdan"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ivanjdan"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="ivanjdan"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="ivanjdan"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ivanjdan"] body { background: repeating-conic-gradient(from 0deg at 20% 25%, rgba(250,204,21,0.25) 0 3deg, transparent 3deg 18deg), repeating-conic-gradient(from 0deg at 78% 18%, rgba(21,250,204,0.22) 0 3deg, transparent 3deg 20deg); background-color: #061a0e; background-attachment: fixed; }
+[data-theme="ivanjdan"] .big .value, [data-theme="ivanjdan"] .detail .price { font-weight: 700; }
+[data-theme="ivanjdan"] .chart .line { stroke-width: 2.5; }
+[data-theme="ivanjdan"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ivanjdan"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #efefee; --edge: #d4d3cf; --alt: #f4f5f4; --text1: #3e381b; --text2: #6a6650; --faint: #8c8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ece9da; --tip: #3e381b; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="ivanjdan"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="ivanjdan"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 20% 25%, rgba(152,123,13,0.25) 0 3deg, transparent 3deg 18deg), repeating-conic-gradient(from 0deg at 78% 18%, rgba(21,250,204,0.22) 0 3deg, transparent 3deg 20deg); background-color: #f0f1f1; background-attachment: fixed; }

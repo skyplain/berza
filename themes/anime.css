@@ -1,0 +1,16 @@
+/* tema anime (Anime): generisana, tools/teme.py */
+:root[data-theme="anime"] { color-scheme: light; --back: #fff7fb; --card: #fffdfe; --head: #f3f0f2; --edge: #e0d6dc; --alt: #f9f7f8; --text1: #3f2a38; --text2: #6f5d69; --faint: #9b8c96; --up: #15803d; --down: #c81e1e; --accent: #c7628e; --hot: #f7e7ee; --tip: #3f2a38; --tipfg: #fff7fb; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="anime"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="anime"] .overview .left { align-self: start; }
+[data-theme="anime"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="anime"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="anime"] .bar h1 { font-size: 24px; }
+[data-theme="anime"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="anime"] body { background: radial-gradient(rgba(199,98,142,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #fff7fb; background-attachment: fixed; }
+[data-theme="anime"] .big .value, [data-theme="anime"] .detail .price { font-weight: 700; }
+[data-theme="anime"] .chart .line { stroke-width: 2.5; }
+[data-theme="anime"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="anime"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3e; --edge: #454448; --alt: #343539; --text1: #f5ebf1; --text2: #c0b9bf; --faint: #908b91; --up: #4ade80; --down: #f87171; --accent: #ff7eb6; --hot: #4b3a45; --tip: #f5ebf1; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="anime"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="anime"][data-scheme="dark"] body { background: radial-gradient(rgba(255,126,182,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #232428; background-attachment: fixed; }

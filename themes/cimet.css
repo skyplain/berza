@@ -1,0 +1,17 @@
+/* tema cimet: generisana (paleta + oblik 3/4/1/0) */
+:root[data-theme="cimet"] { color-scheme: dark; --back: #22140d; --card: #2e1b11; --head: #3a271d; --edge: #44352d; --alt: #342117; --text1: #f6e3d4; --text2: #bba99c; --faint: #8c7c70; --up: #4ade80; --down: #f87171; --accent: #d2691e; --hot: #452613; --tip: #f6e3d4; --tipfg: #22140d; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="cimet"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="cimet"] .overview .left { align-self: start; }
+[data-theme="cimet"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cimet"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="cimet"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="cimet"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="cimet"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="cimet"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,20,13,0.35); box-shadow: none; }
+[data-theme="cimet"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="cimet"] .big .value, [data-theme="cimet"] .detail .price { font-weight: 900; }
+[data-theme="cimet"] .chart .line { stroke-width: 3; }
+[data-theme="cimet"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="cimet"][data-scheme="light"] { color-scheme: light; --back: #f2ddd3; --card: #ebd0c2; --head: #dac1b4; --edge: #c5b2a8; --alt: #e2c8bb; --text1: #1e1107; --text2: #4c3d32; --faint: #76665b; --up: #15803d; --down: #c81e1e; --accent: #b95600; --hot: #e1b9a3; --tip: #1e1107; --tipfg: #f2ddd3; --accentfg: #ffffff; }
+[data-theme="cimet"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(242,221,211,0.35); box-shadow: none; }

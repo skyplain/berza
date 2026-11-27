@@ -1,0 +1,18 @@
+/* tema haus (House): generisana, tools/teme.py */
+:root[data-theme="haus"] { color-scheme: dark; --back: #0d0612; --card: #19121e; --head: #261f2b; --edge: #322a36; --alt: #201824; --text1: #f4eaf1; --text2: #bab1b9; --faint: #857d86; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #381f33; --tip: #f4eaf1; --tipfg: #0d0612; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 4px; }
+[data-theme="haus"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="haus"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="haus"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="haus"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="haus"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="haus"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="haus"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="haus"] body { background: repeating-linear-gradient(90deg, rgba(244,114,182,0.14) 0 8px, transparent 8px 14px) 0 100% / 100% 90px no-repeat; background-color: #0d0612; background-attachment: fixed; }
+[data-theme="haus"] .bar h1::after { content: " ▂▃▅▇▅▃▂"; color: #f472b6; }
+[data-theme="haus"] .big .value, [data-theme="haus"] .detail .price { font-weight: 900; }
+[data-theme="haus"] .chart .line { stroke-width: 1.5; }
+[data-theme="haus"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="haus"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efedef; --edge: #d3d0d3; --alt: #f4f4f5; --text1: #3d2738; --text2: #6a5966; --faint: #938791; --up: #15803d; --down: #c81e1e; --accent: #be598e; --hot: #f2e3ec; --tip: #3d2738; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="haus"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(190,89,142,0.14) 0 8px, transparent 8px 14px) 0 100% / 100% 90px no-repeat; background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="haus"][data-scheme="light"] .bar h1::after { content: " ▂▃▅▇▅▃▂"; color: #be598e; }

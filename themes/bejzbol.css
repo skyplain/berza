@@ -1,0 +1,19 @@
+/* tema bejzbol (Baseball): generisana, tools/teme.py */
+:root[data-theme="bejzbol"] { color-scheme: light; --back: #f6f0e6; --card: #fcfaf8; --head: #f0eceb; --edge: #d7cdc6; --alt: #f6f3f1; --text1: #33181c; --text2: #644e4e; --faint: #91807d; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f3dbd9; --tip: #33181c; --tipfg: #f6f0e6; --accentfg: #ffffff; --font: Rockwell, "Roboto Slab", "Courier New", serif; --radius: 10px; }
+[data-theme="bejzbol"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bejzbol"] .overview .left { align-self: start; }
+[data-theme="bejzbol"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bejzbol"] button { border-radius: 999px; }
+[data-theme="bejzbol"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bejzbol"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="bejzbol"] .bar button { background: transparent; color: var(--back); border-color: rgba(246,240,230,0.35); box-shadow: none; }
+[data-theme="bejzbol"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="bejzbol"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 80px, transparent 80px 160px), radial-gradient(circle at 50% 55%, transparent 90px, rgba(255,255,255,0.4) 90px 92px, transparent 92px), linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.4) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #f6f0e6; background-attachment: fixed; }
+[data-theme="bejzbol"] .big .value, [data-theme="bejzbol"] .detail .price { font-weight: 900; }
+[data-theme="bejzbol"] .chart .line { stroke-width: 2.5; }
+[data-theme="bejzbol"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bejzbol"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #434245; --alt: #333336; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #433437; --tip: #efe3e5; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="bejzbol"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bejzbol"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,38,0.35); box-shadow: none; }
+[data-theme="bejzbol"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 80px, transparent 80px 160px), radial-gradient(circle at 50% 55%, transparent 90px, rgba(255,255,255,0.4) 90px 92px, transparent 92px), linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.4) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #222326; background-attachment: fixed; }

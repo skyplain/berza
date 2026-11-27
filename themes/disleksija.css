@@ -1,0 +1,13 @@
+/* tema disleksija (Dyslexia friendly): generisana, tools/teme.py */
+:root[data-theme="disleksija"] { color-scheme: light; --back: #fdf6e3; --card: #fefcf7; --head: #f0efeb; --edge: #d8d5c6; --alt: #f7f6f1; --text1: #14282b; --text2: #4e5c59; --faint: #848b83; --up: #15803d; --down: #c81e1e; --accent: #0f766e; --hot: #dde9e4; --tip: #14282b; --tipfg: #fdf6e3; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="disleksija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="disleksija"] .overview .left { align-self: start; }
+[data-theme="disleksija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="disleksija"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="disleksija"] .bar h1 { font-weight: 800; }
+[data-theme="disleksija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="disleksija"] .big .value, [data-theme="disleksija"] .detail .price { font-weight: 200; }
+[data-theme="disleksija"] .chart .line { stroke-width: 2.5; }
+[data-theme="disleksija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="disleksija"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #424345; --alt: #333436; --text1: #e2eaeb; --text2: #b2b8ba; --faint: #868a8c; --up: #4ade80; --down: #f87171; --accent: #348b85; --hot: #2f3b3c; --tip: #e2eaeb; --tipfg: #232325; --accentfg: #111111; }

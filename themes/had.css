@@ -1,0 +1,16 @@
+/* tema had (Hades): generisana, tools/teme.py */
+:root[data-theme="had"] { color-scheme: dark; --back: #08040c; --card: #141118; --head: #211e25; --edge: #2c2831; --alt: #1a171f; --text1: #eae5f5; --text2: #b2adbb; --faint: #7e7985; --up: #4ade80; --down: #f87171; --accent: #7c3aed; --hot: #231736; --tip: #eae5f5; --tipfg: #08040c; --accentfg: #ffffff; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 0px; }
+[data-theme="had"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="had"] .overview .left { align-self: start; }
+[data-theme="had"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="had"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="had"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="had"] .bar h1 { font-size: 24px; }
+[data-theme="had"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="had"] .big .value { text-shadow: 0 0 18px rgba(124,58,237,0.55); }
+[data-theme="had"] .chart .line { filter: drop-shadow(0 0 5px rgba(124,58,237,0.7)); }
+[data-theme="had"] .big .value, [data-theme="had"] .detail .price { font-weight: 900; }
+[data-theme="had"] .chart .line { stroke-width: 2; }
+[data-theme="had"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="had"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #ededef; --edge: #d0ced4; --alt: #f4f3f4; --text1: #281d42; --text2: #5a526e; --faint: #888296; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #e8dff8; --tip: #281d42; --tipfg: #f0f0f0; --accentfg: #ffffff; }

@@ -1,0 +1,20 @@
+/* tema formula (Formula racing): generisana, tools/teme.py */
+:root[data-theme="formula"] { color-scheme: dark; --back: #0b0b0d; --card: #171719; --head: #242325; --edge: #302e30; --alt: #1e1d1f; --text1: #f2e3e8; --text2: #b8adb1; --faint: #837b7f; --up: #4ade80; --down: #f87171; --accent: #e11d48; --hot: #331820; --tip: #f2e3e8; --tipfg: #0b0b0d; --accentfg: #ffffff; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 4px; }
+[data-theme="formula"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="formula"] .overview .left { align-self: start; }
+[data-theme="formula"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="formula"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="formula"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="formula"] .bar button { background: transparent; color: var(--back); border-color: rgba(11,11,13,0.35); box-shadow: none; }
+[data-theme="formula"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="formula"] body { background: conic-gradient(rgba(242,227,232,0.07) 25%, transparent 0 50%, rgba(242,227,232,0.07) 0 75%, transparent 0) 0 0 / 36px 36px, linear-gradient(125deg, rgba(225,29,72,0.13) 0 28%, transparent 28%); background-color: #0b0b0d; background-attachment: fixed; }
+[data-theme="formula"] :is(h2, h3) { border-left: 8px solid #e11d48; padding-left: 8px; }
+[data-theme="formula"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="formula"] .big .value, [data-theme="formula"] .detail .price { font-weight: 900; }
+[data-theme="formula"] .chart .line { stroke-width: 1.5; }
+[data-theme="formula"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="formula"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #eeeced; --edge: #d3cdcf; --alt: #f4f3f4; --text1: #3a1824; --text2: #684e57; --faint: #918086; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #f6dbe1; --tip: #3a1824; --tipfg: #f0f0f0; --accentfg: #ffffff; }
+[data-theme="formula"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="formula"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,240,0.35); box-shadow: none; }
+[data-theme="formula"][data-scheme="light"] body { background: conic-gradient(rgba(58,24,36,0.07) 25%, transparent 0 50%, rgba(58,24,36,0.07) 0 75%, transparent 0) 0 0 / 36px 36px, linear-gradient(125deg, rgba(225,29,72,0.13) 0 28%, transparent 28%); background-color: #f0f0f0; background-attachment: fixed; }

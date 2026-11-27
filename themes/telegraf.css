@@ -1,0 +1,15 @@
+/* tema telegraf (Telegraph): generisana, tools/teme.py */
+:root[data-theme="telegraf"] { color-scheme: light; --back: #efe2c6; --card: #faf6ee; --head: #eee9e2; --edge: #cfc3ab; --alt: #f4f0e8; --text1: #2a231f; --text2: #5b5349; --faint: #897f6f; --up: #15803d; --down: #c81e1e; --accent: #8b5a2b; --hot: #eae0d3; --tip: #2a231f; --tipfg: #efe2c6; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 0px; }
+[data-theme="telegraf"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="telegraf"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="telegraf"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="telegraf"] .bar h1 { font-weight: 800; }
+[data-theme="telegraf"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="telegraf"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="telegraf"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(42,35,31,0.22); border-right: 8px dotted rgba(42,35,31,0.22); }
+[data-theme="telegraf"] .big .value, [data-theme="telegraf"] .detail .price { font-weight: 200; }
+[data-theme="telegraf"] .chart .line { stroke-width: 1.5; }
+[data-theme="telegraf"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="telegraf"][data-scheme="dark"] { color-scheme: dark; --back: #222122; --card: #2d2c2d; --head: #383738; --edge: #424141; --alt: #333233; --text1: #ece8e6; --text2: #bab6b5; --faint: #8b8888; --up: #4ade80; --down: #f87171; --accent: #976e49; --hot: #3c3531; --tip: #ece8e6; --tipfg: #222122; --accentfg: #ffffff; }
+[data-theme="telegraf"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(236,232,230,0.22); border-right: 8px dotted rgba(236,232,230,0.22); }

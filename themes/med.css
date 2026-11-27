@@ -1,0 +1,18 @@
+/* tema med (Honey): generisana, tools/teme.py */
+:root[data-theme="med"] { color-scheme: light; --back: #fff6df; --card: #fffcf5; --head: #f3efe8; --edge: #dfd5bf; --alt: #f9f6ee; --text1: #382818; --text2: #6a5c4a; --faint: #988b78; --up: #15803d; --down: #c81e1e; --accent: #c86d06; --hot: #f7e8d4; --tip: #382818; --tipfg: #fff6df; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="med"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="med"] .overview .left { align-self: start; }
+[data-theme="med"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="med"] button { border-radius: 999px; }
+[data-theme="med"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="med"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="med"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="med"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="med"] body { background: linear-gradient(30deg, rgba(200,109,6,0.1) 12%, transparent 12.5% 87%, rgba(200,109,6,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(150deg, rgba(200,109,6,0.1) 12%, transparent 12.5% 87%, rgba(200,109,6,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(30deg, rgba(200,109,6,0.1) 12%, transparent 12.5% 87%, rgba(200,109,6,0.1) 87.5%) 20px 35px / 40px 70px, linear-gradient(150deg, rgba(200,109,6,0.1) 12%, transparent 12.5% 87%, rgba(200,109,6,0.1) 87.5%) 20px 35px / 40px 70px; background-color: #fff6df; background-attachment: fixed; }
+[data-theme="med"] .big .value, [data-theme="med"] .detail .price { font-weight: 900; }
+[data-theme="med"] .chart .line { stroke-width: 2; }
+[data-theme="med"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="med"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444343; --alt: #343435; --text1: #f2eae3; --text2: #beb8b4; --faint: #8f8a88; --up: #4ade80; --down: #f87171; --accent: #d97706; --hot: #46382a; --tip: #f2eae3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="med"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="med"][data-scheme="dark"] body { background: linear-gradient(30deg, rgba(217,119,6,0.1) 12%, transparent 12.5% 87%, rgba(217,119,6,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(150deg, rgba(217,119,6,0.1) 12%, transparent 12.5% 87%, rgba(217,119,6,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(30deg, rgba(217,119,6,0.1) 12%, transparent 12.5% 87%, rgba(217,119,6,0.1) 87.5%) 20px 35px / 40px 70px, linear-gradient(150deg, rgba(217,119,6,0.1) 12%, transparent 12.5% 87%, rgba(217,119,6,0.1) 87.5%) 20px 35px / 40px 70px; background-color: #232325; background-attachment: fixed; }

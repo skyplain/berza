@@ -1,0 +1,16 @@
+/* tema mekani oblici (Soft UI): generisana, tools/teme.py */
+:root[data-theme="mekanioblici"] { color-scheme: light; --back: #f9f7ff; --card: #fdfdff; --head: #f0f0f4; --edge: #d8d5e1; --alt: #f7f6f9; --text1: #2a2343; --text2: #5e5872; --faint: #8d899d; --up: #15803d; --down: #c81e1e; --accent: #8558ec; --hot: #ece6fc; --tip: #2a2343; --tipfg: #f9f7ff; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="mekanioblici"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="mekanioblici"] .overview .left { align-self: start; }
+[data-theme="mekanioblici"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mekanioblici"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="mekanioblici"] .bar h1 { font-weight: 800; }
+[data-theme="mekanioblici"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mekanioblici"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.08), -6px -6px 16px rgba(255,255,255,0.8); padding: 18px 20px; }
+[data-theme="mekanioblici"] button { border-radius: 999px; }
+[data-theme="mekanioblici"] .big .value, [data-theme="mekanioblici"] .detail .price { font-weight: 900; }
+[data-theme="mekanioblici"] .chart .line { stroke-width: 1.5; }
+[data-theme="mekanioblici"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mekanioblici"][data-scheme="dark"] { color-scheme: dark; --back: #171325; --card: #231f30; --head: #2f2b3c; --edge: #393546; --alt: #292536; --text1: #ece8f6; --text2: #b7b3c2; --faint: #868292; --up: #4ade80; --down: #f87171; --accent: #8558ec; --hot: #31274a; --tip: #ece8f6; --tipfg: #171325; --accentfg: #ffffff; }
+[data-theme="mekanioblici"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.4), -6px -6px 16px rgba(255,255,255,0.03); padding: 18px 20px; }

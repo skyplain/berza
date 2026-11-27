@@ -1,0 +1,17 @@
+/* tema jagoda: generisana (paleta + oblik 2/1/4/1) */
+:root[data-theme="jagoda"] { color-scheme: light; --back: #fff0f2; --card: #fff8f9; --head: #f4eaec; --edge: #e2ccd0; --alt: #faf1f2; --text1: #4a0f1b; --text2: #7d4e57; --faint: #a48086; --up: #15803d; --down: #c81e1e; --accent: #d92640; --hot: #fadbdf; --tip: #4a0f1b; --tipfg: #fff0f2; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 6px; }
+[data-theme="jagoda"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="jagoda"] .overview .left { align-self: start; }
+[data-theme="jagoda"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="jagoda"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="jagoda"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="jagoda"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="jagoda"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="jagoda"] body { background: radial-gradient(#eddadc 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #fff0f2; background-attachment: fixed; }
+[data-theme="jagoda"] .big .value, [data-theme="jagoda"] .detail .price { font-weight: 700; }
+[data-theme="jagoda"] .chart .line { stroke-width: 3.5; }
+[data-theme="jagoda"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="jagoda"][data-scheme="dark"] { color-scheme: dark; --back: #12090a; --card: #0b0708; --head: #150e10; --edge: #2e1e21; --alt: #100a0b; --text1: #fdb5bb; --text2: #af7c85; --faint: #815c62; --up: #4ade80; --down: #f87171; --accent: #d92640; --hot: #240f13; --tip: #fdb5bb; --tipfg: #12090a; --accentfg: #ffffff; }
+[data-theme="jagoda"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="jagoda"][data-scheme="dark"] body { background: radial-gradient(#221617 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #12090a; background-attachment: fixed; }

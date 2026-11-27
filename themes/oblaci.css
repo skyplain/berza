@@ -1,0 +1,15 @@
+/* tema oblaci (Clouds): generisana, tools/teme.py */
+:root[data-theme="oblaci"] { color-scheme: light; --back: #f3f6fa; --card: #fbfcfe; --head: #eff0f2; --edge: #d3d6db; --alt: #f5f6f8; --text1: #2c3038; --text2: #5e6268; --faint: #84878e; --up: #15803d; --down: #c81e1e; --accent: #7d8a9b; --hot: #e9ecf0; --tip: #2c3038; --tipfg: #f3f6fa; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="oblaci"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="oblaci"] .overview .left { align-self: start; }
+[data-theme="oblaci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="oblaci"] button { border-radius: 999px; }
+[data-theme="oblaci"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="oblaci"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.9), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.8), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.7), transparent 70%); background-color: #f3f6fa; background-attachment: fixed; }
+[data-theme="oblaci"] .big .value, [data-theme="oblaci"] .detail .price { font-weight: 700; }
+[data-theme="oblaci"] .chart .line { stroke-width: 3; }
+[data-theme="oblaci"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="oblaci"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #424448; --alt: #333539; --text1: #eceef1; --text2: #babcbf; --faint: #8b8d91; --up: #4ade80; --down: #f87171; --accent: #94a3b8; --hot: #3b3f46; --tip: #eceef1; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="oblaci"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="oblaci"][data-scheme="dark"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.12), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.1), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.08), transparent 70%); background-color: #222428; background-attachment: fixed; }

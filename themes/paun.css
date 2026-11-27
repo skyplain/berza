@@ -1,0 +1,16 @@
+/* tema paun (Peacock): generisana, tools/teme.py */
+:root[data-theme="paun"] { color-scheme: dark; --back: #04161a; --card: #112225; --head: #1e2e31; --edge: #28383c; --alt: #17282b; --text1: #e2eaee; --text2: #aab5b9; --faint: #778488; --up: #4ade80; --down: #f87171; --accent: #0e7490; --hot: #112d34; --tip: #e2eaee; --tipfg: #04161a; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="paun"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="paun"] .overview .left { align-self: start; }
+[data-theme="paun"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="paun"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="paun"] .bar h1 { font-weight: 800; }
+[data-theme="paun"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="paun"] body { background: radial-gradient(ellipse at 50% 40%, rgba(14,116,144,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(144,14,116,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #04161a; background-attachment: fixed; }
+[data-theme="paun"] .big .value, [data-theme="paun"] .detail .price { font-weight: 400; }
+[data-theme="paun"] .chart .line { stroke-width: 1.5; }
+[data-theme="paun"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="paun"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eceeef; --edge: #cdd1d2; --alt: #f3f5f5; --text1: #142831; --text2: #4b5a61; --faint: #7e888d; --up: #15803d; --down: #c81e1e; --accent: #0e7490; --hot: #d9e8ec; --tip: #142831; --tipfg: #f0f1f1; --accentfg: #ffffff; }
+[data-theme="paun"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="paun"][data-scheme="light"] body { background: radial-gradient(ellipse at 50% 40%, rgba(14,116,144,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(144,14,116,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #f0f1f1; background-attachment: fixed; }

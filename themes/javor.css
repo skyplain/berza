@@ -1,0 +1,15 @@
+/* tema javor: generisana (paleta + oblik 0/1/0/3) */
+:root[data-theme="javor"] { color-scheme: light; --back: #fff1ea; --card: #fff9f5; --head: #f3ebe7; --edge: #e0cec6; --alt: #f9f2ee; --text1: #3f160b; --text2: #755349; --faint: #9f847a; --up: #15803d; --down: #c81e1e; --accent: #c63d22; --hot: #f7dfd7; --tip: #3f160b; --tipfg: #fff1ea; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 4px; }
+[data-theme="javor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="javor"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="javor"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="javor"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="javor"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="javor"] body { background: repeating-linear-gradient(45deg, rgba(63,22,11,0.03) 0 12px, transparent 12px 24px); background-color: #fff1ea; background-attachment: fixed; }
+[data-theme="javor"] .big .value, [data-theme="javor"] .detail .price { font-weight: 200; }
+[data-theme="javor"] .chart .line { stroke-width: 2; }
+[data-theme="javor"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="javor"][data-scheme="dark"] { color-scheme: dark; --back: #120906; --card: #0b0705; --head: #140f0d; --edge: #2d201a; --alt: #0f0b09; --text1: #f9c1b2; --text2: #a98479; --faint: #71584f; --up: #4ade80; --down: #f87171; --accent: #c63d22; --hot: #21110c; --tip: #f9c1b2; --tipfg: #120906; --accentfg: #ffffff; }
+[data-theme="javor"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="javor"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(249,193,178,0.03) 0 12px, transparent 12px 24px); background-color: #120906; background-attachment: fixed; }

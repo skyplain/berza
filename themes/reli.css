@@ -1,0 +1,21 @@
+/* tema reli (Rally): generisana, tools/teme.py */
+:root[data-theme="reli"] { color-scheme: dark; --back: #1a1408; --card: #252014; --head: #312c20; --edge: #3d372b; --alt: #2b261a; --text1: #f4ede3; --text2: #beb7ac; --faint: #8b857a; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #423213; --tip: #f4ede3; --tipfg: #1a1408; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 0px; }
+[data-theme="reli"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="reli"] .overview .left { align-self: start; }
+[data-theme="reli"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="reli"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="reli"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="reli"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="reli"] .bar button { background: transparent; color: var(--back); border-color: rgba(26,20,8,0.35); box-shadow: none; }
+[data-theme="reli"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="reli"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(244,237,227,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(244,237,227,0.03) 0 1px, transparent 1px 5px), linear-gradient(125deg, rgba(245,158,11,0.13) 0 28%, transparent 28%); background-color: #1a1408; background-attachment: fixed; }
+[data-theme="reli"] :is(h2, h3) { border-left: 8px solid #f59e0b; padding-left: 8px; }
+[data-theme="reli"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="reli"] .big .value, [data-theme="reli"] .detail .price { font-weight: 700; }
+[data-theme="reli"] .chart .line { stroke-width: 3; }
+[data-theme="reli"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="reli"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #f0efec; --edge: #d4d2ce; --alt: #f5f5f3; --text1: #3d2f19; --text2: #6a604f; --faint: #8c8578; --up: #15803d; --down: #c81e1e; --accent: #af7007; --hot: #f0e8d8; --tip: #3d2f19; --tipfg: #f1f1f0; --accentfg: #111111; }
+[data-theme="reli"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,241,240,0.35); box-shadow: none; }
+[data-theme="reli"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(61,47,25,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(61,47,25,0.03) 0 1px, transparent 1px 5px), linear-gradient(125deg, rgba(175,112,7,0.13) 0 28%, transparent 28%); background-color: #f1f1f0; background-attachment: fixed; }
+[data-theme="reli"][data-scheme="light"] :is(h2, h3) { border-left: 8px solid #af7007; padding-left: 8px; }

@@ -1,0 +1,20 @@
+/* tema džojstik (Joystick): generisana, tools/teme.py */
+:root[data-theme="dzojstik"] { color-scheme: light; --back: #fce8ed; --card: #fef8fa; --head: #f2ebed; --edge: #ddc7cd; --alt: #f8f1f4; --text1: #3a1824; --text2: #6a4c56; --faint: #977c84; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #fad9e1; --tip: #3a1824; --tipfg: #fce8ed; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="dzojstik"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="dzojstik"] .overview .left { align-self: start; }
+[data-theme="dzojstik"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dzojstik"] button { border-radius: 0; }
+[data-theme="dzojstik"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="dzojstik"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="dzojstik"] .bar button { background: transparent; color: var(--back); border-color: rgba(252,232,237,0.35); box-shadow: none; }
+[data-theme="dzojstik"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="dzojstik"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #3a1824; box-shadow: 6px 6px 0 #3a1824; border-radius: 6px; background: var(--card); }
+[data-theme="dzojstik"] button { border: 2px solid #3a1824; box-shadow: 2px 2px 0 #3a1824; }
+[data-theme="dzojstik"] .big .value, [data-theme="dzojstik"] .detail .price { font-weight: 700; }
+[data-theme="dzojstik"] .chart .line { stroke-width: 2; }
+[data-theme="dzojstik"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dzojstik"][data-scheme="dark"] { color-scheme: dark; --back: #290e18; --card: #341a24; --head: #3f2630; --edge: #493039; --alt: #3a202a; --text1: #f2e3e8; --text2: #c0aeb4; --faint: #927d84; --up: #4ade80; --down: #f87171; --accent: #e11d48; --hot: #4c1a29; --tip: #f2e3e8; --tipfg: #290e18; --accentfg: #ffffff; }
+[data-theme="dzojstik"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(41,14,24,0.35); box-shadow: none; }
+[data-theme="dzojstik"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #f2e3e8; box-shadow: 6px 6px 0 #f2e3e8; border-radius: 6px; background: var(--card); }
+[data-theme="dzojstik"][data-scheme="dark"] button { border: 2px solid #f2e3e8; box-shadow: 2px 2px 0 #f2e3e8; }

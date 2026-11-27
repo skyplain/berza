@@ -1,0 +1,15 @@
+/* tema karate (Karate): generisana, tools/teme.py */
+:root[data-theme="karate"] { color-scheme: light; --back: #ebebeb; --card: #f9f9f9; --head: #ebebec; --edge: #c9c9ca; --alt: #f2f2f2; --text1: #14161a; --text2: #4a4b4e; --faint: #7b7c7e; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #d9d9d9; --tip: #14161a; --tipfg: #ebebeb; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="karate"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="karate"] .overview .left { align-self: start; }
+[data-theme="karate"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="karate"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="karate"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="karate"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="karate"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="karate"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="karate"] .big .value, [data-theme="karate"] .detail .price { font-weight: 400; }
+[data-theme="karate"] .chart .line { stroke-width: 2.5; }
+[data-theme="karate"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="karate"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3e; --tip: #e2e2e4; --tipfg: #232428; --accentfg: #111111; }

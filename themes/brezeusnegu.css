@@ -1,0 +1,12 @@
+/* tema breze u snegu (Birches in snow): generisana, tools/teme.py */
+:root[data-theme="brezeusnegu"] { color-scheme: light; --back: #f8f8f8; --card: #fdfdfd; --head: #efeff0; --edge: #d4d4d5; --alt: #f6f6f6; --text1: #14171e; --text2: #4d4f54; --faint: #818387; --up: #15803d; --down: #c81e1e; --accent: #111827; --hot: #dcdddf; --tip: #14171e; --tipfg: #f8f8f8; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="brezeusnegu"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="brezeusnegu"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="brezeusnegu"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="brezeusnegu"] body { background: repeating-linear-gradient(90deg, rgba(17,24,39,0.07) 0 14px, transparent 14px 40px); background-color: #f8f8f8; background-attachment: fixed; }
+[data-theme="brezeusnegu"] .big .value, [data-theme="brezeusnegu"] .detail .price { font-weight: 700; }
+[data-theme="brezeusnegu"] .chart .line { stroke-width: 2; }
+[data-theme="brezeusnegu"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="brezeusnegu"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #424245; --alt: #333437; --text1: #e2e2e5; --text2: #b2b2b6; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #7b7d86; --hot: #393a3e; --tip: #e2e2e5; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="brezeusnegu"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(123,125,134,0.07) 0 14px, transparent 14px 40px); background-color: #232427; background-attachment: fixed; }

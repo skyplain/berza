@@ -1,0 +1,17 @@
+/* tema uskrs (Easter): generisana, tools/teme.py */
+:root[data-theme="uskrs"] { color-scheme: light; --back: #fbf8ff; --card: #fefdff; --head: #f2f0f4; --edge: #dad7e1; --alt: #f8f7f9; --text1: #2f2c44; --text2: #625f73; --faint: #918e9e; --up: #15803d; --down: #c81e1e; --accent: #8e76d4; --hot: #eeeaf9; --tip: #2f2c44; --tipfg: #fbf8ff; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="uskrs"] :is(.overview .left, .block, .detail, .list) { background: rgba(254,253,255,0.6); border: 1px solid rgba(47,44,68,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="uskrs"] .overview .left { align-self: start; }
+[data-theme="uskrs"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="uskrs"] button { border-radius: 999px; background: transparent; }
+[data-theme="uskrs"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="uskrs"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="uskrs"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="uskrs"] body { background: radial-gradient(ellipse 9px 13px, rgba(142,118,212,0.22) 90%, transparent) 0 0 / 60px 60px, radial-gradient(ellipse 9px 13px, rgba(250,167,139,0.22) 90%, transparent) 30px 30px / 60px 60px, radial-gradient(ellipse 9px 13px, rgba(139,250,167,0.2) 90%, transparent) 15px 45px / 90px 90px; background-color: #fbf8ff; background-attachment: fixed; }
+[data-theme="uskrs"] .big .value, [data-theme="uskrs"] .detail .price { font-weight: 900; }
+[data-theme="uskrs"] .chart .line { stroke-width: 2; }
+[data-theme="uskrs"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="uskrs"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3f; --edge: #434449; --alt: #343539; --text1: #eeecf6; --text2: #bbbac2; --faint: #8d8c93; --up: #4ade80; --down: #f87171; --accent: #a78bfa; --hot: #3f3c4f; --tip: #eeecf6; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="uskrs"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,47,51,0.6); border: 1px solid rgba(238,236,246,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="uskrs"][data-scheme="dark"] body { background: radial-gradient(ellipse 9px 13px, rgba(167,139,250,0.22) 90%, transparent) 0 0 / 60px 60px, radial-gradient(ellipse 9px 13px, rgba(250,167,139,0.22) 90%, transparent) 30px 30px / 60px 60px, radial-gradient(ellipse 9px 13px, rgba(139,250,167,0.2) 90%, transparent) 15px 45px / 90px 90px; background-color: #232428; background-attachment: fixed; }

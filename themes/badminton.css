@@ -1,0 +1,20 @@
+/* tema badminton (Badminton): generisana, tools/teme.py */
+:root[data-theme="badminton"] { color-scheme: light; --back: #fbfdf5; --card: #f8fbf0; --head: #ebefe3; --edge: #d8dcd2; --alt: #f2f5ea; --text1: #233019; --text2: #596350; --faint: #8b9283; --up: #15803d; --down: #c81e1e; --accent: #5d960c; --hot: #e2edd0; --tip: #233019; --tipfg: #fbfdf5; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="badminton"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="badminton"] .overview .left { align-self: start; }
+[data-theme="badminton"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="badminton"] button { border-radius: 999px; }
+[data-theme="badminton"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="badminton"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="badminton"] .bar button { background: transparent; color: var(--back); border-color: rgba(251,253,245,0.35); box-shadow: none; }
+[data-theme="badminton"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="badminton"] body { background: linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.6) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #fbfdf5; background-attachment: fixed; }
+[data-theme="badminton"] body::before { content: ""; position: fixed; inset: 40px 3%; z-index: -1; border: 2px solid rgba(255,255,255,0.55); box-shadow: inset 0 0 0 60px transparent, inset 0 0 0 62px rgba(255,255,255,0.35); }
+[data-theme="badminton"] .big .value, [data-theme="badminton"] .detail .price { font-weight: 900; }
+[data-theme="badminton"] .chart .line { stroke-width: 1.5; }
+[data-theme="badminton"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="badminton"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #434445; --alt: #343537; --text1: #e9eee3; --text2: #b8bcb4; --faint: #8a8d89; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #363f2d; --tip: #e9eee3; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="badminton"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="badminton"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,39,0.35); box-shadow: none; }
+[data-theme="badminton"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.6) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #232427; background-attachment: fixed; }

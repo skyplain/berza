@@ -1,0 +1,18 @@
+/* tema reka (River): generisana, tools/teme.py */
+:root[data-theme="reka"] { color-scheme: light; --back: #eef7fb; --card: #fafdfe; --head: #ecf0f2; --edge: #cbd6db; --alt: #f3f7f8; --text1: #122634; --text2: #495a66; --faint: #7c8a94; --up: #15803d; --down: #c81e1e; --accent: #0369a1; --hot: #d7e8f1; --tip: #122634; --tipfg: #eef7fb; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="reka"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,253,254,0.6); border: 1px solid rgba(18,38,52,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="reka"] .overview .left { align-self: start; }
+[data-theme="reka"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="reka"] button { border-radius: 999px; background: transparent; }
+[data-theme="reka"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="reka"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="reka"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="reka"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="reka"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(3,105,161,0.14) 9px 10px, transparent 11px 16px, rgba(3,105,161,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #eef7fb; background-attachment: fixed; }
+[data-theme="reka"] .big .value, [data-theme="reka"] .detail .price { font-weight: 400; }
+[data-theme="reka"] .chart .line { stroke-width: 3; }
+[data-theme="reka"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="reka"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414448; --alt: #323539; --text1: #e1e9ef; --text2: #b1b8bd; --faint: #858a8f; --up: #4ade80; --down: #f87171; --accent: #3385b3; --hot: #2e3b45; --tip: #e1e9ef; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="reka"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(45,47,51,0.6); border: 1px solid rgba(225,233,239,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="reka"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(51,133,179,0.14) 9px 10px, transparent 11px 16px, rgba(51,133,179,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222428; background-attachment: fixed; }

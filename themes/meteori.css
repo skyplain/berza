@@ -1,0 +1,15 @@
+/* tema meteori (Meteor shower): generisana, tools/teme.py */
+:root[data-theme="meteori"] { color-scheme: dark; --back: #040612; --card: #11121e; --head: #1f1f2a; --edge: #2b2b34; --alt: #181924; --text1: #f5f0e5; --text2: #b9b6b0; --faint: #818080; --up: #4ade80; --down: #f87171; --accent: #fbbf24; --hot: #322a1f; --tip: #f5f0e5; --tipfg: #040612; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="meteori"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="meteori"] .overview .left { align-self: start; }
+[data-theme="meteori"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="meteori"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="meteori"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="meteori"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="meteori"] body { background: linear-gradient(215deg, transparent 49.6%, rgba(251,191,36,0.5) 50%, transparent 50.4%) 0 0 / 160px 160px, linear-gradient(215deg, transparent 49.7%, rgba(245,240,229,0.35) 50%, transparent 50.3%) 60px 90px / 230px 230px; background-color: #040612; background-attachment: fixed; }
+[data-theme="meteori"] .big .value, [data-theme="meteori"] .detail .price { font-weight: 400; }
+[data-theme="meteori"] .chart .line { stroke-width: 2; }
+[data-theme="meteori"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="meteori"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efeeee; --edge: #d4d2cf; --alt: #f4f4f4; --text1: #3e351d; --text2: #6a6452; --faint: #8c887b; --up: #15803d; --down: #c81e1e; --accent: #a67e18; --hot: #eee9db; --tip: #3e351d; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="meteori"][data-scheme="light"] body { background: linear-gradient(215deg, transparent 49.6%, rgba(166,126,24,0.5) 50%, transparent 50.4%) 0 0 / 160px 160px, linear-gradient(215deg, transparent 49.7%, rgba(62,53,29,0.35) 50%, transparent 50.3%) 60px 90px / 230px 230px; background-color: #f0f0f1; background-attachment: fixed; }

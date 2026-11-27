@@ -1,0 +1,17 @@
+/* tema mokra gora (Mokra Gora): generisana, tools/teme.py */
+:root[data-theme="mokragora"] { color-scheme: light; --back: #f1f6ee; --card: #fbfcfa; --head: #edefed; --edge: #ced5cd; --alt: #f4f6f3; --text1: #152520; --text2: #4c5954; --faint: #7f8983; --up: #15803d; --down: #c81e1e; --accent: #166534; --hot: #dbe7de; --tip: #152520; --tipfg: #f1f6ee; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="mokragora"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mokragora"] .overview .left { align-self: start; }
+[data-theme="mokragora"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mokragora"] button { border-radius: 999px; }
+[data-theme="mokragora"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="mokragora"] .bar h1 { font-size: 24px; }
+[data-theme="mokragora"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mokragora"] body { background: repeating-linear-gradient(90deg, rgba(22,101,52,0.07) 0 2px, transparent 2px 9px, rgba(22,101,52,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(22,101,52,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #f1f6ee; background-attachment: fixed; }
+[data-theme="mokragora"] .big .value, [data-theme="mokragora"] .detail .price { font-weight: 900; }
+[data-theme="mokragora"] .chart .line { stroke-width: 1.5; }
+[data-theme="mokragora"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mokragora"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414345; --alt: #323436; --text1: #e2e9e6; --text2: #b2b8b6; --faint: #868a8a; --up: #4ade80; --down: #f87171; --accent: #518b67; --hot: #323b39; --tip: #e2e9e6; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="mokragora"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="mokragora"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(81,139,103,0.07) 0 2px, transparent 2px 9px, rgba(81,139,103,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(81,139,103,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #222326; background-attachment: fixed; }

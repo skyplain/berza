@@ -1,0 +1,17 @@
+/* tema bingo (Bingo): generisana, tools/teme.py */
+:root[data-theme="bingo"] { color-scheme: light; --back: #fef6ea; --card: #fffcf9; --head: #f1efee; --edge: #d9d5cf; --alt: #f8f6f3; --text1: #182541; --text2: #52596b; --faint: #868992; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #e0e7f7; --tip: #182541; --tipfg: #fef6ea; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="bingo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bingo"] .overview .left { align-self: start; }
+[data-theme="bingo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bingo"] button { border-radius: 999px; }
+[data-theme="bingo"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="bingo"] .bar h1 { font-weight: 800; }
+[data-theme="bingo"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bingo"] body { background: radial-gradient(rgba(37,99,235,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #fef6ea; background-attachment: fixed; }
+[data-theme="bingo"] .big .value, [data-theme="bingo"] .detail .price { font-weight: 900; }
+[data-theme="bingo"] .chart .line { stroke-width: 3; }
+[data-theme="bingo"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bingo"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #393a3d; --edge: #424347; --alt: #333537; --text1: #e3e8f5; --text2: #b3b7c1; --faint: #878a92; --up: #4ade80; --down: #f87171; --accent: #467bee; --hot: #313a4b; --tip: #e3e8f5; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="bingo"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bingo"][data-scheme="dark"] body { background: radial-gradient(rgba(70,123,238,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #232426; background-attachment: fixed; }

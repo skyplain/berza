@@ -1,0 +1,15 @@
+/* tema kiša (Rain): generisana, tools/teme.py */
+:root[data-theme="kisa"] { color-scheme: light; --back: #eef3f8; --card: #fafbfd; --head: #edeef2; --edge: #ccd3db; --alt: #f3f5f7; --text1: #1c2a43; --text2: #505c70; --faint: #818a9a; --up: #15803d; --down: #c81e1e; --accent: #3b82f6; --hot: #dfeafc; --tip: #1c2a43; --tipfg: #eef3f8; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="kisa"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="kisa"] .overview .left { align-self: start; }
+[data-theme="kisa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kisa"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="kisa"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="kisa"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kisa"] body { background: linear-gradient(100deg, transparent 48%, rgba(59,130,246,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #eef3f8; background-attachment: fixed; }
+[data-theme="kisa"] .big .value, [data-theme="kisa"] .detail .price { font-weight: 700; }
+[data-theme="kisa"] .chart .line { stroke-width: 2.5; }
+[data-theme="kisa"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kisa"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393e; --edge: #414348; --alt: #333438; --text1: #e5ebf6; --text2: #b4b9c2; --faint: #878b93; --up: #4ade80; --down: #f87171; --accent: #3b82f6; --hot: #2f3a4d; --tip: #e5ebf6; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="kisa"][data-scheme="dark"] body { background: linear-gradient(100deg, transparent 48%, rgba(59,130,246,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #222327; background-attachment: fixed; }

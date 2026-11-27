@@ -1,0 +1,18 @@
+/* tema tara (Tara): generisana, tools/teme.py */
+:root[data-theme="tara"] { color-scheme: dark; --back: #07150c; --card: #132118; --head: #1f2d24; --edge: #2a372f; --alt: #19271e; --text1: #e2e7e6; --text2: #abb2b0; --faint: #79827d; --up: #4ade80; --down: #f87171; --accent: #487a5b; --hot: #1a2d21; --tip: #e2e7e6; --tipfg: #07150c; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="tara"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="tara"] .overview .left { align-self: start; }
+[data-theme="tara"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tara"] button { border-radius: 999px; }
+[data-theme="tara"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tara"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="tara"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tara"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tara"] body { background: linear-gradient(135deg, transparent 50%, rgba(72,122,91,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(72,122,91,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(72,122,91,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(72,122,91,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #07150c; background-attachment: fixed; }
+[data-theme="tara"] .big .value, [data-theme="tara"] .detail .price { font-weight: 900; }
+[data-theme="tara"] .chart .line { stroke-width: 3; }
+[data-theme="tara"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tara"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #eceeed; --edge: #cdd0cf; --alt: #f3f4f3; --text1: #15221f; --text2: #4c5653; --faint: #7e8583; --up: #15803d; --down: #c81e1e; --accent: #14532d; --hot: #dae3dd; --tip: #15221f; --tipfg: #f0f1f0; --accentfg: #ffffff; }
+[data-theme="tara"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="tara"][data-scheme="light"] body { background: linear-gradient(135deg, transparent 50%, rgba(20,83,45,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(20,83,45,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(20,83,45,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(20,83,45,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #f0f1f0; background-attachment: fixed; }

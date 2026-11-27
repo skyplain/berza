@@ -1,0 +1,17 @@
+/* tema burek (Burek): generisana, tools/teme.py */
+:root[data-theme="burek"] { color-scheme: light; --back: #f8eedd; --card: #fdfaf5; --head: #f1ede8; --edge: #d8cdbe; --alt: #f7f4ee; --text1: #322219; --text2: #64554a; --faint: #918477; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f3e3d4; --tip: #322219; --tipfg: #f8eedd; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="burek"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="burek"] .overview .left { align-self: start; }
+[data-theme="burek"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="burek"] button { border-radius: 999px; }
+[data-theme="burek"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="burek"] .bar h1 { font-weight: 800; }
+[data-theme="burek"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="burek"] body { background: repeating-linear-gradient(180deg, rgba(180,83,9,0.07) 0 22px, rgba(180,83,9,0.13) 22px 30px, transparent 30px 52px, rgba(50,34,25,0.05) 52px 60px, transparent 60px 84px); background-color: #f8eedd; background-attachment: fixed; }
+[data-theme="burek"] .big .value, [data-theme="burek"] .detail .price { font-weight: 900; }
+[data-theme="burek"] .chart .line { stroke-width: 3; }
+[data-theme="burek"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="burek"][data-scheme="dark"] { color-scheme: dark; --back: #232324; --card: #2e2e2f; --head: #3a393a; --edge: #444243; --alt: #343434; --text1: #efe7e3; --text2: #bcb6b3; --faint: #8d8987; --up: #4ade80; --down: #f87171; --accent: #bd6726; --hot: #42362e; --tip: #efe7e3; --tipfg: #232324; --accentfg: #111111; }
+[data-theme="burek"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="burek"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, rgba(189,103,38,0.07) 0 22px, rgba(189,103,38,0.13) 22px 30px, transparent 30px 52px, rgba(239,231,227,0.05) 52px 60px, transparent 60px 84px); background-color: #232324; background-attachment: fixed; }

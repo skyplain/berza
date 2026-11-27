@@ -1,0 +1,16 @@
+/* tema žirafa (Giraffe): generisana, tools/teme.py */
+:root[data-theme="zirafa"] { color-scheme: light; --back: #fbf0d9; --card: #fefaf4; --head: #f2ede7; --edge: #dbcfba; --alt: #f8f4ed; --text1: #322219; --text2: #645649; --faint: #928575; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f4e3d3; --tip: #322219; --tipfg: #fbf0d9; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="zirafa"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zirafa"] .overview .left { align-self: start; }
+[data-theme="zirafa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zirafa"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="zirafa"] .bar h1 { font-weight: 800; }
+[data-theme="zirafa"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zirafa"] body { background: radial-gradient(circle at 30% 30%, rgba(180,83,9,0.25) 0 14px, transparent 15px) 0 0 / 44px 40px, radial-gradient(circle at 70% 70%, rgba(180,83,9,0.2) 0 10px, transparent 11px) 0 0 / 44px 40px; background-color: #fbf0d9; background-attachment: fixed; }
+[data-theme="zirafa"] .big .value, [data-theme="zirafa"] .detail .price { font-weight: 200; }
+[data-theme="zirafa"] .chart .line { stroke-width: 2; }
+[data-theme="zirafa"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zirafa"][data-scheme="dark"] { color-scheme: dark; --back: #232324; --card: #2e2e2f; --head: #3a393a; --edge: #444243; --alt: #343434; --text1: #efe7e3; --text2: #bcb6b3; --faint: #8d8987; --up: #4ade80; --down: #f87171; --accent: #bd6726; --hot: #42362e; --tip: #efe7e3; --tipfg: #232324; --accentfg: #111111; }
+[data-theme="zirafa"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zirafa"][data-scheme="dark"] body { background: radial-gradient(circle at 30% 30%, rgba(189,103,38,0.25) 0 14px, transparent 15px) 0 0 / 44px 40px, radial-gradient(circle at 70% 70%, rgba(189,103,38,0.2) 0 10px, transparent 11px) 0 0 / 44px 40px; background-color: #232324; background-attachment: fixed; }

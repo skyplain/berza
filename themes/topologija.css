@@ -1,0 +1,15 @@
+/* tema topologija (Topology): generisana, tools/teme.py */
+:root[data-theme="topologija"] { color-scheme: light; --back: #f0f9f8; --card: #fafdfd; --head: #ecf1f1; --edge: #cdd9d8; --alt: #f3f7f7; --text1: #142e2f; --text2: #4b6161; --faint: #7e8f8f; --up: #15803d; --down: #c81e1e; --accent: #0d9488; --hot: #d9eeed; --tip: #142e2f; --tipfg: #f0f9f8; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="topologija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="topologija"] .overview .left { align-self: start; }
+[data-theme="topologija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="topologija"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="topologija"] .bar h1 { font-weight: 800; }
+[data-theme="topologija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="topologija"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(13,148,136,0.14) 9px 10px, transparent 11px 16px, rgba(13,148,136,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f0f9f8; background-attachment: fixed; }
+[data-theme="topologija"] .big .value, [data-theme="topologija"] .detail .price { font-weight: 200; }
+[data-theme="topologija"] .chart .line { stroke-width: 2; }
+[data-theme="topologija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="topologija"][data-scheme="dark"] { color-scheme: dark; --back: #0b1a1c; --card: #172527; --head: #233133; --edge: #2d3c3d; --alt: #1d2b2d; --text1: #e2eced; --text2: #acb8b9; --faint: #7b8789; --up: #4ade80; --down: #f87171; --accent: #0d9488; --hot: #163535; --tip: #e2eced; --tipfg: #0b1a1c; --accentfg: #111111; }
+[data-theme="topologija"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(13,148,136,0.14) 9px 10px, transparent 11px 16px, rgba(13,148,136,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #0b1a1c; background-attachment: fixed; }

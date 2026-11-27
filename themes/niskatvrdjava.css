@@ -1,0 +1,18 @@
+/* tema niška tvrđava (Niš Fortress): generisana, tools/teme.py */
+:root[data-theme="niskatvrdjava"] { color-scheme: light; --back: #eeeae4; --card: #faf9f7; --head: #edecea; --edge: #cdcac5; --alt: #f3f3f1; --text1: #212225; --text2: #545455; --faint: #838281; --up: #15803d; --down: #c81e1e; --accent: #57534e; --hot: #e3e2df; --tip: #212225; --tipfg: #eeeae4; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="niskatvrdjava"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="niskatvrdjava"] .overview .left { align-self: start; }
+[data-theme="niskatvrdjava"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="niskatvrdjava"] button { border-radius: 999px; }
+[data-theme="niskatvrdjava"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="niskatvrdjava"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="niskatvrdjava"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="niskatvrdjava"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="niskatvrdjava"] body { background: linear-gradient(rgba(87,83,78,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(87,83,78,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(87,83,78,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #eeeae4; background-attachment: fixed; }
+[data-theme="niskatvrdjava"] .big .value, [data-theme="niskatvrdjava"] .detail .price { font-weight: 700; }
+[data-theme="niskatvrdjava"] .chart .line { stroke-width: 1.5; }
+[data-theme="niskatvrdjava"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="niskatvrdjava"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #424244; --alt: #333336; --text1: #e7e7e9; --text2: #b6b6b8; --faint: #88888b; --up: #4ade80; --down: #f87171; --accent: #807f7b; --hot: #39383a; --tip: #e7e7e9; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="niskatvrdjava"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="niskatvrdjava"][data-scheme="dark"] body { background: linear-gradient(rgba(128,127,123,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(128,127,123,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(128,127,123,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222225; background-attachment: fixed; }

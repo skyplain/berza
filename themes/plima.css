@@ -1,0 +1,21 @@
+/* tema plima: generisana (paleta + oblik 7/4/5/4) */
+:root[data-theme="plima"] { color-scheme: light; --back: #eef6fb; --card: #ffffff; --head: #f1f3f4; --edge: #cbd7df; --alt: #f8f9fa; --text1: #13324a; --text2: #50697c; --faint: #8094a2; --up: #15803d; --down: #c81e1e; --accent: #2a7fba; --hot: #e1edf5; --tip: #13324a; --tipfg: #eef6fb; --accentfg: #ffffff; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 10px; }
+[data-theme="plima"] :is(.overview .left, .block, .detail, .list) { background: #e6eff5; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="plima"] .overview .left { align-self: start; }
+[data-theme="plima"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plima"] button { border: 0; }
+[data-theme="plima"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="plima"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="plima"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="plima"] .bar button { background: transparent; color: var(--back); border-color: rgba(238,246,251,0.35); box-shadow: none; }
+[data-theme="plima"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="plima"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="plima"] body { background: radial-gradient(900px 500px at 100% 0, rgba(42,127,186,0.12), transparent 70%); background-color: #eef6fb; background-attachment: fixed; }
+[data-theme="plima"] .big .value, [data-theme="plima"] .detail .price { font-weight: 900; }
+[data-theme="plima"] .chart .line { stroke-width: 3; }
+[data-theme="plima"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="plima"][data-scheme="dark"] { color-scheme: dark; --back: #070c0f; --card: #060606; --head: #0c0d0d; --edge: #192228; --alt: #080909; --text1: #a4c7e5; --text2: #6d879b; --faint: #506573; --up: #4ade80; --down: #f87171; --accent: #287ab3; --hot: #0a1318; --tip: #a4c7e5; --tipfg: #070c0f; --accentfg: #ffffff; }
+[data-theme="plima"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #0b1115; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="plima"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(7,12,15,0.35); box-shadow: none; }
+[data-theme="plima"][data-scheme="dark"] body { background: radial-gradient(900px 500px at 100% 0, rgba(40,122,179,0.12), transparent 70%); background-color: #070c0f; background-attachment: fixed; }

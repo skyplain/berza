@@ -1,0 +1,18 @@
+/* tema sahara: generisana (paleta + oblik 6/1/4/5) */
+:root[data-theme="sahara"] { color-scheme: light; --back: #f9e9cf; --card: #fdf3e2; --head: #f2e7d5; --edge: #dccab0; --alt: #f7eddc; --text1: #44280c; --text2: #775e43; --faint: #9e886e; --up: #15803d; --down: #c81e1e; --accent: #c4661c; --hot: #f5dfc6; --tip: #44280c; --tipfg: #f9e9cf; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="sahara"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="sahara"] .overview .left { align-self: start; }
+[data-theme="sahara"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sahara"] button { border-radius: 0; }
+[data-theme="sahara"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sahara"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="sahara"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="sahara"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="sahara"] body { background: linear-gradient(180deg, #f4dcbd, #f9e9cf 420px); background-color: #f9e9cf; background-attachment: fixed; }
+[data-theme="sahara"] .big .value, [data-theme="sahara"] .detail .price { font-weight: 700; }
+[data-theme="sahara"] .chart .line { stroke-width: 1.5; }
+[data-theme="sahara"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="sahara"][data-scheme="dark"] { color-scheme: dark; --back: #1a0f00; --card: #110a02; --head: #1a1205; --edge: #32240f; --alt: #150e04; --text1: #deba9c; --text2: #9b8165; --faint: #776248; --up: #4ade80; --down: #f87171; --accent: #c4661c; --hot: #231301; --tip: #deba9c; --tipfg: #1a0f00; --accentfg: #111111; }
+[data-theme="sahara"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="sahara"][data-scheme="dark"] body { background: linear-gradient(180deg, #261500, #1a0f00 420px); background-color: #1a0f00; background-attachment: fixed; }

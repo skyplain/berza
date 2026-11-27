@@ -1,0 +1,15 @@
+/* tema fraktal (Fractal): generisana, tools/teme.py */
+:root[data-theme="fraktal"] { color-scheme: dark; --back: #0c0618; --card: #181224; --head: #251f31; --edge: #302a3b; --alt: #1e182a; --text1: #eae5f5; --text2: #b2adbe; --faint: #7f7a8b; --up: #4ade80; --down: #f87171; --accent: #7c3aed; --hot: #261840; --tip: #eae5f5; --tipfg: #0c0618; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="fraktal"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="fraktal"] .overview .left { align-self: start; }
+[data-theme="fraktal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fraktal"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="fraktal"] .bar h1 { font-weight: 800; }
+[data-theme="fraktal"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="fraktal"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(124,58,237,0.07) 0 12deg, transparent 12deg 24deg); background-color: #0c0618; background-attachment: fixed; }
+[data-theme="fraktal"] .big .value, [data-theme="fraktal"] .detail .price { font-weight: 900; }
+[data-theme="fraktal"] .chart .line { stroke-width: 1.5; }
+[data-theme="fraktal"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="fraktal"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #ededf0; --edge: #d0ced5; --alt: #f4f3f5; --text1: #281d42; --text2: #5a526e; --faint: #888296; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #e8dff9; --tip: #281d42; --tipfg: #f0f0f1; --accentfg: #ffffff; }
+[data-theme="fraktal"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(124,58,237,0.07) 0 12deg, transparent 12deg 24deg); background-color: #f0f0f1; background-attachment: fixed; }

@@ -1,0 +1,15 @@
+/* tema zima (Winter): generisana, tools/teme.py */
+:root[data-theme="zima"] { color-scheme: light; --back: #f5f8fb; --card: #fcfdfe; --head: #eff0f2; --edge: #d3d7db; --alt: #f5f7f8; --text1: #232830; --text2: #585c63; --faint: #888c91; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e7eaee; --tip: #232830; --tipfg: #f5f8fb; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="zima"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="zima"] .overview .left { align-self: start; }
+[data-theme="zima"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zima"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="zima"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="zima"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="zima"] body { background: radial-gradient(circle, rgba(100,116,139,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(100,116,139,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(100,116,139,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f5f8fb; background-attachment: fixed; }
+[data-theme="zima"] .big .value, [data-theme="zima"] .detail .price { font-weight: 200; }
+[data-theme="zima"] .chart .line { stroke-width: 2; }
+[data-theme="zima"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zima"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #424448; --alt: #333539; --text1: #e8eaed; --text2: #b6b8bc; --faint: #898b8e; --up: #4ade80; --down: #f87171; --accent: #707f94; --hot: #363a41; --tip: #e8eaed; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="zima"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #222428; background-attachment: fixed; }

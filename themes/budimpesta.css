@@ -1,0 +1,22 @@
+/* tema budimpešta (Budapest): generisana, tools/teme.py */
+:root[data-theme="budimpesta"] { color-scheme: light; --back: #f4f1e8; --card: #fcfbf8; --head: #eeeeeb; --edge: #d0d1c9; --alt: #f5f5f2; --text1: #122827; --text2: #4a5a57; --faint: #7e8884; --up: #15803d; --down: #c81e1e; --accent: #047857; --hot: #d9e9e1; --tip: #122827; --tipfg: #f4f1e8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="budimpesta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="budimpesta"] .overview .left { align-self: start; }
+[data-theme="budimpesta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="budimpesta"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="budimpesta"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="budimpesta"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="budimpesta"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="budimpesta"] :is(.overview .left, .block, .detail, .list) { border: 4px double #047857; }
+[data-theme="budimpesta"] .bar h1::before { content: "❦ "; color: #047857; }
+[data-theme="budimpesta"] .bar h1::after { content: " ❦"; color: #047857; }
+[data-theme="budimpesta"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="budimpesta"] .big .value, [data-theme="budimpesta"] .detail .price { font-weight: 200; }
+[data-theme="budimpesta"] .chart .line { stroke-width: 3; }
+[data-theme="budimpesta"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="budimpesta"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414345; --alt: #323437; --text1: #e1eae9; --text2: #b1b8b8; --faint: #858a8b; --up: #4ade80; --down: #f87171; --accent: #2a8d70; --hot: #2d3b3a; --tip: #e1eae9; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="budimpesta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="budimpesta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #2a8d70; }
+[data-theme="budimpesta"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #2a8d70; }
+[data-theme="budimpesta"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #2a8d70; }

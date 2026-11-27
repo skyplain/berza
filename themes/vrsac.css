@@ -1,0 +1,17 @@
+/* tema vršac (Vršac): generisana, tools/teme.py */
+:root[data-theme="vrsac"] { color-scheme: light; --back: #f7f1f8; --card: #fdfbfd; --head: #f0edf1; --edge: #d5ced9; --alt: #f6f4f7; --text1: #241935; --text2: #594f66; --faint: #898193; --up: #15803d; --down: #c81e1e; --accent: #6b21a8; --hot: #e9dcf1; --tip: #241935; --tipfg: #f7f1f8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="vrsac"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="vrsac"] .overview .left { align-self: start; }
+[data-theme="vrsac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vrsac"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="vrsac"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="vrsac"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="vrsac"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="vrsac"] body { background: repeating-linear-gradient(100deg, rgba(107,33,168,0.12) 0 6px, transparent 6px 24px); background-color: #f7f1f8; background-attachment: fixed; }
+[data-theme="vrsac"] .big .value, [data-theme="vrsac"] .detail .price { font-weight: 900; }
+[data-theme="vrsac"] .chart .line { stroke-width: 1.5; }
+[data-theme="vrsac"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vrsac"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #39393d; --edge: #434247; --alt: #343338; --text1: #e9e3f0; --text2: #b8b3be; --faint: #8a8790; --up: #4ade80; --down: #f87171; --accent: #9966c3; --hot: #3d3646; --tip: #e9e3f0; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="vrsac"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="vrsac"][data-scheme="dark"] body { background: repeating-linear-gradient(100deg, rgba(153,102,195,0.12) 0 6px, transparent 6px 24px); background-color: #232327; background-attachment: fixed; }

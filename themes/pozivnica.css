@@ -1,0 +1,20 @@
+/* tema pozivnica (Invitation): generisana, tools/teme.py */
+:root[data-theme="pozivnica"] { color-scheme: light; --back: #fffdf7; --card: #fefbf2; --head: #f2efe5; --edge: #dedbd3; --alt: #f8f5eb; --text1: #322b19; --text2: #656050; --faint: #949084; --up: #15803d; --down: #c81e1e; --accent: #a97b0a; --hot: #f2e9d2; --tip: #322b19; --tipfg: #fffdf7; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="pozivnica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="pozivnica"] .overview .left { align-self: start; }
+[data-theme="pozivnica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pozivnica"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="pozivnica"] .bar h1 { font-size: 24px; }
+[data-theme="pozivnica"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="pozivnica"] :is(.overview .left, .block, .detail, .list) { border: 4px double #a97b0a; }
+[data-theme="pozivnica"] .bar h1::before { content: "❦ "; color: #a97b0a; }
+[data-theme="pozivnica"] .bar h1::after { content: " ❦"; color: #a97b0a; }
+[data-theme="pozivnica"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="pozivnica"] .big .value, [data-theme="pozivnica"] .detail .price { font-weight: 900; }
+[data-theme="pozivnica"] .chart .line { stroke-width: 2.5; }
+[data-theme="pozivnica"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pozivnica"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #444445; --alt: #343537; --text1: #efebe3; --text2: #bcb9b4; --faint: #8d8b89; --up: #4ade80; --down: #f87171; --accent: #b8860b; --hot: #413b2d; --tip: #efebe3; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="pozivnica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #b8860b; }
+[data-theme="pozivnica"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #b8860b; }
+[data-theme="pozivnica"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #b8860b; }

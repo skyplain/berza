@@ -1,0 +1,18 @@
+/* tema džudo (Judo): generisana, tools/teme.py */
+:root[data-theme="dzudo"] { color-scheme: light; --back: #f9fbfe; --card: #f5f8fd; --head: #e8ebf2; --edge: #d5d8df; --alt: #eef2f7; --text1: #16213e; --text2: #4f586e; --faint: #838a9a; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #d7e0f8; --tip: #16213e; --tipfg: #f9fbfe; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="dzudo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="dzudo"] .overview .left { align-self: start; }
+[data-theme="dzudo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dzudo"] button { border-radius: 999px; }
+[data-theme="dzudo"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="dzudo"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="dzudo"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="dzudo"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="dzudo"] body { background: linear-gradient(rgba(29,78,216,0.12) 2px, transparent 2px) 0 0 / 120px 120px, linear-gradient(90deg, rgba(29,78,216,0.12) 2px, transparent 2px) 0 0 / 120px 120px; background-color: #f9fbfe; background-attachment: fixed; }
+[data-theme="dzudo"] .big .value, [data-theme="dzudo"] .detail .price { font-weight: 400; }
+[data-theme="dzudo"] .chart .line { stroke-width: 1.5; }
+[data-theme="dzudo"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dzudo"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3f; --edge: #424349; --alt: #333539; --text1: #e3e7f4; --text2: #b3b6c1; --faint: #878992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #343a4c; --tip: #e3e7f4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="dzudo"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="dzudo"][data-scheme="dark"] body { background: linear-gradient(rgba(86,123,226,0.12) 2px, transparent 2px) 0 0 / 120px 120px, linear-gradient(90deg, rgba(86,123,226,0.12) 2px, transparent 2px) 0 0 / 120px 120px; background-color: #232428; background-attachment: fixed; }

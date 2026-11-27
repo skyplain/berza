@@ -1,0 +1,17 @@
+/* tema vodopad (Waterfall): generisana, tools/teme.py */
+:root[data-theme="vodopad"] { color-scheme: light; --back: #eff9ff; --card: #fafdff; --head: #ecf1f4; --edge: #ccd9e1; --alt: #f3f7f9; --text1: #143141; --text2: #4b6370; --faint: #7d919c; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #d9edf7; --tip: #143141; --tipfg: #eff9ff; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="vodopad"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,253,255,0.6); border: 1px solid rgba(20,49,65,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="vodopad"] .overview .left { align-self: start; }
+[data-theme="vodopad"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vodopad"] button { border-radius: 999px; background: transparent; }
+[data-theme="vodopad"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="vodopad"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="vodopad"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="vodopad"] body { background: repeating-linear-gradient(90deg, rgba(12,140,197,0.07) 0 14px, transparent 14px 40px); background-color: #eff9ff; background-attachment: fixed; }
+[data-theme="vodopad"] .big .value, [data-theme="vodopad"] .detail .price { font-weight: 200; }
+[data-theme="vodopad"] .chart .line { stroke-width: 1.5; }
+[data-theme="vodopad"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vodopad"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #414449; --alt: #323539; --text1: #e2eef5; --text2: #b2bcc2; --faint: #868d93; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #29404c; --tip: #e2eef5; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="vodopad"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(45,47,51,0.6); border: 1px solid rgba(226,238,245,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="vodopad"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(14,165,233,0.07) 0 14px, transparent 14px 40px); background-color: #222428; background-attachment: fixed; }

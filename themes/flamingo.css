@@ -1,0 +1,16 @@
+/* tema flamingo (Flamingo): generisana, tools/teme.py */
+:root[data-theme="flamingo"] { color-scheme: light; --back: #fff1f6; --card: #fffbfc; --head: #f3eef0; --edge: #e0d1d8; --alt: #f9f5f6; --text1: #3d2738; --text2: #6e5a68; --faint: #9a8893; --up: #15803d; --down: #c81e1e; --accent: #ce619a; --hot: #f8e5ee; --tip: #3d2738; --tipfg: #fff1f6; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="flamingo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="flamingo"] .overview .left { align-self: start; }
+[data-theme="flamingo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="flamingo"] button { border-radius: 999px; }
+[data-theme="flamingo"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="flamingo"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="flamingo"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="flamingo"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="flamingo"] .big .value, [data-theme="flamingo"] .detail .price { font-weight: 700; }
+[data-theme="flamingo"] .chart .line { stroke-width: 3; }
+[data-theme="flamingo"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="flamingo"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444347; --alt: #343438; --text1: #f4eaf1; --text2: #c0b8be; --faint: #908a90; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #4a3844; --tip: #f4eaf1; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="flamingo"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

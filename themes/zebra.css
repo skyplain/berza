@@ -1,0 +1,21 @@
+/* tema zebra (Zebra): generisana, tools/teme.py */
+:root[data-theme="zebra"] { color-scheme: light; --back: #f2f2f2; --card: #fbfbfb; --head: #ededee; --edge: #cecfcf; --alt: #f4f4f4; --text1: #14161a; --text2: #4c4d50; --faint: #7f8082; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dadada; --tip: #14161a; --tipfg: #f2f2f2; --accentfg: #ffffff; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 8px; }
+[data-theme="zebra"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zebra"] .overview .left { align-self: start; }
+[data-theme="zebra"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zebra"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zebra"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="zebra"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="zebra"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zebra"] body { background: repeating-linear-gradient(100deg, rgba(20,22,26,0.07) 0 14px, transparent 14px 34px, rgba(20,22,26,0.05) 34px 40px, transparent 40px 62px); background-color: #f2f2f2; background-attachment: fixed; }
+[data-theme="zebra"] .bar { background: repeating-linear-gradient(100deg, #14161a 0 14px, #f2f2f2 14px 30px); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); }
+[data-theme="zebra"] .bar h1 { background: #f2f2f2; padding: 0 8px; }
+[data-theme="zebra"] .big .value, [data-theme="zebra"] .detail .price { font-weight: 200; }
+[data-theme="zebra"] .chart .line { stroke-width: 2; }
+[data-theme="zebra"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zebra"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3e; --tip: #e2e2e4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="zebra"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zebra"][data-scheme="dark"] body { background: repeating-linear-gradient(100deg, rgba(226,226,228,0.07) 0 14px, transparent 14px 34px, rgba(226,226,228,0.05) 34px 40px, transparent 40px 62px); background-color: #232428; background-attachment: fixed; }
+[data-theme="zebra"][data-scheme="dark"] .bar { background: repeating-linear-gradient(100deg, #e2e2e4 0 14px, #232428 14px 30px); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); }
+[data-theme="zebra"][data-scheme="dark"] .bar h1 { background: #232428; padding: 0 8px; }

@@ -1,0 +1,19 @@
+/* tema atompank (Atompunk): generisana, tools/teme.py */
+:root[data-theme="atompank"] { color-scheme: light; --back: #f2f6f0; --card: #fbfcfa; --head: #f0efed; --edge: #d5d5ce; --alt: #f5f6f3; --text1: #3f2a1a; --text2: #6c5d50; --faint: #958c81; --up: #15803d; --down: #c81e1e; --accent: #c7630e; --hot: #f4e7d9; --tip: #3f2a1a; --tipfg: #f2f6f0; --accentfg: #111111; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 4px; }
+[data-theme="atompank"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="atompank"] .overview .left { align-self: start; }
+[data-theme="atompank"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="atompank"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="atompank"] .bar h1 { font-weight: 800; }
+[data-theme="atompank"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="atompank"] body { background: radial-gradient(circle, rgba(199,99,14,0.3) 2px, transparent 3px) 0 0 / 70px 70px; background-color: #f2f6f0; background-attachment: fixed; }
+[data-theme="atompank"] .bar h1::before { content: "✶ "; color: #c7630e; }
+[data-theme="atompank"] :is(h2, h3)::before { content: "◦ "; color: #11ff7f; }
+[data-theme="atompank"] .big .value, [data-theme="atompank"] .detail .price { font-weight: 400; }
+[data-theme="atompank"] .chart .line { stroke-width: 2.5; }
+[data-theme="atompank"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="atompank"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #444344; --alt: #333436; --text1: #f5ebe4; --text2: #c0b9b4; --faint: #908b89; --up: #4ade80; --down: #f87171; --accent: #ff7f11; --hot: #4a392d; --tip: #f5ebe4; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="atompank"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="atompank"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,127,17,0.3) 2px, transparent 3px) 0 0 / 70px 70px; background-color: #222326; background-attachment: fixed; }
+[data-theme="atompank"][data-scheme="dark"] .bar h1::before { content: "✶ "; color: #ff7f11; }

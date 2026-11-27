@@ -1,0 +1,14 @@
+/* tema vedro jutro (Clear morning): generisana, tools/teme.py */
+:root[data-theme="vedrojutro"] { color-scheme: light; --back: #f4fafe; --card: #fcfeff; --head: #eef2f4; --edge: #d1dae0; --alt: #f5f8f9; --text1: #1b3544; --text2: #516672; --faint: #7b8c96; --up: #15803d; --down: #c81e1e; --accent: #2c93c1; --hot: #dfeff6; --tip: #1b3544; --tipfg: #f4fafe; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="vedrojutro"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="vedrojutro"] .overview .left { align-self: start; }
+[data-theme="vedrojutro"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vedrojutro"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="vedrojutro"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="vedrojutro"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="vedrojutro"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="vedrojutro"] .big .value, [data-theme="vedrojutro"] .detail .price { font-weight: 200; }
+[data-theme="vedrojutro"] .chart .line { stroke-width: 2.5; }
+[data-theme="vedrojutro"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vedrojutro"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #414549; --alt: #333539; --text1: #e5f0f6; --text2: #b4bdc2; --faint: #878e93; --up: #4ade80; --down: #f87171; --accent: #38bdf8; --hot: #2f434f; --tip: #e5f0f6; --tipfg: #222428; --accentfg: #111111; }

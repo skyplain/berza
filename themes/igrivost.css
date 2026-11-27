@@ -1,0 +1,17 @@
+/* tema igrivost (Playfulness): generisana, tools/teme.py */
+:root[data-theme="igrivost"] { color-scheme: light; --back: #f0fdff; --card: #ebfcfe; --head: #def0f2; --edge: #ccdde0; --alt: #e4f6f8; --text1: #12343d; --text2: #4a666e; --faint: #7d949a; --up: #15803d; --down: #c81e1e; --accent: #069ab3; --hot: #cbeef4; --tip: #12343d; --tipfg: #f0fdff; --accentfg: #111111; --font: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive; --radius: 10px; }
+[data-theme="igrivost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="igrivost"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="igrivost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="igrivost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="igrivost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="igrivost"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="igrivost"] body { background: radial-gradient(rgba(6,154,179,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(212,6,182,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(182,212,6,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #f0fdff; background-attachment: fixed; }
+[data-theme="igrivost"] .block:nth-child(odd), [data-theme="igrivost"] .overview .left { transform: rotate(-.6deg); }
+[data-theme="igrivost"] .block:nth-child(even) { transform: rotate(.5deg); }
+[data-theme="igrivost"] .big .value, [data-theme="igrivost"] .detail .price { font-weight: 400; }
+[data-theme="igrivost"] .chart .line { stroke-width: 2.5; }
+[data-theme="igrivost"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="igrivost"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #414448; --alt: #323539; --text1: #e1eff3; --text2: #b1bcc0; --faint: #858e92; --up: #4ade80; --down: #f87171; --accent: #06b6d4; --hot: #28424a; --tip: #e1eff3; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="igrivost"][data-scheme="dark"] body { background: radial-gradient(rgba(6,182,212,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(212,6,182,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(182,212,6,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #222428; background-attachment: fixed; }

@@ -1,0 +1,20 @@
+/* tema tetris (Falling blocks): generisana, tools/teme.py */
+:root[data-theme="tetris"] { color-scheme: dark; --back: #0a0614; --card: #161220; --head: #231f2d; --edge: #2e2a38; --alt: #1c1826; --text1: #eee7f6; --text2: #b5afbe; --faint: #817b8a; --up: #4ade80; --down: #f87171; --accent: #a855f7; --hot: #2a1b3e; --tip: #eee7f6; --tipfg: #0a0614; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="tetris"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="tetris"] .overview .left { align-self: start; }
+[data-theme="tetris"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tetris"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tetris"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="tetris"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tetris"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tetris"] body { background: linear-gradient(rgba(238,231,246,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(238,231,246,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #0a0614; background-attachment: fixed; }
+[data-theme="tetris"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #eee7f6; border-radius: 0; box-shadow: none; }
+[data-theme="tetris"] button { border-radius: 0; border-width: 2px; }
+[data-theme="tetris"] .big .value, [data-theme="tetris"] .detail .price { font-weight: 400; }
+[data-theme="tetris"] .chart .line { stroke-width: 2.5; }
+[data-theme="tetris"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tetris"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeedf0; --edge: #d1cfd5; --alt: #f4f4f5; --text1: #2f2243; --text2: #5f566e; --faint: #8c8597; --up: #15803d; --down: #c81e1e; --accent: #a855f7; --hot: #efe3fa; --tip: #2f2243; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="tetris"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="tetris"][data-scheme="light"] body { background: linear-gradient(rgba(47,34,67,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(47,34,67,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="tetris"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #2f2243; border-radius: 0; box-shadow: none; }

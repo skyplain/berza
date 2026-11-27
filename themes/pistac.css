@@ -1,0 +1,17 @@
+/* tema pistać: generisana (paleta + oblik 3/4/3/0) */
+:root[data-theme="pistac"] { color-scheme: light; --back: #f3f8e8; --card: #fbfdf6; --head: #eff1e9; --edge: #d3d9c7; --alt: #f5f7ef; --text1: #2b3518; --text2: #636c52; --faint: #8f9680; --up: #15803d; --down: #c81e1e; --accent: #6a9a45; --hot: #e7efdd; --tip: #2b3518; --tipfg: #f3f8e8; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="pistac"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="pistac"] .overview .left { align-self: start; }
+[data-theme="pistac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pistac"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="pistac"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pistac"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="pistac"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="pistac"] .bar button { background: transparent; color: var(--back); border-color: rgba(243,248,232,0.35); box-shadow: none; }
+[data-theme="pistac"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="pistac"] .big .value, [data-theme="pistac"] .detail .price { font-weight: 900; }
+[data-theme="pistac"] .chart .line { stroke-width: 1.5; }
+[data-theme="pistac"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="pistac"][data-scheme="dark"] { color-scheme: dark; --back: #0a0c04; --card: #070804; --head: #0e0f0a; --edge: #1e2215; --alt: #0a0b07; --text1: #b9c6a4; --text2: #7c866b; --faint: #5d644e; --up: #4ade80; --down: #f87171; --accent: #6a9a45; --hot: #0e1307; --tip: #b9c6a4; --tipfg: #0a0c04; --accentfg: #111111; }
+[data-theme="pistac"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(10,12,4,0.35); box-shadow: none; }

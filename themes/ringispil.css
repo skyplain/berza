@@ -1,0 +1,18 @@
+/* tema ringišpil (Carousel): generisana, tools/teme.py */
+:root[data-theme="ringispil"] { color-scheme: light; --back: #fff4f9; --card: #fffcfd; --head: #f3eff1; --edge: #e0d2d9; --alt: #f9f5f7; --text1: #3c2032; --text2: #6d5564; --faint: #9a8692; --up: #15803d; --down: #c81e1e; --accent: #ec4899; --hot: #fce3ef; --tip: #3c2032; --tipfg: #fff4f9; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="ringispil"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="ringispil"] .overview .left { align-self: start; }
+[data-theme="ringispil"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ringispil"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="ringispil"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="ringispil"] .bar h1 { font-weight: 800; }
+[data-theme="ringispil"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ringispil"] body { background: repeating-linear-gradient(90deg, rgba(236,72,153,0.1) 0 40px, transparent 40px 80px); background-color: #fff4f9; background-attachment: fixed; }
+[data-theme="ringispil"] .bar { position: relative; }
+[data-theme="ringispil"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #ec4899 50%, transparent 50%) 0 0 / 24px 12px, linear-gradient(225deg, #99ec48 50%, transparent 50%) 12px 0 / 24px 12px; }
+[data-theme="ringispil"] .big .value, [data-theme="ringispil"] .detail .price { font-weight: 400; }
+[data-theme="ringispil"] .chart .line { stroke-width: 3; }
+[data-theme="ringispil"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ringispil"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444247; --alt: #343438; --text1: #f3e6ef; --text2: #bfb5bd; --faint: #8f888f; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #493240; --tip: #f3e6ef; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="ringispil"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(236,72,153,0.1) 0 40px, transparent 40px 80px); background-color: #232327; background-attachment: fixed; }

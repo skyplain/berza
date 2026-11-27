@@ -1,0 +1,15 @@
+/* tema informatika (Computer science): generisana, tools/teme.py */
+:root[data-theme="informatika"] { color-scheme: dark; --back: #0b1321; --card: #171f2c; --head: #232b38; --edge: #2e3643; --alt: #1d2532; --text1: #e5ebf6; --text2: #aeb5c1; --faint: #7c8390; --up: #4ade80; --down: #f87171; --accent: #3b82f6; --hot: #1c2d48; --tip: #e5ebf6; --tipfg: #0b1321; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="informatika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="informatika"] .overview .left { align-self: start; }
+[data-theme="informatika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="informatika"] button { border-radius: 999px; }
+[data-theme="informatika"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="informatika"] body { background: radial-gradient(rgba(59,130,246,0.45) 2px, transparent 3px) 0 0 / 48px 48px, linear-gradient(90deg, rgba(59,130,246,0.14) 1px, transparent 1px) 0 0 / 48px 48px, linear-gradient(rgba(59,130,246,0.14) 1px, transparent 1px) 24px 0 / 48px 96px; background-color: #0b1321; background-attachment: fixed; }
+[data-theme="informatika"] .big .value, [data-theme="informatika"] .detail .price { font-weight: 700; }
+[data-theme="informatika"] .chart .line { stroke-width: 3; }
+[data-theme="informatika"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="informatika"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #edeef0; --edge: #ced1d6; --alt: #f3f5f5; --text1: #1c2a43; --text2: #515c6f; --faint: #828a97; --up: #15803d; --down: #c81e1e; --accent: #3b82f6; --hot: #dfeafa; --tip: #1c2a43; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="informatika"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="informatika"][data-scheme="light"] body { background: radial-gradient(rgba(59,130,246,0.45) 2px, transparent 3px) 0 0 / 48px 48px, linear-gradient(90deg, rgba(59,130,246,0.14) 1px, transparent 1px) 0 0 / 48px 48px, linear-gradient(rgba(59,130,246,0.14) 1px, transparent 1px) 24px 0 / 48px 96px; background-color: #f0f1f2; background-attachment: fixed; }

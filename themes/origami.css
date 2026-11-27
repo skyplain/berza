@@ -1,0 +1,16 @@
+/* tema origami: presavijen papir: odsečeni uglovi, senke nabora */
+:root[data-theme="origami"] { color-scheme: light; --back: #f1efe9; --card: #fff; --head: #f6f4ef; --edge: #dedad0; --alt: #faf9f6; --text1: #262626; --text2: #555; --faint: #8b8b8b; --up: #2a8c5a; --down: #d1453b; --accent: #e8553e; --hot: #fbe9e5; --tip: #262626; --tipfg: #fff; --accentfg: #fff; --font: "Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0; --panel-bg: linear-gradient(135deg,#fff 0 50%,#f7f5f0 50%); --panel-border: 0; --panel-shadow: none; --h-color: #e8553e; --h-transform: uppercase; --h-spacing: .12em; --h-size: 12px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 300; }
+[data-theme="origami"] :is(.overview .left,.block,.detail,.list) { clip-path:polygon(0 0,calc(100% - 26px) 0,100% 26px,100% 100%,0 100%);filter:drop-shadow(0 2px 3px rgba(0,0,0,.08)) }
+[data-theme="origami"] .bar { border:0 }
+[data-theme="origami"] .bar h1::before { content:"◸ ";color:#e8553e }
+[data-theme="origami"] button { clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);border:0;background:#fff }
+[data-theme="origami"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="origami"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="origami"] .overview .left { align-self: start; }
+[data-theme="origami"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="origami"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="origami"][data-scheme="dark"] { color-scheme: dark; --back: #100f0b; --card: #060606; --head: #0d0c08; --edge: #201d16; --alt: #090907; --text1: #cecece; --text2: #959595; --faint: #676767; --up: #4ade80; --down: #f87171; --accent: #e8553e; --hot: #180d0a; --tip: #cecece; --tipfg: #060606; --accentfg: #111111; --panel-bg: linear-gradient(135deg,#060606 0 50%,#0c0b08 50%); --h-color: #e8553e; }
+[data-theme="origami"][data-scheme="dark"] :is(.overview .left,.block,.detail,.list) { clip-path:polygon(0 0,calc(100% - 26px) 0,100% 26px,100% 100%,0 100%);filter:drop-shadow(0 2px 3px rgba(255,255,255,.08)) }
+[data-theme="origami"][data-scheme="dark"] .bar h1::before { content:"◸ ";color:#e8553e }
+[data-theme="origami"][data-scheme="dark"] button { clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);border:0;background:#060606 }

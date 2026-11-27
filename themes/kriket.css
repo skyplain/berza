@@ -1,0 +1,16 @@
+/* tema kriket (Cricket): generisana, tools/teme.py */
+:root[data-theme="kriket"] { color-scheme: light; --back: #f6f5ec; --card: #fcfcf9; --head: #eeefec; --edge: #d2d5cc; --alt: #f5f6f3; --text1: #152a22; --text2: #4d5d54; --faint: #818b83; --up: #15803d; --down: #c81e1e; --accent: #15803d; --hot: #dcebdf; --tip: #152a22; --tipfg: #f6f5ec; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="kriket"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="kriket"] .overview .left { align-self: start; }
+[data-theme="kriket"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kriket"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="kriket"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kriket"] .bar h1 { font-weight: 800; }
+[data-theme="kriket"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kriket"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 80px, transparent 80px 160px), radial-gradient(circle at 50% 55%, transparent 90px, rgba(255,255,255,0.4) 90px 92px, transparent 92px), linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.4) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #f6f5ec; background-attachment: fixed; }
+[data-theme="kriket"] .big .value, [data-theme="kriket"] .detail .price { font-weight: 200; }
+[data-theme="kriket"] .chart .line { stroke-width: 2.5; }
+[data-theme="kriket"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kriket"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414345; --alt: #323436; --text1: #e2ebe7; --text2: #b2b9b7; --faint: #868b8a; --up: #4ade80; --down: #f87171; --accent: #318f54; --hot: #2e3c36; --tip: #e2ebe7; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="kriket"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 80px, transparent 80px 160px), radial-gradient(circle at 50% 55%, transparent 90px, rgba(255,255,255,0.4) 90px 92px, transparent 92px), linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.4) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #222326; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema šangaj (Shanghai): generisana, tools/teme.py */
+:root[data-theme="sangaj"] { color-scheme: dark; --back: #120607; --card: #1e1213; --head: #2b1f20; --edge: #362a2b; --alt: #241819; --text1: #f2e4e5; --text2: #baacae; --faint: #86797a; --up: #4ade80; --down: #f87171; --accent: #dc2626; --hot: #391516; --tip: #f2e4e5; --tipfg: #120607; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="sangaj"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="sangaj"] .overview .left { align-self: start; }
+[data-theme="sangaj"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sangaj"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sangaj"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="sangaj"] .bar button { background: transparent; color: var(--back); border-color: rgba(18,6,7,0.35); box-shadow: none; }
+[data-theme="sangaj"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="sangaj"] .bar h1 { color: #f1a8a8; text-shadow: 0 0 4px #dc2626, 0 0 12px #dc2626, 0 0 28px rgba(220,38,38,0.8); }
+[data-theme="sangaj"] .big .value, [data-theme="sangaj"] .detail .price { font-weight: 900; }
+[data-theme="sangaj"] .chart .line { stroke-width: 2.5; }
+[data-theme="sangaj"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="sangaj"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeded; --edge: #d4cece; --alt: #f5f3f3; --text1: #391a1e; --text2: #675052; --faint: #918183; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f7dcdc; --tip: #391a1e; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="sangaj"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }

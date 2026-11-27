@@ -1,0 +1,21 @@
+/* tema tehno (Techno): generisana, tools/teme.py */
+:root[data-theme="tehno"] { color-scheme: dark; --back: #050509; --card: #121215; --head: #1f1f22; --edge: #292b2f; --alt: #18191c; --text1: #e3f1f5; --text2: #acb6ba; --faint: #788084; --up: #4ade80; --down: #f87171; --accent: #22d3ee; --hot: #142d33; --tip: #e3f1f5; --tipfg: #050509; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="tehno"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="tehno"] .overview .left { align-self: start; }
+[data-theme="tehno"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tehno"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="tehno"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tehno"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="tehno"] .bar button { background: transparent; color: var(--back); border-color: rgba(5,5,9,0.35); box-shadow: none; }
+[data-theme="tehno"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="tehno"] body { background: repeating-linear-gradient(90deg, rgba(34,211,238,0.14) 0 8px, transparent 8px 14px) 0 100% / 100% 90px no-repeat; background-color: #050509; background-attachment: fixed; }
+[data-theme="tehno"] .bar h1::after { content: " ▂▃▅▇▅▃▂"; color: #22d3ee; }
+[data-theme="tehno"] body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 30; background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); }
+[data-theme="tehno"] .big .value, [data-theme="tehno"] .detail .price { font-weight: 700; }
+[data-theme="tehno"] .chart .line { stroke-width: 2; }
+[data-theme="tehno"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tehno"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #eceeef; --edge: #cdd3d4; --alt: #f3f4f4; --text1: #173942; --text2: #4d676e; --faint: #778a8f; --up: #15803d; --down: #c81e1e; --accent: #178b9c; --hot: #daeaed; --tip: #173942; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="tehno"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,240,0.35); box-shadow: none; }
+[data-theme="tehno"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(23,139,156,0.14) 0 8px, transparent 8px 14px) 0 100% / 100% 90px no-repeat; background-color: #f0f0f0; background-attachment: fixed; }
+[data-theme="tehno"][data-scheme="light"] .bar h1::after { content: " ▂▃▅▇▅▃▂"; color: #178b9c; }

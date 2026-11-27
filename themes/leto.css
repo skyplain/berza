@@ -1,0 +1,21 @@
+/* tema leto: jarko žuto i nebesko plavo, sunčano i vedro */
+:root[data-theme="leto"] { color-scheme: light; --back: #fffbea; --card: #fff; --head: #fff3c4; --edge: #f5e08a; --alt: #fffdf3; --text1: #1c2b4a; --text2: #40507a; --faint: #8592b3; --up: #0ea56b; --down: #f0503c; --accent: #1e88e5; --hot: #e3f2fd; --tip: #1c2b4a; --tipfg: #fff; --accentfg: #fff; --font: "Avenir Next Rounded","Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 16px; --panel-bg: var(--card); --panel-border: 2px solid #f5e08a; --panel-shadow: 0 4px 0 #f5e08a; --h-color: #1e88e5; --h-transform: uppercase; --h-spacing: .06em; --h-size: 13px; --h-weight: 800; --h-font: inherit; --big-font: inherit; --big-weight: 800; }
+[data-theme="leto"] body { background:linear-gradient(180deg,#bde3ff 0,#fffbea 260px) fixed #fffbea }
+[data-theme="leto"] .bar { border:0 }
+[data-theme="leto"] .bar h1 { font-size:24px;font-weight:900;color:#1c2b4a }
+[data-theme="leto"] .bar h1::before { content:"✺ ";color:#ffb300 }
+[data-theme="leto"] button { background:#ffd54f;border:0;font-weight:700;color:#1c2b4a }
+[data-theme="leto"] button:hover { background:#ffca28 }
+[data-theme="leto"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="leto"] .chart .line { stroke-width:3 }
+[data-theme="leto"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="leto"] .overview .left { align-self: start; }
+[data-theme="leto"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="leto"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="leto"][data-scheme="dark"] { color-scheme: dark; --back: #0a0801; --card: #060606; --head: #130c00; --edge: #201900; --alt: #080703; --text1: #b2c7ef; --text2: #8598c7; --faint: #53607f; --up: #4ade80; --down: #f87171; --accent: #1e88e5; --hot: #061017; --tip: #b2c7ef; --tipfg: #060606; --accentfg: #111111; --panel-border: 2px solid #201900; --panel-shadow: 0 4px 0 #201900; --h-color: #1e88e5; }
+[data-theme="leto"][data-scheme="dark"] body { background:linear-gradient(180deg,#001e32 0,#0a0801 260px) fixed #0a0801 }
+[data-theme="leto"][data-scheme="dark"] .bar h1 { font-size:24px;font-weight:900;color:#b2c7ef }
+[data-theme="leto"][data-scheme="dark"] .bar h1::before { content:"✺ ";color:#3f2a03 }
+[data-theme="leto"][data-scheme="dark"] button { background:#261d01;border:0;font-weight:700;color:#b2c7ef }
+[data-theme="leto"][data-scheme="dark"] button:hover { background:#2d2202 }

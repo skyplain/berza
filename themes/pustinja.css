@@ -1,0 +1,15 @@
+/* tema pustinja: pesak i terakota, serif naslovi, tople linije */
+:root[data-theme="pustinja"] { color-scheme: light; --back: #f5e9d6; --card: #fbf3e6; --head: #ecd9bb; --edge: #d9bf98; --alt: #f1e3cc; --text1: #4a2c1a; --text2: #7a5236; --faint: #a5845f; --up: #5f8a3a; --down: #c4471d; --accent: #c4622d; --hot: #f1dcc0; --tip: #4a2c1a; --tipfg: #fbf3e6; --accentfg: #fff; --font: Optima,Candara,system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 2px; --h-color: #c4622d; --h-transform: uppercase; --h-spacing: .18em; --h-size: 12px; --h-weight: 700; --h-font: inherit; --big-font: Palatino,"Book Antiqua",serif; --big-weight: 400; }
+[data-theme="pustinja"] .bar { border-bottom:6px solid #c4622d;box-shadow:0 4px 0 #e0a15e }
+[data-theme="pustinja"] .bar h1 { font-family:Palatino,"Book Antiqua",serif;font-size:26px;color:#7a2f12 }
+[data-theme="pustinja"] .block,[data-theme="pustinja"] .overview .left { border-top:2px solid #d9bf98;padding-top:10px }
+[data-theme="pustinja"] .chart .area { opacity:.2 }
+[data-theme="pustinja"] .chart .vol { fill:#c4622d;opacity:.35 }
+[data-theme="pustinja"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="pustinja"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="pustinja"][data-scheme="dark"] { color-scheme: dark; --back: #191004; --card: #100b04; --head: #271901; --edge: #3f2a03; --alt: #1e1403; --text1: #dcb9a5; --text2: #ae8365; --faint: #7f603d; --up: #4ade80; --down: #f87171; --accent: #c4622d; --hot: #251601; --tip: #d9b39d; --tipfg: #100b04; --accentfg: #111111; --h-color: #c4622d; }
+[data-theme="pustinja"][data-scheme="dark"] .bar { border-bottom:6px solid #c4622d;box-shadow:0 4px 0 #593403 }
+[data-theme="pustinja"][data-scheme="dark"] .bar h1 { font-family:Palatino,"Book Antiqua",serif;font-size:26px;color:#de896c }
+[data-theme="pustinja"][data-scheme="dark"] .block,[data-theme="pustinja"][data-scheme="dark"] .overview .left { border-top:2px solid #3f2a03;padding-top:10px }
+[data-theme="pustinja"][data-scheme="dark"] .chart .vol { fill:#c4622d;opacity:.35 }

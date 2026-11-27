@@ -1,0 +1,17 @@
+/* tema peridot (Peridot): generisana, tools/teme.py */
+:root[data-theme="peridot"] { color-scheme: light; --back: #f7fdea; --card: #f5fce6; --head: #e9f0da; --edge: #d6ddc9; --alt: #eff6e0; --text1: #29381b; --text2: #5c694f; --faint: #848f76; --up: #15803d; --down: #c81e1e; --accent: #5e9210; --hot: #e0edc8; --tip: #29381b; --tipfg: #f7fdea; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="peridot"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="peridot"] .overview .left { align-self: start; }
+[data-theme="peridot"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="peridot"] button { border-radius: 999px; }
+[data-theme="peridot"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="peridot"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="peridot"] .bar button { background: transparent; color: var(--back); border-color: rgba(247,253,234,0.35); box-shadow: none; }
+[data-theme="peridot"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="peridot"] .big .value, [data-theme="peridot"] .detail .price { font-weight: 900; }
+[data-theme="peridot"] .chart .line { stroke-width: 3; }
+[data-theme="peridot"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="peridot"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #393b3c; --edge: #434544; --alt: #343536; --text1: #ebf1e4; --text2: #b9beb4; --faint: #8b8f89; --up: #4ade80; --down: #f87171; --accent: #84cc16; --hot: #3a452d; --tip: #ebf1e4; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="peridot"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="peridot"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,38,0.35); box-shadow: none; }

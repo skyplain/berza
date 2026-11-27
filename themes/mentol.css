@@ -1,0 +1,29 @@
+/* tema mentol (Menthol): generisana, tools/teme.py */
+:root[data-theme="mentol"] { color-scheme: light; --back: #e9fbf3; --card: #f8fefb; --head: #eaf2ef; --edge: #c7dbd3; --alt: #f1f8f5; --text1: #14342e; --text2: #49665f; --faint: #7a948d; --up: #15803d; --down: #c81e1e; --accent: #0e9c6d; --hot: #d7f0e7; --tip: #14342e; --tipfg: #e9fbf3; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="mentol"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mentol"] .overview .left { align-self: start; }
+[data-theme="mentol"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mentol"] button { border-radius: 999px; }
+[data-theme="mentol"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mentol"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="mentol"] .bar button { background: transparent; color: var(--back); border-color: rgba(233,251,243,0.35); box-shadow: none; }
+[data-theme="mentol"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="mentol"] body { background: linear-gradient(180deg, rgba(14,156,109,0.1), transparent 380px); background-color: #e9fbf3; background-attachment: fixed; }
+[data-theme="mentol"] :is(.overview .left, .block, .detail, .list) { background: #ecfbf5; border-color: rgba(14,156,109,0.35); }
+[data-theme="mentol"] .chart .line { stroke: #0e9c6d !important; }
+[data-theme="mentol"] .chart .area { fill: #0e9c6d !important; }
+[data-theme="mentol"] .chart .vol { fill: #0e9c6d; }
+[data-theme="mentol"] :is(h2, h3, .big .label) { color: #0e9c6d; }
+[data-theme="mentol"] .big .value, [data-theme="mentol"] .detail .price { font-weight: 200; }
+[data-theme="mentol"] .chart .line { stroke-width: 2.5; }
+[data-theme="mentol"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mentol"][data-scheme="dark"] { color-scheme: dark; --back: #212427; --card: #2c2f32; --head: #373b3d; --edge: #404447; --alt: #313538; --text1: #e2efed; --text2: #b2bcbc; --faint: #858e8e; --up: #4ade80; --down: #f87171; --accent: #10b981; --hot: #28423d; --tip: #e2efed; --tipfg: #212427; --accentfg: #111111; }
+[data-theme="mentol"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="mentol"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(33,36,39,0.35); box-shadow: none; }
+[data-theme="mentol"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(16,185,129,0.1), transparent 380px); background-color: #212427; background-attachment: fixed; }
+[data-theme="mentol"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2b3636; border-color: rgba(16,185,129,0.35); }
+[data-theme="mentol"][data-scheme="dark"] .chart .line { stroke: #10b981 !important; }
+[data-theme="mentol"][data-scheme="dark"] .chart .area { fill: #10b981 !important; }
+[data-theme="mentol"][data-scheme="dark"] .chart .vol { fill: #10b981; }
+[data-theme="mentol"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #10b981; }

@@ -1,0 +1,16 @@
+/* tema vitraž (Stained glass): generisana, tools/teme.py */
+:root[data-theme="vitraz"] { color-scheme: dark; --back: #0c0c12; --card: #18181e; --head: #24242b; --edge: #2e2f36; --alt: #1e1e24; --text1: #e3e7f4; --text2: #adb0bc; --faint: #7c7e88; --up: #4ade80; --down: #f87171; --accent: #2f5cdb; --hot: #1b2238; --tip: #e3e7f4; --tipfg: #0c0c12; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="vitraz"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vitraz"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="vitraz"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="vitraz"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="vitraz"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="vitraz"] body { background: linear-gradient(60deg, rgba(47,92,219,0.14) 25%, transparent 25% 50%, rgba(216,29,78,0.12) 50% 75%, transparent 75%) 0 0 / 80px 80px, linear-gradient(-30deg, rgba(78,216,29,0.12) 30%, transparent 30%) 0 0 / 120px 120px; background-color: #0c0c12; background-attachment: fixed; }
+[data-theme="vitraz"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #000000; }
+[data-theme="vitraz"] .big .value, [data-theme="vitraz"] .detail .price { font-weight: 200; }
+[data-theme="vitraz"] .chart .line { stroke-width: 2.5; }
+[data-theme="vitraz"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="vitraz"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #ecedf0; --edge: #cdcfd4; --alt: #f3f3f5; --text1: #16213e; --text2: #4c556b; --faint: #7f8494; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dbe2f6; --tip: #16213e; --tipfg: #f0f0f1; --accentfg: #ffffff; }
+[data-theme="vitraz"][data-scheme="light"] body { background: linear-gradient(60deg, rgba(29,78,216,0.14) 25%, transparent 25% 50%, rgba(216,29,78,0.12) 50% 75%, transparent 75%) 0 0 / 80px 80px, linear-gradient(-30deg, rgba(78,216,29,0.12) 30%, transparent 30%) 0 0 / 120px 120px; background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="vitraz"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #222222; }

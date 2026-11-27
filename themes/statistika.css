@@ -1,0 +1,14 @@
+/* tema statistika (Statistics): generisana, tools/teme.py */
+:root[data-theme="statistika"] { color-scheme: light; --back: #f2f6fe; --card: #fbfcff; --head: #edeff4; --edge: #cfd5e0; --alt: #f4f6f9; --text1: #182541; --text2: #4e5970; --faint: #81899c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dde7fc; --tip: #182541; --tipfg: #f2f6fe; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="statistika"] :is(.overview .left, .block, .detail, .list) { background: #eaeff7; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="statistika"] .overview .left { align-self: start; }
+[data-theme="statistika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="statistika"] button { border: 0; }
+[data-theme="statistika"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="statistika"] .bar h1::after { content: " ▁▃▅▇"; color: #2563eb; letter-spacing: 1px; }
+[data-theme="statistika"] .big .value, [data-theme="statistika"] .detail .price { font-weight: 700; }
+[data-theme="statistika"] .chart .line { stroke-width: 1.5; }
+[data-theme="statistika"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="statistika"][data-scheme="dark"] { color-scheme: dark; --back: #0e1526; --card: #1a2131; --head: #262d3d; --edge: #303747; --alt: #202737; --text1: #e3e8f5; --text2: #aeb3c1; --faint: #7d8392; --up: #4ade80; --down: #f87171; --accent: #2563eb; --hot: #1c2a4b; --tip: #e3e8f5; --tipfg: #0e1526; --accentfg: #ffffff; }
+[data-theme="statistika"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #151c2d; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }

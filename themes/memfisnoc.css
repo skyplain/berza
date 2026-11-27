@@ -1,0 +1,16 @@
+/* tema memfis noć (Memphis night): generisana, tools/teme.py */
+:root[data-theme="memfisnoc"] { color-scheme: dark; --back: #141428; --card: #202033; --head: #2d2c3e; --edge: #383547; --alt: #262639; --text1: #f5e5ec; --text2: #bdb1bb; --faint: #89818e; --up: #4ade80; --down: #f87171; --accent: #ff3d7f; --hot: #3f243e; --tip: #f5e5ec; --tipfg: #141428; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="memfisnoc"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="memfisnoc"] .overview .left { align-self: start; }
+[data-theme="memfisnoc"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="memfisnoc"] button { border-radius: 0; }
+[data-theme="memfisnoc"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="memfisnoc"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="memfisnoc"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="memfisnoc"] body { background: radial-gradient(rgba(255,61,127,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(127,255,61,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(61,127,255,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #141428; background-attachment: fixed; }
+[data-theme="memfisnoc"] .big .value, [data-theme="memfisnoc"] .detail .price { font-weight: 900; }
+[data-theme="memfisnoc"] .chart .line { stroke-width: 1.5; }
+[data-theme="memfisnoc"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="memfisnoc"][data-scheme="light"] { color-scheme: light; --back: #f1f1f2; --card: #fbfbfb; --head: #f0eeef; --edge: #d5cfd3; --alt: #f5f4f5; --text1: #3f1e2e; --text2: #6c535f; --faint: #94838c; --up: #15803d; --down: #c81e1e; --accent: #eb3875; --hot: #f9e0e8; --tip: #3f1e2e; --tipfg: #f1f1f2; --accentfg: #111111; }
+[data-theme="memfisnoc"][data-scheme="light"] body { background: radial-gradient(rgba(235,56,117,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(127,255,61,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(61,127,255,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #f1f1f2; background-attachment: fixed; }

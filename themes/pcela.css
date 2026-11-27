@@ -1,0 +1,18 @@
+/* tema pčela (Bee): generisana, tools/teme.py */
+:root[data-theme="pcela"] { color-scheme: light; --back: #fefae5; --card: #fef9e1; --head: #f2edd5; --edge: #dfdbc5; --alt: #f8f3db; --text1: #3e381b; --text2: #6e684e; --faint: #938e74; --up: #15803d; --down: #c81e1e; --accent: #a5860e; --hot: #f2e9c3; --tip: #3e381b; --tipfg: #fefae5; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="pcela"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="pcela"] .overview .left { align-self: start; }
+[data-theme="pcela"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pcela"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pcela"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="pcela"] .bar button { background: transparent; color: var(--back); border-color: rgba(254,250,229,0.35); box-shadow: none; }
+[data-theme="pcela"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pcela"] body { background: linear-gradient(30deg, rgba(165,134,14,0.1) 12%, transparent 12.5% 87%, rgba(165,134,14,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(150deg, rgba(165,134,14,0.1) 12%, transparent 12.5% 87%, rgba(165,134,14,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(30deg, rgba(165,134,14,0.1) 12%, transparent 12.5% 87%, rgba(165,134,14,0.1) 87.5%) 20px 35px / 40px 70px, linear-gradient(150deg, rgba(165,134,14,0.1) 12%, transparent 12.5% 87%, rgba(165,134,14,0.1) 87.5%) 20px 35px / 40px 70px; background-color: #fefae5; background-attachment: fixed; }
+[data-theme="pcela"] .big .value, [data-theme="pcela"] .detail .price { font-weight: 700; }
+[data-theme="pcela"] .chart .line { stroke-width: 2; }
+[data-theme="pcela"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pcela"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #3a3b3b; --edge: #444544; --alt: #343535; --text1: #f4f1e4; --text2: #c0beb4; --faint: #908f88; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #4b452c; --tip: #f4f1e4; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="pcela"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="pcela"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,37,0.35); box-shadow: none; }
+[data-theme="pcela"][data-scheme="dark"] body { background: linear-gradient(30deg, rgba(250,204,21,0.1) 12%, transparent 12.5% 87%, rgba(250,204,21,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(150deg, rgba(250,204,21,0.1) 12%, transparent 12.5% 87%, rgba(250,204,21,0.1) 87.5%) 0 0 / 40px 70px, linear-gradient(30deg, rgba(250,204,21,0.1) 12%, transparent 12.5% 87%, rgba(250,204,21,0.1) 87.5%) 20px 35px / 40px 70px, linear-gradient(150deg, rgba(250,204,21,0.1) 12%, transparent 12.5% 87%, rgba(250,204,21,0.1) 87.5%) 20px 35px / 40px 70px; background-color: #232425; background-attachment: fixed; }

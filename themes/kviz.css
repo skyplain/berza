@@ -1,0 +1,16 @@
+/* tema kviz (Quiz show): generisana, tools/teme.py */
+:root[data-theme="kviz"] { color-scheme: dark; --back: #081430; --card: #14203a; --head: #212c45; --edge: #2b3650; --alt: #1a2640; --text1: #e5ebf6; --text2: #aeb5c4; --faint: #7b8497; --up: #4ade80; --down: #f87171; --accent: #3b82f6; --hot: #192e54; --tip: #e5ebf6; --tipfg: #081430; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="kviz"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kviz"] .overview .left { align-self: start; }
+[data-theme="kviz"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kviz"] button { border-radius: 999px; }
+[data-theme="kviz"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kviz"] .bar h1 { font-weight: 800; }
+[data-theme="kviz"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kviz"] .bar h1 { color: #b1cdfb; text-shadow: 0 0 4px #3b82f6, 0 0 12px #3b82f6, 0 0 28px rgba(59,130,246,0.8); }
+[data-theme="kviz"] .big .value, [data-theme="kviz"] .detail .price { font-weight: 400; }
+[data-theme="kviz"] .chart .line { stroke-width: 1.5; }
+[data-theme="kviz"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kviz"][data-scheme="light"] { color-scheme: light; --back: #f0f1f3; --card: #fafbfb; --head: #edeef0; --edge: #ced1d7; --alt: #f3f5f5; --text1: #1c2a43; --text2: #515c6f; --faint: #828a97; --up: #15803d; --down: #c81e1e; --accent: #3b82f6; --hot: #dfeafa; --tip: #1c2a43; --tipfg: #f0f1f3; --accentfg: #111111; }
+[data-theme="kviz"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }

@@ -1,0 +1,17 @@
+/* tema sidro (Anchor): generisana, tools/teme.py */
+:root[data-theme="sidro"] { color-scheme: light; --back: #f4f6fa; --card: #fcfcfe; --head: #eeeef1; --edge: #d0d2d7; --alt: #f5f5f7; --text1: #14171f; --text2: #4c4f56; --faint: #808288; --up: #15803d; --down: #c81e1e; --accent: #0f172a; --hot: #dbdce0; --tip: #14171f; --tipfg: #f4f6fa; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="sidro"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="sidro"] .overview .left { align-self: start; }
+[data-theme="sidro"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sidro"] button { border-radius: 999px; }
+[data-theme="sidro"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="sidro"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="sidro"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="sidro"] body { background: repeating-linear-gradient(0deg, rgba(20,23,31,0.05) 0 2px, transparent 2px 9px); background-color: #f4f6fa; background-attachment: fixed; }
+[data-theme="sidro"] .big .value, [data-theme="sidro"] .detail .price { font-weight: 400; }
+[data-theme="sidro"] .chart .line { stroke-width: 2.5; }
+[data-theme="sidro"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sidro"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414246; --alt: #323438; --text1: #e2e2e6; --text2: #b2b2b6; --faint: #86878b; --up: #4ade80; --down: #f87171; --accent: #7a7d87; --hot: #383a3f; --tip: #e2e2e6; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="sidro"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="sidro"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(226,226,230,0.05) 0 2px, transparent 2px 9px); background-color: #222428; background-attachment: fixed; }

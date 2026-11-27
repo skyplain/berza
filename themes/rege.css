@@ -1,0 +1,17 @@
+/* tema rege (Reggae): generisana, tools/teme.py */
+:root[data-theme="rege"] { color-scheme: light; --back: #fefbe5; --card: #f9f9e2; --head: #ebedd7; --edge: #d9dbc6; --alt: #f2f3dc; --text1: #153024; --text2: #4f6354; --faint: #859181; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #d9ebcc; --tip: #153024; --tipfg: #fefbe5; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="rege"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="rege"] .overview .left { align-self: start; }
+[data-theme="rege"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rege"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="rege"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="rege"] .bar button { background: transparent; color: var(--back); border-color: rgba(254,251,229,0.35); box-shadow: none; }
+[data-theme="rege"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="rege"] .bar { position: relative; }
+[data-theme="rege"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(180deg, #16a34a 0 33%, #facc15 33% 66%, #dc2626 66%); }
+[data-theme="rege"] .big .value, [data-theme="rege"] .detail .price { font-weight: 200; }
+[data-theme="rege"] .chart .line { stroke-width: 2.5; }
+[data-theme="rege"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="rege"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #393a3b; --edge: #424444; --alt: #333536; --text1: #e2eee8; --text2: #b2bcb7; --faint: #868d8a; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #2b3f34; --tip: #e2eee8; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="rege"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,37,0.35); box-shadow: none; }

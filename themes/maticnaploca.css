@@ -1,0 +1,17 @@
+/* tema matična ploča (Motherboard): generisana, tools/teme.py */
+:root[data-theme="maticnaploca"] { color-scheme: dark; --back: #0f3d2e; --card: #1b4738; --head: #285142; --edge: #33594c; --alt: #214c3d; --text1: #f1eee7; --text2: #b8c2b9; --faint: #85998e; --up: #4ade80; --down: #f87171; --accent: #d4af37; --hot: #355638; --tip: #f1eee7; --tipfg: #0f3d2e; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="maticnaploca"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="maticnaploca"] .overview .left { align-self: start; }
+[data-theme="maticnaploca"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="maticnaploca"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="maticnaploca"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="maticnaploca"] .bar button { background: transparent; color: var(--back); border-color: rgba(15,61,46,0.35); box-shadow: none; }
+[data-theme="maticnaploca"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="maticnaploca"] body { background: radial-gradient(rgba(212,175,55,0.45) 2px, transparent 3px) 0 0 / 48px 48px, linear-gradient(90deg, rgba(212,175,55,0.14) 1px, transparent 1px) 0 0 / 48px 48px, linear-gradient(rgba(212,175,55,0.14) 1px, transparent 1px) 24px 0 / 48px 96px; background-color: #0f3d2e; background-attachment: fixed; }
+[data-theme="maticnaploca"] .big .value, [data-theme="maticnaploca"] .detail .price { font-weight: 900; }
+[data-theme="maticnaploca"] .chart .line { stroke-width: 1.5; }
+[data-theme="maticnaploca"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="maticnaploca"][data-scheme="light"] { color-scheme: light; --back: #f1f3f2; --card: #fbfbfb; --head: #efefee; --edge: #d3d4d1; --alt: #f5f5f4; --text1: #373221; --text2: #666255; --faint: #89887d; --up: #15803d; --down: #c81e1e; --accent: #987d28; --hot: #ede9dd; --tip: #373221; --tipfg: #f1f3f2; --accentfg: #111111; }
+[data-theme="maticnaploca"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,243,242,0.35); box-shadow: none; }
+[data-theme="maticnaploca"][data-scheme="light"] body { background: radial-gradient(rgba(152,125,40,0.45) 2px, transparent 3px) 0 0 / 48px 48px, linear-gradient(90deg, rgba(152,125,40,0.14) 1px, transparent 1px) 0 0 / 48px 48px, linear-gradient(rgba(152,125,40,0.14) 1px, transparent 1px) 24px 0 / 48px 96px; background-color: #f1f3f2; background-attachment: fixed; }

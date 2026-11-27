@@ -1,0 +1,22 @@
+/* tema grafiti (Graffiti): generisana, tools/teme.py */
+:root[data-theme="grafiti"] { color-scheme: dark; --back: #2a2a2a; --card: #353535; --head: #404040; --edge: #494a48; --alt: #3b3b3a; --text1: #eef3e7; --text2: #bdc1b8; --faint: #90938c; --up: #4ade80; --down: #f87171; --accent: #a3e635; --hot: #444e35; --tip: #eef3e7; --tipfg: #2a2a2a; --accentfg: #111111; --font: "Marker Felt", "Segoe Print", "Comic Sans MS", cursive; --radius: 0px; }
+[data-theme="grafiti"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="grafiti"] .overview .left { align-self: start; }
+[data-theme="grafiti"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="grafiti"] button { border-radius: 0; }
+[data-theme="grafiti"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="grafiti"] .bar h1 { font-size: 24px; }
+[data-theme="grafiti"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="grafiti"] body { background: radial-gradient(160px 120px at 20% 30%, rgba(163,230,53,0.22), transparent 70%), radial-gradient(200px 140px at 80% 70%, rgba(53,163,230,0.2), transparent 70%), radial-gradient(120px 90px at 60% 15%, rgba(230,53,163,0.2), transparent 70%); background-color: #2a2a2a; background-attachment: fixed; }
+[data-theme="grafiti"] .bar h1 { text-shadow: 0 0 6px rgba(163,230,53,0.8); }
+[data-theme="grafiti"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #eef3e7; box-shadow: 6px 6px 0 #eef3e7; border-radius: 6px; background: var(--card); }
+[data-theme="grafiti"] button { border: 2px solid #eef3e7; box-shadow: 2px 2px 0 #eef3e7; }
+[data-theme="grafiti"] .big .value, [data-theme="grafiti"] .detail .price { font-weight: 700; }
+[data-theme="grafiti"] .chart .line { stroke-width: 1.5; }
+[data-theme="grafiti"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="grafiti"][data-scheme="light"] { color-scheme: light; --back: #f2f2f2; --card: #fbfbfb; --head: #eff0ee; --edge: #d3d5d0; --alt: #f5f5f4; --text1: #2f3c20; --text2: #606a54; --faint: #858c7d; --up: #15803d; --down: #c81e1e; --accent: #638c20; --hot: #e6ebdc; --tip: #2f3c20; --tipfg: #f2f2f2; --accentfg: #111111; }
+[data-theme="grafiti"][data-scheme="light"] body { background: radial-gradient(160px 120px at 20% 30%, rgba(99,140,32,0.22), transparent 70%), radial-gradient(200px 140px at 80% 70%, rgba(53,163,230,0.2), transparent 70%), radial-gradient(120px 90px at 60% 15%, rgba(230,53,163,0.2), transparent 70%); background-color: #f2f2f2; background-attachment: fixed; }
+[data-theme="grafiti"][data-scheme="light"] .bar h1 { text-shadow: 0 0 6px rgba(99,140,32,0.8); }
+[data-theme="grafiti"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #2f3c20; box-shadow: 6px 6px 0 #2f3c20; border-radius: 6px; background: var(--card); }
+[data-theme="grafiti"][data-scheme="light"] button { border: 2px solid #2f3c20; box-shadow: 2px 2px 0 #2f3c20; }

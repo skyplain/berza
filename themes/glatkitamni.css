@@ -1,0 +1,16 @@
+/* tema glatki tamni (Sleek dark): generisana, tools/teme.py */
+:root[data-theme="glatkitamni"] { color-scheme: dark; --back: #201910; --card: #2b241c; --head: #373028; --edge: #423b32; --alt: #312a22; --text1: #f4ede3; --text2: #bfb8ae; --faint: #8e877e; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #47351a; --tip: #f4ede3; --tipfg: #201910; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 8px; }
+[data-theme="glatkitamni"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="glatkitamni"] .overview .left { align-self: start; }
+[data-theme="glatkitamni"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="glatkitamni"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="glatkitamni"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="glatkitamni"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="glatkitamni"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="glatkitamni"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }
+[data-theme="glatkitamni"] .big .value, [data-theme="glatkitamni"] .detail .price { font-weight: 700; }
+[data-theme="glatkitamni"] .chart .line { stroke-width: 1.5; }
+[data-theme="glatkitamni"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="glatkitamni"][data-scheme="light"] { color-scheme: light; --back: #fefaf3; --card: #fef8ee; --head: #f2ece1; --edge: #dfdad0; --alt: #f8f2e8; --text1: #3d2f19; --text2: #6d6250; --faint: #9a9082; --up: #15803d; --down: #c81e1e; --accent: #be7a08; --hot: #f5e6ce; --tip: #3d2f19; --tipfg: #fefaf3; --accentfg: #111111; }
+[data-theme="glatkitamni"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }

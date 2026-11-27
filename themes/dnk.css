@@ -1,0 +1,14 @@
+/* tema dnk (DNA): generisana, tools/teme.py */
+:root[data-theme="dnk"] { color-scheme: dark; --back: #0c0a1c; --card: #181627; --head: #252233; --edge: #312d3e; --alt: #1f1c2d; --text1: #f3e6ef; --text2: #b9afba; --faint: #847c8a; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #361d37; --tip: #f3e6ef; --tipfg: #0c0a1c; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="dnk"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="dnk"] .overview .left { align-self: start; }
+[data-theme="dnk"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dnk"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="dnk"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="dnk"] body { background: repeating-linear-gradient(60deg, rgba(236,72,153,0.1) 0 2px, transparent 2px 22px), repeating-linear-gradient(120deg, rgba(153,236,72,0.08) 0 2px, transparent 2px 22px); background-color: #0c0a1c; background-attachment: fixed; }
+[data-theme="dnk"] .big .value, [data-theme="dnk"] .detail .price { font-weight: 700; }
+[data-theme="dnk"] .chart .line { stroke-width: 3; }
+[data-theme="dnk"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="dnk"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efedef; --edge: #d3cfd2; --alt: #f4f3f5; --text1: #3c2032; --text2: #695462; --faint: #92848e; --up: #15803d; --down: #c81e1e; --accent: #d9428d; --hot: #f5e0ec; --tip: #3c2032; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="dnk"][data-scheme="light"] body { background: repeating-linear-gradient(60deg, rgba(217,66,141,0.1) 0 2px, transparent 2px 22px), repeating-linear-gradient(120deg, rgba(153,236,72,0.08) 0 2px, transparent 2px 22px); background-color: #f0f0f1; background-attachment: fixed; }

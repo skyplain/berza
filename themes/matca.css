@@ -1,0 +1,16 @@
+/* tema matča: generisana (paleta + oblik 0/1/4/3) */
+:root[data-theme="matca"] { color-scheme: light; --back: #eef4e4; --card: #f8fbf2; --head: #ebefe5; --edge: #ced5c4; --alt: #f2f5ec; --text1: #26331a; --text2: #5e6953; --faint: #8a947f; --up: #15803d; --down: #c81e1e; --accent: #62832a; --hot: #e3ead6; --tip: #26331a; --tipfg: #eef4e4; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 4px; }
+[data-theme="matca"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="matca"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="matca"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="matca"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="matca"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="matca"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="matca"] body { background: repeating-linear-gradient(45deg, rgba(38,51,26,0.03) 0 12px, transparent 12px 24px); background-color: #eef4e4; background-attachment: fixed; }
+[data-theme="matca"] .big .value, [data-theme="matca"] .detail .price { font-weight: 200; }
+[data-theme="matca"] .chart .line { stroke-width: 1.5; }
+[data-theme="matca"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="matca"][data-scheme="dark"] { color-scheme: dark; --back: #0c0f05; --card: #080905; --head: #0f110b; --edge: #202519; --alt: #0b0d07; --text1: #b9caab; --text2: #7e8972; --faint: #5d6752; --up: #4ade80; --down: #f87171; --accent: #5e7e28; --hot: #121708; --tip: #b9caab; --tipfg: #0c0f05; --accentfg: #ffffff; }
+[data-theme="matca"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="matca"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(185,202,171,0.03) 0 12px, transparent 12px 24px); background-color: #0c0f05; background-attachment: fixed; }

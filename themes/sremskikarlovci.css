@@ -1,0 +1,19 @@
+/* tema sremski karlovci (Sremski Karlovci): generisana, tools/teme.py */
+:root[data-theme="sremskikarlovci"] { color-scheme: light; --back: #f6ede4; --card: #fcfaf7; --head: #efedea; --edge: #d5cbc4; --alt: #f6f3f0; --text1: #281b1a; --text2: #5c504c; --faint: #8b807b; --up: #15803d; --down: #c81e1e; --accent: #7c2d12; --hot: #eaddd7; --tip: #281b1a; --tipfg: #f6ede4; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="sremskikarlovci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sremskikarlovci"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="sremskikarlovci"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="sremskikarlovci"] .bar h1 { font-size: 24px; }
+[data-theme="sremskikarlovci"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="sremskikarlovci"] :is(.overview .left, .block, .detail, .list) { border: 4px double #7c2d12; }
+[data-theme="sremskikarlovci"] .bar h1::before { content: "❦ "; color: #7c2d12; }
+[data-theme="sremskikarlovci"] .bar h1::after { content: " ❦"; color: #7c2d12; }
+[data-theme="sremskikarlovci"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="sremskikarlovci"] .big .value, [data-theme="sremskikarlovci"] .detail .price { font-weight: 200; }
+[data-theme="sremskikarlovci"] .chart .line { stroke-width: 2.5; }
+[data-theme="sremskikarlovci"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sremskikarlovci"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #424144; --alt: #333235; --text1: #eae4e4; --text2: #b8b4b4; --faint: #8a8788; --up: #4ade80; --down: #f87171; --accent: #a16855; --hot: #3d3535; --tip: #eae4e4; --tipfg: #222225; --accentfg: #ffffff; }
+[data-theme="sremskikarlovci"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #a16855; }
+[data-theme="sremskikarlovci"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #a16855; }
+[data-theme="sremskikarlovci"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #a16855; }

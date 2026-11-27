@@ -1,0 +1,22 @@
+/* tema kvazar (Quasar): generisana, tools/teme.py */
+:root[data-theme="kvazar"] { color-scheme: dark; --back: #020617; --card: #0f1223; --head: #1c2030; --edge: #272c3b; --alt: #161929; --text1: #e9f3f6; --text2: #afb8be; --faint: #7a818b; --up: #4ade80; --down: #f87171; --accent: #67e8f9; --hot: #1b3041; --tip: #e9f3f6; --tipfg: #020617; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="kvazar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="kvazar"] .overview .left { align-self: start; }
+[data-theme="kvazar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kvazar"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kvazar"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kvazar"] .bar button { background: transparent; color: var(--back); border-color: rgba(2,6,23,0.35); box-shadow: none; }
+[data-theme="kvazar"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="kvazar"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="kvazar"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(103,232,249,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(103,232,249,0.14), transparent 15%); background-color: #020617; background-attachment: fixed; }
+[data-theme="kvazar"] .big .value { text-shadow: 0 0 18px rgba(103,232,249,0.55); }
+[data-theme="kvazar"] .chart .line { filter: drop-shadow(0 0 5px rgba(103,232,249,0.7)); }
+[data-theme="kvazar"] .big .value, [data-theme="kvazar"] .detail .price { font-weight: 700; }
+[data-theme="kvazar"] .chart .line { stroke-width: 2.5; }
+[data-theme="kvazar"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kvazar"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #edeff0; --edge: #cfd3d5; --alt: #f4f4f6; --text1: #243d44; --text2: #576a6f; --faint: #7e8c90; --up: #15803d; --down: #c81e1e; --accent: #3f8d97; --hot: #e0ebed; --tip: #243d44; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="kvazar"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,241,0.35); box-shadow: none; }
+[data-theme="kvazar"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(63,141,151,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(63,141,151,0.14), transparent 15%); background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="kvazar"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(63,141,151,0.55); }
+[data-theme="kvazar"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(63,141,151,0.7)); }

@@ -1,0 +1,17 @@
+/* tema malahit (Malachite): generisana, tools/teme.py */
+:root[data-theme="malahit"] { color-scheme: dark; --back: #03140d; --card: #102019; --head: #1d2c25; --edge: #273630; --alt: #16261f; --text1: #e1eae9; --text2: #aab4b2; --faint: #76837f; --up: #4ade80; --down: #f87171; --accent: #047857; --hot: #0e2c22; --tip: #e1eae9; --tipfg: #03140d; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="malahit"] :is(.overview .left, .block, .detail, .list) { background: rgba(16,32,25,0.6); border: 1px solid rgba(225,234,233,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="malahit"] .overview .left { align-self: start; }
+[data-theme="malahit"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="malahit"] button { border-radius: 999px; background: transparent; }
+[data-theme="malahit"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="malahit"] .bar h1 { font-size: 24px; }
+[data-theme="malahit"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="malahit"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(4,120,87,0.07) 0 12deg, transparent 12deg 24deg); background-color: #03140d; background-attachment: fixed; }
+[data-theme="malahit"] .big .value, [data-theme="malahit"] .detail .price { font-weight: 400; }
+[data-theme="malahit"] .chart .line { stroke-width: 2; }
+[data-theme="malahit"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="malahit"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #eceeed; --edge: #ccd1d0; --alt: #f3f5f4; --text1: #122827; --text2: #4a5a59; --faint: #7d8887; --up: #15803d; --down: #c81e1e; --accent: #047857; --hot: #d8e9e3; --tip: #122827; --tipfg: #f0f1f0; --accentfg: #ffffff; }
+[data-theme="malahit"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,250,0.6); border: 1px solid rgba(18,40,39,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="malahit"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(4,120,87,0.07) 0 12deg, transparent 12deg 24deg); background-color: #f0f1f0; background-attachment: fixed; }

@@ -1,0 +1,21 @@
+/* tema sintpop (Synth-pop): generisana, tools/teme.py */
+:root[data-theme="sintpop"] { color-scheme: dark; --back: #130b25; --card: #1f1730; --head: #2c243c; --edge: #372f46; --alt: #251d36; --text1: #f4eaf1; --text2: #bcb2be; --faint: #887f8f; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #3d2443; --tip: #f4eaf1; --tipfg: #130b25; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 4px; }
+[data-theme="sintpop"] :is(.overview .left, .block, .detail, .list) { background: rgba(31,23,48,0.6); border: 1px solid rgba(244,234,241,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="sintpop"] .overview .left { align-self: start; }
+[data-theme="sintpop"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sintpop"] button { border-radius: 999px; background: transparent; }
+[data-theme="sintpop"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sintpop"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="sintpop"] .bar button { background: transparent; color: var(--back); border-color: rgba(19,11,37,0.35); box-shadow: none; }
+[data-theme="sintpop"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sintpop"] body { background: linear-gradient(180deg, transparent 55%, rgba(244,114,182,0.35) 75%, rgba(182,244,114,0.3) 78%, transparent 78.4%); background-color: #130b25; background-attachment: fixed; }
+[data-theme="sintpop"] body::before { content: ""; position: fixed; left: -50%; right: -50%; bottom: 0; height: 22vh; z-index: -1; background: repeating-linear-gradient(90deg, rgba(244,114,182,0.45) 0 2px, transparent 2px 60px), repeating-linear-gradient(0deg, rgba(244,114,182,0.45) 0 2px, transparent 2px 30px); transform: perspective(300px) rotateX(60deg); transform-origin: bottom; }
+[data-theme="sintpop"] .big .value, [data-theme="sintpop"] .detail .price { font-weight: 200; }
+[data-theme="sintpop"] .chart .line { stroke-width: 1.5; }
+[data-theme="sintpop"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="sintpop"][data-scheme="light"] { color-scheme: light; --back: #f1f0f2; --card: #fbfafb; --head: #f0edef; --edge: #d4d0d4; --alt: #f5f4f5; --text1: #3d2738; --text2: #6a5966; --faint: #938791; --up: #15803d; --down: #c81e1e; --accent: #be598e; --hot: #f2e3ec; --tip: #3d2738; --tipfg: #f1f0f2; --accentfg: #111111; }
+[data-theme="sintpop"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,250,251,0.6); border: 1px solid rgba(61,39,56,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="sintpop"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,242,0.35); box-shadow: none; }
+[data-theme="sintpop"][data-scheme="light"] body { background: linear-gradient(180deg, transparent 55%, rgba(190,89,142,0.35) 75%, rgba(182,244,114,0.3) 78%, transparent 78.4%); background-color: #f1f0f2; background-attachment: fixed; }
+[data-theme="sintpop"][data-scheme="light"] body::before { content: ""; position: fixed; left: -50%; right: -50%; bottom: 0; height: 22vh; z-index: -1; background: repeating-linear-gradient(90deg, rgba(190,89,142,0.45) 0 2px, transparent 2px 60px), repeating-linear-gradient(0deg, rgba(190,89,142,0.45) 0 2px, transparent 2px 30px); transform: perspective(300px) rotateX(60deg); transform-origin: bottom; }

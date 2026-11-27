@@ -1,0 +1,19 @@
+/* tema patina (Patina): generisana, tools/teme.py */
+:root[data-theme="patina"] { color-scheme: light; --back: #e6f2ee; --card: #f8fbfa; --head: #ebefee; --edge: #c5d3d0; --alt: #f1f5f4; --text1: #192f31; --text2: #4c6060; --faint: #7b8d8c; --up: #15803d; --down: #c81e1e; --accent: #279084; --hot: #dbece9; --tip: #192f31; --tipfg: #e6f2ee; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="patina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="patina"] .overview .left { align-self: start; }
+[data-theme="patina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="patina"] button { border-radius: 999px; }
+[data-theme="patina"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="patina"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="patina"] .bar button { background: transparent; color: var(--back); border-color: rgba(230,242,238,0.35); box-shadow: none; }
+[data-theme="patina"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="patina"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(25,47,49,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(25,47,49,0.03) 0 1px, transparent 1px 5px); background-color: #e6f2ee; background-attachment: fixed; }
+[data-theme="patina"] .big .value, [data-theme="patina"] .detail .price { font-weight: 700; }
+[data-theme="patina"] .chart .line { stroke-width: 3; }
+[data-theme="patina"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="patina"][data-scheme="dark"] { color-scheme: dark; --back: #212326; --card: #2c2e31; --head: #37393c; --edge: #404346; --alt: #323437; --text1: #e4edee; --text2: #b3babc; --faint: #868c8e; --up: #4ade80; --down: #f87171; --accent: #2a9d8f; --hot: #2c3e3e; --tip: #e4edee; --tipfg: #212326; --accentfg: #111111; }
+[data-theme="patina"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="patina"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(33,35,38,0.35); box-shadow: none; }
+[data-theme="patina"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(228,237,238,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(228,237,238,0.03) 0 1px, transparent 1px 5px); background-color: #212326; background-attachment: fixed; }

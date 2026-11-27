@@ -1,0 +1,15 @@
+/* tema distopija (Dystopia): generisana, tools/teme.py */
+:root[data-theme="distopija"] { color-scheme: dark; --back: #1d1c1c; --card: #282727; --head: #343232; --edge: #3f3b3c; --alt: #2e2d2d; --text1: #f1e0e2; --text2: #bcafb0; --faint: #8b8283; --up: #4ade80; --down: #f87171; --accent: #da3838; --hot: #412929; --tip: #f1e0e2; --tipfg: #1d1c1c; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="distopija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="distopija"] .overview .left { align-self: start; }
+[data-theme="distopija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="distopija"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="distopija"] .bar h1 { font-weight: 800; }
+[data-theme="distopija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="distopija"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(241,224,226,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(241,224,226,0.03) 0 1px, transparent 1px 5px); background-color: #1d1c1c; background-attachment: fixed; }
+[data-theme="distopija"] .big .value, [data-theme="distopija"] .detail .price { font-weight: 400; }
+[data-theme="distopija"] .chart .line { stroke-width: 2.5; }
+[data-theme="distopija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="distopija"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efeded; --edge: #d3cdce; --alt: #f5f4f4; --text1: #371317; --text2: #664a4e; --faint: #907e80; --up: #15803d; --down: #c81e1e; --accent: #d00000; --hot: #f5d8d8; --tip: #371317; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="distopija"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(55,19,23,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(55,19,23,0.03) 0 1px, transparent 1px 5px); background-color: #f1f1f1; background-attachment: fixed; }

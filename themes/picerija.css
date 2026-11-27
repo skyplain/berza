@@ -1,0 +1,15 @@
+/* tema picerija (Pizzeria): generisana, tools/teme.py */
+:root[data-theme="picerija"] { color-scheme: light; --back: #fff9f0; --card: #fef5ec; --head: #f2e8e0; --edge: #dfd5ce; --alt: #f8eee6; --text1: #391a1e; --text2: #6a5252; --faint: #988583; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f9d8d0; --tip: #391a1e; --tipfg: #fff9f0; --accentfg: #ffffff; --font: Rockwell, "Roboto Slab", "Courier New", serif; --radius: 10px; }
+[data-theme="picerija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="picerija"] .overview .left { align-self: start; }
+[data-theme="picerija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="picerija"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="picerija"] .bar h1 { font-weight: 800; }
+[data-theme="picerija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="picerija"] body { background: conic-gradient(rgba(57,26,30,0.07) 25%, transparent 0 50%, rgba(57,26,30,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #fff9f0; background-attachment: fixed; }
+[data-theme="picerija"] .big .value, [data-theme="picerija"] .detail .price { font-weight: 400; }
+[data-theme="picerija"] .chart .line { stroke-width: 2.5; }
+[data-theme="picerija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="picerija"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444345; --alt: #343436; --text1: #f2e4e5; --text2: #beb4b5; --faint: #8f8889; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #473234; --tip: #f2e4e5; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="picerija"][data-scheme="dark"] body { background: conic-gradient(rgba(242,228,229,0.07) 25%, transparent 0 50%, rgba(242,228,229,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #232426; background-attachment: fixed; }

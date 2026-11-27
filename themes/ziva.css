@@ -1,0 +1,18 @@
+/* tema živa (Quicksilver): generisana, tools/teme.py */
+:root[data-theme="ziva"] { color-scheme: dark; --back: #121519; --card: #1e2124; --head: #2b2e30; --edge: #36383c; --alt: #24272a; --text1: #f1f2f4; --text2: #b9bbbd; --faint: #86888b; --up: #4ade80; --down: #f87171; --accent: #cbd5e1; --hot: #363a3e; --tip: #f1f2f4; --tipfg: #121519; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="ziva"] :is(.overview .left, .block, .detail, .list) { background: rgba(30,33,36,0.6); border: 1px solid rgba(241,242,244,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="ziva"] .overview .left { align-self: start; }
+[data-theme="ziva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ziva"] button { border-radius: 999px; background: transparent; }
+[data-theme="ziva"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="ziva"] .bar h1 { font-size: 24px; }
+[data-theme="ziva"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ziva"] .bar h1 { background: linear-gradient(180deg, #ffffff 0%, #b8c2cc 45%, #4b5563 50%, #e5e7eb 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: .5px rgba(241,242,244,0.4); }
+[data-theme="ziva"] button { background: linear-gradient(180deg, #ffffff, #d1d5db 50%, #9ca3af 51%, #f3f4f6); color: #111111; }
+[data-theme="ziva"] .big .value, [data-theme="ziva"] .detail .price { font-weight: 200; }
+[data-theme="ziva"] .chart .line { stroke-width: 2.5; }
+[data-theme="ziva"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ziva"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efeff0; --edge: #d3d4d5; --alt: #f5f5f5; --text1: #36393f; --text2: #65676c; --faint: #898a8d; --up: #15803d; --down: #c81e1e; --accent: #7a8288; --hot: #e9eaeb; --tip: #36393f; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="ziva"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,251,251,0.6); border: 1px solid rgba(54,57,63,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="ziva"][data-scheme="light"] .bar h1 { background: linear-gradient(180deg, #ffffff 0%, #b8c2cc 45%, #4b5563 50%, #e5e7eb 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: .5px rgba(54,57,63,0.4); }

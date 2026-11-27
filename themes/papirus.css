@@ -1,0 +1,14 @@
+/* tema papirus (Papyrus): generisana, tools/teme.py */
+:root[data-theme="papirus"] { color-scheme: light; --back: #e9dcb0; --card: #f8f4e7; --head: #ebe7db; --edge: #cabe99; --alt: #f2eee1; --text1: #27231f; --text2: #585143; --faint: #847c65; --up: #15803d; --down: #c81e1e; --accent: #7a5c2e; --hot: #e6dfcd; --tip: #27231f; --tipfg: #e9dcb0; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="papirus"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="papirus"] .overview .left { align-self: start; }
+[data-theme="papirus"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="papirus"] button { border-radius: 0; }
+[data-theme="papirus"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="papirus"] body { background: repeating-linear-gradient(0deg, rgba(39,35,31,0.05) 0 2px, transparent 2px 9px); background-color: #e9dcb0; background-attachment: fixed; }
+[data-theme="papirus"] .big .value, [data-theme="papirus"] .detail .price { font-weight: 200; }
+[data-theme="papirus"] .chart .line { stroke-width: 1.5; }
+[data-theme="papirus"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="papirus"][data-scheme="dark"] { color-scheme: dark; --back: #212120; --card: #2c2c2b; --head: #373736; --edge: #414140; --alt: #323231; --text1: #eae8e6; --text2: #b8b6b4; --faint: #8a8887; --up: #4ade80; --down: #f87171; --accent: #937b55; --hot: #3a3731; --tip: #eae8e6; --tipfg: #212120; --accentfg: #111111; }
+[data-theme="papirus"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(234,232,230,0.05) 0 2px, transparent 2px 9px); background-color: #212120; background-attachment: fixed; }

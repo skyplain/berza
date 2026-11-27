@@ -1,0 +1,18 @@
+/* tema kolaž (Collage): generisana, tools/teme.py */
+:root[data-theme="kolaz"] { color-scheme: light; --back: #fef5f7; --card: #fffcfd; --head: #f3eff0; --edge: #dfd3d6; --alt: #f9f5f7; --text1: #3d1e28; --text2: #6d545c; --faint: #9a858b; --up: #15803d; --down: #c81e1e; --accent: #f43f5e; --hot: #fde2e7; --tip: #3d1e28; --tipfg: #fef5f7; --accentfg: #111111; --font: "Marker Felt", "Segoe Print", "Comic Sans MS", cursive; --radius: 0px; }
+[data-theme="kolaz"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="kolaz"] .overview .left { align-self: start; }
+[data-theme="kolaz"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kolaz"] button { border-radius: 0; }
+[data-theme="kolaz"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kolaz"] .bar h1 { font-weight: 800; }
+[data-theme="kolaz"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kolaz"] .block:nth-child(odd), [data-theme="kolaz"] .overview .left { transform: rotate(-.6deg); }
+[data-theme="kolaz"] .block:nth-child(even) { transform: rotate(.5deg); }
+[data-theme="kolaz"] :is(.overview .left, .block, .detail, .list) { position: relative; }
+[data-theme="kolaz"] :is(.overview .left, .block, .detail)::after { content: ""; position: absolute; top: -10px; left: 50%; width: 90px; height: 22px; margin-left: -45px; background: rgba(255,247,194,0.65); transform: rotate(-3deg); box-shadow: 0 1px 2px rgba(0,0,0,.15); }
+[data-theme="kolaz"] .big .value, [data-theme="kolaz"] .detail .price { font-weight: 200; }
+[data-theme="kolaz"] .chart .line { stroke-width: 3; }
+[data-theme="kolaz"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kolaz"][data-scheme="dark"] { color-scheme: dark; --back: #201117; --card: #2b1d23; --head: #37292f; --edge: #423339; --alt: #312329; --text1: #f4e6ea; --text2: #bfb1b5; --faint: #8e8085; --up: #4ade80; --down: #f87171; --accent: #f43f5e; --hot: #47222b; --tip: #f4e6ea; --tipfg: #201117; --accentfg: #111111; }

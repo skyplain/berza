@@ -1,0 +1,19 @@
+/* tema avokado: generisana (paleta + oblik 4/1/2/7) */
+:root[data-theme="avokado"] { color-scheme: dark; --back: #1b2210; --card: #242d16; --head: #303922; --edge: #3d4431; --alt: #2a331c; --text1: #eef5dc; --text2: #b3baa3; --faint: #848c76; --up: #4ade80; --down: #f87171; --accent: #a3c94a; --hot: #36431d; --tip: #eef5dc; --tipfg: #1b2210; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="avokado"] :is(.overview .left, .block, .detail, .list) { background: rgba(36,45,22,0.6); border: 1px solid rgba(238,245,220,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="avokado"] .overview .left { align-self: start; }
+[data-theme="avokado"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="avokado"] button { border-radius: 999px; background: transparent; }
+[data-theme="avokado"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="avokado"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="avokado"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="avokado"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="avokado"] body { background: conic-gradient(rgba(238,245,220,0.025) 25%, transparent 0 50%, rgba(238,245,220,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #1b2210; background-attachment: fixed; }
+[data-theme="avokado"] .big .value, [data-theme="avokado"] .detail .price { font-weight: 200; }
+[data-theme="avokado"] .chart .line { stroke-width: 2; }
+[data-theme="avokado"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="avokado"][data-scheme="light"] { color-scheme: light; --back: #d2dcc4; --card: #c3cfb3; --head: #b4c0a4; --edge: #a8b09a; --alt: #bcc7ab; --text1: #0c1001; --text2: #363b28; --faint: #5d6550; --up: #15803d; --down: #c81e1e; --accent: #5d780f; --hot: #a8b88d; --tip: #0c1001; --tipfg: #d2dcc4; --accentfg: #ffffff; }
+[data-theme="avokado"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(195,207,179,0.6); border: 1px solid rgba(12,16,1,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="avokado"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="avokado"][data-scheme="light"] body { background: conic-gradient(rgba(12,16,1,0.025) 25%, transparent 0 50%, rgba(12,16,1,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #d2dcc4; background-attachment: fixed; }

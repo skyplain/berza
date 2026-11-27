@@ -1,0 +1,19 @@
+/* tema duga: generisana (paleta + oblik 5/4/3/6) */
+:root[data-theme="duga"] { color-scheme: light; --back: #fdfcff; --card: #ffffff; --head: #f2f2f3; --edge: #dad9de; --alt: #f8f8f9; --text1: #222233; --text2: #5f5f6c; --faint: #908f99; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #ede3fc; --tip: #222233; --tipfg: #fdfcff; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="duga"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="duga"] .overview .left { align-self: start; }
+[data-theme="duga"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="duga"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="duga"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="duga"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="duga"] .bar button { background: transparent; color: var(--back); border-color: rgba(253,252,255,0.35); box-shadow: none; }
+[data-theme="duga"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="duga"] body { background: linear-gradient(90deg, rgba(239,68,68,.08), rgba(245,158,11,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08)); background-color: #fdfcff; background-attachment: fixed; }
+[data-theme="duga"] .big .value, [data-theme="duga"] .detail .price { font-weight: 400; }
+[data-theme="duga"] .chart .line { stroke-width: 3.5; }
+[data-theme="duga"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="duga"][data-scheme="dark"] { color-scheme: dark; --back: #070708; --card: #060606; --head: #0d0d0d; --edge: #1e1d20; --alt: #09090a; --text1: #cecfe6; --text2: #888895; --faint: #62626d; --up: #4ade80; --down: #f87171; --accent: #7c3aed; --hot: #170f20; --tip: #cecfe6; --tipfg: #070708; --accentfg: #ffffff; }
+[data-theme="duga"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="duga"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(7,7,8,0.35); box-shadow: none; }
+[data-theme="duga"][data-scheme="dark"] body { background: linear-gradient(90deg, rgba(180,0,25,.08), rgba(83,51,3,.08), rgba(9,86,37,.08), rgba(15,90,203,.08), rgba(128,34,201,.08)); background-color: #070708; background-attachment: fixed; }

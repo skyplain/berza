@@ -1,0 +1,22 @@
+/* tema svemirski osvajači (Space invaders): generisana, tools/teme.py */
+:root[data-theme="svemirskiosvajaci"] { color-scheme: dark; --back: #000101; --card: #0d0e0e; --head: #1a1c1b; --edge: #252827; --alt: #141515; --text1: #e6f2ed; --text2: #acb6b2; --faint: #787e7c; --up: #4ade80; --down: #f87171; --accent: #4ade80; --hot: #162b1e; --tip: #e6f2ed; --tipfg: #000101; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="svemirskiosvajaci"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="svemirskiosvajaci"] .overview .left { align-self: start; }
+[data-theme="svemirskiosvajaci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svemirskiosvajaci"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="svemirskiosvajaci"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="svemirskiosvajaci"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="svemirskiosvajaci"] .bar button { background: transparent; color: var(--back); border-color: rgba(0,1,1,0.35); box-shadow: none; }
+[data-theme="svemirskiosvajaci"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="svemirskiosvajaci"] body { background: linear-gradient(rgba(230,242,237,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(230,242,237,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #000101; background-attachment: fixed; }
+[data-theme="svemirskiosvajaci"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #e6f2ed; border-radius: 0; box-shadow: none; }
+[data-theme="svemirskiosvajaci"] button { border-radius: 0; border-width: 2px; }
+[data-theme="svemirskiosvajaci"] body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 30; background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); }
+[data-theme="svemirskiosvajaci"] .big .value, [data-theme="svemirskiosvajaci"] .detail .price { font-weight: 200; }
+[data-theme="svemirskiosvajaci"] .chart .line { stroke-width: 2; }
+[data-theme="svemirskiosvajaci"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="svemirskiosvajaci"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #edefee; --edge: #cfd3d1; --alt: #f3f4f4; --text1: #1f3b2e; --text2: #53685e; --faint: #7b8b84; --up: #15803d; --down: #c81e1e; --accent: #319255; --hot: #deebe3; --tip: #1f3b2e; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="svemirskiosvajaci"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,240,0.35); box-shadow: none; }
+[data-theme="svemirskiosvajaci"][data-scheme="light"] body { background: linear-gradient(rgba(31,59,46,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(31,59,46,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #f0f0f0; background-attachment: fixed; }
+[data-theme="svemirskiosvajaci"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #1f3b2e; border-radius: 0; box-shadow: none; }

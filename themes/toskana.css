@@ -1,0 +1,18 @@
+/* tema toskana: generisana (paleta + oblik 4/1/0/7) */
+:root[data-theme="toskana"] { color-scheme: light; --back: #f8eee2; --card: #fdf7f0; --head: #f1eae3; --edge: #dacec1; --alt: #f7f1e9; --text1: #3b2516; --text2: #705d4f; --faint: #9a8a7c; --up: #15803d; --down: #c81e1e; --accent: #a9561a; --hot: #f1e0d2; --tip: #3b2516; --tipfg: #f8eee2; --accentfg: #ffffff; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 10px; }
+[data-theme="toskana"] :is(.overview .left, .block, .detail, .list) { background: rgba(253,247,240,0.6); border: 1px solid rgba(59,37,22,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="toskana"] .overview .left { align-self: start; }
+[data-theme="toskana"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="toskana"] button { border-radius: 999px; background: transparent; }
+[data-theme="toskana"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="toskana"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="toskana"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="toskana"] body { background: conic-gradient(rgba(59,37,22,0.025) 25%, transparent 0 50%, rgba(59,37,22,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #f8eee2; background-attachment: fixed; }
+[data-theme="toskana"] .big .value, [data-theme="toskana"] .detail .price { font-weight: 200; }
+[data-theme="toskana"] .chart .line { stroke-width: 3; }
+[data-theme="toskana"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="toskana"][data-scheme="dark"] { color-scheme: dark; --back: #140d06; --card: #0c0905; --head: #15110c; --edge: #2c2319; --alt: #100c07; --text1: #dec1af; --text2: #988475; --faint: #716154; --up: #4ade80; --down: #f87171; --accent: #a9561a; --hot: #20140a; --tip: #dec1af; --tipfg: #140d06; --accentfg: #ffffff; }
+[data-theme="toskana"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(12,9,5,0.6); border: 1px solid rgba(222,193,175,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="toskana"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="toskana"][data-scheme="dark"] body { background: conic-gradient(rgba(222,193,175,0.025) 25%, transparent 0 50%, rgba(222,193,175,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #140d06; background-attachment: fixed; }

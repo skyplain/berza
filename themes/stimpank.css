@@ -1,0 +1,18 @@
+/* tema stimpank (Steampunk): generisana, tools/teme.py */
+:root[data-theme="stimpank"] { color-scheme: dark; --back: #1e140b; --card: #292017; --head: #352c23; --edge: #3f362e; --alt: #2f261d; --text1: #efe9e5; --text2: #bbb4ae; --faint: #8b837c; --up: #4ade80; --down: #f87171; --accent: #ae611c; --hot: #3c2918; --tip: #efe9e5; --tipfg: #1e140b; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="stimpank"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="stimpank"] .overview .left { align-self: start; }
+[data-theme="stimpank"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="stimpank"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="stimpank"] .bar h1 { font-size: 24px; }
+[data-theme="stimpank"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="stimpank"] body { background: repeating-conic-gradient(from 0deg at 90% 85%, rgba(174,97,28,0.12) 0 10deg, transparent 10deg 20deg); background-color: #1e140b; background-attachment: fixed; }
+[data-theme="stimpank"] .bar h1::before { content: "⚙ "; color: #ae611c; }
+[data-theme="stimpank"] :is(.overview .left, .block, .detail, .list) { border: 2px solid #ae611c; border-radius: 6px; }
+[data-theme="stimpank"] .big .value, [data-theme="stimpank"] .detail .price { font-weight: 900; }
+[data-theme="stimpank"] .chart .line { stroke-width: 1.5; }
+[data-theme="stimpank"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="stimpank"][data-scheme="light"] { color-scheme: light; --back: #f2f1f0; --card: #fbfbfa; --head: #efeeed; --edge: #d3d0ce; --alt: #f5f5f3; --text1: #32251c; --text2: #625851; --faint: #8e8782; --up: #15803d; --down: #c81e1e; --accent: #ae611c; --hot: #f0e5db; --tip: #32251c; --tipfg: #f2f1f0; --accentfg: #ffffff; }
+[data-theme="stimpank"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="stimpank"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 90% 85%, rgba(174,97,28,0.12) 0 10deg, transparent 10deg 20deg); background-color: #f2f1f0; background-attachment: fixed; }

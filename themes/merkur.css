@@ -1,0 +1,15 @@
+/* tema merkur (Mercury): generisana, tools/teme.py */
+:root[data-theme="merkur"] { color-scheme: dark; --back: #16120f; --card: #221e1b; --head: #2e2a28; --edge: #393533; --alt: #282421; --text1: #eeedef; --text2: #b8b6b7; --faint: #868483; --up: #4ade80; --down: #f87171; --accent: #a8a29e; --hot: #35302d; --tip: #eeedef; --tipfg: #16120f; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="merkur"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="merkur"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="merkur"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="merkur"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="merkur"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="merkur"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="merkur"] body { background: radial-gradient(circle at 30% 30%, transparent 12px, rgba(238,237,239,0.08) 13px 15px, transparent 16px) 0 0 / 90px 90px, radial-gradient(circle at 70% 60%, transparent 6px, rgba(238,237,239,0.07) 7px 8px, transparent 9px) 0 0 / 55px 55px; background-color: #16120f; background-attachment: fixed; }
+[data-theme="merkur"] .big .value, [data-theme="merkur"] .detail .price { font-weight: 400; }
+[data-theme="merkur"] .chart .line { stroke-width: 2; }
+[data-theme="merkur"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="merkur"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefef; --edge: #d2d2d3; --alt: #f5f5f5; --text1: #2f3033; --text2: #606062; --faint: #858687; --up: #15803d; --down: #c81e1e; --accent: #847e7a; --hot: #eaeae9; --tip: #2f3033; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="merkur"][data-scheme="light"] body { background: radial-gradient(circle at 30% 30%, transparent 12px, rgba(47,48,51,0.08) 13px 15px, transparent 16px) 0 0 / 90px 90px, radial-gradient(circle at 70% 60%, transparent 6px, rgba(47,48,51,0.07) 7px 8px, transparent 9px) 0 0 / 55px 55px; background-color: #f1f1f1; background-attachment: fixed; }

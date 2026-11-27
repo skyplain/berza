@@ -1,0 +1,16 @@
+/* tema lav (Lion): generisana, tools/teme.py */
+:root[data-theme="lav"] { color-scheme: light; --back: #fdf1dc; --card: #fefbf4; --head: #f2eee7; --edge: #ddd1bd; --alt: #f8f5ed; --text1: #382818; --text2: #695a49; --faint: #978876; --up: #15803d; --down: #c81e1e; --accent: #c86d06; --hot: #f6e7d3; --tip: #382818; --tipfg: #fdf1dc; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="lav"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="lav"] .overview .left { align-self: start; }
+[data-theme="lav"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lav"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="lav"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="lav"] .bar h1 { font-weight: 800; }
+[data-theme="lav"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="lav"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(200,109,6,0.08) 0 6deg, transparent 6deg 12deg); background-color: #fdf1dc; background-attachment: fixed; }
+[data-theme="lav"] .big .value, [data-theme="lav"] .detail .price { font-weight: 400; }
+[data-theme="lav"] .chart .line { stroke-width: 3; }
+[data-theme="lav"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lav"][data-scheme="dark"] { color-scheme: dark; --back: #232324; --card: #2e2e2f; --head: #3a393a; --edge: #444343; --alt: #343434; --text1: #f2eae3; --text2: #beb8b3; --faint: #8f8a87; --up: #4ade80; --down: #f87171; --accent: #d97706; --hot: #463829; --tip: #f2eae3; --tipfg: #232324; --accentfg: #111111; }
+[data-theme="lav"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(217,119,6,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232324; background-attachment: fixed; }

@@ -1,0 +1,20 @@
+/* tema buenos ajres (Buenos Aires): generisana, tools/teme.py */
+:root[data-theme="buenosajres"] { color-scheme: light; --back: #f4faff; --card: #fcfeff; --head: #eef2f4; --edge: #d0dae1; --alt: #f5f8f9; --text1: #143141; --text2: #4c6370; --faint: #80919c; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #daeef7; --tip: #143141; --tipfg: #f4faff; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="buenosajres"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="buenosajres"] .overview .left { align-self: start; }
+[data-theme="buenosajres"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="buenosajres"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="buenosajres"] .bar h1 { font-weight: 800; }
+[data-theme="buenosajres"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="buenosajres"] :is(.overview .left, .block, .detail, .list) { border: 4px double #0c8cc5; }
+[data-theme="buenosajres"] .bar h1::before { content: "❦ "; color: #0c8cc5; }
+[data-theme="buenosajres"] .bar h1::after { content: " ❦"; color: #0c8cc5; }
+[data-theme="buenosajres"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="buenosajres"] .big .value, [data-theme="buenosajres"] .detail .price { font-weight: 200; }
+[data-theme="buenosajres"] .chart .line { stroke-width: 2; }
+[data-theme="buenosajres"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="buenosajres"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3f; --edge: #424449; --alt: #333539; --text1: #e2eef5; --text2: #b2bcc2; --faint: #868d93; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #2a404c; --tip: #e2eef5; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="buenosajres"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #0ea5e9; }
+[data-theme="buenosajres"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #0ea5e9; }
+[data-theme="buenosajres"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #0ea5e9; }

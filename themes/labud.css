@@ -1,0 +1,18 @@
+/* tema labud (Swan): generisana, tools/teme.py */
+:root[data-theme="labud"] { color-scheme: light; --back: #fbfcfc; --card: #f6f7f8; --head: #e8eaeb; --edge: #d6d7d8; --alt: #eff0f1; --text1: #14171e; --text2: #4e5056; --faint: #838589; --up: #15803d; --down: #c81e1e; --accent: #111827; --hot: #d6d8db; --tip: #14171e; --tipfg: #fbfcfc; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="labud"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="labud"] .overview .left { align-self: start; }
+[data-theme="labud"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="labud"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="labud"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="labud"] .bar button { background: transparent; color: var(--back); border-color: rgba(251,252,252,0.35); box-shadow: none; }
+[data-theme="labud"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="labud"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(17,24,39,0.14) 9px 10px, transparent 11px 16px, rgba(17,24,39,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #fbfcfc; background-attachment: fixed; }
+[data-theme="labud"] .big .value, [data-theme="labud"] .detail .price { font-weight: 700; }
+[data-theme="labud"] .chart .line { stroke-width: 2; }
+[data-theme="labud"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="labud"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e5; --text2: #b2b2b6; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #7b7d86; --hot: #393a3f; --tip: #e2e2e5; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="labud"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="labud"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="labud"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(123,125,134,0.14) 9px 10px, transparent 11px 16px, rgba(123,125,134,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #232428; background-attachment: fixed; }

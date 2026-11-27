@@ -1,0 +1,15 @@
+/* tema tropska vrućina (Tropical heat): generisana, tools/teme.py */
+:root[data-theme="tropskavrucina"] { color-scheme: light; --back: #fff4ef; --card: #fffcfa; --head: #f3efed; --edge: #e0d2ce; --alt: #f9f5f4; --text1: #3c1f23; --text2: #6d5456; --faint: #9a8585; --up: #15803d; --down: #c81e1e; --accent: #ef4444; --hot: #fde2e1; --tip: #3c1f23; --tipfg: #fff4ef; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="tropskavrucina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="tropskavrucina"] .overview .left { align-self: start; }
+[data-theme="tropskavrucina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tropskavrucina"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="tropskavrucina"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="tropskavrucina"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="tropskavrucina"] body { background: linear-gradient(0deg, rgba(239,68,68,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(239,68,68,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #fff4ef; background-attachment: fixed; }
+[data-theme="tropskavrucina"] .big .value, [data-theme="tropskavrucina"] .detail .price { font-weight: 200; }
+[data-theme="tropskavrucina"] .chart .line { stroke-width: 1.5; }
+[data-theme="tropskavrucina"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tropskavrucina"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343436; --text1: #f4e6e8; --text2: #c0b5b8; --faint: #90888b; --up: #4ade80; --down: #f87171; --accent: #ef4444; --hot: #493134; --tip: #f4e6e8; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="tropskavrucina"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(239,68,68,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(239,68,68,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #232326; background-attachment: fixed; }

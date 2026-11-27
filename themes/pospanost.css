@@ -1,0 +1,18 @@
+/* tema pospanost (Sleepiness): generisana, tools/teme.py */
+:root[data-theme="pospanost"] { color-scheme: dark; --back: #0b0c1c; --card: #171827; --head: #242533; --edge: #2f303f; --alt: #1d1e2d; --text1: #ebecf6; --text2: #b3b4c0; --faint: #7f808d; --up: #4ade80; --down: #f87171; --accent: #818cf8; --hot: #262844; --tip: #ebecf6; --tipfg: #0b0c1c; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="pospanost"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="pospanost"] .overview .left { align-self: start; }
+[data-theme="pospanost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pospanost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pospanost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="pospanost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="pospanost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pospanost"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(235,236,246,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(129,140,248,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(235,236,246,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(235,236,246,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(129,140,248,0.8), transparent); background-color: #0b0c1c; background-attachment: fixed; }
+[data-theme="pospanost"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(235,236,246,0.9), rgba(235,236,246,0.55)); box-shadow: 0 0 60px rgba(235,236,246,0.35); opacity: .55; }
+[data-theme="pospanost"] .big .value, [data-theme="pospanost"] .detail .price { font-weight: 700; }
+[data-theme="pospanost"] .chart .line { stroke-width: 1.5; }
+[data-theme="pospanost"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pospanost"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #edeef0; --edge: #d0d1d5; --alt: #f4f4f6; --text1: #282c44; --text2: #5a5d6f; --faint: #888a97; --up: #15803d; --down: #c81e1e; --accent: #6d77d2; --hot: #e6e8f5; --tip: #282c44; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="pospanost"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(40,44,68,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(109,119,210,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(40,44,68,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(40,44,68,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(109,119,210,0.8), transparent); background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="pospanost"][data-scheme="light"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(40,44,68,0.9), rgba(40,44,68,0.55)); box-shadow: 0 0 60px rgba(40,44,68,0.35); opacity: .55; }

@@ -1,0 +1,21 @@
+/* tema kometa: generisana (paleta + oblik 1/4/5/2) */
+:root[data-theme="kometa"] { color-scheme: dark; --back: #070b18; --card: #0e1528; --head: #1b2235; --edge: #2b303d; --alt: #141c2e; --text1: #e6f0ff; --text2: #a8b0be; --faint: #767e8c; --up: #4ade80; --down: #f87171; --accent: #7dd3fc; --hot: #1e3046; --tip: #e6f0ff; --tipfg: #070b18; --accentfg: #111111; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 10px; }
+[data-theme="kometa"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kometa"] .overview .left { align-self: start; }
+[data-theme="kometa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kometa"] button { border-radius: 999px; }
+[data-theme="kometa"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kometa"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kometa"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="kometa"] .bar button { background: transparent; color: var(--back); border-color: rgba(7,11,24,0.35); box-shadow: none; }
+[data-theme="kometa"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="kometa"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="kometa"] body { background: linear-gradient(rgba(230,240,255,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(230,240,255,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #070b18; background-attachment: fixed; }
+[data-theme="kometa"] .big .value, [data-theme="kometa"] .detail .price { font-weight: 400; }
+[data-theme="kometa"] .chart .line { stroke-width: 2; }
+[data-theme="kometa"] .chart .area { opacity: 0.12; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="kometa"][data-scheme="light"] { color-scheme: light; --back: #f0f4fe; --card: #d9e4ff; --head: #c8d2ec; --edge: #bac1d1; --alt: #cfdcf5; --text1: #090f19; --text2: #383f4a; --faint: #646c79; --up: #15803d; --down: #c81e1e; --accent: #308ab0; --hot: #aec5e1; --tip: #090f19; --tipfg: #f0f4fe; --accentfg: #111111; }
+[data-theme="kometa"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(255,255,255,.45); padding: 14px 16px; }
+[data-theme="kometa"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,244,254,0.35); box-shadow: none; }
+[data-theme="kometa"][data-scheme="light"] body { background: linear-gradient(rgba(9,15,25,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(9,15,25,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f0f4fe; background-attachment: fixed; }

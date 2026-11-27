@@ -1,0 +1,14 @@
+/* tema zbunjenost (Confusion): generisana, tools/teme.py */
+:root[data-theme="zbunjenost"] { color-scheme: light; --back: #faf4ff; --card: #fefcff; --head: #f2eff4; --edge: #dad2e1; --alt: #f8f5f9; --text1: #2f2243; --text2: #625672; --faint: #90879d; --up: #15803d; --down: #c81e1e; --accent: #a855f7; --hot: #f2e5fe; --tip: #2f2243; --tipfg: #faf4ff; --accentfg: #111111; --font: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive; --radius: 4px; }
+[data-theme="zbunjenost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zbunjenost"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="zbunjenost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="zbunjenost"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(168,85,247,0.07) 0 12deg, transparent 12deg 24deg); background-color: #faf4ff; background-attachment: fixed; }
+[data-theme="zbunjenost"] .block:nth-child(odd), [data-theme="zbunjenost"] .overview .left { transform: rotate(-.6deg); }
+[data-theme="zbunjenost"] .block:nth-child(even) { transform: rotate(.5deg); }
+[data-theme="zbunjenost"] .big .value, [data-theme="zbunjenost"] .detail .price { font-weight: 700; }
+[data-theme="zbunjenost"] .chart .line { stroke-width: 3; }
+[data-theme="zbunjenost"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zbunjenost"][data-scheme="dark"] { color-scheme: dark; --back: #232328; --card: #2e2e33; --head: #3a393f; --edge: #434249; --alt: #343439; --text1: #eee7f6; --text2: #bbb6c2; --faint: #8d8993; --up: #4ade80; --down: #f87171; --accent: #a855f7; --hot: #3f334e; --tip: #eee7f6; --tipfg: #232328; --accentfg: #111111; }
+[data-theme="zbunjenost"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(168,85,247,0.07) 0 12deg, transparent 12deg 24deg); background-color: #232328; background-attachment: fixed; }

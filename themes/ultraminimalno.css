@@ -1,0 +1,11 @@
+/* tema ultra minimalno (Ultra minimal): generisana, tools/teme.py */
+:root[data-theme="ultraminimalno"] { color-scheme: light; --back: #fcfcfc; --card: #fafafa; --head: #eeeeee; --edge: #dbdbdc; --alt: #f4f4f4; --text1: #2d3036; --text2: #616368; --faint: #909295; --up: #15803d; --down: #c81e1e; --accent: #848a94; --hot: #e9eaec; --tip: #2d3036; --tipfg: #fcfcfc; --accentfg: #111111; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 4px; }
+[data-theme="ultraminimalno"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="ultraminimalno"] .overview .left { align-self: start; }
+[data-theme="ultraminimalno"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ultraminimalno"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ultraminimalno"] .big .value, [data-theme="ultraminimalno"] .detail .price { font-weight: 900; }
+[data-theme="ultraminimalno"] .chart .line { stroke-width: 3; }
+[data-theme="ultraminimalno"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ultraminimalno"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #434448; --alt: #343539; --text1: #edeef0; --text2: #babcbe; --faint: #8c8d90; --up: #4ade80; --down: #f87171; --accent: #9ca3af; --hot: #3d3f44; --tip: #edeef0; --tipfg: #232428; --accentfg: #111111; }

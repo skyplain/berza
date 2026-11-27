@@ -1,0 +1,14 @@
+/* tema gejzir (Geyser): generisana, tools/teme.py */
+:root[data-theme="gejzir"] { color-scheme: light; --back: #f0f7f9; --card: #fafdfd; --head: #edf1f2; --edge: #ced8dc; --alt: #f3f7f7; --text1: #1b3544; --text2: #506671; --faint: #798b94; --up: #15803d; --down: #c81e1e; --accent: #2c93c1; --hot: #ddeef5; --tip: #1b3544; --tipfg: #f0f7f9; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="gejzir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gejzir"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="gejzir"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="gejzir"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="gejzir"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="gejzir"] body { background: radial-gradient(circle, transparent 6px, rgba(44,147,193,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(44,147,193,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f0f7f9; background-attachment: fixed; }
+[data-theme="gejzir"] .big .value, [data-theme="gejzir"] .detail .price { font-weight: 200; }
+[data-theme="gejzir"] .chart .line { stroke-width: 2; }
+[data-theme="gejzir"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="gejzir"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383b3e; --edge: #414548; --alt: #333538; --text1: #e5f0f6; --text2: #b4bdc2; --faint: #878e93; --up: #4ade80; --down: #f87171; --accent: #38bdf8; --hot: #2f434e; --tip: #e5f0f6; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="gejzir"][data-scheme="dark"] body { background: radial-gradient(circle, transparent 6px, rgba(56,189,248,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(56,189,248,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #222427; background-attachment: fixed; }

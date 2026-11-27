@@ -1,0 +1,13 @@
+/* tema magla na reci (River fog): generisana, tools/teme.py */
+:root[data-theme="maglanareci"] { color-scheme: light; --back: #eef0f2; --card: #fafafb; --head: #eeeeef; --edge: #cfd1d4; --alt: #f4f4f5; --text1: #2d3036; --text2: #5d6065; --faint: #838589; --up: #15803d; --down: #c81e1e; --accent: #797f88; --hot: #e8e9eb; --tip: #2d3036; --tipfg: #eef0f2; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="maglanareci"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="maglanareci"] .overview .left { align-self: start; }
+[data-theme="maglanareci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="maglanareci"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="maglanareci"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(121,127,136,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(175,156,163,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(163,175,156,0.14), transparent 70%); background-color: #eef0f2; background-attachment: fixed; }
+[data-theme="maglanareci"] .big .value, [data-theme="maglanareci"] .detail .price { font-weight: 200; }
+[data-theme="maglanareci"] .chart .line { stroke-width: 2; }
+[data-theme="maglanareci"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="maglanareci"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #393a3d; --edge: #424347; --alt: #333438; --text1: #edeef0; --text2: #babbbe; --faint: #8c8d90; --up: #4ade80; --down: #f87171; --accent: #9ca3af; --hot: #3d3e44; --tip: #edeef0; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="maglanareci"][data-scheme="dark"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(156,163,175,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(175,156,163,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(163,175,156,0.14), transparent 70%); background-color: #222327; background-attachment: fixed; }

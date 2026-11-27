@@ -1,0 +1,17 @@
+/* tema delfin (Dolphin): generisana, tools/teme.py */
+:root[data-theme="delfin"] { color-scheme: light; --back: #e9f7fd; --card: #f8fdfe; --head: #eaf1f3; --edge: #c7d7df; --alt: #f1f7f8; --text1: #143141; --text2: #496270; --faint: #7a909b; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #d7edf6; --tip: #143141; --tipfg: #e9f7fd; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="delfin"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="delfin"] .overview .left { align-self: start; }
+[data-theme="delfin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="delfin"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="delfin"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="delfin"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="delfin"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="delfin"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(12,140,197,0.14) 9px 10px, transparent 11px 16px, rgba(12,140,197,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #e9f7fd; background-attachment: fixed; }
+[data-theme="delfin"] .big .value, [data-theme="delfin"] .detail .price { font-weight: 700; }
+[data-theme="delfin"] .chart .line { stroke-width: 3; }
+[data-theme="delfin"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="delfin"][data-scheme="dark"] { color-scheme: dark; --back: #0b202c; --card: #172b37; --head: #233742; --edge: #2d414c; --alt: #1d313d; --text1: #e2eef5; --text2: #acbac3; --faint: #7b8b95; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #163c50; --tip: #e2eef5; --tipfg: #0b202c; --accentfg: #111111; }
+[data-theme="delfin"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="delfin"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(14,165,233,0.14) 9px 10px, transparent 11px 16px, rgba(14,165,233,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #0b202c; background-attachment: fixed; }

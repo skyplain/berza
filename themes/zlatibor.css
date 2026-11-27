@@ -1,0 +1,18 @@
+/* tema zlatibor (Zlatibor): generisana, tools/teme.py */
+:root[data-theme="zlatibor"] { color-scheme: light; --back: #f4f8ea; --card: #fcfdf9; --head: #eff1ec; --edge: #d3d8c9; --alt: #f5f7f2; --text1: #233019; --text2: #57624d; --faint: #87907d; --up: #15803d; --down: #c81e1e; --accent: #5d960c; --hot: #e6efd8; --tip: #233019; --tipfg: #f4f8ea; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="zlatibor"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zlatibor"] .overview .left { align-self: start; }
+[data-theme="zlatibor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zlatibor"] button { border-radius: 999px; }
+[data-theme="zlatibor"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zlatibor"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="zlatibor"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="zlatibor"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="zlatibor"] body { background: linear-gradient(135deg, transparent 50%, rgba(93,150,12,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(93,150,12,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(93,150,12,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(93,150,12,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #f4f8ea; background-attachment: fixed; }
+[data-theme="zlatibor"] .big .value, [data-theme="zlatibor"] .detail .price { font-weight: 900; }
+[data-theme="zlatibor"] .chart .line { stroke-width: 3; }
+[data-theme="zlatibor"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zlatibor"][data-scheme="dark"] { color-scheme: dark; --back: #222426; --card: #2d2f31; --head: #383a3c; --edge: #424444; --alt: #333536; --text1: #e9eee3; --text2: #b7bcb4; --faint: #898d88; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #353f2c; --tip: #e9eee3; --tipfg: #222426; --accentfg: #111111; }
+[data-theme="zlatibor"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zlatibor"][data-scheme="dark"] body { background: linear-gradient(135deg, transparent 50%, rgba(101,163,13,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(101,163,13,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(101,163,13,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(101,163,13,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #222426; background-attachment: fixed; }

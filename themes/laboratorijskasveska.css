@@ -1,0 +1,16 @@
+/* tema laboratorijska sveska (Lab notebook): generisana, tools/teme.py */
+:root[data-theme="laboratorijskasveska"] { color-scheme: light; --back: #fbfdff; --card: #f7faff; --head: #eaedf4; --edge: #d7dae1; --alt: #f0f4f9; --text1: #182541; --text2: #515b70; --faint: #858d9c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dae5fc; --tip: #182541; --tipfg: #fbfdff; --accentfg: #ffffff; --font: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; --radius: 4px; }
+[data-theme="laboratorijskasveska"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="laboratorijskasveska"] .overview .left { align-self: start; }
+[data-theme="laboratorijskasveska"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="laboratorijskasveska"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="laboratorijskasveska"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="laboratorijskasveska"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="laboratorijskasveska"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="laboratorijskasveska"] body { background: linear-gradient(rgba(37,99,235,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(37,99,235,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(37,99,235,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(37,99,235,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #fbfdff; background-attachment: fixed; }
+[data-theme="laboratorijskasveska"] .big .value, [data-theme="laboratorijskasveska"] .detail .price { font-weight: 400; }
+[data-theme="laboratorijskasveska"] .chart .line { stroke-width: 1.5; }
+[data-theme="laboratorijskasveska"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="laboratorijskasveska"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3f; --edge: #424349; --alt: #333539; --text1: #e3e8f5; --text2: #b3b7c2; --faint: #878a93; --up: #4ade80; --down: #f87171; --accent: #467bee; --hot: #313a4d; --tip: #e3e8f5; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="laboratorijskasveska"][data-scheme="dark"] body { background: linear-gradient(rgba(70,123,238,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(70,123,238,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(70,123,238,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(70,123,238,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #232428; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema opuštenost (Relaxation): generisana, tools/teme.py */
+:root[data-theme="opustenost"] { color-scheme: light; --back: #f9fdf0; --card: #f7fdec; --head: #ebf1e0; --edge: #d9decf; --alt: #f1f7e6; --text1: #2f3c20; --text2: #626c54; --faint: #88927c; --up: #15803d; --down: #c81e1e; --accent: #6c9823; --hot: #e4efd0; --tip: #2f3c20; --tipfg: #f9fdf0; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="opustenost"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="opustenost"] .overview .left { align-self: start; }
+[data-theme="opustenost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="opustenost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="opustenost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="opustenost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="opustenost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="opustenost"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(108,152,35,0.14) 9px 10px, transparent 11px 16px, rgba(108,152,35,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f9fdf0; background-attachment: fixed; }
+[data-theme="opustenost"] .big .value, [data-theme="opustenost"] .detail .price { font-weight: 400; }
+[data-theme="opustenost"] .chart .line { stroke-width: 2.5; }
+[data-theme="opustenost"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="opustenost"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3b3c; --edge: #434545; --alt: #343536; --text1: #eef3e7; --text2: #bbbfb7; --faint: #8d908a; --up: #4ade80; --down: #f87171; --accent: #a3e635; --hot: #3e4932; --tip: #eef3e7; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="opustenost"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(163,230,53,0.14) 9px 10px, transparent 11px 16px, rgba(163,230,53,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #232426; background-attachment: fixed; }

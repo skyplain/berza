@@ -1,0 +1,20 @@
+/* tema ponoćna misa (Midnight mass): generisana, tools/teme.py */
+:root[data-theme="ponocnamisa"] { color-scheme: dark; --back: #0c0a14; --card: #181620; --head: #25232c; --edge: #312e36; --alt: #1f1c26; --text1: #f1eee7; --text2: #b8b5b2; --faint: #838182; --up: #4ade80; --down: #f87171; --accent: #d4af37; --hot: #322b23; --tip: #f1eee7; --tipfg: #0c0a14; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="ponocnamisa"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="ponocnamisa"] .overview .left { align-self: start; }
+[data-theme="ponocnamisa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ponocnamisa"] button { border-radius: 999px; }
+[data-theme="ponocnamisa"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ponocnamisa"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="ponocnamisa"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="ponocnamisa"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ponocnamisa"] body { background: linear-gradient(60deg, rgba(212,175,55,0.14) 25%, transparent 25% 50%, rgba(55,212,175,0.12) 50% 75%, transparent 75%) 0 0 / 80px 80px, linear-gradient(-30deg, rgba(175,55,212,0.12) 30%, transparent 30%) 0 0 / 120px 120px; background-color: #0c0a14; background-attachment: fixed; }
+[data-theme="ponocnamisa"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #000000; }
+[data-theme="ponocnamisa"] .big .value, [data-theme="ponocnamisa"] .detail .price { font-weight: 200; }
+[data-theme="ponocnamisa"] .chart .line { stroke-width: 2; }
+[data-theme="ponocnamisa"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ponocnamisa"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeeeee; --edge: #d2d2d0; --alt: #f4f4f4; --text1: #373221; --text2: #656255; --faint: #89867d; --up: #15803d; --down: #c81e1e; --accent: #987d28; --hot: #ece8dd; --tip: #373221; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="ponocnamisa"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="ponocnamisa"][data-scheme="light"] body { background: linear-gradient(60deg, rgba(152,125,40,0.14) 25%, transparent 25% 50%, rgba(55,212,175,0.12) 50% 75%, transparent 75%) 0 0 / 80px 80px, linear-gradient(-30deg, rgba(175,55,212,0.12) 30%, transparent 30%) 0 0 / 120px 120px; background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="ponocnamisa"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #222222; }

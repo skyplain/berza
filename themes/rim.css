@@ -1,0 +1,17 @@
+/* tema rim (Rome): generisana, tools/teme.py */
+:root[data-theme="rim"] { color-scheme: light; --back: #f6ece0; --card: #fcf9f6; --head: #f0ece9; --edge: #d7ccc0; --alt: #f6f3ef; --text1: #322219; --text2: #63544b; --faint: #908379; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f2e2d5; --tip: #322219; --tipfg: #f6ece0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="rim"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="rim"] .overview .left { align-self: start; }
+[data-theme="rim"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="rim"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="rim"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="rim"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="rim"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="rim"] body { background: repeating-linear-gradient(90deg, rgba(50,34,25,0.035) 0 44px, transparent 44px 88px); background-color: #f6ece0; background-attachment: fixed; }
+[data-theme="rim"] .big .value, [data-theme="rim"] .detail .price { font-weight: 400; }
+[data-theme="rim"] .chart .line { stroke-width: 1.5; }
+[data-theme="rim"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="rim"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #39383b; --edge: #434243; --alt: #333335; --text1: #efe7e3; --text2: #bcb6b4; --faint: #8d8888; --up: #4ade80; --down: #f87171; --accent: #bd6726; --hot: #41352f; --tip: #efe7e3; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="rim"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="rim"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(239,231,227,0.035) 0 44px, transparent 44px 88px); background-color: #222225; background-attachment: fixed; }

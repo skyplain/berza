@@ -1,0 +1,17 @@
+/* tema inspiracija (Inspiration): generisana, tools/teme.py */
+:root[data-theme="inspiracija"] { color-scheme: light; --back: #f9f6ff; --card: #fdfcff; --head: #f0eff4; --edge: #d8d4e1; --alt: #f7f5f9; --text1: #2a2343; --text2: #5e5872; --faint: #8d889d; --up: #15803d; --down: #c81e1e; --accent: #8558ec; --hot: #ece5fc; --tip: #2a2343; --tipfg: #f9f6ff; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="inspiracija"] :is(.overview .left, .block, .detail, .list) { background: rgba(253,252,255,0.6); border: 1px solid rgba(42,35,67,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="inspiracija"] .overview .left { align-self: start; }
+[data-theme="inspiracija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="inspiracija"] button { border-radius: 999px; background: transparent; }
+[data-theme="inspiracija"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="inspiracija"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="inspiracija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="inspiracija"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(133,88,236,0.08) 0 6deg, transparent 6deg 12deg); background-color: #f9f6ff; background-attachment: fixed; }
+[data-theme="inspiracija"] .big .value, [data-theme="inspiracija"] .detail .price { font-weight: 900; }
+[data-theme="inspiracija"] .chart .line { stroke-width: 2; }
+[data-theme="inspiracija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="inspiracija"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3f; --edge: #434349; --alt: #343539; --text1: #ece8f6; --text2: #bab7c2; --faint: #8c8a93; --up: #4ade80; --down: #f87171; --accent: #9063f6; --hot: #3c364e; --tip: #ece8f6; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="inspiracija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,47,51,0.6); border: 1px solid rgba(236,232,246,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="inspiracija"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(144,99,246,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232428; background-attachment: fixed; }

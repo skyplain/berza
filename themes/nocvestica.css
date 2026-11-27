@@ -1,0 +1,17 @@
+/* tema noć veštica (Halloween): generisana, tools/teme.py */
+:root[data-theme="nocvestica"] { color-scheme: dark; --back: #120a04; --card: #1e1611; --head: #2b231e; --edge: #362e28; --alt: #241c17; --text1: #f4eae4; --text2: #bcb2ac; --faint: #887e78; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #3d2312; --tip: #f4eae4; --tipfg: #120a04; --accentfg: #111111; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 8px; }
+[data-theme="nocvestica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="nocvestica"] .overview .left { align-self: start; }
+[data-theme="nocvestica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nocvestica"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="nocvestica"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="nocvestica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="nocvestica"] .bar { position: relative; }
+[data-theme="nocvestica"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: radial-gradient(circle at 50% 0, #f97316 6px, transparent 7px) 0 0 / 22px 14px, radial-gradient(ellipse 4px 12px at 50% 0, #f97316 90%, transparent) 11px 0 / 37px 14px; }
+[data-theme="nocvestica"] .big .value, [data-theme="nocvestica"] .detail .price { font-weight: 200; }
+[data-theme="nocvestica"] .chart .line { stroke-width: 2.5; }
+[data-theme="nocvestica"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="nocvestica"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #f0eded; --edge: #d4d0ce; --alt: #f5f4f3; --text1: #3e281b; --text2: #6b5a50; --faint: #948881; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f5e5da; --tip: #3e281b; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="nocvestica"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="nocvestica"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: radial-gradient(circle at 50% 0, #d36212 6px, transparent 7px) 0 0 / 22px 14px, radial-gradient(ellipse 4px 12px at 50% 0, #d36212 90%, transparent) 11px 0 / 37px 14px; }

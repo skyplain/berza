@@ -1,0 +1,19 @@
+/* tema stoni tenis (Table tennis): generisana, tools/teme.py */
+:root[data-theme="stonitenis"] { color-scheme: dark; --back: #0f2a5c; --card: #1b3564; --head: #27406d; --edge: #314874; --alt: #213a68; --text1: #e3e7f4; --text2: #aeb8ce; --faint: #7d8cab; --up: #4ade80; --down: #f87171; --accent: #5d80e3; --hot: #244076; --tip: #e3e7f4; --tipfg: #0f2a5c; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="stonitenis"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="stonitenis"] .overview .left { align-self: start; }
+[data-theme="stonitenis"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="stonitenis"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="stonitenis"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="stonitenis"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="stonitenis"] .bar button { background: transparent; color: var(--back); border-color: rgba(15,42,92,0.35); box-shadow: none; }
+[data-theme="stonitenis"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="stonitenis"] body { background: linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.6) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #0f2a5c; background-attachment: fixed; }
+[data-theme="stonitenis"] body::before { content: ""; position: fixed; inset: 40px 3%; z-index: -1; border: 2px solid rgba(255,255,255,0.55); box-shadow: inset 0 0 0 60px transparent, inset 0 0 0 62px rgba(255,255,255,0.35); }
+[data-theme="stonitenis"] .big .value, [data-theme="stonitenis"] .detail .price { font-weight: 700; }
+[data-theme="stonitenis"] .chart .line { stroke-width: 1.5; }
+[data-theme="stonitenis"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="stonitenis"][data-scheme="light"] { color-scheme: light; --back: #f1f2f5; --card: #fbfbfc; --head: #edeef1; --edge: #ced1d8; --alt: #f4f4f6; --text1: #16213e; --text2: #4d556c; --faint: #7f8596; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dce3f7; --tip: #16213e; --tipfg: #f1f2f5; --accentfg: #ffffff; }
+[data-theme="stonitenis"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,242,245,0.35); box-shadow: none; }
+[data-theme="stonitenis"][data-scheme="light"] body { background: linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.6) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #f1f2f5; background-attachment: fixed; }

@@ -1,0 +1,15 @@
+/* tema petrovaradin (Petrovaradin): generisana, tools/teme.py */
+:root[data-theme="petrovaradin"] { color-scheme: light; --back: #f1e8d6; --card: #fbf8f3; --head: #efebe6; --edge: #d2c9b8; --alt: #f5f2ec; --text1: #2e2418; --text2: #5f5548; --faint: #8c8273; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #eee3d2; --tip: #2e2418; --tipfg: #f1e8d6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="petrovaradin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="petrovaradin"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="petrovaradin"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="petrovaradin"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="petrovaradin"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="petrovaradin"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="petrovaradin"] body { background: linear-gradient(rgba(161,98,7,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(161,98,7,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(161,98,7,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #f1e8d6; background-attachment: fixed; }
+[data-theme="petrovaradin"] .big .value, [data-theme="petrovaradin"] .detail .price { font-weight: 900; }
+[data-theme="petrovaradin"] .chart .line { stroke-width: 2.5; }
+[data-theme="petrovaradin"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="petrovaradin"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #424243; --alt: #333334; --text1: #ede8e3; --text2: #bab6b3; --faint: #8c8987; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3d362c; --tip: #ede8e3; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="petrovaradin"][data-scheme="dark"] body { background: linear-gradient(rgba(162,107,26,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(162,107,26,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(162,107,26,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222224; background-attachment: fixed; }

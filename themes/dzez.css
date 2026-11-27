@@ -1,0 +1,21 @@
+/* tema džez (Jazz): generisana, tools/teme.py */
+:root[data-theme="dzez"] { color-scheme: dark; --back: #0f0d1a; --card: #1b1925; --head: #282630; --edge: #33313a; --alt: #211f2b; --text1: #f1ede4; --text2: #b8b5b2; --faint: #858183; --up: #4ade80; --down: #f87171; --accent: #d4a017; --hot: #352c23; --tip: #f1ede4; --tipfg: #0f0d1a; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="dzez"] :is(.overview .left, .block, .detail, .list) { background: rgba(27,25,37,0.6); border: 1px solid rgba(241,237,228,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="dzez"] .overview .left { align-self: start; }
+[data-theme="dzez"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dzez"] button { border-radius: 999px; background: transparent; }
+[data-theme="dzez"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="dzez"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="dzez"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="dzez"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="dzez"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="dzez"] body { background: repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #0f0d1a; background-attachment: fixed; }
+[data-theme="dzez"] :is(h2, h3)::before { content: "♪ "; color: #d4a017; }
+[data-theme="dzez"] .big .value, [data-theme="dzez"] .detail .price { font-weight: 700; }
+[data-theme="dzez"] .chart .line { stroke-width: 2; }
+[data-theme="dzez"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="dzez"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #efeeee; --edge: #d3d1cf; --alt: #f5f4f4; --text1: #37301b; --text2: #666050; --faint: #89857a; --up: #15803d; --down: #c81e1e; --accent: #a57c11; --hot: #efe8da; --tip: #37301b; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="dzez"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,250,251,0.6); border: 1px solid rgba(55,48,27,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="dzez"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #f1f0f1; background-attachment: fixed; }
+[data-theme="dzez"][data-scheme="light"] :is(h2, h3)::before { content: "♪ "; color: #a57c11; }

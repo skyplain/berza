@@ -1,0 +1,19 @@
+/* tema strip (Comic strip): generisana, tools/teme.py */
+:root[data-theme="strip"] { color-scheme: light; --back: #fef4f6; --card: #fffcfc; --head: #f3eeef; --edge: #dfd1d4; --alt: #f9f5f6; --text1: #3a1824; --text2: #6b4f58; --faint: #988289; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #fbdde3; --tip: #3a1824; --tipfg: #fef4f6; --accentfg: #ffffff; --font: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive; --radius: 0px; }
+[data-theme="strip"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="strip"] .overview .left { align-self: start; }
+[data-theme="strip"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="strip"] button { border-radius: 0; }
+[data-theme="strip"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="strip"] .bar h1 { font-weight: 800; }
+[data-theme="strip"] body { background: radial-gradient(rgba(225,29,72,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #fef4f6; background-attachment: fixed; }
+[data-theme="strip"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #3a1824; box-shadow: 6px 6px 0 #3a1824; border-radius: 6px; background: var(--card); }
+[data-theme="strip"] button { border: 2px solid #3a1824; box-shadow: 2px 2px 0 #3a1824; }
+[data-theme="strip"] .big .value, [data-theme="strip"] .detail .price { font-weight: 200; }
+[data-theme="strip"] .chart .line { stroke-width: 2.5; }
+[data-theme="strip"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="strip"][data-scheme="dark"] { color-scheme: dark; --back: #1e0e15; --card: #291a21; --head: #35262d; --edge: #403037; --alt: #2f2027; --text1: #f2e3e8; --text2: #bdaeb3; --faint: #8c7d83; --up: #4ade80; --down: #f87171; --accent: #e11d48; --hot: #431a26; --tip: #f2e3e8; --tipfg: #1e0e15; --accentfg: #ffffff; }
+[data-theme="strip"][data-scheme="dark"] body { background: radial-gradient(rgba(225,29,72,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #1e0e15; background-attachment: fixed; }
+[data-theme="strip"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #f2e3e8; box-shadow: 6px 6px 0 #f2e3e8; border-radius: 6px; background: var(--card); }
+[data-theme="strip"][data-scheme="dark"] button { border: 2px solid #f2e3e8; box-shadow: 2px 2px 0 #f2e3e8; }

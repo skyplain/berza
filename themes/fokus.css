@@ -1,0 +1,14 @@
+/* tema fokus (Focus): generisana, tools/teme.py */
+:root[data-theme="fokus"] { color-scheme: light; --back: #f9f9fa; --card: #fdfdfe; --head: #efeff1; --edge: #d4d5d7; --alt: #f6f6f7; --text1: #14171f; --text2: #4d5056; --faint: #828388; --up: #15803d; --down: #c81e1e; --accent: #0f172a; --hot: #dcdde0; --tip: #14171f; --tipfg: #f9f9fa; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="fokus"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="fokus"] .overview .left { align-self: start; }
+[data-theme="fokus"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fokus"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="fokus"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="fokus"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="fokus"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="fokus"] .big .value, [data-theme="fokus"] .detail .price { font-weight: 200; }
+[data-theme="fokus"] .chart .line { stroke-width: 2; }
+[data-theme="fokus"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="fokus"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e6; --text2: #b2b2b6; --faint: #86878b; --up: #4ade80; --down: #f87171; --accent: #7a7d87; --hot: #393a3f; --tip: #e2e2e6; --tipfg: #232428; --accentfg: #111111; }

@@ -1,0 +1,16 @@
+/* tema kalendar (Calendar): generisana, tools/teme.py */
+:root[data-theme="kalendar"] { color-scheme: light; --back: #fdf4f4; --card: #fefcfc; --head: #f2eeef; --edge: #ded1d2; --alt: #f8f5f5; --text1: #391a1e; --text2: #6a5054; --faint: #978385; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f9dede; --tip: #391a1e; --tipfg: #fdf4f4; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="kalendar"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="kalendar"] .overview .left { align-self: start; }
+[data-theme="kalendar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kalendar"] button { border-radius: 0; }
+[data-theme="kalendar"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kalendar"] .bar h1 { font-weight: 800; }
+[data-theme="kalendar"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kalendar"] body { background: linear-gradient(rgba(220,38,38,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(220,38,38,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(220,38,38,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(220,38,38,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #fdf4f4; background-attachment: fixed; }
+[data-theme="kalendar"] .big .value, [data-theme="kalendar"] .detail .price { font-weight: 200; }
+[data-theme="kalendar"] .chart .line { stroke-width: 1.5; }
+[data-theme="kalendar"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kalendar"][data-scheme="dark"] { color-scheme: dark; --back: #1e0e12; --card: #291a1e; --head: #35262a; --edge: #403034; --alt: #2f2024; --text1: #f2e4e5; --text2: #bdaeb0; --faint: #8c7d80; --up: #4ade80; --down: #f87171; --accent: #dc2626; --hot: #421c1f; --tip: #f2e4e5; --tipfg: #1e0e12; --accentfg: #ffffff; }
+[data-theme="kalendar"][data-scheme="dark"] body { background: linear-gradient(rgba(220,38,38,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(220,38,38,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(220,38,38,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(220,38,38,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #1e0e12; background-attachment: fixed; }

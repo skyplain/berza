@@ -1,0 +1,18 @@
+/* tema ploča (Vinyl record): generisana, tools/teme.py */
+:root[data-theme="ploca"] { color-scheme: dark; --back: #0b0a0a; --card: #171616; --head: #242223; --edge: #302d2e; --alt: #1e1c1c; --text1: #f4e6e8; --text2: #baafb0; --faint: #847c7d; --up: #4ade80; --down: #f87171; --accent: #ef4444; --hot: #351c1c; --tip: #f4e6e8; --tipfg: #0b0a0a; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="ploca"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="ploca"] .overview .left { align-self: start; }
+[data-theme="ploca"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ploca"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="ploca"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ploca"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="ploca"] .bar button { background: transparent; color: var(--back); border-color: rgba(11,10,10,0.35); box-shadow: none; }
+[data-theme="ploca"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ploca"] body { background: repeating-radial-gradient(circle at 92% 92%, rgba(244,230,232,0.05) 0 1px, transparent 1px 4px), radial-gradient(circle at 92% 92%, rgba(239,68,68,0.35) 0 46px, transparent 47px); background-color: #0b0a0a; background-attachment: fixed; }
+[data-theme="ploca"] .big .value, [data-theme="ploca"] .detail .price { font-weight: 400; }
+[data-theme="ploca"] .chart .line { stroke-width: 1.5; }
+[data-theme="ploca"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ploca"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #efeded; --edge: #d3cfcf; --alt: #f4f3f4; --text1: #3c1f23; --text2: #695356; --faint: #928385; --up: #15803d; --down: #c81e1e; --accent: #ef4444; --hot: #f8e1e1; --tip: #3c1f23; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="ploca"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,240,0.35); box-shadow: none; }
+[data-theme="ploca"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 92% 92%, rgba(60,31,35,0.05) 0 1px, transparent 1px 4px), radial-gradient(circle at 92% 92%, rgba(239,68,68,0.35) 0 46px, transparent 47px); background-color: #f0f0f0; background-attachment: fixed; }

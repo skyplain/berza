@@ -1,0 +1,15 @@
+/* tema peščana plaža (Sandy beach): generisana, tools/teme.py */
+:root[data-theme="pescanaplaza"] { color-scheme: light; --back: #fdf3db; --card: #fefbf4; --head: #f2efe7; --edge: #ded4bc; --alt: #f8f5ed; --text1: #3d2f19; --text2: #6d604a; --faint: #92856f; --up: #15803d; --down: #c81e1e; --accent: #af7007; --hot: #f3e8d3; --tip: #3d2f19; --tipfg: #fdf3db; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="pescanaplaza"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="pescanaplaza"] .overview .left { align-self: start; }
+[data-theme="pescanaplaza"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pescanaplaza"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="pescanaplaza"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="pescanaplaza"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pescanaplaza"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(175,112,7,0.14) 9px 10px, transparent 11px 16px, rgba(175,112,7,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #fdf3db; background-attachment: fixed; }
+[data-theme="pescanaplaza"] .big .value, [data-theme="pescanaplaza"] .detail .price { font-weight: 200; }
+[data-theme="pescanaplaza"] .chart .line { stroke-width: 2; }
+[data-theme="pescanaplaza"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pescanaplaza"][data-scheme="dark"] { color-scheme: dark; --back: #232324; --card: #2e2e2f; --head: #3a393a; --edge: #444343; --alt: #343434; --text1: #f4ede3; --text2: #c0bab3; --faint: #908c87; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #4a3e2a; --tip: #f4ede3; --tipfg: #232324; --accentfg: #111111; }
+[data-theme="pescanaplaza"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(245,158,11,0.14) 9px 10px, transparent 11px 16px, rgba(245,158,11,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #232324; background-attachment: fixed; }

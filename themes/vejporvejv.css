@@ -1,0 +1,17 @@
+/* tema vejporvejv (Vaporwave): generisana, tools/teme.py */
+:root[data-theme="vejporvejv"] { color-scheme: dark; --back: #1a0b33; --card: #25173d; --head: #312448; --edge: #3d2f52; --alt: #2b1d42; --text1: #f5eaf3; --text2: #beb2c3; --faint: #8c7f97; --up: #4ade80; --down: #f87171; --accent: #ff71ce; --hot: #442451; --tip: #f5eaf3; --tipfg: #1a0b33; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="vejporvejv"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="vejporvejv"] .overview .left { align-self: start; }
+[data-theme="vejporvejv"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vejporvejv"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="vejporvejv"] .bar h1 { font-weight: 800; }
+[data-theme="vejporvejv"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="vejporvejv"] body { background: linear-gradient(180deg, transparent 55%, rgba(255,113,206,0.35) 75%, rgba(206,255,113,0.3) 78%, transparent 78.4%); background-color: #1a0b33; background-attachment: fixed; }
+[data-theme="vejporvejv"] body::before { content: ""; position: fixed; left: -50%; right: -50%; bottom: 0; height: 22vh; z-index: -1; background: repeating-linear-gradient(90deg, rgba(255,113,206,0.45) 0 2px, transparent 2px 60px), repeating-linear-gradient(0deg, rgba(255,113,206,0.45) 0 2px, transparent 2px 30px); transform: perspective(300px) rotateX(60deg); transform-origin: bottom; }
+[data-theme="vejporvejv"] .big .value, [data-theme="vejporvejv"] .detail .price { font-weight: 700; }
+[data-theme="vejporvejv"] .chart .line { stroke-width: 2; }
+[data-theme="vejporvejv"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="vejporvejv"][data-scheme="light"] { color-scheme: light; --back: #f1f0f3; --card: #fbfafb; --head: #f0edf0; --edge: #d5d0d6; --alt: #f5f4f5; --text1: #3f273c; --text2: #6c596a; --faint: #948794; --up: #15803d; --down: #c81e1e; --accent: #c758a1; --hot: #f4e3ee; --tip: #3f273c; --tipfg: #f1f0f3; --accentfg: #111111; }
+[data-theme="vejporvejv"][data-scheme="light"] body { background: linear-gradient(180deg, transparent 55%, rgba(199,88,161,0.35) 75%, rgba(206,255,113,0.3) 78%, transparent 78.4%); background-color: #f1f0f3; background-attachment: fixed; }
+[data-theme="vejporvejv"][data-scheme="light"] body::before { content: ""; position: fixed; left: -50%; right: -50%; bottom: 0; height: 22vh; z-index: -1; background: repeating-linear-gradient(90deg, rgba(199,88,161,0.45) 0 2px, transparent 2px 60px), repeating-linear-gradient(0deg, rgba(199,88,161,0.45) 0 2px, transparent 2px 30px); transform: perspective(300px) rotateX(60deg); transform-origin: bottom; }

@@ -1,0 +1,12 @@
+/* tema til (Tulle): generisana, tools/teme.py */
+:root[data-theme="til"] { color-scheme: light; --back: #fffbfd; --card: #fff9fc; --head: #f3edf1; --edge: #e0dbde; --alt: #f9f3f6; --text1: #3e313d; --text2: #6e646d; --faint: #948a92; --up: #15803d; --down: #c81e1e; --accent: #b27998; --hot: #f4e7ee; --tip: #3e313d; --tipfg: #fffbfd; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="til"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="til"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="til"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="til"] body { background: radial-gradient(rgba(178,121,152,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #fffbfd; background-attachment: fixed; }
+[data-theme="til"] .big .value, [data-theme="til"] .detail .price { font-weight: 700; }
+[data-theme="til"] .chart .line { stroke-width: 2; }
+[data-theme="til"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="til"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3f; --edge: #444448; --alt: #343539; --text1: #f4eef3; --text2: #c0bcc0; --faint: #908d92; --up: #4ade80; --down: #f87171; --accent: #f9a8d4; --hot: #4a404a; --tip: #f4eef3; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="til"][data-scheme="dark"] body { background: radial-gradient(rgba(249,168,212,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #232428; background-attachment: fixed; }

@@ -1,0 +1,23 @@
+/* tema galaktičko jezgro (Galactic core): generisana, tools/teme.py */
+:root[data-theme="galaktickojezgro"] { color-scheme: dark; --back: #120a00; --card: #1e160d; --head: #2b231a; --edge: #362f25; --alt: #241d13; --text1: #f5f0e5; --text2: #bcb6ac; --faint: #888277; --up: #4ade80; --down: #f87171; --accent: #fbbf24; --hot: #3d2e10; --tip: #f5f0e5; --tipfg: #120a00; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="galaktickojezgro"] :is(.overview .left, .block, .detail, .list) { background: rgba(30,22,13,0.6); border: 1px solid rgba(245,240,229,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="galaktickojezgro"] .overview .left { align-self: start; }
+[data-theme="galaktickojezgro"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="galaktickojezgro"] button { border-radius: 999px; background: transparent; }
+[data-theme="galaktickojezgro"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="galaktickojezgro"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="galaktickojezgro"] .bar button { background: transparent; color: var(--back); border-color: rgba(18,10,0,0.35); box-shadow: none; }
+[data-theme="galaktickojezgro"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="galaktickojezgro"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(245,240,229,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(251,191,36,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(245,240,229,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(245,240,229,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(251,191,36,0.8), transparent); background-color: #120a00; background-attachment: fixed; }
+[data-theme="galaktickojezgro"] .big .value { text-shadow: 0 0 18px rgba(251,191,36,0.55); }
+[data-theme="galaktickojezgro"] .chart .line { filter: drop-shadow(0 0 5px rgba(251,191,36,0.7)); }
+[data-theme="galaktickojezgro"] .big .value, [data-theme="galaktickojezgro"] .detail .price { font-weight: 900; }
+[data-theme="galaktickojezgro"] .chart .line { stroke-width: 2; }
+[data-theme="galaktickojezgro"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="galaktickojezgro"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #f0eeed; --edge: #d4d2ce; --alt: #f5f4f3; --text1: #3e351d; --text2: #6b6452; --faint: #8d887a; --up: #15803d; --down: #c81e1e; --accent: #a67e18; --hot: #efe9da; --tip: #3e351d; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="galaktickojezgro"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,250,250,0.6); border: 1px solid rgba(62,53,29,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="galaktickojezgro"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }
+[data-theme="galaktickojezgro"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(62,53,29,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(166,126,24,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(62,53,29,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(62,53,29,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(166,126,24,0.8), transparent); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="galaktickojezgro"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(166,126,24,0.55); }
+[data-theme="galaktickojezgro"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(166,126,24,0.7)); }

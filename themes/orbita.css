@@ -1,0 +1,19 @@
+/* tema orbita (Orbit): generisana, tools/teme.py */
+:root[data-theme="orbita"] { color-scheme: dark; --back: #030814; --card: #101420; --head: #1d212d; --edge: #272d38; --alt: #161b26; --text1: #e5f0f6; --text2: #acb6be; --faint: #79818a; --up: #4ade80; --down: #f87171; --accent: #38bdf8; --hot: #162c3e; --tip: #e5f0f6; --tipfg: #030814; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="orbita"] :is(.overview .left, .block, .detail, .list) { background: #0b101c; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="orbita"] .overview .left { align-self: start; }
+[data-theme="orbita"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="orbita"] button { border: 0; }
+[data-theme="orbita"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="orbita"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="orbita"] .bar button { background: transparent; color: var(--back); border-color: rgba(3,8,20,0.35); box-shadow: none; }
+[data-theme="orbita"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="orbita"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(56,189,248,0.14) 60px 61px); background-color: #030814; background-attachment: fixed; }
+[data-theme="orbita"] .big .value, [data-theme="orbita"] .detail .price { font-weight: 700; }
+[data-theme="orbita"] .chart .line { stroke-width: 2; }
+[data-theme="orbita"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="orbita"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #edeef0; --edge: #ced2d5; --alt: #f3f4f6; --text1: #1b3544; --text2: #50646f; --faint: #798890; --up: #15803d; --down: #c81e1e; --accent: #2887b2; --hot: #ddeaf1; --tip: #1b3544; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="orbita"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #e9e9eb; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="orbita"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,241,0.35); box-shadow: none; }
+[data-theme="orbita"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(40,135,178,0.14) 60px 61px); background-color: #f0f0f1; background-attachment: fixed; }

@@ -1,0 +1,15 @@
+/* tema dame (Checkers): generisana, tools/teme.py */
+:root[data-theme="dame"] { color-scheme: light; --back: #fbf5ec; --card: #fefcf9; --head: #f2eeec; --edge: #dbd2cb; --alt: #f8f5f2; --text1: #33181c; --text2: #654f50; --faint: #938280; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f4ddda; --tip: #33181c; --tipfg: #fbf5ec; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="dame"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="dame"] .overview .left { align-self: start; }
+[data-theme="dame"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dame"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="dame"] .bar h1 { font-weight: 800; }
+[data-theme="dame"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="dame"] body { background: conic-gradient(rgba(51,24,28,0.07) 25%, transparent 0 50%, rgba(51,24,28,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #fbf5ec; background-attachment: fixed; }
+[data-theme="dame"] .big .value, [data-theme="dame"] .detail .price { font-weight: 700; }
+[data-theme="dame"] .chart .line { stroke-width: 2.5; }
+[data-theme="dame"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dame"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343336; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #443437; --tip: #efe3e5; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="dame"][data-scheme="dark"] body { background: conic-gradient(rgba(239,227,229,0.07) 25%, transparent 0 50%, rgba(239,227,229,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #232326; background-attachment: fixed; }

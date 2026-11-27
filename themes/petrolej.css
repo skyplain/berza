@@ -1,0 +1,28 @@
+/* tema petrolej (Petrol): generisana, tools/teme.py */
+:root[data-theme="petrolej"] { color-scheme: dark; --back: #04191a; --card: #112425; --head: #1e3031; --edge: #283a3b; --alt: #172a2b; --text1: #e2eaeb; --text2: #aab6b7; --faint: #778687; --up: #4ade80; --down: #f87171; --accent: #22817a; --hot: #133131; --tip: #e2eaeb; --tipfg: #04191a; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="petrolej"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="petrolej"] .overview .left { align-self: start; }
+[data-theme="petrolej"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="petrolej"] button { border-radius: 999px; }
+[data-theme="petrolej"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="petrolej"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="petrolej"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="petrolej"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="petrolej"] body { background: linear-gradient(180deg, rgba(34,129,122,0.1), transparent 380px); background-color: #04191a; background-attachment: fixed; }
+[data-theme="petrolej"] :is(.overview .left, .block, .detail, .list) { background: #112829; border-color: rgba(34,129,122,0.35); }
+[data-theme="petrolej"] .chart .line { stroke: #22817a !important; }
+[data-theme="petrolej"] .chart .area { fill: #22817a !important; }
+[data-theme="petrolej"] .chart .vol { fill: #22817a; }
+[data-theme="petrolej"] :is(h2, h3, .big .label) { color: #22817a; }
+[data-theme="petrolej"] .big .value, [data-theme="petrolej"] .detail .price { font-weight: 700; }
+[data-theme="petrolej"] .chart .line { stroke-width: 3; }
+[data-theme="petrolej"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="petrolej"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eceeef; --edge: #cdd1d1; --alt: #f3f5f5; --text1: #14282b; --text2: #4b5a5c; --faint: #7e888a; --up: #15803d; --down: #c81e1e; --accent: #0f766e; --hot: #d9e8e7; --tip: #14282b; --tipfg: #f0f1f1; --accentfg: #ffffff; }
+[data-theme="petrolej"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="petrolej"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(15,118,110,0.1), transparent 380px); background-color: #f0f1f1; background-attachment: fixed; }
+[data-theme="petrolej"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #eef4f4; border-color: rgba(15,118,110,0.35); }
+[data-theme="petrolej"][data-scheme="light"] .chart .line { stroke: #0f766e !important; }
+[data-theme="petrolej"][data-scheme="light"] .chart .area { fill: #0f766e !important; }
+[data-theme="petrolej"][data-scheme="light"] .chart .vol { fill: #0f766e; }
+[data-theme="petrolej"][data-scheme="light"] :is(h2, h3, .big .label) { color: #0f766e; }

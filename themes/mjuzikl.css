@@ -1,0 +1,15 @@
+/* tema mjuzikl (Musical): generisana, tools/teme.py */
+:root[data-theme="mjuzikl"] { color-scheme: dark; --back: #1a0010; --card: #250d1c; --head: #311a28; --edge: #3d2533; --alt: #2b1322; --text1: #f5e5ea; --text2: #beacb4; --faint: #8c7781; --up: #4ade80; --down: #f87171; --accent: #ff3366; --hot: #441226; --tip: #f5e5ea; --tipfg: #1a0010; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="mjuzikl"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="mjuzikl"] .overview .left { align-self: start; }
+[data-theme="mjuzikl"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mjuzikl"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="mjuzikl"] .bar h1 { font-weight: 800; }
+[data-theme="mjuzikl"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="mjuzikl"] .bar h1 { color: #ffadc2; text-shadow: 0 0 4px #ff3366, 0 0 12px #ff3366, 0 0 28px rgba(255,51,102,0.8); }
+[data-theme="mjuzikl"] .big .value, [data-theme="mjuzikl"] .detail .price { font-weight: 900; }
+[data-theme="mjuzikl"] .chart .line { stroke-width: 2.5; }
+[data-theme="mjuzikl"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="mjuzikl"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #f0edee; --edge: #d5ced1; --alt: #f5f3f5; --text1: #3f1c29; --text2: #6c515b; --faint: #948289; --up: #15803d; --down: #c81e1e; --accent: #eb2f5e; --hot: #f9dee5; --tip: #3f1c29; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="mjuzikl"][data-scheme="light"] .bar h1 { color: #f7acbf; text-shadow: 0 0 4px #eb2f5e, 0 0 12px #eb2f5e, 0 0 28px rgba(235,47,94,0.8); }

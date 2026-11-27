@@ -1,0 +1,17 @@
+/* tema bakar: bakarni metalni sjaj na tamnom, tanke linije */
+:root[data-theme="bakar"] { color-scheme: dark; --back: #16110e; --card: #1e1713; --head: #2a1f19; --edge: #4d3424; --alt: #1a1410; --text1: #f4e4d8; --text2: #d1a98a; --faint: #8f6c55; --up: #8fd18a; --down: #ff8a70; --accent: #d27d46; --hot: #2e2018; --tip: #d27d46; --tipfg: #16110e; --accentfg: #16110e; --font: "Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 2px; --h-color: #d27d46; --h-transform: uppercase; --h-spacing: .18em; --h-size: 12px; --h-weight: 600; --h-font: inherit; --big-font: inherit; --big-weight: 300; }
+[data-theme="bakar"] .bar { border-bottom:2px solid;border-image:linear-gradient(90deg,#7a3e1d,#f0a978,#b8622f,#f6c39d,#7a3e1d) 1 }
+[data-theme="bakar"] .bar h1 { background:linear-gradient(180deg,#f6c39d,#b8622f 55%,#7a3e1d);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;letter-spacing:.08em;text-transform:uppercase }
+[data-theme="bakar"] button { background:linear-gradient(180deg,#3a2a20,#241a14);border-color:#6b452e;color:#f0c5a3 }
+[data-theme="bakar"] .big .value { background:linear-gradient(180deg,#f6c39d,#d27d46);-webkit-background-clip:text;background-clip:text;color:transparent }
+[data-theme="bakar"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="bakar"] tbody tr { border-bottom:1px solid #2e2018 }
+[data-theme="bakar"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="bakar"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="bakar"][data-scheme="light"] { color-scheme: light; --back: #f0e8e4; --card: #e9ded9; --head: #e0d1c8; --edge: #ccad9a; --alt: #ece3de; --text1: #1c1209; --text2: #543317; --faint: #8f6c55; --up: #15803d; --down: #c81e1e; --accent: #bb682f; --hot: #e0cdc3; --tip: #bb682f; --tipfg: #131313; --accentfg: #111111; --h-color: #bb682f; }
+[data-theme="bakar"][data-scheme="light"] .bar { border-bottom:2px solid;border-image:linear-gradient(90deg,#cb8866,#532802,#a6511c,#3c1c00,#cb8866) 1 }
+[data-theme="bakar"][data-scheme="light"] .bar h1 { background:linear-gradient(180deg,#3c1c00,#a6511c 55%,#cb8866);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;letter-spacing:.08em;text-transform:uppercase }
+[data-theme="bakar"][data-scheme="light"] button { background:linear-gradient(180deg,#d4bfb3,#e6d8d0);border-color:#bc9178;color:#3d1c00 }
+[data-theme="bakar"][data-scheme="light"] .big .value { background:linear-gradient(180deg,#3c1c00,#bb682f);-webkit-background-clip:text;background-clip:text;color:transparent }
+[data-theme="bakar"][data-scheme="light"] tbody tr { border-bottom:1px solid #e0cdc3 }

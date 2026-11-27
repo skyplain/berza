@@ -1,0 +1,15 @@
+/* tema kuća na drvetu (Treehouse): generisana, tools/teme.py */
+:root[data-theme="kucanadrvetu"] { color-scheme: light; --back: #f1ead8; --card: #fbf9f3; --head: #eeede6; --edge: #d0ccba; --alt: #f5f3ed; --text1: #242c1d; --text2: #575c4c; --faint: #868777; --up: #15803d; --down: #c81e1e; --accent: #5e7e1f; --hot: #e5e8d5; --tip: #242c1d; --tipfg: #f1ead8; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="kucanadrvetu"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="kucanadrvetu"] .overview .left { align-self: start; }
+[data-theme="kucanadrvetu"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kucanadrvetu"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kucanadrvetu"] .bar h1 { font-weight: 800; }
+[data-theme="kucanadrvetu"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kucanadrvetu"] body { background: repeating-linear-gradient(90deg, rgba(94,126,31,0.07) 0 2px, transparent 2px 9px, rgba(94,126,31,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(94,126,31,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #f1ead8; background-attachment: fixed; }
+[data-theme="kucanadrvetu"] .big .value, [data-theme="kucanadrvetu"] .detail .price { font-weight: 400; }
+[data-theme="kucanadrvetu"] .chart .line { stroke-width: 2.5; }
+[data-theme="kucanadrvetu"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kucanadrvetu"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424243; --alt: #333334; --text1: #e9ece5; --text2: #b7bab5; --faint: #898b88; --up: #4ade80; --down: #f87171; --accent: #6b8e23; --hot: #363b2d; --tip: #e9ece5; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="kucanadrvetu"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(107,142,35,0.07) 0 2px, transparent 2px 9px, rgba(107,142,35,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(107,142,35,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #222224; background-attachment: fixed; }

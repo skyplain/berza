@@ -1,0 +1,19 @@
+/* tema crt plavi (Blue CRT): generisana, tools/teme.py */
+:root[data-theme="crtplavi"] { color-scheme: dark; --back: #142631; --card: #20313b; --head: #2c3d46; --edge: #364651; --alt: #263741; --text1: #e7f1f7; --text2: #b2bec6; --faint: #829098; --up: #4ade80; --down: #f87171; --accent: #4cc9ff; --hot: #264656; --tip: #e7f1f7; --tipfg: #142631; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="crtplavi"] :is(.overview .left, .block, .detail, .list) { background: #1b2d38; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="crtplavi"] .overview .left { align-self: start; }
+[data-theme="crtplavi"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="crtplavi"] button { border: 0; }
+[data-theme="crtplavi"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="crtplavi"] .bar h1 { font-weight: 800; }
+[data-theme="crtplavi"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="crtplavi"] body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 30; background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); }
+[data-theme="crtplavi"] .bar h1::after { content: "▌"; color: #4cc9ff; animation: tblink 1s steps(1) infinite; }
+@keyframes tblink { 50% { opacity: 0; } }
+[data-theme="crtplavi"] .big .value, [data-theme="crtplavi"] .detail .price { font-weight: 400; }
+[data-theme="crtplavi"] .chart .line { stroke-width: 2; }
+[data-theme="crtplavi"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="crtplavi"][data-scheme="light"] { color-scheme: light; --back: #edfaff; --card: #fafeff; --head: #edf2f4; --edge: #ccdbe1; --alt: #f3f8f9; --text1: #1f3745; --text2: #526874; --faint: #7a8d97; --up: #15803d; --down: #c81e1e; --accent: #3690b7; --hot: #dfeff5; --tip: #1f3745; --tipfg: #edfaff; --accentfg: #111111; }
+[data-theme="crtplavi"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #e6f3f8; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="crtplavi"][data-scheme="light"] .bar h1::after { content: "▌"; color: #3690b7; animation: tblink 1s steps(1) infinite; }

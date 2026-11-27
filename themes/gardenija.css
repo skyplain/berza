@@ -1,0 +1,13 @@
+/* tema gardenija (Gardenia): generisana, tools/teme.py */
+:root[data-theme="gardenija"] { color-scheme: light; --back: #fdfdf7; --card: #fafbf2; --head: #edefe5; --edge: #dadcd3; --alt: #f4f5eb; --text1: #233019; --text2: #5a6350; --faint: #8c9284; --up: #15803d; --down: #c81e1e; --accent: #5d960c; --hot: #e4edd2; --tip: #233019; --tipfg: #fdfdf7; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="gardenija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="gardenija"] .overview .left { align-self: start; }
+[data-theme="gardenija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gardenija"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="gardenija"] .bar h1 { font-size: 24px; }
+[data-theme="gardenija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="gardenija"] .big .value, [data-theme="gardenija"] .detail .price { font-weight: 700; }
+[data-theme="gardenija"] .chart .line { stroke-width: 2.5; }
+[data-theme="gardenija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="gardenija"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #434445; --alt: #343537; --text1: #e9eee3; --text2: #b8bcb4; --faint: #8a8d89; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #363f2d; --tip: #e9eee3; --tipfg: #232427; --accentfg: #111111; }

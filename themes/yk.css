@@ -1,0 +1,15 @@
+/* tema y2k (Y2K): generisana, tools/teme.py */
+:root[data-theme="yk"] { color-scheme: light; --back: #eef2ff; --card: #fafbff; --head: #edf0f4; --edge: #ced6e1; --alt: #f4f5f9; --text1: #284045; --text2: #5a6c74; --faint: #7f8e97; --up: #15803d; --down: #c81e1e; --accent: #468b8f; --hot: #e1ebef; --tip: #284045; --tipfg: #eef2ff; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="yk"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="yk"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="yk"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="yk"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="yk"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="yk"] .bar h1 { background: linear-gradient(180deg, #ffffff 0%, #b8c2cc 45%, #4b5563 50%, #e5e7eb 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: .5px rgba(40,64,69,0.4); }
+[data-theme="yk"] button { background: linear-gradient(180deg, #ffffff, #d1d5db 50%, #9ca3af 51%, #f3f4f6); color: #111111; }
+[data-theme="yk"] .big .value, [data-theme="yk"] .detail .price { font-weight: 700; }
+[data-theme="yk"] .chart .line { stroke-width: 1.5; }
+[data-theme="yk"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="yk"][data-scheme="dark"] { color-scheme: dark; --back: #222328; --card: #2d2e33; --head: #383a3f; --edge: #424449; --alt: #333439; --text1: #eaf4f7; --text2: #b8c0c3; --faint: #8a9094; --up: #4ade80; --down: #f87171; --accent: #7df9ff; --hot: #384a50; --tip: #eaf4f7; --tipfg: #222328; --accentfg: #111111; }
+[data-theme="yk"][data-scheme="dark"] .bar h1 { background: linear-gradient(180deg, #ffffff 0%, #b8c2cc 45%, #4b5563 50%, #e5e7eb 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: .5px rgba(234,244,247,0.4); }

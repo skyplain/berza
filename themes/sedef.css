@@ -1,0 +1,28 @@
+/* tema sedef (Mother of pearl): generisana, tools/teme.py */
+:root[data-theme="sedef"] { color-scheme: light; --back: #f7f7fb; --card: #fdfdfe; --head: #f0f1f2; --edge: #d7d7dc; --alt: #f7f7f8; --text1: #2c3038; --text2: #5f6269; --faint: #85888e; --up: #15803d; --down: #c81e1e; --accent: #7d8a9b; --hot: #ebedf0; --tip: #2c3038; --tipfg: #f7f7fb; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="sedef"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="sedef"] .overview .left { align-self: start; }
+[data-theme="sedef"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sedef"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="sedef"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sedef"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="sedef"] .bar button { background: transparent; color: var(--back); border-color: rgba(247,247,251,0.35); box-shadow: none; }
+[data-theme="sedef"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="sedef"] body { background: linear-gradient(180deg, rgba(125,138,155,0.1), transparent 380px), radial-gradient(ellipse 70% 40% at 20% 0, rgba(125,138,155,0.3), transparent 70%), radial-gradient(ellipse 60% 40% at 80% 10%, rgba(184,148,163,0.22), transparent 70%), radial-gradient(ellipse 50% 30% at 50% 100%, rgba(163,184,148,0.14), transparent 70%); background-color: #f7f7fb; background-attachment: fixed; }
+[data-theme="sedef"] :is(.overview .left, .block, .detail, .list) { background: #f8f8fa; border-color: rgba(125,138,155,0.35); }
+[data-theme="sedef"] .chart .line { stroke: #7d8a9b !important; }
+[data-theme="sedef"] .chart .area { fill: #7d8a9b !important; }
+[data-theme="sedef"] .chart .vol { fill: #7d8a9b; }
+[data-theme="sedef"] :is(h2, h3, .big .label) { color: #7d8a9b; }
+[data-theme="sedef"] .big .value, [data-theme="sedef"] .detail .price { font-weight: 700; }
+[data-theme="sedef"] .chart .line { stroke-width: 2; }
+[data-theme="sedef"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sedef"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #434448; --alt: #343539; --text1: #eceef1; --text2: #babcbf; --faint: #8c8d91; --up: #4ade80; --down: #f87171; --accent: #94a3b8; --hot: #3c3f46; --tip: #eceef1; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="sedef"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="sedef"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(148,163,184,0.1), transparent 380px), radial-gradient(ellipse 70% 40% at 20% 0, rgba(148,163,184,0.3), transparent 70%), radial-gradient(ellipse 60% 40% at 80% 10%, rgba(184,148,163,0.22), transparent 70%), radial-gradient(ellipse 50% 30% at 50% 100%, rgba(163,184,148,0.14), transparent 70%); background-color: #232428; background-attachment: fixed; }
+[data-theme="sedef"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #33353a; border-color: rgba(148,163,184,0.35); }
+[data-theme="sedef"][data-scheme="dark"] .chart .line { stroke: #94a3b8 !important; }
+[data-theme="sedef"][data-scheme="dark"] .chart .area { fill: #94a3b8 !important; }
+[data-theme="sedef"][data-scheme="dark"] .chart .vol { fill: #94a3b8; }
+[data-theme="sedef"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #94a3b8; }

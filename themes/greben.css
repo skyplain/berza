@@ -1,0 +1,17 @@
+/* tema greben: generisana (paleta + oblik 2/1/4/1) */
+:root[data-theme="greben"] { color-scheme: light; --back: #e9fbff; --card: #ffffff; --head: #f0f3f3; --edge: #c4dbe0; --alt: #f7f9f9; --text1: #00303d; --text2: #416973; --faint: #74969e; --up: #15803d; --down: #c81e1e; --accent: #f0653a; --hot: #fde9e3; --tip: #00303d; --tipfg: #e9fbff; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 6px; }
+[data-theme="greben"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="greben"] .overview .left { align-self: start; }
+[data-theme="greben"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="greben"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="greben"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="greben"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="greben"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="greben"] body { background: radial-gradient(#d2e7ec 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #e9fbff; background-attachment: fixed; }
+[data-theme="greben"] .big .value, [data-theme="greben"] .detail .price { font-weight: 700; }
+[data-theme="greben"] .chart .line { stroke-width: 3; }
+[data-theme="greben"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="greben"][data-scheme="dark"] { color-scheme: dark; --back: #020c0f; --card: #060606; --head: #0b0d0d; --edge: #112427; --alt: #080909; --text1: #a3d1e1; --text2: #668f9a; --faint: #486a72; --up: #4ade80; --down: #f87171; --accent: #f0653a; --hot: #190c08; --tip: #a3d1e1; --tipfg: #020c0f; --accentfg: #111111; }
+[data-theme="greben"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="greben"][data-scheme="dark"] body { background: radial-gradient(#0a1a1e 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #020c0f; background-attachment: fixed; }

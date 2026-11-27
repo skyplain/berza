@@ -1,0 +1,17 @@
+/* tema pulsar: generisana (paleta + oblik 6/1/0/5) */
+:root[data-theme="pulsar"] { color-scheme: dark; --back: #000814; --card: #001d3d; --head: #0d2a49; --edge: #242d3a; --alt: #072343; --text1: #e0f2ff; --text2: #a1b0bd; --faint: #707d8a; --up: #4ade80; --down: #f87171; --accent: #ffd60a; --hot: #243736; --tip: #e0f2ff; --tipfg: #000814; --accentfg: #111111; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 0px; }
+[data-theme="pulsar"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="pulsar"] .overview .left { align-self: start; }
+[data-theme="pulsar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pulsar"] button { border-radius: 0; }
+[data-theme="pulsar"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pulsar"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="pulsar"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="pulsar"] body { background: linear-gradient(180deg, #1a1d13, #000814 420px); background-color: #000814; background-attachment: fixed; }
+[data-theme="pulsar"] .big .value, [data-theme="pulsar"] .detail .price { font-weight: 700; }
+[data-theme="pulsar"] .chart .line { stroke-width: 2; }
+[data-theme="pulsar"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="pulsar"][data-scheme="light"] { color-scheme: light; --back: #f9fcff; --card: #c2ddfe; --head: #accdf5; --edge: #bbc7d8; --alt: #b6d5fd; --text1: #051119; --text2: #35424c; --faint: #636f7c; --up: #15803d; --down: #c81e1e; --accent: #927a0b; --hot: #adc3c2; --tip: #051119; --tipfg: #f9fcff; --accentfg: #111111; }
+[data-theme="pulsar"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="pulsar"][data-scheme="light"] body { background: linear-gradient(180deg, #dadfd1, #f9fcff 420px); background-color: #f9fcff; background-attachment: fixed; }

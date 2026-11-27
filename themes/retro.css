@@ -1,0 +1,45 @@
+/* tema retro: siva radna površina devedesetih, reljefni okviri, plava naslovna traka */
+:root[data-theme="retro"] { color-scheme: light; --back: #008080; --card: #c0c0c0; --head: #c0c0c0; --edge: #808080; --alt: #b8b8b8; --text1: #000; --text2: #222; --faint: #505050; --up: #006400; --down: #b00000; --accent: #000080; --hot: #d8d8d8; --tip: #ffffe1; --tipfg: #000; --accentfg: #fff; --font: Tahoma, Verdana, "Segoe UI", sans-serif; --radius: 0; --raised: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px #808080, inset 2px 2px #dfdfdf; --sunken: inset -1px -1px #fff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; }
+[data-theme="retro"] body { font-size: 13px; }
+[data-theme="retro"] .app { background: #c0c0c0; box-shadow: var(--raised); padding: 3px 10px 10px; margin-top: 12px; }
+[data-theme="retro"] .bar { background: linear-gradient(90deg, #000080, #1084d0); color: #fff; margin: 0 -7px 12px; padding: 3px 4px 3px 8px; border: 0; }
+[data-theme="retro"] .bar h1 { font-size: 13px; font-weight: 700; }
+[data-theme="retro"] .bar h1 span { color: #fff; }
+[data-theme="retro"] .bar h1::before { content: "▤ "; }
+[data-theme="retro"] button { background: #c0c0c0; border: 0; box-shadow: var(--raised); padding: 3px 10px; color: #000; }
+[data-theme="retro"] button:hover { border: 0; }
+[data-theme="retro"] button:active, [data-theme="retro"] .chip.on { box-shadow: var(--sunken); background: #d4d4d4; color: #000; }
+[data-theme="retro"] .bar button { padding: 1px 8px; font-size: 12px; }
+[data-theme="retro"] .overview .left, [data-theme="retro"] .block, [data-theme="retro"] .detail { box-shadow: var(--sunken); background: #fff; padding: 10px 12px; }
+[data-theme="retro"] .overview .left { align-self: start; }
+[data-theme="retro"] .two .block, [data-theme="retro"] .block .block { box-shadow: none; padding: 0; }
+[data-theme="retro"] h2, [data-theme="retro"] h3, [data-theme="retro"] .big .label { color: #000; text-transform: none; letter-spacing: 0; font-size: 12px; font-weight: 700; }
+[data-theme="retro"] .big .value { font-weight: 400; font-family: "Courier New", monospace; }
+[data-theme="retro"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="retro"] th { background: #c0c0c0; box-shadow: var(--raised); color: #000; border: 0; }
+[data-theme="retro"] .rows { box-shadow: var(--sunken); border: 0; background: #fff; }
+[data-theme="retro"] .rows thead th { background: #c0c0c0; }
+[data-theme="retro"] #search { box-shadow: var(--sunken); border: 0; background: #fff; }
+[data-theme="retro"] .rows tr.sel, [data-theme="retro"] .rows tr.sel.hot { background: #000080; }
+[data-theme="retro"] .chart .line { stroke-width: 1.5; shape-rendering: crispEdges; }
+[data-theme="retro"] .chart .area { opacity: .12; }
+[data-theme="retro"] footer { border-top: 0; box-shadow: var(--sunken); padding: 4px 8px; color: #000; }
+[data-theme="retro"] #themes { background: #c0c0c0; box-shadow: var(--raised); border: 0; }
+[data-theme="retro"] #themes .item:hover, [data-theme="retro"] #themes .item.focus { background: #000080; color: #fff; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="retro"][data-scheme="dark"] { color-scheme: dark; --back: #1a8a8a; --card: #313131; --head: #313131; --edge: #696969; --alt: #373737; --text1: #ffffff; --text2: #f9f9f9; --faint: #dddddd; --up: #b6f1cc; --down: #f9dddd; --accent: #d8e5ff; --hot: #1f1f1f; --tip: #090700; --tipfg: #ffffff; --accentfg: #111111; --raised: inset -1px -1px #f7f7f7, inset 1px 1px #060606, inset -2px -2px #696969, inset 2px 2px #1a1a1a; --sunken: inset -1px -1px #060606, inset 1px 1px #696969, inset -2px -2px #1a1a1a, inset 2px 2px #f7f7f7; }
+[data-theme="retro"][data-scheme="dark"] .app { background: #313131; box-shadow: var(--raised); padding: 3px 10px 10px; margin-top: 12px; }
+[data-theme="retro"][data-scheme="dark"] .bar { background: linear-gradient(90deg, #d8e5ff, #056fb2); color: #060606; margin: 0 -7px 12px; padding: 3px 4px 3px 8px; border: 0; }
+[data-theme="retro"][data-scheme="dark"] .bar h1 span { color: #060606; }
+[data-theme="retro"][data-scheme="dark"] button { background: #313131; border: 0; box-shadow: var(--raised); padding: 3px 10px; color: #ffffff; }
+[data-theme="retro"][data-scheme="dark"] button:active, [data-theme="retro"][data-scheme="dark"] .chip.on { box-shadow: var(--sunken); background: #222222; color: #ffffff; }
+[data-theme="retro"][data-scheme="dark"] .overview .left, [data-theme="retro"][data-scheme="dark"] .block, [data-theme="retro"][data-scheme="dark"] .detail { box-shadow: var(--sunken); background: #060606; padding: 10px 12px; }
+[data-theme="retro"][data-scheme="dark"] h2, [data-theme="retro"][data-scheme="dark"] h3, [data-theme="retro"][data-scheme="dark"] .big .label { color: #ffffff; text-transform: none; letter-spacing: 0; font-size: 12px; font-weight: 700; }
+[data-theme="retro"][data-scheme="dark"] th { background: #313131; box-shadow: var(--raised); color: #ffffff; border: 0; }
+[data-theme="retro"][data-scheme="dark"] .rows { box-shadow: var(--sunken); border: 0; background: #060606; }
+[data-theme="retro"][data-scheme="dark"] .rows thead th { background: #313131; }
+[data-theme="retro"][data-scheme="dark"] #search { box-shadow: var(--sunken); border: 0; background: #060606; }
+[data-theme="retro"][data-scheme="dark"] .rows tr.sel, [data-theme="retro"][data-scheme="dark"] .rows tr.sel.hot { background: #d8e5ff; }
+[data-theme="retro"][data-scheme="dark"] footer { border-top: 0; box-shadow: var(--sunken); padding: 4px 8px; color: #ffffff; }
+[data-theme="retro"][data-scheme="dark"] #themes { background: #313131; box-shadow: var(--raised); border: 0; }
+[data-theme="retro"][data-scheme="dark"] #themes .item:hover, [data-theme="retro"][data-scheme="dark"] #themes .item.focus { background: #d8e5ff; color: #060606; }

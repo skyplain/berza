@@ -1,0 +1,18 @@
+/* tema energija (Energy): generisana, tools/teme.py */
+:root[data-theme="energija"] { color-scheme: dark; --back: #0f0f0a; --card: #1b1b16; --head: #282822; --edge: #34332d; --alt: #22211c; --text1: #f4f1e4; --text2: #bbb8ae; --faint: #86857b; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #3a3416; --tip: #f4f1e4; --tipfg: #0f0f0a; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="energija"] :is(.overview .left, .block, .detail, .list) { background: rgba(27,27,22,0.6); border: 1px solid rgba(244,241,228,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="energija"] .overview .left { align-self: start; }
+[data-theme="energija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="energija"] button { border-radius: 999px; background: transparent; }
+[data-theme="energija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="energija"] .bar h1::after { content: " ↯"; color: #facc15; }
+[data-theme="energija"] .bar { position: relative; }
+[data-theme="energija"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="energija"] .big .value, [data-theme="energija"] .detail .price { font-weight: 400; }
+[data-theme="energija"] .chart .line { stroke-width: 3; }
+[data-theme="energija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="energija"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #f0efed; --edge: #d4d3ce; --alt: #f5f5f3; --text1: #3e381b; --text2: #6b6650; --faint: #8d8a79; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ede9d9; --tip: #3e381b; --tipfg: #f1f1f0; --accentfg: #111111; }
+[data-theme="energija"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,251,250,0.6); border: 1px solid rgba(62,56,27,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="energija"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #987b0d; }
+[data-theme="energija"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px; }

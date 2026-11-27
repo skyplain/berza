@@ -1,0 +1,17 @@
+/* tema matča late (Matcha latte): generisana, tools/teme.py */
+:root[data-theme="matcalate"] { color-scheme: light; --back: #f2f6e6; --card: #fbfcf8; --head: #eef0eb; --edge: #d1d6c5; --alt: #f5f6f1; --text1: #233019; --text2: #57624c; --faint: #868f7b; --up: #15803d; --down: #c81e1e; --accent: #5d960c; --hot: #e5eed7; --tip: #233019; --tipfg: #f2f6e6; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="matcalate"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="matcalate"] .overview .left { align-self: start; }
+[data-theme="matcalate"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="matcalate"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="matcalate"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="matcalate"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="matcalate"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="matcalate"] body { background: radial-gradient(ellipse 50% 220px at 50% 0, rgba(255,255,255,0.6), transparent 70%); background-color: #f2f6e6; background-attachment: fixed; }
+[data-theme="matcalate"] .bar h1::before { content: "☕ "; }
+[data-theme="matcalate"] .big .value, [data-theme="matcalate"] .detail .price { font-weight: 700; }
+[data-theme="matcalate"] .chart .line { stroke-width: 3; }
+[data-theme="matcalate"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="matcalate"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #383a3b; --edge: #424343; --alt: #333435; --text1: #e9eee3; --text2: #b7bbb4; --faint: #898d88; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #353e2b; --tip: #e9eee3; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="matcalate"][data-scheme="dark"] body { background: radial-gradient(ellipse 50% 220px at 50% 0, rgba(255,255,255,0.1), transparent 70%); background-color: #222325; background-attachment: fixed; }

@@ -1,0 +1,19 @@
+/* tema novine: papir boje lososa, serif, linije umesto okvira */
+:root[data-theme="novine"] { color-scheme: light; --back: #fdf0e3; --card: #fff7ef; --head: #f5e1cf; --edge: #d9c2ad; --alt: #f8e8da; --text1: #33302e; --text2: #5c544d; --faint: #8c7f74; --up: #0a7c5a; --down: #c0263a; --accent: #0f5499; --hot: #f2dcc8; --tip: #33302e; --tipfg: #fff7ef; --accentfg: #fff; --font: Georgia, "Times New Roman", serif; --radius: 0; }
+[data-theme="novine"] .bar { border-bottom: 3px double var(--text1); padding: 18px 0 12px; }
+[data-theme="novine"] .bar h1 { font-size: 34px; font-weight: 700; letter-spacing: -.01em; }
+[data-theme="novine"] .bar h1 span { font-style: italic; font-size: 17px; margin-left: 6px; }
+[data-theme="novine"] button { background: transparent; border-color: var(--text1); font-family: system-ui, sans-serif; font-size: 13px; }
+[data-theme="novine"] h2, [data-theme="novine"] h3, [data-theme="novine"] .big .label { text-transform: none; letter-spacing: 0; font-size: 19px; font-weight: 700; color: var(--text1); border-top: 4px solid var(--text1); padding-top: 6px; }
+[data-theme="novine"] .big .value { font-size: 52px; font-weight: 400; }
+[data-theme="novine"] .num, [data-theme="novine"] .chg, [data-theme="novine"] th, [data-theme="novine"] .kv .v { font-family: system-ui, -apple-system, sans-serif; }
+[data-theme="novine"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="novine"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="novine"] th { text-transform: uppercase; font-size: 11px; letter-spacing: .06em; border-bottom: 1px solid var(--text1); }
+[data-theme="novine"] .overview { column-gap: 40px; }
+[data-theme="novine"] .overview .right { border-left: 1px solid var(--edge); padding-left: 40px; }
+[data-theme="novine"] .news li { font-style: italic; }
+[data-theme="novine"] .rows { background: var(--card); }
+[data-theme="novine"] .detail .symbol { font-size: 40px; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="novine"][data-scheme="dark"] { color-scheme: dark; --back: #130b04; --card: #0d0804; --head: #201205; --edge: #392816; --alt: #1a0f06; --text1: #c3bfbd; --text2: #9c938b; --faint: #71655a; --up: #4ade80; --down: #f87171; --accent: #2566ac; --hot: #241506; --tip: #c3bfbd; --tipfg: #0d0804; --accentfg: #ffffff; }

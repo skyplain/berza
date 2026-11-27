@@ -1,0 +1,22 @@
+/* tema sintvejv: zalazak sunca osamdesetih, magenta i narandžasta, perspektivna mreža */
+:root[data-theme="sintvejv"] { color-scheme: dark; --back: #1a0b2e; --card: rgba(36,14,62,.75); --head: #2d1350; --edge: #5a2a8a; --alt: rgba(255,255,255,.03); --text1: #ffe8ff; --text2: #e0a8ff; --faint: #9d6cc9; --up: #00f0d0; --down: #ff3fa4; --accent: #ff3fa4; --hot: #3c1766; --tip: #ff3fa4; --tipfg: #1a0b2e; --accentfg: #1a0b2e; --font: "Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 6px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: 0 0 24px rgba(255,63,164,.15); --h-color: #ffb347; --h-transform: uppercase; --h-spacing: .2em; --h-size: 12px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 800; }
+[data-theme="sintvejv"] body { background:linear-gradient(180deg,#1a0b2e 0%,#3b0f4f 55%,#ff5f6d 78%,#ffb347 80%,#1a0b2e 80.2%) fixed #1a0b2e }
+[data-theme="sintvejv"] body::before { content:"";position:fixed;left:-50%;right:-50%;bottom:0;height:22vh;z-index:-1;background:repeating-linear-gradient(90deg,rgba(255,63,164,.5) 0 2px,transparent 2px 60px),repeating-linear-gradient(0deg,rgba(255,63,164,.5) 0 2px,transparent 2px 30px);transform:perspective(300px) rotateX(60deg);transform-origin:bottom }
+[data-theme="sintvejv"] .bar h1 { font-style:italic;font-weight:900;font-size:26px;text-transform:uppercase;background:linear-gradient(180deg,#ffe8ff 30%,#ff3fa4 60%,#ffb347);-webkit-background-clip:text;background-clip:text;color:transparent }
+[data-theme="sintvejv"] .big .value { font-style:italic;text-shadow:3px 3px 0 #ff3fa4 }
+[data-theme="sintvejv"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="sintvejv"] .chart .line { stroke-width:2.5;filter:drop-shadow(0 0 6px currentColor) }
+[data-theme="sintvejv"] .chart.up .line { color:#00f0d0 }
+[data-theme="sintvejv"] .chart.down .line { color:#ff3fa4 }
+[data-theme="sintvejv"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="sintvejv"] .overview .left { align-self: start; }
+[data-theme="sintvejv"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="sintvejv"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="sintvejv"][data-scheme="light"] { color-scheme: light; --back: #eae1fe; --card: rgba(226,211,254,.75); --head: #d6c5fd; --edge: #b88af2; --alt: rgba(6,6,6,.03); --text1: #160817; --text2: #460f5d; --faint: #7948a2; --up: #15803d; --down: #c81e1e; --accent: #dc1c89; --hot: #ccb1fe; --tip: #dc1c89; --tipfg: #f9f9fe; --accentfg: #ffffff; --panel-shadow: 0 0 24px rgba(220,28,137,.15); --h-color: #422700; }
+[data-theme="sintvejv"][data-scheme="light"] body { background:linear-gradient(180deg,#eae1fe 0%,#e4b7fe 55%,#930728 78%,#422700 80%,#eae1fe 80.2%) fixed #eae1fe }
+[data-theme="sintvejv"][data-scheme="light"] body::before { content:"";position:fixed;left:-50%;right:-50%;bottom:0;height:22vh;z-index:-1;background:repeating-linear-gradient(90deg,rgba(220,28,137,.5) 0 2px,transparent 2px 60px),repeating-linear-gradient(0deg,rgba(220,28,137,.5) 0 2px,transparent 2px 30px);transform:perspective(300px) rotateX(60deg);transform-origin:bottom }
+[data-theme="sintvejv"][data-scheme="light"] .bar h1 { font-style:italic;font-weight:900;font-size:26px;text-transform:uppercase;background:linear-gradient(180deg,#160817 30%,#dc1c89 60%,#422700);-webkit-background-clip:text;background-clip:text;color:transparent }
+[data-theme="sintvejv"][data-scheme="light"] .big .value { font-style:italic;text-shadow:3px 3px 0 #dc1c89 }
+[data-theme="sintvejv"][data-scheme="light"] .chart.up .line { color:#022d25 }
+[data-theme="sintvejv"][data-scheme="light"] .chart.down .line { color:#dc1c89 }

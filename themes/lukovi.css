@@ -1,0 +1,16 @@
+/* tema lukovi (Arches): generisana, tools/teme.py */
+:root[data-theme="lukovi"] { color-scheme: light; --back: #fbf3e4; --card: #fefbf7; --head: #f2eeea; --edge: #dcd3c3; --alt: #f8f5f0; --text1: #382818; --text2: #695b4b; --faint: #96897a; --up: #15803d; --down: #c81e1e; --accent: #c86d06; --hot: #f6e7d5; --tip: #382818; --tipfg: #fbf3e4; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="lukovi"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lukovi"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="lukovi"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lukovi"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="lukovi"] .bar button { background: transparent; color: var(--back); border-color: rgba(251,243,228,0.35); box-shadow: none; }
+[data-theme="lukovi"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="lukovi"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(200,109,6,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #fbf3e4; background-attachment: fixed; }
+[data-theme="lukovi"] .big .value, [data-theme="lukovi"] .detail .price { font-weight: 700; }
+[data-theme="lukovi"] .chart .line { stroke-width: 3; }
+[data-theme="lukovi"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lukovi"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444343; --alt: #343435; --text1: #f2eae3; --text2: #beb8b4; --faint: #8f8a88; --up: #4ade80; --down: #f87171; --accent: #d97706; --hot: #46382a; --tip: #f2eae3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="lukovi"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,35,37,0.35); box-shadow: none; }
+[data-theme="lukovi"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(217,119,6,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #232325; background-attachment: fixed; }

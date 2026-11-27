@@ -1,0 +1,34 @@
+/* tema neon: tamni gradijent, staklo, cijan i roze sjaj */
+:root[data-theme="neon"] { color-scheme: dark; --back: #0a0b1e; --card: rgba(255, 255, 255, .05); --head: rgba(255, 255, 255, .07); --edge: rgba(150, 160, 255, .18); --alt: rgba(255, 255, 255, .025); --text1: #eef0ff; --text2: #aab0e0; --faint: #6f76a8; --up: #3cf7a6; --down: #ff4f8b; --accent: #22d3ee; --hot: rgba(34, 211, 238, .14); --tip: #22d3ee; --tipfg: #06071a; --accentfg: #06071a; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="neon"] body { background: radial-gradient(1200px 700px at 10% -10%, #3a1c71 0%, transparent 60%), radial-gradient(900px 600px at 110% 10%, #0d4f73 0%, transparent 55%), #0a0b1e; background-attachment: fixed; }
+[data-theme="neon"] .bar h1 { font-size: 22px; font-weight: 800; letter-spacing: .02em; background: linear-gradient(90deg, #22d3ee, #c084fc, #ff4f8b); -webkit-background-clip: text; background-clip: text; color: transparent; }
+[data-theme="neon"] .bar h1 span { -webkit-text-fill-color: var(--text2); }
+[data-theme="neon"] button { backdrop-filter: blur(8px); }
+[data-theme="neon"] button:hover { box-shadow: 0 0 12px rgba(34, 211, 238, .6); }
+[data-theme="neon"] .overview .left, [data-theme="neon"] .block, [data-theme="neon"] .detail, [data-theme="neon"] .list { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 16px 18px; backdrop-filter: blur(14px); }
+[data-theme="neon"] .overview .left { align-self: start; }
+[data-theme="neon"] .two .block, [data-theme="neon"] .block .block { border: 0; padding: 0; background: none; backdrop-filter: none; }
+[data-theme="neon"] h2, [data-theme="neon"] h3, [data-theme="neon"] .big .label { color: var(--accent); letter-spacing: .14em; }
+[data-theme="neon"] .big .value { font-weight: 200; text-shadow: 0 0 24px rgba(34, 211, 238, .55); }
+[data-theme="neon"] .chg.up { text-shadow: 0 0 10px rgba(60, 247, 166, .5); }
+[data-theme="neon"] .chg.down { text-shadow: 0 0 10px rgba(255, 79, 139, .5); }
+[data-theme="neon"] .chart .line { stroke-width: 2.5; filter: drop-shadow(0 0 6px currentColor); }
+[data-theme="neon"] .chart.up .line { color: var(--up); }
+[data-theme="neon"] .chart.down .line { color: var(--down); }
+[data-theme="neon"] .chart .area { opacity: .2; }
+[data-theme="neon"] .rows { background: rgba(0, 0, 0, .25); }
+[data-theme="neon"] .rows thead th { background: #14163a; }
+[data-theme="neon"] #search { background: rgba(0, 0, 0, .3); }
+[data-theme="neon"] .rows tr.sel { box-shadow: 0 0 16px rgba(34, 211, 238, .5); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="neon"][data-scheme="light"] { color-scheme: light; --back: #eef1fe; --card: rgba(6,6,6,.05); --head: rgba(6,6,6,.07); --edge: rgba(53,53,138,.18); --alt: rgba(6,6,6,.025); --text1: #0c0d16; --text2: #33365e; --faint: #646a9b; --up: #15803d; --down: #c81e1e; --accent: #138fa2; --hot: rgba(19,143,162,.14); --tip: #138fa2; --tipfg: #141515; --accentfg: #111111; }
+[data-theme="neon"][data-scheme="light"] body { background: radial-gradient(1200px 700px at 10% -10%, #bfaffd 0%, transparent 60%), radial-gradient(900px 600px at 110% 10%, #6eaad3 0%, transparent 55%), #eef1fe; background-attachment: fixed; }
+[data-theme="neon"][data-scheme="light"] .bar h1 { font-size: 22px; font-weight: 800; letter-spacing: .02em; background: linear-gradient(90deg, #138fa2, #5f1c90, #950345); -webkit-background-clip: text; background-clip: text; color: transparent; }
+[data-theme="neon"][data-scheme="light"] button:hover { box-shadow: 0 0 12px rgba(19,143,162,.6); }
+[data-theme="neon"][data-scheme="light"] .big .value { font-weight: 200; text-shadow: 0 0 24px rgba(19,143,162,.55); }
+[data-theme="neon"][data-scheme="light"] .chg.up { text-shadow: 0 0 10px rgba(2,42,24,.5); }
+[data-theme="neon"][data-scheme="light"] .chg.down { text-shadow: 0 0 10px rgba(149,3,69,.5); }
+[data-theme="neon"][data-scheme="light"] .rows { background: rgba(255,255,255,.25); }
+[data-theme="neon"][data-scheme="light"] .rows thead th { background: #d5dbfe; }
+[data-theme="neon"][data-scheme="light"] #search { background: rgba(255,255,255,.3); }
+[data-theme="neon"][data-scheme="light"] .rows tr.sel { box-shadow: 0 0 16px rgba(19,143,162,.5); }

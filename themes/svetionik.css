@@ -1,0 +1,16 @@
+/* tema svetionik: generisana (paleta + oblik 0/1/4/3) */
+:root[data-theme="svetionik"] { color-scheme: light; --back: #f5f7fa; --card: #ffffff; --head: #f1f2f3; --edge: #d2d5da; --alt: #f8f8f9; --text1: #1a2433; --text2: #575f6b; --faint: #888e96; --up: #15803d; --down: #c81e1e; --accent: #d62828; --hot: #f9e1e1; --tip: #1a2433; --tipfg: #f5f7fa; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="svetionik"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svetionik"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="svetionik"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="svetionik"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="svetionik"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="svetionik"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="svetionik"] body { background: repeating-linear-gradient(45deg, rgba(26,36,51,0.03) 0 12px, transparent 12px 24px); background-color: #f5f7fa; background-attachment: fixed; }
+[data-theme="svetionik"] .big .value, [data-theme="svetionik"] .detail .price { font-weight: 200; }
+[data-theme="svetionik"] .chart .line { stroke-width: 3.5; }
+[data-theme="svetionik"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="svetionik"][data-scheme="dark"] { color-scheme: dark; --back: #090a0c; --card: #060606; --head: #0d0d0e; --edge: #1f2125; --alt: #09090a; --text1: #c5d3e7; --text2: #838c99; --faint: #60666e; --up: #4ade80; --down: #f87171; --accent: #d62828; --hot: #1e0f10; --tip: #c5d3e7; --tipfg: #090a0c; --accentfg: #ffffff; }
+[data-theme="svetionik"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="svetionik"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(197,211,231,0.03) 0 12px, transparent 12px 24px); background-color: #090a0c; background-attachment: fixed; }

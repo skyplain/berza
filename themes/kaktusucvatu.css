@@ -1,0 +1,15 @@
+/* tema kaktus u cvatu (Blooming cactus): generisana, tools/teme.py */
+:root[data-theme="kaktusucvatu"] { color-scheme: light; --back: #f6fbf2; --card: #fcfefb; --head: #f0f0ee; --edge: #d8d7d1; --alt: #f6f7f5; --text1: #3a1824; --text2: #695158; --faint: #948587; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #f8dee2; --tip: #3a1824; --tipfg: #f6fbf2; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="kaktusucvatu"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="kaktusucvatu"] .overview .left { align-self: start; }
+[data-theme="kaktusucvatu"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kaktusucvatu"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="kaktusucvatu"] .bar h1 { font-size: 24px; }
+[data-theme="kaktusucvatu"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kaktusucvatu"] body { background: radial-gradient(circle, rgba(58,24,36,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(58,24,36,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #f6fbf2; background-attachment: fixed; }
+[data-theme="kaktusucvatu"] .big .value, [data-theme="kaktusucvatu"] .detail .price { font-weight: 200; }
+[data-theme="kaktusucvatu"] .chart .line { stroke-width: 2.5; }
+[data-theme="kaktusucvatu"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kaktusucvatu"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #393a3d; --edge: #434346; --alt: #333437; --text1: #f2e3e8; --text2: #beb3b8; --faint: #8e878b; --up: #4ade80; --down: #f87171; --accent: #e4375e; --hot: #473038; --tip: #f2e3e8; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="kaktusucvatu"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(242,227,232,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(242,227,232,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #222427; background-attachment: fixed; }

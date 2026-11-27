@@ -1,0 +1,14 @@
+/* tema svod (Vault): generisana, tools/teme.py */
+:root[data-theme="svod"] { color-scheme: dark; --back: #1a1817; --card: #252423; --head: #31302f; --edge: #3b3939; --alt: #2b2a29; --text1: #e7e7e9; --text2: #b4b3b4; --faint: #858484; --up: #4ade80; --down: #f87171; --accent: #706e69; --hot: #302e2d; --tip: #e7e7e9; --tipfg: #1a1817; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="svod"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="svod"] .overview .left { align-self: start; }
+[data-theme="svod"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svod"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="svod"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(112,110,105,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #1a1817; background-attachment: fixed; }
+[data-theme="svod"] .big .value, [data-theme="svod"] .detail .price { font-weight: 200; }
+[data-theme="svod"] .chart .line { stroke-width: 2.5; }
+[data-theme="svod"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="svod"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #eeeeee; --edge: #d0d0d0; --alt: #f4f4f5; --text1: #212225; --text2: #555658; --faint: #858587; --up: #15803d; --down: #c81e1e; --accent: #57534e; --hot: #e4e3e3; --tip: #212225; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="svod"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="svod"][data-scheme="light"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(87,83,78,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #f1f1f1; background-attachment: fixed; }

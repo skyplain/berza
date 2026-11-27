@@ -1,0 +1,20 @@
+/* tema venčanje (Wedding): generisana, tools/teme.py */
+:root[data-theme="vencanje"] { color-scheme: light; --back: #fffdf9; --card: #fefbf4; --head: #f2efe7; --edge: #dedbd5; --alt: #f8f5ed; --text1: #322b19; --text2: #656051; --faint: #949085; --up: #15803d; --down: #c81e1e; --accent: #b8860b; --hot: #f4ebd3; --tip: #322b19; --tipfg: #fffdf9; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="vencanje"] :is(.overview .left, .block, .detail, .list) { background: rgba(254,251,244,0.6); border: 1px solid rgba(50,43,25,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="vencanje"] .overview .left { align-self: start; }
+[data-theme="vencanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vencanje"] button { border-radius: 999px; background: transparent; }
+[data-theme="vencanje"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="vencanje"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="vencanje"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="vencanje"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="vencanje"] body { background: radial-gradient(circle, transparent 3px, rgba(184,134,11,0.15) 4px 5px, transparent 6px) 0 0 / 16px 16px; background-color: #fffdf9; background-attachment: fixed; }
+[data-theme="vencanje"] .bar { position: relative; }
+[data-theme="vencanje"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -8px; height: 8px; background: radial-gradient(circle at 50% 0, rgba(184,134,11,0.5) 6px, transparent 7px) 0 0 / 14px 8px; }
+[data-theme="vencanje"] .big .value, [data-theme="vencanje"] .detail .price { font-weight: 400; }
+[data-theme="vencanje"] .chart .line { stroke-width: 3; }
+[data-theme="vencanje"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vencanje"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #444445; --alt: #343537; --text1: #efebe3; --text2: #bcb9b4; --faint: #8d8b89; --up: #4ade80; --down: #f87171; --accent: #b8860b; --hot: #413b2d; --tip: #efebe3; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="vencanje"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,47,50,0.6); border: 1px solid rgba(239,235,227,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="vencanje"][data-scheme="dark"] body { background: radial-gradient(circle, transparent 3px, rgba(184,134,11,0.15) 4px 5px, transparent 6px) 0 0 / 16px 16px; background-color: #232427; background-attachment: fixed; }

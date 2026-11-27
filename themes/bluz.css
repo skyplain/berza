@@ -1,0 +1,16 @@
+/* tema bluz (Blues): generisana, tools/teme.py */
+:root[data-theme="bluz"] { color-scheme: dark; --back: #060b1a; --card: #121725; --head: #1f2432; --edge: #2a2f3d; --alt: #181d2b; --text1: #e5ebf6; --text2: #adb3bf; --faint: #7a7f8c; --up: #4ade80; --down: #f87171; --accent: #3b82f6; --hot: #182642; --tip: #e5ebf6; --tipfg: #060b1a; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="bluz"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bluz"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="bluz"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bluz"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="bluz"] .bar button { background: transparent; color: var(--back); border-color: rgba(6,11,26,0.35); box-shadow: none; }
+[data-theme="bluz"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="bluz"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="bluz"] :is(h2, h3)::before { content: "♪ "; color: #3b82f6; }
+[data-theme="bluz"] .big .value, [data-theme="bluz"] .detail .price { font-weight: 900; }
+[data-theme="bluz"] .chart .line { stroke-width: 3; }
+[data-theme="bluz"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bluz"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #edeef0; --edge: #ced0d5; --alt: #f3f4f5; --text1: #1c2a43; --text2: #515c6e; --faint: #828997; --up: #15803d; --down: #c81e1e; --accent: #3b82f6; --hot: #dfe9fa; --tip: #1c2a43; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="bluz"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,241,0.35); box-shadow: none; }

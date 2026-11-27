@@ -1,0 +1,20 @@
+/* tema vile (Fairies): generisana, tools/teme.py */
+:root[data-theme="vile"] { color-scheme: light; --back: #fdf5ff; --card: #fefcff; --head: #f2eff4; --edge: #ded4e1; --alt: #f8f6f9; --text1: #3b2944; --text2: #6c5c73; --faint: #988b9e; --up: #15803d; --down: #c81e1e; --accent: #b45ec2; --hot: #f4e6f6; --tip: #3b2944; --tipfg: #fdf5ff; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="vile"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="vile"] .overview .left { align-self: start; }
+[data-theme="vile"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vile"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="vile"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="vile"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="vile"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="vile"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(59,41,68,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(180,94,194,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(59,41,68,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(59,41,68,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(180,94,194,0.8), transparent); background-color: #fdf5ff; background-attachment: fixed; }
+[data-theme="vile"] .big .value { text-shadow: 0 0 18px rgba(180,94,194,0.55); }
+[data-theme="vile"] .chart .line { filter: drop-shadow(0 0 5px rgba(180,94,194,0.7)); }
+[data-theme="vile"] .big .value, [data-theme="vile"] .detail .price { font-weight: 900; }
+[data-theme="vile"] .chart .line { stroke-width: 3; }
+[data-theme="vile"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vile"][data-scheme="dark"] { color-scheme: dark; --back: #232328; --card: #2e2e33; --head: #3a393f; --edge: #444349; --alt: #343439; --text1: #f3eaf6; --text2: #bfb8c2; --faint: #8f8a93; --up: #4ade80; --down: #f87171; --accent: #e879f9; --hot: #48384f; --tip: #f3eaf6; --tipfg: #232328; --accentfg: #111111; }
+[data-theme="vile"][data-scheme="dark"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(243,234,246,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(232,121,249,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(243,234,246,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(243,234,246,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(232,121,249,0.8), transparent); background-color: #232328; background-attachment: fixed; }
+[data-theme="vile"][data-scheme="dark"] .big .value { text-shadow: 0 0 18px rgba(232,121,249,0.55); }
+[data-theme="vile"][data-scheme="dark"] .chart .line { filter: drop-shadow(0 0 5px rgba(232,121,249,0.7)); }

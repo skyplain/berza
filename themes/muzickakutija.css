@@ -1,0 +1,19 @@
+/* tema muzička kutija (Music box): generisana, tools/teme.py */
+:root[data-theme="muzickakutija"] { color-scheme: light; --back: #fff6f8; --card: #fffcfd; --head: #f3eef0; --edge: #dfd3d7; --alt: #f9f5f7; --text1: #391a2c; --text2: #6a515f; --faint: #98848e; --up: #15803d; --down: #c81e1e; --accent: #db2777; --hot: #fadeea; --tip: #391a2c; --tipfg: #fff6f8; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="muzickakutija"] :is(.overview .left, .block, .detail, .list) { background: rgba(255,252,253,0.6); border: 1px solid rgba(57,26,44,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="muzickakutija"] .overview .left { align-self: start; }
+[data-theme="muzickakutija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="muzickakutija"] button { border-radius: 999px; background: transparent; }
+[data-theme="muzickakutija"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="muzickakutija"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="muzickakutija"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="muzickakutija"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="muzickakutija"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="muzickakutija"] :is(h2, h3)::before { content: "♪ "; color: #db2777; }
+[data-theme="muzickakutija"] .big .value, [data-theme="muzickakutija"] .detail .price { font-weight: 400; }
+[data-theme="muzickakutija"] .chart .line { stroke-width: 2.5; }
+[data-theme="muzickakutija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="muzickakutija"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444247; --alt: #343338; --text1: #f2e4ec; --text2: #beb4bb; --faint: #8f878d; --up: #4ade80; --down: #f87171; --accent: #df4087; --hot: #47313e; --tip: #f2e4ec; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="muzickakutija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,46,50,0.6); border: 1px solid rgba(242,228,236,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="muzickakutija"][data-scheme="dark"] :is(h2, h3)::before { content: "♪ "; color: #df4087; }

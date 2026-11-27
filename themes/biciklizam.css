@@ -1,0 +1,20 @@
+/* tema biciklizam (Cycling): generisana, tools/teme.py */
+:root[data-theme="biciklizam"] { color-scheme: light; --back: #fffae3; --card: #fff9df; --head: #f3edd3; --edge: #e0dbc3; --alt: #f9f3d9; --text1: #3e381b; --text2: #6e684d; --faint: #948e73; --up: #15803d; --down: #c81e1e; --accent: #a5860e; --hot: #f2e9c2; --tip: #3e381b; --tipfg: #fffae3; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="biciklizam"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="biciklizam"] .overview .left { align-self: start; }
+[data-theme="biciklizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="biciklizam"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="biciklizam"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="biciklizam"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="biciklizam"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="biciklizam"] body { background: linear-gradient(125deg, rgba(165,134,14,0.13) 0 28%, transparent 28%); background-color: #fffae3; background-attachment: fixed; }
+[data-theme="biciklizam"] :is(h2, h3) { border-left: 8px solid #a5860e; padding-left: 8px; }
+[data-theme="biciklizam"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="biciklizam"] .big .value, [data-theme="biciklizam"] .detail .price { font-weight: 400; }
+[data-theme="biciklizam"] .chart .line { stroke-width: 2.5; }
+[data-theme="biciklizam"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="biciklizam"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #3a3b3b; --edge: #444544; --alt: #343535; --text1: #f4f1e4; --text2: #c0beb4; --faint: #908f88; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #4b452c; --tip: #f4f1e4; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="biciklizam"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="biciklizam"][data-scheme="dark"] body { background: linear-gradient(125deg, rgba(250,204,21,0.13) 0 28%, transparent 28%); background-color: #232425; background-attachment: fixed; }
+[data-theme="biciklizam"][data-scheme="dark"] :is(h2, h3) { border-left: 8px solid #facc15; padding-left: 8px; }

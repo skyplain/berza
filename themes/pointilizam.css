@@ -1,0 +1,16 @@
+/* tema pointilizam (Pointillism): generisana, tools/teme.py */
+:root[data-theme="pointilizam"] { color-scheme: light; --back: #fdf5f3; --card: #fefcfb; --head: #f2efee; --edge: #ded4d2; --alt: #f8f6f5; --text1: #3b2726; --text2: #6c5a59; --faint: #988a88; --up: #15803d; --down: #c81e1e; --accent: #d5664b; --hot: #f8e7e2; --tip: #3b2726; --tipfg: #fdf5f3; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="pointilizam"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="pointilizam"] .overview .left { align-self: start; }
+[data-theme="pointilizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pointilizam"] button { border-radius: 0; }
+[data-theme="pointilizam"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="pointilizam"] .bar h1 { font-size: 24px; }
+[data-theme="pointilizam"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="pointilizam"] body { background: radial-gradient(rgba(213,102,75,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(81,231,111,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(111,81,231,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #fdf5f3; background-attachment: fixed; }
+[data-theme="pointilizam"] .big .value, [data-theme="pointilizam"] .detail .price { font-weight: 400; }
+[data-theme="pointilizam"] .chart .line { stroke-width: 3; }
+[data-theme="pointilizam"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pointilizam"][data-scheme="dark"] { color-scheme: dark; --back: #231717; --card: #2e2323; --head: #3a2f2f; --edge: #443939; --alt: #342929; --text1: #f3e9e9; --text2: #bfb4b4; --faint: #8f8484; --up: #4ade80; --down: #f87171; --accent: #e76f51; --hot: #482e29; --tip: #f3e9e9; --tipfg: #231717; --accentfg: #111111; }
+[data-theme="pointilizam"][data-scheme="dark"] body { background: radial-gradient(rgba(231,111,81,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(81,231,111,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(111,81,231,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #231717; background-attachment: fixed; }

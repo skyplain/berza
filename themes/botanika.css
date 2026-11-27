@@ -1,0 +1,17 @@
+/* tema botanika (Botany): generisana, tools/teme.py */
+:root[data-theme="botanika"] { color-scheme: light; --back: #f6f8ee; --card: #fcfdfa; --head: #eef0ed; --edge: #d2d7cd; --alt: #f5f7f4; --text1: #152a22; --text2: #4d5e55; --faint: #818d84; --up: #15803d; --down: #c81e1e; --accent: #15803d; --hot: #dcece0; --tip: #152a22; --tipfg: #f6f8ee; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="botanika"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="botanika"] .overview .left { align-self: start; }
+[data-theme="botanika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="botanika"] button { border-radius: 0; }
+[data-theme="botanika"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="botanika"] .bar h1 { font-weight: 800; }
+[data-theme="botanika"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="botanika"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="botanika"] body { background: radial-gradient(ellipse 8px 18px, rgba(21,128,61,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(21,128,61,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f6f8ee; background-attachment: fixed; }
+[data-theme="botanika"] .big .value, [data-theme="botanika"] .detail .price { font-weight: 900; }
+[data-theme="botanika"] .chart .line { stroke-width: 2.5; }
+[data-theme="botanika"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="botanika"][data-scheme="dark"] { color-scheme: dark; --back: #222426; --card: #2d2f31; --head: #383a3c; --edge: #414445; --alt: #323536; --text1: #e2ebe7; --text2: #b2b9b7; --faint: #868b8a; --up: #4ade80; --down: #f87171; --accent: #318f54; --hot: #2e3c36; --tip: #e2ebe7; --tipfg: #222426; --accentfg: #111111; }
+[data-theme="botanika"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(49,143,84,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(49,143,84,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222426; background-attachment: fixed; }

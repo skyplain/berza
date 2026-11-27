@@ -1,0 +1,29 @@
+/* tema bela (White): generisana, tools/teme.py */
+:root[data-theme="bela"] { color-scheme: light; --back: #eeeeee; --card: #fafafa; --head: #ececed; --edge: #cbcccc; --alt: #f3f3f3; --text1: #16171c; --text2: #4c4d50; --faint: #7e7e81; --up: #15803d; --down: #c81e1e; --accent: #18181b; --hot: #dadadb; --tip: #16171c; --tipfg: #eeeeee; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="bela"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bela"] .overview .left { align-self: start; }
+[data-theme="bela"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bela"] button { border-radius: 999px; }
+[data-theme="bela"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bela"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="bela"] .bar button { background: transparent; color: var(--back); border-color: rgba(238,238,238,0.35); box-shadow: none; }
+[data-theme="bela"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="bela"] body { background: linear-gradient(180deg, rgba(24,24,27,0.1), transparent 380px); background-color: #eeeeee; background-attachment: fixed; }
+[data-theme="bela"] :is(.overview .left, .block, .detail, .list) { background: #efefef; border-color: rgba(24,24,27,0.35); }
+[data-theme="bela"] .chart .line { stroke: #18181b !important; }
+[data-theme="bela"] .chart .area { fill: #18181b !important; }
+[data-theme="bela"] .chart .vol { fill: #18181b; }
+[data-theme="bela"] :is(h2, h3, .big .label) { color: #18181b; }
+[data-theme="bela"] .big .value, [data-theme="bela"] .detail .price { font-weight: 900; }
+[data-theme="bela"] .chart .line { stroke-width: 3; }
+[data-theme="bela"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bela"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #7d7d7f; --hot: #393a3e; --tip: #e2e2e4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="bela"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bela"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="bela"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(125,125,127,0.1), transparent 380px); background-color: #232428; background-attachment: fixed; }
+[data-theme="bela"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2d2e32; border-color: rgba(125,125,127,0.35); }
+[data-theme="bela"][data-scheme="dark"] .chart .line { stroke: #7d7d7f !important; }
+[data-theme="bela"][data-scheme="dark"] .chart .area { fill: #7d7d7f !important; }
+[data-theme="bela"][data-scheme="dark"] .chart .vol { fill: #7d7d7f; }
+[data-theme="bela"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #7d7d7f; }

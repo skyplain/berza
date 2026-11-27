@@ -1,0 +1,15 @@
+/* tema zalazak sunca (Sunset): generisana, tools/teme.py */
+:root[data-theme="zalazaksunca"] { color-scheme: light; --back: #fff2e6; --card: #fffbf8; --head: #f3eeeb; --edge: #e0d2c6; --alt: #f9f5f1; --text1: #3e281b; --text2: #6e5a4e; --faint: #9b897c; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f9e6d8; --tip: #3e281b; --tipfg: #fff2e6; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="zalazaksunca"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="zalazaksunca"] .overview .left { align-self: start; }
+[data-theme="zalazaksunca"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zalazaksunca"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="zalazaksunca"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="zalazaksunca"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="zalazaksunca"] body { background: linear-gradient(180deg, #fdceac 0, #e3f3d8 260px, #fff2e6 520px); background-color: #fff2e6; background-attachment: fixed; }
+[data-theme="zalazaksunca"] .big .value, [data-theme="zalazaksunca"] .detail .price { font-weight: 900; }
+[data-theme="zalazaksunca"] .chart .line { stroke-width: 3; }
+[data-theme="zalazaksunca"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zalazaksunca"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444344; --alt: #343435; --text1: #f4eae4; --text2: #c0b8b4; --faint: #908a88; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #4a382c; --tip: #f4eae4; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="zalazaksunca"][data-scheme="dark"] body { background: linear-gradient(180deg, #5f3921 0, #213d2e 260px, #232325 520px); background-color: #232325; background-attachment: fixed; }

@@ -1,0 +1,17 @@
+/* tema crvotočina (Wormhole): generisana, tools/teme.py */
+:root[data-theme="crvotocina"] { color-scheme: dark; --back: #04030f; --card: #11101b; --head: #1e1d28; --edge: #292834; --alt: #181722; --text1: #ebecf6; --text2: #b1b2bc; --faint: #7c7c87; --up: #4ade80; --down: #f87171; --accent: #818cf8; --hot: #21213a; --tip: #ebecf6; --tipfg: #04030f; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="crvotocina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="crvotocina"] .overview .left { align-self: start; }
+[data-theme="crvotocina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="crvotocina"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="crvotocina"] body { background: repeating-radial-gradient(ellipse 120% 60% at 50% 50%, transparent 0 22px, rgba(129,140,248,0.12) 22px 23px); background-color: #04030f; background-attachment: fixed; }
+[data-theme="crvotocina"] .big .value { text-shadow: 0 0 18px rgba(129,140,248,0.55); }
+[data-theme="crvotocina"] .chart .line { filter: drop-shadow(0 0 5px rgba(129,140,248,0.7)); }
+[data-theme="crvotocina"] .big .value, [data-theme="crvotocina"] .detail .price { font-weight: 900; }
+[data-theme="crvotocina"] .chart .line { stroke-width: 1.5; }
+[data-theme="crvotocina"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="crvotocina"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #edeef0; --edge: #d0d1d5; --alt: #f4f4f6; --text1: #282c44; --text2: #5a5d6f; --faint: #888a97; --up: #15803d; --down: #c81e1e; --accent: #6d77d2; --hot: #e6e8f5; --tip: #282c44; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="crvotocina"][data-scheme="light"] body { background: repeating-radial-gradient(ellipse 120% 60% at 50% 50%, transparent 0 22px, rgba(109,119,210,0.12) 22px 23px); background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="crvotocina"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(109,119,210,0.55); }
+[data-theme="crvotocina"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(109,119,210,0.7)); }

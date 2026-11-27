@@ -1,0 +1,18 @@
+/* tema pirotski ćilim (Pirot kilim): generisana, tools/teme.py */
+:root[data-theme="pirotskicilim"] { color-scheme: light; --back: #f6eadb; --card: #fcf9f4; --head: #f0ece7; --edge: #d7c8bc; --alt: #f6f2ee; --text1: #33181c; --text2: #644c4c; --faint: #917d78; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f3dad6; --tip: #33181c; --tipfg: #f6eadb; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="pirotskicilim"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="pirotskicilim"] .overview .left { align-self: start; }
+[data-theme="pirotskicilim"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pirotskicilim"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="pirotskicilim"] .bar h1 { font-size: 24px; }
+[data-theme="pirotskicilim"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pirotskicilim"] body { background: linear-gradient(135deg, rgba(185,28,28,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(225deg, rgba(185,28,28,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(315deg, rgba(185,28,28,0.11) 25%, transparent 25%) 0 0 / 40px 40px, linear-gradient(45deg, rgba(185,28,28,0.11) 25%, transparent 25%) 0 0 / 40px 40px; background-color: #f6eadb; background-attachment: fixed; }
+[data-theme="pirotskicilim"] .bar { position: relative; }
+[data-theme="pirotskicilim"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #b91c1c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(225deg, #b91c1c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(90deg, rgba(28,185,28,0.8), rgba(28,28,185,0.8)); }
+[data-theme="pirotskicilim"] .big .value, [data-theme="pirotskicilim"] .detail .price { font-weight: 900; }
+[data-theme="pirotskicilim"] .chart .line { stroke-width: 3; }
+[data-theme="pirotskicilim"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pirotskicilim"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #434143; --alt: #333234; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8688; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #433435; --tip: #efe3e5; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="pirotskicilim"][data-scheme="dark"] body { background: linear-gradient(135deg, rgba(205,92,92,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(225deg, rgba(205,92,92,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(315deg, rgba(205,92,92,0.11) 25%, transparent 25%) 0 0 / 40px 40px, linear-gradient(45deg, rgba(205,92,92,0.11) 25%, transparent 25%) 0 0 / 40px 40px; background-color: #222224; background-attachment: fixed; }
+[data-theme="pirotskicilim"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #cd5c5c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(225deg, #cd5c5c 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(90deg, rgba(28,185,28,0.8), rgba(28,28,185,0.8)); }

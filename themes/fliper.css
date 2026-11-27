@@ -1,0 +1,18 @@
+/* tema fliper (Pinball): generisana, tools/teme.py */
+:root[data-theme="fliper"] { color-scheme: dark; --back: #2d152c; --card: #382137; --head: #432d42; --edge: #4d374c; --alt: #3e273d; --text1: #f5e7f4; --text2: #c3b2c2; --faint: #958294; --up: #4ade80; --down: #f87171; --accent: #ff4fd8; --hot: #54274e; --tip: #f5e7f4; --tipfg: #2d152c; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 8px; }
+[data-theme="fliper"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fliper"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="fliper"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="fliper"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="fliper"] .bar button { background: transparent; color: var(--back); border-color: rgba(45,21,44,0.35); box-shadow: none; }
+[data-theme="fliper"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="fliper"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(245,231,244,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(255,79,216,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(245,231,244,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(245,231,244,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(255,79,216,0.8), transparent); background-color: #2d152c; background-attachment: fixed; }
+[data-theme="fliper"] .bar h1 { color: #ffb9ef; text-shadow: 0 0 4px #ff4fd8, 0 0 12px #ff4fd8, 0 0 28px rgba(255,79,216,0.8); }
+[data-theme="fliper"] .big .value, [data-theme="fliper"] .detail .price { font-weight: 200; }
+[data-theme="fliper"] .chart .line { stroke-width: 1.5; }
+[data-theme="fliper"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="fliper"][data-scheme="light"] { color-scheme: light; --back: #ffedfb; --card: #fffafe; --head: #f3edf2; --edge: #e0ccdd; --alt: #f9f3f8; --text1: #3f213e; --text2: #6f546d; --faint: #9b8399; --up: #15803d; --down: #c81e1e; --accent: #d843b7; --hot: #fae0f4; --tip: #3f213e; --tipfg: #ffedfb; --accentfg: #111111; }
+[data-theme="fliper"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,237,251,0.35); box-shadow: none; }
+[data-theme="fliper"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(63,33,62,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(216,67,183,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(63,33,62,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(63,33,62,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(216,67,183,0.8), transparent); background-color: #ffedfb; background-attachment: fixed; }
+[data-theme="fliper"][data-scheme="light"] .bar h1 { color: #efb4e2; text-shadow: 0 0 4px #d843b7, 0 0 12px #d843b7, 0 0 28px rgba(216,67,183,0.8); }

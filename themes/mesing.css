@@ -1,0 +1,19 @@
+/* tema mesing (Brass): generisana, tools/teme.py */
+:root[data-theme="mesing"] { color-scheme: dark; --back: #191306; --card: #241f12; --head: #302b1f; --edge: #3b3629; --alt: #2a2518; --text1: #efebe3; --text2: #bab5ac; --faint: #888379; --up: #4ade80; --down: #f87171; --accent: #b8860b; --hot: #392d11; --tip: #efebe3; --tipfg: #191306; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="mesing"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="mesing"] .overview .left { align-self: start; }
+[data-theme="mesing"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mesing"] button { border-radius: 999px; }
+[data-theme="mesing"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="mesing"] .bar h1 { font-size: 24px; }
+[data-theme="mesing"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="mesing"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.06), transparent 40%); background-color: #191306; background-attachment: fixed; }
+[data-theme="mesing"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #363125, #241f12); border: 1px solid rgba(239,235,227,0.18); }
+[data-theme="mesing"] .big .value, [data-theme="mesing"] .detail .price { font-weight: 900; }
+[data-theme="mesing"] .chart .line { stroke-width: 2.5; }
+[data-theme="mesing"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="mesing"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #efefec; --edge: #d2d1ce; --alt: #f5f5f3; --text1: #322b19; --text2: #625c4f; --faint: #8e8a80; --up: #15803d; --down: #c81e1e; --accent: #a97b0a; --hot: #f0e9d8; --tip: #322b19; --tipfg: #f1f1f0; --accentfg: #111111; }
+[data-theme="mesing"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mesing"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.4), transparent 40%); background-color: #f1f1f0; background-attachment: fixed; }
+[data-theme="mesing"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #fbfbfa, #fbfbfa); border: 1px solid rgba(50,43,25,0.18); }

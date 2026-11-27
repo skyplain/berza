@@ -1,0 +1,16 @@
+/* tema visibaba (Snowdrop): generisana, tools/teme.py */
+:root[data-theme="visibaba"] { color-scheme: light; --back: #fbfdfb; --card: #f6fbf7; --head: #e8efea; --edge: #d6dcd9; --alt: #eff5f1; --text1: #153024; --text2: #4e635a; --faint: #83928b; --up: #15803d; --down: #c81e1e; --accent: #16a34a; --hot: #d7efdf; --tip: #153024; --tipfg: #fbfdfb; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="visibaba"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="visibaba"] .overview .left { align-self: start; }
+[data-theme="visibaba"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="visibaba"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="visibaba"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="visibaba"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="visibaba"] body { background: radial-gradient(circle, rgba(22,163,74,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(22,163,74,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(22,163,74,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #fbfdfb; background-attachment: fixed; }
+[data-theme="visibaba"] .big .value, [data-theme="visibaba"] .detail .price { font-weight: 400; }
+[data-theme="visibaba"] .chart .line { stroke-width: 2; }
+[data-theme="visibaba"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="visibaba"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424447; --alt: #333538; --text1: #e2eee8; --text2: #b2bcb8; --faint: #868d8c; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #2b3f36; --tip: #e2eee8; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="visibaba"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="visibaba"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #232428; background-attachment: fixed; }

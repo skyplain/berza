@@ -1,0 +1,16 @@
+/* tema novogodišnji bal (New Year's ball): generisana, tools/teme.py */
+:root[data-theme="novogodisnjibal"] { color-scheme: dark; --back: #0c0c10; --card: #18181c; --head: #252529; --edge: #303034; --alt: #1e1e22; --text1: #ededf0; --text2: #b5b5b8; --faint: #818184; --up: #4ade80; --down: #f87171; --accent: #a1a1aa; --hot: #2b2b30; --tip: #ededf0; --tipfg: #0c0c10; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="novogodisnjibal"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="novogodisnjibal"] .overview .left { align-self: start; }
+[data-theme="novogodisnjibal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="novogodisnjibal"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="novogodisnjibal"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="novogodisnjibal"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="novogodisnjibal"] body { background: conic-gradient(from 45deg, rgba(255,255,255,0.08) 25%, transparent 0 50%, rgba(255,255,255,0.04) 0 75%, transparent 0) 0 0 / 16px 16px, radial-gradient(circle at 70% 20%, rgba(161,161,170,0.3), transparent 40%); background-color: #0c0c10; background-attachment: fixed; }
+[data-theme="novogodisnjibal"] .big .value, [data-theme="novogodisnjibal"] .detail .price { font-weight: 700; }
+[data-theme="novogodisnjibal"] .chart .line { stroke-width: 2.5; }
+[data-theme="novogodisnjibal"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="novogodisnjibal"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeeeef; --edge: #d1d1d3; --alt: #f4f4f5; --text1: #2e3036; --text2: #5e6065; --faint: #848589; --up: #15803d; --down: #c81e1e; --accent: #7d7d84; --hot: #e8e8ea; --tip: #2e3036; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="novogodisnjibal"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="novogodisnjibal"][data-scheme="light"] body { background: conic-gradient(from 45deg, rgba(255,255,255,0.08) 25%, transparent 0 50%, rgba(255,255,255,0.04) 0 75%, transparent 0) 0 0 / 16px 16px, radial-gradient(circle at 70% 20%, rgba(125,125,132,0.3), transparent 40%); background-color: #f0f0f1; background-attachment: fixed; }

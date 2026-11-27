@@ -1,0 +1,19 @@
+/* tema studenica (Studenica): generisana, tools/teme.py */
+:root[data-theme="studenica"] { color-scheme: light; --back: #efe4c9; --card: #faf7ef; --head: #eceae4; --edge: #ccc4b1; --alt: #f3f0e9; --text1: #171e36; --text2: #4d505b; --faint: #7f7d7d; --up: #15803d; --down: #c81e1e; --accent: #1e40af; --hot: #dbdde6; --tip: #171e36; --tipfg: #efe4c9; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="studenica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="studenica"] .overview .left { align-self: start; }
+[data-theme="studenica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="studenica"] button { border-radius: 999px; }
+[data-theme="studenica"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="studenica"] .bar h1 { font-weight: 800; }
+[data-theme="studenica"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="studenica"] body { background: radial-gradient(500px 300px at 20% 10%, rgba(200,150,60,.18), transparent 70%), radial-gradient(400px 300px at 90% 80%, rgba(30,64,175,0.12), transparent 70%), repeating-radial-gradient(circle at 40% 60%, rgba(23,30,54,0.02) 0 2px, transparent 2px 6px); background-color: #efe4c9; background-attachment: fixed; }
+[data-theme="studenica"] :is(.overview .left, .block, .detail, .list) { border: 2px solid #1e40af; border-radius: 0; }
+[data-theme="studenica"] .big .value, [data-theme="studenica"] .detail .price { font-weight: 900; }
+[data-theme="studenica"] .chart .line { stroke-width: 2.5; }
+[data-theme="studenica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="studenica"][data-scheme="dark"] { color-scheme: dark; --back: #222222; --card: #2d2d2d; --head: #383839; --edge: #414143; --alt: #323333; --text1: #e3e6f0; --text2: #b3b5bc; --faint: #86888d; --up: #4ade80; --down: #f87171; --accent: #647bc7; --hot: #353843; --tip: #e3e6f0; --tipfg: #222222; --accentfg: #111111; }
+[data-theme="studenica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="studenica"][data-scheme="dark"] body { background: radial-gradient(500px 300px at 20% 10%, rgba(200,150,60,.18), transparent 70%), radial-gradient(400px 300px at 90% 80%, rgba(100,123,199,0.12), transparent 70%), repeating-radial-gradient(circle at 40% 60%, rgba(227,230,240,0.02) 0 2px, transparent 2px 6px); background-color: #222222; background-attachment: fixed; }
+[data-theme="studenica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 2px solid #647bc7; border-radius: 0; }

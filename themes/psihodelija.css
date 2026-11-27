@@ -1,0 +1,16 @@
+/* tema psihodelija (Psychedelia): generisana, tools/teme.py */
+:root[data-theme="psihodelija"] { color-scheme: dark; --back: #22063a; --card: #2d1244; --head: #391f4f; --edge: #442a58; --alt: #331849; --text1: #f5e7f4; --text2: #c0afc6; --faint: #907b9b; --up: #4ade80; --down: #f87171; --accent: #ff4fd8; --hot: #4a1b59; --tip: #f5e7f4; --tipfg: #22063a; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="psihodelija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="psihodelija"] .overview .left { align-self: start; }
+[data-theme="psihodelija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="psihodelija"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="psihodelija"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="psihodelija"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="psihodelija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="psihodelija"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(255,79,216,0.07) 0 12deg, transparent 12deg 24deg); background-color: #22063a; background-attachment: fixed; }
+[data-theme="psihodelija"] .big .value, [data-theme="psihodelija"] .detail .price { font-weight: 900; }
+[data-theme="psihodelija"] .chart .line { stroke-width: 2; }
+[data-theme="psihodelija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="psihodelija"][data-scheme="light"] { color-scheme: light; --back: #f2f0f3; --card: #fbfafb; --head: #f0edf0; --edge: #d5cfd6; --alt: #f5f3f5; --text1: #3f213e; --text2: #6c556b; --faint: #958495; --up: #15803d; --down: #c81e1e; --accent: #d843b7; --hot: #f6e0f1; --tip: #3f213e; --tipfg: #f2f0f3; --accentfg: #111111; }
+[data-theme="psihodelija"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(216,67,183,0.07) 0 12deg, transparent 12deg 24deg); background-color: #f2f0f3; background-attachment: fixed; }

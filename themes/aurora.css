@@ -1,0 +1,19 @@
+/* tema polarna svetlost: generisana (paleta + oblik 4/1/4/7) */
+:root[data-theme="aurora"] { color-scheme: dark; --back: #04141c; --card: #0a2029; --head: #172d35; --edge: #273a3f; --alt: #10272f; --text1: #e0fff7; --text2: #a2bdba; --faint: #728a8a; --up: #4ade80; --down: #f87171; --accent: #2ee6a6; --hot: #0f3c3a; --tip: #e0fff7; --tipfg: #04141c; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 10px; }
+[data-theme="aurora"] :is(.overview .left, .block, .detail, .list) { background: rgba(10,32,41,0.6); border: 1px solid rgba(224,255,247,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="aurora"] .overview .left { align-self: start; }
+[data-theme="aurora"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="aurora"] button { border-radius: 999px; background: transparent; }
+[data-theme="aurora"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="aurora"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="aurora"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="aurora"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="aurora"] body { background: conic-gradient(rgba(224,255,247,0.025) 25%, transparent 0 50%, rgba(224,255,247,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #04141c; background-attachment: fixed; }
+[data-theme="aurora"] .big .value, [data-theme="aurora"] .detail .price { font-weight: 200; }
+[data-theme="aurora"] .chart .line { stroke-width: 3; }
+[data-theme="aurora"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="aurora"][data-scheme="light"] { color-scheme: light; --back: #d9effb; --card: #c5dfec; --head: #b5cfd9; --edge: #a7bec4; --alt: #bcd7e1; --text1: #000e0a; --text2: #263e3c; --faint: #536a6a; --up: #15803d; --down: #c81e1e; --accent: #168d64; --hot: #99c6c3; --tip: #000e0a; --tipfg: #d9effb; --accentfg: #111111; }
+[data-theme="aurora"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(197,223,236,0.6); border: 1px solid rgba(0,14,10,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="aurora"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="aurora"][data-scheme="light"] body { background: conic-gradient(rgba(0,14,10,0.025) 25%, transparent 0 50%, rgba(0,14,10,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #d9effb; background-attachment: fixed; }

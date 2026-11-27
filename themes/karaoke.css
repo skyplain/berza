@@ -1,0 +1,16 @@
+/* tema karaoke (Karaoke): generisana, tools/teme.py */
+:root[data-theme="karaoke"] { color-scheme: dark; --back: #100418; --card: #1c1124; --head: #291e30; --edge: #34283a; --alt: #22172a; --text1: #f3e6ef; --text2: #baaeb9; --faint: #867a88; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #391934; --tip: #f3e6ef; --tipfg: #100418; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="karaoke"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="karaoke"] .overview .left { align-self: start; }
+[data-theme="karaoke"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="karaoke"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="karaoke"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="karaoke"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="karaoke"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="karaoke"] .bar h1 { color: #f7b6d6; text-shadow: 0 0 4px #ec4899, 0 0 12px #ec4899, 0 0 28px rgba(236,72,153,0.8); }
+[data-theme="karaoke"] .big .value, [data-theme="karaoke"] .detail .price { font-weight: 200; }
+[data-theme="karaoke"] .chart .line { stroke-width: 3; }
+[data-theme="karaoke"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="karaoke"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #f0edef; --edge: #d4cfd2; --alt: #f5f3f5; --text1: #3c2032; --text2: #695462; --faint: #93848e; --up: #15803d; --down: #c81e1e; --accent: #d9428d; --hot: #f6e0ec; --tip: #3c2032; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="karaoke"][data-scheme="light"] .bar h1 { color: #f0b3d1; text-shadow: 0 0 4px #d9428d, 0 0 12px #d9428d, 0 0 28px rgba(217,66,141,0.8); }

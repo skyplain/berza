@@ -1,0 +1,16 @@
+/* tema tulipan: generisana (paleta + oblik 0/1/2/3) */
+:root[data-theme="tulipan"] { color-scheme: light; --back: #fff2f0; --card: #fffaf9; --head: #f4eceb; --edge: #e0cfcd; --alt: #f9f3f2; --text1: #401814; --text2: #755552; --faint: #a08582; --up: #15803d; --down: #c81e1e; --accent: #d62c3a; --hot: #f9ddde; --tip: #401814; --tipfg: #fff2f0; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 4px; }
+[data-theme="tulipan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tulipan"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="tulipan"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tulipan"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="tulipan"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tulipan"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="tulipan"] body { background: repeating-linear-gradient(45deg, rgba(64,24,20,0.03) 0 12px, transparent 12px 24px); background-color: #fff2f0; background-attachment: fixed; }
+[data-theme="tulipan"] .big .value, [data-theme="tulipan"] .detail .price { font-weight: 200; }
+[data-theme="tulipan"] .chart .line { stroke-width: 3; }
+[data-theme="tulipan"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="tulipan"][data-scheme="dark"] { color-scheme: dark; --back: #110908; --card: #090706; --head: #130e0e; --edge: #2b1f1d; --alt: #0e0a0a; --text1: #f5bfb7; --text2: #a4827e; --faint: #7a5e5c; --up: #4ade80; --down: #f87171; --accent: #d62c3a; --hot: #221011; --tip: #f5bfb7; --tipfg: #110908; --accentfg: #ffffff; }
+[data-theme="tulipan"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tulipan"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(245,191,183,0.03) 0 12px, transparent 12px 24px); background-color: #110908; background-attachment: fixed; }

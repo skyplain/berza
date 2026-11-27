@@ -1,0 +1,21 @@
+/* tema zlatno doba holivuda (Golden age): generisana, tools/teme.py */
+:root[data-theme="zlatnodobaholivuda"] { color-scheme: dark; --back: #141414; --card: #202020; --head: #2d2c2c; --edge: #373735; --alt: #262626; --text1: #f1ede5; --text2: #bab7b1; --faint: #878581; --up: #4ade80; --down: #f87171; --accent: #c9a227; --hot: #383221; --tip: #f1ede5; --tipfg: #141414; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="zlatnodobaholivuda"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zlatnodobaholivuda"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="zlatnodobaholivuda"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="zlatnodobaholivuda"] .bar h1 { font-weight: 800; }
+[data-theme="zlatnodobaholivuda"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="zlatnodobaholivuda"] body { background: repeating-linear-gradient(90deg, rgba(201,162,39,0.05) 0 1px, transparent 1px 26px); background-color: #141414; background-attachment: fixed; }
+[data-theme="zlatnodobaholivuda"] :is(.overview .left, .block, .detail, .list) { border: 1px solid #c9a227; outline: 1px solid rgba(201,162,39,0.5); outline-offset: 4px; }
+[data-theme="zlatnodobaholivuda"] .bar h1::before { content: "◆ "; color: #c9a227; }
+[data-theme="zlatnodobaholivuda"] .bar h1::after { content: " ◆"; color: #c9a227; }
+[data-theme="zlatnodobaholivuda"] :is(h2, h3) { letter-spacing: .3em; text-transform: uppercase; }
+[data-theme="zlatnodobaholivuda"] .big .value, [data-theme="zlatnodobaholivuda"] .detail .price { font-weight: 400; }
+[data-theme="zlatnodobaholivuda"] .chart .line { stroke-width: 2.5; }
+[data-theme="zlatnodobaholivuda"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zlatnodobaholivuda"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefee; --edge: #d3d2cf; --alt: #f5f5f4; --text1: #35301e; --text2: #646053; --faint: #88867b; --up: #15803d; --down: #c81e1e; --accent: #9c7e1e; --hot: #eeeadc; --tip: #35301e; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="zlatnodobaholivuda"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(156,126,30,0.05) 0 1px, transparent 1px 26px); background-color: #f1f1f1; background-attachment: fixed; }
+[data-theme="zlatnodobaholivuda"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 1px solid #9c7e1e; outline: 1px solid rgba(156,126,30,0.5); outline-offset: 4px; }
+[data-theme="zlatnodobaholivuda"][data-scheme="light"] .bar h1::before { content: "◆ "; color: #9c7e1e; }
+[data-theme="zlatnodobaholivuda"][data-scheme="light"] .bar h1::after { content: " ◆"; color: #9c7e1e; }

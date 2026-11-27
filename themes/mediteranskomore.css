@@ -1,0 +1,17 @@
+/* tema mediteransko more (Mediterranean sea): generisana, tools/teme.py */
+:root[data-theme="mediteranskomore"] { color-scheme: light; --back: #eff8ff; --card: #fafdff; --head: #ecf0f3; --edge: #ccd7e0; --alt: #f3f7f9; --text1: #122b3b; --text2: #495e6c; --faint: #7c8d99; --up: #15803d; --down: #c81e1e; --accent: #0284c7; --hot: #d7ecf7; --tip: #122b3b; --tipfg: #eff8ff; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="mediteranskomore"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mediteranskomore"] .overview .left { align-self: start; }
+[data-theme="mediteranskomore"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mediteranskomore"] button { border-radius: 999px; }
+[data-theme="mediteranskomore"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="mediteranskomore"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="mediteranskomore"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mediteranskomore"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(2,132,199,0.14) 9px 10px, transparent 11px 16px, rgba(2,132,199,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #eff8ff; background-attachment: fixed; }
+[data-theme="mediteranskomore"] .big .value, [data-theme="mediteranskomore"] .detail .price { font-weight: 900; }
+[data-theme="mediteranskomore"] .chart .line { stroke-width: 2.5; }
+[data-theme="mediteranskomore"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mediteranskomore"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414448; --alt: #323539; --text1: #e1ebf2; --text2: #b1b9c0; --faint: #858b91; --up: #4ade80; --down: #f87171; --accent: #0284c7; --hot: #273b48; --tip: #e1ebf2; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="mediteranskomore"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="mediteranskomore"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(2,132,199,0.14) 9px 10px, transparent 11px 16px, rgba(2,132,199,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222428; background-attachment: fixed; }

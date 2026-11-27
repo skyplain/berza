@@ -1,0 +1,18 @@
+/* tema plivanje (Swimming): generisana, tools/teme.py */
+:root[data-theme="plivanje"] { color-scheme: light; --back: #dff4fb; --card: #f5fcfe; --head: #e7eff2; --edge: #bed4dc; --alt: #eef6f8; --text1: #122b3b; --text2: #455d6b; --faint: #748b97; --up: #15803d; --down: #c81e1e; --accent: #0284c7; --hot: #d3ebf6; --tip: #122b3b; --tipfg: #dff4fb; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="plivanje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="plivanje"] .overview .left { align-self: start; }
+[data-theme="plivanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plivanje"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="plivanje"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="plivanje"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="plivanje"] .bar button { background: transparent; color: var(--back); border-color: rgba(223,244,251,0.35); box-shadow: none; }
+[data-theme="plivanje"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="plivanje"] body { background: repeating-linear-gradient(90deg, transparent 0 140px, rgba(2,132,199,0.3) 140px 144px), radial-gradient(ellipse 80px 30px at 30% 40%, rgba(255,255,255,0.35), transparent 70%) 0 0 / 220px 140px; background-color: #dff4fb; background-attachment: fixed; }
+[data-theme="plivanje"] .big .value, [data-theme="plivanje"] .detail .price { font-weight: 900; }
+[data-theme="plivanje"] .chart .line { stroke-width: 2.5; }
+[data-theme="plivanje"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plivanje"][data-scheme="dark"] { color-scheme: dark; --back: #202328; --card: #2b2e33; --head: #36393e; --edge: #3f4348; --alt: #303439; --text1: #e1ebf2; --text2: #b1b9c0; --faint: #848b91; --up: #4ade80; --down: #f87171; --accent: #0284c7; --hot: #253a48; --tip: #e1ebf2; --tipfg: #202328; --accentfg: #111111; }
+[data-theme="plivanje"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(32,35,40,0.35); box-shadow: none; }
+[data-theme="plivanje"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, transparent 0 140px, rgba(2,132,199,0.3) 140px 144px), radial-gradient(ellipse 80px 30px at 30% 40%, rgba(255,255,255,0.35), transparent 70%) 0 0 / 220px 140px; background-color: #202328; background-attachment: fixed; }

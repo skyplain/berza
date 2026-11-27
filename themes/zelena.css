@@ -1,0 +1,27 @@
+/* tema zelena (Green): generisana, tools/teme.py */
+:root[data-theme="zelena"] { color-scheme: light; --back: #e7f8ec; --card: #f8fdf9; --head: #eaf1ec; --edge: #c5d8cc; --alt: #f1f7f3; --text1: #153024; --text2: #4a6256; --faint: #7a9084; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #d8efe0; --tip: #153024; --tipfg: #e7f8ec; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="zelena"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zelena"] .overview .left { align-self: start; }
+[data-theme="zelena"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zelena"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zelena"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="zelena"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="zelena"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zelena"] body { background: linear-gradient(180deg, rgba(20,150,68,0.1), transparent 380px); background-color: #e7f8ec; background-attachment: fixed; }
+[data-theme="zelena"] :is(.overview .left, .block, .detail, .list) { background: #edf8f0; border-color: rgba(20,150,68,0.35); }
+[data-theme="zelena"] .chart .line { stroke: #149644 !important; }
+[data-theme="zelena"] .chart .area { fill: #149644 !important; }
+[data-theme="zelena"] .chart .vol { fill: #149644; }
+[data-theme="zelena"] :is(h2, h3, .big .label) { color: #149644; }
+[data-theme="zelena"] .big .value, [data-theme="zelena"] .detail .price { font-weight: 200; }
+[data-theme="zelena"] .chart .line { stroke-width: 2.5; }
+[data-theme="zelena"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zelena"][data-scheme="dark"] { color-scheme: dark; --back: #212426; --card: #2c2f31; --head: #373a3c; --edge: #404445; --alt: #313536; --text1: #e2eee8; --text2: #b2bcb8; --faint: #858d8b; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #293f34; --tip: #e2eee8; --tipfg: #212426; --accentfg: #111111; }
+[data-theme="zelena"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zelena"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(22,163,74,0.1), transparent 380px); background-color: #212426; background-attachment: fixed; }
+[data-theme="zelena"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2b3532; border-color: rgba(22,163,74,0.35); }
+[data-theme="zelena"][data-scheme="dark"] .chart .line { stroke: #16a34a !important; }
+[data-theme="zelena"][data-scheme="dark"] .chart .area { fill: #16a34a !important; }
+[data-theme="zelena"][data-scheme="dark"] .chart .vol { fill: #16a34a; }
+[data-theme="zelena"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #16a34a; }

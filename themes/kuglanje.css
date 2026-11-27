@@ -1,0 +1,15 @@
+/* tema kuglanje (Bowling): generisana, tools/teme.py */
+:root[data-theme="kuglanje"] { color-scheme: dark; --back: #100620; --card: #1c122b; --head: #281f37; --edge: #332a42; --alt: #221831; --text1: #ece5f5; --text2: #b5adc0; --faint: #827a8f; --up: #4ade80; --down: #f87171; --accent: #9333ea; --hot: #2d1746; --tip: #ece5f5; --tipfg: #100620; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="kuglanje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="kuglanje"] .overview .left { align-self: start; }
+[data-theme="kuglanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kuglanje"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kuglanje"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kuglanje"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kuglanje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kuglanje"] .bar h1 { color: #d4adf7; text-shadow: 0 0 4px #9333ea, 0 0 12px #9333ea, 0 0 28px rgba(147,51,234,0.8); }
+[data-theme="kuglanje"] .big .value, [data-theme="kuglanje"] .detail .price { font-weight: 200; }
+[data-theme="kuglanje"] .chart .line { stroke-width: 2; }
+[data-theme="kuglanje"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kuglanje"][data-scheme="light"] { color-scheme: light; --back: #f1f0f2; --card: #fbfafb; --head: #efedf0; --edge: #d1ced6; --alt: #f5f3f5; --text1: #2c1c41; --text2: #5d516d; --faint: #8b8296; --up: #15803d; --down: #c81e1e; --accent: #9333ea; --hot: #ecdef9; --tip: #2c1c41; --tipfg: #f1f0f2; --accentfg: #ffffff; }

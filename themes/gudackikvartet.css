@@ -1,0 +1,16 @@
+/* tema gudački kvartet (String quartet): generisana, tools/teme.py */
+:root[data-theme="gudackikvartet"] { color-scheme: light; --back: #f7efe4; --card: #fdfaf7; --head: #f0edea; --edge: #d6cdc4; --alt: #f7f3f0; --text1: #281b1a; --text2: #5c504c; --faint: #8b817b; --up: #15803d; --down: #c81e1e; --accent: #7c2d12; --hot: #ebddd7; --tip: #281b1a; --tipfg: #f7efe4; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="gudackikvartet"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gudackikvartet"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="gudackikvartet"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="gudackikvartet"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="gudackikvartet"] .bar button { background: transparent; color: var(--back); border-color: rgba(247,239,228,0.35); box-shadow: none; }
+[data-theme="gudackikvartet"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="gudackikvartet"] body { background: repeating-linear-gradient(90deg, rgba(124,45,18,0.07) 0 2px, transparent 2px 9px, rgba(124,45,18,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(124,45,18,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #f7efe4; background-attachment: fixed; }
+[data-theme="gudackikvartet"] .big .value, [data-theme="gudackikvartet"] .detail .price { font-weight: 900; }
+[data-theme="gudackikvartet"] .chart .line { stroke-width: 2.5; }
+[data-theme="gudackikvartet"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="gudackikvartet"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #434244; --alt: #343335; --text1: #eae4e4; --text2: #b8b4b4; --faint: #8a8788; --up: #4ade80; --down: #f87171; --accent: #a97463; --hot: #3f3837; --tip: #eae4e4; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="gudackikvartet"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,35,37,0.35); box-shadow: none; }
+[data-theme="gudackikvartet"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(169,116,99,0.07) 0 2px, transparent 2px 9px, rgba(169,116,99,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(169,116,99,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #232325; background-attachment: fixed; }

@@ -1,0 +1,15 @@
+/* tema filc (Felt): generisana, tools/teme.py */
+:root[data-theme="filc"] { color-scheme: dark; --back: #0b2a25; --card: #173530; --head: #23403b; --edge: #2d4945; --alt: #1d3a36; --text1: #e2eaeb; --text2: #acbaba; --faint: #7b8e8c; --up: #4ade80; --down: #f87171; --accent: #348b85; --hot: #1b413c; --tip: #e2eaeb; --tipfg: #0b2a25; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="filc"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="filc"] .overview .left { align-self: start; }
+[data-theme="filc"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="filc"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="filc"] .bar h1 { font-size: 24px; }
+[data-theme="filc"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="filc"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(226,234,235,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(226,234,235,0.03) 0 1px, transparent 1px 5px); background-color: #0b2a25; background-attachment: fixed; }
+[data-theme="filc"] .big .value, [data-theme="filc"] .detail .price { font-weight: 900; }
+[data-theme="filc"] .chart .line { stroke-width: 1.5; }
+[data-theme="filc"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="filc"][data-scheme="light"] { color-scheme: light; --back: #f0f2f2; --card: #fafbfb; --head: #eceeef; --edge: #cdd2d2; --alt: #f3f5f5; --text1: #14282b; --text2: #4b5a5d; --faint: #7e898b; --up: #15803d; --down: #c81e1e; --accent: #0f766e; --hot: #d9e8e7; --tip: #14282b; --tipfg: #f0f2f2; --accentfg: #ffffff; }
+[data-theme="filc"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(20,40,43,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(20,40,43,0.03) 0 1px, transparent 1px 5px); background-color: #f0f2f2; background-attachment: fixed; }

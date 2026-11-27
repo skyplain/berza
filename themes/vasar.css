@@ -1,0 +1,17 @@
+/* tema vašar (Funfair): generisana, tools/teme.py */
+:root[data-theme="vasar"] { color-scheme: light; --back: #fff6ea; --card: #fffcf9; --head: #f3efec; --edge: #e0d4ca; --alt: #f9f5f3; --text1: #3c1f23; --text2: #6d5555; --faint: #9a8683; --up: #15803d; --down: #c81e1e; --accent: #ef4444; --hot: #fde2e0; --tip: #3c1f23; --tipfg: #fff6ea; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="vasar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="vasar"] .overview .left { align-self: start; }
+[data-theme="vasar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vasar"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="vasar"] .bar h1 { font-weight: 800; }
+[data-theme="vasar"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="vasar"] body { background: repeating-linear-gradient(90deg, rgba(239,68,68,0.1) 0 40px, transparent 40px 80px); background-color: #fff6ea; background-attachment: fixed; }
+[data-theme="vasar"] .bar { position: relative; }
+[data-theme="vasar"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #ef4444 50%, transparent 50%) 0 0 / 24px 12px, linear-gradient(225deg, #44ef44 50%, transparent 50%) 12px 0 / 24px 12px; }
+[data-theme="vasar"] .big .value, [data-theme="vasar"] .detail .price { font-weight: 700; }
+[data-theme="vasar"] .chart .line { stroke-width: 1.5; }
+[data-theme="vasar"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vasar"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343436; --text1: #f4e6e8; --text2: #c0b5b8; --faint: #90888b; --up: #4ade80; --down: #f87171; --accent: #ef4444; --hot: #493134; --tip: #f4e6e8; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="vasar"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(239,68,68,0.1) 0 40px, transparent 40px 80px); background-color: #232326; background-attachment: fixed; }

@@ -1,0 +1,19 @@
+/* tema lapis lazuli (Lapis lazuli): generisana, tools/teme.py */
+:root[data-theme="lapislazuli"] { color-scheme: dark; --back: #06102e; --card: #121c38; --head: #1f2843; --edge: #29324d; --alt: #18223e; --text1: #e3e6f0; --text2: #acb0c0; --faint: #797f93; --up: #4ade80; --down: #f87171; --accent: #506ac0; --hot: #1b274b; --tip: #e3e6f0; --tipfg: #06102e; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="lapislazuli"] :is(.overview .left, .block, .detail, .list) { background: rgba(18,28,56,0.6); border: 1px solid rgba(227,230,240,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="lapislazuli"] .overview .left { align-self: start; }
+[data-theme="lapislazuli"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lapislazuli"] button { border-radius: 999px; background: transparent; }
+[data-theme="lapislazuli"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lapislazuli"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="lapislazuli"] .bar button { background: transparent; color: var(--back); border-color: rgba(6,16,46,0.35); box-shadow: none; }
+[data-theme="lapislazuli"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="lapislazuli"] body { background: radial-gradient(rgba(227,230,240,0.12) 1px, transparent 1.5px) 0 0 / 23px 23px, radial-gradient(rgba(80,106,192,0.15) 1px, transparent 1.5px) 7px 11px / 37px 37px, radial-gradient(rgba(227,230,240,0.1) 1px, transparent 1.5px) 19px 3px / 51px 51px; background-color: #06102e; background-attachment: fixed; }
+[data-theme="lapislazuli"] .big .value, [data-theme="lapislazuli"] .detail .price { font-weight: 400; }
+[data-theme="lapislazuli"] .chart .line { stroke-width: 2.5; }
+[data-theme="lapislazuli"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="lapislazuli"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #eceeef; --edge: #cdcfd4; --alt: #f3f4f5; --text1: #171e36; --text2: #4d5365; --faint: #7f8390; --up: #15803d; --down: #c81e1e; --accent: #1e40af; --hot: #dbe1f0; --tip: #171e36; --tipfg: #f0f1f2; --accentfg: #ffffff; }
+[data-theme="lapislazuli"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,251,0.6); border: 1px solid rgba(23,30,54,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="lapislazuli"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,241,242,0.35); box-shadow: none; }
+[data-theme="lapislazuli"][data-scheme="light"] body { background: radial-gradient(rgba(23,30,54,0.12) 1px, transparent 1.5px) 0 0 / 23px 23px, radial-gradient(rgba(30,64,175,0.15) 1px, transparent 1.5px) 7px 11px / 37px 37px, radial-gradient(rgba(23,30,54,0.1) 1px, transparent 1.5px) 19px 3px / 51px 51px; background-color: #f0f1f2; background-attachment: fixed; }

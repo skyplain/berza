@@ -1,0 +1,14 @@
+/* tema svetionik noću (Lighthouse at night): generisana, tools/teme.py */
+:root[data-theme="svetioniknocu"] { color-scheme: dark; --back: #06101f; --card: #121c2a; --head: #202935; --edge: #2c343f; --alt: #192230; --text1: #f5f2e8; --text2: #b9bab6; --faint: #828688; --up: #4ade80; --down: #f87171; --accent: #fde047; --hot: #33372e; --tip: #f5f2e8; --tipfg: #06101f; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="svetioniknocu"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="svetioniknocu"] .overview .left { align-self: start; }
+[data-theme="svetioniknocu"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svetioniknocu"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="svetioniknocu"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(253,224,71,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(253,224,71,0.14), transparent 15%); background-color: #06101f; background-attachment: fixed; }
+[data-theme="svetioniknocu"] .big .value, [data-theme="svetioniknocu"] .detail .price { font-weight: 400; }
+[data-theme="svetioniknocu"] .chart .line { stroke-width: 1.5; }
+[data-theme="svetioniknocu"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="svetioniknocu"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #efefee; --edge: #d4d4d1; --alt: #f4f5f5; --text1: #3f3b24; --text2: #6b6858; --faint: #8d8b7f; --up: #15803d; --down: #c81e1e; --accent: #8e7d28; --hot: #ebe9dd; --tip: #3f3b24; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="svetioniknocu"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="svetioniknocu"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(142,125,40,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(142,125,40,0.14), transparent 15%); background-color: #f0f1f2; background-attachment: fixed; }

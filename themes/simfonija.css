@@ -1,0 +1,17 @@
+/* tema simfonija (Symphony): generisana, tools/teme.py */
+:root[data-theme="simfonija"] { color-scheme: light; --back: #fbf9f4; --card: #fefdfc; --head: #f0efef; --edge: #d7d5d2; --alt: #f7f6f5; --text1: #171a22; --text2: #505256; --faint: #848587; --up: #15803d; --down: #c81e1e; --accent: #1e293b; --hot: #dfdfe1; --tip: #171a22; --tipfg: #fbf9f4; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="simfonija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="simfonija"] .overview .left { align-self: start; }
+[data-theme="simfonija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="simfonija"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="simfonija"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="simfonija"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="simfonija"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="simfonija"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="simfonija"] body { background: linear-gradient(180deg, rgba(23,26,34,0.14) 0 1px, transparent 1px 8px, rgba(23,26,34,0.14) 8px 9px, transparent 9px 16px, rgba(23,26,34,0.14) 16px 17px, transparent 17px 24px, rgba(23,26,34,0.14) 24px 25px, transparent 25px 32px, rgba(23,26,34,0.14) 32px 33px, transparent 33px) 0 20px / 100% 76px; background-color: #fbf9f4; background-attachment: fixed; }
+[data-theme="simfonija"] .big .value, [data-theme="simfonija"] .detail .price { font-weight: 700; }
+[data-theme="simfonija"] .chart .line { stroke-width: 2; }
+[data-theme="simfonija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="simfonija"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #424346; --alt: #333437; --text1: #e3e4e7; --text2: #b3b4b7; --faint: #87888b; --up: #4ade80; --down: #f87171; --accent: #777c87; --hot: #383a3e; --tip: #e3e4e7; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="simfonija"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(227,228,231,0.14) 0 1px, transparent 1px 8px, rgba(227,228,231,0.14) 8px 9px, transparent 9px 16px, rgba(227,228,231,0.14) 16px 17px, transparent 17px 24px, rgba(227,228,231,0.14) 24px 25px, transparent 25px 32px, rgba(227,228,231,0.14) 32px 33px, transparent 33px) 0 20px / 100% 76px; background-color: #232427; background-attachment: fixed; }

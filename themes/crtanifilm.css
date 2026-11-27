@@ -1,0 +1,18 @@
+/* tema crtani film (Cartoon): generisana, tools/teme.py */
+:root[data-theme="crtanifilm"] { color-scheme: light; --back: #fffae9; --card: #fff7e6; --head: #f3eadb; --edge: #e0d8ca; --alt: #f9f1e0; --text1: #3f2427; --text2: #6f5a58; --faint: #9b8b84; --up: #15803d; --down: #c81e1e; --accent: #eb5654; --hot: #fce0d2; --tip: #3f2427; --tipfg: #fffae9; --accentfg: #111111; --font: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive; --radius: 0px; }
+[data-theme="crtanifilm"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="crtanifilm"] .overview .left { align-self: start; }
+[data-theme="crtanifilm"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="crtanifilm"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="crtanifilm"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="crtanifilm"] .bar h1 { font-weight: 800; }
+[data-theme="crtanifilm"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="crtanifilm"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #3f2427; box-shadow: 6px 6px 0 #3f2427; border-radius: 6px; background: var(--card); }
+[data-theme="crtanifilm"] button { border: 2px solid #3f2427; box-shadow: 2px 2px 0 #3f2427; }
+[data-theme="crtanifilm"] .big .value, [data-theme="crtanifilm"] .detail .price { font-weight: 900; }
+[data-theme="crtanifilm"] .chart .line { stroke-width: 3; }
+[data-theme="crtanifilm"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="crtanifilm"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #454345; --alt: #343537; --text1: #f5e8ea; --text2: #c0b7b9; --faint: #908a8c; --up: #4ade80; --down: #f87171; --accent: #ff5e5b; --hot: #4b3637; --tip: #f5e8ea; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="crtanifilm"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #f5e8ea; box-shadow: 6px 6px 0 #f5e8ea; border-radius: 6px; background: var(--card); }
+[data-theme="crtanifilm"][data-scheme="dark"] button { border: 2px solid #f5e8ea; box-shadow: 2px 2px 0 #f5e8ea; }

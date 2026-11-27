@@ -1,0 +1,15 @@
+/* tema krečnjak (Limestone): generisana, tools/teme.py */
+:root[data-theme="krecnjak"] { color-scheme: light; --back: #f3f0e8; --card: #fbfaf8; --head: #efeeec; --edge: #d4d1cb; --alt: #f5f4f2; --text1: #2f3033; --text2: #606060; --faint: #858583; --up: #15803d; --down: #c81e1e; --accent: #847e7a; --hot: #eae9e6; --tip: #2f3033; --tipfg: #f3f0e8; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="krecnjak"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="krecnjak"] .overview .left { align-self: start; }
+[data-theme="krecnjak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="krecnjak"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="krecnjak"] .bar h1 { font-size: 24px; }
+[data-theme="krecnjak"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="krecnjak"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(47,48,51,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(47,48,51,0.03) 0 1px, transparent 1px 5px); background-color: #f3f0e8; background-attachment: fixed; }
+[data-theme="krecnjak"] .big .value, [data-theme="krecnjak"] .detail .price { font-weight: 200; }
+[data-theme="krecnjak"] .chart .line { stroke-width: 3; }
+[data-theme="krecnjak"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="krecnjak"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #434346; --alt: #333437; --text1: #eeedef; --text2: #bbbabd; --faint: #8c8c8f; --up: #4ade80; --down: #f87171; --accent: #a8a29e; --hot: #3e3e40; --tip: #eeedef; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="krecnjak"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(238,237,239,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(238,237,239,0.03) 0 1px, transparent 1px 5px); background-color: #222326; background-attachment: fixed; }

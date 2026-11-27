@@ -1,0 +1,20 @@
+/* tema teleprinter (Teletype): generisana, tools/teme.py */
+:root[data-theme="teleprinter"] { color-scheme: light; --back: #f4f1e6; --card: #fcfbf8; --head: #eeeeeb; --edge: #d1cfc6; --alt: #f5f4f2; --text1: #1a1c20; --text2: #505152; --faint: #83827f; --up: #15803d; --down: #c81e1e; --accent: #333333; --hot: #e0dfdc; --tip: #1a1c20; --tipfg: #f4f1e6; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 8px; }
+[data-theme="teleprinter"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="teleprinter"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="teleprinter"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="teleprinter"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="teleprinter"] .bar button { background: transparent; color: var(--back); border-color: rgba(244,241,230,0.35); box-shadow: none; }
+[data-theme="teleprinter"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="teleprinter"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="teleprinter"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(51,51,51,0.2) 27px 28px); background-color: #f4f1e6; background-attachment: fixed; }
+[data-theme="teleprinter"] .bar h1::after { content: "▌"; color: #333333; animation: tblink 1s steps(1) infinite; }
+@keyframes tblink { 50% { opacity: 0; } }
+[data-theme="teleprinter"] .big .value, [data-theme="teleprinter"] .detail .price { font-weight: 200; }
+[data-theme="teleprinter"] .chart .line { stroke-width: 2; }
+[data-theme="teleprinter"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="teleprinter"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #414244; --alt: #333335; --text1: #e5e5e6; --text2: #b4b4b6; --faint: #878889; --up: #4ade80; --down: #f87171; --accent: #7e7e7e; --hot: #38393b; --tip: #e5e5e6; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="teleprinter"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,37,0.35); box-shadow: none; }
+[data-theme="teleprinter"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(126,126,126,0.2) 27px 28px); background-color: #222325; background-attachment: fixed; }
+[data-theme="teleprinter"][data-scheme="dark"] .bar h1::after { content: "▌"; color: #7e7e7e; animation: tblink 1s steps(1) infinite; }

@@ -1,0 +1,17 @@
+/* tema surf (Surfing): generisana, tools/teme.py */
+:root[data-theme="surf"] { color-scheme: light; --back: #effcfd; --card: #eafbfc; --head: #ddeff1; --edge: #ccdcde; --alt: #e4f5f6; --text1: #12343d; --text2: #49666d; --faint: #7c9499; --up: #15803d; --down: #c81e1e; --accent: #068ea5; --hot: #caecf0; --tip: #12343d; --tipfg: #effcfd; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="surf"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="surf"] .overview .left { align-self: start; }
+[data-theme="surf"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="surf"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="surf"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="surf"] .bar button { background: transparent; color: var(--back); border-color: rgba(239,252,253,0.35); box-shadow: none; }
+[data-theme="surf"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="surf"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(6,142,165,0.14) 9px 10px, transparent 11px 16px, rgba(6,142,165,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #effcfd; background-attachment: fixed; }
+[data-theme="surf"] .big .value, [data-theme="surf"] .detail .price { font-weight: 700; }
+[data-theme="surf"] .chart .line { stroke-width: 2; }
+[data-theme="surf"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="surf"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #414448; --alt: #323539; --text1: #e1eff3; --text2: #b1bcc0; --faint: #858e92; --up: #4ade80; --down: #f87171; --accent: #06b6d4; --hot: #28424a; --tip: #e1eff3; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="surf"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,40,0.35); box-shadow: none; }
+[data-theme="surf"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(6,182,212,0.14) 9px 10px, transparent 11px 16px, rgba(6,182,212,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222428; background-attachment: fixed; }

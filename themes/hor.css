@@ -1,0 +1,16 @@
+/* tema hor (Choir): generisana, tools/teme.py */
+:root[data-theme="hor"] { color-scheme: light; --back: #f7f8fc; --card: #fdfdfe; --head: #eff0f2; --edge: #d3d5db; --alt: #f6f6f8; --text1: #171d30; --text2: #4f5463; --faint: #838692; --up: #15803d; --down: #c81e1e; --accent: #1e3a8a; --hot: #dee2ee; --tip: #171d30; --tipfg: #f7f8fc; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="hor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hor"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="hor"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="hor"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="hor"] .bar button { background: transparent; color: var(--back); border-color: rgba(247,248,252,0.35); box-shadow: none; }
+[data-theme="hor"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="hor"] body { background: linear-gradient(180deg, rgba(23,29,48,0.14) 0 1px, transparent 1px 8px, rgba(23,29,48,0.14) 8px 9px, transparent 9px 16px, rgba(23,29,48,0.14) 16px 17px, transparent 17px 24px, rgba(23,29,48,0.14) 24px 25px, transparent 25px 32px, rgba(23,29,48,0.14) 32px 33px, transparent 33px) 0 20px / 100% 76px; background-color: #f7f8fc; background-attachment: fixed; }
+[data-theme="hor"] .big .value, [data-theme="hor"] .detail .price { font-weight: 700; }
+[data-theme="hor"] .chart .line { stroke-width: 2; }
+[data-theme="hor"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="hor"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424348; --alt: #333439; --text1: #e3e5ed; --text2: #b3b5bc; --faint: #87888e; --up: #4ade80; --down: #f87171; --accent: #6b7cb2; --hot: #373a45; --tip: #e3e5ed; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="hor"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="hor"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(227,229,237,0.14) 0 1px, transparent 1px 8px, rgba(227,229,237,0.14) 8px 9px, transparent 9px 16px, rgba(227,229,237,0.14) 16px 17px, transparent 17px 24px, rgba(227,229,237,0.14) 24px 25px, transparent 25px 32px, rgba(227,229,237,0.14) 32px 33px, transparent 33px) 0 20px / 100% 76px; background-color: #232428; background-attachment: fixed; }

@@ -1,0 +1,14 @@
+/* tema đavolja varoš (Devil's Town): generisana, tools/teme.py */
+:root[data-theme="djavoljavaros"] { color-scheme: light; --back: #f6e3d3; --card: #fcf7f2; --head: #f0eae5; --edge: #d7c4b5; --alt: #f6f1eb; --text1: #341f19; --text2: #645048; --faint: #917d72; --up: #15803d; --down: #c81e1e; --accent: #c2410c; --hot: #f4ded2; --tip: #341f19; --tipfg: #f6e3d3; --accentfg: #ffffff; --font: Rockwell, "Roboto Slab", "Courier New", serif; --radius: 10px; }
+[data-theme="djavoljavaros"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="djavoljavaros"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="djavoljavaros"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="djavoljavaros"] .bar h1 { font-weight: 800; }
+[data-theme="djavoljavaros"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="djavoljavaros"] body { background: repeating-linear-gradient(180deg, rgba(194,65,12,0.07) 0 22px, rgba(194,65,12,0.13) 22px 30px, transparent 30px 52px, rgba(52,31,25,0.05) 52px 60px, transparent 60px 84px); background-color: #f6e3d3; background-attachment: fixed; }
+[data-theme="djavoljavaros"] .big .value, [data-theme="djavoljavaros"] .detail .price { font-weight: 900; }
+[data-theme="djavoljavaros"] .chart .line { stroke-width: 1.5; }
+[data-theme="djavoljavaros"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="djavoljavaros"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #434143; --alt: #333334; --text1: #f0e6e3; --text2: #bcb5b3; --faint: #8d8887; --up: #4ade80; --down: #f87171; --accent: #c7501f; --hot: #43322d; --tip: #f0e6e3; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="djavoljavaros"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, rgba(199,80,31,0.07) 0 22px, rgba(199,80,31,0.13) 22px 30px, transparent 30px 52px, rgba(240,230,227,0.05) 52px 60px, transparent 60px 84px); background-color: #222224; background-attachment: fixed; }

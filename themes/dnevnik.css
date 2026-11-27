@@ -1,0 +1,16 @@
+/* tema dnevnik (Diary): generisana, tools/teme.py */
+:root[data-theme="dnevnik"] { color-scheme: light; --back: #fdf6ee; --card: #fefcfa; --head: #f1efed; --edge: #dbd3ce; --alt: #f8f5f4; --text1: #271e28; --text2: #5c545a; --faint: #8e8687; --up: #15803d; --down: #c81e1e; --accent: #7b3f61; --hot: #ece2e5; --tip: #271e28; --tipfg: #fdf6ee; --accentfg: #ffffff; --font: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; --radius: 0px; }
+[data-theme="dnevnik"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="dnevnik"] .overview .left { align-self: start; }
+[data-theme="dnevnik"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dnevnik"] button { border-radius: 0; }
+[data-theme="dnevnik"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="dnevnik"] body { background: linear-gradient(90deg, transparent 54px, rgba(220,60,60,.45) 54px 56px, transparent 56px), repeating-linear-gradient(180deg, transparent 0 27px, rgba(123,63,97,0.18) 27px 28px); background-color: #fdf6ee; background-attachment: fixed; }
+[data-theme="dnevnik"] .app { padding-left: 72px; }
+@media (max-width: 800px) { [data-theme="dnevnik"] .app { padding-left: var(--gut, 16px); } }
+[data-theme="dnevnik"] .big .value, [data-theme="dnevnik"] .detail .price { font-weight: 200; }
+[data-theme="dnevnik"] .chart .line { stroke-width: 3; }
+[data-theme="dnevnik"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dnevnik"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #39393c; --edge: #434245; --alt: #343437; --text1: #eae6ea; --text2: #b8b5b9; --faint: #8a888c; --up: #4ade80; --down: #f87171; --accent: #9d6f8a; --hot: #3e373d; --tip: #eae6ea; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="dnevnik"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent 54px, rgba(220,60,60,.45) 54px 56px, transparent 56px), repeating-linear-gradient(180deg, transparent 0 27px, rgba(157,111,138,0.18) 27px 28px); background-color: #232326; background-attachment: fixed; }

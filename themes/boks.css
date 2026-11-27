@@ -1,0 +1,18 @@
+/* tema boks (Boxing): generisana, tools/teme.py */
+:root[data-theme="boks"] { color-scheme: dark; --back: #120606; --card: #1e1212; --head: #2b1f1f; --edge: #35292a; --alt: #241818; --text1: #efe3e5; --text2: #b8acad; --faint: #85797a; --up: #4ade80; --down: #f87171; --accent: #bf2e2e; --hot: #351616; --tip: #efe3e5; --tipfg: #120606; --accentfg: #ffffff; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 10px; }
+[data-theme="boks"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="boks"] .overview .left { align-self: start; }
+[data-theme="boks"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="boks"] button { border-radius: 999px; }
+[data-theme="boks"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="boks"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="boks"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="boks"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="boks"] :is(.overview .left, .block, .detail, .list) { border: 4px solid transparent; border-image: repeating-linear-gradient(45deg, #bf2e2e 0 4px, #681a1a 4px 8px) 4; }
+[data-theme="boks"] .big .value, [data-theme="boks"] .detail .price { font-weight: 200; }
+[data-theme="boks"] .chart .line { stroke-width: 2.5; }
+[data-theme="boks"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="boks"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeced; --edge: #d3cdce; --alt: #f5f3f3; --text1: #33181c; --text2: #624e51; --faint: #8e8082; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f2dbdb; --tip: #33181c; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="boks"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="boks"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 4px solid transparent; border-image: repeating-linear-gradient(45deg, #b91c1c 0 4px, #d58686 4px 8px) 4; }

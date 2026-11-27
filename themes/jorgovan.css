@@ -1,0 +1,17 @@
+/* tema jorgovan (Lilac): generisana, tools/teme.py */
+:root[data-theme="jorgovan"] { color-scheme: light; --back: #faf5ff; --card: #fefcff; --head: #f2eff4; --edge: #dad3e1; --alt: #f8f5f9; --text1: #2f2243; --text2: #625772; --faint: #90879d; --up: #15803d; --down: #c81e1e; --accent: #a855f7; --hot: #f2e5fe; --tip: #2f2243; --tipfg: #faf5ff; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="jorgovan"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="jorgovan"] .overview .left { align-self: start; }
+[data-theme="jorgovan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="jorgovan"] button { border-radius: 999px; }
+[data-theme="jorgovan"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="jorgovan"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="jorgovan"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="jorgovan"] body { background: radial-gradient(rgba(168,85,247,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(247,168,85,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(85,247,168,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #faf5ff; background-attachment: fixed; }
+[data-theme="jorgovan"] .big .value, [data-theme="jorgovan"] .detail .price { font-weight: 400; }
+[data-theme="jorgovan"] .chart .line { stroke-width: 3; }
+[data-theme="jorgovan"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="jorgovan"][data-scheme="dark"] { color-scheme: dark; --back: #232328; --card: #2e2e33; --head: #3a393f; --edge: #434249; --alt: #343439; --text1: #eee7f6; --text2: #bbb6c2; --faint: #8d8993; --up: #4ade80; --down: #f87171; --accent: #a855f7; --hot: #3f334e; --tip: #eee7f6; --tipfg: #232328; --accentfg: #111111; }
+[data-theme="jorgovan"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="jorgovan"][data-scheme="dark"] body { background: radial-gradient(rgba(168,85,247,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(247,168,85,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(85,247,168,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #232328; background-attachment: fixed; }

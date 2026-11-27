@@ -1,0 +1,15 @@
+/* tema hrastovina (Oak wood): generisana, tools/teme.py */
+:root[data-theme="hrastovina"] { color-scheme: light; --back: #f1e4d0; --card: #fbf7f1; --head: #efeae4; --edge: #d1c4b3; --alt: #f5f0eb; --text1: #2c1e19; --text2: #5d5047; --faint: #8b7d71; --up: #15803d; --down: #c81e1e; --accent: #92400e; --hot: #ecddd1; --tip: #2c1e19; --tipfg: #f1e4d0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="hrastovina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="hrastovina"] .overview .left { align-self: start; }
+[data-theme="hrastovina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hrastovina"] button { border-radius: 999px; }
+[data-theme="hrastovina"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="hrastovina"] body { background: repeating-linear-gradient(90deg, rgba(146,64,14,0.07) 0 2px, transparent 2px 9px, rgba(146,64,14,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(146,64,14,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #f1e4d0; background-attachment: fixed; }
+[data-theme="hrastovina"] .big .value, [data-theme="hrastovina"] .detail .price { font-weight: 700; }
+[data-theme="hrastovina"] .chart .line { stroke-width: 2; }
+[data-theme="hrastovina"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="hrastovina"][data-scheme="dark"] { color-scheme: dark; --back: #222223; --card: #2d2d2e; --head: #383839; --edge: #424142; --alt: #333333; --text1: #ece6e3; --text2: #bab5b3; --faint: #8b8887; --up: #4ade80; --down: #f87171; --accent: #ad704b; --hot: #3f3632; --tip: #ece6e3; --tipfg: #222223; --accentfg: #111111; }
+[data-theme="hrastovina"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="hrastovina"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(173,112,75,0.07) 0 2px, transparent 2px 9px, rgba(173,112,75,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(173,112,75,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #222223; background-attachment: fixed; }

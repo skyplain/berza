@@ -1,0 +1,16 @@
+/* tema plan grada (City plan): generisana, tools/teme.py */
+:root[data-theme="plangrada"] { color-scheme: light; --back: #f5f8ff; --card: #fcfdff; --head: #eef0f4; --edge: #d2d6e1; --alt: #f5f7f9; --text1: #182541; --text2: #4f5a70; --faint: #828a9c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dee7fc; --tip: #182541; --tipfg: #f5f8ff; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="plangrada"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plangrada"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="plangrada"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="plangrada"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="plangrada"] .bar button { background: transparent; color: var(--back); border-color: rgba(245,248,255,0.35); box-shadow: none; }
+[data-theme="plangrada"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="plangrada"] body { background: linear-gradient(rgba(37,99,235,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(37,99,235,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(37,99,235,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(37,99,235,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #f5f8ff; background-attachment: fixed; }
+[data-theme="plangrada"] .big .value, [data-theme="plangrada"] .detail .price { font-weight: 700; }
+[data-theme="plangrada"] .chart .line { stroke-width: 3; }
+[data-theme="plangrada"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plangrada"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #414349; --alt: #323539; --text1: #e3e8f5; --text2: #b3b7c2; --faint: #868a93; --up: #4ade80; --down: #f87171; --accent: #467bee; --hot: #303a4d; --tip: #e3e8f5; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="plangrada"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,40,0.35); box-shadow: none; }
+[data-theme="plangrada"][data-scheme="dark"] body { background: linear-gradient(rgba(70,123,238,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(70,123,238,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(70,123,238,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(70,123,238,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #222428; background-attachment: fixed; }

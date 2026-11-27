@@ -1,0 +1,17 @@
+/* tema andromeda (Andromeda): generisana, tools/teme.py */
+:root[data-theme="andromeda"] { color-scheme: dark; --back: #0b0516; --card: #171222; --head: #241f2f; --edge: #302a3a; --alt: #1e1928; --text1: #f4eef6; --text2: #bab4be; --faint: #847e8a; --up: #4ade80; --down: #f87171; --accent: #f0abfc; --hot: #352741; --tip: #f4eef6; --tipfg: #0b0516; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="andromeda"] :is(.overview .left, .block, .detail, .list) { background: rgba(23,18,34,0.6); border: 1px solid rgba(244,238,246,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="andromeda"] .overview .left { align-self: start; }
+[data-theme="andromeda"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="andromeda"] button { border-radius: 999px; background: transparent; }
+[data-theme="andromeda"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="andromeda"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="andromeda"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="andromeda"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(240,171,252,0.07) 0 12deg, transparent 12deg 24deg), radial-gradient(1px 1px at 20px 30px, rgba(244,238,246,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(240,171,252,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(244,238,246,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(244,238,246,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(240,171,252,0.8), transparent); background-color: #0b0516; background-attachment: fixed; }
+[data-theme="andromeda"] .big .value, [data-theme="andromeda"] .detail .price { font-weight: 200; }
+[data-theme="andromeda"] .chart .line { stroke-width: 2; }
+[data-theme="andromeda"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="andromeda"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efeef0; --edge: #d3d2d5; --alt: #f4f4f6; --text1: #3c3244; --text2: #69626f; --faint: #8b8690; --up: #15803d; --down: #c81e1e; --accent: #9e6fa6; --hot: #ede7ef; --tip: #3c3244; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="andromeda"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,250,251,0.6); border: 1px solid rgba(60,50,68,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="andromeda"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(158,111,166,0.07) 0 12deg, transparent 12deg 24deg), radial-gradient(1px 1px at 20px 30px, rgba(60,50,68,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(158,111,166,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(60,50,68,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(60,50,68,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(158,111,166,0.8), transparent); background-color: #f0f0f1; background-attachment: fixed; }

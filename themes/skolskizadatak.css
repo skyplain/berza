@@ -1,0 +1,15 @@
+/* tema školski zadatak (Homework): generisana, tools/teme.py */
+:root[data-theme="skolskizadatak"] { color-scheme: light; --back: #fcfcf8; --card: #f8f9f8; --head: #ebeced; --edge: #d8dadb; --alt: #f1f3f3; --text1: #182541; --text2: #515b6f; --faint: #858c99; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dae4f6; --tip: #182541; --tipfg: #fcfcf8; --accentfg: #ffffff; --font: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; --radius: 8px; }
+[data-theme="skolskizadatak"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="skolskizadatak"] .overview .left { align-self: start; }
+[data-theme="skolskizadatak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="skolskizadatak"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="skolskizadatak"] body { background: linear-gradient(90deg, transparent 54px, rgba(220,60,60,.45) 54px 56px, transparent 56px), repeating-linear-gradient(180deg, transparent 0 27px, rgba(37,99,235,0.18) 27px 28px); background-color: #fcfcf8; background-attachment: fixed; }
+[data-theme="skolskizadatak"] .app { padding-left: 72px; }
+@media (max-width: 800px) { [data-theme="skolskizadatak"] .app { padding-left: var(--gut, 16px); } }
+[data-theme="skolskizadatak"] .big .value, [data-theme="skolskizadatak"] .detail .price { font-weight: 700; }
+[data-theme="skolskizadatak"] .chart .line { stroke-width: 2; }
+[data-theme="skolskizadatak"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="skolskizadatak"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3e; --edge: #424348; --alt: #333538; --text1: #e3e8f5; --text2: #b3b7c2; --faint: #878a92; --up: #4ade80; --down: #f87171; --accent: #467bee; --hot: #313a4c; --tip: #e3e8f5; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="skolskizadatak"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent 54px, rgba(220,60,60,.45) 54px 56px, transparent 56px), repeating-linear-gradient(180deg, transparent 0 27px, rgba(70,123,238,0.18) 27px 28px); background-color: #232427; background-attachment: fixed; }

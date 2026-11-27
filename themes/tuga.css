@@ -1,0 +1,12 @@
+/* tema tuga (Sorrow): generisana, tools/teme.py */
+:root[data-theme="tuga"] { color-scheme: dark; --back: #070c18; --card: #131824; --head: #202531; --edge: #2b303c; --alt: #191e2a; --text1: #e5ebf6; --text2: #aeb3be; --faint: #7a808b; --up: #4ade80; --down: #f87171; --accent: #3b82f6; --hot: #192741; --tip: #e5ebf6; --tipfg: #070c18; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="tuga"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tuga"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="tuga"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tuga"] body { background: linear-gradient(100deg, transparent 48%, rgba(59,130,246,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #070c18; background-attachment: fixed; }
+[data-theme="tuga"] .big .value, [data-theme="tuga"] .detail .price { font-weight: 700; }
+[data-theme="tuga"] .chart .line { stroke-width: 2.5; }
+[data-theme="tuga"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tuga"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #edeef0; --edge: #ced0d5; --alt: #f3f4f5; --text1: #1c2a43; --text2: #515c6e; --faint: #828997; --up: #15803d; --down: #c81e1e; --accent: #3b82f6; --hot: #dfe9fa; --tip: #1c2a43; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="tuga"][data-scheme="light"] body { background: linear-gradient(100deg, transparent 48%, rgba(59,130,246,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #f0f0f1; background-attachment: fixed; }

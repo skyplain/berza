@@ -1,0 +1,18 @@
+/* tema venecija: generisana (paleta + oblik 3/4/5/0) */
+:root[data-theme="venecija"] { color-scheme: light; --back: #f6efe6; --card: #fdf8f2; --head: #f1ece6; --edge: #d6cfc7; --alt: #f7f2ec; --text1: #2f2a24; --text2: #67615a; --faint: #928c85; --up: #15803d; --down: #c81e1e; --accent: #0f7c8c; --hot: #dce7e4; --tip: #2f2a24; --tipfg: #f6efe6; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="venecija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="venecija"] .overview .left { align-self: start; }
+[data-theme="venecija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="venecija"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="venecija"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="venecija"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="venecija"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="venecija"] .bar button { background: transparent; color: var(--back); border-color: rgba(246,239,230,0.35); box-shadow: none; }
+[data-theme="venecija"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="venecija"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="venecija"] .big .value, [data-theme="venecija"] .detail .price { font-weight: 900; }
+[data-theme="venecija"] .chart .line { stroke-width: 1.5; }
+[data-theme="venecija"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="venecija"][data-scheme="dark"] { color-scheme: dark; --back: #120d08; --card: #0b0805; --head: #13100c; --edge: #29241e; --alt: #0f0c08; --text1: #cdc7bf; --text2: #8d867f; --faint: #6a655d; --up: #4ade80; --down: #f87171; --accent: #0f7c8c; --hot: #101816; --tip: #cdc7bf; --tipfg: #120d08; --accentfg: #ffffff; }
+[data-theme="venecija"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(18,13,8,0.35); box-shadow: none; }

@@ -1,0 +1,22 @@
+/* tema sveska: linije sveske, crvena margina, rukopis */
+:root[data-theme="sveska"] { color-scheme: light; --back: #fdfdf8; --card: #fdfdf8; --head: #fdfdf8; --edge: #a9c4e4; --alt: transparent; --text1: #1d2a5c; --text2: #34427a; --faint: #7280b0; --up: #1b7f3b; --down: #d12a2a; --accent: #d12a2a; --hot: #fff7b0; --tip: #fff7b0; --tipfg: #1d2a5c; --accentfg: #fff; --font: "Noteworthy","Bradley Hand","Segoe Print","Comic Sans MS",cursive; --radius: 2px; --h-color: #d12a2a; --h-transform: none; --h-spacing: 0; --h-size: 18px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 700; }
+[data-theme="sveska"] body { background-color:#fdfdf8;background-image:linear-gradient(90deg,transparent 58px,#f1a1a1 58px,#f1a1a1 60px,transparent 60px),repeating-linear-gradient(0deg,transparent 0 27px,#c6d8ee 27px 28px);background-attachment:fixed }
+[data-theme="sveska"] .app { padding-left:72px }
+[data-theme="sveska"] .bar { border-bottom:0 }
+[data-theme="sveska"] .bar h1 { font-size:28px;transform:rotate(-1deg) }
+[data-theme="sveska"] button { background:#fff7b0;border:0;box-shadow:1px 2px 3px rgba(0,0,0,.15);transform:rotate(-1deg) }
+[data-theme="sveska"] .rows { background:#fdfdf8 }
+[data-theme="sveska"] .rows thead th { background:#fdfdf8 }
+[data-theme="sveska"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="sveska"] .big .value { transform:rotate(-1.5deg);display:inline-block }
+[data-theme="sveska"] .chart .line { stroke-width:2.5 }
+[data-theme="sveska"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="sveska"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="sveska"][data-scheme="dark"] { color-scheme: dark; --back: #070705; --card: #070705; --head: #070705; --edge: #1b314b; --text1: #abc1fe; --text2: #8fa2e2; --faint: #576492; --up: #4ade80; --down: #f87171; --accent: #d12a2a; --hot: #100c00; --tip: #100c00; --tipfg: #abc1fe; --accentfg: #ffffff; --h-color: #d12a2a; }
+[data-theme="sveska"][data-scheme="dark"] body { background-color:#070705;background-image:linear-gradient(90deg,transparent 58px,#5e1c21 58px,#5e1c21 60px,transparent 60px),repeating-linear-gradient(0deg,transparent 0 27px,#142131 27px 28px);background-attachment:fixed }
+[data-theme="sveska"][data-scheme="dark"] button { background:#100c00;border:0;box-shadow:1px 2px 3px rgba(255,255,255,.15);transform:rotate(-1deg) }
+[data-theme="sveska"][data-scheme="dark"] .rows { background:#070705 }
+[data-theme="sveska"][data-scheme="dark"] .rows thead th { background:#070705 }
+/* telefon i uži prozor: bez širokog levog ruba (inače strana prelazi ekran) */
+@media (max-width: 800px) { [data-theme="sveska"] .app { padding-left: var(--gut, 16px) } }

@@ -1,0 +1,17 @@
+/* tema duboko more: generisana (paleta + oblik 3/4/3/0) */
+:root[data-theme="dubokomore"] { color-scheme: dark; --back: #020c1b; --card: #051a33; --head: #11263f; --edge: #232f3f; --alt: #0b2039; --text1: #cfe8ff; --text2: #96aabf; --faint: #687a8d; --up: #4ade80; --down: #f87171; --accent: #00b4d8; --hot: #04304a; --tip: #cfe8ff; --tipfg: #020c1b; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="dubokomore"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="dubokomore"] .overview .left { align-self: start; }
+[data-theme="dubokomore"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dubokomore"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="dubokomore"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="dubokomore"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="dubokomore"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="dubokomore"] .bar button { background: transparent; color: var(--back); border-color: rgba(2,12,27,0.35); box-shadow: none; }
+[data-theme="dubokomore"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="dubokomore"] .big .value, [data-theme="dubokomore"] .detail .price { font-weight: 900; }
+[data-theme="dubokomore"] .chart .line { stroke-width: 3.5; }
+[data-theme="dubokomore"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="dubokomore"][data-scheme="light"] { color-scheme: light; --back: #edf5fe; --card: #cae2ff; --head: #b7d2f3; --edge: #b6c5da; --alt: #bfdafc; --text1: #051727; --text2: #364759; --faint: #617386; --up: #15803d; --down: #c81e1e; --accent: #0c89a4; --hot: #a0ccec; --tip: #051727; --tipfg: #edf5fe; --accentfg: #111111; }
+[data-theme="dubokomore"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(237,245,254,0.35); box-shadow: none; }

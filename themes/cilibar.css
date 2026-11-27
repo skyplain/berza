@@ -1,0 +1,20 @@
+/* tema ćilibar: generisana (paleta + oblik 7/4/1/4) */
+:root[data-theme="cilibar"] { color-scheme: light; --back: #fff3e0; --card: #fffaf2; --head: #f3ede3; --edge: #e0d2bc; --alt: #f9f4eb; --text1: #3e2600; --text2: #745f3f; --faint: #9e8c70; --up: #15803d; --down: #c81e1e; --accent: #e67e00; --hot: #fce9d0; --tip: #3e2600; --tipfg: #fff3e0; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 10px; }
+[data-theme="cilibar"] :is(.overview .left, .block, .detail, .list) { background: #f8ecd8; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="cilibar"] .overview .left { align-self: start; }
+[data-theme="cilibar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cilibar"] button { border: 0; }
+[data-theme="cilibar"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="cilibar"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="cilibar"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="cilibar"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,243,224,0.35); box-shadow: none; }
+[data-theme="cilibar"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="cilibar"] body { background: radial-gradient(900px 500px at 100% 0, rgba(230,126,0,0.12), transparent 70%); background-color: #fff3e0; background-attachment: fixed; }
+[data-theme="cilibar"] .big .value, [data-theme="cilibar"] .detail .price { font-weight: 900; }
+[data-theme="cilibar"] .chart .line { stroke-width: 2.5; }
+[data-theme="cilibar"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="cilibar"][data-scheme="dark"] { color-scheme: dark; --back: #120a01; --card: #0a0704; --head: #130f08; --edge: #2a200e; --alt: #0e0b06; --text1: #e0c19b; --text2: #998362; --faint: #736045; --up: #4ade80; --down: #f87171; --accent: #e67e00; --hot: #1b0e00; --tip: #e0c19b; --tipfg: #120a01; --accentfg: #111111; }
+[data-theme="cilibar"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #170e02; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="cilibar"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(18,10,1,0.35); box-shadow: none; }
+[data-theme="cilibar"][data-scheme="dark"] body { background: radial-gradient(900px 500px at 100% 0, rgba(230,126,0,0.12), transparent 70%); background-color: #120a01; background-attachment: fixed; }

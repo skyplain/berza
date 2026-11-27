@@ -1,0 +1,19 @@
+/* tema kentaur (Centaur): generisana, tools/teme.py */
+:root[data-theme="kentaur"] { color-scheme: light; --back: #f4ebdc; --card: #fcf9f4; --head: #f0ece7; --edge: #d4cabd; --alt: #f6f2ed; --text1: #2c1e19; --text2: #5e514a; --faint: #8c8077; --up: #15803d; --down: #c81e1e; --accent: #92400e; --hot: #eddfd4; --tip: #2c1e19; --tipfg: #f4ebdc; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="kentaur"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="kentaur"] .overview .left { align-self: start; }
+[data-theme="kentaur"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kentaur"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="kentaur"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kentaur"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kentaur"] .bar button { background: transparent; color: var(--back); border-color: rgba(244,235,220,0.35); box-shadow: none; }
+[data-theme="kentaur"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kentaur"] .bar { position: relative; }
+[data-theme="kentaur"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #92400e 0 3px, transparent 3px 12px, #92400e 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#92400e 0 3px, transparent 3px 9px, #92400e 9px 12px) 0 0 / 24px 12px; }
+[data-theme="kentaur"] .big .value, [data-theme="kentaur"] .detail .price { font-weight: 700; }
+[data-theme="kentaur"] .chart .line { stroke-width: 2; }
+[data-theme="kentaur"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kentaur"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424143; --alt: #333334; --text1: #ece6e3; --text2: #bab5b3; --faint: #8b8887; --up: #4ade80; --down: #f87171; --accent: #ad704b; --hot: #3f3633; --tip: #ece6e3; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="kentaur"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,34,36,0.35); box-shadow: none; }
+[data-theme="kentaur"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #ad704b 0 3px, transparent 3px 12px, #ad704b 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#ad704b 0 3px, transparent 3px 9px, #ad704b 9px 12px) 0 0 / 24px 12px; }

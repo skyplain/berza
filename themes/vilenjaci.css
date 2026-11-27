@@ -1,0 +1,16 @@
+/* tema vilenjaci (Elves): generisana, tools/teme.py */
+:root[data-theme="vilenjaci"] { color-scheme: light; --back: #f2faf2; --card: #fbfefb; --head: #edf2ee; --edge: #cfdad1; --alt: #f4f8f5; --text1: #153024; --text2: #4c6258; --faint: #7f9187; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #dbefe1; --tip: #153024; --tipfg: #f2faf2; --accentfg: #111111; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="vilenjaci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vilenjaci"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="vilenjaci"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="vilenjaci"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="vilenjaci"] .bar button { background: transparent; color: var(--back); border-color: rgba(242,250,242,0.35); box-shadow: none; }
+[data-theme="vilenjaci"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="vilenjaci"] body { background: radial-gradient(ellipse 8px 18px, rgba(20,150,68,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(20,150,68,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f2faf2; background-attachment: fixed; }
+[data-theme="vilenjaci"] .big .value, [data-theme="vilenjaci"] .detail .price { font-weight: 200; }
+[data-theme="vilenjaci"] .chart .line { stroke-width: 2.5; }
+[data-theme="vilenjaci"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vilenjaci"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414446; --alt: #323537; --text1: #e2eee8; --text2: #b2bcb8; --faint: #868d8b; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #2a3f35; --tip: #e2eee8; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="vilenjaci"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,39,0.35); box-shadow: none; }
+[data-theme="vilenjaci"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(22,163,74,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(22,163,74,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222427; background-attachment: fixed; }

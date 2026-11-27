@@ -1,0 +1,18 @@
+/* tema brutalizam (Brutalism): generisana, tools/teme.py */
+:root[data-theme="brutalizam"] { color-scheme: light; --back: #d6d3ce; --card: #f3f2f0; --head: #e7e6e4; --edge: #bab7b4; --alt: #edecea; --text1: #24272e; --text2: #505256; --faint: #727375; --up: #15803d; --down: #c81e1e; --accent: #6b7280; --hot: #e0e0e0; --tip: #24272e; --tipfg: #d6d3ce; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 8px; }
+[data-theme="brutalizam"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="brutalizam"] .overview .left { align-self: start; }
+[data-theme="brutalizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="brutalizam"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="brutalizam"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="brutalizam"] .bar button { background: transparent; color: var(--back); border-color: rgba(214,211,206,0.35); box-shadow: none; }
+[data-theme="brutalizam"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="brutalizam"] body { background: repeating-linear-gradient(0deg, rgba(36,39,46,0.05) 0 1px, transparent 1px 120px), repeating-radial-gradient(circle at 23% 41%, rgba(36,39,46,0.04) 0 1px, transparent 1px 3px); background-color: #d6d3ce; background-attachment: fixed; }
+[data-theme="brutalizam"] :is(.overview .left, .block, .detail, .list) { border-radius: 0; }
+[data-theme="brutalizam"] .big .value, [data-theme="brutalizam"] .detail .price { font-weight: 200; }
+[data-theme="brutalizam"] .chart .line { stroke-width: 3; }
+[data-theme="brutalizam"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="brutalizam"][data-scheme="dark"] { color-scheme: dark; --back: #1f2023; --card: #2a2b2e; --head: #353639; --edge: #3f4043; --alt: #303134; --text1: #e9eaed; --text2: #b6b8ba; --faint: #88898c; --up: #4ade80; --down: #f87171; --accent: #777d8a; --hot: #35363b; --tip: #e9eaed; --tipfg: #1f2023; --accentfg: #111111; }
+[data-theme="brutalizam"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(31,32,35,0.35); box-shadow: none; }
+[data-theme="brutalizam"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(233,234,237,0.05) 0 1px, transparent 1px 120px), repeating-radial-gradient(circle at 23% 41%, rgba(233,234,237,0.04) 0 1px, transparent 1px 3px); background-color: #1f2023; background-attachment: fixed; }

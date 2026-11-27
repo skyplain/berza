@@ -1,0 +1,13 @@
+/* tema stepenište (Staircase): generisana, tools/teme.py */
+:root[data-theme="stepeniste"] { color-scheme: light; --back: #f5f5f7; --card: #fcfcfd; --head: #efeff0; --edge: #d3d3d6; --alt: #f5f5f7; --text1: #1e222a; --text2: #54575d; --faint: #85878c; --up: #15803d; --down: #c81e1e; --accent: #475569; --hot: #e3e5e8; --tip: #1e222a; --tipfg: #f5f5f7; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="stepeniste"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="stepeniste"] .overview .left { align-self: start; }
+[data-theme="stepeniste"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="stepeniste"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="stepeniste"] body { background: linear-gradient(90deg, rgba(30,34,42,0.05) 50%, transparent 50%) 0 0 / 40px 40px, linear-gradient(rgba(30,34,42,0.04) 50%, transparent 50%) 0 0 / 80px 80px; background-color: #f5f5f7; background-attachment: fixed; }
+[data-theme="stepeniste"] .big .value, [data-theme="stepeniste"] .detail .price { font-weight: 200; }
+[data-theme="stepeniste"] .chart .line { stroke-width: 2.5; }
+[data-theme="stepeniste"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="stepeniste"][data-scheme="dark"] { color-scheme: dark; --back: #101318; --card: #1c1f24; --head: #282b30; --edge: #32353a; --alt: #22252a; --text1: #e6e7eb; --text2: #b0b2b6; --faint: #7f8186; --up: #4ade80; --down: #f87171; --accent: #646f80; --hot: #262a31; --tip: #e6e7eb; --tipfg: #101318; --accentfg: #ffffff; }
+[data-theme="stepeniste"][data-scheme="dark"] body { background: linear-gradient(90deg, rgba(230,231,235,0.05) 50%, transparent 50%) 0 0 / 40px 40px, linear-gradient(rgba(230,231,235,0.04) 50%, transparent 50%) 0 0 / 80px 80px; background-color: #101318; background-attachment: fixed; }

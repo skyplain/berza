@@ -1,0 +1,16 @@
+/* tema dan mrtvih (Day of the Dead): generisana, tools/teme.py */
+:root[data-theme="danmrtvih"] { color-scheme: dark; --back: #120714; --card: #1e1320; --head: #2b202c; --edge: #362b37; --alt: #241926; --text1: #f3e6ef; --text2: #bbaeb8; --faint: #877b86; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #3b1a31; --tip: #f3e6ef; --tipfg: #120714; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="danmrtvih"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="danmrtvih"] .overview .left { align-self: start; }
+[data-theme="danmrtvih"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="danmrtvih"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="danmrtvih"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="danmrtvih"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="danmrtvih"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="danmrtvih"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(236,72,153,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(153,236,72,0.18), transparent 70%) 0 0 / 60px 60px, radial-gradient(rgba(236,72,153,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(153,236,72,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(72,153,236,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #120714; background-attachment: fixed; }
+[data-theme="danmrtvih"] .big .value, [data-theme="danmrtvih"] .detail .price { font-weight: 900; }
+[data-theme="danmrtvih"] .chart .line { stroke-width: 3; }
+[data-theme="danmrtvih"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="danmrtvih"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #f0edef; --edge: #d4cfd2; --alt: #f5f3f5; --text1: #3c2032; --text2: #695462; --faint: #93848e; --up: #15803d; --down: #c81e1e; --accent: #d9428d; --hot: #f6e0ec; --tip: #3c2032; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="danmrtvih"][data-scheme="light"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(217,66,141,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(153,236,72,0.18), transparent 70%) 0 0 / 60px 60px, radial-gradient(rgba(217,66,141,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(153,236,72,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(72,153,236,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #f1f0f1; background-attachment: fixed; }

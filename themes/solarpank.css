@@ -1,0 +1,16 @@
+/* tema solarpank (Solarpunk): generisana, tools/teme.py */
+:root[data-theme="solarpank"] { color-scheme: light; --back: #f4fbe9; --card: #fcfef8; --head: #eff2eb; --edge: #d2dbca; --alt: #f5f8f2; --text1: #1f3225; --text2: #546456; --faint: #859283; --up: #15803d; --down: #c81e1e; --accent: #409444; --hot: #e2efdf; --tip: #1f3225; --tipfg: #f4fbe9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="solarpank"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="solarpank"] .overview .left { align-self: start; }
+[data-theme="solarpank"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="solarpank"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="solarpank"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="solarpank"] .bar h1 { font-size: 24px; }
+[data-theme="solarpank"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="solarpank"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(64,148,68,0.08) 0 6deg, transparent 6deg 12deg); background-color: #f4fbe9; background-attachment: fixed; }
+[data-theme="solarpank"] .big .value, [data-theme="solarpank"] .detail .price { font-weight: 200; }
+[data-theme="solarpank"] .chart .line { stroke-width: 1.5; }
+[data-theme="solarpank"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="solarpank"][data-scheme="dark"] { color-scheme: dark; --back: #222426; --card: #2d2f31; --head: #383a3c; --edge: #424445; --alt: #333537; --text1: #e7eee9; --text2: #b6bcb8; --faint: #888d8b; --up: #4ade80; --down: #f87171; --accent: #4caf50; --hot: #314135; --tip: #e7eee9; --tipfg: #222426; --accentfg: #111111; }
+[data-theme="solarpank"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(76,175,80,0.08) 0 6deg, transparent 6deg 12deg); background-color: #222426; background-attachment: fixed; }

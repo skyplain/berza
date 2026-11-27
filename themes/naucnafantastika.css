@@ -1,0 +1,17 @@
+/* tema naučna fantastika (Science fiction): generisana, tools/teme.py */
+:root[data-theme="naucnafantastika"] { color-scheme: dark; --back: #03101a; --card: #101c25; --head: #1c2932; --edge: #26343d; --alt: #16222b; --text1: #e0f3f7; --text2: #a9bac0; --faint: #76868d; --up: #4ade80; --down: #f87171; --accent: #00e5ff; --hot: #0e3844; --tip: #e0f3f7; --tipfg: #03101a; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="naucnafantastika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="naucnafantastika"] .overview .left { align-self: start; }
+[data-theme="naucnafantastika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="naucnafantastika"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="naucnafantastika"] .bar h1 { font-size: 24px; }
+[data-theme="naucnafantastika"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="naucnafantastika"] :is(.overview .left, .block, .detail, .list) { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+[data-theme="naucnafantastika"] button { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); border-radius: 0; }
+[data-theme="naucnafantastika"] body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 30; background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); }
+[data-theme="naucnafantastika"] .big .value, [data-theme="naucnafantastika"] .detail .price { font-weight: 700; }
+[data-theme="naucnafantastika"] .chart .line { stroke-width: 2; }
+[data-theme="naucnafantastika"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="naucnafantastika"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #ecf0f0; --edge: #ccd4d5; --alt: #f3f5f6; --text1: #113c45; --text2: #496970; --faint: #738c91; --up: #15803d; --down: #c81e1e; --accent: #008b9b; --hot: #d7ebee; --tip: #113c45; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="naucnafantastika"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }

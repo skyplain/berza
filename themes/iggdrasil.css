@@ -1,0 +1,16 @@
+/* tema iggdrasil (World tree): generisana, tools/teme.py */
+:root[data-theme="iggdrasil"] { color-scheme: light; --back: #f2f6ea; --card: #fbfcf9; --head: #edefec; --edge: #cfd5ca; --alt: #f4f6f3; --text1: #152a22; --text2: #4c5d54; --faint: #7f8c82; --up: #15803d; --down: #c81e1e; --accent: #15803d; --hot: #dbebdf; --tip: #152a22; --tipfg: #f2f6ea; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="iggdrasil"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="iggdrasil"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="iggdrasil"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="iggdrasil"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="iggdrasil"] .bar button { background: transparent; color: var(--back); border-color: rgba(242,246,234,0.35); box-shadow: none; }
+[data-theme="iggdrasil"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="iggdrasil"] body { background: radial-gradient(ellipse 8px 18px, rgba(21,128,61,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(21,128,61,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f2f6ea; background-attachment: fixed; }
+[data-theme="iggdrasil"] .big .value, [data-theme="iggdrasil"] .detail .price { font-weight: 700; }
+[data-theme="iggdrasil"] .chart .line { stroke-width: 3; }
+[data-theme="iggdrasil"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="iggdrasil"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414345; --alt: #323436; --text1: #e2ebe7; --text2: #b2b9b7; --faint: #868b8a; --up: #4ade80; --down: #f87171; --accent: #318f54; --hot: #2e3c36; --tip: #e2ebe7; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="iggdrasil"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,38,0.35); box-shadow: none; }
+[data-theme="iggdrasil"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(49,143,84,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(49,143,84,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222326; background-attachment: fixed; }

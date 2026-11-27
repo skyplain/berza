@@ -1,0 +1,20 @@
+/* tema orhideja: generisana (paleta + oblik 7/4/3/4) */
+:root[data-theme="orhideja"] { color-scheme: dark; --back: #1e0e24; --card: #2a1432; --head: #37213e; --edge: #413147; --alt: #301a38; --text1: #fbe6ff; --text2: #bdaac2; --faint: #8c7a92; --up: #4ade80; --down: #f87171; --accent: #da70d6; --hot: #432149; --tip: #fbe6ff; --tipfg: #1e0e24; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="orhideja"] :is(.overview .left, .block, .detail, .list) { background: #26162c; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="orhideja"] .overview .left { align-self: start; }
+[data-theme="orhideja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="orhideja"] button { border: 0; }
+[data-theme="orhideja"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="orhideja"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="orhideja"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="orhideja"] .bar button { background: transparent; color: var(--back); border-color: rgba(30,14,36,0.35); box-shadow: none; }
+[data-theme="orhideja"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 10px; }
+[data-theme="orhideja"] body { background: radial-gradient(900px 500px at 100% 0, rgba(218,112,214,0.16), transparent 70%); background-color: #1e0e24; background-attachment: fixed; }
+[data-theme="orhideja"] .big .value, [data-theme="orhideja"] .detail .price { font-weight: 900; }
+[data-theme="orhideja"] .chart .line { stroke-width: 2.5; }
+[data-theme="orhideja"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="orhideja"][data-scheme="light"] { color-scheme: light; --back: #f2dcfb; --card: #e9ccf4; --head: #d8bce1; --edge: #c3afca; --alt: #e1c5ec; --text1: #17091a; --text2: #46364a; --faint: #726178; --up: #15803d; --down: #c81e1e; --accent: #ae4aab; --hot: #d9b0e0; --tip: #17091a; --tipfg: #f2dcfb; --accentfg: #ffffff; }
+[data-theme="orhideja"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #e7d1ef; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="orhideja"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(242,220,251,0.35); box-shadow: none; }
+[data-theme="orhideja"][data-scheme="light"] body { background: radial-gradient(900px 500px at 100% 0, rgba(174,74,171,0.16), transparent 70%); background-color: #f2dcfb; background-attachment: fixed; }

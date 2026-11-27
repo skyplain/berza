@@ -1,0 +1,15 @@
+/* tema glečerska laguna (Glacier lagoon): generisana, tools/teme.py */
+:root[data-theme="glecerskalaguna"] { color-scheme: light; --back: #effcff; --card: #ebfbff; --head: #deeff4; --edge: #ccdde1; --alt: #e5f5f9; --text1: #173942; --text2: #4d6a71; --faint: #778f96; --up: #15803d; --down: #c81e1e; --accent: #1997aa; --hot: #ceedf3; --tip: #173942; --tipfg: #effcff; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="glecerskalaguna"] :is(.overview .left, .block, .detail, .list) { background: rgba(235,251,255,0.6); border: 1px solid rgba(23,57,66,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="glecerskalaguna"] .overview .left { align-self: start; }
+[data-theme="glecerskalaguna"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="glecerskalaguna"] button { border-radius: 999px; background: transparent; }
+[data-theme="glecerskalaguna"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="glecerskalaguna"] body { background: repeating-linear-gradient(30deg, rgba(23,57,66,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(23,57,66,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(23,57,66,0.04) 0 1px, transparent 1px 45px); background-color: #effcff; background-attachment: fixed; }
+[data-theme="glecerskalaguna"] .big .value, [data-theme="glecerskalaguna"] .detail .price { font-weight: 900; }
+[data-theme="glecerskalaguna"] .chart .line { stroke-width: 3; }
+[data-theme="glecerskalaguna"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="glecerskalaguna"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #414549; --alt: #323539; --text1: #e3f1f5; --text2: #b3bec2; --faint: #868f93; --up: #4ade80; --down: #f87171; --accent: #22d3ee; --hot: #2b464d; --tip: #e3f1f5; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="glecerskalaguna"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(45,47,51,0.6); border: 1px solid rgba(227,241,245,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="glecerskalaguna"][data-scheme="dark"] body { background: repeating-linear-gradient(30deg, rgba(227,241,245,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(227,241,245,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(227,241,245,0.04) 0 1px, transparent 1px 45px); background-color: #222428; background-attachment: fixed; }

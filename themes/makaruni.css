@@ -1,0 +1,13 @@
+/* tema makaruni (Macarons): generisana, tools/teme.py */
+:root[data-theme="makaruni"] { color-scheme: light; --back: #fffafc; --card: #fff8fb; --head: #f3ecf0; --edge: #e0dadd; --alt: #f9f2f5; --text1: #3e313d; --text2: #6e636d; --faint: #948992; --up: #15803d; --down: #c81e1e; --accent: #b27998; --hot: #f4e6ed; --tip: #3e313d; --tipfg: #fffafc; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="makaruni"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="makaruni"] .overview .left { align-self: start; }
+[data-theme="makaruni"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="makaruni"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="makaruni"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="makaruni"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="makaruni"] .big .value, [data-theme="makaruni"] .detail .price { font-weight: 200; }
+[data-theme="makaruni"] .chart .line { stroke-width: 3; }
+[data-theme="makaruni"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="makaruni"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3f; --edge: #444448; --alt: #343539; --text1: #f4eef3; --text2: #c0bcc0; --faint: #908d92; --up: #4ade80; --down: #f87171; --accent: #f9a8d4; --hot: #4a404a; --tip: #f4eef3; --tipfg: #232428; --accentfg: #111111; }

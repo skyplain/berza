@@ -1,0 +1,13 @@
+/* tema pečat (Rubber stamp): generisana, tools/teme.py */
+:root[data-theme="pecat"] { color-scheme: light; --back: #f7f1e3; --card: #fdfbf7; --head: #f1eeea; --edge: #d8cfc4; --alt: #f7f4f1; --text1: #341d1f; --text2: #655250; --faint: #92837d; --up: #15803d; --down: #c81e1e; --accent: #c0392b; --hot: #f4e0da; --tip: #341d1f; --tipfg: #f7f1e3; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="pecat"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="pecat"] .overview .left { align-self: start; }
+[data-theme="pecat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pecat"] button { border-radius: 0; }
+[data-theme="pecat"] :is(h2, h3) { display: inline-block; color: #c0392b; border: 2px solid #c0392b; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="pecat"] .big .value, [data-theme="pecat"] .detail .price { font-weight: 700; }
+[data-theme="pecat"] .chart .line { stroke-width: 2; }
+[data-theme="pecat"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pecat"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444244; --alt: #343335; --text1: #f0e5e6; --text2: #bdb4b6; --faint: #8e8889; --up: #4ade80; --down: #f87171; --accent: #ca584c; --hot: #443434; --tip: #f0e5e6; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="pecat"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #ca584c; border: 2px solid #ca584c; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

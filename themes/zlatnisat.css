@@ -1,0 +1,17 @@
+/* tema zlatni sat (Golden hour): generisana, tools/teme.py */
+:root[data-theme="zlatnisat"] { color-scheme: light; --back: #fff7e6; --card: #fffdf8; --head: #f3f1eb; --edge: #e0d7c5; --alt: #f9f7f1; --text1: #3d2f19; --text2: #6e614c; --faint: #938773; --up: #15803d; --down: #c81e1e; --accent: #be7a08; --hot: #f6ebd6; --tip: #3d2f19; --tipfg: #fff7e6; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="zlatnisat"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zlatnisat"] .overview .left { align-self: start; }
+[data-theme="zlatnisat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zlatnisat"] button { border-radius: 999px; }
+[data-theme="zlatnisat"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="zlatnisat"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="zlatnisat"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zlatnisat"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(190,122,8,0.08) 0 6deg, transparent 6deg 12deg); background-color: #fff7e6; background-attachment: fixed; }
+[data-theme="zlatnisat"] .big .value, [data-theme="zlatnisat"] .detail .price { font-weight: 700; }
+[data-theme="zlatnisat"] .chart .line { stroke-width: 2; }
+[data-theme="zlatnisat"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zlatnisat"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #3a3a3b; --edge: #444443; --alt: #343535; --text1: #f4ede3; --text2: #c0bbb4; --faint: #908d88; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #4a3f2b; --tip: #f4ede3; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="zlatnisat"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zlatnisat"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(245,158,11,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232425; background-attachment: fixed; }

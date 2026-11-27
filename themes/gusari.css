@@ -1,0 +1,20 @@
+/* tema gusari (Pirates): generisana, tools/teme.py */
+:root[data-theme="gusari"] { color-scheme: dark; --back: #120d0a; --card: #1e1916; --head: #2b2522; --edge: #352f2d; --alt: #241f1c; --text1: #efe3e5; --text2: #b8aeae; --faint: #857c7c; --up: #4ade80; --down: #f87171; --accent: #bf2e2e; --hot: #351c19; --tip: #efe3e5; --tipfg: #120d0a; --accentfg: #ffffff; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 10px; }
+[data-theme="gusari"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="gusari"] .overview .left { align-self: start; }
+[data-theme="gusari"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gusari"] button { border-radius: 999px; }
+[data-theme="gusari"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="gusari"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="gusari"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="gusari"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="gusari"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(239,227,229,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(239,227,229,0.03) 0 1px, transparent 1px 5px); background-color: #120d0a; background-attachment: fixed; }
+[data-theme="gusari"] :is(h2, h3) { display: inline-block; color: #bf2e2e; border: 2px solid #bf2e2e; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="gusari"] .big .value, [data-theme="gusari"] .detail .price { font-weight: 400; }
+[data-theme="gusari"] .chart .line { stroke-width: 1.5; }
+[data-theme="gusari"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="gusari"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeced; --edge: #d3cdce; --alt: #f5f3f3; --text1: #33181c; --text2: #624e51; --faint: #8e8082; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f2dbdb; --tip: #33181c; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="gusari"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="gusari"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(51,24,28,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(51,24,28,0.03) 0 1px, transparent 1px 5px); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="gusari"][data-scheme="light"] :is(h2, h3) { display: inline-block; color: #b91c1c; border: 2px solid #b91c1c; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

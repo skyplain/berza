@@ -1,0 +1,17 @@
+/* tema truba (Brass band): generisana, tools/teme.py */
+:root[data-theme="truba"] { color-scheme: light; --back: #fff8ea; --card: #fffdf9; --head: #f3f0ec; --edge: #dfd7c8; --alt: #f9f7f2; --text1: #382818; --text2: #6a5c4c; --faint: #988c7d; --up: #15803d; --down: #c81e1e; --accent: #c86d06; --hot: #f7e9d7; --tip: #382818; --tipfg: #fff8ea; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="truba"] :is(.overview .left, .block, .detail, .list) { background: rgba(255,253,249,0.6); border: 1px solid rgba(56,40,24,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="truba"] .overview .left { align-self: start; }
+[data-theme="truba"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="truba"] button { border-radius: 999px; background: transparent; }
+[data-theme="truba"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="truba"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="truba"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="truba"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(200,109,6,0.08) 0 6deg, transparent 6deg 12deg); background-color: #fff8ea; background-attachment: fixed; }
+[data-theme="truba"] .big .value, [data-theme="truba"] .detail .price { font-weight: 700; }
+[data-theme="truba"] .chart .line { stroke-width: 1.5; }
+[data-theme="truba"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="truba"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f2eae3; --text2: #beb8b4; --faint: #8f8b88; --up: #4ade80; --down: #f87171; --accent: #d97706; --hot: #46392b; --tip: #f2eae3; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="truba"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,47,49,0.6); border: 1px solid rgba(242,234,227,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="truba"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(217,119,6,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232426; background-attachment: fixed; }

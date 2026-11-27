@@ -1,0 +1,13 @@
+/* tema bušena kartica (Punch card): generisana, tools/teme.py */
+:root[data-theme="busenakartica"] { color-scheme: light; --back: #f3e7c4; --card: #fbf8ed; --head: #efece1; --edge: #d4caab; --alt: #f5f2e7; --text1: #34302a; --text2: #645e50; --faint: #89816e; --up: #15803d; --down: #c81e1e; --accent: #857149; --hot: #eae5d6; --tip: #34302a; --tipfg: #f3e7c4; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="busenakartica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="busenakartica"] .overview .left { align-self: start; }
+[data-theme="busenakartica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="busenakartica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="busenakartica"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(52,48,42,0.22); border-right: 8px dotted rgba(52,48,42,0.22); }
+[data-theme="busenakartica"] .big .value, [data-theme="busenakartica"] .detail .price { font-weight: 400; }
+[data-theme="busenakartica"] .chart .line { stroke-width: 2.5; }
+[data-theme="busenakartica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="busenakartica"][data-scheme="dark"] { color-scheme: dark; --back: #222222; --card: #2d2d2d; --head: #393938; --edge: #434342; --alt: #333333; --text1: #f0eeeb; --text2: #bcbbb9; --faint: #8d8c8b; --up: #4ade80; --down: #f87171; --accent: #c2a46a; --hot: #423e36; --tip: #f0eeeb; --tipfg: #222222; --accentfg: #111111; }
+[data-theme="busenakartica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(240,238,235,0.22); border-right: 8px dotted rgba(240,238,235,0.22); }

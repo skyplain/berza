@@ -1,0 +1,19 @@
+/* tema terminal moderni (Modern terminal): generisana, tools/teme.py */
+:root[data-theme="terminalmoderni"] { color-scheme: dark; --back: #0d1117; --card: #191d23; --head: #252a2f; --edge: #2f3539; --alt: #1f2329; --text1: #e3f0ea; --text2: #aeb8b5; --faint: #7c8585; --up: #4ade80; --down: #f87171; --accent: #22c55e; --hot: #1a352b; --tip: #e3f0ea; --tipfg: #0d1117; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="terminalmoderni"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="terminalmoderni"] .overview .left { align-self: start; }
+[data-theme="terminalmoderni"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="terminalmoderni"] button { border-radius: 999px; }
+[data-theme="terminalmoderni"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="terminalmoderni"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="terminalmoderni"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="terminalmoderni"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="terminalmoderni"] :is(.overview .left, .block, .detail, .list) { position: relative; padding-top: 34px; }
+[data-theme="terminalmoderni"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #22c55e; }
+[data-theme="terminalmoderni"] .big .value, [data-theme="terminalmoderni"] .detail .price { font-weight: 400; }
+[data-theme="terminalmoderni"] .chart .line { stroke-width: 3; }
+[data-theme="terminalmoderni"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="terminalmoderni"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #ecefee; --edge: #cdd3d1; --alt: #f3f5f5; --text1: #173628; --text2: #4d655a; --faint: #778980; --up: #15803d; --down: #c81e1e; --accent: #1b9a49; --hot: #dbede2; --tip: #173628; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="terminalmoderni"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="terminalmoderni"][data-scheme="light"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #1b9a49; }

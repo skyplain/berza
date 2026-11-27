@@ -1,0 +1,17 @@
+/* tema žad: generisana (paleta + oblik 2/1/4/1) */
+:root[data-theme="zad"] { color-scheme: dark; --back: #0b1f1a; --card: #10302a; --head: #1c3c36; --edge: #2d413c; --alt: #163630; --text1: #dff5ec; --text2: #a4b9b1; --faint: #758a83; --up: #4ade80; --down: #f87171; --accent: #3fbf8f; --hot: #174438; --tip: #dff5ec; --tipfg: #0b1f1a; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 6px; }
+[data-theme="zad"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="zad"] .overview .left { align-self: start; }
+[data-theme="zad"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zad"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zad"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="zad"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="zad"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="zad"] body { background: radial-gradient(#20342f 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #0b1f1a; background-attachment: fixed; }
+[data-theme="zad"] .big .value, [data-theme="zad"] .detail .price { font-weight: 700; }
+[data-theme="zad"] .chart .line { stroke-width: 1.5; }
+[data-theme="zad"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="zad"][data-scheme="light"] { color-scheme: light; --back: #cce4dd; --card: #afd2ca; --head: #a0c3bc; --edge: #a1b8b2; --alt: #a7cbc3; --text1: #03130d; --text2: #2e4039; --faint: #566a63; --up: #15803d; --down: #c81e1e; --accent: #03805b; --hot: #91bfb0; --tip: #03130d; --tipfg: #cce4dd; --accentfg: #ffffff; }
+[data-theme="zad"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="zad"][data-scheme="light"] body { background: radial-gradient(#b0c8c2 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #cce4dd; background-attachment: fixed; }

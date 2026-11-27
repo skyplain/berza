@@ -1,0 +1,17 @@
+/* tema nebula: generisana (paleta + oblik 2/1/4/1) */
+:root[data-theme="nebula"] { color-scheme: dark; --back: #12051f; --card: #1d0a30; --head: #2a173c; --edge: #362943; --alt: #231136; --text1: #f3e6ff; --text2: #b4a7c0; --faint: #82768f; --up: #4ade80; --down: #f87171; --accent: #ff57d8; --hot: #3d1548; --tip: #f3e6ff; --tipfg: #12051f; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 6px; }
+[data-theme="nebula"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="nebula"] .overview .left { align-self: start; }
+[data-theme="nebula"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nebula"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="nebula"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="nebula"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="nebula"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="nebula"] body { background: radial-gradient(#281c35 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #12051f; background-attachment: fixed; }
+[data-theme="nebula"] .big .value, [data-theme="nebula"] .detail .price { font-weight: 700; }
+[data-theme="nebula"] .chart .line { stroke-width: 2.5; }
+[data-theme="nebula"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="nebula"][data-scheme="light"] { color-scheme: light; --back: #f6f0fe; --card: #ebdefd; --head: #dfc9fa; --edge: #cabadb; --alt: #e4d3fe; --text1: #160c1d; --text2: #463b50; --faint: #736780; --up: #15803d; --down: #c81e1e; --accent: #df34bb; --hot: #e5b5f3; --tip: #160c1d; --tipfg: #f6f0fe; --accentfg: #111111; }
+[data-theme="nebula"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="nebula"][data-scheme="light"] body { background: radial-gradient(#dacced 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #f6f0fe; background-attachment: fixed; }

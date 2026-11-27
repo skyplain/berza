@@ -1,0 +1,13 @@
+/* tema kolonada (Colonnade): generisana, tools/teme.py */
+:root[data-theme="kolonada"] { color-scheme: light; --back: #fbfaf7; --card: #f9f8f5; --head: #edece9; --edge: #dadad8; --alt: #f3f2ef; --text1: #2f3033; --text2: #626264; --faint: #919191; --up: #15803d; --down: #c81e1e; --accent: #8f8985; --hot: #eae8e5; --tip: #2f3033; --tipfg: #fbfaf7; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="kolonada"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="kolonada"] .overview .left { align-self: start; }
+[data-theme="kolonada"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kolonada"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kolonada"] body { background: repeating-linear-gradient(90deg, rgba(47,48,51,0.035) 0 44px, transparent 44px 88px); background-color: #fbfaf7; background-attachment: fixed; }
+[data-theme="kolonada"] .big .value, [data-theme="kolonada"] .detail .price { font-weight: 700; }
+[data-theme="kolonada"] .chart .line { stroke-width: 2; }
+[data-theme="kolonada"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kolonada"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #434447; --alt: #343538; --text1: #eeedef; --text2: #bbbbbd; --faint: #8d8d8f; --up: #4ade80; --down: #f87171; --accent: #a8a29e; --hot: #3f3f41; --tip: #eeedef; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="kolonada"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(238,237,239,0.035) 0 44px, transparent 44px 88px); background-color: #232427; background-attachment: fixed; }

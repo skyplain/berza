@@ -1,0 +1,17 @@
+/* tema pepito (Houndstooth): generisana, tools/teme.py */
+:root[data-theme="pepito"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #ededee; --edge: #cececf; --alt: #f4f4f4; --text1: #14161a; --text2: #4b4d50; --faint: #7e7f81; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dadada; --tip: #14161a; --tipfg: #f1f1f1; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="pepito"] :is(.overview .left, .block, .detail, .list) { background: #e9e9e9; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="pepito"] .overview .left { align-self: start; }
+[data-theme="pepito"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pepito"] button { border: 0; }
+[data-theme="pepito"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="pepito"] .bar h1 { font-size: 24px; }
+[data-theme="pepito"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pepito"] body { background: conic-gradient(rgba(20,22,26,0.07) 25%, transparent 0 50%, rgba(20,22,26,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #f1f1f1; background-attachment: fixed; }
+[data-theme="pepito"] .big .value, [data-theme="pepito"] .detail .price { font-weight: 200; }
+[data-theme="pepito"] .chart .line { stroke-width: 2; }
+[data-theme="pepito"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pepito"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414245; --alt: #323337; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #868689; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #39393d; --tip: #e2e2e4; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="pepito"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #292a2e; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="pepito"][data-scheme="dark"] body { background: conic-gradient(rgba(226,226,228,0.07) 25%, transparent 0 50%, rgba(226,226,228,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #222327; background-attachment: fixed; }

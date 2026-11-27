@@ -1,0 +1,20 @@
+/* tema ciberpank: žuto-crno, odsečeni uglovi, cijan greška u slici */
+:root[data-theme="ciberpank"] { color-scheme: dark; --back: #0d0d0d; --card: #151515; --head: #1d1d1d; --edge: #fcee0a; --alt: #121212; --text1: #f0f0f0; --text2: #c8c8c8; --faint: #8a8a8a; --up: #00f0ff; --down: #ff2a6d; --accent: #fcee0a; --hot: #2a2a10; --tip: #fcee0a; --tipfg: #000; --accentfg: #000; --font: "Avenir Next Condensed","Arial Narrow",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0; --h-color: #000; --h-transform: uppercase; --h-spacing: .12em; --h-size: 12px; --h-weight: 800; --h-font: inherit; --big-font: inherit; --big-weight: 800; }
+[data-theme="ciberpank"] :is(h2,h3,.big .label) { background:#fcee0a;display:inline-block;padding:2px 14px 2px 8px;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%) }
+[data-theme="ciberpank"] :is(.overview .left,.block,.detail) { border:1px solid #fcee0a;padding:14px 16px;clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px)) }
+[data-theme="ciberpank"] .overview .left { align-self:start }
+[data-theme="ciberpank"] .bar { border-bottom:2px solid #fcee0a }
+[data-theme="ciberpank"] .bar h1 { text-transform:uppercase;font-weight:900;font-size:26px;color:#fcee0a;text-shadow:2px 0 #00f0ff,-2px 0 #ff2a6d }
+[data-theme="ciberpank"] button { background:#fcee0a;color:#000;border:0;font-weight:800;text-transform:uppercase;clip-path:polygon(0 0,100% 0,100% 70%,85% 100%,0 100%) }
+[data-theme="ciberpank"] .big .value { text-shadow:3px 0 #00f0ff,-3px 0 #ff2a6d }
+[data-theme="ciberpank"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="ciberpank"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="ciberpank"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="ciberpank"][data-scheme="light"] { color-scheme: light; --back: #f2f2f2; --card: #e6e6e6; --head: #dadada; --edge: #8c8400; --alt: #eaeaea; --text1: #0e0e0e; --text2: #2b2b2b; --faint: #5f5f5f; --up: #15803d; --down: #c81e1e; --accent: #8c8400; --hot: #cdceaf; --tip: #8c8400; --tipfg: #151515; --accentfg: #111111; --h-color: #ffffff; }
+[data-theme="ciberpank"][data-scheme="light"] :is(h2,h3,.big .label) { background:#8c8400;display:inline-block;padding:2px 14px 2px 8px;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%) }
+[data-theme="ciberpank"][data-scheme="light"] :is(.overview .left,.block,.detail) { border:1px solid #8c8400;padding:14px 16px;clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px)) }
+[data-theme="ciberpank"][data-scheme="light"] .bar { border-bottom:2px solid #8c8400 }
+[data-theme="ciberpank"][data-scheme="light"] .bar h1 { text-transform:uppercase;font-weight:900;font-size:26px;color:#8c8400;text-shadow:2px 0 #00282b,-2px 0 #a60b42 }
+[data-theme="ciberpank"][data-scheme="light"] button { background:#8c8400;color:#ffffff;border:0;font-weight:800;text-transform:uppercase;clip-path:polygon(0 0,100% 0,100% 70%,85% 100%,0 100%) }
+[data-theme="ciberpank"][data-scheme="light"] .big .value { text-shadow:3px 0 #00282b,-3px 0 #a60b42 }

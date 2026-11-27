@@ -1,0 +1,17 @@
+/* tema zemun (Zemun): generisana, tools/teme.py */
+:root[data-theme="zemun"] { color-scheme: light; --back: #f5f8fc; --card: #fcfdfe; --head: #eef0f2; --edge: #d1d6de; --alt: #f5f6f8; --text1: #16213e; --text2: #4e576e; --faint: #818899; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dde4f9; --tip: #16213e; --tipfg: #f5f8fc; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="zemun"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zemun"] .overview .left { align-self: start; }
+[data-theme="zemun"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zemun"] button { border-radius: 999px; }
+[data-theme="zemun"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="zemun"] .bar h1 { font-weight: 800; }
+[data-theme="zemun"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="zemun"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(29,78,216,0.14) 9px 10px, transparent 11px 16px, rgba(29,78,216,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f5f8fc; background-attachment: fixed; }
+[data-theme="zemun"] .big .value, [data-theme="zemun"] .detail .price { font-weight: 200; }
+[data-theme="zemun"] .chart .line { stroke-width: 2; }
+[data-theme="zemun"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zemun"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #414349; --alt: #323539; --text1: #e3e7f4; --text2: #b3b6c1; --faint: #868992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #333a4c; --tip: #e3e7f4; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="zemun"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zemun"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(86,123,226,0.14) 9px 10px, transparent 11px 16px, rgba(86,123,226,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222428; background-attachment: fixed; }

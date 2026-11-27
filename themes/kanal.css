@@ -1,0 +1,17 @@
+/* tema kanal (Canal): generisana, tools/teme.py */
+:root[data-theme="kanal"] { color-scheme: light; --back: #f2f7f3; --card: #fbfdfb; --head: #edf0ee; --edge: #ced6d2; --alt: #f4f7f5; --text1: #122827; --text2: #4a5c5a; --faint: #7e8b89; --up: #15803d; --down: #c81e1e; --accent: #047857; --hot: #d8eae4; --tip: #122827; --tipfg: #f2f7f3; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="kanal"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kanal"] .overview .left { align-self: start; }
+[data-theme="kanal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kanal"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kanal"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kanal"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kanal"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kanal"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(4,120,87,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #f2f7f3; background-attachment: fixed; }
+[data-theme="kanal"] .big .value, [data-theme="kanal"] .detail .price { font-weight: 900; }
+[data-theme="kanal"] .chart .line { stroke-width: 3; }
+[data-theme="kanal"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kanal"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414446; --alt: #323537; --text1: #e1eae9; --text2: #b1b8b8; --faint: #858b8c; --up: #4ade80; --down: #f87171; --accent: #2a8d70; --hot: #2d3c3b; --tip: #e1eae9; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="kanal"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kanal"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(42,141,112,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #222427; background-attachment: fixed; }

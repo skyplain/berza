@@ -1,0 +1,24 @@
+/* tema subotica (Subotica): generisana, tools/teme.py */
+:root[data-theme="subotica"] { color-scheme: light; --back: #f6f1e1; --card: #fcfbf6; --head: #eeeee9; --edge: #d2d1c2; --alt: #f5f5f0; --text1: #152a22; --text2: #4d5c52; --faint: #818a7e; --up: #15803d; --down: #c81e1e; --accent: #15803d; --hot: #dceadc; --tip: #152a22; --tipfg: #f6f1e1; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 8px; }
+[data-theme="subotica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="subotica"] .overview .left { align-self: start; }
+[data-theme="subotica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="subotica"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="subotica"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="subotica"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="subotica"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="subotica"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(21,128,61,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(61,21,128,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #f6f1e1; background-attachment: fixed; }
+[data-theme="subotica"] :is(.overview .left, .block, .detail, .list) { border: 4px double #15803d; }
+[data-theme="subotica"] .bar h1::before { content: "❦ "; color: #15803d; }
+[data-theme="subotica"] .bar h1::after { content: " ❦"; color: #15803d; }
+[data-theme="subotica"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="subotica"] .big .value, [data-theme="subotica"] .detail .price { font-weight: 900; }
+[data-theme="subotica"] .chart .line { stroke-width: 2.5; }
+[data-theme="subotica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="subotica"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #414344; --alt: #323435; --text1: #e2ebe7; --text2: #b2b9b6; --faint: #868b8a; --up: #4ade80; --down: #f87171; --accent: #318f54; --hot: #2e3c35; --tip: #e2ebe7; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="subotica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="subotica"][data-scheme="dark"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(49,143,84,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(61,21,128,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #222325; background-attachment: fixed; }
+[data-theme="subotica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #318f54; }
+[data-theme="subotica"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #318f54; }
+[data-theme="subotica"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #318f54; }

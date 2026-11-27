@@ -1,0 +1,30 @@
+/* tema bauhaus: osnovne boje, geometrija, krupni naslovi, pravougaoni blokovi */
+:root[data-theme="bauhaus"] { color-scheme: light; --back: #f2ede3; --card: #fff; --head: #f2ede3; --edge: #111; --alt: #f7f3ec; --text1: #111; --text2: #333; --faint: #666; --up: #1d4fd8; --down: #e1251b; --accent: #e1251b; --hot: #ffe9a8; --tip: #111; --tipfg: #f5c400; --accentfg: #fff; --font: Futura,"Century Gothic","Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0; --h-color: #111; --h-transform: uppercase; --h-spacing: .05em; --h-size: 14px; --h-weight: 800; --h-font: inherit; --big-font: inherit; --big-weight: 700; }
+[data-theme="bauhaus"] .bar { border-bottom:0;position:relative;padding-bottom:20px }
+[data-theme="bauhaus"] .bar::after { content:"";position:absolute;left:0;right:0;bottom:6px;height:8px;background:linear-gradient(90deg,#e1251b 0 33%,#f5c400 33% 66%,#1d4fd8 66%) }
+[data-theme="bauhaus"] .bar h1 { font-size:28px;font-weight:800;text-transform:uppercase }
+[data-theme="bauhaus"] .bar h1::before { content:"● ■ ▲ ";font-size:16px;color:#1d4fd8 }
+[data-theme="bauhaus"] button { border:2px solid #111;background:#fff;font-weight:700 }
+[data-theme="bauhaus"] button:hover { background:#f5c400 }
+[data-theme="bauhaus"] h2::before,[data-theme="bauhaus"] h3::before { content:"";display:inline-block;width:12px;height:12px;background:#e1251b;border-radius:50%;margin-right:8px }
+[data-theme="bauhaus"] .block:nth-child(3n+2) h2::before { background:#f5c400;border-radius:0 }
+[data-theme="bauhaus"] .block:nth-child(3n) h2::before { background:#1d4fd8;border-radius:0;clip-path:polygon(50% 0,100% 100%,0 100%) }
+[data-theme="bauhaus"] .overview .left { background:#f5c400;padding:16px;align-self:start }
+[data-theme="bauhaus"] .overview .left .kvs { border-color:#111 }
+[data-theme="bauhaus"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="bauhaus"] th { border-bottom:2px solid #111;color:#111 }
+[data-theme="bauhaus"] .chart .line { stroke-width:3 }
+[data-theme="bauhaus"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="bauhaus"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="bauhaus"][data-scheme="dark"] { color-scheme: dark; --back: #131009; --card: #060606; --head: #131009; --edge: #ececec; --alt: #0e0c07; --text1: #ececec; --text2: #bdbdbd; --faint: #838383; --up: #4ade80; --down: #f87171; --accent: #e1251b; --hot: #191100; --tip: #ececec; --tipfg: #342700; --accentfg: #ffffff; --h-color: #ececec; }
+[data-theme="bauhaus"][data-scheme="dark"] .bar::after { content:"";position:absolute;left:0;right:0;bottom:6px;height:8px;background:linear-gradient(90deg,#e1251b 0 33%,#342700 33% 66%,#4b80fd 66%) }
+[data-theme="bauhaus"][data-scheme="dark"] .bar h1::before { content:"● ■ ▲ ";font-size:16px;color:#4b80fd }
+[data-theme="bauhaus"][data-scheme="dark"] button { border:2px solid #ececec;background:#060606;font-weight:700 }
+[data-theme="bauhaus"][data-scheme="dark"] button:hover { background:#342700 }
+[data-theme="bauhaus"][data-scheme="dark"] h2::before,[data-theme="bauhaus"][data-scheme="dark"] h3::before { content:"";display:inline-block;width:12px;height:12px;background:#e1251b;border-radius:50%;margin-right:8px }
+[data-theme="bauhaus"][data-scheme="dark"] .block:nth-child(3n+2) h2::before { background:#342700;border-radius:0 }
+[data-theme="bauhaus"][data-scheme="dark"] .block:nth-child(3n) h2::before { background:#4b80fd;border-radius:0;clip-path:polygon(50% 0,100% 100%,0 100%) }
+[data-theme="bauhaus"][data-scheme="dark"] .overview .left { background:#342700;padding:16px;align-self:start }
+[data-theme="bauhaus"][data-scheme="dark"] .overview .left .kvs { border-color:#ececec }
+[data-theme="bauhaus"][data-scheme="dark"] th { border-bottom:2px solid #ececec;color:#ececec }

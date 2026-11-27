@@ -1,0 +1,16 @@
+/* tema rio de žaneiro (Rio de Janeiro): generisana, tools/teme.py */
+:root[data-theme="riodezaneiro"] { color-scheme: light; --back: #fefbe9; --card: #f9f9e6; --head: #ebedda; --edge: #d9dbc9; --alt: #f2f3e0; --text1: #153024; --text2: #4f6355; --faint: #859183; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #d9ebcf; --tip: #153024; --tipfg: #fefbe9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="riodezaneiro"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="riodezaneiro"] .overview .left { align-self: start; }
+[data-theme="riodezaneiro"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="riodezaneiro"] button { border-radius: 0; }
+[data-theme="riodezaneiro"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="riodezaneiro"] .bar h1 { font-weight: 800; }
+[data-theme="riodezaneiro"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="riodezaneiro"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(20,150,68,0.14) 9px 10px, transparent 11px 16px, rgba(20,150,68,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #fefbe9; background-attachment: fixed; }
+[data-theme="riodezaneiro"] .big .value, [data-theme="riodezaneiro"] .detail .price { font-weight: 700; }
+[data-theme="riodezaneiro"] .chart .line { stroke-width: 3; }
+[data-theme="riodezaneiro"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="riodezaneiro"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #393a3c; --edge: #424445; --alt: #333536; --text1: #e2eee8; --text2: #b2bcb8; --faint: #868d8b; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #2b3f34; --tip: #e2eee8; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="riodezaneiro"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(22,163,74,0.14) 9px 10px, transparent 11px 16px, rgba(22,163,74,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #232426; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema koala (Koala): generisana, tools/teme.py */
+:root[data-theme="koala"] { color-scheme: light; --back: #f5f4f2; --card: #fcfcfb; --head: #efefee; --edge: #d4d3d2; --alt: #f6f6f5; --text1: #27272a; --text2: #5a5a5c; --faint: #8a898a; --up: #15803d; --down: #c81e1e; --accent: #78716c; --hot: #eae9e7; --tip: #27272a; --tipfg: #f5f4f2; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="koala"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="koala"] .overview .left { align-self: start; }
+[data-theme="koala"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="koala"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="koala"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="koala"] .bar button { background: transparent; color: var(--back); border-color: rgba(245,244,242,0.35); box-shadow: none; }
+[data-theme="koala"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="koala"] .big .value, [data-theme="koala"] .detail .price { font-weight: 400; }
+[data-theme="koala"] .chart .line { stroke-width: 1.5; }
+[data-theme="koala"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="koala"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #424346; --alt: #333438; --text1: #eaeaeb; --text2: #b8b8ba; --faint: #8a8a8d; --up: #4ade80; --down: #f87171; --accent: #837c78; --hot: #39393c; --tip: #eaeaeb; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="koala"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="koala"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,39,0.35); box-shadow: none; }

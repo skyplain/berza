@@ -1,0 +1,17 @@
+/* tema morana (Morana): generisana, tools/teme.py */
+:root[data-theme="morana"] { color-scheme: dark; --back: #0b0e12; --card: #171a1e; --head: #24262a; --edge: #2e3135; --alt: #1d2024; --text1: #e8eaed; --text2: #b1b3b6; --faint: #7e8084; --up: #4ade80; --down: #f87171; --accent: #64748b; --hot: #22272d; --tip: #e8eaed; --tipfg: #0b0e12; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="morana"] :is(.overview .left, .block, .detail, .list) { background: #13161a; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="morana"] .overview .left { align-self: start; }
+[data-theme="morana"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="morana"] button { border: 0; }
+[data-theme="morana"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="morana"] .bar h1 { font-size: 24px; }
+[data-theme="morana"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="morana"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #0b0e12; background-attachment: fixed; }
+[data-theme="morana"] .big .value, [data-theme="morana"] .detail .price { font-weight: 400; }
+[data-theme="morana"] .chart .line { stroke-width: 2; }
+[data-theme="morana"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="morana"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #edeeef; --edge: #cfd1d2; --alt: #f4f5f5; --text1: #232830; --text2: #565a60; --faint: #85888d; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e5e8eb; --tip: #232830; --tipfg: #f0f1f1; --accentfg: #ffffff; }
+[data-theme="morana"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #e9eaea; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="morana"][data-scheme="light"] body { background: radial-gradient(circle, rgba(100,116,139,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(100,116,139,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(100,116,139,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f0f1f1; background-attachment: fixed; }

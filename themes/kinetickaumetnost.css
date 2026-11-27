@@ -1,0 +1,14 @@
+/* tema kinetička umetnost (Kinetic art): generisana, tools/teme.py */
+:root[data-theme="kinetickaumetnost"] { color-scheme: light; --back: #edf9fe; --card: #fafdff; --head: #ecf1f4; --edge: #cad9e0; --alt: #f3f7f9; --text1: #113142; --text2: #486371; --faint: #7b919c; --up: #15803d; --down: #c81e1e; --accent: #008dc9; --hot: #d7edf7; --tip: #113142; --tipfg: #edf9fe; --accentfg: #111111; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 8px; }
+[data-theme="kinetickaumetnost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kinetickaumetnost"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="kinetickaumetnost"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="kinetickaumetnost"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="kinetickaumetnost"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kinetickaumetnost"] body { background: repeating-linear-gradient(90deg, rgba(0,141,201,0.07) 0 14px, transparent 14px 40px); background-color: #edf9fe; background-attachment: fixed; }
+[data-theme="kinetickaumetnost"] .big .value, [data-theme="kinetickaumetnost"] .detail .price { font-weight: 900; }
+[data-theme="kinetickaumetnost"] .chart .line { stroke-width: 3; }
+[data-theme="kinetickaumetnost"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kinetickaumetnost"][data-scheme="dark"] { color-scheme: dark; --back: #0a1d28; --card: #162833; --head: #22343f; --edge: #2c3e49; --alt: #1c2e39; --text1: #e0eef5; --text2: #aabac2; --faint: #798a93; --up: #4ade80; --down: #f87171; --accent: #00a6ed; --hot: #133a4d; --tip: #e0eef5; --tipfg: #0a1d28; --accentfg: #111111; }
+[data-theme="kinetickaumetnost"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(0,166,237,0.07) 0 14px, transparent 14px 40px); background-color: #0a1d28; background-attachment: fixed; }

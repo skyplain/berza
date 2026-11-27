@@ -1,0 +1,15 @@
+/* tema severni pol (North Pole): generisana, tools/teme.py */
+:root[data-theme="severnipol"] { color-scheme: light; --back: #f7fafe; --card: #f5f8fd; --head: #e9ecf1; --edge: #d7dade; --alt: #eff2f7; --text1: #2c3038; --text2: #5f626a; --faint: #8d9197; --up: #15803d; --down: #c81e1e; --accent: #7d8a9b; --hot: #e4e9ef; --tip: #2c3038; --tipfg: #f7fafe; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="severnipol"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="severnipol"] .overview .left { align-self: start; }
+[data-theme="severnipol"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="severnipol"] button { border-radius: 999px; }
+[data-theme="severnipol"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="severnipol"] body { background: radial-gradient(circle, rgba(148,163,184,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(148,163,184,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(148,163,184,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f7fafe; background-attachment: fixed; }
+[data-theme="severnipol"] .big .value, [data-theme="severnipol"] .detail .price { font-weight: 900; }
+[data-theme="severnipol"] .chart .line { stroke-width: 1.5; }
+[data-theme="severnipol"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="severnipol"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #434448; --alt: #343539; --text1: #eceef1; --text2: #babcbf; --faint: #8c8d91; --up: #4ade80; --down: #f87171; --accent: #94a3b8; --hot: #3c3f46; --tip: #eceef1; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="severnipol"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="severnipol"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #232428; background-attachment: fixed; }

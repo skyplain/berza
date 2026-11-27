@@ -1,0 +1,28 @@
+/* tema nacrt: plavi tehnički crtež, mreža u pozadini, tanke bele linije, monospace */
+:root[data-theme="nacrt"] { color-scheme: dark; --back: #0d3b78; --card: #0f4387; --head: #134c95; --edge: rgba(255, 255, 255, .35); --alt: rgba(255, 255, 255, .04); --text1: #f2f7ff; --text2: #c3d6f2; --faint: #8fb0dc; --up: #7cf0b4; --down: #ffb3a1; --accent: #ffffff; --hot: rgba(255, 255, 255, .12); --tip: #fff; --tipfg: #0d3b78; --accentfg: #0d3b78; --font: "Courier New", ui-monospace, monospace; --radius: 0; }
+[data-theme="nacrt"] body { background-color: #0d3b78; background-image: linear-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .07) 1px, transparent 1px), linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px); background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px; background-attachment: fixed; }
+[data-theme="nacrt"] .bar { border-bottom: 1px dashed var(--edge); }
+[data-theme="nacrt"] .bar h1 { text-transform: uppercase; letter-spacing: .25em; font-weight: 400; }
+[data-theme="nacrt"] .bar h1::before { content: "┌ "; color: var(--faint); }
+[data-theme="nacrt"] button { background: transparent; border-style: dashed; }
+[data-theme="nacrt"] button:hover { border-style: solid; border-color: #fff; }
+[data-theme="nacrt"] .overview .left, [data-theme="nacrt"] .block, [data-theme="nacrt"] .detail { border: 1px solid var(--edge); padding: 14px 16px; position: relative; }
+[data-theme="nacrt"] .overview .left { align-self: start; }
+[data-theme="nacrt"] .two .block, [data-theme="nacrt"] .block .block { border: 0; padding: 0; }
+[data-theme="nacrt"] h2, [data-theme="nacrt"] h3, [data-theme="nacrt"] .big .label { color: var(--text1); font-weight: 400; letter-spacing: .2em; }
+[data-theme="nacrt"] h2::before, [data-theme="nacrt"] h3::before { content: "§ "; color: var(--faint); }
+[data-theme="nacrt"] .big .value { font-weight: 400; }
+[data-theme="nacrt"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nacrt"] tbody tr { border-bottom: 1px dotted var(--edge); }
+[data-theme="nacrt"] th { border-bottom: 1px solid var(--edge); }
+[data-theme="nacrt"] .chart .line { stroke-width: 1.5; }
+[data-theme="nacrt"] .chart .area { opacity: .1; }
+[data-theme="nacrt"] .rows, [data-theme="nacrt"] #search { background: rgba(0, 0, 0, .12); }
+[data-theme="nacrt"] .rows thead th { background: #0f4387; }
+[data-theme="nacrt"] footer { border-top: 1px dashed var(--edge); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="nacrt"][data-scheme="light"] { color-scheme: light; --back: #82b3f9; --card: #73a9f5; --head: #659eee; --edge: rgba(85,85,85,.35); --alt: rgba(85,85,85,.04); --text1: #070a0f; --text2: #142236; --faint: #244166; --up: #106430; --down: #a91a1a; --accent: #555555; --hot: rgba(85,85,85,.12); --tip: #555555; --tipfg: #f3f9f9; --accentfg: #ffffff; }
+[data-theme="nacrt"][data-scheme="light"] body { background-color: #82b3f9; background-image: linear-gradient(rgba(85,85,85,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(85,85,85,.07) 1px, transparent 1px), linear-gradient(rgba(85,85,85,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(85,85,85,.03) 1px, transparent 1px); background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px; background-attachment: fixed; }
+[data-theme="nacrt"][data-scheme="light"] button:hover { border-style: solid; border-color: #555555; }
+[data-theme="nacrt"][data-scheme="light"] .rows, [data-theme="nacrt"][data-scheme="light"] #search { background: rgba(255,255,255,.12); }
+[data-theme="nacrt"][data-scheme="light"] .rows thead th { background: #73a9f5; }

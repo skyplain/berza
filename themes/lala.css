@@ -1,0 +1,16 @@
+/* tema lala (Tulip field): generisana, tools/teme.py */
+:root[data-theme="lala"] { color-scheme: light; --back: #fff4f5; --card: #fffcfc; --head: #f3efef; --edge: #e0d2d4; --alt: #f9f5f6; --text1: #3d1e28; --text2: #6e545b; --faint: #9a858a; --up: #15803d; --down: #c81e1e; --accent: #f43f5e; --hot: #fde2e6; --tip: #3d1e28; --tipfg: #fff4f5; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="lala"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="lala"] .overview .left { align-self: start; }
+[data-theme="lala"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lala"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="lala"] .bar h1 { font-size: 24px; }
+[data-theme="lala"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="lala"] body { background: repeating-linear-gradient(100deg, rgba(244,63,94,0.12) 0 6px, transparent 6px 24px); background-color: #fff4f5; background-attachment: fixed; }
+[data-theme="lala"] .big .value, [data-theme="lala"] .detail .price { font-weight: 400; }
+[data-theme="lala"] .chart .line { stroke-width: 3; }
+[data-theme="lala"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lala"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444246; --alt: #343438; --text1: #f4e6ea; --text2: #c0b5b9; --faint: #90888c; --up: #4ade80; --down: #f87171; --accent: #f43f5e; --hot: #4a3038; --tip: #f4e6ea; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="lala"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="lala"][data-scheme="dark"] body { background: repeating-linear-gradient(100deg, rgba(244,63,94,0.12) 0 6px, transparent 6px 24px); background-color: #232327; background-attachment: fixed; }

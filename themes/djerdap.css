@@ -1,0 +1,15 @@
+/* tema đerdap (Iron Gates): generisana, tools/teme.py */
+:root[data-theme="djerdap"] { color-scheme: dark; --back: #06131c; --card: #121f27; --head: #1e2b33; --edge: #29353d; --alt: #18252d; --text1: #e1e6eb; --text2: #aab1b7; --faint: #788188; --up: #4ade80; --down: #f87171; --accent: #41718f; --hot: #192a36; --tip: #e1e6eb; --tipfg: #06131c; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="djerdap"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="djerdap"] .overview .left { align-self: start; }
+[data-theme="djerdap"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="djerdap"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="djerdap"] .bar h1 { font-size: 24px; }
+[data-theme="djerdap"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="djerdap"] body { background: linear-gradient(135deg, transparent 50%, rgba(65,113,143,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(65,113,143,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(65,113,143,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(65,113,143,0.08) 50%) 50px 100% / 220px 120px repeat-x, radial-gradient(circle at 50% 100%, transparent 8px, rgba(65,113,143,0.14) 9px 10px, transparent 11px 16px, rgba(65,113,143,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #06131c; background-attachment: fixed; }
+[data-theme="djerdap"] .big .value, [data-theme="djerdap"] .detail .price { font-weight: 700; }
+[data-theme="djerdap"] .chart .line { stroke-width: 2.5; }
+[data-theme="djerdap"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="djerdap"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eceeef; --edge: #cdd0d1; --alt: #f3f4f5; --text1: #13202b; --text2: #4a545c; --faint: #7d848a; --up: #15803d; --down: #c81e1e; --accent: #0c4a6e; --hot: #d9e2e7; --tip: #13202b; --tipfg: #f0f1f1; --accentfg: #ffffff; }
+[data-theme="djerdap"][data-scheme="light"] body { background: linear-gradient(135deg, transparent 50%, rgba(12,74,110,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(12,74,110,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(12,74,110,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(12,74,110,0.08) 50%) 50px 100% / 220px 120px repeat-x, radial-gradient(circle at 50% 100%, transparent 8px, rgba(12,74,110,0.14) 9px 10px, transparent 11px 16px, rgba(12,74,110,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f0f1f1; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema ljubav (Love): generisana, tools/teme.py */
+:root[data-theme="ljubav"] { color-scheme: light; --back: #ffeef1; --card: #fffafb; --head: #f3edee; --edge: #e0cdd1; --alt: #f9f3f5; --text1: #3d1e28; --text2: #6e525a; --faint: #9a8288; --up: #15803d; --down: #c81e1e; --accent: #f43f5e; --hot: #fde0e5; --tip: #3d1e28; --tipfg: #ffeef1; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="ljubav"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="ljubav"] .overview .left { align-self: start; }
+[data-theme="ljubav"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ljubav"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ljubav"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="ljubav"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="ljubav"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="ljubav"] :is(h2, h3)::before { content: "♥ "; color: #f43f5e; }
+[data-theme="ljubav"] .bar h1::after { content: " ♥"; color: #f43f5e; }
+[data-theme="ljubav"] .big .value, [data-theme="ljubav"] .detail .price { font-weight: 400; }
+[data-theme="ljubav"] .chart .line { stroke-width: 2.5; }
+[data-theme="ljubav"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ljubav"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444246; --alt: #343438; --text1: #f4e6ea; --text2: #c0b5b9; --faint: #90888c; --up: #4ade80; --down: #f87171; --accent: #f43f5e; --hot: #4a3038; --tip: #f4e6ea; --tipfg: #232327; --accentfg: #111111; }

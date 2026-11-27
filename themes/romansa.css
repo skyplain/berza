@@ -1,0 +1,16 @@
+/* tema romansa (Romance): generisana, tools/teme.py */
+:root[data-theme="romansa"] { color-scheme: light; --back: #fff0f5; --card: #fffafc; --head: #f3edf0; --edge: #e0cfd5; --alt: #f9f4f6; --text1: #3b222e; --text2: #6c5660; --faint: #99858e; --up: #15803d; --down: #c81e1e; --accent: #d54d76; --hot: #f9e2e9; --tip: #3b222e; --tipfg: #fff0f5; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="romansa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="romansa"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="romansa"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="romansa"] .bar h1 { font-size: 24px; }
+[data-theme="romansa"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="romansa"] :is(h2, h3)::before { content: "♥ "; color: #d54d76; }
+[data-theme="romansa"] .bar h1::after { content: " ♥"; color: #d54d76; }
+[data-theme="romansa"] .big .value, [data-theme="romansa"] .detail .price { font-weight: 700; }
+[data-theme="romansa"] .chart .line { stroke-width: 2; }
+[data-theme="romansa"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="romansa"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444247; --alt: #343438; --text1: #f3e7ed; --text2: #bfb6bc; --faint: #8f898e; --up: #4ade80; --down: #f87171; --accent: #e75480; --hot: #48333d; --tip: #f3e7ed; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="romansa"][data-scheme="dark"] :is(h2, h3)::before { content: "♥ "; color: #e75480; }
+[data-theme="romansa"][data-scheme="dark"] .bar h1::after { content: " ♥"; color: #e75480; }

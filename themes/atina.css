@@ -1,0 +1,19 @@
+/* tema atina (Athens): generisana, tools/teme.py */
+:root[data-theme="atina"] { color-scheme: light; --back: #fcfcfe; --card: #f8f9fd; --head: #eaecf2; --edge: #d7d9df; --alt: #f1f3f7; --text1: #16213e; --text2: #50586e; --faint: #848a9a; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #d9e1f8; --tip: #16213e; --tipfg: #fcfcfe; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="atina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="atina"] .overview .left { align-self: start; }
+[data-theme="atina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="atina"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="atina"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="atina"] .bar button { background: transparent; color: var(--back); border-color: rgba(252,252,254,0.35); box-shadow: none; }
+[data-theme="atina"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="atina"] .bar { position: relative; }
+[data-theme="atina"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #1d4ed8 0 3px, transparent 3px 12px, #1d4ed8 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#1d4ed8 0 3px, transparent 3px 9px, #1d4ed8 9px 12px) 0 0 / 24px 12px; }
+[data-theme="atina"] .big .value, [data-theme="atina"] .detail .price { font-weight: 700; }
+[data-theme="atina"] .chart .line { stroke-width: 2; }
+[data-theme="atina"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="atina"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3f; --edge: #424349; --alt: #333539; --text1: #e3e7f4; --text2: #b3b6c1; --faint: #878992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #343a4c; --tip: #e3e7f4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="atina"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="atina"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="atina"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #567be2 0 3px, transparent 3px 12px, #567be2 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#567be2 0 3px, transparent 3px 9px, #567be2 9px 12px) 0 0 / 24px 12px; }

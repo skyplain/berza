@@ -1,0 +1,16 @@
+/* tema lučki grad (Harbor town): generisana, tools/teme.py */
+:root[data-theme="luckigrad"] { color-scheme: light; --back: #f8f5ef; --card: #fdfcfa; --head: #f1eeed; --edge: #d9d2ce; --alt: #f7f5f3; --text1: #391a1e; --text2: #695152; --faint: #958382; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f8dedc; --tip: #391a1e; --tipfg: #f8f5ef; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="luckigrad"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="luckigrad"] .overview .left { align-self: start; }
+[data-theme="luckigrad"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="luckigrad"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="luckigrad"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="luckigrad"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="luckigrad"] :is(.overview .left, .block, .detail, .list) { border: 4px solid transparent; border-image: repeating-linear-gradient(45deg, #dc2626 0 4px, #ea8e8a 4px 8px) 4; }
+[data-theme="luckigrad"] .big .value, [data-theme="luckigrad"] .detail .price { font-weight: 900; }
+[data-theme="luckigrad"] .chart .line { stroke-width: 2.5; }
+[data-theme="luckigrad"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="luckigrad"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343336; --text1: #f2e4e5; --text2: #beb4b5; --faint: #8f8789; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #473234; --tip: #f2e4e5; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="luckigrad"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="luckigrad"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px solid transparent; border-image: repeating-linear-gradient(45deg, #e14747 0 4px, #823536 4px 8px) 4; }

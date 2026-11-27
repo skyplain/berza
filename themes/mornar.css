@@ -1,0 +1,20 @@
+/* tema mornar: generisana (paleta + oblik 1/4/3/2) */
+:root[data-theme="mornar"] { color-scheme: light; --back: #f2f5fb; --card: #ffffff; --head: #f0f2f3; --edge: #cdd3dc; --alt: #f8f8f9; --text1: #0d1f3c; --text2: #4d5b71; --faint: #808a9c; --up: #15803d; --down: #c81e1e; --accent: #1d3557; --hot: #dfe3e7; --tip: #0d1f3c; --tipfg: #f2f5fb; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="mornar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mornar"] .overview .left { align-self: start; }
+[data-theme="mornar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mornar"] button { border-radius: 999px; }
+[data-theme="mornar"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mornar"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="mornar"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="mornar"] .bar button { background: transparent; color: var(--back); border-color: rgba(242,245,251,0.35); box-shadow: none; }
+[data-theme="mornar"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="mornar"] body { background: linear-gradient(rgba(13,31,60,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(13,31,60,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f2f5fb; background-attachment: fixed; }
+[data-theme="mornar"] .big .value, [data-theme="mornar"] .detail .price { font-weight: 400; }
+[data-theme="mornar"] .chart .line { stroke-width: 1.5; }
+[data-theme="mornar"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="mornar"][data-scheme="dark"] { color-scheme: dark; --back: #090b0f; --card: #060606; --head: #0c0d0e; --edge: #1f232a; --alt: #09090a; --text1: #c1d8fe; --text2: #8291a9; --faint: #576071; --up: #4ade80; --down: #f87171; --accent: #4a6489; --hot: #15181a; --tip: #c1d8fe; --tipfg: #090b0f; --accentfg: #ffffff; }
+[data-theme="mornar"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="mornar"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(9,11,15,0.35); box-shadow: none; }
+[data-theme="mornar"][data-scheme="dark"] body { background: linear-gradient(rgba(193,216,254,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(193,216,254,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #090b0f; background-attachment: fixed; }

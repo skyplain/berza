@@ -1,0 +1,18 @@
+/* tema de stijl (De Stijl): generisana, tools/teme.py */
+:root[data-theme="destijl"] { color-scheme: light; --back: #fffefe; --card: #fef9fa; --head: #f2ebed; --edge: #dfd9da; --alt: #f8f2f3; --text1: #37141d; --text2: #694e55; --faint: #978489; --up: #15803d; --down: #c81e1e; --accent: #d40920; --hot: #f8d7db; --tip: #37141d; --tipfg: #fffefe; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="destijl"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="destijl"] .overview .left { align-self: start; }
+[data-theme="destijl"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="destijl"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="destijl"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="destijl"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="destijl"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="destijl"] :is(.overview .left, .block, .detail, .list) { border: 5px solid #111111; border-radius: 0; }
+[data-theme="destijl"] :is(h2, h3)::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 8px; background: #d40920; }
+[data-theme="destijl"] .block:nth-child(3n+2) h2::before { background: #f7d842; }
+[data-theme="destijl"] .block:nth-child(3n) h2::before { background: #1356a2; }
+[data-theme="destijl"] .big .value, [data-theme="destijl"] .detail .price { font-weight: 700; }
+[data-theme="destijl"] .chart .line { stroke-width: 1.5; }
+[data-theme="destijl"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="destijl"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3e; --edge: #444246; --alt: #343438; --text1: #f1e1e5; --text2: #beb2b6; --faint: #8e868a; --up: #4ade80; --down: #f87171; --accent: #de4858; --hot: #473238; --tip: #f1e1e5; --tipfg: #232428; --accentfg: #111111; }

@@ -1,0 +1,18 @@
+/* tema hrast: generisana (paleta + oblik 6/1/2/5) */
+:root[data-theme="hrast"] { color-scheme: dark; --back: #1e1810; --card: #2a2216; --head: #362e21; --edge: #40392f; --alt: #30281c; --text1: #f1e6d2; --text2: #b6ac9c; --faint: #887f71; --up: #4ade80; --down: #f87171; --accent: #b08d57; --hot: #3d311f; --tip: #f1e6d2; --tipfg: #1e1810; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="hrast"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="hrast"] .overview .left { align-self: start; }
+[data-theme="hrast"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hrast"] button { border-radius: 0; }
+[data-theme="hrast"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="hrast"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="hrast"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="hrast"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="hrast"] body { background: linear-gradient(180deg, #2d2417, #1e1810 420px); background-color: #1e1810; background-attachment: fixed; }
+[data-theme="hrast"] .big .value, [data-theme="hrast"] .detail .price { font-weight: 700; }
+[data-theme="hrast"] .chart .line { stroke-width: 3.5; }
+[data-theme="hrast"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="hrast"][data-scheme="light"] { color-scheme: light; --back: #e7dfd4; --card: #dbd0c1; --head: #cbc1b1; --edge: #bcb3a7; --alt: #d3c8b9; --text1: #1b1305; --text2: #473f31; --faint: #70675a; --up: #15803d; --down: #c81e1e; --accent: #916f39; --hot: #cabba5; --tip: #1b1305; --tipfg: #e7dfd4; --accentfg: #ffffff; }
+[data-theme="hrast"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="hrast"][data-scheme="light"] body { background: linear-gradient(180deg, #d9cdbc, #e7dfd4 420px); background-color: #e7dfd4; background-attachment: fixed; }

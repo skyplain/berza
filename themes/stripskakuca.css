@@ -1,0 +1,19 @@
+/* tema stripska kuća (Comic studio): generisana, tools/teme.py */
+:root[data-theme="stripskakuca"] { color-scheme: light; --back: #fff6d5; --card: #fffcf2; --head: #f1efe7; --edge: #d9d4bc; --alt: #f8f5ec; --text1: #112338; --text2: #4c585f; --faint: #838883; --up: #15803d; --down: #c81e1e; --accent: #0057b8; --hot: #dbe5ea; --tip: #112338; --tipfg: #fff6d5; --accentfg: #ffffff; --font: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive; --radius: 0px; }
+[data-theme="stripskakuca"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="stripskakuca"] .overview .left { align-self: start; }
+[data-theme="stripskakuca"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="stripskakuca"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="stripskakuca"] .bar h1 { font-size: 24px; }
+[data-theme="stripskakuca"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="stripskakuca"] body { background: radial-gradient(rgba(0,87,184,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #fff6d5; background-attachment: fixed; }
+[data-theme="stripskakuca"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #112338; box-shadow: 6px 6px 0 #112338; border-radius: 6px; background: var(--card); }
+[data-theme="stripskakuca"] button { border: 2px solid #112338; box-shadow: 2px 2px 0 #112338; }
+[data-theme="stripskakuca"] .big .value, [data-theme="stripskakuca"] .detail .price { font-weight: 700; }
+[data-theme="stripskakuca"] .chart .line { stroke-width: 3; }
+[data-theme="stripskakuca"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="stripskakuca"][data-scheme="dark"] { color-scheme: dark; --back: #232324; --card: #2e2e2f; --head: #39393b; --edge: #414245; --alt: #333435; --text1: #e0e7f1; --text2: #b1b6be; --faint: #85898f; --up: #4ade80; --down: #f87171; --accent: #4080ca; --hot: #313945; --tip: #e0e7f1; --tipfg: #232324; --accentfg: #111111; }
+[data-theme="stripskakuca"][data-scheme="dark"] body { background: radial-gradient(rgba(64,128,202,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #232324; background-attachment: fixed; }
+[data-theme="stripskakuca"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #e0e7f1; box-shadow: 6px 6px 0 #e0e7f1; border-radius: 6px; background: var(--card); }
+[data-theme="stripskakuca"][data-scheme="dark"] button { border: 2px solid #e0e7f1; box-shadow: 2px 2px 0 #e0e7f1; }

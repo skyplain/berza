@@ -1,0 +1,15 @@
+/* tema mak (Poppy): generisana, tools/teme.py */
+:root[data-theme="mak"] { color-scheme: light; --back: #fef5f1; --card: #fffcfb; --head: #f3eeee; --edge: #ded2cf; --alt: #f9f5f4; --text1: #391a1e; --text2: #6a5153; --faint: #988383; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #fadedd; --tip: #391a1e; --tipfg: #fef5f1; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="mak"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="mak"] .overview .left { align-self: start; }
+[data-theme="mak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mak"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="mak"] .bar h1 { font-size: 24px; }
+[data-theme="mak"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="mak"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(220,38,38,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(38,220,38,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #fef5f1; background-attachment: fixed; }
+[data-theme="mak"] .big .value, [data-theme="mak"] .detail .price { font-weight: 400; }
+[data-theme="mak"] .chart .line { stroke-width: 2.5; }
+[data-theme="mak"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mak"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444245; --alt: #343337; --text1: #f2e4e5; --text2: #beb4b6; --faint: #8f878a; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #473235; --tip: #f2e4e5; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="mak"][data-scheme="dark"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(225,71,71,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(38,220,38,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #232327; background-attachment: fixed; }

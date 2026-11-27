@@ -1,0 +1,15 @@
+/* tema oled crna (OLED black): generisana, tools/teme.py */
+:root[data-theme="oledcrna"] { color-scheme: dark; --back: #010101; --card: #0e0e0e; --head: #1c1c1c; --edge: #282828; --alt: #151515; --text1: #f4f4f6; --text2: #b7b7b9; --faint: #7f7f80; --up: #4ade80; --down: #f87171; --accent: #f5f5f5; --hot: #2e2e2e; --tip: #f4f4f6; --tipfg: #010101; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="oledcrna"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="oledcrna"] .overview .left { align-self: start; }
+[data-theme="oledcrna"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="oledcrna"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="oledcrna"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="oledcrna"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="oledcrna"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="oledcrna"] .big .value, [data-theme="oledcrna"] .detail .price { font-weight: 400; }
+[data-theme="oledcrna"] .chart .line { stroke-width: 3; }
+[data-theme="oledcrna"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="oledcrna"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #efefef; --edge: #d3d4d4; --alt: #f4f4f5; --text1: #3d3f43; --text2: #6a6b6e; --faint: #868789; --up: #15803d; --down: #c81e1e; --accent: #7d7d7d; --hot: #e8e8e8; --tip: #3d3f43; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="oledcrna"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }

@@ -1,0 +1,19 @@
+/* tema dalmatinac (Dalmatian): generisana, tools/teme.py */
+:root[data-theme="dalmatinac"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #ececed; --edge: #cdcdce; --alt: #f3f3f3; --text1: #14161a; --text2: #4b4c50; --faint: #7e7f81; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #d9d9d9; --tip: #14161a; --tipfg: #f0f0f0; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="dalmatinac"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="dalmatinac"] .overview .left { align-self: start; }
+[data-theme="dalmatinac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dalmatinac"] button { border-radius: 999px; }
+[data-theme="dalmatinac"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="dalmatinac"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="dalmatinac"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,240,0.35); box-shadow: none; }
+[data-theme="dalmatinac"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="dalmatinac"] body { background: radial-gradient(circle, rgba(20,22,26,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(20,22,26,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #f0f0f0; background-attachment: fixed; }
+[data-theme="dalmatinac"] .big .value, [data-theme="dalmatinac"] .detail .price { font-weight: 700; }
+[data-theme="dalmatinac"] .chart .line { stroke-width: 2; }
+[data-theme="dalmatinac"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dalmatinac"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3e; --tip: #e2e2e4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="dalmatinac"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="dalmatinac"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="dalmatinac"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(226,226,228,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(226,226,228,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #232428; background-attachment: fixed; }

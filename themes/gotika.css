@@ -1,0 +1,20 @@
+/* tema gotika (Gothic): generisana, tools/teme.py */
+:root[data-theme="gotika"] { color-scheme: dark; --back: #120c0c; --card: #1e1818; --head: #2a2424; --edge: #352e2e; --alt: #241e1e; --text1: #ece0e2; --text2: #b6abac; --faint: #837a7b; --up: #4ade80; --down: #f87171; --accent: #ac4848; --hot: #321f1f; --tip: #ece0e2; --tipfg: #120c0c; --accentfg: #ffffff; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 4px; }
+[data-theme="gotika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="gotika"] .overview .left { align-self: start; }
+[data-theme="gotika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gotika"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="gotika"] .bar h1 { font-weight: 800; }
+[data-theme="gotika"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="gotika"] :is(.overview .left, .block, .detail, .list) { border: 4px double #ac4848; }
+[data-theme="gotika"] .bar h1::before { content: "❦ "; color: #ac4848; }
+[data-theme="gotika"] .bar h1::after { content: " ❦"; color: #ac4848; }
+[data-theme="gotika"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="gotika"] .big .value, [data-theme="gotika"] .detail .price { font-weight: 200; }
+[data-theme="gotika"] .chart .line { stroke-width: 2.5; }
+[data-theme="gotika"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="gotika"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #eeecec; --edge: #d1cdcd; --alt: #f5f3f3; --text1: #2a1317; --text2: #5c4a4d; --faint: #8a7d7f; --up: #15803d; --down: #c81e1e; --accent: #8b0000; --hot: #ebd7d7; --tip: #2a1317; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="gotika"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 4px double #8b0000; }
+[data-theme="gotika"][data-scheme="light"] .bar h1::before { content: "❦ "; color: #8b0000; }
+[data-theme="gotika"][data-scheme="light"] .bar h1::after { content: " ❦"; color: #8b0000; }

@@ -1,0 +1,19 @@
+/* tema kompaktno (Compact): generisana, tools/teme.py */
+:root[data-theme="kompaktno"] { color-scheme: light; --back: #f4f7fe; --card: #fcfdff; --head: #eef0f4; --edge: #d1d5e0; --alt: #f5f7f9; --text1: #182541; --text2: #4f5a70; --faint: #828a9c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dee7fc; --tip: #182541; --tipfg: #f4f7fe; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="kompaktno"] :is(.overview .left, .block, .detail, .list) { background: rgba(252,253,255,0.6); border: 1px solid rgba(24,37,65,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="kompaktno"] .overview .left { align-self: start; }
+[data-theme="kompaktno"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kompaktno"] button { border-radius: 999px; background: transparent; }
+[data-theme="kompaktno"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kompaktno"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kompaktno"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kompaktno"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kompaktno"] body { font-size: 13px; }
+[data-theme="kompaktno"] td, [data-theme="kompaktno"] th { padding: 2px 5px; }
+[data-theme="kompaktno"] .block { margin-bottom: 14px; }
+[data-theme="kompaktno"] .big .value, [data-theme="kompaktno"] .detail .price { font-weight: 900; }
+[data-theme="kompaktno"] .chart .line { stroke-width: 1.5; }
+[data-theme="kompaktno"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kompaktno"][data-scheme="dark"] { color-scheme: dark; --back: #0d1424; --card: #19202f; --head: #252c3b; --edge: #2f3645; --alt: #1f2635; --text1: #e3e8f5; --text2: #aeb3c1; --faint: #7c8291; --up: #4ade80; --down: #f87171; --accent: #2563eb; --hot: #1b2949; --tip: #e3e8f5; --tipfg: #0d1424; --accentfg: #ffffff; }
+[data-theme="kompaktno"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(25,32,47,0.6); border: 1px solid rgba(227,232,245,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }

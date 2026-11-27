@@ -1,0 +1,14 @@
+/* tema japanski vrt (Japanese garden): generisana, tools/teme.py */
+:root[data-theme="japanskivrt"] { color-scheme: light; --back: #f6f2e8; --card: #fcfbf8; --head: #f0edeb; --edge: #d7cfc7; --alt: #f6f4f1; --text1: #33181c; --text2: #644e4f; --faint: #91817e; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f3dcd9; --tip: #33181c; --tipfg: #f6f2e8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="japanskivrt"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="japanskivrt"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="japanskivrt"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="japanskivrt"] .bar h1 { font-size: 24px; }
+[data-theme="japanskivrt"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="japanskivrt"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(185,28,28,0.14) 9px 10px, transparent 11px 16px, rgba(185,28,28,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f6f2e8; background-attachment: fixed; }
+[data-theme="japanskivrt"] .big .value, [data-theme="japanskivrt"] .detail .price { font-weight: 200; }
+[data-theme="japanskivrt"] .chart .line { stroke-width: 1.5; }
+[data-theme="japanskivrt"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="japanskivrt"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #434245; --alt: #333336; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #433437; --tip: #efe3e5; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="japanskivrt"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(205,92,92,0.14) 9px 10px, transparent 11px 16px, rgba(205,92,92,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222326; background-attachment: fixed; }

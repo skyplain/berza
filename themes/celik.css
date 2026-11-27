@@ -1,0 +1,21 @@
+/* tema čelik: industrijski metal, brušeni gradijenti, uski font, zakivci */
+:root[data-theme="celik"] { color-scheme: dark; --back: #2a2e33; --card: #353a40; --head: #40464d; --edge: #5a6169; --alt: #30353a; --text1: #e9edf1; --text2: #b8c0c8; --faint: #87909a; --up: #7ee081; --down: #ff8a65; --accent: #9fb4c7; --hot: #454c54; --tip: #e9edf1; --tipfg: #2a2e33; --accentfg: #1d2024; --font: "DIN Alternate","Arial Narrow","Avenir Next Condensed",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 3px; --panel-bg: linear-gradient(180deg,#3d434a,#31363c); --panel-border: 1px solid #1d2024; --panel-shadow: inset 0 1px 0 rgba(255,255,255,.12),0 2px 6px rgba(0,0,0,.4); --h-color: #c7d2dc; --h-transform: uppercase; --h-spacing: .16em; --h-size: 12px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 500; }
+[data-theme="celik"] body { background:repeating-linear-gradient(90deg,#2a2e33 0 2px,#2c3035 2px 4px) fixed #2a2e33 }
+[data-theme="celik"] .bar { background:linear-gradient(180deg,#4a5159,#353a40);margin: 0 calc(-1 * var(--gut, 16px)) 16px;padding:10px var(--gut, 16px);border-bottom:2px solid #1d2024;box-shadow:inset 0 1px 0 rgba(255,255,255,.15) }
+[data-theme="celik"] .bar h1 { text-transform:uppercase;letter-spacing:.14em }
+[data-theme="celik"] .bar h1::before { content:"⚙ " }
+[data-theme="celik"] button { background:linear-gradient(180deg,#5a6169,#40464d);border-color:#1d2024;box-shadow:inset 0 1px 0 rgba(255,255,255,.2) }
+[data-theme="celik"] .overview .left,[data-theme="celik"] .block,[data-theme="celik"] .detail { position:relative }
+[data-theme="celik"] .overview .left::before,[data-theme="celik"] .block::before,[data-theme="celik"] .detail::before { content:"• •";position:absolute;right:8px;top:4px;color:#1d2024;letter-spacing:6px;font-size:10px }
+[data-theme="celik"] tbody tr:nth-child(even) { background:rgba(0,0,0,.08) }
+[data-theme="celik"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="celik"] .overview .left { align-self: start; }
+[data-theme="celik"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="celik"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="celik"][data-scheme="light"] { color-scheme: light; --back: #c0c5cb; --card: #b0b6bd; --head: #a1a8b0; --edge: #838a93; --alt: #b6bdc3; --text1: #0e1114; --text2: #2c3339; --faint: #545c65; --up: #137638; --down: #c81e1e; --accent: #506374; --hot: #99a1ab; --tip: #0e1114; --tipfg: #c0c5cb; --accentfg: #ffffff; --panel-bg: linear-gradient(180deg,#a5acb4,#b5bbc3); --panel-border: 1px solid #d3d7dd; --panel-shadow: inset 0 1px 0 rgba(6,6,6,.12),0 2px 6px rgba(255,255,255,.4); --h-color: #1d252d; }
+[data-theme="celik"][data-scheme="light"] body { background:repeating-linear-gradient(90deg,#c0c5cb 0 2px,#bdc2c9 2px 4px) fixed #c0c5cb }
+[data-theme="celik"][data-scheme="light"] .bar { background:linear-gradient(180deg,#949ca5,#b0b6bd);margin: 0 calc(-1 * var(--gut, 16px)) 16px;padding:10px var(--gut, 16px);border-bottom:2px solid #d3d7dd;box-shadow:inset 0 1px 0 rgba(6,6,6,.15) }
+[data-theme="celik"][data-scheme="light"] button { background:linear-gradient(180deg,#838a93,#a1a8b0);border-color:#d3d7dd;box-shadow:inset 0 1px 0 rgba(6,6,6,.2) }
+[data-theme="celik"][data-scheme="light"] .overview .left::before,[data-theme="celik"][data-scheme="light"] .block::before,[data-theme="celik"][data-scheme="light"] .detail::before { content:"• •";position:absolute;right:8px;top:4px;color:#d3d7dd;letter-spacing:6px;font-size:10px }
+[data-theme="celik"][data-scheme="light"] tbody tr:nth-child(even) { background:rgba(255,255,255,.08) }

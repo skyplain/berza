@@ -1,0 +1,16 @@
+/* tema uvac (Uvac): generisana, tools/teme.py */
+:root[data-theme="uvac"] { color-scheme: light; --back: #eef8f6; --card: #fafdfc; --head: #ecf0ef; --edge: #cbd7d6; --alt: #f3f7f6; --text1: #14282b; --text2: #4a5c5e; --faint: #7d8c8c; --up: #15803d; --down: #c81e1e; --accent: #0f766e; --hot: #d9eae8; --tip: #14282b; --tipfg: #eef8f6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="uvac"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="uvac"] .overview .left { align-self: start; }
+[data-theme="uvac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="uvac"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="uvac"] .bar h1 { font-size: 24px; }
+[data-theme="uvac"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="uvac"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(15,118,110,0.14) 9px 10px, transparent 11px 16px, rgba(15,118,110,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #eef8f6; background-attachment: fixed; }
+[data-theme="uvac"] .big .value, [data-theme="uvac"] .detail .price { font-weight: 400; }
+[data-theme="uvac"] .chart .line { stroke-width: 3; }
+[data-theme="uvac"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="uvac"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414446; --alt: #323538; --text1: #e2eaeb; --text2: #b2b8ba; --faint: #868b8d; --up: #4ade80; --down: #f87171; --accent: #348b85; --hot: #2e3c3e; --tip: #e2eaeb; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="uvac"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="uvac"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(52,139,133,0.14) 9px 10px, transparent 11px 16px, rgba(52,139,133,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222427; background-attachment: fixed; }

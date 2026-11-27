@@ -1,0 +1,29 @@
+/* tema kartice: meke kartice sa senkom, zaobljeno, ljubičasti akcenat */
+:root[data-theme="kartice"] { color-scheme: light; --back: #eef0f7; --card: #fff; --head: #f2f0ff; --edge: #e3e5ef; --alt: #f8f8fc; --text1: #1d1b3a; --text2: #55557a; --faint: #9494b0; --up: #12b76a; --down: #f04438; --accent: #6941c6; --hot: #f4efff; --tip: #1d1b3a; --tipfg: #fff; --accentfg: #fff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 999px; --shadow: 0 1px 2px rgba(16, 24, 64, .06), 0 6px 20px rgba(16, 24, 64, .07); }
+[data-theme="kartice"] .bar { border: 0; background: var(--card); border-radius: 0 0 18px 18px; padding: 14px 20px; box-shadow: var(--shadow); }
+[data-theme="kartice"] .bar h1 { font-size: 20px; font-weight: 700; }
+[data-theme="kartice"] .bar h1::before { content: "◆ "; color: var(--accent); }
+[data-theme="kartice"] button { border: 0; background: var(--head); color: var(--accent); font-weight: 600; padding: 6px 14px; }
+[data-theme="kartice"] button:hover { background: var(--accent); color: #fff; }
+[data-theme="kartice"] .overview .left, [data-theme="kartice"] .block, [data-theme="kartice"] .detail, [data-theme="kartice"] .list { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); padding: 18px 20px; }
+[data-theme="kartice"] .overview .left { align-self: start; }
+[data-theme="kartice"] .two .block, [data-theme="kartice"] .block .block { box-shadow: none; padding: 0; }
+[data-theme="kartice"] h2, [data-theme="kartice"] h3, [data-theme="kartice"] .big .label { text-transform: none; letter-spacing: 0; font-size: 15px; font-weight: 700; color: var(--text1); }
+[data-theme="kartice"] .big .value { font-weight: 700; letter-spacing: -.02em; }
+[data-theme="kartice"] .chg { border-radius: 999px; padding: 1px 8px; font-weight: 600; }
+[data-theme="kartice"] .chg.up { background: #ecfdf3; }
+[data-theme="kartice"] .chg.down { background: #fef3f2; }
+[data-theme="kartice"] .rows tr.sel .chg { background: transparent; }
+[data-theme="kartice"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kartice"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="kartice"] th { border: 0; }
+[data-theme="kartice"] .rows { border: 0; border-radius: 12px; }
+[data-theme="kartice"] #search { border-radius: 12px; background: var(--alt); }
+[data-theme="kartice"] .chart .line { stroke-width: 3; stroke-linecap: round; }
+[data-theme="kartice"] .chart .area { opacity: .14; }
+[data-theme="kartice"] footer { border: 0; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="kartice"][data-scheme="dark"] { color-scheme: dark; --back: #0d0e12; --card: #060606; --head: #0d0b15; --edge: #14151c; --alt: #09090b; --text1: #d1d2fc; --text2: #8c8cb5; --faint: #646581; --up: #4ade80; --down: #f87171; --accent: #714bd0; --hot: #0f0b15; --tip: #d1d2fc; --tipfg: #060606; --accentfg: #ffffff; --shadow: 0 1px 2px rgba(206,218,253,.06), 0 6px 20px rgba(206,218,253,.07); }
+[data-theme="kartice"][data-scheme="dark"] button:hover { background: var(--accent); color: #060606; }
+[data-theme="kartice"][data-scheme="dark"] .chg.up { background: #030c07; }
+[data-theme="kartice"][data-scheme="dark"] .chg.down { background: #0f0908; }

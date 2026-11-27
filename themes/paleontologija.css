@@ -1,0 +1,15 @@
+/* tema paleontologija (Paleontology): generisana, tools/teme.py */
+:root[data-theme="paleontologija"] { color-scheme: light; --back: #ece0c8; --card: #f9f6ee; --head: #ece9e1; --edge: #ccc1ac; --alt: #f3efe8; --text1: #271c1a; --text2: #584d46; --faint: #867a6e; --up: #15803d; --down: #c81e1e; --accent: #78350f; --hot: #e7dbcf; --tip: #271c1a; --tipfg: #ece0c8; --accentfg: #ffffff; --font: Rockwell, "Roboto Slab", "Courier New", serif; --radius: 8px; }
+[data-theme="paleontologija"] :is(.overview .left, .block, .detail, .list) { background: #e5d9c2; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="paleontologija"] .overview .left { align-self: start; }
+[data-theme="paleontologija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="paleontologija"] button { border: 0; }
+[data-theme="paleontologija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="paleontologija"] body { background: repeating-linear-gradient(180deg, rgba(120,53,15,0.07) 0 22px, rgba(120,53,15,0.13) 22px 30px, transparent 30px 52px, rgba(39,28,26,0.05) 52px 60px, transparent 60px 84px), repeating-radial-gradient(circle at 17% 32%, rgba(39,28,26,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(39,28,26,0.03) 0 1px, transparent 1px 5px); background-color: #ece0c8; background-attachment: fixed; }
+[data-theme="paleontologija"] .big .value, [data-theme="paleontologija"] .detail .price { font-weight: 400; }
+[data-theme="paleontologija"] .chart .line { stroke-width: 2; }
+[data-theme="paleontologija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="paleontologija"][data-scheme="dark"] { color-scheme: dark; --back: #222122; --card: #2d2c2d; --head: #383738; --edge: #424041; --alt: #333232; --text1: #eae5e4; --text2: #b8b4b4; --faint: #8a8787; --up: #4ade80; --down: #f87171; --accent: #986b50; --hot: #3c3532; --tip: #eae5e4; --tipfg: #222122; --accentfg: #ffffff; }
+[data-theme="paleontologija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #292829; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="paleontologija"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, rgba(152,107,80,0.07) 0 22px, rgba(152,107,80,0.13) 22px 30px, transparent 30px 52px, rgba(234,229,228,0.05) 52px 60px, transparent 60px 84px), repeating-radial-gradient(circle at 17% 32%, rgba(234,229,228,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(234,229,228,0.03) 0 1px, transparent 1px 5px); background-color: #222122; background-attachment: fixed; }

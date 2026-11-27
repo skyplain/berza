@@ -1,0 +1,20 @@
+/* tema sintisajzer (Synthesizer): generisana, tools/teme.py */
+:root[data-theme="sintisajzer"] { color-scheme: dark; --back: #0b0616; --card: #171222; --head: #241f2f; --edge: #2f2a3a; --alt: #1d1828; --text1: #eee7f6; --text2: #b5afbe; --faint: #817b8a; --up: #4ade80; --down: #f87171; --accent: #a855f7; --hot: #2b1b40; --tip: #eee7f6; --tipfg: #0b0616; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="sintisajzer"] :is(.overview .left, .block, .detail, .list) { background: rgba(23,18,34,0.6); border: 1px solid rgba(238,231,246,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="sintisajzer"] .overview .left { align-self: start; }
+[data-theme="sintisajzer"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sintisajzer"] button { border-radius: 999px; background: transparent; }
+[data-theme="sintisajzer"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sintisajzer"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="sintisajzer"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="sintisajzer"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="sintisajzer"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="sintisajzer"] body { background: repeating-linear-gradient(90deg, rgba(168,85,247,0.14) 0 8px, transparent 8px 14px) 0 100% / 100% 90px no-repeat, linear-gradient(rgba(238,231,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(238,231,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #0b0616; background-attachment: fixed; }
+[data-theme="sintisajzer"] .bar h1::after { content: " ▂▃▅▇▅▃▂"; color: #a855f7; }
+[data-theme="sintisajzer"] .big .value, [data-theme="sintisajzer"] .detail .price { font-weight: 400; }
+[data-theme="sintisajzer"] .chart .line { stroke-width: 3; }
+[data-theme="sintisajzer"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="sintisajzer"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeedf0; --edge: #d1cfd5; --alt: #f4f4f5; --text1: #2f2243; --text2: #5f566e; --faint: #8c8597; --up: #15803d; --down: #c81e1e; --accent: #a855f7; --hot: #efe3fa; --tip: #2f2243; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="sintisajzer"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,250,251,0.6); border: 1px solid rgba(47,34,67,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="sintisajzer"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(168,85,247,0.14) 0 8px, transparent 8px 14px) 0 100% / 100% 90px no-repeat, linear-gradient(rgba(47,34,67,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(47,34,67,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f0f0f1; background-attachment: fixed; }

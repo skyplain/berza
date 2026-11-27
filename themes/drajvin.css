@@ -1,0 +1,16 @@
+/* tema drajv-in (Drive-in): generisana, tools/teme.py */
+:root[data-theme="drajvin"] { color-scheme: dark; --back: #0d1b2a; --card: #192635; --head: #263240; --edge: #323c48; --alt: #202c3a; --text1: #f5e9e7; --text2: #bbb6b8; --faint: #86868c; --up: #4ade80; --down: #f87171; --accent: #ff6f3c; --hot: #393036; --tip: #f5e9e7; --tipfg: #0d1b2a; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="drajvin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="drajvin"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="drajvin"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="drajvin"] .bar h1 { font-size: 24px; }
+[data-theme="drajvin"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="drajvin"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(245,233,231,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(255,111,60,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(245,233,231,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(245,233,231,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(255,111,60,0.8), transparent); background-color: #0d1b2a; background-attachment: fixed; }
+[data-theme="drajvin"] .bar h1 { color: #ffc5b1; text-shadow: 0 0 4px #ff6f3c, 0 0 12px #ff6f3c, 0 0 28px rgba(255,111,60,0.8); }
+[data-theme="drajvin"] .big .value, [data-theme="drajvin"] .detail .price { font-weight: 900; }
+[data-theme="drajvin"] .chart .line { stroke-width: 3; }
+[data-theme="drajvin"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="drajvin"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #efeeee; --edge: #d4d1d1; --alt: #f4f5f4; --text1: #3f2722; --text2: #6b5a56; --faint: #948886; --up: #15803d; --down: #c81e1e; --accent: #d85e33; --hot: #f5e5df; --tip: #3f2722; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="drajvin"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(63,39,34,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(216,94,51,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(63,39,34,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(63,39,34,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(216,94,51,0.8), transparent); background-color: #f0f1f2; background-attachment: fixed; }
+[data-theme="drajvin"][data-scheme="light"] .bar h1 { color: #efbfad; text-shadow: 0 0 4px #d85e33, 0 0 12px #d85e33, 0 0 28px rgba(216,94,51,0.8); }

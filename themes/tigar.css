@@ -1,0 +1,16 @@
+/* tema tigar (Tiger): generisana, tools/teme.py */
+:root[data-theme="tigar"] { color-scheme: light; --back: #fff2e5; --card: #fffbf7; --head: #f3eeea; --edge: #e0d1c4; --alt: #f9f5f0; --text1: #3b2319; --text2: #6c574c; --faint: #99867b; --up: #15803d; --down: #c81e1e; --accent: #ea580c; --hot: #fce4d6; --tip: #3b2319; --tipfg: #fff2e5; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 10px; }
+[data-theme="tigar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="tigar"] .overview .left { align-self: start; }
+[data-theme="tigar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tigar"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="tigar"] .bar h1 { font-weight: 800; }
+[data-theme="tigar"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="tigar"] body { background: repeating-linear-gradient(115deg, rgba(0,0,0,.12) 0 8px, transparent 8px 40px, rgba(0,0,0,.1) 40px 44px, transparent 44px 70px); background-color: #fff2e5; background-attachment: fixed; }
+[data-theme="tigar"] .big .value, [data-theme="tigar"] .detail .price { font-weight: 900; }
+[data-theme="tigar"] .chart .line { stroke-width: 2.5; }
+[data-theme="tigar"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tigar"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444343; --alt: #343435; --text1: #f3e8e3; --text2: #bfb7b4; --faint: #8f8988; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #48342b; --tip: #f3e8e3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="tigar"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="tigar"][data-scheme="dark"] body { background: repeating-linear-gradient(115deg, rgba(0,0,0,.12) 0 8px, transparent 8px 40px, rgba(0,0,0,.1) 40px 44px, transparent 44px 70px); background-color: #232325; background-attachment: fixed; }

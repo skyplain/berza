@@ -1,0 +1,17 @@
+/* tema granit: generisana (paleta + oblik 3/4/3/0) */
+:root[data-theme="granit"] { color-scheme: light; --back: #e6e6e3; --card: #f2f2f0; --head: #e6e6e4; --edge: #c8c8c5; --alt: #ececea; --text1: #2a2a28; --text2: #5f5f5c; --faint: #888886; --up: #15803d; --down: #c81e1e; --accent: #5f5f5a; --hot: #dddddb; --tip: #2a2a28; --tipfg: #e6e6e3; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="granit"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="granit"] .overview .left { align-self: start; }
+[data-theme="granit"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="granit"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="granit"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="granit"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="granit"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="granit"] .bar button { background: transparent; color: var(--back); border-color: rgba(230,230,227,0.35); box-shadow: none; }
+[data-theme="granit"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="granit"] .big .value, [data-theme="granit"] .detail .price { font-weight: 900; }
+[data-theme="granit"] .chart .line { stroke-width: 2; }
+[data-theme="granit"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="granit"][data-scheme="dark"] { color-scheme: dark; --back: #151513; --card: #0d0d0c; --head: #151514; --edge: #2b2b29; --alt: #111110; --text1: #c9c9c7; --text2: #8b8b88; --faint: #6a6a68; --up: #4ade80; --down: #f87171; --accent: #676762; --hot: #1b1b1a; --tip: #c9c9c7; --tipfg: #151513; --accentfg: #ffffff; }
+[data-theme="granit"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(21,21,19,0.35); box-shadow: none; }

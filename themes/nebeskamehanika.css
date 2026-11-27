@@ -1,0 +1,18 @@
+/* tema nebeska mehanika (Celestial mechanics): generisana, tools/teme.py */
+:root[data-theme="nebeskamehanika"] { color-scheme: dark; --back: #05070f; --card: #12131b; --head: #202027; --edge: #2b2c31; --alt: #191a21; --text1: #f5f0e5; --text2: #b9b6b0; --faint: #82807e; --up: #4ade80; --down: #f87171; --accent: #fbbf24; --hot: #332b1c; --tip: #f5f0e5; --tipfg: #05070f; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="nebeskamehanika"] :is(.overview .left, .block, .detail, .list) { background: #0d0f16; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="nebeskamehanika"] .overview .left { align-self: start; }
+[data-theme="nebeskamehanika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nebeskamehanika"] button { border: 0; }
+[data-theme="nebeskamehanika"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="nebeskamehanika"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="nebeskamehanika"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="nebeskamehanika"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="nebeskamehanika"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(251,191,36,0.14) 60px 61px); background-color: #05070f; background-attachment: fixed; }
+[data-theme="nebeskamehanika"] .big .value, [data-theme="nebeskamehanika"] .detail .price { font-weight: 400; }
+[data-theme="nebeskamehanika"] .chart .line { stroke-width: 2; }
+[data-theme="nebeskamehanika"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="nebeskamehanika"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #efeeee; --edge: #d4d2cf; --alt: #f4f4f4; --text1: #3e351d; --text2: #6a6452; --faint: #8c887b; --up: #15803d; --down: #c81e1e; --accent: #a67e18; --hot: #eee9db; --tip: #3e351d; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="nebeskamehanika"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #eae9ea; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="nebeskamehanika"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(166,126,24,0.14) 60px 61px); background-color: #f0f0f1; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema magla: generisana (paleta + oblik 0/1/2/3) */
+:root[data-theme="magla"] { color-scheme: light; --back: #eceff1; --card: #f7f8f9; --head: #ebedef; --edge: #cfd4d7; --alt: #f1f3f4; --text1: #37474f; --text2: #6a767c; --faint: #929ba0; --up: #15803d; --down: #c81e1e; --accent: #607d8b; --hot: #e2e7ea; --tip: #37474f; --tipfg: #eceff1; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 4px; }
+[data-theme="magla"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="magla"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="magla"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="magla"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="magla"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="magla"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="magla"] body { background: repeating-linear-gradient(45deg, rgba(55,71,79,0.03) 0 12px, transparent 12px 24px); background-color: #eceff1; background-attachment: fixed; }
+[data-theme="magla"] .big .value, [data-theme="magla"] .detail .price { font-weight: 200; }
+[data-theme="magla"] .chart .line { stroke-width: 3.5; }
+[data-theme="magla"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="magla"][data-scheme="dark"] { color-scheme: dark; --back: #0e1011; --card: #09090a; --head: #0f1112; --edge: #1f2325; --alt: #0c0d0d; --text1: #b0bfc5; --text2: #717d83; --faint: #5a6468; --up: #4ade80; --down: #f87171; --accent: #5c7885; --hot: #121517; --tip: #9aacb5; --tipfg: #0e1011; --accentfg: #ffffff; }
+[data-theme="magla"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="magla"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(154,172,181,0.03) 0 12px, transparent 12px 24px); background-color: #0e1011; background-attachment: fixed; }

@@ -1,0 +1,14 @@
+/* tema telegram (Telegram): generisana, tools/teme.py */
+:root[data-theme="telegram"] { color-scheme: light; --back: #efe6cf; --card: #faf8f1; --head: #edebe5; --edge: #cdc6b3; --alt: #f3f1eb; --text1: #1c1d21; --text2: #514f4c; --faint: #817d75; --up: #15803d; --down: #c81e1e; --accent: #3a3a3a; --hot: #dfddd7; --tip: #1c1d21; --tipfg: #efe6cf; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 10px; }
+[data-theme="telegram"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="telegram"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="telegram"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="telegram"] .bar h1 { font-size: 24px; }
+[data-theme="telegram"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="telegram"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(58,58,58,0.2) 27px 28px); background-color: #efe6cf; background-attachment: fixed; }
+[data-theme="telegram"] .big .value, [data-theme="telegram"] .detail .price { font-weight: 200; }
+[data-theme="telegram"] .chart .line { stroke-width: 1.5; }
+[data-theme="telegram"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="telegram"][data-scheme="dark"] { color-scheme: dark; --back: #222223; --card: #2d2d2e; --head: #383839; --edge: #414142; --alt: #333334; --text1: #e5e5e7; --text2: #b4b4b6; --faint: #878789; --up: #4ade80; --down: #f87171; --accent: #7c7c7c; --hot: #383839; --tip: #e5e5e7; --tipfg: #222223; --accentfg: #111111; }
+[data-theme="telegram"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(124,124,124,0.2) 27px 28px); background-color: #222223; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema prvi maj (May Day): generisana, tools/teme.py */
+:root[data-theme="prvimaj"] { color-scheme: light; --back: #f7fdf0; --card: #f6f9ec; --head: #ebece0; --edge: #d9d9ce; --alt: #f0f2e6; --text1: #391a1e; --text2: #685352; --faint: #948783; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f2dbd0; --tip: #391a1e; --tipfg: #f7fdf0; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="prvimaj"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="prvimaj"] .overview .left { align-self: start; }
+[data-theme="prvimaj"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="prvimaj"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="prvimaj"] .bar h1 { font-size: 24px; }
+[data-theme="prvimaj"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="prvimaj"] body { background: radial-gradient(circle, rgba(250,204,21,0.5) 0 2px, rgba(220,38,38,0.3) 3px 6px, transparent 7px) 0 0 / 54px 54px, radial-gradient(circle, rgba(255,255,255,0.5) 0 2px, rgba(38,220,38,0.25) 3px 5px, transparent 6px) 27px 27px / 54px 54px; background-color: #f7fdf0; background-attachment: fixed; }
+[data-theme="prvimaj"] .big .value, [data-theme="prvimaj"] .detail .price { font-weight: 900; }
+[data-theme="prvimaj"] .chart .line { stroke-width: 3; }
+[data-theme="prvimaj"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="prvimaj"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444345; --alt: #343436; --text1: #f2e4e5; --text2: #beb4b5; --faint: #8f8889; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #473234; --tip: #f2e4e5; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="prvimaj"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="prvimaj"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(250,204,21,0.5) 0 2px, rgba(225,71,71,0.3) 3px 6px, transparent 7px) 0 0 / 54px 54px, radial-gradient(circle, rgba(255,255,255,0.5) 0 2px, rgba(38,220,38,0.25) 3px 5px, transparent 6px) 27px 27px / 54px 54px; background-color: #232426; background-attachment: fixed; }

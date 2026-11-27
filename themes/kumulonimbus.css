@@ -1,0 +1,20 @@
+/* tema kumulonimbus (Thunderhead): generisana, tools/teme.py */
+:root[data-theme="kumulonimbus"] { color-scheme: dark; --back: #121820; --card: #1e242b; --head: #2a3037; --edge: #343940; --alt: #242a31; --text1: #e6e7eb; --text2: #b1b3b8; --faint: #80848a; --up: #4ade80; --down: #f87171; --accent: #646f80; --hot: #282e37; --tip: #e6e7eb; --tipfg: #121820; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="kumulonimbus"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="kumulonimbus"] .overview .left { align-self: start; }
+[data-theme="kumulonimbus"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kumulonimbus"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="kumulonimbus"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="kumulonimbus"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kumulonimbus"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.12), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.1), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.08), transparent 70%); background-color: #121820; background-attachment: fixed; }
+[data-theme="kumulonimbus"] .bar h1::after { content: " ↯"; color: #646f80; }
+[data-theme="kumulonimbus"] .bar { position: relative; }
+[data-theme="kumulonimbus"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #646f80 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #646f80 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="kumulonimbus"] .big .value, [data-theme="kumulonimbus"] .detail .price { font-weight: 700; }
+[data-theme="kumulonimbus"] .chart .line { stroke-width: 1.5; }
+[data-theme="kumulonimbus"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kumulonimbus"][data-scheme="light"] { color-scheme: light; --back: #f1f1f2; --card: #fbfbfb; --head: #eeeeee; --edge: #cfd0d2; --alt: #f4f4f5; --text1: #1e222a; --text2: #53565c; --faint: #83858a; --up: #15803d; --down: #c81e1e; --accent: #475569; --hot: #e2e4e7; --tip: #1e222a; --tipfg: #f1f1f2; --accentfg: #ffffff; }
+[data-theme="kumulonimbus"][data-scheme="light"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.9), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.8), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.7), transparent 70%); background-color: #f1f1f2; background-attachment: fixed; }
+[data-theme="kumulonimbus"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #475569; }
+[data-theme="kumulonimbus"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #475569 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #475569 25%, transparent 25%) -10px 0 / 20px 10px; }

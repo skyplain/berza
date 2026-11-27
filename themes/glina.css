@@ -1,0 +1,21 @@
+/* tema glina: naduvani mekani 3D paneli, unutrašnje senke, pastelno */
+:root[data-theme="glina"] { color-scheme: light; --back: #e9e4f5; --card: #f3effc; --head: #ece6f8; --edge: transparent; --alt: transparent; --text1: #2d2547; --text2: #5b537a; --faint: #9890b5; --up: #22a06b; --down: #e5484d; --accent: #7c5cff; --hot: #e3dcf7; --tip: #2d2547; --tipfg: #fff; --accentfg: #fff; --font: "Avenir Next Rounded","Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 28px; --panel-bg: var(--card); --panel-border: 0; --panel-shadow: 10px 10px 24px rgba(120,100,180,.25),inset -6px -6px 14px rgba(120,100,180,.18),inset 6px 6px 14px rgba(255,255,255,.9); --h-color: #7c5cff; --h-transform: none; --h-spacing: 0; --h-size: 16px; --h-weight: 800; --h-font: inherit; --big-font: inherit; --big-weight: 800; }
+[data-theme="glina"] :is(.overview .left,.block,.detail,.list) { padding:20px 22px }
+[data-theme="glina"] .bar { border:0 }
+[data-theme="glina"] button { border:0;background:#f3effc;box-shadow:4px 4px 10px rgba(120,100,180,.25),inset -2px -2px 5px rgba(120,100,180,.15),inset 2px 2px 5px #fff;color:#7c5cff;font-weight:700 }
+[data-theme="glina"] .chip.on { background:#7c5cff;color:#fff }
+[data-theme="glina"] .rows { background:transparent;border:0 }
+[data-theme="glina"] .rows thead th { background:#f3effc }
+[data-theme="glina"] #search { border:0;background:#ece6f8;box-shadow:inset 3px 3px 7px rgba(120,100,180,.25),inset -3px -3px 7px #fff;border-radius:16px }
+[data-theme="glina"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="glina"] .chart .line { stroke-width:4;stroke-linecap:round }
+[data-theme="glina"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="glina"] .overview .left { align-self: start; }
+[data-theme="glina"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="glina"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="glina"][data-scheme="dark"] { color-scheme: dark; --back: #16121d; --card: #0f0c14; --head: #15101c; --text1: #c8c0ec; --text2: #9189b4; --faint: #675f83; --up: #4ade80; --down: #f87171; --accent: #7758f5; --hot: #1b1528; --tip: #c8c0ec; --tipfg: #060606; --accentfg: #ffffff; --panel-shadow: 10px 10px 24px rgba(121,101,181,.25),inset -6px -6px 14px rgba(121,101,181,.18),inset 6px 6px 14px rgba(6,6,6,.9); --h-color: #7758f5; }
+[data-theme="glina"][data-scheme="dark"] button { border:0;background:#0f0c14;box-shadow:4px 4px 10px rgba(121,101,181,.25),inset -2px -2px 5px rgba(121,101,181,.15),inset 2px 2px 5px #060606;color:#7758f5;font-weight:700 }
+[data-theme="glina"][data-scheme="dark"] .chip.on { background:#7758f5;color:#060606 }
+[data-theme="glina"][data-scheme="dark"] .rows thead th { background:#0f0c14 }
+[data-theme="glina"][data-scheme="dark"] #search { border:0;background:#15101c;box-shadow:inset 3px 3px 7px rgba(121,101,181,.25),inset -3px -3px 7px #060606;border-radius:16px }

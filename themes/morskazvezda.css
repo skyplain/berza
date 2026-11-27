@@ -1,0 +1,15 @@
+/* tema morska zvezda (Starfish): generisana, tools/teme.py */
+:root[data-theme="morskazvezda"] { color-scheme: light; --back: #fff4ea; --card: #fffcf9; --head: #f3efec; --edge: #e0d3c9; --alt: #f9f6f2; --text1: #3e281b; --text2: #6e5b4f; --faint: #9b8a7e; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f9e6d9; --tip: #3e281b; --tipfg: #fff4ea; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="morskazvezda"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="morskazvezda"] .overview .left { align-self: start; }
+[data-theme="morskazvezda"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="morskazvezda"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="morskazvezda"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="morskazvezda"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="morskazvezda"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(62,40,27,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(211,98,18,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(62,40,27,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(62,40,27,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(211,98,18,0.8), transparent); background-color: #fff4ea; background-attachment: fixed; }
+[data-theme="morskazvezda"] .big .value, [data-theme="morskazvezda"] .detail .price { font-weight: 700; }
+[data-theme="morskazvezda"] .chart .line { stroke-width: 1.5; }
+[data-theme="morskazvezda"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="morskazvezda"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444344; --alt: #343436; --text1: #f4eae4; --text2: #c0b8b4; --faint: #908a89; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #4a382d; --tip: #f4eae4; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="morskazvezda"][data-scheme="dark"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(244,234,228,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(249,115,22,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(244,234,228,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(244,234,228,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(249,115,22,0.8), transparent); background-color: #232326; background-attachment: fixed; }

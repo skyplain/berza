@@ -1,0 +1,16 @@
+/* tema poezija (Poetry): generisana, tools/teme.py */
+:root[data-theme="poezija"] { color-scheme: light; --back: #fbf7f2; --card: #fefdfb; --head: #f1f0ef; --edge: #d9d5d2; --alt: #f7f6f5; --text1: #25232d; --text2: #5a585e; --faint: #8c898c; --up: #15803d; --down: #c81e1e; --accent: #6d597a; --hot: #eae6e9; --tip: #25232d; --tipfg: #fbf7f2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="poezija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="poezija"] .overview .left { align-self: start; }
+[data-theme="poezija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="poezija"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="poezija"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="poezija"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="poezija"] .bar button { background: transparent; color: var(--back); border-color: rgba(251,247,242,0.35); box-shadow: none; }
+[data-theme="poezija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="poezija"] .big .value, [data-theme="poezija"] .detail .price { font-weight: 900; }
+[data-theme="poezija"] .chart .line { stroke-width: 2; }
+[data-theme="poezija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="poezija"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #434347; --alt: #343538; --text1: #e9e8ec; --text2: #b8b7bb; --faint: #8a8a8d; --up: #4ade80; --down: #f87171; --accent: #897893; --hot: #3b3940; --tip: #e9e8ec; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="poezija"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,39,0.35); box-shadow: none; }

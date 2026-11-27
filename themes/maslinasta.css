@@ -1,0 +1,25 @@
+/* tema maslinasta (Olive): generisana, tools/teme.py */
+:root[data-theme="maslinasta"] { color-scheme: dark; --back: #12140a; --card: #1e2016; --head: #2a2c22; --edge: #34362d; --alt: #24261c; --text1: #e9eae6; --text2: #b3b4af; --faint: #82837c; --up: #4ade80; --down: #f87171; --accent: #65712b; --hot: #282b19; --tip: #e9eae6; --tipfg: #12140a; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="maslinasta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="maslinasta"] .overview .left { align-self: start; }
+[data-theme="maslinasta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="maslinasta"] button { border-radius: 999px; }
+[data-theme="maslinasta"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="maslinasta"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="maslinasta"] .bar button { background: transparent; color: var(--back); border-color: rgba(18,20,10,0.35); box-shadow: none; }
+[data-theme="maslinasta"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="maslinasta"] body { background: linear-gradient(180deg, rgba(101,113,43,0.1), transparent 380px); background-color: #12140a; background-attachment: fixed; }
+[data-theme="maslinasta"] :is(.overview .left, .block, .detail, .list) { background: #222417; border-color: rgba(101,113,43,0.35); }
+[data-theme="maslinasta"] .chart .line { stroke: #65712b !important; }
+[data-theme="maslinasta"] .chart .area { fill: #65712b !important; }
+[data-theme="maslinasta"] .chart .vol { fill: #65712b; }
+[data-theme="maslinasta"] :is(h2, h3, .big .label) { color: #65712b; }
+[data-theme="maslinasta"] .big .value, [data-theme="maslinasta"] .detail .price { font-weight: 400; }
+[data-theme="maslinasta"] .chart .line { stroke-width: 1.5; }
+[data-theme="maslinasta"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="maslinasta"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #eeeeed; --edge: #d0d1cf; --alt: #f5f5f3; --text1: #23271f; --text2: #565a53; --faint: #868883; --up: #15803d; --down: #c81e1e; --accent: #65712b; --hot: #e6e8dd; --tip: #23271f; --tipfg: #f1f1f0; --accentfg: #ffffff; }
+[data-theme="maslinasta"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="maslinasta"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,241,240,0.35); box-shadow: none; }
+[data-theme="maslinasta"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(101,113,43,0.1), transparent 380px); background-color: #f1f1f0; background-attachment: fixed; }
+[data-theme="maslinasta"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #f4f4f0; border-color: rgba(101,113,43,0.35); }

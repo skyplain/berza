@@ -1,0 +1,19 @@
+/* tema ekspresionizam (Expressionism): generisana, tools/teme.py */
+:root[data-theme="ekspresionizam"] { color-scheme: dark; --back: #1d0f12; --card: #281b1e; --head: #34272a; --edge: #3f3134; --alt: #2e2124; --text1: #f0e2e5; --text2: #bbadb0; --faint: #8b7d80; --up: #4ade80; --down: #f87171; --accent: #cb3641; --hot: #3f1f23; --tip: #f0e2e5; --tipfg: #1d0f12; --accentfg: #ffffff; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 0px; }
+[data-theme="ekspresionizam"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="ekspresionizam"] .overview .left { align-self: start; }
+[data-theme="ekspresionizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ekspresionizam"] button { border-radius: 0; }
+[data-theme="ekspresionizam"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="ekspresionizam"] .bar h1 { font-size: 24px; }
+[data-theme="ekspresionizam"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ekspresionizam"] body { background: linear-gradient(125deg, rgba(203,54,65,0.13) 0 28%, transparent 28%); background-color: #1d0f12; background-attachment: fixed; }
+[data-theme="ekspresionizam"] :is(h2, h3) { border-left: 8px solid #cb3641; padding-left: 8px; }
+[data-theme="ekspresionizam"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="ekspresionizam"] .big .value, [data-theme="ekspresionizam"] .detail .price { font-weight: 200; }
+[data-theme="ekspresionizam"] .chart .line { stroke-width: 2.5; }
+[data-theme="ekspresionizam"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ekspresionizam"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efedee; --edge: #d3cecf; --alt: #f5f4f4; --text1: #34161d; --text2: #634d52; --faint: #8f7f83; --up: #15803d; --down: #c81e1e; --accent: #c1121f; --hot: #f3dadc; --tip: #34161d; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="ekspresionizam"][data-scheme="light"] body { background: linear-gradient(125deg, rgba(193,18,31,0.13) 0 28%, transparent 28%); background-color: #f1f1f1; background-attachment: fixed; }
+[data-theme="ekspresionizam"][data-scheme="light"] :is(h2, h3) { border-left: 8px solid #c1121f; padding-left: 8px; }

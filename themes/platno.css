@@ -1,0 +1,17 @@
+/* tema platno (Canvas): generisana, tools/teme.py */
+:root[data-theme="platno"] { color-scheme: light; --back: #efebe3; --card: #faf9f7; --head: #edeceb; --edge: #cfccc5; --alt: #f4f3f1; --text1: #27272a; --text2: #595858; --faint: #878583; --up: #15803d; --down: #c81e1e; --accent: #78716c; --hot: #e8e6e4; --tip: #27272a; --tipfg: #efebe3; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="platno"] :is(.overview .left, .block, .detail, .list) { background: #e8e4dd; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="platno"] .overview .left { align-self: start; }
+[data-theme="platno"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="platno"] button { border: 0; }
+[data-theme="platno"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="platno"] .bar h1 { font-weight: 800; }
+[data-theme="platno"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="platno"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(39,39,42,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(39,39,42,0.03) 0 1px, transparent 1px 5px); background-color: #efebe3; background-attachment: fixed; }
+[data-theme="platno"] .big .value, [data-theme="platno"] .detail .price { font-weight: 400; }
+[data-theme="platno"] .chart .line { stroke-width: 1.5; }
+[data-theme="platno"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="platno"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #424245; --alt: #333336; --text1: #eaeaeb; --text2: #b8b8ba; --faint: #8a8a8c; --up: #4ade80; --down: #f87171; --accent: #837c78; --hot: #39383a; --tip: #eaeaeb; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="platno"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #29292c; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="platno"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(234,234,235,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(234,234,235,0.03) 0 1px, transparent 1px 5px); background-color: #222225; background-attachment: fixed; }

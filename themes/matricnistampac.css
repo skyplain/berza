@@ -1,0 +1,21 @@
+/* tema matrični štampač (Dot matrix): generisana, tools/teme.py */
+:root[data-theme="matricnistampac"] { color-scheme: light; --back: #fbfbf6; --card: #f7f8f4; --head: #eaebe9; --edge: #d8d9d7; --alt: #f1f2ee; --text1: #1f2735; --text2: #565c65; --faint: #898d92; --up: #15803d; --down: #c81e1e; --accent: #4a6fa5; --hot: #dfe5e9; --tip: #1f2735; --tipfg: #fbfbf6; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="matricnistampac"] :is(.overview .left, .block, .detail, .list) { background: #f3f4ef; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="matricnistampac"] .overview .left { align-self: start; }
+[data-theme="matricnistampac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="matricnistampac"] button { border: 0; }
+[data-theme="matricnistampac"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="matricnistampac"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="matricnistampac"] .bar button { background: transparent; color: var(--back); border-color: rgba(251,251,246,0.35); box-shadow: none; }
+[data-theme="matricnistampac"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="matricnistampac"] body { background: repeating-linear-gradient(0deg, rgba(31,39,53,0.05) 0 2px, transparent 2px 9px); background-color: #fbfbf6; background-attachment: fixed; }
+[data-theme="matricnistampac"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(31,39,53,0.22); border-right: 8px dotted rgba(31,39,53,0.22); }
+[data-theme="matricnistampac"] .big .value, [data-theme="matricnistampac"] .detail .price { font-weight: 400; }
+[data-theme="matricnistampac"] .chart .line { stroke-width: 2; }
+[data-theme="matricnistampac"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="matricnistampac"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #424447; --alt: #343538; --text1: #e6e9f0; --text2: #b5b8be; --faint: #888a90; --up: #4ade80; --down: #f87171; --accent: #5f80af; --hot: #353a44; --tip: #e6e9f0; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="matricnistampac"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2a2b2e; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="matricnistampac"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,39,0.35); box-shadow: none; }
+[data-theme="matricnistampac"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(230,233,240,0.05) 0 2px, transparent 2px 9px); background-color: #232427; background-attachment: fixed; }
+[data-theme="matricnistampac"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(230,233,240,0.22); border-right: 8px dotted rgba(230,233,240,0.22); }

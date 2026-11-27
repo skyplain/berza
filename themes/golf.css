@@ -1,0 +1,18 @@
+/* tema golf (Golf): generisana, tools/teme.py */
+:root[data-theme="golf"] { color-scheme: light; --back: #f1f7ed; --card: #fbfdfa; --head: #edf0ed; --edge: #ced6cd; --alt: #f4f7f4; --text1: #152a22; --text2: #4c5d55; --faint: #7f8c83; --up: #15803d; --down: #c81e1e; --accent: #15803d; --hot: #dbece0; --tip: #152a22; --tipfg: #f1f7ed; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="golf"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="golf"] .overview .left { align-self: start; }
+[data-theme="golf"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="golf"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="golf"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="golf"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="golf"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,247,237,0.35); box-shadow: none; }
+[data-theme="golf"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="golf"] body { background: radial-gradient(rgba(21,128,61,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #f1f7ed; background-attachment: fixed; }
+[data-theme="golf"] .big .value, [data-theme="golf"] .detail .price { font-weight: 200; }
+[data-theme="golf"] .chart .line { stroke-width: 2.5; }
+[data-theme="golf"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="golf"][data-scheme="dark"] { color-scheme: dark; --back: #222426; --card: #2d2f31; --head: #383a3c; --edge: #414445; --alt: #323536; --text1: #e2ebe7; --text2: #b2b9b7; --faint: #868b8a; --up: #4ade80; --down: #f87171; --accent: #318f54; --hot: #2e3c36; --tip: #e2ebe7; --tipfg: #222426; --accentfg: #111111; }
+[data-theme="golf"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,38,0.35); box-shadow: none; }
+[data-theme="golf"][data-scheme="dark"] body { background: radial-gradient(rgba(49,143,84,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #222426; background-attachment: fixed; }

@@ -1,0 +1,20 @@
+/* tema pop art (Pop Art): generisana, tools/teme.py */
+:root[data-theme="popart"] { color-scheme: light; --back: #fff200; --card: #fffbb2; --head: #f3edaa; --edge: #e0cf06; --alt: #f9f4ae; --text1: #3f1827; --text2: #6f4e1d; --faint: #9b8114; --up: #15803d; --down: #c81e1e; --accent: #ff1d58; --hot: #ffdca5; --tip: #3f1827; --tipfg: #fff200; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 0px; }
+[data-theme="popart"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="popart"] .overview .left { align-self: start; }
+[data-theme="popart"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="popart"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="popart"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="popart"] .bar h1 { font-weight: 800; }
+[data-theme="popart"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="popart"] body { background: radial-gradient(rgba(255,29,88,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #fff200; background-attachment: fixed; }
+[data-theme="popart"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #3f1827; box-shadow: 6px 6px 0 #3f1827; border-radius: 6px; background: var(--card); }
+[data-theme="popart"] button { border: 2px solid #3f1827; box-shadow: 2px 2px 0 #3f1827; }
+[data-theme="popart"] .big .value, [data-theme="popart"] .detail .price { font-weight: 900; }
+[data-theme="popart"] .chart .line { stroke-width: 2.5; }
+[data-theme="popart"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="popart"][data-scheme="dark"] { color-scheme: dark; --back: #23230e; --card: #2e2e1a; --head: #3a3926; --edge: #454231; --alt: #343320; --text1: #f5e3e9; --text2: #c0b3b2; --faint: #908780; --up: #4ade80; --down: #f87171; --accent: #ff1d58; --hot: #4b2c23; --tip: #f5e3e9; --tipfg: #23230e; --accentfg: #111111; }
+[data-theme="popart"][data-scheme="dark"] body { background: radial-gradient(rgba(255,29,88,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #23230e; background-attachment: fixed; }
+[data-theme="popart"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #f5e3e9; box-shadow: 6px 6px 0 #f5e3e9; border-radius: 6px; background: var(--card); }
+[data-theme="popart"][data-scheme="dark"] button { border: 2px solid #f5e3e9; box-shadow: 2px 2px 0 #f5e3e9; }

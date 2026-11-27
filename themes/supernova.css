@@ -1,0 +1,24 @@
+/* tema supernova (Supernova): generisana, tools/teme.py */
+:root[data-theme="supernova"] { color-scheme: dark; --back: #14040c; --card: #201118; --head: #2d1e25; --edge: #382930; --alt: #26181e; --text1: #f5eaed; --text2: #bdb0b5; --faint: #897c81; --up: #4ade80; --down: #f87171; --accent: #fb7185; --hot: #3f1e27; --tip: #f5eaed; --tipfg: #14040c; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="supernova"] :is(.overview .left, .block, .detail, .list) { background: rgba(32,17,24,0.6); border: 1px solid rgba(245,234,237,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="supernova"] .overview .left { align-self: start; }
+[data-theme="supernova"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="supernova"] button { border-radius: 999px; background: transparent; }
+[data-theme="supernova"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="supernova"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="supernova"] .bar button { background: transparent; color: var(--back); border-color: rgba(20,4,12,0.35); box-shadow: none; }
+[data-theme="supernova"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="supernova"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="supernova"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(251,113,133,0.08) 0 6deg, transparent 6deg 12deg); background-color: #14040c; background-attachment: fixed; }
+[data-theme="supernova"] .big .value { text-shadow: 0 0 18px rgba(251,113,133,0.55); }
+[data-theme="supernova"] .chart .line { filter: drop-shadow(0 0 5px rgba(251,113,133,0.7)); }
+[data-theme="supernova"] .big .value, [data-theme="supernova"] .detail .price { font-weight: 700; }
+[data-theme="supernova"] .chart .line { stroke-width: 2; }
+[data-theme="supernova"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="supernova"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #f0edee; --edge: #d4d0d1; --alt: #f5f4f4; --text1: #3e272f; --text2: #6b595f; --faint: #94878c; --up: #15803d; --down: #c81e1e; --accent: #d56070; --hot: #f6e4e7; --tip: #3e272f; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="supernova"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,250,250,0.6); border: 1px solid rgba(62,39,47,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="supernova"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }
+[data-theme="supernova"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(213,96,112,0.08) 0 6deg, transparent 6deg 12deg); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="supernova"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(213,96,112,0.55); }
+[data-theme="supernova"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(213,96,112,0.7)); }

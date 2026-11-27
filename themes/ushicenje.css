@@ -1,0 +1,15 @@
+/* tema ushićenje (Delight): generisana, tools/teme.py */
+:root[data-theme="ushicenje"] { color-scheme: light; --back: #fff6f7; --card: #fffcfd; --head: #f3eff1; --edge: #e0d5d7; --alt: #f9f6f7; --text1: #3e272f; --text2: #6e5b61; --faint: #9b8a8f; --up: #15803d; --down: #c81e1e; --accent: #d56070; --hot: #f9e6e9; --tip: #3e272f; --tipfg: #fff6f7; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="ushicenje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="ushicenje"] .overview .left { align-self: start; }
+[data-theme="ushicenje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ushicenje"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ushicenje"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ushicenje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ushicenje"] body { background: linear-gradient(45deg, transparent 46%, rgba(213,96,112,0.5) 46% 54%, transparent 54%) 0 0 / 26px 26px, linear-gradient(135deg, transparent 46%, rgba(133,251,113,0.5) 46% 54%, transparent 54%) 13px 9px / 31px 31px, linear-gradient(80deg, transparent 46%, rgba(113,133,251,0.45) 46% 54%, transparent 54%) 7px 17px / 37px 37px; background-color: #fff6f7; background-attachment: fixed; }
+[data-theme="ushicenje"] .big .value, [data-theme="ushicenje"] .detail .price { font-weight: 700; }
+[data-theme="ushicenje"] .chart .line { stroke-width: 3; }
+[data-theme="ushicenje"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ushicenje"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #454347; --alt: #343438; --text1: #f5eaed; --text2: #c0b8bc; --faint: #908a8e; --up: #4ade80; --down: #f87171; --accent: #fb7185; --hot: #4b373e; --tip: #f5eaed; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="ushicenje"][data-scheme="dark"] body { background: linear-gradient(45deg, transparent 46%, rgba(251,113,133,0.5) 46% 54%, transparent 54%) 0 0 / 26px 26px, linear-gradient(135deg, transparent 46%, rgba(133,251,113,0.5) 46% 54%, transparent 54%) 13px 9px / 31px 31px, linear-gradient(80deg, transparent 46%, rgba(113,133,251,0.45) 46% 54%, transparent 54%) 7px 17px / 37px 37px; background-color: #232327; background-attachment: fixed; }

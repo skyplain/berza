@@ -1,0 +1,14 @@
+/* tema golubac (Golubac): generisana, tools/teme.py */
+:root[data-theme="golubac"] { color-scheme: light; --back: #eef0ee; --card: #fafafa; --head: #ededed; --edge: #cdcfce; --alt: #f3f4f4; --text1: #212225; --text2: #545657; --faint: #838585; --up: #15803d; --down: #c81e1e; --accent: #57534e; --hot: #e3e3e2; --tip: #212225; --tipfg: #eef0ee; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="golubac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="golubac"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="golubac"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="golubac"] .bar h1 { font-weight: 800; }
+[data-theme="golubac"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="golubac"] body { background: linear-gradient(rgba(87,83,78,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(87,83,78,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(87,83,78,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #eef0ee; background-attachment: fixed; }
+[data-theme="golubac"] .big .value, [data-theme="golubac"] .detail .price { font-weight: 900; }
+[data-theme="golubac"] .chart .line { stroke-width: 1.5; }
+[data-theme="golubac"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="golubac"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #424245; --alt: #333437; --text1: #e7e7e9; --text2: #b6b6b8; --faint: #88898b; --up: #4ade80; --down: #f87171; --accent: #807f7b; --hot: #39393b; --tip: #e7e7e9; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="golubac"][data-scheme="dark"] body { background: linear-gradient(rgba(128,127,123,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(128,127,123,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(128,127,123,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222326; background-attachment: fixed; }

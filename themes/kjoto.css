@@ -1,0 +1,16 @@
+/* tema kjoto (Kyoto): generisana, tools/teme.py */
+:root[data-theme="kjoto"] { color-scheme: light; --back: #f8f2e9; --card: #fdfbf8; --head: #f1edeb; --edge: #d8cfc8; --alt: #f7f4f1; --text1: #33181c; --text2: #644e4f; --faint: #92817e; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f3dcd9; --tip: #33181c; --tipfg: #f8f2e9; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="kjoto"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="kjoto"] .overview .left { align-self: start; }
+[data-theme="kjoto"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kjoto"] button { border-radius: 0; }
+[data-theme="kjoto"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kjoto"] .bar h1 { font-weight: 800; }
+[data-theme="kjoto"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kjoto"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(185,28,28,0.14) 9px 10px, transparent 11px 16px, rgba(185,28,28,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f8f2e9; background-attachment: fixed; }
+[data-theme="kjoto"] .big .value, [data-theme="kjoto"] .detail .price { font-weight: 400; }
+[data-theme="kjoto"] .chart .line { stroke-width: 1.5; }
+[data-theme="kjoto"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kjoto"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343336; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #443437; --tip: #efe3e5; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="kjoto"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(205,92,92,0.14) 9px 10px, transparent 11px 16px, rgba(205,92,92,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #232326; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema snoubord (Snowboarding): generisana, tools/teme.py */
+:root[data-theme="snoubord"] { color-scheme: light; --back: #f7f5ff; --card: #fdfcff; --head: #f1eff4; --edge: #d7d3e1; --alt: #f7f5f9; --text1: #2f2243; --text2: #615772; --faint: #8f879d; --up: #15803d; --down: #c81e1e; --accent: #a855f7; --hot: #f1e5fe; --tip: #2f2243; --tipfg: #f7f5ff; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="snoubord"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="snoubord"] .overview .left { align-self: start; }
+[data-theme="snoubord"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="snoubord"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="snoubord"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="snoubord"] .bar h1 { font-weight: 800; }
+[data-theme="snoubord"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="snoubord"] body { background: radial-gradient(circle, rgba(168,85,247,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(168,85,247,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(168,85,247,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f7f5ff; background-attachment: fixed; }
+[data-theme="snoubord"] .big .value, [data-theme="snoubord"] .detail .price { font-weight: 400; }
+[data-theme="snoubord"] .chart .line { stroke-width: 2.5; }
+[data-theme="snoubord"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="snoubord"][data-scheme="dark"] { color-scheme: dark; --back: #232328; --card: #2e2e33; --head: #3a393f; --edge: #434249; --alt: #343439; --text1: #eee7f6; --text2: #bbb6c2; --faint: #8d8993; --up: #4ade80; --down: #f87171; --accent: #a855f7; --hot: #3f334e; --tip: #eee7f6; --tipfg: #232328; --accentfg: #111111; }
+[data-theme="snoubord"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #232328; background-attachment: fixed; }

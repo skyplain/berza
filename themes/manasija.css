@@ -1,0 +1,16 @@
+/* tema manasija (Manasija): generisana, tools/teme.py */
+:root[data-theme="manasija"] { color-scheme: light; --back: #eee8dc; --card: #faf8f4; --head: #edebe8; --edge: #cec9c0; --alt: #f4f2ee; --text1: #27272a; --text2: #595756; --faint: #87847f; --up: #15803d; --down: #c81e1e; --accent: #78716c; --hot: #e8e5e1; --tip: #27272a; --tipfg: #eee8dc; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="manasija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="manasija"] .overview .left { align-self: start; }
+[data-theme="manasija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="manasija"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="manasija"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="manasija"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="manasija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="manasija"] body { background: linear-gradient(rgba(120,113,108,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(120,113,108,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(120,113,108,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #eee8dc; background-attachment: fixed; }
+[data-theme="manasija"] .big .value, [data-theme="manasija"] .detail .price { font-weight: 900; }
+[data-theme="manasija"] .chart .line { stroke-width: 1.5; }
+[data-theme="manasija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="manasija"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424244; --alt: #333335; --text1: #eaeaeb; --text2: #b8b8b9; --faint: #8a8a8b; --up: #4ade80; --down: #f87171; --accent: #837c78; --hot: #393839; --tip: #eaeaeb; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="manasija"][data-scheme="dark"] body { background: linear-gradient(rgba(131,124,120,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(131,124,120,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(131,124,120,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222224; background-attachment: fixed; }

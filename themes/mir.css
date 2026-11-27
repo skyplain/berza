@@ -1,0 +1,18 @@
+/* tema mir (Peace): generisana, tools/teme.py */
+:root[data-theme="mir"] { color-scheme: light; --back: #f5faff; --card: #f2f8ff; --head: #e6ecf4; --edge: #d3dae1; --alt: #ecf2f9; --text1: #223144; --text2: #576373; --faint: #87919e; --up: #15803d; --down: #c81e1e; --accent: #518cd4; --hot: #dbe9f9; --tip: #223144; --tipfg: #f5faff; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 8px; }
+[data-theme="mir"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mir"] .overview .left { align-self: start; }
+[data-theme="mir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mir"] button { border-radius: 999px; }
+[data-theme="mir"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="mir"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="mir"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mir"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.08), -6px -6px 16px rgba(255,255,255,0.8); padding: 18px 20px; }
+[data-theme="mir"] button { border-radius: 999px; }
+[data-theme="mir"] .big .value, [data-theme="mir"] .detail .price { font-weight: 700; }
+[data-theme="mir"] .chart .line { stroke-width: 2.5; }
+[data-theme="mir"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mir"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #424449; --alt: #333539; --text1: #e8eef6; --text2: #b6bcc2; --faint: #898d93; --up: #4ade80; --down: #f87171; --accent: #60a5fa; --hot: #34404f; --tip: #e8eef6; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="mir"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="mir"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.4), -6px -6px 16px rgba(255,255,255,0.03); padding: 18px 20px; }

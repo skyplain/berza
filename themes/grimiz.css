@@ -1,0 +1,28 @@
+/* tema grimiz (Crimson): generisana, tools/teme.py */
+:root[data-theme="grimiz"] { color-scheme: dark; --back: #1a040a; --card: #251116; --head: #311e23; --edge: #3c282d; --alt: #2b171c; --text1: #f0e2e7; --text2: #baaab0; --faint: #89777d; --up: #4ade80; --down: #f87171; --accent: #c3254c; --hot: #3b141e; --tip: #f0e2e7; --tipfg: #1a040a; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="grimiz"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="grimiz"] .overview .left { align-self: start; }
+[data-theme="grimiz"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="grimiz"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="grimiz"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="grimiz"] .bar button { background: transparent; color: var(--back); border-color: rgba(26,4,10,0.35); box-shadow: none; }
+[data-theme="grimiz"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="grimiz"] body { background: linear-gradient(180deg, rgba(195,37,76,0.1), transparent 380px); background-color: #1a040a; background-attachment: fixed; }
+[data-theme="grimiz"] :is(.overview .left, .block, .detail, .list) { background: #2d1118; border-color: rgba(195,37,76,0.35); }
+[data-theme="grimiz"] .chart .line { stroke: #c3254c !important; }
+[data-theme="grimiz"] .chart .area { fill: #c3254c !important; }
+[data-theme="grimiz"] .chart .vol { fill: #c3254c; }
+[data-theme="grimiz"] :is(h2, h3, .big .label) { color: #c3254c; }
+[data-theme="grimiz"] .big .value, [data-theme="grimiz"] .detail .price { font-weight: 900; }
+[data-theme="grimiz"] .chart .line { stroke-width: 2; }
+[data-theme="grimiz"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="grimiz"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeced; --edge: #d3cdcf; --alt: #f5f3f4; --text1: #331622; --text2: #624c56; --faint: #8e7f85; --up: #15803d; --down: #c81e1e; --accent: #be123c; --hot: #f2dadf; --tip: #331622; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="grimiz"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="grimiz"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }
+[data-theme="grimiz"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(190,18,60,0.1), transparent 380px); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="grimiz"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #f8eef0; border-color: rgba(190,18,60,0.35); }
+[data-theme="grimiz"][data-scheme="light"] .chart .line { stroke: #be123c !important; }
+[data-theme="grimiz"][data-scheme="light"] .chart .area { fill: #be123c !important; }
+[data-theme="grimiz"][data-scheme="light"] .chart .vol { fill: #be123c; }
+[data-theme="grimiz"][data-scheme="light"] :is(h2, h3, .big .label) { color: #be123c; }

@@ -1,0 +1,18 @@
+/* tema dada (Dada): generisana, tools/teme.py */
+:root[data-theme="dada"] { color-scheme: light; --back: #f2eee3; --card: #fbfaf7; --head: #edecea; --edge: #cecbc2; --alt: #f4f3f0; --text1: #111317; --text2: #494a4a; --faint: #7d7c79; --up: #15803d; --down: #c81e1e; --accent: #000000; --hot: #d8d7d4; --tip: #111317; --tipfg: #f2eee3; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 0px; }
+[data-theme="dada"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="dada"] .overview .left { align-self: start; }
+[data-theme="dada"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dada"] button { border-radius: 0; }
+[data-theme="dada"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="dada"] .bar h1 { font-weight: 800; }
+[data-theme="dada"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="dada"] .block:nth-child(odd), [data-theme="dada"] .overview .left { transform: rotate(-.6deg); }
+[data-theme="dada"] .block:nth-child(even) { transform: rotate(.5deg); }
+[data-theme="dada"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(0,0,0,0.55), -2px -1px 0 rgba(0,0,0,0.45); }
+[data-theme="dada"] .big .value, [data-theme="dada"] .detail .price { font-weight: 200; }
+[data-theme="dada"] .chart .line { stroke-width: 3; }
+[data-theme="dada"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dada"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #404143; --alt: #323335; --text1: #e0e0e2; --text2: #b0b1b3; --faint: #858587; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #39393b; --tip: #e0e0e2; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="dada"][data-scheme="dark"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(128,128,128,0.55), -2px -1px 0 rgba(0,0,0,0.45); }

@@ -1,0 +1,21 @@
+/* tema duh iz lampe (Genie): generisana, tools/teme.py */
+:root[data-theme="duhizlampe"] { color-scheme: dark; --back: #04131a; --card: #111f25; --head: #1d2b31; --edge: #27363d; --alt: #17252b; --text1: #e1eff3; --text2: #aab8bd; --faint: #77858b; --up: #4ade80; --down: #f87171; --accent: #06b6d4; --hot: #0f343e; --tip: #e1eff3; --tipfg: #04131a; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="duhizlampe"] :is(.overview .left, .block, .detail, .list) { background: #0c1b22; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="duhizlampe"] .overview .left { align-self: start; }
+[data-theme="duhizlampe"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="duhizlampe"] button { border: 0; }
+[data-theme="duhizlampe"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="duhizlampe"] .bar h1 { font-size: 24px; }
+[data-theme="duhizlampe"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="duhizlampe"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(6,182,212,0.07) 0 12deg, transparent 12deg 24deg); background-color: #04131a; background-attachment: fixed; }
+[data-theme="duhizlampe"] .big .value { text-shadow: 0 0 18px rgba(6,182,212,0.55); }
+[data-theme="duhizlampe"] .chart .line { filter: drop-shadow(0 0 5px rgba(6,182,212,0.7)); }
+[data-theme="duhizlampe"] .big .value, [data-theme="duhizlampe"] .detail .price { font-weight: 900; }
+[data-theme="duhizlampe"] .chart .line { stroke-width: 2; }
+[data-theme="duhizlampe"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="duhizlampe"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eceff0; --edge: #ccd3d4; --alt: #f3f5f5; --text1: #12343d; --text2: #4a636a; --faint: #74888c; --up: #15803d; --down: #c81e1e; --accent: #068ea5; --hot: #d8ecef; --tip: #12343d; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="duhizlampe"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #e8eaeb; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="duhizlampe"][data-scheme="light"] body { background: repeating-conic-gradient(from 0deg at 50% 40%, rgba(6,142,165,0.07) 0 12deg, transparent 12deg 24deg); background-color: #f0f1f1; background-attachment: fixed; }
+[data-theme="duhizlampe"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(6,142,165,0.55); }
+[data-theme="duhizlampe"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(6,142,165,0.7)); }

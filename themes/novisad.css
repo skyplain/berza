@@ -1,0 +1,23 @@
+/* tema novi sad (Novi Sad): generisana, tools/teme.py */
+:root[data-theme="novisad"] { color-scheme: light; --back: #f4f7f2; --card: #fcfdfb; --head: #eef0ef; --edge: #d0d6d2; --alt: #f5f7f5; --text1: #14282b; --text2: #4c5c5d; --faint: #808b8b; --up: #15803d; --down: #c81e1e; --accent: #0f766e; --hot: #dbeae7; --tip: #14282b; --tipfg: #f4f7f2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="novisad"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="novisad"] .overview .left { align-self: start; }
+[data-theme="novisad"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="novisad"] button { border-radius: 999px; }
+[data-theme="novisad"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="novisad"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="novisad"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="novisad"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="novisad"] :is(.overview .left, .block, .detail, .list) { border: 4px double #0f766e; }
+[data-theme="novisad"] .bar h1::before { content: "❦ "; color: #0f766e; }
+[data-theme="novisad"] .bar h1::after { content: " ❦"; color: #0f766e; }
+[data-theme="novisad"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="novisad"] .big .value, [data-theme="novisad"] .detail .price { font-weight: 400; }
+[data-theme="novisad"] .chart .line { stroke-width: 2.5; }
+[data-theme="novisad"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="novisad"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414446; --alt: #323538; --text1: #e2eaeb; --text2: #b2b8ba; --faint: #868b8d; --up: #4ade80; --down: #f87171; --accent: #348b85; --hot: #2e3c3e; --tip: #e2eaeb; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="novisad"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="novisad"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #348b85; }
+[data-theme="novisad"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #348b85; }
+[data-theme="novisad"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #348b85; }

@@ -1,0 +1,28 @@
+/* tema narandžasta (Orange color): generisana, tools/teme.py */
+:root[data-theme="narandzasta"] { color-scheme: light; --back: #ffeedd; --card: #fffaf5; --head: #f3ede8; --edge: #e0cebe; --alt: #f9f4ee; --text1: #3b2319; --text2: #6c564a; --faint: #998477; --up: #15803d; --down: #c81e1e; --accent: #d7510b; --hot: #f9e2d4; --tip: #3b2319; --tipfg: #ffeedd; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="narandzasta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="narandzasta"] .overview .left { align-self: start; }
+[data-theme="narandzasta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="narandzasta"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="narandzasta"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="narandzasta"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="narandzasta"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,238,221,0.35); box-shadow: none; }
+[data-theme="narandzasta"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="narandzasta"] body { background: linear-gradient(180deg, rgba(215,81,11,0.1), transparent 380px); background-color: #ffeedd; background-attachment: fixed; }
+[data-theme="narandzasta"] :is(.overview .left, .block, .detail, .list) { background: #fef2e9; border-color: rgba(215,81,11,0.35); }
+[data-theme="narandzasta"] .chart .line { stroke: #d7510b !important; }
+[data-theme="narandzasta"] .chart .area { fill: #d7510b !important; }
+[data-theme="narandzasta"] .chart .vol { fill: #d7510b; }
+[data-theme="narandzasta"] :is(h2, h3, .big .label) { color: #d7510b; }
+[data-theme="narandzasta"] .big .value, [data-theme="narandzasta"] .detail .price { font-weight: 200; }
+[data-theme="narandzasta"] .chart .line { stroke-width: 3; }
+[data-theme="narandzasta"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="narandzasta"][data-scheme="dark"] { color-scheme: dark; --back: #232324; --card: #2e2e2f; --head: #3a393a; --edge: #444343; --alt: #343434; --text1: #f3e8e3; --text2: #bfb7b3; --faint: #8f8987; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #48342a; --tip: #f3e8e3; --tipfg: #232324; --accentfg: #111111; }
+[data-theme="narandzasta"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,35,36,0.35); box-shadow: none; }
+[data-theme="narandzasta"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(234,88,12,0.1), transparent 380px); background-color: #232324; background-attachment: fixed; }
+[data-theme="narandzasta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #37302d; border-color: rgba(234,88,12,0.35); }
+[data-theme="narandzasta"][data-scheme="dark"] .chart .line { stroke: #ea580c !important; }
+[data-theme="narandzasta"][data-scheme="dark"] .chart .area { fill: #ea580c !important; }
+[data-theme="narandzasta"][data-scheme="dark"] .chart .vol { fill: #ea580c; }
+[data-theme="narandzasta"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #ea580c; }

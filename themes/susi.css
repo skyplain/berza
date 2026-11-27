@@ -1,0 +1,15 @@
+/* tema suši (Sushi): generisana, tools/teme.py */
+:root[data-theme="susi"] { color-scheme: light; --back: #f8f6f0; --card: #fdfcfa; --head: #f1eeed; --edge: #dad2cf; --alt: #f7f5f4; --text1: #3a1824; --text2: #6a5057; --faint: #958386; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #f9dde1; --tip: #3a1824; --tipfg: #f8f6f0; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="susi"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="susi"] .overview .left { align-self: start; }
+[data-theme="susi"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="susi"] button { border-radius: 999px; }
+[data-theme="susi"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="susi"] .bar h1 { font-weight: 800; }
+[data-theme="susi"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="susi"] .big .value, [data-theme="susi"] .detail .price { font-weight: 400; }
+[data-theme="susi"] .chart .line { stroke-width: 1.5; }
+[data-theme="susi"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="susi"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343336; --text1: #f2e3e8; --text2: #beb3b8; --faint: #8f878b; --up: #4ade80; --down: #f87171; --accent: #e4375e; --hot: #472f37; --tip: #f2e3e8; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="susi"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

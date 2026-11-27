@@ -1,0 +1,27 @@
+/* tema zlatna (Golden): generisana, tools/teme.py */
+:root[data-theme="zlatna"] { color-scheme: dark; --back: #161005; --card: #221c12; --head: #2e281f; --edge: #393329; --alt: #282218; --text1: #efebe3; --text2: #b9b4ac; --faint: #878278; --up: #4ade80; --down: #f87171; --accent: #b8860b; --hot: #372b11; --tip: #efebe3; --tipfg: #161005; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="zlatna"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="zlatna"] .overview .left { align-self: start; }
+[data-theme="zlatna"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zlatna"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zlatna"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="zlatna"] .bar button { background: transparent; color: var(--back); border-color: rgba(22,16,5,0.35); box-shadow: none; }
+[data-theme="zlatna"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zlatna"] body { background: linear-gradient(180deg, rgba(184,134,11,0.1), transparent 380px); background-color: #161005; background-attachment: fixed; }
+[data-theme="zlatna"] :is(.overview .left, .block, .detail, .list) { background: #2a2112; border-color: rgba(184,134,11,0.35); }
+[data-theme="zlatna"] .chart .line { stroke: #b8860b !important; }
+[data-theme="zlatna"] .chart .area { fill: #b8860b !important; }
+[data-theme="zlatna"] .chart .vol { fill: #b8860b; }
+[data-theme="zlatna"] :is(h2, h3, .big .label) { color: #b8860b; }
+[data-theme="zlatna"] .big .value, [data-theme="zlatna"] .detail .price { font-weight: 900; }
+[data-theme="zlatna"] .chart .line { stroke-width: 2; }
+[data-theme="zlatna"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zlatna"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #efefec; --edge: #d2d1ce; --alt: #f5f5f3; --text1: #322b19; --text2: #625c4f; --faint: #8e8a80; --up: #15803d; --down: #c81e1e; --accent: #a97b0a; --hot: #f0e9d8; --tip: #322b19; --tipfg: #f1f1f0; --accentfg: #111111; }
+[data-theme="zlatna"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,241,240,0.35); box-shadow: none; }
+[data-theme="zlatna"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(169,123,10,0.1), transparent 380px); background-color: #f1f1f0; background-attachment: fixed; }
+[data-theme="zlatna"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #f8f5ee; border-color: rgba(169,123,10,0.35); }
+[data-theme="zlatna"][data-scheme="light"] .chart .line { stroke: #a97b0a !important; }
+[data-theme="zlatna"][data-scheme="light"] .chart .area { fill: #a97b0a !important; }
+[data-theme="zlatna"][data-scheme="light"] .chart .vol { fill: #a97b0a; }
+[data-theme="zlatna"][data-scheme="light"] :is(h2, h3, .big .label) { color: #a97b0a; }

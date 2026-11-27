@@ -1,0 +1,21 @@
+/* tema mudrost (Wisdom): generisana, tools/teme.py */
+:root[data-theme="mudrost"] { color-scheme: light; --back: #f4ecdf; --card: #fcf9f5; --head: #efece8; --edge: #d3cbbf; --alt: #f6f2ee; --text1: #271c1a; --text2: #5a504b; --faint: #898079; --up: #15803d; --down: #c81e1e; --accent: #78350f; --hot: #eaded5; --tip: #271c1a; --tipfg: #f4ecdf; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 10px; }
+[data-theme="mudrost"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="mudrost"] .overview .left { align-self: start; }
+[data-theme="mudrost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mudrost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mudrost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="mudrost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="mudrost"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="mudrost"] :is(.overview .left, .block, .detail, .list) { border: 4px double #78350f; }
+[data-theme="mudrost"] .bar h1::before { content: "❦ "; color: #78350f; }
+[data-theme="mudrost"] .bar h1::after { content: " ❦"; color: #78350f; }
+[data-theme="mudrost"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="mudrost"] .big .value, [data-theme="mudrost"] .detail .price { font-weight: 900; }
+[data-theme="mudrost"] .chart .line { stroke-width: 1.5; }
+[data-theme="mudrost"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mudrost"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #424144; --alt: #333335; --text1: #eae5e4; --text2: #b8b4b4; --faint: #8a8788; --up: #4ade80; --down: #f87171; --accent: #a2755a; --hot: #3d3736; --tip: #eae5e4; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="mudrost"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #a2755a; }
+[data-theme="mudrost"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #a2755a; }
+[data-theme="mudrost"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #a2755a; }

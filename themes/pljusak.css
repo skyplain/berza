@@ -1,0 +1,17 @@
+/* tema pljusak (Downpour): generisana, tools/teme.py */
+:root[data-theme="pljusak"] { color-scheme: dark; --back: #0b1221; --card: #171e2c; --head: #232a38; --edge: #2e3442; --alt: #1d2432; --text1: #e3e6f0; --text2: #adb1bc; --faint: #7b808d; --up: #4ade80; --down: #f87171; --accent: #506ac0; --hot: #1f2941; --tip: #e3e6f0; --tipfg: #0b1221; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="pljusak"] :is(.overview .left, .block, .detail, .list) { background: rgba(23,30,44,0.6); border: 1px solid rgba(227,230,240,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="pljusak"] .overview .left { align-self: start; }
+[data-theme="pljusak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pljusak"] button { border-radius: 999px; background: transparent; }
+[data-theme="pljusak"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="pljusak"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="pljusak"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pljusak"] body { background: linear-gradient(100deg, transparent 48%, rgba(80,106,192,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #0b1221; background-attachment: fixed; }
+[data-theme="pljusak"] .big .value, [data-theme="pljusak"] .detail .price { font-weight: 700; }
+[data-theme="pljusak"] .chart .line { stroke-width: 2; }
+[data-theme="pljusak"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pljusak"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #eceeef; --edge: #cdcfd4; --alt: #f3f4f5; --text1: #171e36; --text2: #4d5365; --faint: #7f8390; --up: #15803d; --down: #c81e1e; --accent: #1e40af; --hot: #dbe1f0; --tip: #171e36; --tipfg: #f0f1f2; --accentfg: #ffffff; }
+[data-theme="pljusak"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,251,0.6); border: 1px solid rgba(23,30,54,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="pljusak"][data-scheme="light"] body { background: linear-gradient(100deg, transparent 48%, rgba(30,64,175,0.25) 49% 51%, transparent 52%) 0 0 / 14px 40px; background-color: #f0f1f2; background-attachment: fixed; }

@@ -1,0 +1,30 @@
+/* tema mozaik: pločice u pozadini, svaki blok svoje boje */
+:root[data-theme="mozaik"] { color-scheme: light; --back: #f4f1ea; --card: #fff; --head: #f4f1ea; --edge: #e4dfd3; --alt: #faf8f4; --text1: #1f2a37; --text2: #4b5563; --faint: #8b93a0; --up: #16a34a; --down: #dc2626; --accent: #0f766e; --hot: #e6f4f2; --tip: #1f2a37; --tipfg: #fff; --accentfg: #fff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 6px; --panel-bg: var(--card); --panel-border: 0; --panel-shadow: 0 1px 2px rgba(0,0,0,.08); --h-color: #fff; --h-transform: uppercase; --h-spacing: .08em; --h-size: 12px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 600; }
+[data-theme="mozaik"] body { background-color:#f4f1ea;background-image:linear-gradient(45deg,rgba(15,118,110,.06) 25%,transparent 25% 75%,rgba(15,118,110,.06) 75%),linear-gradient(45deg,rgba(234,88,12,.06) 25%,transparent 25% 75%,rgba(234,88,12,.06) 75%);background-size:40px 40px;background-position:0 0,20px 20px;background-attachment:fixed }
+[data-theme="mozaik"] :is(h2,h3,.big .label) { display:inline-block;padding:2px 10px;border-radius:4px;background:#0f766e }
+[data-theme="mozaik"] .block:nth-child(4n+2) h2 { background:#ea580c }
+[data-theme="mozaik"] .block:nth-child(4n+3) h2 { background:#7c3aed }
+[data-theme="mozaik"] .block:nth-child(4n) h2 { background:#ca8a04 }
+[data-theme="mozaik"] .overview .left { border-top:6px solid #0f766e }
+[data-theme="mozaik"] .block { border-top:6px solid #0f766e }
+[data-theme="mozaik"] .block:nth-child(4n+2) { border-top-color:#ea580c }
+[data-theme="mozaik"] .block:nth-child(4n+3) { border-top-color:#7c3aed }
+[data-theme="mozaik"] .block:nth-child(4n) { border-top-color:#ca8a04 }
+[data-theme="mozaik"] .bar { border:0 }
+[data-theme="mozaik"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="mozaik"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="mozaik"] .overview .left { align-self: start; }
+[data-theme="mozaik"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="mozaik"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="mozaik"][data-scheme="dark"] { color-scheme: dark; --back: #0f0d09; --card: #060606; --head: #0f0d09; --edge: #1d1911; --alt: #0a0907; --text1: #beccdd; --text2: #8c97a7; --faint: #5a616e; --up: #4ade80; --down: #f87171; --accent: #0f766e; --hot: #07100f; --tip: #beccdd; --tipfg: #060606; --accentfg: #ffffff; --panel-shadow: 0 1px 2px rgba(255,255,255,.08); --h-color: #060606; }
+[data-theme="mozaik"][data-scheme="dark"] body { background-color:#0f0d09;background-image:linear-gradient(45deg,rgba(15,118,110,.06) 25%,transparent 25% 75%,rgba(15,118,110,.06) 75%),linear-gradient(45deg,rgba(156,54,0,.06) 25%,transparent 25% 75%,rgba(156,54,0,.06) 75%);background-size:40px 40px;background-position:0 0,20px 20px;background-attachment:fixed }
+[data-theme="mozaik"][data-scheme="dark"] :is(h2,h3,.big .label) { display:inline-block;padding:2px 10px;border-radius:4px;background:#0f766e }
+[data-theme="mozaik"][data-scheme="dark"] .block:nth-child(4n+2) h2 { background:#9c3600 }
+[data-theme="mozaik"][data-scheme="dark"] .block:nth-child(4n+3) h2 { background:#8648fa }
+[data-theme="mozaik"][data-scheme="dark"] .block:nth-child(4n) h2 { background:#6f4a00 }
+[data-theme="mozaik"][data-scheme="dark"] .overview .left { border-top:6px solid #0f766e }
+[data-theme="mozaik"][data-scheme="dark"] .block { border-top:6px solid #0f766e }
+[data-theme="mozaik"][data-scheme="dark"] .block:nth-child(4n+2) { border-top-color:#9c3600 }
+[data-theme="mozaik"][data-scheme="dark"] .block:nth-child(4n+3) { border-top-color:#8648fa }
+[data-theme="mozaik"][data-scheme="dark"] .block:nth-child(4n) { border-top-color:#6f4a00 }

@@ -1,0 +1,17 @@
+/* tema fjord: generisana (paleta + oblik 3/4/1/0) */
+:root[data-theme="fjord"] { color-scheme: dark; --back: #0d1b26; --card: #132634; --head: #1f3240; --edge: #2e3c47; --alt: #192c3a; --text1: #dbe9f4; --text2: #a1afba; --faint: #74828d; --up: #4ade80; --down: #f87171; --accent: #5fa8d3; --hot: #1e384a; --tip: #dbe9f4; --tipfg: #0d1b26; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 0px; }
+[data-theme="fjord"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="fjord"] .overview .left { align-self: start; }
+[data-theme="fjord"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fjord"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="fjord"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="fjord"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="fjord"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="fjord"] .bar button { background: transparent; color: var(--back); border-color: rgba(13,27,38,0.35); box-shadow: none; }
+[data-theme="fjord"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="fjord"] .big .value, [data-theme="fjord"] .detail .price { font-weight: 900; }
+[data-theme="fjord"] .chart .line { stroke-width: 3.5; }
+[data-theme="fjord"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="fjord"][data-scheme="light"] { color-scheme: light; --back: #d0e2f2; --card: #bdd5e7; --head: #aec5d7; --edge: #a7b7c5; --alt: #b6cddf; --text1: #0c161d; --text2: #36424c; --faint: #5e6b76; --up: #15803d; --down: #c81e1e; --accent: #2f7aa3; --hot: #a2c0d6; --tip: #0c161d; --tipfg: #d0e2f2; --accentfg: #ffffff; }
+[data-theme="fjord"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(208,226,242,0.35); box-shadow: none; }

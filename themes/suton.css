@@ -1,0 +1,18 @@
+/* tema suton: generisana (paleta + oblik 3/4/5/0) */
+:root[data-theme="suton"] { color-scheme: dark; --back: #1d1530; --card: #281d40; --head: #34294b; --edge: #3f3751; --alt: #2e2346; --text1: #efe7ff; --text2: #b4acc5; --faint: #867e98; --up: #4ade80; --down: #f87171; --accent: #f08a5d; --hot: #442c44; --tip: #efe7ff; --tipfg: #1d1530; --accentfg: #111111; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 0px; }
+[data-theme="suton"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="suton"] .overview .left { align-self: start; }
+[data-theme="suton"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="suton"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="suton"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="suton"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="suton"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="suton"] .bar button { background: transparent; color: var(--back); border-color: rgba(29,21,48,0.35); box-shadow: none; }
+[data-theme="suton"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="suton"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="suton"] .big .value, [data-theme="suton"] .detail .price { font-weight: 900; }
+[data-theme="suton"] .chart .line { stroke-width: 2.5; }
+[data-theme="suton"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="suton"][data-scheme="light"] { color-scheme: light; --back: #e0d7fd; --card: #d3c8f6; --head: #c5b9e4; --edge: #b5adcc; --alt: #ccc0ed; --text1: #140e1e; --text2: #40394e; --faint: #69627a; --up: #15803d; --down: #c81e1e; --accent: #b65627; --hot: #cdafcc; --tip: #140e1e; --tipfg: #e0d7fd; --accentfg: #ffffff; }
+[data-theme="suton"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(224,215,253,0.35); box-shadow: none; }

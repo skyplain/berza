@@ -1,0 +1,17 @@
+/* tema tamburica (Tamburica): generisana, tools/teme.py */
+:root[data-theme="tamburica"] { color-scheme: light; --back: #f7efe1; --card: #fdfaf6; --head: #f1ede9; --edge: #d7cfc1; --alt: #f7f4ef; --text1: #2e2418; --text2: #60574a; --faint: #8e8578; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #f0e5d5; --tip: #2e2418; --tipfg: #f7efe1; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="tamburica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="tamburica"] .overview .left { align-self: start; }
+[data-theme="tamburica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tamburica"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="tamburica"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tamburica"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="tamburica"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tamburica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tamburica"] body { background: repeating-linear-gradient(90deg, rgba(161,98,7,0.07) 0 2px, transparent 2px 9px, rgba(161,98,7,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(161,98,7,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #f7efe1; background-attachment: fixed; }
+[data-theme="tamburica"] .big .value, [data-theme="tamburica"] .detail .price { font-weight: 200; }
+[data-theme="tamburica"] .chart .line { stroke-width: 2.5; }
+[data-theme="tamburica"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tamburica"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #434343; --alt: #343435; --text1: #ede8e3; --text2: #bab7b4; --faint: #8c8988; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3e372d; --tip: #ede8e3; --tipfg: #232325; --accentfg: #ffffff; }
+[data-theme="tamburica"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(162,107,26,0.07) 0 2px, transparent 2px 9px, rgba(162,107,26,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(162,107,26,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #232325; background-attachment: fixed; }

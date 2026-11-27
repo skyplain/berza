@@ -1,0 +1,19 @@
+/* tema kaseta (Cassette): generisana, tools/teme.py */
+:root[data-theme="kaseta"] { color-scheme: light; --back: #f2ede4; --card: #fbfaf7; --head: #efedea; --edge: #d5cdc4; --alt: #f5f4f1; --text1: #3a231f; --text2: #685650; --faint: #92847e; --up: #15803d; --down: #c81e1e; --accent: #ca4d28; --hot: #f4e2da; --tip: #3a231f; --tipfg: #f2ede4; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 8px; }
+[data-theme="kaseta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="kaseta"] .overview .left { align-self: start; }
+[data-theme="kaseta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kaseta"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kaseta"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kaseta"] .bar button { background: transparent; color: var(--back); border-color: rgba(242,237,228,0.35); box-shadow: none; }
+[data-theme="kaseta"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="kaseta"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="kaseta"] :is(.overview .left, .block, .detail, .list) { position: relative; padding-top: 34px; }
+[data-theme="kaseta"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #ca4d28; }
+[data-theme="kaseta"] .big .value, [data-theme="kaseta"] .detail .price { font-weight: 200; }
+[data-theme="kaseta"] .chart .line { stroke-width: 1.5; }
+[data-theme="kaseta"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kaseta"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #39383b; --edge: #434244; --alt: #333335; --text1: #f3e7e6; --text2: #bfb6b6; --faint: #8f8889; --up: #4ade80; --down: #f87171; --accent: #e4572e; --hot: #473330; --tip: #f3e7e6; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="kaseta"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,34,37,0.35); box-shadow: none; }
+[data-theme="kaseta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #e4572e; }

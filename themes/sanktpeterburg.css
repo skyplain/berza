@@ -1,0 +1,18 @@
+/* tema sankt peterburg (Saint Petersburg): generisana, tools/teme.py */
+:root[data-theme="sanktpeterburg"] { color-scheme: light; --back: #f1f6f6; --card: #fbfcfc; --head: #edeff0; --edge: #ced5d6; --alt: #f4f6f6; --text1: #142831; --text2: #4b5c62; --faint: #7e8b90; --up: #15803d; --down: #c81e1e; --accent: #0e7490; --hot: #dae9ed; --tip: #142831; --tipfg: #f1f6f6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="sanktpeterburg"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="sanktpeterburg"] .overview .left { align-self: start; }
+[data-theme="sanktpeterburg"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sanktpeterburg"] button { border-radius: 999px; }
+[data-theme="sanktpeterburg"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sanktpeterburg"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="sanktpeterburg"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="sanktpeterburg"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sanktpeterburg"] body { background: linear-gradient(0deg, rgba(14,116,144,0.12) 0 70px, transparent 70px), radial-gradient(circle at 50% 100%, transparent 16px, rgba(20,40,49,0.1) 17px 19px, transparent 20px) 0 calc(100% - 70px) / 44px 24px repeat-x; background-color: #f1f6f6; background-attachment: fixed; }
+[data-theme="sanktpeterburg"] .big .value, [data-theme="sanktpeterburg"] .detail .price { font-weight: 700; }
+[data-theme="sanktpeterburg"] .chart .line { stroke-width: 2.5; }
+[data-theme="sanktpeterburg"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sanktpeterburg"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414347; --alt: #323438; --text1: #e2eaee; --text2: #b2b8bc; --faint: #868a8e; --up: #4ade80; --down: #f87171; --accent: #3389a1; --hot: #2e3b42; --tip: #e2eaee; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="sanktpeterburg"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="sanktpeterburg"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(51,137,161,0.12) 0 70px, transparent 70px), radial-gradient(circle at 50% 100%, transparent 16px, rgba(226,234,238,0.1) 17px 19px, transparent 20px) 0 calc(100% - 70px) / 44px 24px repeat-x; background-color: #222327; background-attachment: fixed; }

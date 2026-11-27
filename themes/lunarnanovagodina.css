@@ -1,0 +1,15 @@
+/* tema lunarna nova godina (Lunar New Year): generisana, tools/teme.py */
+:root[data-theme="lunarnanovagodina"] { color-scheme: dark; --back: #2a0606; --card: #351212; --head: #401f1f; --edge: #4a2a2a; --alt: #3b1818; --text1: #f2e4e5; --text2: #c0acad; --faint: #92797a; --up: #4ade80; --down: #f87171; --accent: #dc2626; --hot: #4c1515; --tip: #f2e4e5; --tipfg: #2a0606; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="lunarnanovagodina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="lunarnanovagodina"] .overview .left { align-self: start; }
+[data-theme="lunarnanovagodina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lunarnanovagodina"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="lunarnanovagodina"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="lunarnanovagodina"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="lunarnanovagodina"] .bar { position: relative; }
+[data-theme="lunarnanovagodina"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -20px; height: 20px; background: radial-gradient(circle, #dc2626 0 5px, rgba(220,38,38,0.35) 6px 9px, transparent 10px) 0 0 / 46px 20px; }
+[data-theme="lunarnanovagodina"] .big .value, [data-theme="lunarnanovagodina"] .detail .price { font-weight: 200; }
+[data-theme="lunarnanovagodina"] .chart .line { stroke-width: 2.5; }
+[data-theme="lunarnanovagodina"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="lunarnanovagodina"][data-scheme="light"] { color-scheme: light; --back: #f2f0f0; --card: #fbfafa; --head: #efeded; --edge: #d4cece; --alt: #f5f3f3; --text1: #391a1e; --text2: #675052; --faint: #928183; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f7dcdc; --tip: #391a1e; --tipfg: #f2f0f0; --accentfg: #ffffff; }

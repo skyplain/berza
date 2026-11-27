@@ -1,0 +1,18 @@
+/* tema klizanje (Ice skating): generisana, tools/teme.py */
+:root[data-theme="klizanje"] { color-scheme: light; --back: #f4fcff; --card: #f2fbff; --head: #e6eff4; --edge: #d3dde1; --alt: #ecf5f9; --text1: #283944; --text2: #5b6a73; --faint: #828f97; --up: #15803d; --down: #c81e1e; --accent: #538ba6; --hot: #dcebf3; --tip: #283944; --tipfg: #f4fcff; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="klizanje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="klizanje"] .overview .left { align-self: start; }
+[data-theme="klizanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="klizanje"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="klizanje"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="klizanje"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="klizanje"] .bar button { background: transparent; color: var(--back); border-color: rgba(244,252,255,0.35); box-shadow: none; }
+[data-theme="klizanje"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="klizanje"] body { background: repeating-linear-gradient(30deg, rgba(40,57,68,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(40,57,68,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(40,57,68,0.04) 0 1px, transparent 1px 45px); background-color: #f4fcff; background-attachment: fixed; }
+[data-theme="klizanje"] .big .value, [data-theme="klizanje"] .detail .price { font-weight: 400; }
+[data-theme="klizanje"] .chart .line { stroke-width: 2.5; }
+[data-theme="klizanje"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="klizanje"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #424549; --alt: #333539; --text1: #eaf1f6; --text2: #b8bec2; --faint: #8a8f93; --up: #4ade80; --down: #f87171; --accent: #7dd3fc; --hot: #38464f; --tip: #eaf1f6; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="klizanje"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,40,0.35); box-shadow: none; }
+[data-theme="klizanje"][data-scheme="dark"] body { background: repeating-linear-gradient(30deg, rgba(234,241,246,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(234,241,246,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(234,241,246,0.04) 0 1px, transparent 1px 45px); background-color: #222428; background-attachment: fixed; }

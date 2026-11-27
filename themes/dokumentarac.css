@@ -1,0 +1,14 @@
+/* tema dokumentarac (Documentary): generisana, tools/teme.py */
+:root[data-theme="dokumentarac"] { color-scheme: light; --back: #fffef6; --card: #fffdf1; --head: #f3f1e4; --edge: #e0ded2; --alt: #f9f7ea; --text1: #3f3817; --text2: #6f6a4f; --faint: #948f79; --up: #15803d; --down: #c81e1e; --accent: #a88600; --hot: #f3eccf; --tip: #3f3817; --tipfg: #fffef6; --accentfg: #111111; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="dokumentarac"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="dokumentarac"] .overview .left { align-self: start; }
+[data-theme="dokumentarac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dokumentarac"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="dokumentarac"] .bar h1 { font-size: 24px; }
+[data-theme="dokumentarac"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="dokumentarac"] .big .value, [data-theme="dokumentarac"] .detail .price { font-weight: 400; }
+[data-theme="dokumentarac"] .chart .line { stroke-width: 2; }
+[data-theme="dokumentarac"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dokumentarac"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3b3d; --edge: #454545; --alt: #343537; --text1: #f5f1e2; --text2: #c0beb3; --faint: #908f88; --up: #4ade80; --down: #f87171; --accent: #ffcc00; --hot: #4b452b; --tip: #f5f1e2; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="dokumentarac"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

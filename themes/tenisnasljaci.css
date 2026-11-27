@@ -1,0 +1,19 @@
+/* tema tenis na šljaci (Clay court): generisana, tools/teme.py */
+:root[data-theme="tenisnasljaci"] { color-scheme: light; --back: #e7b48c; --card: #f8e8dc; --head: #ecdbcf; --edge: #c99a77; --alt: #f2e2d6; --text1: #2b1408; --text2: #5a3c29; --faint: #7e5b42; --up: #116d34; --down: #b81c1c; --accent: #a4370a; --hot: #eccfbf; --tip: #2b1408; --tipfg: #e7b48c; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="tenisnasljaci"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="tenisnasljaci"] .overview .left { align-self: start; }
+[data-theme="tenisnasljaci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tenisnasljaci"] button { border-radius: 999px; }
+[data-theme="tenisnasljaci"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="tenisnasljaci"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="tenisnasljaci"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="tenisnasljaci"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="tenisnasljaci"] body { background: linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.6) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #e7b48c; background-attachment: fixed; }
+[data-theme="tenisnasljaci"] body::before { content: ""; position: fixed; inset: 40px 3%; z-index: -1; border: 2px solid rgba(255,255,255,0.55); box-shadow: inset 0 0 0 60px transparent, inset 0 0 0 62px rgba(255,255,255,0.35); }
+[data-theme="tenisnasljaci"] .big .value, [data-theme="tenisnasljaci"] .detail .price { font-weight: 900; }
+[data-theme="tenisnasljaci"] .chart .line { stroke-width: 3; }
+[data-theme="tenisnasljaci"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tenisnasljaci"][data-scheme="dark"] { color-scheme: dark; --back: #211d1c; --card: #2c2827; --head: #383332; --edge: #423d3c; --alt: #322e2d; --text1: #f0e6e3; --text2: #bcb4b1; --faint: #8d8683; --up: #4ade80; --down: #f87171; --accent: #c7501f; --hot: #422e26; --tip: #f0e6e3; --tipfg: #211d1c; --accentfg: #ffffff; }
+[data-theme="tenisnasljaci"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="tenisnasljaci"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,0.6) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); background-color: #211d1c; background-attachment: fixed; }

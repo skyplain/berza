@@ -1,0 +1,16 @@
+/* tema utopija (Utopia): generisana, tools/teme.py */
+:root[data-theme="utopija"] { color-scheme: light; --back: #feffff; --card: #fafefe; --head: #edf2f2; --edge: #dadfdf; --alt: #f3f8f8; --text1: #1a3638; --text2: #53686a; --faint: #879698; --up: #15803d; --down: #c81e1e; --accent: #24998e; --hot: #dcf0ee; --tip: #1a3638; --tipfg: #feffff; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="utopija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="utopija"] .overview .left { align-self: start; }
+[data-theme="utopija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="utopija"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="utopija"] .bar h1 { font-size: 24px; }
+[data-theme="utopija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="utopija"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.08), -6px -6px 16px rgba(255,255,255,0.8); padding: 18px 20px; }
+[data-theme="utopija"] button { border-radius: 999px; }
+[data-theme="utopija"] .big .value, [data-theme="utopija"] .detail .price { font-weight: 400; }
+[data-theme="utopija"] .chart .line { stroke-width: 2.5; }
+[data-theme="utopija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="utopija"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393b3e; --edge: #424548; --alt: #333539; --text1: #e4f0f1; --text2: #b4bdbf; --faint: #878e91; --up: #4ade80; --down: #f87171; --accent: #2ec4b6; --hot: #2e4445; --tip: #e4f0f1; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="utopija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.4), -6px -6px 16px rgba(255,255,255,0.03); padding: 18px 20px; }

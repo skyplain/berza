@@ -1,0 +1,18 @@
+/* tema geologija (Geology): generisana, tools/teme.py */
+:root[data-theme="geologija"] { color-scheme: light; --back: #efe7da; --card: #faf8f4; --head: #eeebe7; --edge: #d0c8bb; --alt: #f4f2ed; --text1: #2e2418; --text2: #5e5548; --faint: #8b8275; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #eee3d3; --tip: #2e2418; --tipfg: #efe7da; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="geologija"] :is(.overview .left, .block, .detail, .list) { background: #e8e0d3; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="geologija"] .overview .left { align-self: start; }
+[data-theme="geologija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="geologija"] button { border: 0; }
+[data-theme="geologija"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="geologija"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="geologija"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="geologija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="geologija"] body { background: repeating-linear-gradient(180deg, rgba(161,98,7,0.07) 0 22px, rgba(161,98,7,0.13) 22px 30px, transparent 30px 52px, rgba(46,36,24,0.05) 52px 60px, transparent 60px 84px); background-color: #efe7da; background-attachment: fixed; }
+[data-theme="geologija"] .big .value, [data-theme="geologija"] .detail .price { font-weight: 900; }
+[data-theme="geologija"] .chart .line { stroke-width: 1.5; }
+[data-theme="geologija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="geologija"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #424243; --alt: #333334; --text1: #ede8e3; --text2: #bab6b3; --faint: #8c8987; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3d362c; --tip: #ede8e3; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="geologija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #29292b; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="geologija"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, rgba(162,107,26,0.07) 0 22px, rgba(162,107,26,0.13) 22px 30px, transparent 30px 52px, rgba(237,232,227,0.05) 52px 60px, transparent 60px 84px); background-color: #222224; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema prag (Prague): generisana, tools/teme.py */
+:root[data-theme="prag"] { color-scheme: light; --back: #f5efe6; --card: #fcfaf8; --head: #f0eceb; --edge: #d5cdc6; --alt: #f6f3f1; --text1: #2d181c; --text2: #5f4e4e; --faint: #8d7f7d; --up: #15803d; --down: #c81e1e; --accent: #991b1b; --hot: #eedbd9; --tip: #2d181c; --tipfg: #f5efe6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="prag"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="prag"] .overview .left { align-self: start; }
+[data-theme="prag"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="prag"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="prag"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="prag"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="prag"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="prag"] body { background: linear-gradient(rgba(153,27,27,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(153,27,27,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(153,27,27,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #f5efe6; background-attachment: fixed; }
+[data-theme="prag"] .big .value, [data-theme="prag"] .detail .price { font-weight: 200; }
+[data-theme="prag"] .chart .line { stroke-width: 3; }
+[data-theme="prag"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="prag"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #39393b; --edge: #424244; --alt: #333335; --text1: #ede3e4; --text2: #bab3b4; --faint: #8c8788; --up: #4ade80; --down: #f87171; --accent: #b65b5b; --hot: #403436; --tip: #ede3e4; --tipfg: #222325; --accentfg: #ffffff; }
+[data-theme="prag"][data-scheme="dark"] body { background: linear-gradient(rgba(182,91,91,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(182,91,91,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(182,91,91,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222325; background-attachment: fixed; }

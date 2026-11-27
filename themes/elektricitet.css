@@ -1,0 +1,23 @@
+/* tema elektricitet (Electricity): generisana, tools/teme.py */
+:root[data-theme="elektricitet"] { color-scheme: dark; --back: #10101a; --card: #1c1c25; --head: #292930; --edge: #34343a; --alt: #22222b; --text1: #f4f1e4; --text2: #bbb9b2; --faint: #878583; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #3b3523; --tip: #f4f1e4; --tipfg: #10101a; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="elektricitet"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="elektricitet"] .overview .left { align-self: start; }
+[data-theme="elektricitet"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="elektricitet"] button { border-radius: 0; }
+[data-theme="elektricitet"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="elektricitet"] .bar h1 { font-weight: 800; }
+[data-theme="elektricitet"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="elektricitet"] .bar h1::after { content: " ↯"; color: #facc15; }
+[data-theme="elektricitet"] .bar { position: relative; }
+[data-theme="elektricitet"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #facc15 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="elektricitet"] .big .value { text-shadow: 0 0 18px rgba(250,204,21,0.55); }
+[data-theme="elektricitet"] .chart .line { filter: drop-shadow(0 0 5px rgba(250,204,21,0.7)); }
+[data-theme="elektricitet"] .big .value, [data-theme="elektricitet"] .detail .price { font-weight: 700; }
+[data-theme="elektricitet"] .chart .line { stroke-width: 1.5; }
+[data-theme="elektricitet"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="elektricitet"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #f0efee; --edge: #d4d3cf; --alt: #f5f5f4; --text1: #3e381b; --text2: #6b6650; --faint: #8d8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ede9da; --tip: #3e381b; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="elektricitet"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #987b0d; }
+[data-theme="elektricitet"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #987b0d 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="elektricitet"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(152,123,13,0.55); }
+[data-theme="elektricitet"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(152,123,13,0.7)); }

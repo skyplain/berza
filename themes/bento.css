@@ -1,0 +1,15 @@
+/* tema bento (Bento grid): generisana, tools/teme.py */
+:root[data-theme="bento"] { color-scheme: light; --back: #fff8f3; --card: #fffdfb; --head: #f3f0ee; --edge: #e0d7d0; --alt: #f9f7f4; --text1: #3e281b; --text2: #6e5c51; --faint: #9b8c83; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f9e7da; --tip: #3e281b; --tipfg: #fff8f3; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="bento"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bento"] .overview .left { align-self: start; }
+[data-theme="bento"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bento"] button { border-radius: 999px; }
+[data-theme="bento"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bento"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }
+[data-theme="bento"] .big .value, [data-theme="bento"] .detail .price { font-weight: 900; }
+[data-theme="bento"] .chart .line { stroke-width: 3; }
+[data-theme="bento"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="bento"][data-scheme="dark"] { color-scheme: dark; --back: #201511; --card: #2b211d; --head: #372d29; --edge: #423733; --alt: #312723; --text1: #f4eae4; --text2: #bfb5af; --faint: #8e847f; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #482c1c; --tip: #f4eae4; --tipfg: #201511; --accentfg: #111111; }
+[data-theme="bento"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bento"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }

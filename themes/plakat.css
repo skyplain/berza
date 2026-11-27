@@ -1,0 +1,16 @@
+/* tema plakat (Poster): generisana, tools/teme.py */
+:root[data-theme="plakat"] { color-scheme: light; --back: #fff7f4; --card: #fffdfc; --head: #f3f0ef; --edge: #e0d5d2; --alt: #f9f6f5; --text1: #3f231d; --text2: #6f5853; --faint: #9b8984; --up: #15803d; --down: #c81e1e; --accent: #eb531d; --hot: #fce5dd; --tip: #3f231d; --tipfg: #fff7f4; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 0px; }
+[data-theme="plakat"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="plakat"] .overview .left { align-self: start; }
+[data-theme="plakat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plakat"] button { border-radius: 0; }
+[data-theme="plakat"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="plakat"] .bar h1 { font-size: 24px; }
+[data-theme="plakat"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="plakat"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(235,83,29,0.55), -2px -1px 0 rgba(31,255,90,0.45); }
+[data-theme="plakat"] .big .value, [data-theme="plakat"] .detail .price { font-weight: 400; }
+[data-theme="plakat"] .chart .line { stroke-width: 2.5; }
+[data-theme="plakat"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plakat"][data-scheme="dark"] { color-scheme: dark; --back: #211311; --card: #2c1f1d; --head: #382b29; --edge: #433533; --alt: #322523; --text1: #f5e8e5; --text2: #c0b3b0; --faint: #8f827f; --up: #4ade80; --down: #f87171; --accent: #ff5a1f; --hot: #4a271d; --tip: #f5e8e5; --tipfg: #211311; --accentfg: #111111; }
+[data-theme="plakat"][data-scheme="dark"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(255,90,31,0.55), -2px -1px 0 rgba(31,255,90,0.45); }

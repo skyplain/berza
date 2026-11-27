@@ -1,0 +1,14 @@
+/* tema polje suncokreta (Sunflower field): generisana, tools/teme.py */
+:root[data-theme="poljesuncokreta"] { color-scheme: light; --back: #fffbe5; --card: #fffae1; --head: #f3eed5; --edge: #e0dbc4; --alt: #f9f4db; --text1: #3b3318; --text2: #6c654b; --faint: #918b72; --up: #15803d; --down: #c81e1e; --accent: #a78106; --hot: #f3e9c2; --tip: #3b3318; --tipfg: #fffbe5; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="poljesuncokreta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="poljesuncokreta"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="poljesuncokreta"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="poljesuncokreta"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="poljesuncokreta"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="poljesuncokreta"] body { background: repeating-linear-gradient(100deg, rgba(167,129,6,0.12) 0 6px, transparent 6px 24px); background-color: #fffbe5; background-attachment: fixed; }
+[data-theme="poljesuncokreta"] .big .value, [data-theme="poljesuncokreta"] .detail .price { font-weight: 900; }
+[data-theme="poljesuncokreta"] .chart .line { stroke-width: 3; }
+[data-theme="poljesuncokreta"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="poljesuncokreta"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #3a3b3b; --edge: #444443; --alt: #343535; --text1: #f3efe3; --text2: #bfbcb4; --faint: #8f8e88; --up: #4ade80; --down: #f87171; --accent: #eab308; --hot: #48412a; --tip: #f3efe3; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="poljesuncokreta"][data-scheme="dark"] body { background: repeating-linear-gradient(100deg, rgba(234,179,8,0.12) 0 6px, transparent 6px 24px); background-color: #232425; background-attachment: fixed; }

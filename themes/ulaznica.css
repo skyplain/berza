@@ -1,0 +1,18 @@
+/* tema ulaznica (Ticket): generisana, tools/teme.py */
+:root[data-theme="ulaznica"] { color-scheme: light; --back: #fff6e6; --card: #fffcf8; --head: #f3eeeb; --edge: #ded2c6; --alt: #f9f5f1; --text1: #33181c; --text2: #66504e; --faint: #95837d; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f5ddd9; --tip: #33181c; --tipfg: #fff6e6; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="ulaznica"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="ulaznica"] .overview .left { align-self: start; }
+[data-theme="ulaznica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ulaznica"] button { border-radius: 0; }
+[data-theme="ulaznica"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="ulaznica"] .bar h1 { font-size: 24px; }
+[data-theme="ulaznica"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="ulaznica"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(51,24,28,0.22); border-right: 8px dotted rgba(51,24,28,0.22); }
+[data-theme="ulaznica"] :is(h2, h3) { display: inline-block; color: #b91c1c; border: 2px solid #b91c1c; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="ulaznica"] .big .value, [data-theme="ulaznica"] .detail .price { font-weight: 900; }
+[data-theme="ulaznica"] .chart .line { stroke-width: 3; }
+[data-theme="ulaznica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ulaznica"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444244; --alt: #343335; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #443436; --tip: #efe3e5; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="ulaznica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border-left: 8px dotted rgba(239,227,229,0.22); border-right: 8px dotted rgba(239,227,229,0.22); }
+[data-theme="ulaznica"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #cd5c5c; border: 2px solid #cd5c5c; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

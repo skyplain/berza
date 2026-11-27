@@ -1,0 +1,14 @@
+/* tema močvara (Swamp): generisana, tools/teme.py */
+:root[data-theme="mocvara"] { color-scheme: dark; --back: #141a0d; --card: #202519; --head: #2c3125; --edge: #363b30; --alt: #262b1f; --text1: #e9eae7; --text2: #b4b6b0; --faint: #83867e; --up: #4ade80; --down: #f87171; --accent: #6b7d3a; --hot: #2a311e; --tip: #e9eae7; --tipfg: #141a0d; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="mocvara"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mocvara"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="mocvara"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="mocvara"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="mocvara"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="mocvara"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(107,125,58,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(58,107,125,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(125,58,107,0.14), transparent 70%); background-color: #141a0d; background-attachment: fixed; }
+[data-theme="mocvara"] .big .value, [data-theme="mocvara"] .detail .price { font-weight: 700; }
+[data-theme="mocvara"] .chart .line { stroke-width: 2.5; }
+[data-theme="mocvara"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="mocvara"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #eeeeed; --edge: #d0d1cf; --alt: #f5f5f3; --text1: #242921; --text2: #575b55; --faint: #868984; --up: #15803d; --down: #c81e1e; --accent: #6b7d3a; --hot: #e7e9df; --tip: #242921; --tipfg: #f1f1f0; --accentfg: #ffffff; }
+[data-theme="mocvara"][data-scheme="light"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(107,125,58,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(58,107,125,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(125,58,107,0.14), transparent 70%); background-color: #f1f1f0; background-attachment: fixed; }

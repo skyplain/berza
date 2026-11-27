@@ -1,0 +1,19 @@
+/* tema modernizam (Modernism): generisana, tools/teme.py */
+:root[data-theme="modernizam"] { color-scheme: light; --back: #f9fafa; --card: #f5f6f6; --head: #e8e9e9; --edge: #d5d6d7; --alt: #eeeff0; --text1: #171a21; --text2: #505257; --faint: #838689; --up: #15803d; --down: #c81e1e; --accent: #1f2937; --hot: #d7d9db; --tip: #171a21; --tipfg: #f9fafa; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="modernizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="modernizam"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="modernizam"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="modernizam"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="modernizam"] .bar button { background: transparent; color: var(--back); border-color: rgba(249,250,250,0.35); box-shadow: none; }
+[data-theme="modernizam"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="modernizam"] body { background: repeating-linear-gradient(90deg, rgba(23,26,33,0.04) 0 1px, transparent 1px 120px); background-color: #f9fafa; background-attachment: fixed; }
+[data-theme="modernizam"] .bar { border-bottom: 8px solid #1f2937; }
+[data-theme="modernizam"] .bar h1 { font-size: 30px; font-weight: 800; letter-spacing: -.03em; }
+[data-theme="modernizam"] .big .value, [data-theme="modernizam"] .detail .price { font-weight: 700; }
+[data-theme="modernizam"] .chart .line { stroke-width: 2.5; }
+[data-theme="modernizam"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="modernizam"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424347; --alt: #333438; --text1: #e3e4e7; --text2: #b3b4b7; --faint: #87888b; --up: #4ade80; --down: #f87171; --accent: #777c86; --hot: #383a3f; --tip: #e3e4e7; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="modernizam"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="modernizam"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(227,228,231,0.04) 0 1px, transparent 1px 120px); background-color: #232428; background-attachment: fixed; }
+[data-theme="modernizam"][data-scheme="dark"] .bar { border-bottom: 8px solid #777c86; }

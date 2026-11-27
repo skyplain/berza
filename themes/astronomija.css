@@ -1,0 +1,13 @@
+/* tema astronomija (Astronomy): generisana, tools/teme.py */
+:root[data-theme="astronomija"] { color-scheme: dark; --back: #030712; --card: #10131e; --head: #1d202b; --edge: #282c37; --alt: #171a25; --text1: #ecf0f7; --text2: #b2b6be; --faint: #7c8089; --up: #4ade80; --down: #f87171; --accent: #93c5fd; --hot: #222c3d; --tip: #ecf0f7; --tipfg: #030712; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="astronomija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="astronomija"] .overview .left { align-self: start; }
+[data-theme="astronomija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="astronomija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="astronomija"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(236,240,247,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(147,197,253,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(236,240,247,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(236,240,247,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(147,197,253,0.8), transparent); background-color: #030712; background-attachment: fixed; }
+[data-theme="astronomija"] .big .value, [data-theme="astronomija"] .detail .price { font-weight: 200; }
+[data-theme="astronomija"] .chart .line { stroke-width: 2; }
+[data-theme="astronomija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="astronomija"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeeef0; --edge: #d1d2d5; --alt: #f4f4f6; --text1: #2c3644; --text2: #5d646f; --faint: #828890; --up: #15803d; --down: #c81e1e; --accent: #6183a7; --hot: #e5e9ef; --tip: #2c3644; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="astronomija"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(44,54,68,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(97,131,167,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(44,54,68,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(44,54,68,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(97,131,167,0.8), transparent); background-color: #f0f0f1; background-attachment: fixed; }

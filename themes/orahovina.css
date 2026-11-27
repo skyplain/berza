@@ -1,0 +1,15 @@
+/* tema orahovina (Walnut): generisana, tools/teme.py */
+:root[data-theme="orahovina"] { color-scheme: dark; --back: #1a1008; --card: #251c14; --head: #312821; --edge: #3b322b; --alt: #2b221a; --text1: #e8e5e5; --text2: #b4b0ae; --faint: #857f7b; --up: #4ade80; --down: #f87171; --accent: #7f6550; --hot: #32261c; --tip: #e8e5e5; --tipfg: #1a1008; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="orahovina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="orahovina"] .overview .left { align-self: start; }
+[data-theme="orahovina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="orahovina"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="orahovina"] .bar h1 { font-weight: 800; }
+[data-theme="orahovina"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="orahovina"] body { background: repeating-linear-gradient(90deg, rgba(127,101,80,0.07) 0 2px, transparent 2px 9px, rgba(127,101,80,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(127,101,80,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #1a1008; background-attachment: fixed; }
+[data-theme="orahovina"] .big .value, [data-theme="orahovina"] .detail .price { font-weight: 400; }
+[data-theme="orahovina"] .chart .line { stroke-width: 2.5; }
+[data-theme="orahovina"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="orahovina"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #eeeeed; --edge: #d0cfce; --alt: #f4f4f3; --text1: #221d1c; --text2: #565251; --faint: #858382; --up: #15803d; --down: #c81e1e; --accent: #5b3a1e; --hot: #e5e0db; --tip: #221d1c; --tipfg: #f1f1f0; --accentfg: #ffffff; }
+[data-theme="orahovina"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(91,58,30,0.07) 0 2px, transparent 2px 9px, rgba(91,58,30,0.04) 9px 11px, transparent 11px 23px), radial-gradient(ellipse 30px 12px at 30% 40%, rgba(91,58,30,0.08), transparent 70%) 0 0 / 260px 200px; background-color: #f1f1f0; background-attachment: fixed; }

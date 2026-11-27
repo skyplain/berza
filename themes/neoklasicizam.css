@@ -1,0 +1,15 @@
+/* tema neoklasicizam (Neoclassicism): generisana, tools/teme.py */
+:root[data-theme="neoklasicizam"] { color-scheme: light; --back: #f6f3ec; --card: #fcfbf9; --head: #efeeec; --edge: #d5d2cc; --alt: #f6f5f3; --text1: #282626; --text2: #5c5958; --faint: #8b8885; --up: #15803d; --down: #c81e1e; --accent: #7d6b52; --hot: #eae7e2; --tip: #282626; --tipfg: #f6f3ec; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="neoklasicizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="neoklasicizam"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="neoklasicizam"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="neoklasicizam"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="neoklasicizam"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="neoklasicizam"] .bar { position: relative; }
+[data-theme="neoklasicizam"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #7d6b52 0 3px, transparent 3px 12px, #7d6b52 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#7d6b52 0 3px, transparent 3px 9px, #7d6b52 9px 12px) 0 0 / 24px 12px; }
+[data-theme="neoklasicizam"] .big .value, [data-theme="neoklasicizam"] .detail .price { font-weight: 400; }
+[data-theme="neoklasicizam"] .chart .line { stroke-width: 1.5; }
+[data-theme="neoklasicizam"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="neoklasicizam"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #424345; --alt: #333437; --text1: #eae9e9; --text2: #b8b8b8; --faint: #8a8a8b; --up: #4ade80; --down: #f87171; --accent: #8c7c66; --hot: #3a3938; --tip: #eae9e9; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="neoklasicizam"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #8c7c66 0 3px, transparent 3px 12px, #8c7c66 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#8c7c66 0 3px, transparent 3px 9px, #8c7c66 9px 12px) 0 0 / 24px 12px; }

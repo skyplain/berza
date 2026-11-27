@@ -1,0 +1,12 @@
+/* tema pletivo (Knitting): generisana, tools/teme.py */
+:root[data-theme="pletivo"] { color-scheme: light; --back: #fbf0f0; --card: #fefafa; --head: #f2eced; --edge: #dbcdcf; --alt: #f8f3f4; --text1: #331622; --text2: #654c56; --faint: #937f85; --up: #15803d; --down: #c81e1e; --accent: #be123c; --hot: #f5dadf; --tip: #331622; --tipfg: #fbf0f0; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="pletivo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pletivo"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="pletivo"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="pletivo"] body { background: linear-gradient(135deg, rgba(190,18,60,0.12) 25%, transparent 25%) 0 0 / 16px 16px, linear-gradient(225deg, rgba(190,18,60,0.12) 25%, transparent 25%) 0 0 / 16px 16px; background-color: #fbf0f0; background-attachment: fixed; }
+[data-theme="pletivo"] .big .value, [data-theme="pletivo"] .detail .price { font-weight: 400; }
+[data-theme="pletivo"] .chart .line { stroke-width: 2; }
+[data-theme="pletivo"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pletivo"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343336; --text1: #f0e2e7; --text2: #bdb2b7; --faint: #8e868a; --up: #4ade80; --down: #f87171; --accent: #d05573; --hot: #45333a; --tip: #f0e2e7; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="pletivo"][data-scheme="dark"] body { background: linear-gradient(135deg, rgba(208,85,115,0.12) 25%, transparent 25%) 0 0 / 16px 16px, linear-gradient(225deg, rgba(208,85,115,0.12) 25%, transparent 25%) 0 0 / 16px 16px; background-color: #232326; background-attachment: fixed; }

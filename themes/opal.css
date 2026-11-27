@@ -1,0 +1,19 @@
+/* tema opal: generisana (paleta + oblik 5/4/3/6) */
+:root[data-theme="opal"] { color-scheme: light; --back: #f4f7fb; --card: #ffffff; --head: #f2f3f4; --edge: #d4d8dd; --alt: #f9f9f9; --text1: #2a3442; --text2: #636b76; --faint: #8f969e; --up: #15803d; --down: #c81e1e; --accent: #5b8fc9; --hot: #e8eff7; --tip: #2a3442; --tipfg: #f4f7fb; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 4px; }
+[data-theme="opal"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="opal"] .overview .left { align-self: start; }
+[data-theme="opal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="opal"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="opal"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="opal"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="opal"] .bar button { background: transparent; color: var(--back); border-color: rgba(244,247,251,0.35); box-shadow: none; }
+[data-theme="opal"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="opal"] body { background: radial-gradient(600px 400px at 0 0, rgba(91,143,201,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(91,143,201,0.12), transparent 70%); background-color: #f4f7fb; background-attachment: fixed; }
+[data-theme="opal"] .big .value, [data-theme="opal"] .detail .price { font-weight: 400; }
+[data-theme="opal"] .chart .line { stroke-width: 1.5; }
+[data-theme="opal"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="opal"][data-scheme="dark"] { color-scheme: dark; --back: #080a0d; --card: #060606; --head: #0c0d0d; --edge: #1c1f23; --alt: #090909; --text1: #b2bed0; --text2: #77808b; --faint: #585e66; --up: #4ade80; --down: #f87171; --accent: #5b8fc9; --hot: #0b1015; --tip: #b2bed0; --tipfg: #080a0d; --accentfg: #111111; }
+[data-theme="opal"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="opal"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(8,10,13,0.35); box-shadow: none; }
+[data-theme="opal"][data-scheme="dark"] body { background: radial-gradient(600px 400px at 0 0, rgba(91,143,201,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(91,143,201,0.12), transparent 70%); background-color: #080a0d; background-attachment: fixed; }

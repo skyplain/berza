@@ -1,0 +1,18 @@
+/* tema staklena bašta (Greenhouse): generisana, tools/teme.py */
+:root[data-theme="staklenabasta"] { color-scheme: light; --back: #f2fdf6; --card: #eefcf3; --head: #e1f0e7; --edge: #cfddd5; --alt: #e8f6ed; --text1: #173628; --text2: #4e685c; --faint: #80968b; --up: #15803d; --down: #c81e1e; --accent: #1b9a49; --hot: #d0eedb; --tip: #173628; --tipfg: #f2fdf6; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="staklenabasta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="staklenabasta"] .overview .left { align-self: start; }
+[data-theme="staklenabasta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="staklenabasta"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="staklenabasta"] .bar h1 { font-size: 24px; }
+[data-theme="staklenabasta"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="staklenabasta"] body { background: linear-gradient(rgba(23,54,40,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(23,54,40,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f2fdf6; background-attachment: fixed; }
+[data-theme="staklenabasta"] :is(.overview .left, .block, .detail, .list) { background: rgba(238,252,243,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(23,54,40,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+[data-theme="staklenabasta"] .big .value, [data-theme="staklenabasta"] .detail .price { font-weight: 200; }
+[data-theme="staklenabasta"] .chart .line { stroke-width: 2.5; }
+[data-theme="staklenabasta"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="staklenabasta"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383b3d; --edge: #414546; --alt: #323538; --text1: #e3f0ea; --text2: #b3bdb9; --faint: #868e8c; --up: #4ade80; --down: #f87171; --accent: #22c55e; --hot: #2b4438; --tip: #e3f0ea; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="staklenabasta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="staklenabasta"][data-scheme="dark"] body { background: linear-gradient(rgba(227,240,234,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(227,240,234,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #222427; background-attachment: fixed; }
+[data-theme="staklenabasta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(45,47,50,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(227,240,234,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }

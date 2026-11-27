@@ -1,0 +1,20 @@
+/* tema oluja: generisana (paleta + oblik 7/4/3/4) */
+:root[data-theme="oluja"] { color-scheme: dark; --back: #1b2330; --card: #232d3d; --head: #2e3848; --edge: #3b434f; --alt: #293342; --text1: #e2e8f0; --text2: #aab1ba; --faint: #7e8690; --up: #4ade80; --down: #f87171; --accent: #94a3b8; --hot: #333e4e; --tip: #e2e8f0; --tipfg: #1b2330; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 10px; }
+[data-theme="oluja"] :is(.overview .left, .block, .detail, .list) { background: #222a37; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="oluja"] .overview .left { align-self: start; }
+[data-theme="oluja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="oluja"] button { border: 0; }
+[data-theme="oluja"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="oluja"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="oluja"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="oluja"] .bar button { background: transparent; color: var(--back); border-color: rgba(27,35,48,0.35); box-shadow: none; }
+[data-theme="oluja"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 10px; }
+[data-theme="oluja"] body { background: radial-gradient(900px 500px at 100% 0, rgba(148,163,184,0.16), transparent 70%); background-color: #1b2330; background-attachment: fixed; }
+[data-theme="oluja"] .big .value, [data-theme="oluja"] .detail .price { font-weight: 900; }
+[data-theme="oluja"] .chart .line { stroke-width: 3; }
+[data-theme="oluja"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="oluja"][data-scheme="light"] { color-scheme: light; --back: #c9d3e5; --card: #b9c7db; --head: #acb9cc; --edge: #a2abba; --alt: #b3bfd2; --text1: #10141a; --text2: #383e46; --faint: #5d656e; --up: #15803d; --down: #c81e1e; --accent: #5f6d81; --hot: #a5b2c5; --tip: #10141a; --tipfg: #c9d3e5; --accentfg: #ffffff; }
+[data-theme="oluja"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #c0cadb; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="oluja"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(201,211,229,0.35); box-shadow: none; }
+[data-theme="oluja"][data-scheme="light"] body { background: radial-gradient(900px 500px at 100% 0, rgba(95,109,129,0.16), transparent 70%); background-color: #c9d3e5; background-attachment: fixed; }

@@ -1,0 +1,17 @@
+/* tema odin (Odin): generisana, tools/teme.py */
+:root[data-theme="odin"] { color-scheme: dark; --back: #0c0f14; --card: #181b20; --head: #24272c; --edge: #2f3237; --alt: #1e2126; --text1: #e8eaed; --text2: #b1b3b7; --faint: #7e8185; --up: #4ade80; --down: #f87171; --accent: #64748b; --hot: #23272f; --tip: #e8eaed; --tipfg: #0c0f14; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="odin"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="odin"] .overview .left { align-self: start; }
+[data-theme="odin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="odin"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="odin"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="odin"] .bar h1 { font-size: 24px; }
+[data-theme="odin"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="odin"] .bar h1::before { content: "ᛟ "; color: #64748b; }
+[data-theme="odin"] :is(h2, h3)::before { content: "ᚠ "; color: #64748b; }
+[data-theme="odin"] .block:nth-child(even) h2::before { content: "ᚱ "; }
+[data-theme="odin"] .big .value, [data-theme="odin"] .detail .price { font-weight: 900; }
+[data-theme="odin"] .chart .line { stroke-width: 3; }
+[data-theme="odin"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="odin"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #edeeef; --edge: #cfd1d2; --alt: #f4f5f5; --text1: #232830; --text2: #565a60; --faint: #85888d; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e5e8eb; --tip: #232830; --tipfg: #f0f1f1; --accentfg: #ffffff; }

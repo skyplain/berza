@@ -1,0 +1,18 @@
+/* tema mahovina: generisana (paleta + oblik 3/4/5/0) */
+:root[data-theme="mahovina"] { color-scheme: light; --back: #eef1e3; --card: #f8f9f1; --head: #ecede4; --edge: #cfd3c3; --alt: #f2f3eb; --text1: #2d331c; --text2: #636854; --faint: #8e9280; --up: #15803d; --down: #c81e1e; --accent: #5d6f22; --hot: #e2e6d4; --tip: #2d331c; --tipfg: #eef1e3; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 0px; }
+[data-theme="mahovina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="mahovina"] .overview .left { align-self: start; }
+[data-theme="mahovina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mahovina"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="mahovina"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mahovina"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="mahovina"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="mahovina"] .bar button { background: transparent; color: var(--back); border-color: rgba(238,241,227,0.35); box-shadow: none; }
+[data-theme="mahovina"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="mahovina"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="mahovina"] .big .value, [data-theme="mahovina"] .detail .price { font-weight: 900; }
+[data-theme="mahovina"] .chart .line { stroke-width: 2; }
+[data-theme="mahovina"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="mahovina"][data-scheme="dark"] { color-scheme: dark; --back: #0e1007; --card: #090a05; --head: #11120b; --edge: #23261a; --alt: #0d0e08; --text1: #bdc6aa; --text2: #828772; --faint: #616554; --up: #4ade80; --down: #f87171; --accent: #5d6f22; --hot: #16180b; --tip: #bdc6aa; --tipfg: #0e1007; --accentfg: #ffffff; }
+[data-theme="mahovina"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(14,16,7,0.35); box-shadow: none; }

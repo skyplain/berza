@@ -1,0 +1,28 @@
+/* tema kaki (Khaki): generisana, tools/teme.py */
+:root[data-theme="kaki"] { color-scheme: light; --back: #f1efe0; --card: #fbfaf6; --head: #eeede9; --edge: #d1cfc2; --alt: #f5f4f0; --text1: #282824; --text2: #5a5a53; --faint: #88887e; --up: #15803d; --down: #c81e1e; --accent: #7c7546; --hot: #e9e7dd; --tip: #282824; --tipfg: #f1efe0; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="kaki"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="kaki"] .overview .left { align-self: start; }
+[data-theme="kaki"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kaki"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="kaki"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kaki"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kaki"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,239,224,0.35); box-shadow: none; }
+[data-theme="kaki"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kaki"] body { background: linear-gradient(180deg, rgba(124,117,70,0.1), transparent 380px); background-color: #f1efe0; background-attachment: fixed; }
+[data-theme="kaki"] :is(.overview .left, .block, .detail, .list) { background: #f5f3ed; border-color: rgba(124,117,70,0.35); }
+[data-theme="kaki"] .chart .line { stroke: #7c7546 !important; }
+[data-theme="kaki"] .chart .area { fill: #7c7546 !important; }
+[data-theme="kaki"] .chart .vol { fill: #7c7546; }
+[data-theme="kaki"] :is(h2, h3, .big .label) { color: #7c7546; }
+[data-theme="kaki"] .big .value, [data-theme="kaki"] .detail .price { font-weight: 900; }
+[data-theme="kaki"] .chart .line { stroke-width: 3; }
+[data-theme="kaki"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kaki"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #424344; --alt: #333436; --text1: #eaeae8; --text2: #b8b8b7; --faint: #8a8a8a; --up: #4ade80; --down: #f87171; --accent: #868055; --hot: #393935; --tip: #eaeae8; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="kaki"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,37,0.35); box-shadow: none; }
+[data-theme="kaki"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(134,128,85,0.1), transparent 380px); background-color: #222325; background-attachment: fixed; }
+[data-theme="kaki"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #313231; border-color: rgba(134,128,85,0.35); }
+[data-theme="kaki"][data-scheme="dark"] .chart .line { stroke: #868055 !important; }
+[data-theme="kaki"][data-scheme="dark"] .chart .area { fill: #868055 !important; }
+[data-theme="kaki"][data-scheme="dark"] .chart .vol { fill: #868055; }
+[data-theme="kaki"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #868055; }

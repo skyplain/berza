@@ -1,0 +1,15 @@
+/* tema guma (Rubber): generisana, tools/teme.py */
+:root[data-theme="guma"] { color-scheme: dark; --back: #141416; --card: #202022; --head: #2c2c2e; --edge: #353537; --alt: #262628; --text1: #e2e2e4; --text2: #aeaeb0; --faint: #7f7f81; --up: #4ade80; --down: #f87171; --accent: #727274; --hot: #2b2b2d; --tip: #e2e2e4; --tipfg: #141416; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="guma"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="guma"] .overview .left { align-self: start; }
+[data-theme="guma"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="guma"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="guma"] .bar h1 { font-weight: 800; }
+[data-theme="guma"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="guma"] body { background: radial-gradient(rgba(114,114,116,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #141416; background-attachment: fixed; }
+[data-theme="guma"] .big .value, [data-theme="guma"] .detail .price { font-weight: 900; }
+[data-theme="guma"] .chart .line { stroke-width: 2.5; }
+[data-theme="guma"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="guma"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #ededee; --edge: #cececf; --alt: #f4f4f4; --text1: #16171c; --text2: #4d4e51; --faint: #7f8082; --up: #15803d; --down: #c81e1e; --accent: #18181b; --hot: #dbdbdc; --tip: #16171c; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="guma"][data-scheme="light"] body { background: radial-gradient(rgba(24,24,27,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #f1f1f1; background-attachment: fixed; }

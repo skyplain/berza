@@ -1,0 +1,14 @@
+/* tema jezero u planini (Mountain lake): generisana, tools/teme.py */
+:root[data-theme="jezerouplanini"] { color-scheme: light; --back: #edf5fb; --card: #fafcfe; --head: #eceff2; --edge: #cad4db; --alt: #f3f6f8; --text1: #122634; --text2: #495a66; --faint: #7b8994; --up: #15803d; --down: #c81e1e; --accent: #0369a1; --hot: #d7e7f1; --tip: #122634; --tipfg: #edf5fb; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="jezerouplanini"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="jezerouplanini"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="jezerouplanini"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="jezerouplanini"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="jezerouplanini"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="jezerouplanini"] body { background: linear-gradient(135deg, transparent 50%, rgba(3,105,161,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(3,105,161,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(3,105,161,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(3,105,161,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #edf5fb; background-attachment: fixed; }
+[data-theme="jezerouplanini"] .big .value, [data-theme="jezerouplanini"] .detail .price { font-weight: 400; }
+[data-theme="jezerouplanini"] .chart .line { stroke-width: 3; }
+[data-theme="jezerouplanini"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="jezerouplanini"][data-scheme="dark"] { color-scheme: dark; --back: #222328; --card: #2d2e33; --head: #38393e; --edge: #414348; --alt: #323439; --text1: #e1e9ef; --text2: #b1b8bd; --faint: #858a8f; --up: #4ade80; --down: #f87171; --accent: #3385b3; --hot: #2e3a45; --tip: #e1e9ef; --tipfg: #222328; --accentfg: #111111; }
+[data-theme="jezerouplanini"][data-scheme="dark"] body { background: linear-gradient(135deg, transparent 50%, rgba(51,133,179,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(51,133,179,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(51,133,179,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(51,133,179,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #222328; background-attachment: fixed; }

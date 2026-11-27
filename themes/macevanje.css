@@ -1,0 +1,22 @@
+/* tema mačevanje (Fencing): generisana, tools/teme.py */
+:root[data-theme="macevanje"] { color-scheme: light; --back: #f6f7f9; --card: #fcfdfd; --head: #eff0f0; --edge: #d3d5d8; --alt: #f5f6f7; --text1: #1e222a; --text2: #54575e; --faint: #86888d; --up: #15803d; --down: #c81e1e; --accent: #475569; --hot: #e3e5e8; --tip: #1e222a; --tipfg: #f6f7f9; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="macevanje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="macevanje"] .overview .left { align-self: start; }
+[data-theme="macevanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="macevanje"] button { border-radius: 999px; }
+[data-theme="macevanje"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="macevanje"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="macevanje"] .bar button { background: transparent; color: var(--back); border-color: rgba(246,247,249,0.35); box-shadow: none; }
+[data-theme="macevanje"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="macevanje"] body { background: linear-gradient(125deg, rgba(71,85,105,0.13) 0 28%, transparent 28%); background-color: #f6f7f9; background-attachment: fixed; }
+[data-theme="macevanje"] :is(h2, h3) { border-left: 8px solid #475569; padding-left: 8px; }
+[data-theme="macevanje"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="macevanje"] .big .value, [data-theme="macevanje"] .detail .price { font-weight: 700; }
+[data-theme="macevanje"] .chart .line { stroke-width: 2.5; }
+[data-theme="macevanje"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="macevanje"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414346; --alt: #333538; --text1: #e6e7eb; --text2: #b5b6ba; --faint: #88898d; --up: #4ade80; --down: #f87171; --accent: #76808f; --hot: #373a3f; --tip: #e6e7eb; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="macevanje"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="macevanje"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,39,0.35); box-shadow: none; }
+[data-theme="macevanje"][data-scheme="dark"] body { background: linear-gradient(125deg, rgba(118,128,143,0.13) 0 28%, transparent 28%); background-color: #222427; background-attachment: fixed; }
+[data-theme="macevanje"][data-scheme="dark"] :is(h2, h3) { border-left: 8px solid #76808f; padding-left: 8px; }

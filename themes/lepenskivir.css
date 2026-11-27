@@ -1,0 +1,15 @@
+/* tema lepenski vir (Lepenski Vir): generisana, tools/teme.py */
+:root[data-theme="lepenskivir"] { color-scheme: light; --back: #ece6db; --card: #f9f8f4; --head: #ecebe8; --edge: #ccc7bf; --alt: #f3f2ee; --text1: #27272a; --text2: #585756; --faint: #86837f; --up: #15803d; --down: #c81e1e; --accent: #78716c; --hot: #e7e5e1; --tip: #27272a; --tipfg: #ece6db; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="lepenskivir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lepenskivir"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="lepenskivir"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lepenskivir"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="lepenskivir"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="lepenskivir"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="lepenskivir"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(120,113,108,0.14) 9px 10px, transparent 11px 16px, rgba(120,113,108,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #ece6db; background-attachment: fixed; }
+[data-theme="lepenskivir"] .big .value, [data-theme="lepenskivir"] .detail .price { font-weight: 700; }
+[data-theme="lepenskivir"] .chart .line { stroke-width: 2; }
+[data-theme="lepenskivir"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lepenskivir"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424244; --alt: #333335; --text1: #eaeaeb; --text2: #b8b8b9; --faint: #8a8a8b; --up: #4ade80; --down: #f87171; --accent: #837c78; --hot: #393839; --tip: #eaeaeb; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="lepenskivir"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(131,124,120,0.14) 9px 10px, transparent 11px 16px, rgba(131,124,120,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222224; background-attachment: fixed; }

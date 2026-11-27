@@ -1,0 +1,21 @@
+/* tema piksel: 8-bitna igra: stepenasti okviri, jarke boje, pikselasti font */
+:root[data-theme="piksel"] { color-scheme: dark; --back: #1d1f33; --card: #2b2e4a; --head: #3a3e63; --edge: #000; --alt: #262940; --text1: #fff; --text2: #c7cbe8; --faint: #8b90b8; --up: #5cff5c; --down: #ff5c5c; --accent: #ffd400; --hot: #3e4270; --tip: #ffd400; --tipfg: #000; --accentfg: #000; --font: "Press Start 2P","Courier New",ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0; --h-color: #ffd400; --h-transform: uppercase; --h-spacing: .06em; --h-size: 13px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 700; }
+[data-theme="piksel"] body { font-size:13.5px }
+[data-theme="piksel"] :is(.overview .left,.block,.detail,.list) { background:var(--card);padding:14px 16px;box-shadow:0 -4px 0 0 #000,0 4px 0 0 #000,-4px 0 0 0 #000,4px 0 0 0 #000,inset -4px -4px 0 0 #1d1f33,inset 4px 4px 0 0 #454a78;margin:4px }
+[data-theme="piksel"] .overview .left { align-self:start }
+[data-theme="piksel"] .bar { border-bottom:4px solid #000 }
+[data-theme="piksel"] .bar h1 { color:#ffd400;text-transform:uppercase;text-shadow:3px 3px 0 #e0306a }
+[data-theme="piksel"] button { border:0;background:#e0306a;color:#fff;box-shadow:0 -3px 0 0 #000,0 3px 0 0 #000,-3px 0 0 0 #000,3px 0 0 0 #000,inset -3px -3px 0 0 #9b1e48 }
+[data-theme="piksel"] button:hover { background:#ff4f88 }
+[data-theme="piksel"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="piksel"] .chart .line { stroke-width:3;shape-rendering:crispEdges;stroke-linejoin:miter }
+[data-theme="piksel"] .chart .area { opacity:.18 }
+[data-theme="piksel"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="piksel"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="piksel"][data-scheme="light"] { color-scheme: light; --back: #cfd3ef; --card: #b8bee1; --head: #a2a8d4; --edge: #ffffff; --alt: #c0c6e4; --text1: #060606; --text2: #23253a; --faint: #505478; --up: #15803d; --down: #c81e1e; --accent: #79650f; --hot: #9aa1d6; --tip: #79650f; --tipfg: #ffffff; --accentfg: #ffffff; --h-color: #79650f; }
+[data-theme="piksel"][data-scheme="light"] :is(.overview .left,.block,.detail,.list) { background:var(--card);padding:14px 16px;box-shadow:0 -4px 0 0 #ffffff,0 4px 0 0 #ffffff,-4px 0 0 0 #ffffff,4px 0 0 0 #ffffff,inset -4px -4px 0 0 #cfd3ef,inset 4px 4px 0 0 #9198cc;margin:4px }
+[data-theme="piksel"][data-scheme="light"] .bar { border-bottom:4px solid #ffffff }
+[data-theme="piksel"][data-scheme="light"] .bar h1 { color:#79650f;text-transform:uppercase;text-shadow:3px 3px 0 #be0f53 }
+[data-theme="piksel"][data-scheme="light"] button { border:0;background:#be0f53;color:#060606;box-shadow:0 -3px 0 0 #ffffff,0 3px 0 0 #ffffff,-3px 0 0 0 #ffffff,3px 0 0 0 #ffffff,inset -3px -3px 0 0 #e16282 }
+[data-theme="piksel"][data-scheme="light"] button:hover { background:#950443 }

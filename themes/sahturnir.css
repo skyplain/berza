@@ -1,0 +1,16 @@
+/* tema šah turnir (Chess tournament): generisana, tools/teme.py */
+:root[data-theme="sahturnir"] { color-scheme: light; --back: #f7f4ee; --card: #fdfcfa; --head: #efeeed; --edge: #d3d0cc; --alt: #f6f5f3; --text1: #14161a; --text2: #4d4e4f; --faint: #818180; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dcdbd9; --tip: #14161a; --tipfg: #f7f4ee; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="sahturnir"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="sahturnir"] .overview .left { align-self: start; }
+[data-theme="sahturnir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sahturnir"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="sahturnir"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="sahturnir"] .bar h1 { font-weight: 800; }
+[data-theme="sahturnir"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="sahturnir"] body { background: conic-gradient(rgba(20,22,26,0.07) 25%, transparent 0 50%, rgba(20,22,26,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #f7f4ee; background-attachment: fixed; }
+[data-theme="sahturnir"] .big .value, [data-theme="sahturnir"] .detail .price { font-weight: 700; }
+[data-theme="sahturnir"] .chart .line { stroke-width: 1.5; }
+[data-theme="sahturnir"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sahturnir"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #39393c; --edge: #424244; --alt: #333336; --text1: #e2e2e4; --text2: #b2b2b4; --faint: #868689; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #39393c; --tip: #e2e2e4; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="sahturnir"][data-scheme="dark"] body { background: conic-gradient(rgba(226,226,228,0.07) 25%, transparent 0 50%, rgba(226,226,228,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #232326; background-attachment: fixed; }

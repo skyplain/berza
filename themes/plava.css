@@ -1,0 +1,27 @@
+/* tema plava (Blue): generisana, tools/teme.py */
+:root[data-theme="plava"] { color-scheme: light; --back: #e8effe; --card: #f8faff; --head: #ebedf4; --edge: #c7cfe0; --alt: #f1f4f9; --text1: #182541; --text2: #4c5870; --faint: #7c869c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dae5fc; --tip: #182541; --tipfg: #e8effe; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="plava"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="plava"] .overview .left { align-self: start; }
+[data-theme="plava"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plava"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="plava"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="plava"] .bar button { background: transparent; color: var(--back); border-color: rgba(232,239,254,0.35); box-shadow: none; }
+[data-theme="plava"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="plava"] body { background: linear-gradient(180deg, rgba(37,99,235,0.1), transparent 380px); background-color: #e8effe; background-attachment: fixed; }
+[data-theme="plava"] :is(.overview .left, .block, .detail, .list) { background: #edf2fe; border-color: rgba(37,99,235,0.35); }
+[data-theme="plava"] .chart .line { stroke: #2563eb !important; }
+[data-theme="plava"] .chart .area { fill: #2563eb !important; }
+[data-theme="plava"] .chart .vol { fill: #2563eb; }
+[data-theme="plava"] :is(h2, h3, .big .label) { color: #2563eb; }
+[data-theme="plava"] .big .value, [data-theme="plava"] .detail .price { font-weight: 400; }
+[data-theme="plava"] .chart .line { stroke-width: 2.5; }
+[data-theme="plava"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plava"][data-scheme="dark"] { color-scheme: dark; --back: #212328; --card: #2c2e33; --head: #37393f; --edge: #404349; --alt: #313439; --text1: #e3e8f5; --text2: #b2b7c2; --faint: #868993; --up: #4ade80; --down: #f87171; --accent: #366fed; --hot: #2d374d; --tip: #e3e8f5; --tipfg: #212328; --accentfg: #ffffff; }
+[data-theme="plava"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(33,35,40,0.35); box-shadow: none; }
+[data-theme="plava"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(54,111,237,0.1), transparent 380px); background-color: #212328; background-attachment: fixed; }
+[data-theme="plava"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2c313c; border-color: rgba(54,111,237,0.35); }
+[data-theme="plava"][data-scheme="dark"] .chart .line { stroke: #366fed !important; }
+[data-theme="plava"][data-scheme="dark"] .chart .area { fill: #366fed !important; }
+[data-theme="plava"][data-scheme="dark"] .chart .vol { fill: #366fed; }
+[data-theme="plava"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #366fed; }

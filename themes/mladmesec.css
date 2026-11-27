@@ -1,0 +1,15 @@
+/* tema mlad mesec (New moon): generisana, tools/teme.py */
+:root[data-theme="mladmesec"] { color-scheme: dark; --back: #050608; --card: #121214; --head: #1f1f21; --edge: #292a2d; --alt: #18181b; --text1: #e8eaed; --text2: #afb1b4; --faint: #7b7d7f; --up: #4ade80; --down: #f87171; --accent: #64748b; --hot: #1d2025; --tip: #e8eaed; --tipfg: #050608; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="mladmesec"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="mladmesec"] .overview .left { align-self: start; }
+[data-theme="mladmesec"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mladmesec"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="mladmesec"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="mladmesec"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="mladmesec"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(232,234,237,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(100,116,139,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(232,234,237,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(232,234,237,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(100,116,139,0.8), transparent); background-color: #050608; background-attachment: fixed; }
+[data-theme="mladmesec"] .big .value, [data-theme="mladmesec"] .detail .price { font-weight: 900; }
+[data-theme="mladmesec"] .chart .line { stroke-width: 3; }
+[data-theme="mladmesec"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="mladmesec"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #ededee; --edge: #cfd0d1; --alt: #f4f4f4; --text1: #232830; --text2: #565a60; --faint: #85888c; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e5e7ea; --tip: #232830; --tipfg: #f0f0f0; --accentfg: #ffffff; }
+[data-theme="mladmesec"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(35,40,48,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(100,116,139,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(35,40,48,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(35,40,48,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(100,116,139,0.8), transparent); background-color: #f0f0f0; background-attachment: fixed; }

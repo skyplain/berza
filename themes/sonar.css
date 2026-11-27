@@ -1,0 +1,13 @@
+/* tema sonar (Sonar): generisana, tools/teme.py */
+:root[data-theme="sonar"] { color-scheme: dark; --back: #0e282f; --card: #1a3339; --head: #263e44; --edge: #30484f; --alt: #20393f; --text1: #e3f1f5; --text2: #aebfc4; --faint: #7d9196; --up: #4ade80; --down: #f87171; --accent: #22d3ee; --hot: #1b4952; --tip: #e3f1f5; --tipfg: #0e282f; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="sonar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="sonar"] .overview .left { align-self: start; }
+[data-theme="sonar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sonar"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sonar"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(34,211,238,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(34,211,238,0.14), transparent 15%); background-color: #0e282f; background-attachment: fixed; }
+[data-theme="sonar"] .big .value, [data-theme="sonar"] .detail .price { font-weight: 900; }
+[data-theme="sonar"] .chart .line { stroke-width: 3; }
+[data-theme="sonar"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="sonar"][data-scheme="light"] { color-scheme: light; --back: #e9fbfd; --card: #f8fefe; --head: #eaf2f3; --edge: #c7dcdf; --alt: #f1f8f8; --text1: #173942; --text2: #4c6a71; --faint: #748f95; --up: #15803d; --down: #c81e1e; --accent: #1997aa; --hot: #d9f0f2; --tip: #173942; --tipfg: #e9fbfd; --accentfg: #111111; }
+[data-theme="sonar"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(25,151,170,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(25,151,170,0.14), transparent 15%); background-color: #e9fbfd; background-attachment: fixed; }

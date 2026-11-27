@@ -1,0 +1,25 @@
+/* tema pudrasta (Powder pink): generisana, tools/teme.py */
+:root[data-theme="pudrasta"] { color-scheme: light; --back: #fdf3f6; --card: #fefbfc; --head: #f2eff0; --edge: #ded4d7; --alt: #f8f5f6; --text1: #3b3037; --text2: #6c6167; --faint: #91868c; --up: #15803d; --down: #c81e1e; --accent: #a67282; --hot: #f2e8eb; --tip: #3b3037; --tipfg: #fdf3f6; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="pudrasta"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="pudrasta"] .overview .left { align-self: start; }
+[data-theme="pudrasta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pudrasta"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="pudrasta"] .bar h1 { font-weight: 800; }
+[data-theme="pudrasta"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="pudrasta"] body { background: linear-gradient(180deg, rgba(166,114,130,0.1), transparent 380px); background-color: #fdf3f6; background-attachment: fixed; }
+[data-theme="pudrasta"] :is(.overview .left, .block, .detail, .list) { background: #fdf6f8; border-color: rgba(166,114,130,0.35); }
+[data-theme="pudrasta"] .chart .line { stroke: #a67282 !important; }
+[data-theme="pudrasta"] .chart .area { fill: #a67282 !important; }
+[data-theme="pudrasta"] .chart .vol { fill: #a67282; }
+[data-theme="pudrasta"] :is(h2, h3, .big .label) { color: #a67282; }
+[data-theme="pudrasta"] .big .value, [data-theme="pudrasta"] .detail .price { font-weight: 700; }
+[data-theme="pudrasta"] .chart .line { stroke-width: 3; }
+[data-theme="pudrasta"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pudrasta"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444347; --alt: #343438; --text1: #f3edf1; --text2: #bfbabe; --faint: #8f8c90; --up: #4ade80; --down: #f87171; --accent: #e8a0b4; --hot: #483e44; --tip: #f3edf1; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="pudrasta"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(232,160,180,0.1), transparent 380px); background-color: #232327; background-attachment: fixed; }
+[data-theme="pudrasta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #373438; border-color: rgba(232,160,180,0.35); }
+[data-theme="pudrasta"][data-scheme="dark"] .chart .line { stroke: #e8a0b4 !important; }
+[data-theme="pudrasta"][data-scheme="dark"] .chart .area { fill: #e8a0b4 !important; }
+[data-theme="pudrasta"][data-scheme="dark"] .chart .vol { fill: #e8a0b4; }
+[data-theme="pudrasta"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #e8a0b4; }

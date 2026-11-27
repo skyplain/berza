@@ -1,0 +1,17 @@
+/* tema saten (Satin): generisana, tools/teme.py */
+:root[data-theme="saten"] { color-scheme: light; --back: #fff3f8; --card: #fffbfd; --head: #f3edf0; --edge: #ded0d7; --alt: #f9f4f7; --text1: #331728; --text2: #664e5c; --faint: #95818c; --up: #15803d; --down: #c81e1e; --accent: #be185d; --hot: #f6dbe7; --tip: #331728; --tipfg: #fff3f8; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="saten"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="saten"] .overview .left { align-self: start; }
+[data-theme="saten"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="saten"] button { border-radius: 999px; }
+[data-theme="saten"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="saten"] .bar h1 { font-size: 24px; }
+[data-theme="saten"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="saten"] body { background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.45) 45%, transparent 60%), linear-gradient(300deg, transparent 50%, rgba(190,24,93,0.08) 70%, transparent 85%); background-color: #fff3f8; background-attachment: fixed; }
+[data-theme="saten"] .big .value, [data-theme="saten"] .detail .price { font-weight: 900; }
+[data-theme="saten"] .chart .line { stroke-width: 2; }
+[data-theme="saten"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="saten"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444246; --alt: #343338; --text1: #f0e2ea; --text2: #bdb2b9; --faint: #8e868c; --up: #4ade80; --down: #f87171; --accent: #ce5286; --hot: #44333e; --tip: #f0e2ea; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="saten"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="saten"][data-scheme="dark"] body { background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.1) 45%, transparent 60%), linear-gradient(300deg, transparent 50%, rgba(206,82,134,0.08) 70%, transparent 85%); background-color: #232327; background-attachment: fixed; }

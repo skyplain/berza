@@ -1,0 +1,13 @@
+/* tema robot (Robot): generisana, tools/teme.py */
+:root[data-theme="robot"] { color-scheme: light; --back: #fff0eb; --card: #fffaf9; --head: #f3edec; --edge: #e0d0cb; --alt: #f9f4f2; --text1: #3f2620; --text2: #6f5853; --faint: #9b8781; --up: #15803d; --down: #c81e1e; --accent: #d85a2d; --hot: #fae4dc; --tip: #3f2620; --tipfg: #fff0eb; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="robot"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="robot"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="robot"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="robot"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="robot"] :is(.overview .left, .block, .detail, .list) { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+[data-theme="robot"] button { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); border-radius: 0; }
+[data-theme="robot"] .big .value, [data-theme="robot"] .detail .price { font-weight: 200; }
+[data-theme="robot"] .chart .line { stroke-width: 1.5; }
+[data-theme="robot"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="robot"][data-scheme="dark"] { color-scheme: dark; --back: #2d1915; --card: #382421; --head: #43302d; --edge: #4d3a37; --alt: #3e2a27; --text1: #f5e9e7; --text2: #c3b5b2; --faint: #958582; --up: #4ade80; --down: #f87171; --accent: #ff6b35; --hot: #542e24; --tip: #f5e9e7; --tipfg: #2d1915; --accentfg: #111111; }

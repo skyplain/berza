@@ -1,0 +1,17 @@
+/* tema majčin dan (Mother's Day): generisana, tools/teme.py */
+:root[data-theme="majcindan"] { color-scheme: light; --back: #fef3f8; --card: #fffbfd; --head: #f3eef0; --edge: #ded0d7; --alt: #f9f4f7; --text1: #391a2c; --text2: #6a505f; --faint: #98828e; --up: #15803d; --down: #c81e1e; --accent: #db2777; --hot: #faddea; --tip: #391a2c; --tipfg: #fef3f8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="majcindan"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="majcindan"] .overview .left { align-self: start; }
+[data-theme="majcindan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="majcindan"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="majcindan"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="majcindan"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="majcindan"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="majcindan"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(219,39,119,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(119,219,39,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #fef3f8; background-attachment: fixed; }
+[data-theme="majcindan"] .big .value, [data-theme="majcindan"] .detail .price { font-weight: 200; }
+[data-theme="majcindan"] .chart .line { stroke-width: 2; }
+[data-theme="majcindan"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="majcindan"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444247; --alt: #343338; --text1: #f2e4ec; --text2: #beb4bb; --faint: #8f878d; --up: #4ade80; --down: #f87171; --accent: #df4087; --hot: #47313e; --tip: #f2e4ec; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="majcindan"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="majcindan"][data-scheme="dark"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(223,64,135,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(119,219,39,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #232327; background-attachment: fixed; }

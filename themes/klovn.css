@@ -1,0 +1,18 @@
+/* tema klovn (Clown): generisana, tools/teme.py */
+:root[data-theme="klovn"] { color-scheme: light; --back: #fefae9; --card: #fef6e6; --head: #f2e9db; --edge: #dfd7ca; --alt: #f8f0e0; --text1: #3d1e28; --text2: #6d5558; --faint: #9a8885; --up: #15803d; --down: #c81e1e; --accent: #f43f5e; --hot: #fddcd3; --tip: #3d1e28; --tipfg: #fefae9; --accentfg: #111111; --font: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive; --radius: 4px; }
+[data-theme="klovn"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="klovn"] .overview .left { align-self: start; }
+[data-theme="klovn"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="klovn"] button { border-radius: 999px; }
+[data-theme="klovn"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="klovn"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="klovn"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="klovn"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="klovn"] body { background: radial-gradient(rgba(244,63,94,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #fefae9; background-attachment: fixed; }
+[data-theme="klovn"] .big .value, [data-theme="klovn"] .detail .price { font-weight: 200; }
+[data-theme="klovn"] .chart .line { stroke-width: 3; }
+[data-theme="klovn"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="klovn"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444345; --alt: #343437; --text1: #f4e6ea; --text2: #c0b6b9; --faint: #90898c; --up: #4ade80; --down: #f87171; --accent: #f43f5e; --hot: #4a3137; --tip: #f4e6ea; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="klovn"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="klovn"][data-scheme="dark"] body { background: radial-gradient(rgba(244,63,94,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #232426; background-attachment: fixed; }

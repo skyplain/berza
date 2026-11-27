@@ -1,0 +1,15 @@
+/* tema akvarijum (Aquarium): generisana, tools/teme.py */
+:root[data-theme="akvarijum"] { color-scheme: light; --back: #e8fbff; --card: #f8feff; --head: #eaf2f3; --edge: #c6dbe0; --alt: #f1f8f9; --text1: #12343d; --text2: #48666e; --faint: #79949a; --up: #15803d; --down: #c81e1e; --accent: #068ea5; --hot: #d6eef2; --tip: #12343d; --tipfg: #e8fbff; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="akvarijum"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="akvarijum"] .overview .left { align-self: start; }
+[data-theme="akvarijum"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="akvarijum"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="akvarijum"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="akvarijum"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="akvarijum"] body { background: radial-gradient(circle, transparent 6px, rgba(6,142,165,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(6,142,165,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #e8fbff; background-attachment: fixed; }
+[data-theme="akvarijum"] .big .value, [data-theme="akvarijum"] .detail .price { font-weight: 900; }
+[data-theme="akvarijum"] .chart .line { stroke-width: 3; }
+[data-theme="akvarijum"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="akvarijum"][data-scheme="dark"] { color-scheme: dark; --back: #212428; --card: #2c2f33; --head: #373b3f; --edge: #404448; --alt: #313539; --text1: #e1eff3; --text2: #b1bcc0; --faint: #858e92; --up: #4ade80; --down: #f87171; --accent: #06b6d4; --hot: #27424a; --tip: #e1eff3; --tipfg: #212428; --accentfg: #111111; }
+[data-theme="akvarijum"][data-scheme="dark"] body { background: radial-gradient(circle, transparent 6px, rgba(6,182,212,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(6,182,212,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #212428; background-attachment: fixed; }

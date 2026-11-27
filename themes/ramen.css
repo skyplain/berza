@@ -1,0 +1,16 @@
+/* tema ramen (Ramen): generisana, tools/teme.py */
+:root[data-theme="ramen"] { color-scheme: dark; --back: #1a0d06; --card: #251912; --head: #31251f; --edge: #3d3029; --alt: #2b1f18; --text1: #f3e8e3; --text2: #bdb1ac; --faint: #8b7f79; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #412211; --tip: #f3e8e3; --tipfg: #1a0d06; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="ramen"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="ramen"] .overview .left { align-self: start; }
+[data-theme="ramen"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ramen"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="ramen"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="ramen"] .bar h1 { font-weight: 800; }
+[data-theme="ramen"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ramen"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(234,88,12,0.14) 9px 10px, transparent 11px 16px, rgba(234,88,12,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #1a0d06; background-attachment: fixed; }
+[data-theme="ramen"] .big .value, [data-theme="ramen"] .detail .price { font-weight: 700; }
+[data-theme="ramen"] .chart .line { stroke-width: 2; }
+[data-theme="ramen"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ramen"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efedec; --edge: #d4cfce; --alt: #f5f4f3; --text1: #3b2319; --text2: #68564f; --faint: #928580; --up: #15803d; --down: #c81e1e; --accent: #d7510b; --hot: #f6e2d9; --tip: #3b2319; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="ramen"][data-scheme="light"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(215,81,11,0.14) 9px 10px, transparent 11px 16px, rgba(215,81,11,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f1f0f0; background-attachment: fixed; }

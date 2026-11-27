@@ -1,0 +1,15 @@
+/* tema ognjena marija (Fiery Mary): generisana, tools/teme.py */
+:root[data-theme="ognjenamarija"] { color-scheme: dark; --back: #170504; --card: #231211; --head: #2f1f1e; --edge: #3a2928; --alt: #291817; --text1: #f2e4e5; --text2: #bbacad; --faint: #897979; --up: #4ade80; --down: #f87171; --accent: #dc2626; --hot: #3d1514; --tip: #f2e4e5; --tipfg: #170504; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="ognjenamarija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="ognjenamarija"] .overview .left { align-self: start; }
+[data-theme="ognjenamarija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ognjenamarija"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="ognjenamarija"] .bar h1 { font-size: 24px; }
+[data-theme="ognjenamarija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ognjenamarija"] body { background: linear-gradient(0deg, rgba(220,38,38,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(220,38,38,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #170504; background-attachment: fixed; }
+[data-theme="ognjenamarija"] .big .value, [data-theme="ognjenamarija"] .detail .price { font-weight: 700; }
+[data-theme="ognjenamarija"] .chart .line { stroke-width: 2; }
+[data-theme="ognjenamarija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ognjenamarija"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeded; --edge: #d4cece; --alt: #f5f3f3; --text1: #391a1e; --text2: #675052; --faint: #918183; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f7dcdc; --tip: #391a1e; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="ognjenamarija"][data-scheme="light"] body { background: linear-gradient(0deg, rgba(220,38,38,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(220,38,38,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #f1f0f0; background-attachment: fixed; }

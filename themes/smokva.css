@@ -1,0 +1,15 @@
+/* tema smokva (Fig): generisana, tools/teme.py */
+:root[data-theme="smokva"] { color-scheme: light; --back: #f8f2ff; --card: #fdfbff; --head: #f0eef4; --edge: #d7d0e1; --alt: #f7f4f9; --text1: #281d42; --text2: #5c5271; --faint: #8c839d; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #ebe0fc; --tip: #281d42; --tipfg: #f8f2ff; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="smokva"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="smokva"] .overview .left { align-self: start; }
+[data-theme="smokva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="smokva"] button { border-radius: 999px; }
+[data-theme="smokva"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="smokva"] .bar h1 { font-weight: 800; }
+[data-theme="smokva"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="smokva"] .big .value, [data-theme="smokva"] .detail .price { font-weight: 700; }
+[data-theme="smokva"] .chart .line { stroke-width: 1.5; }
+[data-theme="smokva"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="smokva"][data-scheme="dark"] { color-scheme: dark; --back: #232328; --card: #2e2e33; --head: #39393f; --edge: #434249; --alt: #343339; --text1: #eae5f5; --text2: #b8b4c2; --faint: #8a8893; --up: #4ade80; --down: #f87171; --accent: #945ff0; --hot: #3c354d; --tip: #eae5f5; --tipfg: #232328; --accentfg: #111111; }
+[data-theme="smokva"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

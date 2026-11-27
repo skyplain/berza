@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- bez zumiranja: pravi mobilni prikaz. iOS Safari (od 10) ignoriše user-scalable=no, zato i touch-action u CSS-u
+         i skripta ispod koja gasi pinch (gesturestart, dva prsta) -->
+    <!-- viewport-fit=cover: strana ide do ivica ekrana (ispod notch-a i home indikatora); razmak daje env(safe-area-inset-*) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Berza</title>
+    <!-- kao aplikacija: „Dodaj na početni ekran“ otvara Berzu preko celog ekrana, bez trake browsera (manifest, iOS meta) -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="icons/favicon.png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Berza" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- boja sistemske trake: skripta ispod je usklađuje sa temom (--back) -->
+    <meta name="theme-color" content="#f5f6f8" />
+    
+    
+    
+<script type="module">
+import init, * as bindings from './client-1bb5e0d9b4441f84.js';
+const wasm = await init({ module_or_path: './client-ce920ed8923981d0_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    
+    
+    <!-- teme osim svetle i tamne: jedan CSS po temi, učitava se kad se izabere -->
+    
+    <!-- snimak podataka (cargo run --example snimak): sa njim je dist/ statički sajt, bez proxy-ja -->
+    
+    <script>
+      // pinch zoom: iOS šalje gesture* događaje, ostali touchmove sa dva prsta
+      for (const t of ["gesturestart", "gesturechange", "gestureend"]) document.addEventListener(t, (e) => e.preventDefault(), { passive: false });
+      document.addEventListener("touchmove", (e) => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+    </script>
+    <script>
+      // tema pre prvog crtanja, da ne trepne (isto radi klijent, src/bin/client.rs). Svetla i tamna su ovde, ostale u
+      // themes/<ključ>.css i učitavaju se samo kad su izabrane; document.write je blokira crtanje dok CSS ne stigne.
+      try {
+        const t = localStorage.getItem("theme");
+        if (t && /^[a-z]+$/.test(t)) {
+          document.documentElement.dataset.theme = t;
+          if (t !== "light" && t !== "dark")
+            document.write(`<link rel="stylesheet" id="theme-css-${t}" href="themes/${t}.css" onload="this.dataset.ready=1" onerror="this.dataset.ready=1">`);
+        }
+        // varijanta teme (originalna, svetla, tamna, po sistemu): data-scheme, fajl teme ima i drugu varijantu
+        const m = localStorage.getItem("scheme");
+        if (m === "light" || m === "dark") document.documentElement.dataset.scheme = m;
+        else if (m === "auto") document.documentElement.dataset.scheme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      } catch {}
+      try { if (localStorage.getItem("lang") === "en") document.documentElement.lang = "en"; } catch {}
+    </script>
+    <script>
+      // Novi render (ceo HTML iz worker-a) u postojeći DOM: menja se samo ono što se razlikuje (tekst, atributi,
+      // čvorovi viška ili manjka), po redu. Paneli, header i grafikon ostaju isti elementi, pa nema ponovnog crtanja i
+      // treptanja (teme sa senkama i zamućenjem), a fokus, kursor i skrol ostaju sami. Zove ga klijent (apply_render).
+      window.berzaMorph = (root, html) => {
+        const t = document.createElement("template");
+        t.innerHTML = html;
+        const same = (a, b) => a.nodeType === b.nodeType && a.nodeName === b.nodeName && (a.nodeType !== 1 || a.id === b.id);
+        const node = (a, b) => {
+          if (a.nodeType !== 1) { if (a.nodeValue !== b.nodeValue) a.nodeValue = b.nodeValue; return; }
+          for (const x of [...a.attributes]) if (!b.hasAttribute(x.name)) a.removeAttribute(x.name);
+          for (const x of b.attributes) if (a.getAttribute(x.name) !== x.value) a.setAttribute(x.name, x.value);
+          kids(a, b);
+        };
+        const kids = (from, to) => {
+          let a = from.firstChild, b = to.firstChild;
+          while (b) {
+            const nb = b.nextSibling;
+            if (a && same(a, b)) { node(a, b); a = a.nextSibling; }
+            else if (a) { const na = a.nextSibling; from.replaceChild(b, a); a = na; }
+            else from.appendChild(b);
+            b = nb;
+          }
+          while (a) { const na = a.nextSibling; a.remove(); a = na; }
+        };
+        kids(root, t.content);
+      };
+    </script>
+    <script>
+      // boja sistemske trake (status bar, Android traka zadataka) prati temu: --back sa <html>, i kad CSS teme stigne
+      (() => {
+        const meta = document.querySelector('meta[name="theme-color"]');
+        const sync = () => {
+          const c = getComputedStyle(document.documentElement).getPropertyValue("--back").trim();
+          if (c && meta.content !== c) meta.content = c;
+        };
+        new MutationObserver(sync).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme", "data-scheme"] });
+        document.addEventListener("load", sync, true);
+        addEventListener("DOMContentLoaded", sync);
+        matchMedia("(prefers-color-scheme: dark)").addEventListener("change", sync);
+      })();
+    </script>
+    <style>
+      /* tema: bez data-theme prati sistem; data-theme="light"/"dark" su ovde, ostale u themes/<ključ>.css (klijent, localStorage).
+         data-scheme="light"/"dark" bira varijantu (i ovih: svetla u tamnoj varijanti je tamna i obrnuto) */
+      :root {
+        color-scheme: light;
+        --back: #f5f6f8; --card: #fff; --head: #eceef2; --edge: #dde0e6; --alt: #f7f8fa;
+        --text1: #1b1e24; --text2: #4a505c; --faint: #808694; --up: #16a34a; --down: #dc2626;
+        --accent: #3b6cf6; --hot: #eaf0ff; --tip: #1b1e24; --tipfg: #fff; --accentfg: #fff;
+        --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 6px;
+        /* razmak od ivice ekrana (bar koliko notch, telefon položen); teme sa trakom preko cele širine koriste
+           calc(-1 * var(--gut)) */
+        --gut: max(16px, env(safe-area-inset-left), env(safe-area-inset-right));
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme]):not([data-scheme]) {
+          color-scheme: dark;
+          --back: #15171c; --card: #1d2027; --head: #22262e; --edge: #30343e; --alt: #21242b;
+          --text1: #e8eaef; --text2: #b3b8c3; --faint: #7d8390; --up: #34d399; --down: #f87171;
+          --accent: #7b9cff; --hot: #263150; --tip: #e8eaef; --tipfg: #15171c;
+        }
+      }
+      :root[data-theme="dark"]:not([data-scheme="light"]), :root[data-scheme="dark"]:is(:not([data-theme]), [data-theme="light"]) {
+        color-scheme: dark;
+        --back: #15171c; --card: #1d2027; --head: #22262e; --edge: #30343e; --alt: #21242b;
+        --text1: #e8eaef; --text2: #b3b8c3; --faint: #7d8390; --up: #34d399; --down: #f87171;
+        --accent: #7b9cff; --hot: #263150; --tip: #e8eaef; --tipfg: #15171c;
+      }
+      * { box-sizing: border-box; }
+      /* samo skrol (bez pinch i dvostrukog dodira za zum) */
+      html { touch-action: pan-x pan-y; }
+      body { margin: 0; background: var(--back); color: var(--text1);
+             font: 15px/1.4 var(--font); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+      .app { max-width: 1280px; margin: 0 auto; padding: 0 var(--gut) 16px; }
+      .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+             padding: 12px 0; border-bottom: 1px solid var(--edge); margin-bottom: 16px; }
+      .bar h1 { font-size: 18px; font-weight: 600; margin: 0; flex: none; white-space: nowrap; }
+      .bar h1 span { color: var(--text2); font-weight: 400; }
+      /* kad ne staje (uzak ekran, tema sa širim slovima ili okvirima), skraćuje se samo tekst prvog dugmeta */
+      .bar nav { display: flex; gap: 8px; min-width: 0; }
+      .bar nav > * { flex: none; }
+      #nav { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      button { font: inherit; color: var(--text1); background: var(--head); border: 1px solid var(--edge);
+               border-radius: var(--radius); padding: 5px 12px; cursor: pointer; }
+      /* bez sivog pravougaonika pri dodiru (iOS, Android): odziv daje :active ispod */
+      html { -webkit-tap-highlight-color: transparent; }
+      /* hover samo uz miš: na dodir bi :hover ostao „zalepljen“ posle dodira */
+      @media (hover: hover) { button:hover { border-color: var(--accent); } }
+      #theme { min-width: 38px; white-space: nowrap; padding: 0; display: inline-flex; align-items: stretch; }
+      #theme .cur { padding: 5px 10px 5px 12px; }
+      #theme .caret { font-size: 11px; padding: 5px 9px; border-left: 1px solid var(--edge); display: flex; align-items: center; }
+      #theme .mode { padding: 5px 8px; border-left: 1px solid var(--edge); display: flex; align-items: center; }
+      #theme .caret:hover, #theme .cur:hover, #theme .mode:hover { background: var(--hot); }
+
+      /* meni tema (van #app, pa preživi render); položaj ispod dugmeta postavlja klijent */
+      #themes { position: fixed; z-index: 40; display: grid; grid-template-columns: 210px minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr);
+                width: min(860px, calc(100vw - 16px)); height: min(520px, calc(100vh - 80px)); padding: 0;
+                background: var(--card); color: var(--text1); border: 1px solid var(--edge);
+                border-radius: min(var(--radius), 10px); box-shadow: 0 10px 30px rgba(0, 0, 0, .18); font: 14px/1.4 var(--font);
+                overflow: hidden; }
+      #themes[hidden] { display: none; }
+      #themes .wait { grid-column: 1 / -1; padding: 24px; color: var(--faint); }
+      #themes .schemes { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding: 6px 8px;
+                         border-bottom: 1px solid var(--edge); background: var(--alt); }
+      #themes .schemes .lbl { color: var(--faint); font-size: 12px; margin-right: 6px; }
+      #themes .scheme { display: flex; align-items: center; gap: 6px; padding: 3px 10px; cursor: pointer; white-space: nowrap;
+                        border: 1px solid var(--edge); border-radius: min(var(--radius), 6px); }
+      #themes .scheme:hover { background: var(--hot); }
+      #themes .scheme.on { background: var(--accent); color: var(--accentfg); border-color: var(--accent); }
+      #themes .scheme.on .ico { color: var(--accentfg); }
+      #themes .cats { overflow-y: auto; overflow-x: hidden; padding: 4px; border-right: 1px solid var(--edge); background: var(--alt); }
+      #themes .cat { display: flex; align-items: center; gap: 8px; padding: 6px 10px; cursor: pointer;
+                     border-radius: min(var(--radius), 6px); white-space: nowrap; }
+      #themes .cat .n { margin-left: auto; font-size: 12px; color: var(--faint); }
+      #themes .cat .dot { font-size: 8px; color: var(--accent); }
+      #themes .cat:hover { background: var(--hot); }
+      #themes .cat.on { background: var(--accent); color: var(--accentfg); }
+      #themes .cat.on .n, #themes .cat.on .ico, #themes .cat.on .dot { color: var(--accentfg); }
+      #themes .items { overflow-y: auto; padding: 4px; display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+                       align-content: start; }
+      #themes .ico { width: 1.2em; text-align: center; color: var(--accent); flex: none; }
+      #themes .item { display: flex; align-items: center; gap: 10px; padding: 6px 10px; cursor: pointer;
+                      border-radius: min(var(--radius), 6px); }
+      #themes .item .check { margin-left: auto; visibility: hidden; color: var(--accent); }
+      #themes .item.on .check { visibility: visible; }
+      #themes .item.on { font-weight: 600; }
+      #themes .item:hover, #themes .item.focus { background: var(--hot); }
+      @media (max-width: 600px) {
+        #themes { grid-template-columns: 1fr; grid-template-rows: auto auto minmax(0, 1fr); }
+        #themes .cats { display: flex; overflow-x: auto; overflow-y: hidden; border-right: 0; border-bottom: 1px solid var(--edge); }
+        #themes .cat .n { margin-left: 4px; }
+        #themes .items { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+      }
+      #refresh.spin { animation: spin 1s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .error { color: var(--down); margin: 0 0 12px; font-size: 13px; }
+      .empty { text-align: center; color: var(--text2); font-size: 22px; font-weight: 300; padding: 80px 0; }
+      .dim { color: var(--faint); }
+      .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .chg { white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .chg.up { color: var(--up); } .chg.down { color: var(--down); } .chg.flat { color: var(--text2); }
+      .sym { font-weight: 600; }
+      .click { cursor: pointer; }
+      .hot { background: var(--hot); outline: 1px solid var(--accent); outline-offset: -1px; }
+
+      /* pregled */
+      .overview { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 28px; }
+      .overview > *, .lookup > * { min-width: 0; }
+      .big .label, h2, h3 { font-size: 13px; font-weight: 600; color: var(--faint); margin: 0 0 6px;
+                            text-transform: uppercase; letter-spacing: .03em; }
+      .big { padding: 4px; border-radius: 8px; }
+      .big .row { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+      .big .value { font-size: 44px; font-weight: 300; line-height: 1.1; }
+      .big .chg { font-size: 17px; }
+      .big .when { color: var(--faint); font-size: 13px; }
+      .kvs { border-top: 1px solid var(--edge); margin-top: 14px; padding-top: 8px; }
+      .kv { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+      .kv .k { color: var(--text2); }
+      .kv .v { text-align: right; font-variant-numeric: tabular-nums; }
+      .note { color: var(--faint); font-size: 12px; }
+      .block { margin-bottom: 22px; }
+      table { width: 100%; border-collapse: collapse; }
+      th { text-align: left; font-weight: 400; color: var(--faint); font-size: 12.5px;
+           border-bottom: 1px solid var(--edge); padding: 4px 6px; }
+      th.num { text-align: right; }
+      td { padding: 4px 6px; }
+      tbody tr:nth-child(even) { background: var(--alt); }
+      td.name { color: var(--text2); font-size: 13.5px; max-width: 0; width: 100%;
+                overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+      .movers, .news { list-style: none; margin: 0; padding: 0; }
+      .movers li { display: grid; grid-template-columns: 1fr auto auto; gap: 14px; padding: 3px 4px; }
+      .news li { padding: 3px 0; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+      /* grafikoni */
+      .chart { width: 100%; height: auto; display: block; margin: 10px 0; overflow: visible; }
+      .chart .line { fill: none; stroke: var(--text2); stroke-width: 2; stroke-linejoin: round; }
+      .chart.up .line { stroke: var(--up); } .chart.down .line { stroke: var(--down); }
+      .chart .area { fill: var(--text2); opacity: .08; stroke: none; }
+      .chart.up .area { fill: var(--up); } .chart.down .area { fill: var(--down); }
+      .chart .prev { stroke: var(--faint); stroke-dasharray: 4 4; }
+      .chart .vol { fill: var(--faint); opacity: .45; }
+      .chart .dot { fill: var(--accent); }
+      .chart .lbl { fill: var(--faint); font-size: 12px; }
+      .chart .lbl.end { text-anchor: end; }
+      .chart .lbl.last { fill: var(--text1); }
+      .chart .bands rect { fill: transparent; }
+      .chart .bands rect.hot { fill: var(--accent); opacity: .18; outline: none; }
+      /* poređenje: boja hartije po mestu u izboru (c0..c7), svetla ili tamna prema color-scheme teme */
+      .c0 { --c: light-dark(#2563eb, #60a5fa); } .c1 { --c: light-dark(#c2410c, #fb923c); }
+      .c2 { --c: light-dark(#0f766e, #2dd4bf); } .c3 { --c: light-dark(#7c3aed, #a78bfa); }
+      .c4 { --c: light-dark(#be185d, #f472b6); } .c5 { --c: light-dark(#a16207, #facc15); }
+      .c6 { --c: light-dark(#0e7490, #67e8f9); } .c7 { --c: light-dark(#475569, #cbd5e1); }
+      @supports not (color: light-dark(#000, #fff)) {
+        .c0 { --c: #3b82f6; } .c1 { --c: #ea580c; } .c2 { --c: #14b8a6; } .c3 { --c: #8b5cf6; }
+        .c4 { --c: #db2777; } .c5 { --c: #ca8a04; } .c6 { --c: #0891b2; } .c7 { --c: #64748b; }
+      }
+      .chart .ser { fill: none; stroke: var(--c); stroke-width: 2; stroke-linejoin: round; }
+      .chart .pt { fill: var(--c); }
+      .chart .lbl.end-lbl { fill: var(--c); font-weight: 600; }
+      .legend { width: 100%; font-size: 14px; }
+      .legend td { padding: 4px 6px; }
+      .legend .sw { display: inline-block; width: 14px; height: 4px; border-radius: 2px; background: var(--c); vertical-align: middle; }
+      .legend .x { color: var(--faint); cursor: pointer; text-align: center; width: 2em; }
+      .legend .x:hover { color: var(--down); }
+      .detail .head .unpick { margin-left: auto; }
+
+      /* sve hartije */
+      .lookup { display: grid; grid-template-columns: minmax(280px, 2fr) minmax(0, 3fr); gap: 28px; }
+      .list { display: flex; flex-direction: column; min-height: 0; }
+      #search { font: inherit; padding: 8px 10px; border-radius: var(--radius); border: 1px solid var(--edge);
+                background: var(--card); color: var(--text1); width: 100%; }
+      #search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+      .chips { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 10px 0; }
+      .chip { padding: 3px 10px; font-size: 13px; }
+      .chip.on { background: var(--accent); border-color: var(--accent); color: var(--accentfg); }
+      .count { margin-left: auto; font-size: 13px; }
+      .rows { height: calc(100vh - 230px); min-height: 240px; overflow-y: auto; border: 1px solid var(--edge);
+              border-radius: var(--radius); background: var(--card); }
+      .rows tr.sel, .rows tr.sel.hot { background: var(--accent); color: var(--accentfg); }
+      .rows tr.sel .chg, .rows tr.sel .dim { color: var(--accentfg); }
+      td.isin { font-size: 12.5px; }
+      .rows .pick { width: 1.8em; padding-right: 0; text-align: center; user-select: none; color: var(--faint); }
+      .rows td.pick:hover { color: var(--accent); }
+      .rows tr.picked td.pick { color: var(--c); font-weight: 700; }
+      .rows tr.sel td.pick { color: var(--accentfg); }
+      .rows thead th { position: sticky; top: 0; z-index: 1; background: var(--card); user-select: none; white-space: nowrap; }
+      .rows th.on { color: var(--text1); }
+      .keys { font-size: 12px; margin: 8px 0 0; }
+      /* prečice tastature nemaju smisla na dodir */
+      @media (hover: none) and (pointer: coarse) { .keys { display: none; } }
+      .detail .head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+      .detail .symbol { font-size: 28px; font-weight: 600; }
+      .detail .price { font-size: 30px; font-weight: 300; margin-left: auto; }
+      .detail .head .chg { font-size: 17px; }
+      .fullname { color: var(--text2); }
+      .periods { margin-top: 14px; }
+      .chartbox { min-height: 120px; }
+      .sections { columns: 2 260px; column-gap: 28px; }
+      .section { break-inside: avoid; margin-bottom: 16px; }
+      .section .kv { font-size: 14px; }
+
+      footer { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--faint); font-size: 12.5px;
+               border-top: 1px solid var(--edge); margin-top: 16px; padding-top: 10px; }
+      footer .info { margin-left: auto; font-family: ui-monospace, monospace; }
+
+      #tip { position: fixed; pointer-events: none; background: var(--tip); color: var(--tipfg);
+             font-size: 12px; padding: 4px 8px; border-radius: 4px; max-width: 280px; z-index: 10; }
+      #tip[hidden] { display: none; }
+
+      @media (max-width: 800px) {
+        /* minmax(0, …): sa 1fr bi kolona bila široka bar koliko najširi sadržaj (tabele, grafikon) i izašla van ekrana */
+        .overview, .lookup { grid-template-columns: minmax(0, 1fr); }
+        .rows { height: 55vh; height: 55dvh; }
+        .bar h1 span { display: none; }
+        /* ime teme je u meniju; sa njim header nekih tema (šira slova, veći naslov) ne staje */
+        #theme .nm { display: none; }
+      }
+      /* telefon */
+      @media (max-width: 600px) {
+        :root { --gut: max(10px, env(safe-area-inset-left), env(safe-area-inset-right)); }
+        .app { padding: 0 var(--gut) 12px; }
+        .bar { gap: 8px; padding: 8px 0; margin-bottom: 12px; }
+        /* teme imaju naslov do 26px, razmak između slova i ukrase: na telefonu bi header bio širi od ekrana */
+        :root .bar h1 { font-size: 18px !important; }
+        /* ukras posle naslova (▂▃▅▇▅▃▂, ❦, ↯) ne staje uz dugmad; ukras ispred ostaje */
+        :root .bar h1::after { display: none; }
+        /* „☰ Sve hartije“ / „← Pregled“ samo kao ikonica (ime je u aria-label) */
+        #nav .txt { display: none; }
+        .bar nav { gap: 6px; }
+        .bar nav button { white-space: nowrap; padding: 6px 10px; }
+        #theme { padding: 0; }
+        #theme .cur { padding: 6px 8px; }
+        #theme .mode, #theme .caret { padding: 6px 8px; }
+        /* meni tema preko cele širine (klijent postavlja top/right prema dugmetu) */
+        #themes { left: 8px !important; right: 8px !important; width: auto; height: auto; max-height: min(520px, calc(100dvh - 80px)); }
+        .big .value { font-size: 36px; }
+        .two { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+        .rows .isin { display: none; }
+        /* iOS uvećava stranu kad dobije fokus polje sa slovima manjim od 16px */
+        #search { font-size: 16px; }
+        .detail .symbol { font-size: 24px; }
+        .detail .price { font-size: 26px; }
+        .periods { display: flex; flex-wrap: wrap; gap: 6px; }
+        .periods button { padding: 5px 10px; }
+        /* grafikon je 640 jedinica širok i na telefonu se smanji skoro dvaput: natpisi bi bili ~7px */
+        .chart .lbl { font-size: 21px; }
+        .sections { columns: 1; }
+        footer .info { margin-left: 0; }
+      }
+      /* prst umesto miša (i telefon položen vodoravno, širi od 600px): mete bar 32px */
+      @media (pointer: coarse) {
+        /* padding, ne width: tabela u uskoj koloni sabija ćelije ispod zadate širine, padding ne */
+        .rows .pick { padding: 4px 8px; }
+        .legend .x { padding: 4px 10px; }
+        .rows .isin { display: none; }
+        #theme .caret, #theme .mode { min-width: 30px; justify-content: center; }
+      }
+      /* najuži telefoni (iPhone SE 1. gen., 320px) */
+      @media (max-width: 380px) {
+        :root .bar h1 { font-size: 16px !important; }
+        /* uz šira slova nekih tema četiri kolone brojeva ne staju u 300px: promet se vidi u detaljima */
+        .shares :is(th, td):nth-child(5) { display: none; }
+        .bar nav { gap: 4px; }
+        .bar nav button { padding: 6px 7px; }
+        #theme { padding: 0; }
+        #theme .cur, #theme .mode, #theme .caret { padding: 6px 6px; }
+        #theme .caret, #theme .mode { min-width: 26px; }
+      }
+
+      /* ---- osećaj mobilne aplikacije ---- */
+      /* donja traka sa tabovima: samo na telefonu (uspravno ili položeno); tada je umesto dugmeta #nav u headeru */
+      #tabs { display: none; }
+      @media (max-width: 600px), (pointer: coarse) and (max-height: 500px) {
+        #nav { display: none; }
+        /* id u selektoru: jače od tema ([data-theme=…] button) */
+        #tabs { display: flex; position: fixed; z-index: 30; left: 0; right: 0; bottom: 0;
+                background: var(--card); border-top: 1px solid var(--edge); box-shadow: 0 -4px 16px rgba(0, 0, 0, .08);
+                padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+        #tabs button { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+                       min-height: 52px; padding: 6px 4px 4px; margin: 0; border: 0; border-radius: 0; background: transparent;
+                       box-shadow: none; color: var(--faint); font: 11px/1.2 var(--font); letter-spacing: normal;
+                       text-transform: none; transform: none; }
+        #tabs .ico { font-size: 20px; line-height: 1; }
+        #tabs button.on { color: var(--accent); font-weight: 600; }
+        #tabs button:active { opacity: .6; }
+        /* sadržaj ne ide ispod trake */
+        .app { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+      }
+      @media (pointer: coarse) {
+        /* bez „gumenog“ skrola na krajevima strane i bez označavanja teksta i menija dugim pritiskom (osim u polju) */
+        html, body { overscroll-behavior: none; }
+        body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+        input { -webkit-user-select: text; user-select: text; }
+        /* odziv na dodir: dugme se malo utisne, red zatamni */
+        button { transition: transform .08s ease-out; }
+        button:active, #theme span:active { transform: scale(.94); }
+        .click:active, tr[data-action]:active { background: var(--hot); }
+      }
+      /* prelaz između ekrana (pregled, lista): novi ekran blago uđe; klasu enter daje klijent samo pri promeni ekrana
+         (HTML se menja ceo na svaki render, pa bi animacija na main krenula i na izbor vrste ili sortiranje) */
+      @media (prefers-reduced-motion: no-preference) {
+        main.enter { animation: screen-in .18s ease-out; }
+      }
+      @keyframes screen-in { from { opacity: 0; transform: translateY(8px); } }
+    </style>
+  <link rel="modulepreload" href="./client-1bb5e0d9b4441f84.js" crossorigin="anonymous" integrity="sha384-MPaKRpEmm7tlp3VLBn7BlOJkdNkhMb6Wc6iq9HKrP4v7Q6e5jKbOSfV+909uxC+q"><link rel="preload" href="./client-ce920ed8923981d0_bg.wasm" crossorigin="anonymous" integrity="sha384-YnDwtf11+xxmwHGr/9cq6ruoGpr0gaPdRfMAMKxr5fEDFsDhGLhyd+8vDPbFQl02" as="fetch" type="application/wasm"></head>
+  <body>
+    <div id="app">…</div>
+    <div id="tip" hidden></div>
+    <div id="themes" role="menu" hidden></div>
+  </body>
+</html>

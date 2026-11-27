@@ -1,0 +1,14 @@
+/* tema patuljci (Dwarves): generisana, tools/teme.py */
+:root[data-theme="patuljci"] { color-scheme: dark; --back: #160d05; --card: #221912; --head: #2e251f; --edge: #393029; --alt: #281f18; --text1: #efe7e3; --text2: #b9b0ac; --faint: #877e78; --up: #4ade80; --down: #f87171; --accent: #b45309; --hot: #362111; --tip: #efe7e3; --tipfg: #160d05; --accentfg: #ffffff; --font: Rockwell, "Roboto Slab", "Courier New", serif; --radius: 4px; }
+[data-theme="patuljci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="patuljci"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="patuljci"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="patuljci"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="patuljci"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="patuljci"] body { background: linear-gradient(rgba(180,83,9,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(180,83,9,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(180,83,9,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #160d05; background-attachment: fixed; }
+[data-theme="patuljci"] .big .value, [data-theme="patuljci"] .detail .price { font-weight: 400; }
+[data-theme="patuljci"] .chart .line { stroke-width: 3; }
+[data-theme="patuljci"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="patuljci"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efedec; --edge: #d2cfce; --alt: #f5f4f3; --text1: #322219; --text2: #62564f; --faint: #8e8580; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f1e3d8; --tip: #322219; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="patuljci"][data-scheme="light"] body { background: linear-gradient(rgba(180,83,9,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(180,83,9,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(180,83,9,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #f1f0f0; background-attachment: fixed; }

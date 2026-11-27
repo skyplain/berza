@@ -1,0 +1,15 @@
+/* tema fatamorgana (Mirage): generisana, tools/teme.py */
+:root[data-theme="fatamorgana"] { color-scheme: light; --back: #fdf4e3; --card: #fefcf7; --head: #f2f0ea; --edge: #ded4c3; --alt: #f8f6f0; --text1: #3d2f19; --text2: #6d604c; --faint: #928672; --up: #15803d; --down: #c81e1e; --accent: #be7a08; --hot: #f5ead6; --tip: #3d2f19; --tipfg: #fdf4e3; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="fatamorgana"] :is(.overview .left, .block, .detail, .list) { background: rgba(254,252,247,0.6); border: 1px solid rgba(61,47,25,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="fatamorgana"] .overview .left { align-self: start; }
+[data-theme="fatamorgana"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fatamorgana"] button { border-radius: 999px; background: transparent; }
+[data-theme="fatamorgana"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="fatamorgana"] body { background: linear-gradient(0deg, rgba(190,122,8,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(190,122,8,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px, radial-gradient(circle at 50% 100%, transparent 8px, rgba(190,122,8,0.14) 9px 10px, transparent 11px 16px, rgba(190,122,8,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #fdf4e3; background-attachment: fixed; }
+[data-theme="fatamorgana"] .big .value, [data-theme="fatamorgana"] .detail .price { font-weight: 400; }
+[data-theme="fatamorgana"] .chart .line { stroke-width: 2; }
+[data-theme="fatamorgana"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="fatamorgana"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444343; --alt: #343435; --text1: #f4ede3; --text2: #c0bab4; --faint: #908c88; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #4a3e2b; --tip: #f4ede3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="fatamorgana"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,46,48,0.6); border: 1px solid rgba(244,237,227,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="fatamorgana"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(245,158,11,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(245,158,11,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px, radial-gradient(circle at 50% 100%, transparent 8px, rgba(245,158,11,0.14) 9px 10px, transparent 11px 16px, rgba(245,158,11,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #232325; background-attachment: fixed; }

@@ -1,0 +1,18 @@
+/* tema kreativnost (Creativity): generisana, tools/teme.py */
+:root[data-theme="kreativnost"] { color-scheme: light; --back: #fffaf4; --card: #fff6f2; --head: #f3e9e6; --edge: #e0d7d5; --alt: #f9f0ec; --text1: #3c2032; --text2: #6d5662; --faint: #9a898f; --up: #15803d; --down: #c81e1e; --accent: #ec4899; --hot: #fcdee6; --tip: #3c2032; --tipfg: #fffaf4; --accentfg: #111111; --font: "Marker Felt", "Segoe Print", "Comic Sans MS", cursive; --radius: 0px; }
+[data-theme="kreativnost"] :is(.overview .left, .block, .detail, .list) { background: rgba(255,246,242,0.6); border: 1px solid rgba(60,32,50,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="kreativnost"] .overview .left { align-self: start; }
+[data-theme="kreativnost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kreativnost"] button { border-radius: 999px; background: transparent; }
+[data-theme="kreativnost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kreativnost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kreativnost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kreativnost"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kreativnost"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(236,72,153,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(153,236,72,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(72,153,236,0.14), transparent 70%), radial-gradient(rgba(236,72,153,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(153,236,72,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(72,153,236,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #fffaf4; background-attachment: fixed; }
+[data-theme="kreativnost"] .big .value, [data-theme="kreativnost"] .detail .price { font-weight: 700; }
+[data-theme="kreativnost"] .chart .line { stroke-width: 2; }
+[data-theme="kreativnost"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kreativnost"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #444347; --alt: #343438; --text1: #f3e6ef; --text2: #bfb6bd; --faint: #8f898f; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #493240; --tip: #f3e6ef; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="kreativnost"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,47,50,0.6); border: 1px solid rgba(243,230,239,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="kreativnost"][data-scheme="dark"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(236,72,153,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(153,236,72,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(72,153,236,0.14), transparent 70%), radial-gradient(rgba(236,72,153,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(153,236,72,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(72,153,236,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #232427; background-attachment: fixed; }

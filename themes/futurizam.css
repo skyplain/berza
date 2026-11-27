@@ -1,0 +1,17 @@
+/* tema futurizam (Futurism): generisana, tools/teme.py */
+:root[data-theme="futurizam"] { color-scheme: light; --back: #fff3ed; --card: #fffbfa; --head: #f3eeec; --edge: #e0d2cb; --alt: #f9f4f3; --text1: #3f2217; --text2: #6f564c; --faint: #9b867e; --up: #15803d; --down: #c81e1e; --accent: #eb4e00; --hot: #fce3d7; --tip: #3f2217; --tipfg: #fff3ed; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="futurizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="futurizam"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="futurizam"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="futurizam"] .bar h1 { font-weight: 800; }
+[data-theme="futurizam"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="futurizam"] body { background: linear-gradient(125deg, rgba(235,78,0,0.13) 0 28%, transparent 28%); background-color: #fff3ed; background-attachment: fixed; }
+[data-theme="futurizam"] :is(h2, h3) { border-left: 8px solid #eb4e00; padding-left: 8px; }
+[data-theme="futurizam"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="futurizam"] .big .value, [data-theme="futurizam"] .detail .price { font-weight: 900; }
+[data-theme="futurizam"] .chart .line { stroke-width: 3; }
+[data-theme="futurizam"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="futurizam"][data-scheme="dark"] { color-scheme: dark; --back: #26140e; --card: #31201a; --head: #3d2c26; --edge: #473630; --alt: #372620; --text1: #f5e7e2; --text2: #c1b2ad; --faint: #92827c; --up: #4ade80; --down: #f87171; --accent: #ff5500; --hot: #4e2716; --tip: #f5e7e2; --tipfg: #26140e; --accentfg: #111111; }
+[data-theme="futurizam"][data-scheme="dark"] body { background: linear-gradient(125deg, rgba(255,85,0,0.13) 0 28%, transparent 28%); background-color: #26140e; background-attachment: fixed; }
+[data-theme="futurizam"][data-scheme="dark"] :is(h2, h3) { border-left: 8px solid #ff5500; padding-left: 8px; }

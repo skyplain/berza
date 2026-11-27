@@ -1,0 +1,16 @@
+/* tema fabrika (Factory): generisana, tools/teme.py */
+:root[data-theme="fabrika"] { color-scheme: dark; --back: #1c1a14; --card: #272520; --head: #33312c; --edge: #3d3b35; --alt: #2d2b26; --text1: #ede8e3; --text2: #b9b4af; --faint: #898580; --up: #4ade80; --down: #f87171; --accent: #a16207; --hot: #382e1c; --tip: #ede8e3; --tipfg: #1c1a14; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 4px; }
+[data-theme="fabrika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="fabrika"] .overview .left { align-self: start; }
+[data-theme="fabrika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fabrika"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="fabrika"] body { background: linear-gradient(125deg, rgba(161,98,7,0.13) 0 28%, transparent 28%); background-color: #1c1a14; background-attachment: fixed; }
+[data-theme="fabrika"] :is(h2, h3) { border-left: 8px solid #a16207; padding-left: 8px; }
+[data-theme="fabrika"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="fabrika"] .big .value, [data-theme="fabrika"] .detail .price { font-weight: 900; }
+[data-theme="fabrika"] .chart .line { stroke-width: 3; }
+[data-theme="fabrika"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="fabrika"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efeeed; --edge: #d2d0ce; --alt: #f5f5f4; --text1: #2e2418; --text2: #5f574e; --faint: #8c8680; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #eee6d9; --tip: #2e2418; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="fabrika"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="fabrika"][data-scheme="light"] body { background: linear-gradient(125deg, rgba(161,98,7,0.13) 0 28%, transparent 28%); background-color: #f1f1f1; background-attachment: fixed; }

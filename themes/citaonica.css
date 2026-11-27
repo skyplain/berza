@@ -1,0 +1,18 @@
+/* tema čitaonica (Reading room): generisana, tools/teme.py */
+:root[data-theme="citaonica"] { color-scheme: light; --back: #f5f0e1; --card: #fcfaf6; --head: #eeede9; --edge: #d1cfc2; --alt: #f5f4f0; --text1: #15221f; --text2: #4d5650; --faint: #81857c; --up: #15803d; --down: #c81e1e; --accent: #14532d; --hot: #dce3da; --tip: #15221f; --tipfg: #f5f0e1; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="citaonica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="citaonica"] .overview .left { align-self: start; }
+[data-theme="citaonica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="citaonica"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="citaonica"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="citaonica"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="citaonica"] .bar button { background: transparent; color: var(--back); border-color: rgba(245,240,225,0.35); box-shadow: none; }
+[data-theme="citaonica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="citaonica"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(20,83,45,0.2) 27px 28px); background-color: #f5f0e1; background-attachment: fixed; }
+[data-theme="citaonica"] .big .value, [data-theme="citaonica"] .detail .price { font-weight: 200; }
+[data-theme="citaonica"] .chart .line { stroke-width: 2.5; }
+[data-theme="citaonica"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="citaonica"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #414244; --alt: #323435; --text1: #e2e7e6; --text2: #b2b6b6; --faint: #868989; --up: #4ade80; --down: #f87171; --accent: #548064; --hot: #323937; --tip: #e2e7e6; --tipfg: #222325; --accentfg: #ffffff; }
+[data-theme="citaonica"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,37,0.35); box-shadow: none; }
+[data-theme="citaonica"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(84,128,100,0.2) 27px 28px); background-color: #222325; background-attachment: fixed; }

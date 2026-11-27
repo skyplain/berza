@@ -1,0 +1,12 @@
+/* tema pagoda (Pagoda): generisana, tools/teme.py */
+:root[data-theme="pagoda"] { color-scheme: light; --back: #f8efe0; --card: #fdfaf6; --head: #f1ece9; --edge: #d8cdc1; --alt: #f7f3ef; --text1: #31191d; --text2: #634e4e; --faint: #91807b; --up: #15803d; --down: #c81e1e; --accent: #b22222; --hot: #f2dcd8; --tip: #31191d; --tipfg: #f8efe0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="pagoda"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pagoda"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="pagoda"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="pagoda"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(178,34,34,0.14) 9px 10px, transparent 11px 16px, rgba(178,34,34,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f8efe0; background-attachment: fixed; }
+[data-theme="pagoda"] .big .value, [data-theme="pagoda"] .detail .price { font-weight: 700; }
+[data-theme="pagoda"] .chart .line { stroke-width: 1.5; }
+[data-theme="pagoda"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pagoda"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444244; --alt: #343335; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #c76161; --hot: #433537; --tip: #efe3e5; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="pagoda"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(199,97,97,0.14) 9px 10px, transparent 11px 16px, rgba(199,97,97,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #232325; background-attachment: fixed; }

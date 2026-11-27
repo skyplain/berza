@@ -1,0 +1,18 @@
+/* tema švajcarski stil (Swiss Style): generisana, tools/teme.py */
+:root[data-theme="svajcarskistil"] { color-scheme: light; --back: #fefefe; --card: #fdf9f9; --head: #f1ebec; --edge: #dfd9da; --alt: #f7f2f2; --text1: #3a141a; --text2: #6b4e53; --faint: #988487; --up: #15803d; --down: #c81e1e; --accent: #e30613; --hot: #f9d7d9; --tip: #3a141a; --tipfg: #fefefe; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="svajcarskistil"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="svajcarskistil"] .overview .left { align-self: start; }
+[data-theme="svajcarskistil"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svajcarskistil"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="svajcarskistil"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="svajcarskistil"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="svajcarskistil"] body { background: repeating-linear-gradient(90deg, rgba(58,20,26,0.04) 0 1px, transparent 1px 120px); background-color: #fefefe; background-attachment: fixed; }
+[data-theme="svajcarskistil"] .bar { border-bottom: 8px solid #e30613; }
+[data-theme="svajcarskistil"] .bar h1 { font-size: 30px; font-weight: 800; letter-spacing: -.03em; }
+[data-theme="svajcarskistil"] .big .value, [data-theme="svajcarskistil"] .detail .price { font-weight: 200; }
+[data-theme="svajcarskistil"] .chart .line { stroke-width: 2; }
+[data-theme="svajcarskistil"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="svajcarskistil"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3e; --edge: #444246; --alt: #343438; --text1: #f3e1e4; --text2: #bfb2b5; --faint: #8f868a; --up: #4ade80; --down: #f87171; --accent: #e93c47; --hot: #483136; --tip: #f3e1e4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="svajcarskistil"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(243,225,228,0.04) 0 1px, transparent 1px 120px); background-color: #232428; background-attachment: fixed; }
+[data-theme="svajcarskistil"][data-scheme="dark"] .bar { border-bottom: 8px solid #e93c47; }

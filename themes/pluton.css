@@ -1,0 +1,20 @@
+/* tema pluton (Pluto): generisana, tools/teme.py */
+:root[data-theme="pluton"] { color-scheme: dark; --back: #151311; --card: #211f1d; --head: #2e2c2a; --edge: #383635; --alt: #272523; --text1: #f2f0f0; --text2: #bbb9b8; --faint: #888685; --up: #4ade80; --down: #f87171; --accent: #d6c4a8; --hot: #3a3630; --tip: #f2f0f0; --tipfg: #151311; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="pluton"] :is(.overview .left, .block, .detail, .list) { background: #1d1b19; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="pluton"] .overview .left { align-self: start; }
+[data-theme="pluton"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pluton"] button { border: 0; }
+[data-theme="pluton"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pluton"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="pluton"] .bar button { background: transparent; color: var(--back); border-color: rgba(21,19,17,0.35); box-shadow: none; }
+[data-theme="pluton"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="pluton"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="pluton"] body { background: radial-gradient(circle at 30% 30%, transparent 12px, rgba(242,240,240,0.08) 13px 15px, transparent 16px) 0 0 / 90px 90px, radial-gradient(circle at 70% 60%, transparent 6px, rgba(242,240,240,0.07) 7px 8px, transparent 9px) 0 0 / 55px 55px; background-color: #151311; background-attachment: fixed; }
+[data-theme="pluton"] .big .value, [data-theme="pluton"] .detail .price { font-weight: 400; }
+[data-theme="pluton"] .chart .line { stroke-width: 3; }
+[data-theme="pluton"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pluton"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefef; --edge: #d3d3d3; --alt: #f5f5f5; --text1: #383635; --text2: #666564; --faint: #8a8988; --up: #15803d; --down: #c81e1e; --accent: #8e826f; --hot: #eceae7; --tip: #383635; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="pluton"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #ebeaea; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="pluton"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,241,241,0.35); box-shadow: none; }
+[data-theme="pluton"][data-scheme="light"] body { background: radial-gradient(circle at 30% 30%, transparent 12px, rgba(56,54,53,0.08) 13px 15px, transparent 16px) 0 0 / 90px 90px, radial-gradient(circle at 70% 60%, transparent 6px, rgba(56,54,53,0.07) 7px 8px, transparent 9px) 0 0 / 55px 55px; background-color: #f1f1f1; background-attachment: fixed; }

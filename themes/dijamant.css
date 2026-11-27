@@ -1,0 +1,17 @@
+/* tema dijamant (Diamond): generisana, tools/teme.py */
+:root[data-theme="dijamant"] { color-scheme: light; --back: #f8fdff; --card: #f6fcff; --head: #eaf0f4; --edge: #d7dee1; --alt: #f0f6f9; --text1: #283944; --text2: #5c6a73; --faint: #848f97; --up: #15803d; --down: #c81e1e; --accent: #538ba6; --hot: #dfecf3; --tip: #283944; --tipfg: #f8fdff; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="dijamant"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="dijamant"] .overview .left { align-self: start; }
+[data-theme="dijamant"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dijamant"] button { border-radius: 999px; }
+[data-theme="dijamant"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="dijamant"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="dijamant"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="dijamant"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(83,139,166,0.08) 40% 46%, transparent 46%); background-color: #f8fdff; background-attachment: fixed; }
+[data-theme="dijamant"] .big .value, [data-theme="dijamant"] .detail .price { font-weight: 700; }
+[data-theme="dijamant"] .chart .line { stroke-width: 1.5; }
+[data-theme="dijamant"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dijamant"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393b3f; --edge: #434549; --alt: #343539; --text1: #eaf1f6; --text2: #b8bec2; --faint: #8a8f93; --up: #4ade80; --down: #f87171; --accent: #7dd3fc; --hot: #39464f; --tip: #eaf1f6; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="dijamant"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="dijamant"][data-scheme="dark"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(125,211,252,0.08) 40% 46%, transparent 46%); background-color: #232428; background-attachment: fixed; }

@@ -1,0 +1,20 @@
+/* tema hrom (Chrome): generisana, tools/teme.py */
+:root[data-theme="hrom"] { color-scheme: light; --back: #f2f4f7; --card: #fbfcfd; --head: #eeeff0; --edge: #d0d2d6; --alt: #f4f5f7; --text1: #1e222a; --text2: #53565d; --faint: #84878c; --up: #15803d; --down: #c81e1e; --accent: #475569; --hot: #e2e5e8; --tip: #1e222a; --tipfg: #f2f4f7; --accentfg: #ffffff; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 4px; }
+[data-theme="hrom"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="hrom"] .overview .left { align-self: start; }
+[data-theme="hrom"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hrom"] button { border-radius: 999px; }
+[data-theme="hrom"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="hrom"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="hrom"] .bar button { background: transparent; color: var(--back); border-color: rgba(242,244,247,0.35); box-shadow: none; }
+[data-theme="hrom"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="hrom"] .bar h1 { background: linear-gradient(180deg, #ffffff 0%, #b8c2cc 45%, #4b5563 50%, #e5e7eb 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: .5px rgba(30,34,42,0.4); }
+[data-theme="hrom"] button { background: linear-gradient(180deg, #ffffff, #d1d5db 50%, #9ca3af 51%, #f3f4f6); color: #111111; }
+[data-theme="hrom"] .big .value, [data-theme="hrom"] .detail .price { font-weight: 200; }
+[data-theme="hrom"] .chart .line { stroke-width: 2.5; }
+[data-theme="hrom"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="hrom"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414246; --alt: #333438; --text1: #e6e7eb; --text2: #b5b6ba; --faint: #88898d; --up: #4ade80; --down: #f87171; --accent: #76808f; --hot: #37393f; --tip: #e6e7eb; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="hrom"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="hrom"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,39,0.35); box-shadow: none; }
+[data-theme="hrom"][data-scheme="dark"] .bar h1 { background: linear-gradient(180deg, #ffffff 0%, #b8c2cc 45%, #4b5563 50%, #e5e7eb 100%); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: .5px rgba(230,231,235,0.4); }

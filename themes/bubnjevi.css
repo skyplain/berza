@@ -1,0 +1,17 @@
+/* tema bubnjevi (Drums): generisana, tools/teme.py */
+:root[data-theme="bubnjevi"] { color-scheme: dark; --back: #0e0d0d; --card: #1a1919; --head: #272525; --edge: #322f30; --alt: #201f1f; --text1: #f2e4e5; --text2: #b9aeaf; --faint: #857d7d; --up: #4ade80; --down: #f87171; --accent: #dc2626; --hot: #351b1b; --tip: #f2e4e5; --tipfg: #0e0d0d; --accentfg: #ffffff; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 0px; }
+[data-theme="bubnjevi"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="bubnjevi"] .overview .left { align-self: start; }
+[data-theme="bubnjevi"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bubnjevi"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="bubnjevi"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bubnjevi"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="bubnjevi"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="bubnjevi"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="bubnjevi"] body { background: repeating-radial-gradient(circle at 92% 92%, rgba(242,228,229,0.05) 0 1px, transparent 1px 4px), radial-gradient(circle at 92% 92%, rgba(220,38,38,0.35) 0 46px, transparent 47px); background-color: #0e0d0d; background-attachment: fixed; }
+[data-theme="bubnjevi"] .big .value, [data-theme="bubnjevi"] .detail .price { font-weight: 200; }
+[data-theme="bubnjevi"] .chart .line { stroke-width: 1.5; }
+[data-theme="bubnjevi"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bubnjevi"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #eeeded; --edge: #d3cece; --alt: #f4f3f3; --text1: #391a1e; --text2: #675052; --faint: #918183; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f6dcdc; --tip: #391a1e; --tipfg: #f0f0f0; --accentfg: #ffffff; }
+[data-theme="bubnjevi"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 92% 92%, rgba(57,26,30,0.05) 0 1px, transparent 1px 4px), radial-gradient(circle at 92% 92%, rgba(220,38,38,0.35) 0 46px, transparent 47px); background-color: #f0f0f0; background-attachment: fixed; }

@@ -1,0 +1,22 @@
+/* tema metro stanica (Metro station): generisana, tools/teme.py */
+:root[data-theme="metrostanica"] { color-scheme: light; --back: #f8f9fb; --card: #fdfdfe; --head: #f1eff1; --edge: #dad5d9; --alt: #f7f6f7; --text1: #3a1824; --text2: #6a505a; --faint: #95848b; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #f9dee5; --tip: #3a1824; --tipfg: #f8f9fb; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 4px; }
+[data-theme="metrostanica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="metrostanica"] .overview .left { align-self: start; }
+[data-theme="metrostanica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="metrostanica"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="metrostanica"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="metrostanica"] .bar button { background: transparent; color: var(--back); border-color: rgba(248,249,251,0.35); box-shadow: none; }
+[data-theme="metrostanica"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="metrostanica"] body { background: linear-gradient(90deg, transparent 30%, rgba(225,29,72,0.18) 30% calc(30% + 6px), transparent calc(30% + 6px)), linear-gradient(0deg, transparent 62%, rgba(72,225,29,0.16) 62% calc(62% + 6px), transparent calc(62% + 6px)); background-color: #f8f9fb; background-attachment: fixed; }
+[data-theme="metrostanica"] :is(h2, h3)::before { content: "● "; color: #e11d48; }
+[data-theme="metrostanica"] .bar { border-bottom: 6px solid #e11d48; }
+[data-theme="metrostanica"] .big .value, [data-theme="metrostanica"] .detail .price { font-weight: 200; }
+[data-theme="metrostanica"] .chart .line { stroke-width: 2; }
+[data-theme="metrostanica"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="metrostanica"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3e; --edge: #444347; --alt: #343438; --text1: #f2e3e8; --text2: #beb3b8; --faint: #8f878c; --up: #4ade80; --down: #f87171; --accent: #e4375e; --hot: #473039; --tip: #f2e3e8; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="metrostanica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="metrostanica"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="metrostanica"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent 30%, rgba(228,55,94,0.18) 30% calc(30% + 6px), transparent calc(30% + 6px)), linear-gradient(0deg, transparent 62%, rgba(72,225,29,0.16) 62% calc(62% + 6px), transparent calc(62% + 6px)); background-color: #232428; background-attachment: fixed; }
+[data-theme="metrostanica"][data-scheme="dark"] :is(h2, h3)::before { content: "● "; color: #e4375e; }
+[data-theme="metrostanica"][data-scheme="dark"] .bar { border-bottom: 6px solid #e4375e; }

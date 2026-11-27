@@ -1,0 +1,14 @@
+/* tema arhitektonski nacrt (Architect's drawing): generisana, tools/teme.py */
+:root[data-theme="arhitektonskinacrt"] { color-scheme: light; --back: #f8fafc; --card: #f4f6fa; --head: #e7e9ee; --edge: #d4d7db; --alt: #edeff4; --text1: #171d30; --text2: #4f5463; --faint: #838792; --up: #15803d; --down: #c81e1e; --accent: #1e3a8a; --hot: #d6dcea; --tip: #171d30; --tipfg: #f8fafc; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="arhitektonskinacrt"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="arhitektonskinacrt"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="arhitektonskinacrt"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="arhitektonskinacrt"] .bar h1 { font-weight: 800; }
+[data-theme="arhitektonskinacrt"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="arhitektonskinacrt"] body { background: linear-gradient(rgba(30,58,138,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(30,58,138,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(30,58,138,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(30,58,138,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #f8fafc; background-attachment: fixed; }
+[data-theme="arhitektonskinacrt"] .big .value, [data-theme="arhitektonskinacrt"] .detail .price { font-weight: 200; }
+[data-theme="arhitektonskinacrt"] .chart .line { stroke-width: 2.5; }
+[data-theme="arhitektonskinacrt"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="arhitektonskinacrt"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424348; --alt: #333439; --text1: #e3e5ed; --text2: #b3b5bc; --faint: #87888e; --up: #4ade80; --down: #f87171; --accent: #6b7cb2; --hot: #373a45; --tip: #e3e5ed; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="arhitektonskinacrt"][data-scheme="dark"] body { background: linear-gradient(rgba(107,124,178,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(107,124,178,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(107,124,178,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(107,124,178,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #232428; background-attachment: fixed; }

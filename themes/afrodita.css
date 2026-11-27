@@ -1,0 +1,17 @@
+/* tema afrodita (Aphrodite): generisana, tools/teme.py */
+:root[data-theme="afrodita"] { color-scheme: light; --back: #fff5f8; --card: #fffcfd; --head: #f3eff1; --edge: #e0d4d9; --alt: #f9f6f7; --text1: #3d2738; --text2: #6e5a68; --faint: #9a8a94; --up: #15803d; --down: #c81e1e; --accent: #ce619a; --hot: #f8e6ef; --tip: #3d2738; --tipfg: #fff5f8; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="afrodita"] :is(.overview .left, .block, .detail, .list) { background: #f8eef1; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="afrodita"] .overview .left { align-self: start; }
+[data-theme="afrodita"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="afrodita"] button { border: 0; }
+[data-theme="afrodita"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="afrodita"] .bar h1 { font-size: 24px; }
+[data-theme="afrodita"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="afrodita"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(206,97,154,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(182,244,114,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #fff5f8; background-attachment: fixed; }
+[data-theme="afrodita"] .big .value, [data-theme="afrodita"] .detail .price { font-weight: 200; }
+[data-theme="afrodita"] .chart .line { stroke-width: 2.5; }
+[data-theme="afrodita"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="afrodita"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444347; --alt: #343438; --text1: #f4eaf1; --text2: #c0b8be; --faint: #908a90; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #4a3844; --tip: #f4eaf1; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="afrodita"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2a2a2e; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="afrodita"][data-scheme="dark"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(244,114,182,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(182,244,114,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #232327; background-attachment: fixed; }

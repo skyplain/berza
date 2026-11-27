@@ -1,0 +1,10 @@
+/* tema zahvalnost (Gratitude): generisana, tools/teme.py */
+:root[data-theme="zahvalnost"] { color-scheme: light; --back: #fef7eb; --card: #fffdf9; --head: #f3f0ec; --edge: #ded6c9; --alt: #f9f7f2; --text1: #382818; --text2: #6a5c4d; --faint: #978b7d; --up: #15803d; --down: #c81e1e; --accent: #c86d06; --hot: #f7e9d7; --tip: #382818; --tipfg: #fef7eb; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="zahvalnost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zahvalnost"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="zahvalnost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="zahvalnost"] .big .value, [data-theme="zahvalnost"] .detail .price { font-weight: 400; }
+[data-theme="zahvalnost"] .chart .line { stroke-width: 3; }
+[data-theme="zahvalnost"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zahvalnost"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f2eae3; --text2: #beb8b4; --faint: #8f8b88; --up: #4ade80; --down: #f87171; --accent: #d97706; --hot: #46392b; --tip: #f2eae3; --tipfg: #232426; --accentfg: #111111; }

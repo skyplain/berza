@@ -1,0 +1,16 @@
+/* tema aluminijum (Aluminium): generisana, tools/teme.py */
+:root[data-theme="aluminijum"] { color-scheme: light; --back: #edeff1; --card: #fafafb; --head: #ededef; --edge: #cdcfd2; --alt: #f4f4f5; --text1: #232830; --text2: #565a60; --faint: #84888d; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e5e7eb; --tip: #232830; --tipfg: #edeff1; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="aluminijum"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="aluminijum"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="aluminijum"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="aluminijum"] .bar h1 { font-weight: 800; }
+[data-theme="aluminijum"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="aluminijum"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.4), transparent 40%); background-color: #edeff1; background-attachment: fixed; }
+[data-theme="aluminijum"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #fafafb, #fafafb); border: 1px solid rgba(35,40,48,0.18); }
+[data-theme="aluminijum"] .big .value, [data-theme="aluminijum"] .detail .price { font-weight: 900; }
+[data-theme="aluminijum"] .chart .line { stroke-width: 2.5; }
+[data-theme="aluminijum"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="aluminijum"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #424347; --alt: #333438; --text1: #e8eaed; --text2: #b6b8bc; --faint: #898a8e; --up: #4ade80; --down: #f87171; --accent: #707f94; --hot: #363940; --tip: #e8eaed; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="aluminijum"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.06), transparent 40%); background-color: #222327; background-attachment: fixed; }
+[data-theme="aluminijum"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #3e3f42, #2d2e32); border: 1px solid rgba(232,234,237,0.18); }

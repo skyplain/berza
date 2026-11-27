@@ -1,0 +1,19 @@
+/* tema meduza: generisana (paleta + oblik 4/1/2/7) */
+:root[data-theme="meduza"] { color-scheme: dark; --back: #120a24; --card: #1c1035; --head: #291d41; --edge: #362e47; --alt: #22163b; --text1: #f4e8ff; --text2: #b5aac2; --faint: #837992; --up: #4ade80; --down: #f87171; --accent: #ff6ec7; --hot: #3c1d49; --tip: #f4e8ff; --tipfg: #120a24; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="meduza"] :is(.overview .left, .block, .detail, .list) { background: rgba(28,16,53,0.6); border: 1px solid rgba(244,232,255,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="meduza"] .overview .left { align-self: start; }
+[data-theme="meduza"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="meduza"] button { border-radius: 999px; background: transparent; }
+[data-theme="meduza"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="meduza"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="meduza"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="meduza"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="meduza"] body { background: conic-gradient(rgba(244,232,255,0.025) 25%, transparent 0 50%, rgba(244,232,255,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #120a24; background-attachment: fixed; }
+[data-theme="meduza"] .big .value, [data-theme="meduza"] .detail .price { font-weight: 200; }
+[data-theme="meduza"] .chart .line { stroke-width: 1.5; }
+[data-theme="meduza"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="meduza"][data-scheme="light"] { color-scheme: light; --back: #eeeafe; --card: #e2dbfe; --head: #d3c7f6; --edge: #c1b8d7; --alt: #dbd1fd; --text1: #140c1b; --text2: #433a4e; --faint: #6f657e; --up: #15803d; --down: #c81e1e; --accent: #d446a1; --hot: #dbb6ec; --tip: #140c1b; --tipfg: #eeeafe; --accentfg: #111111; }
+[data-theme="meduza"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(226,219,254,0.6); border: 1px solid rgba(20,12,27,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="meduza"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="meduza"][data-scheme="light"] body { background: conic-gradient(rgba(20,12,27,0.025) 25%, transparent 0 50%, rgba(20,12,27,0.025) 0 75%, transparent 0) 0 0 / 40px 40px; background-color: #eeeafe; background-attachment: fixed; }

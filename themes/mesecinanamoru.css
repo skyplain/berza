@@ -1,0 +1,17 @@
+/* tema mesečina na moru (Moonlit sea): generisana, tools/teme.py */
+:root[data-theme="mesecinanamoru"] { color-scheme: dark; --back: #060d1a; --card: #121925; --head: #1f2631; --edge: #2c323d; --alt: #19202b; --text1: #f1f2f4; --text2: #b6b9be; --faint: #80848b; --up: #4ade80; --down: #f87171; --accent: #cbd5e1; --hot: #2c333f; --tip: #f1f2f4; --tipfg: #060d1a; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="mesecinanamoru"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="mesecinanamoru"] .overview .left { align-self: start; }
+[data-theme="mesecinanamoru"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mesecinanamoru"] button { border-radius: 999px; }
+[data-theme="mesecinanamoru"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="mesecinanamoru"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="mesecinanamoru"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mesecinanamoru"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(203,213,225,0.14) 9px 10px, transparent 11px 16px, rgba(203,213,225,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, radial-gradient(1px 1px at 20px 30px, rgba(241,242,244,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(203,213,225,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(241,242,244,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(241,242,244,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(203,213,225,0.8), transparent); background-color: #060d1a; background-attachment: fixed; }
+[data-theme="mesecinanamoru"] .big .value, [data-theme="mesecinanamoru"] .detail .price { font-weight: 700; }
+[data-theme="mesecinanamoru"] .chart .line { stroke-width: 3; }
+[data-theme="mesecinanamoru"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="mesecinanamoru"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeeef0; --edge: #d2d3d5; --alt: #f4f4f5; --text1: #36393f; --text2: #64676c; --faint: #888a8d; --up: #15803d; --down: #c81e1e; --accent: #7a8288; --hot: #e8e9eb; --tip: #36393f; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="mesecinanamoru"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mesecinanamoru"][data-scheme="light"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(122,130,136,0.14) 9px 10px, transparent 11px 16px, rgba(122,130,136,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, radial-gradient(1px 1px at 20px 30px, rgba(54,57,63,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(122,130,136,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(54,57,63,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(54,57,63,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(122,130,136,0.8), transparent); background-color: #f0f0f1; background-attachment: fixed; }

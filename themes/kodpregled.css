@@ -1,0 +1,17 @@
+/* tema kod pregled (Code review): generisana, tools/teme.py */
+:root[data-theme="kodpregled"] { color-scheme: light; --back: #f9f6fd; --card: #fdfcfe; --head: #f0eff3; --edge: #d8d4df; --alt: #f7f5f8; --text1: #29213f; --text2: #5d566e; --faint: #8d879a; --up: #15803d; --down: #c81e1e; --accent: #8250df; --hot: #ece4fa; --tip: #29213f; --tipfg: #f9f6fd; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="kodpregled"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kodpregled"] .overview .left { align-self: start; }
+[data-theme="kodpregled"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kodpregled"] button { border-radius: 999px; }
+[data-theme="kodpregled"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kodpregled"] .bar h1 { font-weight: 800; }
+[data-theme="kodpregled"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kodpregled"] :is(.overview .left, .block, .detail, .list) { position: relative; padding-top: 34px; }
+[data-theme="kodpregled"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #8250df; }
+[data-theme="kodpregled"] .big .value, [data-theme="kodpregled"] .detail .price { font-weight: 700; }
+[data-theme="kodpregled"] .chart .line { stroke-width: 2.5; }
+[data-theme="kodpregled"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kodpregled"][data-scheme="dark"] { color-scheme: dark; --back: #161223; --card: #221e2e; --head: #2e2a3a; --edge: #383444; --alt: #282434; --text1: #ebe7f4; --text2: #b6b2c0; --faint: #858190; --up: #4ade80; --down: #f87171; --accent: #8250df; --hot: #2f2547; --tip: #ebe7f4; --tipfg: #161223; --accentfg: #ffffff; }
+[data-theme="kodpregled"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

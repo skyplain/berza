@@ -1,0 +1,15 @@
+/* tema kristalografija (Crystallography): generisana, tools/teme.py */
+:root[data-theme="kristalografija"] { color-scheme: light; --back: #f3fbff; --card: #effaff; --head: #e2eef4; --edge: #d0dbe1; --alt: #e9f4f9; --text1: #1b3544; --text2: #516673; --faint: #7b8c97; --up: #15803d; --down: #c81e1e; --accent: #2c93c1; --hot: #d4ecf6; --tip: #1b3544; --tipfg: #f3fbff; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="kristalografija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="kristalografija"] .overview .left { align-self: start; }
+[data-theme="kristalografija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kristalografija"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kristalografija"] .bar h1 { font-weight: 800; }
+[data-theme="kristalografija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kristalografija"] body { background: repeating-linear-gradient(30deg, rgba(27,53,68,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(27,53,68,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(27,53,68,0.04) 0 1px, transparent 1px 45px); background-color: #f3fbff; background-attachment: fixed; }
+[data-theme="kristalografija"] .big .value, [data-theme="kristalografija"] .detail .price { font-weight: 900; }
+[data-theme="kristalografija"] .chart .line { stroke-width: 3; }
+[data-theme="kristalografija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kristalografija"][data-scheme="dark"] { color-scheme: dark; --back: #101e27; --card: #1c2932; --head: #28353e; --edge: #324048; --alt: #222f38; --text1: #e5f0f6; --text2: #b0bcc2; --faint: #7f8b93; --up: #4ade80; --down: #f87171; --accent: #38bdf8; --hot: #203e4e; --tip: #e5f0f6; --tipfg: #101e27; --accentfg: #111111; }
+[data-theme="kristalografija"][data-scheme="dark"] body { background: repeating-linear-gradient(30deg, rgba(229,240,246,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(229,240,246,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(229,240,246,0.04) 0 1px, transparent 1px 45px); background-color: #101e27; background-attachment: fixed; }

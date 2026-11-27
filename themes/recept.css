@@ -1,0 +1,15 @@
+/* tema recept (Recipe card): generisana, tools/teme.py */
+:root[data-theme="recept"] { color-scheme: light; --back: #fffaf0; --card: #fef7eb; --head: #f2ebde; --edge: #dfd8cd; --alt: #f8f1e5; --text1: #382818; --text2: #6a5c4e; --faint: #988d80; --up: #15803d; --down: #c81e1e; --accent: #c86d06; --hot: #f6e4cb; --tip: #382818; --tipfg: #fffaf0; --accentfg: #111111; --font: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; --radius: 4px; }
+[data-theme="recept"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="recept"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="recept"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="recept"] .bar h1 { font-weight: 800; }
+[data-theme="recept"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(200,109,6,0.2) 27px 28px); background-color: #fffaf0; background-attachment: fixed; }
+[data-theme="recept"] :is(.overview .left, .block, .detail, .list) { position: relative; }
+[data-theme="recept"] :is(.overview .left, .block, .detail)::after { content: ""; position: absolute; top: -10px; left: 50%; width: 90px; height: 22px; margin-left: -45px; background: rgba(255,247,194,0.65); transform: rotate(-3deg); box-shadow: 0 1px 2px rgba(0,0,0,.15); }
+[data-theme="recept"] .big .value, [data-theme="recept"] .detail .price { font-weight: 900; }
+[data-theme="recept"] .chart .line { stroke-width: 2; }
+[data-theme="recept"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="recept"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f2eae3; --text2: #beb8b4; --faint: #8f8b88; --up: #4ade80; --down: #f87171; --accent: #d97706; --hot: #46392b; --tip: #f2eae3; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="recept"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(217,119,6,0.2) 27px 28px); background-color: #232426; background-attachment: fixed; }

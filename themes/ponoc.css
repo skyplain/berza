@@ -1,0 +1,16 @@
+/* tema ponoć: teget, gusto kao profesionalni terminal, plavi akcenat */
+:root[data-theme="ponoc"] { color-scheme: dark; --back: #0b1220; --card: #0f1828; --head: #152036; --edge: #1f2c45; --alt: #0d1523; --text1: #dce6f5; --text2: #9fb0ca; --faint: #5f7190; --up: #22c55e; --down: #ef4444; --accent: #3b82f6; --hot: #16233b; --tip: #3b82f6; --tipfg: #fff; --accentfg: #fff; --font: "Inter",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: none; --h-color: #5f7190; --h-transform: uppercase; --h-spacing: .08em; --h-size: 11px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 600; }
+[data-theme="ponoc"] body { font-size:13.5px }
+[data-theme="ponoc"] td,[data-theme="ponoc"] th { padding:3px 6px }
+[data-theme="ponoc"] .bar { background:#0f1828;margin: 0 calc(-1 * var(--gut, 16px)) 14px;padding:8px var(--gut, 16px);border-bottom:1px solid var(--edge) }
+[data-theme="ponoc"] .bar h1::before { content:"● ";color:#22c55e;font-size:11px;vertical-align:middle }
+[data-theme="ponoc"] .chg.up::before,[data-theme="ponoc"] .chg.down::before { content:"" }
+[data-theme="ponoc"] .num { font-family:ui-monospace,Menlo,monospace;font-size:12.5px }
+[data-theme="ponoc"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="ponoc"] .overview .left { align-self: start; }
+[data-theme="ponoc"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="ponoc"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="ponoc"][data-scheme="light"] { color-scheme: light; --back: #e0ebff; --card: #d5e2f9; --head: #c6d6f4; --edge: #b5c7e7; --alt: #dbe7fb; --text1: #0f1620; --text2: #314055; --faint: #677999; --up: #15803d; --down: #c81e1e; --accent: #357cef; --hot: #c0d3f3; --tip: #357cef; --tipfg: #060606; --accentfg: #111111; --h-color: #677999; }
+[data-theme="ponoc"][data-scheme="light"] .bar { background:#d5e2f9;margin: 0 calc(-1 * var(--gut, 16px)) 14px;padding:8px var(--gut, 16px);border-bottom:1px solid var(--edge) }
+[data-theme="ponoc"][data-scheme="light"] .bar h1::before { content:"● ";color:#095625;font-size:11px;vertical-align:middle }

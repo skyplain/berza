@@ -1,0 +1,18 @@
+/* tema čarobnjak (Wizard): generisana, tools/teme.py */
+:root[data-theme="carobnjak"] { color-scheme: dark; --back: #07081c; --card: #131427; --head: #202133; --edge: #2b2c3f; --alt: #191a2d; --text1: #e8e9f6; --text2: #b0b1c0; --faint: #7c7d8d; --up: #4ade80; --down: #f87171; --accent: #5f62e7; --hot: #1e1f42; --tip: #e8e9f6; --tipfg: #07081c; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="carobnjak"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="carobnjak"] .overview .left { align-self: start; }
+[data-theme="carobnjak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="carobnjak"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="carobnjak"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="carobnjak"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="carobnjak"] .bar button { background: transparent; color: var(--back); border-color: rgba(7,8,28,0.35); box-shadow: none; }
+[data-theme="carobnjak"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="carobnjak"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(232,233,246,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(95,98,231,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(232,233,246,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(232,233,246,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(95,98,231,0.8), transparent); background-color: #07081c; background-attachment: fixed; }
+[data-theme="carobnjak"] .big .value, [data-theme="carobnjak"] .detail .price { font-weight: 200; }
+[data-theme="carobnjak"] .chart .line { stroke-width: 2; }
+[data-theme="carobnjak"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="carobnjak"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #ededf0; --edge: #cfd0d5; --alt: #f4f4f5; --text1: #232542; --text2: #56586e; --faint: #858696; --up: #15803d; --down: #c81e1e; --accent: #5f62e7; --hot: #e4e5f8; --tip: #232542; --tipfg: #f0f0f1; --accentfg: #ffffff; }
+[data-theme="carobnjak"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,241,0.35); box-shadow: none; }
+[data-theme="carobnjak"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(35,37,66,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(95,98,231,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(35,37,66,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(35,37,66,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(95,98,231,0.8), transparent); background-color: #f0f0f1; background-attachment: fixed; }

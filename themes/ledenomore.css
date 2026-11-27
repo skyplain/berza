@@ -1,0 +1,15 @@
+/* tema ledeno more (Icy sea): generisana, tools/teme.py */
+:root[data-theme="ledenomore"] { color-scheme: light; --back: #f5fbff; --card: #f3faff; --head: #e7eef4; --edge: #d4dce1; --alt: #edf4f9; --text1: #283944; --text2: #5b6a73; --faint: #828f97; --up: #15803d; --down: #c81e1e; --accent: #538ba6; --hot: #ddeaf3; --tip: #283944; --tipfg: #f5fbff; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="ledenomore"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="ledenomore"] .overview .left { align-self: start; }
+[data-theme="ledenomore"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ledenomore"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ledenomore"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ledenomore"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="ledenomore"] body { background: repeating-linear-gradient(30deg, rgba(40,57,68,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(40,57,68,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(40,57,68,0.04) 0 1px, transparent 1px 45px); background-color: #f5fbff; background-attachment: fixed; }
+[data-theme="ledenomore"] .big .value, [data-theme="ledenomore"] .detail .price { font-weight: 900; }
+[data-theme="ledenomore"] .chart .line { stroke-width: 2.5; }
+[data-theme="ledenomore"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ledenomore"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #424549; --alt: #333539; --text1: #eaf1f6; --text2: #b8bec2; --faint: #8a8f93; --up: #4ade80; --down: #f87171; --accent: #7dd3fc; --hot: #38464f; --tip: #eaf1f6; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="ledenomore"][data-scheme="dark"] body { background: repeating-linear-gradient(30deg, rgba(234,241,246,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(234,241,246,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(234,241,246,0.04) 0 1px, transparent 1px 45px); background-color: #222428; background-attachment: fixed; }

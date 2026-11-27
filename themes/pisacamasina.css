@@ -1,0 +1,12 @@
+/* tema pisaća mašina (Typewriter): generisana, tools/teme.py */
+:root[data-theme="pisacamasina"] { color-scheme: light; --back: #f3efe4; --card: #fbfaf7; --head: #edecea; --edge: #d0cdc4; --alt: #f4f3f0; --text1: #17191d; --text2: #4e4e4f; --faint: #81807d; --up: #15803d; --down: #c81e1e; --accent: #222222; --hot: #dddcd9; --tip: #17191d; --tipfg: #f3efe4; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 10px; }
+[data-theme="pisacamasina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="pisacamasina"] .overview .left { align-self: start; }
+[data-theme="pisacamasina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pisacamasina"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(34,34,34,0.2) 27px 28px); background-color: #f3efe4; background-attachment: fixed; }
+[data-theme="pisacamasina"] .big .value, [data-theme="pisacamasina"] .detail .price { font-weight: 900; }
+[data-theme="pisacamasina"] .chart .line { stroke-width: 3; }
+[data-theme="pisacamasina"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pisacamasina"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #414244; --alt: #323335; --text1: #e3e3e5; --text2: #b3b3b5; --faint: #868789; --up: #4ade80; --down: #f87171; --accent: #7f7f7f; --hot: #38393b; --tip: #e3e3e5; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="pisacamasina"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(127,127,127,0.2) 27px 28px); background-color: #222325; background-attachment: fixed; }

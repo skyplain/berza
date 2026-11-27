@@ -1,0 +1,17 @@
+/* tema strah (Fear): generisana, tools/teme.py */
+:root[data-theme="strah"] { color-scheme: dark; --back: #07040c; --card: #131118; --head: #201e25; --edge: #2b2831; --alt: #19171f; --text1: #eae5f5; --text2: #b1adbb; --faint: #7d7985; --up: #4ade80; --down: #f87171; --accent: #7c3aed; --hot: #221736; --tip: #eae5f5; --tipfg: #07040c; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="strah"] :is(.overview .left, .block, .detail, .list) { background: rgba(19,17,24,0.6); border: 1px solid rgba(234,229,245,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="strah"] .overview .left { align-self: start; }
+[data-theme="strah"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="strah"] button { border-radius: 999px; background: transparent; }
+[data-theme="strah"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="strah"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="strah"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="strah"] .bar { position: relative; }
+[data-theme="strah"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: radial-gradient(circle at 50% 0, #7c3aed 6px, transparent 7px) 0 0 / 22px 14px, radial-gradient(ellipse 4px 12px at 50% 0, #7c3aed 90%, transparent) 11px 0 / 37px 14px; }
+[data-theme="strah"] .big .value, [data-theme="strah"] .detail .price { font-weight: 900; }
+[data-theme="strah"] .chart .line { stroke-width: 3; }
+[data-theme="strah"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="strah"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #ededef; --edge: #d0ced4; --alt: #f4f3f4; --text1: #281d42; --text2: #5a526e; --faint: #888296; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #e8dff8; --tip: #281d42; --tipfg: #f0f0f0; --accentfg: #ffffff; }
+[data-theme="strah"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,250,250,0.6); border: 1px solid rgba(40,29,66,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }

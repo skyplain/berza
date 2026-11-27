@@ -1,0 +1,17 @@
+/* tema smederevo (Smederevo): generisana, tools/teme.py */
+:root[data-theme="smederevo"] { color-scheme: light; --back: #f1e7dc; --card: #fbf8f4; --head: #eeebe7; --edge: #d1c6bd; --alt: #f5f1ed; --text1: #281b1a; --text2: #5a4e4a; --faint: #887d77; --up: #15803d; --down: #c81e1e; --accent: #7c2d12; --hot: #e9dcd4; --tip: #281b1a; --tipfg: #f1e7dc; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="smederevo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="smederevo"] .overview .left { align-self: start; }
+[data-theme="smederevo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="smederevo"] button { border-radius: 999px; }
+[data-theme="smederevo"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="smederevo"] .bar h1 { font-weight: 800; }
+[data-theme="smederevo"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="smederevo"] body { background: linear-gradient(rgba(124,45,18,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(124,45,18,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(124,45,18,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #f1e7dc; background-attachment: fixed; }
+[data-theme="smederevo"] .big .value, [data-theme="smederevo"] .detail .price { font-weight: 900; }
+[data-theme="smederevo"] .chart .line { stroke-width: 3; }
+[data-theme="smederevo"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="smederevo"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424143; --alt: #333234; --text1: #eae4e4; --text2: #b8b4b4; --faint: #8a8788; --up: #4ade80; --down: #f87171; --accent: #a16855; --hot: #3d3534; --tip: #eae4e4; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="smederevo"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="smederevo"][data-scheme="dark"] body { background: linear-gradient(rgba(161,104,85,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(161,104,85,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(161,104,85,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222224; background-attachment: fixed; }

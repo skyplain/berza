@@ -1,0 +1,16 @@
+/* tema japanski papir (Washi): generisana, tools/teme.py */
+:root[data-theme="japanskipapir"] { color-scheme: light; --back: #f6f1e7; --card: #fcfbf8; --head: #f0eeeb; --edge: #d7cfc6; --alt: #f6f4f1; --text1: #341f19; --text2: #64544c; --faint: #91847c; --up: #15803d; --down: #c81e1e; --accent: #c2410c; --hot: #f4e1d7; --tip: #341f19; --tipfg: #f6f1e7; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="japanskipapir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="japanskipapir"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="japanskipapir"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="japanskipapir"] .bar h1 { font-size: 24px; }
+[data-theme="japanskipapir"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="japanskipapir"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(52,31,25,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(52,31,25,0.03) 0 1px, transparent 1px 5px); background-color: #f6f1e7; background-attachment: fixed; }
+[data-theme="japanskipapir"] :is(.overview .left, .block, .detail, .list) { position: relative; }
+[data-theme="japanskipapir"] :is(.overview .left, .block, .detail)::after { content: ""; position: absolute; top: -10px; left: 50%; width: 90px; height: 22px; margin-left: -45px; background: rgba(255,247,194,0.65); transform: rotate(-3deg); box-shadow: 0 1px 2px rgba(0,0,0,.15); }
+[data-theme="japanskipapir"] .big .value, [data-theme="japanskipapir"] .detail .price { font-weight: 700; }
+[data-theme="japanskipapir"] .chart .line { stroke-width: 1.5; }
+[data-theme="japanskipapir"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="japanskipapir"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #434244; --alt: #333436; --text1: #f0e6e3; --text2: #bcb5b4; --faint: #8d8888; --up: #4ade80; --down: #f87171; --accent: #cb5e31; --hot: #433531; --tip: #f0e6e3; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="japanskipapir"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(240,230,227,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(240,230,227,0.03) 0 1px, transparent 1px 5px); background-color: #222326; background-attachment: fixed; }

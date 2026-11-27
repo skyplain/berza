@@ -1,0 +1,18 @@
+/* tema hrizantema (Chrysanthemum): generisana, tools/teme.py */
+:root[data-theme="hrizantema"] { color-scheme: light; --back: #fff7eb; --card: #fffdf9; --head: #f3f0ec; --edge: #dfd6c9; --alt: #f9f7f2; --text1: #382818; --text2: #6a5c4d; --faint: #988b7d; --up: #15803d; --down: #c81e1e; --accent: #c86d06; --hot: #f7e9d7; --tip: #382818; --tipfg: #fff7eb; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="hrizantema"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="hrizantema"] .overview .left { align-self: start; }
+[data-theme="hrizantema"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hrizantema"] button { border-radius: 999px; }
+[data-theme="hrizantema"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="hrizantema"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="hrizantema"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="hrizantema"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="hrizantema"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(200,109,6,0.08) 0 6deg, transparent 6deg 12deg); background-color: #fff7eb; background-attachment: fixed; }
+[data-theme="hrizantema"] .big .value, [data-theme="hrizantema"] .detail .price { font-weight: 200; }
+[data-theme="hrizantema"] .chart .line { stroke-width: 2.5; }
+[data-theme="hrizantema"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="hrizantema"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f2eae3; --text2: #beb8b4; --faint: #8f8b88; --up: #4ade80; --down: #f87171; --accent: #d97706; --hot: #46392b; --tip: #f2eae3; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="hrizantema"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="hrizantema"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(217,119,6,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232426; background-attachment: fixed; }

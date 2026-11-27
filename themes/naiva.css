@@ -1,0 +1,17 @@
+/* tema naiva (Naive art): generisana, tools/teme.py */
+:root[data-theme="naiva"] { color-scheme: light; --back: #fef6e0; --card: #fffcf6; --head: #f1f0ea; --edge: #d9d6c4; --alt: #f8f6f0; --text1: #192f31; --text2: #52615d; --faint: #878f85; --up: #15803d; --down: #c81e1e; --accent: #279084; --hot: #e1ede6; --tip: #192f31; --tipfg: #fef6e0; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="naiva"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="naiva"] .overview .left { align-self: start; }
+[data-theme="naiva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="naiva"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="naiva"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="naiva"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="naiva"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="naiva"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="naiva"] body { background: radial-gradient(rgba(39,144,132,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(143,42,157,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(157,143,42,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #fef6e0; background-attachment: fixed; }
+[data-theme="naiva"] .big .value, [data-theme="naiva"] .detail .price { font-weight: 700; }
+[data-theme="naiva"] .chart .line { stroke-width: 3; }
+[data-theme="naiva"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="naiva"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #424345; --alt: #333436; --text1: #e4edee; --text2: #b4babc; --faint: #878c8e; --up: #4ade80; --down: #f87171; --accent: #2a9d8f; --hot: #2d3e3d; --tip: #e4edee; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="naiva"][data-scheme="dark"] body { background: radial-gradient(rgba(42,157,143,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(143,42,157,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(157,143,42,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #232325; background-attachment: fixed; }

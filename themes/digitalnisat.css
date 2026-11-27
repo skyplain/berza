@@ -1,0 +1,15 @@
+/* tema digitalni sat (Digital clock): generisana, tools/teme.py */
+:root[data-theme="digitalnisat"] { color-scheme: dark; --back: #120202; --card: #1e0f0f; --head: #2b1c1c; --edge: #362626; --alt: #241515; --text1: #f5e4e6; --text2: #bcacad; --faint: #887879; --up: #4ade80; --down: #f87171; --accent: #ff2b2b; --hot: #3e1313; --tip: #f5e4e6; --tipfg: #120202; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="digitalnisat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="digitalnisat"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="digitalnisat"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="digitalnisat"] .bar h1 { font-weight: 800; }
+[data-theme="digitalnisat"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="digitalnisat"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="digitalnisat"] .big .value { text-shadow: 0 0 18px rgba(255,43,43,0.55); }
+[data-theme="digitalnisat"] .chart .line { filter: drop-shadow(0 0 5px rgba(255,43,43,0.7)); }
+[data-theme="digitalnisat"] .big .value, [data-theme="digitalnisat"] .detail .price { font-weight: 200; }
+[data-theme="digitalnisat"] .chart .line { stroke-width: 3; }
+[data-theme="digitalnisat"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="digitalnisat"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #f0eded; --edge: #d5cecf; --alt: #f5f3f3; --text1: #3f1b1f; --text2: #6c5053; --faint: #948183; --up: #15803d; --down: #c81e1e; --accent: #ff2b2b; --hot: #fcdddd; --tip: #3f1b1f; --tipfg: #f1f0f0; --accentfg: #111111; }

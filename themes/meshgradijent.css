@@ -1,0 +1,17 @@
+/* tema mesh gradijent (Mesh gradient): generisana, tools/teme.py */
+:root[data-theme="meshgradijent"] { color-scheme: light; --back: #fef8fb; --card: #fef5fa; --head: #f2e9ee; --edge: #dfd7dc; --alt: #f8eff4; --text1: #3d2738; --text2: #6d5b69; --faint: #9a8b96; --up: #15803d; --down: #c81e1e; --accent: #ce619a; --hot: #f7e0ed; --tip: #3d2738; --tipfg: #fef8fb; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="meshgradijent"] :is(.overview .left, .block, .detail, .list) { background: rgba(254,245,250,0.6); border: 1px solid rgba(61,39,56,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="meshgradijent"] .overview .left { align-self: start; }
+[data-theme="meshgradijent"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="meshgradijent"] button { border-radius: 999px; background: transparent; }
+[data-theme="meshgradijent"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="meshgradijent"] .bar h1 { font-weight: 800; }
+[data-theme="meshgradijent"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="meshgradijent"] body { background: radial-gradient(ellipse 70% 40% at 20% 0, rgba(206,97,154,0.3), transparent 70%), radial-gradient(ellipse 60% 40% at 80% 10%, rgba(182,244,114,0.22), transparent 70%), radial-gradient(ellipse 50% 30% at 50% 100%, rgba(114,182,244,0.14), transparent 70%); background-color: #fef8fb; background-attachment: fixed; }
+[data-theme="meshgradijent"] .big .value, [data-theme="meshgradijent"] .detail .price { font-weight: 700; }
+[data-theme="meshgradijent"] .chart .line { stroke-width: 2; }
+[data-theme="meshgradijent"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="meshgradijent"][data-scheme="dark"] { color-scheme: dark; --back: #20151f; --card: #2b212a; --head: #372d36; --edge: #423741; --alt: #312730; --text1: #f4eaf1; --text2: #bfb5bc; --faint: #8e848c; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #472c3e; --tip: #f4eaf1; --tipfg: #20151f; --accentfg: #111111; }
+[data-theme="meshgradijent"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(43,33,42,0.6); border: 1px solid rgba(244,234,241,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="meshgradijent"][data-scheme="dark"] body { background: radial-gradient(ellipse 70% 40% at 20% 0, rgba(244,114,182,0.3), transparent 70%), radial-gradient(ellipse 60% 40% at 80% 10%, rgba(182,244,114,0.22), transparent 70%), radial-gradient(ellipse 50% 30% at 50% 100%, rgba(114,182,244,0.14), transparent 70%); background-color: #20151f; background-attachment: fixed; }

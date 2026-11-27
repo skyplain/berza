@@ -1,0 +1,17 @@
+/* tema gimnastika (Gymnastics): generisana, tools/teme.py */
+:root[data-theme="gimnastika"] { color-scheme: light; --back: #fff5f9; --card: #fffcfd; --head: #f3eff1; --edge: #e0d3d9; --alt: #f9f5f7; --text1: #3c2032; --text2: #6d5564; --faint: #9a8692; --up: #15803d; --down: #c81e1e; --accent: #ec4899; --hot: #fce3ef; --tip: #3c2032; --tipfg: #fff5f9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="gimnastika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="gimnastika"] .overview .left { align-self: start; }
+[data-theme="gimnastika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gimnastika"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="gimnastika"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="gimnastika"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="gimnastika"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="gimnastika"] body { background: linear-gradient(rgba(236,72,153,0.12) 2px, transparent 2px) 0 0 / 120px 120px, linear-gradient(90deg, rgba(236,72,153,0.12) 2px, transparent 2px) 0 0 / 120px 120px; background-color: #fff5f9; background-attachment: fixed; }
+[data-theme="gimnastika"] .big .value, [data-theme="gimnastika"] .detail .price { font-weight: 900; }
+[data-theme="gimnastika"] .chart .line { stroke-width: 2; }
+[data-theme="gimnastika"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="gimnastika"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444247; --alt: #343438; --text1: #f3e6ef; --text2: #bfb5bd; --faint: #8f888f; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #493240; --tip: #f3e6ef; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="gimnastika"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="gimnastika"][data-scheme="dark"] body { background: linear-gradient(rgba(236,72,153,0.12) 2px, transparent 2px) 0 0 / 120px 120px, linear-gradient(90deg, rgba(236,72,153,0.12) 2px, transparent 2px) 0 0 / 120px 120px; background-color: #232327; background-attachment: fixed; }

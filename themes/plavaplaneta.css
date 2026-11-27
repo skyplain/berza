@@ -1,0 +1,16 @@
+/* tema plava planeta (Blue planet): generisana, tools/teme.py */
+:root[data-theme="plavaplaneta"] { color-scheme: light; --back: #eff5ff; --card: #fafcff; --head: #eceff4; --edge: #cdd4e1; --alt: #f3f6f9; --text1: #182541; --text2: #4e5970; --faint: #7f899c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dce7fc; --tip: #182541; --tipfg: #eff5ff; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="plavaplaneta"] :is(.overview .left, .block, .detail, .list) { background: #e7eef8; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="plavaplaneta"] .overview .left { align-self: start; }
+[data-theme="plavaplaneta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plavaplaneta"] button { border: 0; }
+[data-theme="plavaplaneta"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="plavaplaneta"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="plavaplaneta"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(37,99,235,0.14) 60px 61px); background-color: #eff5ff; background-attachment: fixed; }
+[data-theme="plavaplaneta"] .big .value, [data-theme="plavaplaneta"] .detail .price { font-weight: 200; }
+[data-theme="plavaplaneta"] .chart .line { stroke-width: 2; }
+[data-theme="plavaplaneta"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plavaplaneta"][data-scheme="dark"] { color-scheme: dark; --back: #222328; --card: #2d2e33; --head: #38393f; --edge: #414349; --alt: #323439; --text1: #e3e8f5; --text2: #b3b7c2; --faint: #868993; --up: #4ade80; --down: #f87171; --accent: #366fed; --hot: #2e374d; --tip: #e3e8f5; --tipfg: #222328; --accentfg: #ffffff; }
+[data-theme="plavaplaneta"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #292a2f; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="plavaplaneta"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(54,111,237,0.14) 60px 61px); background-color: #222328; background-attachment: fixed; }

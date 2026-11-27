@@ -1,0 +1,17 @@
+/* tema gramofon (Gramophone): generisana, tools/teme.py */
+:root[data-theme="gramofon"] { color-scheme: dark; --back: #120b06; --card: #1e1712; --head: #2b241f; --edge: #352f29; --alt: #241d18; --text1: #efebe3; --text2: #b8b3ac; --faint: #857f79; --up: #4ade80; --down: #f87171; --accent: #b8860b; --hot: #342711; --tip: #efebe3; --tipfg: #120b06; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="gramofon"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="gramofon"] .overview .left { align-self: start; }
+[data-theme="gramofon"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gramofon"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="gramofon"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="gramofon"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="gramofon"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="gramofon"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="gramofon"] body { background: repeating-radial-gradient(circle at 92% 92%, rgba(239,235,227,0.05) 0 1px, transparent 1px 4px), radial-gradient(circle at 92% 92%, rgba(184,134,11,0.35) 0 46px, transparent 47px); background-color: #120b06; background-attachment: fixed; }
+[data-theme="gramofon"] .big .value, [data-theme="gramofon"] .detail .price { font-weight: 400; }
+[data-theme="gramofon"] .chart .line { stroke-width: 1.5; }
+[data-theme="gramofon"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="gramofon"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeeec; --edge: #d2d0ce; --alt: #f5f4f3; --text1: #322b19; --text2: #625c4f; --faint: #8e8a80; --up: #15803d; --down: #c81e1e; --accent: #a97b0a; --hot: #f0e8d8; --tip: #322b19; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="gramofon"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 92% 92%, rgba(50,43,25,0.05) 0 1px, transparent 1px 4px), radial-gradient(circle at 92% 92%, rgba(169,123,10,0.35) 0 46px, transparent 47px); background-color: #f1f0f0; background-attachment: fixed; }

@@ -1,0 +1,15 @@
+/* tema meki povez (Paperback): generisana, tools/teme.py */
+:root[data-theme="mekipovez"] { color-scheme: light; --back: #fbe9d0; --card: #fef8f1; --head: #f2ebe4; --edge: #dcc9b3; --alt: #f8f2ea; --text1: #3b2418; --text2: #6b5546; --faint: #978370; --up: #15803d; --down: #c81e1e; --accent: #d55604; --hot: #f8e1d0; --tip: #3b2418; --tipfg: #fbe9d0; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="mekipovez"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="mekipovez"] .overview .left { align-self: start; }
+[data-theme="mekipovez"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mekipovez"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="mekipovez"] .bar h1 { font-weight: 800; }
+[data-theme="mekipovez"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mekipovez"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(59,36,24,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(59,36,24,0.03) 0 1px, transparent 1px 5px); background-color: #fbe9d0; background-attachment: fixed; }
+[data-theme="mekipovez"] .big .value, [data-theme="mekipovez"] .detail .price { font-weight: 200; }
+[data-theme="mekipovez"] .chart .line { stroke-width: 3; }
+[data-theme="mekipovez"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mekipovez"][data-scheme="dark"] { color-scheme: dark; --back: #232223; --card: #2e2d2e; --head: #3a3839; --edge: #444242; --alt: #343333; --text1: #f3e8e3; --text2: #bfb6b3; --faint: #8f8987; --up: #4ade80; --down: #f87171; --accent: #e85d04; --hot: #483428; --tip: #f3e8e3; --tipfg: #232223; --accentfg: #111111; }
+[data-theme="mekipovez"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(243,232,227,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(243,232,227,0.03) 0 1px, transparent 1px 5px); background-color: #232223; background-attachment: fixed; }

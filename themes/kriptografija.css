@@ -1,0 +1,18 @@
+/* tema kriptografija (Cryptography): generisana, tools/teme.py */
+:root[data-theme="kriptografija"] { color-scheme: dark; --back: #06100a; --card: #121c16; --head: #1f2923; --edge: #29342e; --alt: #18221c; --text1: #e3f0ea; --text2: #acb8b2; --faint: #79847e; --up: #4ade80; --down: #f87171; --accent: #22c55e; --hot: #143420; --tip: #e3f0ea; --tipfg: #06100a; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="kriptografija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="kriptografija"] .overview .left { align-self: start; }
+[data-theme="kriptografija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kriptografija"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kriptografija"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kriptografija"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kriptografija"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="kriptografija"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="kriptografija"] :is(h2, h3)::before { content: "> "; color: #22c55e; }
+[data-theme="kriptografija"] body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 30; background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); }
+[data-theme="kriptografija"] .big .value, [data-theme="kriptografija"] .detail .price { font-weight: 400; }
+[data-theme="kriptografija"] .chart .line { stroke-width: 2; }
+[data-theme="kriptografija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kriptografija"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #ecefed; --edge: #cdd3d0; --alt: #f3f5f4; --text1: #173628; --text2: #4d655a; --faint: #778980; --up: #15803d; --down: #c81e1e; --accent: #1b9a49; --hot: #dbede1; --tip: #173628; --tipfg: #f0f1f0; --accentfg: #111111; }
+[data-theme="kriptografija"][data-scheme="light"] :is(h2, h3)::before { content: "> "; color: #1b9a49; }

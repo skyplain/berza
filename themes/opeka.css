@@ -1,0 +1,15 @@
+/* tema opeka (Clay brick): generisana, tools/teme.py */
+:root[data-theme="opeka"] { color-scheme: light; --back: #f1e1d7; --card: #fbf6f3; --head: #efe9e6; --edge: #d3c1b9; --alt: #f5efed; --text1: #33181c; --text2: #624a4b; --faint: #8e7876; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f2d7d5; --tip: #33181c; --tipfg: #f1e1d7; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="opeka"] :is(.overview .left, .block, .detail, .list) { background: #eadad0; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="opeka"] .overview .left { align-self: start; }
+[data-theme="opeka"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="opeka"] button { border: 0; }
+[data-theme="opeka"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="opeka"] body { background: linear-gradient(rgba(185,28,28,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(185,28,28,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(185,28,28,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #f1e1d7; background-attachment: fixed; }
+[data-theme="opeka"] .big .value, [data-theme="opeka"] .detail .price { font-weight: 400; }
+[data-theme="opeka"] .chart .line { stroke-width: 2.5; }
+[data-theme="opeka"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="opeka"][data-scheme="dark"] { color-scheme: dark; --back: #222124; --card: #2d2c2f; --head: #39373a; --edge: #434043; --alt: #333134; --text1: #efe3e5; --text2: #bcb2b5; --faint: #8d8688; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #433335; --tip: #efe3e5; --tipfg: #222124; --accentfg: #111111; }
+[data-theme="opeka"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #29282b; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="opeka"][data-scheme="dark"] body { background: linear-gradient(rgba(205,92,92,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(205,92,92,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(205,92,92,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222124; background-attachment: fixed; }

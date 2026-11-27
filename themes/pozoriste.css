@@ -1,0 +1,18 @@
+/* tema pozorište (Theatre): generisana, tools/teme.py */
+:root[data-theme="pozoriste"] { color-scheme: dark; --back: #14070a; --card: #201316; --head: #2c1f22; --edge: #372a2d; --alt: #26191c; --text1: #ece0e2; --text2: #b6aaac; --faint: #84787a; --up: #4ade80; --down: #f87171; --accent: #ac4848; --hot: #341a1d; --tip: #ece0e2; --tipfg: #14070a; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="pozoriste"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="pozoriste"] .overview .left { align-self: start; }
+[data-theme="pozoriste"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pozoriste"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="pozoriste"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pozoriste"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="pozoriste"] .bar button { background: transparent; color: var(--back); border-color: rgba(20,7,10,0.35); box-shadow: none; }
+[data-theme="pozoriste"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="pozoriste"] body { background: repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #14070a; background-attachment: fixed; }
+[data-theme="pozoriste"] .big .value, [data-theme="pozoriste"] .detail .price { font-weight: 200; }
+[data-theme="pozoriste"] .chart .line { stroke-width: 2; }
+[data-theme="pozoriste"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pozoriste"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #eeecec; --edge: #d1cdcd; --alt: #f5f3f3; --text1: #2a1317; --text2: #5c4a4d; --faint: #8a7d7f; --up: #15803d; --down: #c81e1e; --accent: #8b0000; --hot: #ebd7d7; --tip: #2a1317; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="pozoriste"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }
+[data-theme="pozoriste"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0, rgba(255,255,255,0.04) 30px, rgba(0,0,0,0.22) 60px); background-color: #f1f0f0; background-attachment: fixed; }

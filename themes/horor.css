@@ -1,0 +1,15 @@
+/* tema horor (Horror): generisana, tools/teme.py */
+:root[data-theme="horor"] { color-scheme: dark; --back: #0a0000; --card: #160d0d; --head: #231a1a; --edge: #2f2424; --alt: #1d1313; --text1: #efe0e2; --text2: #b6a8aa; --faint: #817476; --up: #4ade80; --down: #f87171; --accent: #bc2727; --hot: #2d1111; --tip: #efe0e2; --tipfg: #0a0000; --accentfg: #ffffff; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 10px; }
+[data-theme="horor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="horor"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="horor"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="horor"] .bar h1 { font-size: 24px; }
+[data-theme="horor"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="horor"] .bar { position: relative; }
+[data-theme="horor"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: radial-gradient(circle at 50% 0, #bc2727 6px, transparent 7px) 0 0 / 22px 14px, radial-gradient(ellipse 4px 12px at 50% 0, #bc2727 90%, transparent) 11px 0 / 37px 14px; }
+[data-theme="horor"] .big .value, [data-theme="horor"] .detail .price { font-weight: 900; }
+[data-theme="horor"] .chart .line { stroke-width: 2; }
+[data-theme="horor"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="horor"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #eeecec; --edge: #d1cdcd; --alt: #f4f3f3; --text1: #311317; --text2: #614a4d; --faint: #8d7d7f; --up: #15803d; --down: #c81e1e; --accent: #b00000; --hot: #f0d7d7; --tip: #311317; --tipfg: #f0f0f0; --accentfg: #ffffff; }
+[data-theme="horor"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: radial-gradient(circle at 50% 0, #b00000 6px, transparent 7px) 0 0 / 22px 14px, radial-gradient(ellipse 4px 12px at 50% 0, #b00000 90%, transparent) 11px 0 / 37px 14px; }

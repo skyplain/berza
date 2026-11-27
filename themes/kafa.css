@@ -1,0 +1,16 @@
+/* tema kafa: tamno smeđe i krem, topla i mekana */
+:root[data-theme="kafa"] { color-scheme: dark; --back: #1e1611; --card: #271d16; --head: #33261d; --edge: #463427; --alt: #241a14; --text1: #f0e2d0; --text2: #c9b098; --faint: #8e7560; --up: #a8c686; --down: #e58a6a; --accent: #d19a66; --hot: #3a2b20; --tip: #f0e2d0; --tipfg: #1e1611; --accentfg: #1e1611; --font: "Avenir Next",Optima,system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: 0 6px 20px rgba(0,0,0,.3); --h-color: #d19a66; --h-transform: none; --h-spacing: .02em; --h-size: 15px; --h-weight: 600; --h-font: Georgia,serif; --big-font: Georgia,serif; --big-weight: 400; }
+[data-theme="kafa"] .bar h1 { font-family:Georgia,serif;font-size:22px }
+[data-theme="kafa"] .bar h1::before { content:"☕ " }
+[data-theme="kafa"] button { background:#33261d;border-color:#463427 }
+[data-theme="kafa"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="kafa"] tbody tr { border-bottom:1px solid #33261d }
+[data-theme="kafa"] .chart .area { opacity:.14 }
+[data-theme="kafa"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="kafa"] .overview .left { align-self: start; }
+[data-theme="kafa"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="kafa"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="kafa"][data-scheme="light"] { color-scheme: light; --back: #ebdfd8; --card: #e2d4cb; --head: #d8c6bb; --edge: #c8b2a2; --alt: #e6d8d0; --text1: #1e1407; --text2: #4a3520; --faint: #826954; --up: #15803d; --down: #c81e1e; --accent: #9b6937; --hot: #d2bfb1; --tip: #1e1407; --tipfg: #ebdfd8; --accentfg: #ffffff; --panel-shadow: 0 6px 20px rgba(255,255,255,.3); --h-color: #9b6937; }
+[data-theme="kafa"][data-scheme="light"] button { background:#d8c6bb;border-color:#c8b2a2 }
+[data-theme="kafa"][data-scheme="light"] tbody tr { border-bottom:1px solid #d8c6bb }

@@ -1,0 +1,15 @@
+/* tema ukijo-e (Ukiyo-e): generisana, tools/teme.py */
+:root[data-theme="ukijoe"] { color-scheme: light; --back: #efe3c6; --card: #faf7ee; --head: #eceae2; --edge: #ccc4ae; --alt: #f3f1e8; --text1: #17212d; --text2: #4d5253; --faint: #7f7e76; --up: #15803d; --down: #c81e1e; --accent: #1f4e79; --hot: #dbdfde; --tip: #17212d; --tipfg: #efe3c6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="ukijoe"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="ukijoe"] .overview .left { align-self: start; }
+[data-theme="ukijoe"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ukijoe"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="ukijoe"] .bar h1 { font-weight: 800; }
+[data-theme="ukijoe"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="ukijoe"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(31,78,121,0.14) 9px 10px, transparent 11px 16px, rgba(31,78,121,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #efe3c6; background-attachment: fixed; }
+[data-theme="ukijoe"] .big .value, [data-theme="ukijoe"] .detail .price { font-weight: 900; }
+[data-theme="ukijoe"] .chart .line { stroke-width: 1.5; }
+[data-theme="ukijoe"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ukijoe"][data-scheme="dark"] { color-scheme: dark; --back: #222222; --card: #2d2d2d; --head: #383838; --edge: #414242; --alt: #323333; --text1: #e3e7ec; --text2: #b3b6ba; --faint: #86888b; --up: #4ade80; --down: #f87171; --accent: #5e809f; --hot: #34393d; --tip: #e3e7ec; --tipfg: #222222; --accentfg: #111111; }
+[data-theme="ukijoe"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(94,128,159,0.14) 9px 10px, transparent 11px 16px, rgba(94,128,159,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222222; background-attachment: fixed; }

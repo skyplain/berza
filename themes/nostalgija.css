@@ -1,0 +1,14 @@
+/* tema nostalgija (Nostalgia): generisana, tools/teme.py */
+:root[data-theme="nostalgija"] { color-scheme: light; --back: #f4e8d6; --card: #fcf8f3; --head: #f0ebe6; --edge: #d5c8b8; --alt: #f6f2ec; --text1: #322219; --text2: #625448; --faint: #8f8174; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f2e1d2; --tip: #322219; --tipfg: #f4e8d6; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 8px; }
+[data-theme="nostalgija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nostalgija"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="nostalgija"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="nostalgija"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="nostalgija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="nostalgija"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(50,34,25,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(50,34,25,0.03) 0 1px, transparent 1px 5px); background-color: #f4e8d6; background-attachment: fixed; }
+[data-theme="nostalgija"] .big .value, [data-theme="nostalgija"] .detail .price { font-weight: 200; }
+[data-theme="nostalgija"] .chart .line { stroke-width: 1.5; }
+[data-theme="nostalgija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="nostalgija"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #434243; --alt: #333334; --text1: #efe7e3; --text2: #bcb6b3; --faint: #8d8887; --up: #4ade80; --down: #f87171; --accent: #bd6726; --hot: #41352e; --tip: #efe7e3; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="nostalgija"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(239,231,227,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(239,231,227,0.03) 0 1px, transparent 1px 5px); background-color: #222224; background-attachment: fixed; }

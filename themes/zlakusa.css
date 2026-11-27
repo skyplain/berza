@@ -1,0 +1,17 @@
+/* tema zlakusa (Zlakusa pottery): generisana, tools/teme.py */
+:root[data-theme="zlakusa"] { color-scheme: light; --back: #f3e4d6; --card: #fbf7f3; --head: #efeae6; --edge: #d3c4b8; --alt: #f5f0ec; --text1: #2d1c1a; --text2: #5e4e49; --faint: #8c7c74; --up: #15803d; --down: #c81e1e; --accent: #9a3412; --hot: #eddcd4; --tip: #2d1c1a; --tipfg: #f3e4d6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="zlakusa"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zlakusa"] .overview .left { align-self: start; }
+[data-theme="zlakusa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zlakusa"] button { border-radius: 999px; }
+[data-theme="zlakusa"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="zlakusa"] .bar h1 { font-weight: 800; }
+[data-theme="zlakusa"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zlakusa"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(45,28,26,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(45,28,26,0.03) 0 1px, transparent 1px 5px); background-color: #f3e4d6; background-attachment: fixed; }
+[data-theme="zlakusa"] .big .value, [data-theme="zlakusa"] .detail .price { font-weight: 400; }
+[data-theme="zlakusa"] .chart .line { stroke-width: 3; }
+[data-theme="zlakusa"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zlakusa"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #424143; --alt: #333334; --text1: #ede5e4; --text2: #bab4b4; --faint: #8c8788; --up: #4ade80; --down: #f87171; --accent: #b06146; --hot: #3f3432; --tip: #ede5e4; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="zlakusa"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zlakusa"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(237,229,228,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(237,229,228,0.03) 0 1px, transparent 1px 5px); background-color: #222224; background-attachment: fixed; }

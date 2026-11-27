@@ -1,0 +1,23 @@
+/* tema savana: oker, maslinasta i pečena zemlja, široki razmaci */
+:root[data-theme="savana"] { color-scheme: light; --back: #f3e6c8; --card: #f9f0da; --head: #ead7ad; --edge: #cdb27a; --alt: #f1e2bf; --text1: #3a2a12; --text2: #6a5228; --faint: #9c8657; --up: #5b7a1e; --down: #b3471e; --accent: #8a6d1f; --hot: #ecdcb3; --tip: #3a2a12; --tipfg: #f9f0da; --accentfg: #fff; --font: "Gill Sans",Optima,system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0; --h-color: #5b4a1a; --h-transform: uppercase; --h-spacing: .25em; --h-size: 12px; --h-weight: 600; --h-font: inherit; --big-font: Rockwell,"Courier New",serif; --big-weight: 700; }
+[data-theme="savana"] body { background:linear-gradient(180deg,#f7c873 0,#f3e6c8 220px) fixed #f3e6c8 }
+[data-theme="savana"] .bar { border-bottom:0;padding-bottom:18px;background:linear-gradient(0deg,transparent 0 6px,#3a2a12 6px 8px,transparent 8px) }
+[data-theme="savana"] .bar h1 { font-family:Rockwell,"Courier New",serif;font-size:28px;text-transform:uppercase }
+[data-theme="savana"] .bar h1::before { content:"☗ ";color:#b3471e }
+[data-theme="savana"] button { background:#3a2a12;color:#f3e6c8;border:0 }
+[data-theme="savana"] button:hover { background:#b3471e }
+[data-theme="savana"] .block { margin-bottom:30px }
+[data-theme="savana"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="savana"] tbody tr { border-bottom:1px solid #e3cf9e }
+[data-theme="savana"] .chart .vol { fill:#8a6d1f }
+[data-theme="savana"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="savana"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="savana"][data-scheme="dark"] { color-scheme: dark; --back: #1c1300; --card: #130d01; --head: #291c00; --edge: #4a3600; --alt: #201500; --text1: #d6c1a6; --text2: #aa9065; --faint: #7b6639; --up: #4ade80; --down: #f87171; --accent: #8a6d1f; --hot: #251900; --tip: #d6c1a6; --tipfg: #130d01; --accentfg: #ffffff; --h-color: #b19e6d; }
+[data-theme="savana"][data-scheme="dark"] body { background:linear-gradient(180deg,#332100 0,#1c1300 220px) fixed #1c1300 }
+[data-theme="savana"][data-scheme="dark"] .bar { border-bottom:0;padding-bottom:18px;background:linear-gradient(0deg,transparent 0 6px,#d6c1a6 6px 8px,transparent 8px) }
+[data-theme="savana"][data-scheme="dark"] .bar h1::before { content:"☗ ";color:#c2552e }
+[data-theme="savana"][data-scheme="dark"] button { background:#d6c1a6;color:#1c1300;border:0 }
+[data-theme="savana"][data-scheme="dark"] button:hover { background:#c2552e }
+[data-theme="savana"][data-scheme="dark"] tbody tr { border-bottom:1px solid #302200 }
+[data-theme="savana"][data-scheme="dark"] .chart .vol { fill:#8a6d1f }

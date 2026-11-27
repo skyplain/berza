@@ -1,0 +1,28 @@
+/* tema lavanda plava (Periwinkle): generisana, tools/teme.py */
+:root[data-theme="lavandaplava"] { color-scheme: light; --back: #eff0ff; --card: #fafaff; --head: #ededf4; --edge: #ced0e1; --alt: #f4f4f9; --text1: #232542; --text2: #565871; --faint: #85869d; --up: #15803d; --down: #c81e1e; --accent: #5f62e7; --hot: #e4e5fc; --tip: #232542; --tipfg: #eff0ff; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="lavandaplava"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="lavandaplava"] .overview .left { align-self: start; }
+[data-theme="lavandaplava"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lavandaplava"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="lavandaplava"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lavandaplava"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="lavandaplava"] .bar button { background: transparent; color: var(--back); border-color: rgba(239,240,255,0.35); box-shadow: none; }
+[data-theme="lavandaplava"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="lavandaplava"] body { background: linear-gradient(180deg, rgba(95,98,231,0.1), transparent 380px); background-color: #eff0ff; background-attachment: fixed; }
+[data-theme="lavandaplava"] :is(.overview .left, .block, .detail, .list) { background: #f2f3fe; border-color: rgba(95,98,231,0.35); }
+[data-theme="lavandaplava"] .chart .line { stroke: #5f62e7 !important; }
+[data-theme="lavandaplava"] .chart .area { fill: #5f62e7 !important; }
+[data-theme="lavandaplava"] .chart .vol { fill: #5f62e7; }
+[data-theme="lavandaplava"] :is(h2, h3, .big .label) { color: #5f62e7; }
+[data-theme="lavandaplava"] .big .value, [data-theme="lavandaplava"] .detail .price { font-weight: 200; }
+[data-theme="lavandaplava"] .chart .line { stroke-width: 1.5; }
+[data-theme="lavandaplava"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lavandaplava"][data-scheme="dark"] { color-scheme: dark; --back: #222328; --card: #2d2e33; --head: #38393f; --edge: #424349; --alt: #333439; --text1: #e8e9f6; --text2: #b6b8c2; --faint: #898a93; --up: #4ade80; --down: #f87171; --accent: #696cf2; --hot: #35374e; --tip: #e8e9f6; --tipfg: #222328; --accentfg: #111111; }
+[data-theme="lavandaplava"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,40,0.35); box-shadow: none; }
+[data-theme="lavandaplava"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(105,108,242,0.1), transparent 380px); background-color: #222328; background-attachment: fixed; }
+[data-theme="lavandaplava"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #30313c; border-color: rgba(105,108,242,0.35); }
+[data-theme="lavandaplava"][data-scheme="dark"] .chart .line { stroke: #696cf2 !important; }
+[data-theme="lavandaplava"][data-scheme="dark"] .chart .area { fill: #696cf2 !important; }
+[data-theme="lavandaplava"][data-scheme="dark"] .chart .vol { fill: #696cf2; }
+[data-theme="lavandaplava"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #696cf2; }

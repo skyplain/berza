@@ -1,0 +1,16 @@
+/* tema vestern (Western): generisana, tools/teme.py */
+:root[data-theme="vestern"] { color-scheme: light; --back: #e9d3a6; --card: #f8f2e4; --head: #ece5d8; --edge: #cab690; --alt: #f2ecde; --text1: #2a1f1a; --text2: #5a4c3d; --faint: #86755d; --up: #15803d; --down: #c81e1e; --accent: #8b4513; --hot: #e9dac7; --tip: #2a1f1a; --tipfg: #e9d3a6; --accentfg: #ffffff; --font: Rockwell, "Roboto Slab", "Courier New", serif; --radius: 8px; }
+[data-theme="vestern"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vestern"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="vestern"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="vestern"] .bar h1 { font-size: 24px; }
+[data-theme="vestern"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="vestern"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(42,31,26,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(42,31,26,0.03) 0 1px, transparent 1px 5px); background-color: #e9d3a6; background-attachment: fixed; }
+[data-theme="vestern"] :is(h2, h3) { display: inline-block; color: #8b4513; border: 2px solid #8b4513; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="vestern"] .big .value, [data-theme="vestern"] .detail .price { font-weight: 400; }
+[data-theme="vestern"] .chart .line { stroke-width: 1.5; }
+[data-theme="vestern"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vestern"][data-scheme="dark"] { color-scheme: dark; --back: #21201f; --card: #2c2b2a; --head: #383635; --edge: #41403f; --alt: #323130; --text1: #ece6e4; --text2: #b9b4b3; --faint: #8b8785; --up: #4ade80; --down: #f87171; --accent: #9e6b44; --hot: #3c342e; --tip: #ece6e4; --tipfg: #21201f; --accentfg: #ffffff; }
+[data-theme="vestern"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(236,230,228,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(236,230,228,0.03) 0 1px, transparent 1px 5px); background-color: #21201f; background-attachment: fixed; }
+[data-theme="vestern"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #9e6b44; border: 2px solid #9e6b44; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

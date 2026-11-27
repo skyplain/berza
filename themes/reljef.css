@@ -1,0 +1,22 @@
+/* tema reljef: neumorfizam: sivo, izdignuti i utisnuti elementi istom bojom */
+:root[data-theme="reljef"] { color-scheme: light; --back: #e0e5ec; --card: #e0e5ec; --head: #e0e5ec; --edge: transparent; --alt: transparent; --text1: #3b4252; --text2: #5e6779; --faint: #9aa3b2; --up: #2e9e6b; --down: #d6455d; --accent: #4b6cb7; --hot: #d5dbe4; --tip: #3b4252; --tipfg: #e0e5ec; --accentfg: #fff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 18px; --panel-bg: var(--card); --panel-border: 0; --panel-shadow: 9px 9px 16px #a3b1c6,-9px -9px 16px #fff; --h-color: #5e6779; --h-transform: uppercase; --h-spacing: .12em; --h-size: 11.5px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 300; }
+[data-theme="reljef"] :is(.overview .left,.block,.detail,.list) { padding:20px 22px }
+[data-theme="reljef"] .bar { border:0 }
+[data-theme="reljef"] button { border:0;background:#e0e5ec;box-shadow:5px 5px 10px #a3b1c6,-5px -5px 10px #fff;padding:7px 14px }
+[data-theme="reljef"] button:active,[data-theme="reljef"] .chip.on { box-shadow:inset 4px 4px 8px #a3b1c6,inset -4px -4px 8px #fff;background:#e0e5ec;color:#4b6cb7 }
+[data-theme="reljef"] #search { border:0;background:#e0e5ec;box-shadow:inset 4px 4px 8px #a3b1c6,inset -4px -4px 8px #fff }
+[data-theme="reljef"] .rows { border:0;background:#e0e5ec;box-shadow:inset 4px 4px 8px #a3b1c6,inset -4px -4px 8px #fff }
+[data-theme="reljef"] .rows thead th { background:#e0e5ec }
+[data-theme="reljef"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="reljef"] footer { border:0 }
+[data-theme="reljef"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="reljef"] .overview .left { align-self: start; }
+[data-theme="reljef"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="reljef"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="reljef"][data-scheme="dark"] { color-scheme: dark; --back: #13161b; --card: #13161b; --head: #13161b; --text1: #bdc3d0; --text2: #798395; --faint: #5d6572; --up: #4ade80; --down: #f87171; --accent: #4b6cb7; --hot: #191d24; --tip: #a3abbe; --tipfg: #13161b; --accentfg: #ffffff; --panel-shadow: 9px 9px 16px #333f50,-9px -9px 16px #060606; --h-color: #798395; }
+[data-theme="reljef"][data-scheme="dark"] button { border:0;background:#13161b;box-shadow:5px 5px 10px #333f50,-5px -5px 10px #060606;padding:7px 14px }
+[data-theme="reljef"][data-scheme="dark"] button:active,[data-theme="reljef"][data-scheme="dark"] .chip.on { box-shadow:inset 4px 4px 8px #333f50,inset -4px -4px 8px #060606;background:#13161b;color:#4b6cb7 }
+[data-theme="reljef"][data-scheme="dark"] #search { border:0;background:#13161b;box-shadow:inset 4px 4px 8px #333f50,inset -4px -4px 8px #060606 }
+[data-theme="reljef"][data-scheme="dark"] .rows { border:0;background:#13161b;box-shadow:inset 4px 4px 8px #333f50,inset -4px -4px 8px #060606 }
+[data-theme="reljef"][data-scheme="dark"] .rows thead th { background:#13161b }

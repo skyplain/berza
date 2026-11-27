@@ -1,0 +1,15 @@
+/* tema arheologija (Archaeology): generisana, tools/teme.py */
+:root[data-theme="arheologija"] { color-scheme: light; --back: #efe1c4; --card: #faf6ed; --head: #eee9e0; --edge: #d0c2a9; --alt: #f4f0e7; --text1: #2c1e19; --text2: #5d4f44; --faint: #8a7c6b; --up: #15803d; --down: #c81e1e; --accent: #92400e; --hot: #ebddce; --tip: #2c1e19; --tipfg: #efe1c4; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="arheologija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="arheologija"] .overview .left { align-self: start; }
+[data-theme="arheologija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="arheologija"] button { border-radius: 999px; }
+[data-theme="arheologija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="arheologija"] body { background: linear-gradient(rgba(44,30,25,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(44,30,25,0.06) 1px, transparent 1px) 0 0 / 32px 32px, repeating-radial-gradient(circle at 17% 32%, rgba(44,30,25,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(44,30,25,0.03) 0 1px, transparent 1px 5px); background-color: #efe1c4; background-attachment: fixed; }
+[data-theme="arheologija"] .big .value, [data-theme="arheologija"] .detail .price { font-weight: 900; }
+[data-theme="arheologija"] .chart .line { stroke-width: 2.5; }
+[data-theme="arheologija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="arheologija"][data-scheme="dark"] { color-scheme: dark; --back: #222122; --card: #2d2c2d; --head: #383738; --edge: #424141; --alt: #333232; --text1: #ece6e3; --text2: #bab5b3; --faint: #8b8786; --up: #4ade80; --down: #f87171; --accent: #a36640; --hot: #3e3430; --tip: #ece6e3; --tipfg: #222122; --accentfg: #ffffff; }
+[data-theme="arheologija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="arheologija"][data-scheme="dark"] body { background: linear-gradient(rgba(236,230,227,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(236,230,227,0.06) 1px, transparent 1px) 0 0 / 32px 32px, repeating-radial-gradient(circle at 17% 32%, rgba(236,230,227,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(236,230,227,0.03) 0 1px, transparent 1px 5px); background-color: #222122; background-attachment: fixed; }

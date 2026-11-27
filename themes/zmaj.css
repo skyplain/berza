@@ -1,0 +1,15 @@
+/* tema zmaj (Dragon): generisana, tools/teme.py */
+:root[data-theme="zmaj"] { color-scheme: dark; --back: #140505; --card: #201212; --head: #2d1f1f; --edge: #382929; --alt: #261818; --text1: #f2e4e5; --text2: #baacad; --faint: #877979; --up: #4ade80; --down: #f87171; --accent: #dc2626; --hot: #3a1515; --tip: #f2e4e5; --tipfg: #140505; --accentfg: #ffffff; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 10px; }
+[data-theme="zmaj"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="zmaj"] .overview .left { align-self: start; }
+[data-theme="zmaj"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zmaj"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="zmaj"] .bar h1 { font-size: 24px; }
+[data-theme="zmaj"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="zmaj"] body { background: radial-gradient(circle at 50% 0, transparent 10px, rgba(220,38,38,0.2) 11px 12px, transparent 13px) 0 0 / 24px 12px, radial-gradient(circle at 50% 0, transparent 10px, rgba(220,38,38,0.2) 11px 12px, transparent 13px) 12px 6px / 24px 12px; background-color: #140505; background-attachment: fixed; }
+[data-theme="zmaj"] .big .value, [data-theme="zmaj"] .detail .price { font-weight: 700; }
+[data-theme="zmaj"] .chart .line { stroke-width: 2.5; }
+[data-theme="zmaj"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zmaj"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeded; --edge: #d4cece; --alt: #f5f3f3; --text1: #391a1e; --text2: #675052; --faint: #918183; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f7dcdc; --tip: #391a1e; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="zmaj"][data-scheme="light"] body { background: radial-gradient(circle at 50% 0, transparent 10px, rgba(220,38,38,0.2) 11px 12px, transparent 13px) 0 0 / 24px 12px, radial-gradient(circle at 50% 0, transparent 10px, rgba(220,38,38,0.2) 11px 12px, transparent 13px) 12px 6px / 24px 12px; background-color: #f1f0f0; background-attachment: fixed; }

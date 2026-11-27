@@ -1,0 +1,17 @@
+/* tema akvamarin (Aquamarine): generisana, tools/teme.py */
+:root[data-theme="akvamarin"] { color-scheme: light; --back: #eefdfb; --card: #eafcfa; --head: #ddf0ee; --edge: #ccdedc; --alt: #e4f6f4; --text1: #193939; --text2: #4e6a6a; --faint: #778f8f; --up: #15803d; --down: #c81e1e; --accent: #209889; --hot: #ceeeea; --tip: #193939; --tipfg: #eefdfb; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="akvamarin"] :is(.overview .left, .block, .detail, .list) { background: rgba(234,252,250,0.6); border: 1px solid rgba(25,57,57,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="akvamarin"] .overview .left { align-self: start; }
+[data-theme="akvamarin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="akvamarin"] button { border-radius: 999px; background: transparent; }
+[data-theme="akvamarin"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="akvamarin"] .bar h1 { font-size: 24px; }
+[data-theme="akvamarin"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="akvamarin"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(32,152,137,0.08) 40% 46%, transparent 46%); background-color: #eefdfb; background-attachment: fixed; }
+[data-theme="akvamarin"] .big .value, [data-theme="akvamarin"] .detail .price { font-weight: 400; }
+[data-theme="akvamarin"] .chart .line { stroke-width: 3; }
+[data-theme="akvamarin"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="akvamarin"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3e; --edge: #414548; --alt: #323539; --text1: #e4f1f2; --text2: #b4bec0; --faint: #878f91; --up: #4ade80; --down: #f87171; --accent: #2dd4bf; --hot: #2d4647; --tip: #e4f1f2; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="akvamarin"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(45,47,51,0.6); border: 1px solid rgba(228,241,242,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="akvamarin"][data-scheme="dark"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(45,212,191,0.08) 40% 46%, transparent 46%); background-color: #222428; background-attachment: fixed; }

@@ -1,0 +1,19 @@
+/* tema antički hram (Greek temple): generisana, tools/teme.py */
+:root[data-theme="antickihram"] { color-scheme: light; --back: #f7f3ea; --card: #fdfbf9; --head: #f0eeec; --edge: #d6d3cb; --alt: #f7f5f3; --text1: #2a2826; --text2: #5d5b57; --faint: #8c8984; --up: #15803d; --down: #c81e1e; --accent: #867350; --hot: #ece8e1; --tip: #2a2826; --tipfg: #f7f3ea; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="antickihram"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="antickihram"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="antickihram"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="antickihram"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="antickihram"] .bar button { background: transparent; color: var(--back); border-color: rgba(247,243,234,0.35); box-shadow: none; }
+[data-theme="antickihram"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="antickihram"] body { background: repeating-linear-gradient(90deg, rgba(42,40,38,0.035) 0 44px, transparent 44px 88px); background-color: #f7f3ea; background-attachment: fixed; }
+[data-theme="antickihram"] .bar { position: relative; }
+[data-theme="antickihram"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #867350 0 3px, transparent 3px 12px, #867350 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#867350 0 3px, transparent 3px 9px, #867350 9px 12px) 0 0 / 24px 12px; }
+[data-theme="antickihram"] .big .value, [data-theme="antickihram"] .detail .price { font-weight: 900; }
+[data-theme="antickihram"] .chart .line { stroke-width: 3; }
+[data-theme="antickihram"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="antickihram"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #39393c; --edge: #434345; --alt: #343437; --text1: #eceae9; --text2: #bab8b8; --faint: #8c8a8b; --up: #4ade80; --down: #f87171; --accent: #917d5a; --hot: #3c3937; --tip: #eceae9; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="antickihram"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,35,38,0.35); box-shadow: none; }
+[data-theme="antickihram"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(236,234,233,0.035) 0 44px, transparent 44px 88px); background-color: #232326; background-attachment: fixed; }
+[data-theme="antickihram"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #917d5a 0 3px, transparent 3px 12px, #917d5a 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#917d5a 0 3px, transparent 3px 9px, #917d5a 9px 12px) 0 0 / 24px 12px; }

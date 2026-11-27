@@ -1,0 +1,16 @@
+/* tema origami ždral (Paper crane): generisana, tools/teme.py */
+:root[data-theme="origamizdral"] { color-scheme: light; --back: #fef5f6; --card: #fffcfc; --head: #f3efef; --edge: #dfd2d4; --alt: #f9f5f6; --text1: #3b1d24; --text2: #6c5358; --faint: #998589; --up: #15803d; --down: #c81e1e; --accent: #e63946; --hot: #fce1e3; --tip: #3b1d24; --tipfg: #fef5f6; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="origamizdral"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="origamizdral"] .overview .left { align-self: start; }
+[data-theme="origamizdral"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="origamizdral"] button { border-radius: 0; }
+[data-theme="origamizdral"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="origamizdral"] .bar h1 { font-size: 24px; }
+[data-theme="origamizdral"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="origamizdral"] :is(.overview .left, .block, .detail, .list) { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+[data-theme="origamizdral"] button { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); border-radius: 0; }
+[data-theme="origamizdral"] .big .value, [data-theme="origamizdral"] .detail .price { font-weight: 400; }
+[data-theme="origamizdral"] .chart .line { stroke-width: 1.5; }
+[data-theme="origamizdral"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="origamizdral"][data-scheme="dark"] { color-scheme: dark; --back: #1f1015; --card: #2a1c21; --head: #36282d; --edge: #413237; --alt: #302227; --text1: #f3e5e8; --text2: #beb0b3; --faint: #8d7f83; --up: #4ade80; --down: #f87171; --accent: #e63946; --hot: #442026; --tip: #f3e5e8; --tipfg: #1f1015; --accentfg: #111111; }

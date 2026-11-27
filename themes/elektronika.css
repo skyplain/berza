@@ -1,0 +1,16 @@
+/* tema elektronika (Electronics): generisana, tools/teme.py */
+:root[data-theme="elektronika"] { color-scheme: dark; --back: #0b1a10; --card: #17251c; --head: #243128; --edge: #303c32; --alt: #1e2b22; --text1: #f3efe3; --text2: #b9baae; --faint: #84897e; --up: #4ade80; --down: #f87171; --accent: #eab308; --hot: #353919; --tip: #f3efe3; --tipfg: #0b1a10; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="elektronika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="elektronika"] .overview .left { align-self: start; }
+[data-theme="elektronika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="elektronika"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="elektronika"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="elektronika"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="elektronika"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="elektronika"] body { background: radial-gradient(rgba(234,179,8,0.45) 2px, transparent 3px) 0 0 / 48px 48px, linear-gradient(90deg, rgba(234,179,8,0.14) 1px, transparent 1px) 0 0 / 48px 48px, linear-gradient(rgba(234,179,8,0.14) 1px, transparent 1px) 24px 0 / 48px 96px; background-color: #0b1a10; background-attachment: fixed; }
+[data-theme="elektronika"] .big .value, [data-theme="elektronika"] .detail .price { font-weight: 900; }
+[data-theme="elektronika"] .chart .line { stroke-width: 3; }
+[data-theme="elektronika"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="elektronika"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #efefed; --edge: #d3d3ce; --alt: #f4f5f4; --text1: #3b3318; --text2: #68624e; --faint: #8b8778; --up: #15803d; --down: #c81e1e; --accent: #a78106; --hot: #eeead9; --tip: #3b3318; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="elektronika"][data-scheme="light"] body { background: radial-gradient(rgba(167,129,6,0.45) 2px, transparent 3px) 0 0 / 48px 48px, linear-gradient(90deg, rgba(167,129,6,0.14) 1px, transparent 1px) 0 0 / 48px 48px, linear-gradient(rgba(167,129,6,0.14) 1px, transparent 1px) 24px 0 / 48px 96px; background-color: #f0f1f1; background-attachment: fixed; }

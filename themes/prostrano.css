@@ -1,0 +1,20 @@
+/* tema prostrano (Spacious): generisana, tools/teme.py */
+:root[data-theme="prostrano"] { color-scheme: light; --back: #f8f5fe; --card: #fdfcff; --head: #f0eff4; --edge: #d7d2e0; --alt: #f7f5f9; --text1: #281d42; --text2: #5c5371; --faint: #8c859c; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #ebe1fc; --tip: #281d42; --tipfg: #f8f5fe; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 8px; }
+[data-theme="prostrano"] :is(.overview .left, .block, .detail, .list) { background: rgba(253,252,255,0.6); border: 1px solid rgba(40,29,66,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="prostrano"] .overview .left { align-self: start; }
+[data-theme="prostrano"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="prostrano"] button { border-radius: 999px; background: transparent; }
+[data-theme="prostrano"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="prostrano"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="prostrano"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="prostrano"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="prostrano"] body { font-size: 16px; }
+[data-theme="prostrano"] td { padding: 7px 8px; }
+[data-theme="prostrano"] .block { margin-bottom: 36px; }
+[data-theme="prostrano"] .overview { gap: 44px; }
+[data-theme="prostrano"] .big .value, [data-theme="prostrano"] .detail .price { font-weight: 700; }
+[data-theme="prostrano"] .chart .line { stroke-width: 2; }
+[data-theme="prostrano"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="prostrano"][data-scheme="dark"] { color-scheme: dark; --back: #151024; --card: #211c2f; --head: #2d283b; --edge: #373245; --alt: #272235; --text1: #eae5f5; --text2: #b5b0c1; --faint: #847f91; --up: #4ade80; --down: #f87171; --accent: #864aee; --hot: #2f224a; --tip: #eae5f5; --tipfg: #151024; --accentfg: #ffffff; }
+[data-theme="prostrano"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(33,28,47,0.6); border: 1px solid rgba(234,229,245,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }

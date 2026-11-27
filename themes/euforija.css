@@ -1,0 +1,14 @@
+/* tema euforija (Euphoria): generisana, tools/teme.py */
+:root[data-theme="euforija"] { color-scheme: light; --back: #fff3fa; --card: #fffbfe; --head: #f3eef2; --edge: #e0d1da; --alt: #f9f4f8; --text1: #3c2032; --text2: #6d5564; --faint: #9a8592; --up: #15803d; --down: #c81e1e; --accent: #ec4899; --hot: #fce2f0; --tip: #3c2032; --tipfg: #fff3fa; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="euforija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="euforija"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="euforija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="euforija"] body { background: radial-gradient(circle at 50% 120%, transparent 52%, rgba(239,68,68,.08) 52% 55%, rgba(245,158,11,.08) 55% 58%, rgba(34,197,94,.08) 58% 61%, rgba(59,130,246,.08) 61% 64%, rgba(168,85,247,.08) 64% 67%, transparent 67%); background-color: #fff3fa; background-attachment: fixed; }
+[data-theme="euforija"] .bar { position: relative; }
+[data-theme="euforija"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 6px; background: linear-gradient(90deg, #ef4444, #f59e0b, #eab308, #22c55e, #3b82f6, #8b5cf6); }
+[data-theme="euforija"] .big .value, [data-theme="euforija"] .detail .price { font-weight: 900; }
+[data-theme="euforija"] .chart .line { stroke-width: 1.5; }
+[data-theme="euforija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="euforija"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444247; --alt: #343438; --text1: #f3e6ef; --text2: #bfb5bd; --faint: #8f888f; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #493240; --tip: #f3e6ef; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="euforija"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 120%, transparent 52%, rgba(239,68,68,.08) 52% 55%, rgba(245,158,11,.08) 55% 58%, rgba(34,197,94,.08) 58% 61%, rgba(59,130,246,.08) 61% 64%, rgba(168,85,247,.08) 64% 67%, transparent 67%); background-color: #232327; background-attachment: fixed; }

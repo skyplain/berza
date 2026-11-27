@@ -1,0 +1,17 @@
+/* tema slagalica (Jigsaw puzzle): generisana, tools/teme.py */
+:root[data-theme="slagalica"] { color-scheme: light; --back: #f4f8ff; --card: #fcfdff; --head: #eef0f4; --edge: #d1d6e1; --alt: #f5f7f9; --text1: #182541; --text2: #4f5a70; --faint: #828a9c; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #dee7fc; --tip: #182541; --tipfg: #f4f8ff; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="slagalica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="slagalica"] .overview .left { align-self: start; }
+[data-theme="slagalica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="slagalica"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="slagalica"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="slagalica"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="slagalica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="slagalica"] body { background: conic-gradient(rgba(24,37,65,0.07) 25%, transparent 0 50%, rgba(24,37,65,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #f4f8ff; background-attachment: fixed; }
+[data-theme="slagalica"] .big .value, [data-theme="slagalica"] .detail .price { font-weight: 700; }
+[data-theme="slagalica"] .chart .line { stroke-width: 2.5; }
+[data-theme="slagalica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="slagalica"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #414349; --alt: #323539; --text1: #e3e8f5; --text2: #b3b7c2; --faint: #868a93; --up: #4ade80; --down: #f87171; --accent: #467bee; --hot: #303a4d; --tip: #e3e8f5; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="slagalica"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="slagalica"][data-scheme="dark"] body { background: conic-gradient(rgba(227,232,245,0.07) 25%, transparent 0 50%, rgba(227,232,245,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #222428; background-attachment: fixed; }

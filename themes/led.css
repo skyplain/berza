@@ -1,0 +1,18 @@
+/* tema led: ledeno plavo, mat staklo, hladan i čist */
+:root[data-theme="led"] { color-scheme: light; --back: #e9f3fb; --card: rgba(255,255,255,.6); --head: rgba(255,255,255,.7); --edge: rgba(120,170,210,.35); --alt: rgba(255,255,255,.35); --text1: #13324b; --text2: #45647c; --faint: #7f9bb1; --up: #119c8a; --down: #d1495b; --accent: #2a8bd8; --hot: rgba(42,139,216,.12); --tip: #13324b; --tipfg: #fff; --accentfg: #fff; --font: "SF Pro Display",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 14px; --panel-bg: var(--card); --panel-border: 1px solid rgba(255,255,255,.8); --panel-shadow: 0 8px 30px rgba(40,100,160,.12); --h-color: #2a8bd8; --h-transform: uppercase; --h-spacing: .14em; --h-size: 11.5px; --h-weight: 600; --h-font: inherit; --big-font: inherit; --big-weight: 300; }
+[data-theme="led"] body { background:linear-gradient(160deg,#f3f9ff 0%,#d9ebf8 50%,#eef6fd 100%) fixed #e9f3fb }
+[data-theme="led"] .overview .left,[data-theme="led"] .block,[data-theme="led"] .detail { backdrop-filter:blur(12px) }
+[data-theme="led"] .bar h1::before { content:"❄ ";color:#2a8bd8 }
+[data-theme="led"] button { background:rgba(255,255,255,.7) }
+[data-theme="led"] .rows thead th { background:#f2f8fd }
+[data-theme="led"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="led"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="led"] .overview .left { align-self: start; }
+[data-theme="led"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="led"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="led"][data-scheme="dark"] { color-scheme: dark; --back: #080e13; --card: rgba(6,6,6,.6); --head: rgba(6,6,6,.7); --edge: rgba(27,76,111,.35); --alt: rgba(6,6,6,.35); --text1: #a3c6e6; --text2: #6d8ea7; --faint: #4d687e; --up: #4ade80; --down: #f87171; --accent: #2a8bd8; --hot: rgba(42,139,216,.12); --tip: #a3c6e6; --tipfg: #060606; --accentfg: #111111; --panel-border: 1px solid rgba(6,6,6,.8); --panel-shadow: 0 8px 30px rgba(80,139,202,.12); --h-color: #2a8bd8; }
+[data-theme="led"][data-scheme="dark"] body { background:linear-gradient(160deg,#060a0d 0%,#08151e 50%,#070c10 100%) fixed #080e13 }
+[data-theme="led"][data-scheme="dark"] .bar h1::before { content:"❄ ";color:#2a8bd8 }
+[data-theme="led"][data-scheme="dark"] button { background:rgba(6,6,6,.7) }
+[data-theme="led"][data-scheme="dark"] .rows thead th { background:#070a0d }

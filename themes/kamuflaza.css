@@ -1,0 +1,16 @@
+/* tema kamuflaža: generisana (paleta + oblik 0/1/2/3) */
+:root[data-theme="kamuflaza"] { color-scheme: dark; --back: #1d2117; --card: #262b1e; --head: #313629; --edge: #3d4136; --alt: #2c3124; --text1: #e4e8d8; --text2: #acb0a2; --faint: #808478; --up: #4ade80; --down: #f87171; --accent: #9caf88; --hot: #373d2d; --tip: #e4e8d8; --tipfg: #1d2117; --accentfg: #111111; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 4px; }
+[data-theme="kamuflaza"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kamuflaza"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="kamuflaza"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kamuflaza"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kamuflaza"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kamuflaza"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kamuflaza"] body { background: repeating-linear-gradient(45deg, rgba(228,232,216,0.03) 0 12px, transparent 12px 24px); background-color: #1d2117; background-attachment: fixed; }
+[data-theme="kamuflaza"] .big .value, [data-theme="kamuflaza"] .detail .price { font-weight: 200; }
+[data-theme="kamuflaza"] .chart .line { stroke-width: 2; }
+[data-theme="kamuflaza"] .chart .area { opacity: 0.06; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="kamuflaza"][data-scheme="light"] { color-scheme: light; --back: #d4dacc; --card: #c7cebd; --head: #b9bfaf; --edge: #acb1a4; --alt: #bfc6b5; --text1: #14170b; --text2: #3e4136; --faint: #65695d; --up: #15803d; --down: #c81e1e; --accent: #647551; --hot: #b0b8a5; --tip: #14170b; --tipfg: #d4dacc; --accentfg: #ffffff; }
+[data-theme="kamuflaza"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kamuflaza"][data-scheme="light"] body { background: repeating-linear-gradient(45deg, rgba(20,23,11,0.03) 0 12px, transparent 12px 24px); background-color: #d4dacc; background-attachment: fixed; }

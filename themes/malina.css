@@ -1,0 +1,20 @@
+/* tema malina: smela magenta na belom, krupni debeli naslovi */
+:root[data-theme="malina"] { color-scheme: light; --back: #fff; --card: #fff; --head: #fdf0f5; --edge: #f2d3e0; --alt: #fff7fa; --text1: #2a0f1c; --text2: #5d3446; --faint: #a07a8b; --up: #008a5e; --down: #d10f5a; --accent: #d10f5a; --hot: #fde7f0; --tip: #d10f5a; --tipfg: #fff; --accentfg: #fff; --font: "Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; --h-color: #d10f5a; --h-transform: none; --h-spacing: -.01em; --h-size: 20px; --h-weight: 900; --h-font: inherit; --big-font: inherit; --big-weight: 900; }
+[data-theme="malina"] .bar { background:#d10f5a;color:#fff;margin: 0 calc(-1 * var(--gut, 16px)) 18px;padding:14px var(--gut, 16px);border:0 }
+[data-theme="malina"] .bar h1 { font-weight:900;font-size:22px }
+[data-theme="malina"] .bar h1 span { color:#ffd1e3 }
+[data-theme="malina"] .bar button { background:#fff;color:#d10f5a;border:0;font-weight:800 }
+[data-theme="malina"] button { font-weight:700 }
+[data-theme="malina"] .big .value { color:#d10f5a;letter-spacing:-.03em }
+[data-theme="malina"] .chart .line { stroke-width:3.5 }
+[data-theme="malina"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="malina"] tbody tr { border-bottom:1px solid #f7e1ea }
+[data-theme="malina"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="malina"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="malina"][data-scheme="dark"] { color-scheme: dark; --back: #060606; --card: #060606; --head: #11090c; --edge: #29141e; --alt: #0c0709; --text1: #fad3e3; --text2: #cb9aae; --faint: #7a5767; --up: #4ade80; --down: #f87171; --accent: #d10f5a; --hot: #190b11; --tip: #d10f5a; --tipfg: #eaeaea; --accentfg: #ffffff; --h-color: #d10f5a; }
+[data-theme="malina"][data-scheme="dark"] .bar { background:#d10f5a;color:#060606;margin: 0 calc(-1 * var(--gut, 16px)) 18px;padding:14px var(--gut, 16px);border:0 }
+[data-theme="malina"][data-scheme="dark"] .bar h1 span { color:#2c0c1c }
+[data-theme="malina"][data-scheme="dark"] .bar button { background:#060606;color:#d10f5a;border:0;font-weight:800 }
+[data-theme="malina"][data-scheme="dark"] .big .value { color:#d10f5a;letter-spacing:-.03em }
+[data-theme="malina"][data-scheme="dark"] tbody tr { border-bottom:1px solid #1d0f15 }

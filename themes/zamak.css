@@ -1,0 +1,13 @@
+/* tema zamak (Castle): generisana, tools/teme.py */
+:root[data-theme="zamak"] { color-scheme: dark; --back: #17181b; --card: #232426; --head: #2f3032; --edge: #393a3d; --alt: #292a2c; --text1: #e9eaed; --text2: #b4b6b8; --faint: #848588; --up: #4ade80; --down: #f87171; --accent: #6b7280; --hot: #2d2f33; --tip: #e9eaed; --tipfg: #17181b; --accentfg: #ffffff; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 10px; }
+[data-theme="zamak"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="zamak"] .overview .left { align-self: start; }
+[data-theme="zamak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zamak"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="zamak"] body { background: linear-gradient(rgba(107,114,128,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(107,114,128,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(107,114,128,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #17181b; background-attachment: fixed; }
+[data-theme="zamak"] .big .value, [data-theme="zamak"] .detail .price { font-weight: 700; }
+[data-theme="zamak"] .chart .line { stroke-width: 3; }
+[data-theme="zamak"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zamak"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #eeeeef; --edge: #d0d1d2; --alt: #f5f5f5; --text1: #24272e; --text2: #575a5f; --faint: #86888c; --up: #15803d; --down: #c81e1e; --accent: #6b7280; --hot: #e7e8ea; --tip: #24272e; --tipfg: #f1f1f1; --accentfg: #ffffff; }
+[data-theme="zamak"][data-scheme="light"] body { background: linear-gradient(rgba(107,114,128,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(107,114,128,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(107,114,128,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #f1f1f1; background-attachment: fixed; }

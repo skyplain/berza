@@ -1,0 +1,17 @@
+/* tema zemlja iz orbite (Earth from orbit): generisana, tools/teme.py */
+:root[data-theme="zemljaizorbite"] { color-scheme: dark; --back: #020a1a; --card: #0f1625; --head: #1c2332; --edge: #262e3d; --alt: #151c2b; --text1: #e5ebf6; --text2: #acb3bf; --faint: #787f8c; --up: #4ade80; --down: #f87171; --accent: #3b82f6; --hot: #152542; --tip: #e5ebf6; --tipfg: #020a1a; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="zemljaizorbite"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zemljaizorbite"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="zemljaizorbite"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zemljaizorbite"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="zemljaizorbite"] .bar button { background: transparent; color: var(--back); border-color: rgba(2,10,26,0.35); box-shadow: none; }
+[data-theme="zemljaizorbite"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="zemljaizorbite"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="zemljaizorbite"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(59,130,246,0.14) 60px 61px); background-color: #020a1a; background-attachment: fixed; }
+[data-theme="zemljaizorbite"] .big .value, [data-theme="zemljaizorbite"] .detail .price { font-weight: 700; }
+[data-theme="zemljaizorbite"] .chart .line { stroke-width: 3; }
+[data-theme="zemljaizorbite"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zemljaizorbite"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #edeef0; --edge: #ced0d5; --alt: #f3f4f5; --text1: #1c2a43; --text2: #515c6e; --faint: #828997; --up: #15803d; --down: #c81e1e; --accent: #3b82f6; --hot: #dfe9fa; --tip: #1c2a43; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="zemljaizorbite"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,241,0.35); box-shadow: none; }
+[data-theme="zemljaizorbite"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(59,130,246,0.14) 60px 61px); background-color: #f0f0f1; background-attachment: fixed; }

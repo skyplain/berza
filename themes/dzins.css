@@ -1,0 +1,20 @@
+/* tema džins: generisana (paleta + oblik 7/4/3/4) */
+:root[data-theme="dzins"] { color-scheme: light; --back: #e9eef5; --card: #f6f8fb; --head: #e9ecf0; --edge: #c8cfd9; --alt: #eff2f6; --text1: #1b2b45; --text2: #556276; --faint: #828c9d; --up: #15803d; --down: #c81e1e; --accent: #3b5b8f; --hot: #dce2ec; --tip: #1b2b45; --tipfg: #e9eef5; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="dzins"] :is(.overview .left, .block, .detail, .list) { background: #e2e7ef; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="dzins"] .overview .left { align-self: start; }
+[data-theme="dzins"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dzins"] button { border: 0; }
+[data-theme="dzins"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="dzins"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="dzins"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="dzins"] .bar button { background: transparent; color: var(--back); border-color: rgba(233,238,245,0.35); box-shadow: none; }
+[data-theme="dzins"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 10px; }
+[data-theme="dzins"] body { background: radial-gradient(900px 500px at 100% 0, rgba(59,91,143,0.12), transparent 70%); background-color: #e9eef5; background-attachment: fixed; }
+[data-theme="dzins"] .big .value, [data-theme="dzins"] .detail .price { font-weight: 900; }
+[data-theme="dzins"] .chart .line { stroke-width: 1.5; }
+[data-theme="dzins"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="dzins"][data-scheme="dark"] { color-scheme: dark; --back: #0d1015; --card: #08090b; --head: #0f1114; --edge: #21262e; --alt: #0b0d10; --text1: #b4c9eb; --text2: #7b899f; --faint: #5d6779; --up: #4ade80; --down: #f87171; --accent: #46679b; --hot: #14181f; --tip: #b4c9eb; --tipfg: #0d1015; --accentfg: #ffffff; }
+[data-theme="dzins"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #11151a; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 10px; padding: 14px 16px; }
+[data-theme="dzins"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(13,16,21,0.35); box-shadow: none; }
+[data-theme="dzins"][data-scheme="dark"] body { background: radial-gradient(900px 500px at 100% 0, rgba(70,103,155,0.12), transparent 70%); background-color: #0d1015; background-attachment: fixed; }

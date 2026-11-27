@@ -1,0 +1,16 @@
+/* tema ra (Ra): generisana, tools/teme.py */
+:root[data-theme="ra"] { color-scheme: light; --back: #f8ecd0; --card: #fdf9f1; --head: #f1ede4; --edge: #daceb3; --alt: #f7f3eb; --text1: #3d2f19; --text2: #6c5e47; --faint: #90836a; --up: #15803d; --down: #c81e1e; --accent: #af7007; --hot: #f2e6d0; --tip: #3d2f19; --tipfg: #f8ecd0; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="ra"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="ra"] .overview .left { align-self: start; }
+[data-theme="ra"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ra"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="ra"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ra"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ra"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ra"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(175,112,7,0.08) 0 6deg, transparent 6deg 12deg); background-color: #f8ecd0; background-attachment: fixed; }
+[data-theme="ra"] .big .value, [data-theme="ra"] .detail .price { font-weight: 900; }
+[data-theme="ra"] .chart .line { stroke-width: 1.5; }
+[data-theme="ra"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ra"][data-scheme="dark"] { color-scheme: dark; --back: #232223; --card: #2e2d2e; --head: #3a3939; --edge: #444242; --alt: #343333; --text1: #f4ede3; --text2: #c0bab3; --faint: #908c87; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #4a3d29; --tip: #f4ede3; --tipfg: #232223; --accentfg: #111111; }
+[data-theme="ra"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(245,158,11,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232223; background-attachment: fixed; }

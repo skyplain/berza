@@ -1,0 +1,18 @@
+/* tema mornarski čvor (Sailor knot): generisana, tools/teme.py */
+:root[data-theme="mornarskicvor"] { color-scheme: light; --back: #faf7ee; --card: #fefdfa; --head: #f0f0ee; --edge: #d6d4d0; --alt: #f7f6f4; --text1: #171d30; --text2: #505460; --faint: #84868b; --up: #15803d; --down: #c81e1e; --accent: #1e3a8a; --hot: #dfe2ea; --tip: #171d30; --tipfg: #faf7ee; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="mornarskicvor"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="mornarskicvor"] .overview .left { align-self: start; }
+[data-theme="mornarskicvor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mornarskicvor"] button { border-radius: 999px; }
+[data-theme="mornarskicvor"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mornarskicvor"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="mornarskicvor"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="mornarskicvor"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="mornarskicvor"] :is(.overview .left, .block, .detail, .list) { border: 4px solid transparent; border-image: repeating-linear-gradient(45deg, #1e3a8a 0 4px, #8c98bc 4px 8px) 4; }
+[data-theme="mornarskicvor"] .big .value, [data-theme="mornarskicvor"] .detail .price { font-weight: 400; }
+[data-theme="mornarskicvor"] .chart .line { stroke-width: 1.5; }
+[data-theme="mornarskicvor"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mornarskicvor"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #393a3c; --edge: #424346; --alt: #333437; --text1: #e3e5ed; --text2: #b3b5bb; --faint: #87888d; --up: #4ade80; --down: #f87171; --accent: #6b7cb2; --hot: #373a43; --tip: #e3e5ed; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="mornarskicvor"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="mornarskicvor"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px solid transparent; border-image: repeating-linear-gradient(45deg, #6b7cb2 0 4px, #47506c 4px 8px) 4; }

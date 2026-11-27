@@ -1,0 +1,15 @@
+/* tema krimi (Crime): generisana, tools/teme.py */
+:root[data-theme="krimi"] { color-scheme: dark; --back: #121212; --card: #1e1e1e; --head: #2b2b2a; --edge: #363634; --alt: #242424; --text1: #f4f1e4; --text2: #bcb9b0; --faint: #88867f; --up: #4ade80; --down: #f87171; --accent: #f7d417; --hot: #3c371d; --tip: #f4f1e4; --tipfg: #121212; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 8px; }
+[data-theme="krimi"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="krimi"] .overview .left { align-self: start; }
+[data-theme="krimi"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="krimi"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="krimi"] .bar h1 { font-size: 24px; }
+[data-theme="krimi"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="krimi"] .bar { position: relative; }
+[data-theme="krimi"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px; background: repeating-linear-gradient(45deg, #f7d417 0 18px, #111111 18px 36px); }
+[data-theme="krimi"] .big .value, [data-theme="krimi"] .detail .price { font-weight: 900; }
+[data-theme="krimi"] .chart .line { stroke-width: 1.5; }
+[data-theme="krimi"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="krimi"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #f0efee; --edge: #d4d4cf; --alt: #f5f5f4; --text1: #3e391b; --text2: #6b6750; --faint: #8d8a7a; --up: #15803d; --down: #c81e1e; --accent: #96810e; --hot: #edeada; --tip: #3e391b; --tipfg: #f1f1f1; --accentfg: #111111; }

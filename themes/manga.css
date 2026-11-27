@@ -1,0 +1,19 @@
+/* tema manga (Manga): generisana, tools/teme.py */
+:root[data-theme="manga"] { color-scheme: light; --back: #f3f3f3; --card: #fbfbfb; --head: #ededee; --edge: #cfd0d0; --alt: #f4f4f4; --text1: #14161a; --text2: #4c4d50; --faint: #7f8082; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dadada; --tip: #14161a; --tipfg: #f3f3f3; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="manga"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="manga"] .overview .left { align-self: start; }
+[data-theme="manga"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="manga"] button { border-radius: 0; }
+[data-theme="manga"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="manga"] .bar h1 { font-size: 24px; }
+[data-theme="manga"] body { background: radial-gradient(rgba(17,17,17,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #f3f3f3; background-attachment: fixed; }
+[data-theme="manga"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #14161a; box-shadow: 6px 6px 0 #14161a; border-radius: 6px; background: var(--card); }
+[data-theme="manga"] button { border: 2px solid #14161a; box-shadow: 2px 2px 0 #14161a; }
+[data-theme="manga"] .big .value, [data-theme="manga"] .detail .price { font-weight: 700; }
+[data-theme="manga"] .chart .line { stroke-width: 1.5; }
+[data-theme="manga"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="manga"][data-scheme="dark"] { color-scheme: dark; --back: #0c0c10; --card: #18181c; --head: #242428; --edge: #2e2e32; --alt: #1e1e22; --text1: #e2e2e4; --text2: #acacaf; --faint: #7b7b7e; --up: #4ade80; --down: #f87171; --accent: #6f6f6f; --hot: #242428; --tip: #e2e2e4; --tipfg: #0c0c10; --accentfg: #ffffff; }
+[data-theme="manga"][data-scheme="dark"] body { background: radial-gradient(rgba(111,111,111,0.22) 28%, transparent 30%) 0 0 / 10px 10px; background-color: #0c0c10; background-attachment: fixed; }
+[data-theme="manga"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #e2e2e4; box-shadow: 6px 6px 0 #e2e2e4; border-radius: 6px; background: var(--card); }
+[data-theme="manga"][data-scheme="dark"] button { border: 2px solid #e2e2e4; box-shadow: 2px 2px 0 #e2e2e4; }

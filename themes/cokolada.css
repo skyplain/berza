@@ -1,0 +1,17 @@
+/* tema čokolada: generisana (paleta + oblik 6/1/0/5) */
+:root[data-theme="cokolada"] { color-scheme: dark; --back: #1f120c; --card: #2a1910; --head: #36251c; --edge: #41342d; --alt: #301f16; --text1: #f5e6da; --text2: #b9aba0; --faint: #8a7c73; --up: #4ade80; --down: #f87171; --accent: #c68b59; --hot: #40291a; --tip: #f5e6da; --tipfg: #1f120c; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="cokolada"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="cokolada"] .overview .left { align-self: start; }
+[data-theme="cokolada"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cokolada"] button { border-radius: 0; }
+[data-theme="cokolada"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="cokolada"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="cokolada"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="cokolada"] body { background: linear-gradient(180deg, #301e14, #1f120c 420px); background-color: #1f120c; background-attachment: fixed; }
+[data-theme="cokolada"] .big .value, [data-theme="cokolada"] .detail .price { font-weight: 700; }
+[data-theme="cokolada"] .chart .line { stroke-width: 3; }
+[data-theme="cokolada"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="cokolada"][data-scheme="light"] { color-scheme: light; --back: #f4e1d8; --card: #ecd4c8; --head: #dbc4b9; --edge: #c5b5ac; --alt: #e4ccc0; --text1: #1a1108; --text2: #493d34; --faint: #74675e; --up: #15803d; --down: #c81e1e; --accent: #9f6939; --hot: #d9bca9; --tip: #1a1108; --tipfg: #f4e1d8; --accentfg: #ffffff; }
+[data-theme="cokolada"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="cokolada"][data-scheme="light"] body { background: linear-gradient(180deg, #e6cdc0, #f4e1d8 420px); background-color: #f4e1d8; background-attachment: fixed; }

@@ -1,0 +1,12 @@
+/* tema uzbuđenje (Excitement): generisana, tools/teme.py */
+:root[data-theme="uzbudjenje"] { color-scheme: light; --back: #fff4eb; --card: #fffcf9; --head: #f3efec; --edge: #e0d3ca; --alt: #f9f6f2; --text1: #3e281b; --text2: #6e5b4f; --faint: #9b8a7f; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f9e6d9; --tip: #3e281b; --tipfg: #fff4eb; --accentfg: #111111; --font: Impact, Haettenschweiler, "Arial Black", sans-serif; --radius: 8px; }
+[data-theme="uzbudjenje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="uzbudjenje"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="uzbudjenje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="uzbudjenje"] body { background: radial-gradient(rgba(211,98,18,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(22,249,115,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(115,22,249,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #fff4eb; background-attachment: fixed; }
+[data-theme="uzbudjenje"] .big .value, [data-theme="uzbudjenje"] .detail .price { font-weight: 200; }
+[data-theme="uzbudjenje"] .chart .line { stroke-width: 1.5; }
+[data-theme="uzbudjenje"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="uzbudjenje"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444344; --alt: #343436; --text1: #f4eae4; --text2: #c0b8b4; --faint: #908a89; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #4a382d; --tip: #f4eae4; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="uzbudjenje"][data-scheme="dark"] body { background: radial-gradient(rgba(249,115,22,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(22,249,115,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(115,22,249,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #232326; background-attachment: fixed; }

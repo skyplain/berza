@@ -1,0 +1,19 @@
+/* tema konstruktivizam (Constructivism): generisana, tools/teme.py */
+:root[data-theme="konstruktivizam"] { color-scheme: light; --back: #efe6d4; --card: #faf8f2; --head: #eeeae5; --edge: #d1c4b6; --alt: #f4f1eb; --text1: #361317; --text2: #644846; --faint: #8f7872; --up: #15803d; --down: #c81e1e; --accent: #cc0000; --hot: #f4d5d0; --tip: #361317; --tipfg: #efe6d4; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="konstruktivizam"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="konstruktivizam"] .overview .left { align-self: start; }
+[data-theme="konstruktivizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="konstruktivizam"] button { border-radius: 0; }
+[data-theme="konstruktivizam"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="konstruktivizam"] .bar h1 { font-weight: 800; }
+[data-theme="konstruktivizam"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="konstruktivizam"] body { background: linear-gradient(125deg, rgba(204,0,0,0.13) 0 28%, transparent 28%); background-color: #efe6d4; background-attachment: fixed; }
+[data-theme="konstruktivizam"] :is(h2, h3) { border-left: 8px solid #cc0000; padding-left: 8px; }
+[data-theme="konstruktivizam"] .bar h1 { transform: skewX(-8deg); }
+[data-theme="konstruktivizam"] .big .value, [data-theme="konstruktivizam"] .detail .price { font-weight: 900; }
+[data-theme="konstruktivizam"] .chart .line { stroke-width: 1.5; }
+[data-theme="konstruktivizam"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="konstruktivizam"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #39383a; --edge: #434042; --alt: #333234; --text1: #f1e0e2; --text2: #bdb0b2; --faint: #8e8587; --up: #4ade80; --down: #f87171; --accent: #d14545; --hot: #443032; --tip: #f1e0e2; --tipfg: #222224; --accentfg: #ffffff; }
+[data-theme="konstruktivizam"][data-scheme="dark"] body { background: linear-gradient(125deg, rgba(209,69,69,0.13) 0 28%, transparent 28%); background-color: #222224; background-attachment: fixed; }
+[data-theme="konstruktivizam"][data-scheme="dark"] :is(h2, h3) { border-left: 8px solid #d14545; padding-left: 8px; }

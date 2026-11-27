@@ -1,0 +1,15 @@
+/* tema inje (Hoarfrost): generisana, tools/teme.py */
+:root[data-theme="inje"] { color-scheme: light; --back: #f4fbff; --card: #f2faff; --head: #e6eef4; --edge: #d3dce1; --alt: #ecf4f9; --text1: #283944; --text2: #5b6a73; --faint: #828f97; --up: #15803d; --down: #c81e1e; --accent: #538ba6; --hot: #dceaf3; --tip: #283944; --tipfg: #f4fbff; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="inje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="inje"] .overview .left { align-self: start; }
+[data-theme="inje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="inje"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="inje"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="inje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="inje"] body { background: radial-gradient(circle, rgba(125,211,252,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(125,211,252,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(125,211,252,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px, conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(83,139,166,0.08) 40% 46%, transparent 46%); background-color: #f4fbff; background-attachment: fixed; }
+[data-theme="inje"] .big .value, [data-theme="inje"] .detail .price { font-weight: 900; }
+[data-theme="inje"] .chart .line { stroke-width: 2; }
+[data-theme="inje"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="inje"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #424549; --alt: #333539; --text1: #eaf1f6; --text2: #b8bec2; --faint: #8a8f93; --up: #4ade80; --down: #f87171; --accent: #7dd3fc; --hot: #38464f; --tip: #eaf1f6; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="inje"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px, conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(125,211,252,0.08) 40% 46%, transparent 46%); background-color: #222428; background-attachment: fixed; }

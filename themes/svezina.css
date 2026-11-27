@@ -1,0 +1,13 @@
+/* tema svežina (Freshness): generisana, tools/teme.py */
+:root[data-theme="svezina"] { color-scheme: light; --back: #f0fdf7; --card: #ecfcf5; --head: #dff0e9; --edge: #cdddd7; --alt: #e6f6ef; --text1: #14342e; --text2: #4b6660; --faint: #7e948e; --up: #15803d; --down: #c81e1e; --accent: #0e9c6d; --hot: #cdefe2; --tip: #14342e; --tipfg: #f0fdf7; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="svezina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="svezina"] .overview .left { align-self: start; }
+[data-theme="svezina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svezina"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="svezina"] body { background: radial-gradient(circle, transparent 6px, rgba(14,156,109,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(14,156,109,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f0fdf7; background-attachment: fixed; }
+[data-theme="svezina"] .big .value, [data-theme="svezina"] .detail .price { font-weight: 900; }
+[data-theme="svezina"] .chart .line { stroke-width: 1.5; }
+[data-theme="svezina"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="svezina"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383b3d; --edge: #414447; --alt: #323538; --text1: #e2efed; --text2: #b2bcbc; --faint: #868e8e; --up: #4ade80; --down: #f87171; --accent: #10b981; --hot: #29423d; --tip: #e2efed; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="svezina"][data-scheme="dark"] body { background: radial-gradient(circle, transparent 6px, rgba(16,185,129,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(16,185,129,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #222427; background-attachment: fixed; }

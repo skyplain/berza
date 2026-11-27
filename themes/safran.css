@@ -1,0 +1,17 @@
+/* tema šafran: generisana (paleta + oblik 2/1/2/1) */
+:root[data-theme="safran"] { color-scheme: light; --back: #fff6e0; --card: #fffbf0; --head: #f3eee2; --edge: #e0d5bc; --alt: #f9f5e9; --text1: #3d2a00; --text2: #73633f; --faint: #9e9070; --up: #15803d; --down: #c81e1e; --accent: #d98c00; --hot: #faebce; --tip: #3d2a00; --tipfg: #fff6e0; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 6px; }
+[data-theme="safran"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="safran"] .overview .left { align-self: start; }
+[data-theme="safran"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="safran"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="safran"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="safran"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="safran"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="safran"] body { background: radial-gradient(#ece2ca 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #fff6e0; background-attachment: fixed; }
+[data-theme="safran"] .big .value, [data-theme="safran"] .detail .price { font-weight: 700; }
+[data-theme="safran"] .chart .line { stroke-width: 2.5; }
+[data-theme="safran"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="safran"][data-scheme="dark"] { color-scheme: dark; --back: #0f0900; --card: #0a0703; --head: #120f07; --edge: #281f0b; --alt: #0e0b04; --text1: #d8c197; --text2: #93825d; --faint: #6d5f41; --up: #4ade80; --down: #f87171; --accent: #d98c00; --hot: #190e00; --tip: #d8c197; --tipfg: #0f0900; --accentfg: #111111; }
+[data-theme="safran"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="safran"][data-scheme="dark"] body { background: radial-gradient(#1e1604 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #0f0900; background-attachment: fixed; }

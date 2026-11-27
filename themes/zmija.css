@@ -1,0 +1,16 @@
+/* tema zmija (Snake): generisana, tools/teme.py */
+:root[data-theme="zmija"] { color-scheme: dark; --back: #0a1306; --card: #161f12; --head: #232b1f; --edge: #2d352a; --alt: #1c2518; --text1: #e7eae4; --text2: #b0b4ac; --faint: #7d8379; --up: #4ade80; --down: #f87171; --accent: #4d7c0f; --hot: #1e2c12; --tip: #e7eae4; --tipfg: #0a1306; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="zmija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="zmija"] .overview .left { align-self: start; }
+[data-theme="zmija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zmija"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="zmija"] .bar h1 { font-weight: 800; }
+[data-theme="zmija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zmija"] body { background: radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 0 0 / 24px 12px, radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 12px 6px / 24px 12px; background-color: #0a1306; background-attachment: fixed; }
+[data-theme="zmija"] .big .value, [data-theme="zmija"] .detail .price { font-weight: 900; }
+[data-theme="zmija"] .chart .line { stroke-width: 2.5; }
+[data-theme="zmija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="zmija"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #edeeed; --edge: #cfd1ce; --alt: #f3f5f3; --text1: #1f291a; --text2: #535b50; --faint: #838981; --up: #15803d; --down: #c81e1e; --accent: #4d7c0f; --hot: #e2e9d9; --tip: #1f291a; --tipfg: #f0f1f0; --accentfg: #ffffff; }
+[data-theme="zmija"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zmija"][data-scheme="light"] body { background: radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 0 0 / 24px 12px, radial-gradient(circle at 50% 0, transparent 10px, rgba(77,124,15,0.2) 11px 12px, transparent 13px) 12px 6px / 24px 12px; background-color: #f0f1f0; background-attachment: fixed; }

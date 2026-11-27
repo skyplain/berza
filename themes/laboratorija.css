@@ -1,0 +1,18 @@
+/* tema laboratorija (Laboratory): generisana, tools/teme.py */
+:root[data-theme="laboratorija"] { color-scheme: light; --back: #f6fdff; --card: #f1fcfe; --head: #e4f0f2; --edge: #d2dde0; --alt: #eaf6f8; --text1: #12343d; --text2: #4b666e; --faint: #7f949a; --up: #15803d; --down: #c81e1e; --accent: #069ab3; --hot: #d0eef4; --tip: #12343d; --tipfg: #f6fdff; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="laboratorija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="laboratorija"] .overview .left { align-self: start; }
+[data-theme="laboratorija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="laboratorija"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="laboratorija"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="laboratorija"] .bar button { background: transparent; color: var(--back); border-color: rgba(246,253,255,0.35); box-shadow: none; }
+[data-theme="laboratorija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="laboratorija"] body { background: linear-gradient(rgba(6,154,179,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(6,154,179,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(6,154,179,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(6,154,179,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #f6fdff; background-attachment: fixed; }
+[data-theme="laboratorija"] .big .value, [data-theme="laboratorija"] .detail .price { font-weight: 400; }
+[data-theme="laboratorija"] .chart .line { stroke-width: 2; }
+[data-theme="laboratorija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="laboratorija"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #414448; --alt: #323539; --text1: #e1eff3; --text2: #b1bcc0; --faint: #858e92; --up: #4ade80; --down: #f87171; --accent: #06b6d4; --hot: #28424a; --tip: #e1eff3; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="laboratorija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="laboratorija"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,40,0.35); box-shadow: none; }
+[data-theme="laboratorija"][data-scheme="dark"] body { background: linear-gradient(rgba(6,182,212,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(6,182,212,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(6,182,212,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(6,182,212,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #222428; background-attachment: fixed; }

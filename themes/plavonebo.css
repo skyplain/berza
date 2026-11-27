@@ -1,0 +1,13 @@
+/* tema plavo nebo (Blue sky): generisana, tools/teme.py */
+:root[data-theme="plavonebo"] { color-scheme: light; --back: #eaf6ff; --card: #f9fcff; --head: #ebf0f4; --edge: #c8d6e1; --alt: #f2f6f9; --text1: #143141; --text2: #4a6270; --faint: #7b909c; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #d8ecf7; --tip: #143141; --tipfg: #eaf6ff; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="plavonebo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="plavonebo"] .overview .left { align-self: start; }
+[data-theme="plavonebo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plavonebo"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="plavonebo"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.9), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.8), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.7), transparent 70%); background-color: #eaf6ff; background-attachment: fixed; }
+[data-theme="plavonebo"] .big .value, [data-theme="plavonebo"] .detail .price { font-weight: 700; }
+[data-theme="plavonebo"] .chart .line { stroke-width: 2.5; }
+[data-theme="plavonebo"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plavonebo"][data-scheme="dark"] { color-scheme: dark; --back: #212328; --card: #2c2e33; --head: #373a3f; --edge: #404349; --alt: #313439; --text1: #e2eef5; --text2: #b2bbc2; --faint: #858d93; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #283f4c; --tip: #e2eef5; --tipfg: #212328; --accentfg: #111111; }
+[data-theme="plavonebo"][data-scheme="dark"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.12), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.1), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.08), transparent 70%); background-color: #212328; background-attachment: fixed; }

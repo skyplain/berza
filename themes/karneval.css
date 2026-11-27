@@ -1,0 +1,16 @@
+/* tema karneval: generisana (paleta + oblik 2/1/0/1) */
+:root[data-theme="karneval"] { color-scheme: dark; --back: #1b0a30; --card: #26123f; --head: #331f4a; --edge: #3f2f50; --alt: #2d1945; --text1: #fff0fb; --text2: #bfb0c2; --faint: #8d7d96; --up: #4ade80; --down: #f87171; --accent: #ffbe0b; --hot: #442a38; --tip: #fff0fb; --tipfg: #1b0a30; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 6px; }
+[data-theme="karneval"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="karneval"] .overview .left { align-self: start; }
+[data-theme="karneval"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="karneval"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="karneval"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="karneval"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="karneval"] body { background: radial-gradient(#322144 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #1b0a30; background-attachment: fixed; }
+[data-theme="karneval"] .big .value, [data-theme="karneval"] .detail .price { font-weight: 700; }
+[data-theme="karneval"] .chart .line { stroke-width: 3; }
+[data-theme="karneval"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="karneval"][data-scheme="light"] { color-scheme: light; --back: #eae0fd; --card: #dfcffe; --head: #d2bcf2; --edge: #c1afd7; --alt: #d9c3fc; --text1: #11080f; --text2: #403443; --faint: #6e5f76; --up: #15803d; --down: #c81e1e; --accent: #966d00; --hot: #d3b2c3; --tip: #11080f; --tipfg: #eae0fd; --accentfg: #ffffff; }
+[data-theme="karneval"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="karneval"][data-scheme="light"] body { background: radial-gradient(#d2beeb 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #eae0fd; background-attachment: fixed; }

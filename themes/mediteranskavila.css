@@ -1,0 +1,12 @@
+/* tema mediteranska vila (Mediterranean villa): generisana, tools/teme.py */
+:root[data-theme="mediteranskavila"] { color-scheme: light; --back: #fffdf6; --card: #fafaf5; --head: #ecedea; --edge: #dadad9; --alt: #f3f3f0; --text1: #16213e; --text2: #50586c; --faint: #868b96; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dbe2f1; --tip: #16213e; --tipfg: #fffdf6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="mediteranskavila"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mediteranskavila"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="mediteranskavila"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="mediteranskavila"] body { background: radial-gradient(circle at 0 0, rgba(29,78,216,0.14) 30%, transparent 31%) 0 0 / 40px 40px, radial-gradient(circle at 100% 100%, rgba(29,78,216,0.14) 30%, transparent 31%) 0 0 / 40px 40px, linear-gradient(rgba(22,33,62,0.06) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(22,33,62,0.06) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #fffdf6; background-attachment: fixed; }
+[data-theme="mediteranskavila"] .big .value, [data-theme="mediteranskavila"] .detail .price { font-weight: 200; }
+[data-theme="mediteranskavila"] .chart .line { stroke-width: 3; }
+[data-theme="mediteranskavila"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mediteranskavila"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3e; --edge: #424348; --alt: #333538; --text1: #e3e7f4; --text2: #b3b6c1; --faint: #878992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #343a4b; --tip: #e3e7f4; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="mediteranskavila"][data-scheme="dark"] body { background: radial-gradient(circle at 0 0, rgba(86,123,226,0.14) 30%, transparent 31%) 0 0 / 40px 40px, radial-gradient(circle at 100% 100%, rgba(86,123,226,0.14) 30%, transparent 31%) 0 0 / 40px 40px, linear-gradient(rgba(227,231,244,0.06) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(227,231,244,0.06) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #232427; background-attachment: fixed; }

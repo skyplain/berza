@@ -1,0 +1,21 @@
+/* tema kupina: generisana (paleta + oblik 1/4/5/2) */
+:root[data-theme="kupina"] { color-scheme: dark; --back: #1a0f1f; --card: #24162b; --head: #302237; --edge: #3c3141; --alt: #2a1c31; --text1: #f0e4f5; --text2: #b4a8b9; --faint: #857a8a; --up: #4ade80; --down: #f87171; --accent: #b84fd6; --hot: #391e43; --tip: #f0e4f5; --tipfg: #1a0f1f; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 10px; }
+[data-theme="kupina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kupina"] .overview .left { align-self: start; }
+[data-theme="kupina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kupina"] button { border-radius: 999px; }
+[data-theme="kupina"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kupina"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kupina"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="kupina"] .bar button { background: transparent; color: var(--back); border-color: rgba(26,15,31,0.35); box-shadow: none; }
+[data-theme="kupina"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="kupina"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="kupina"] body { background: linear-gradient(rgba(240,228,245,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(240,228,245,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #1a0f1f; background-attachment: fixed; }
+[data-theme="kupina"] .big .value, [data-theme="kupina"] .detail .price { font-weight: 400; }
+[data-theme="kupina"] .chart .line { stroke-width: 3; }
+[data-theme="kupina"] .chart .area { opacity: 0.12; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="kupina"][data-scheme="light"] { color-scheme: light; --back: #f0e1f8; --card: #e6d3f0; --head: #d5c3df; --edge: #c2b4c8; --alt: #ddcbe7; --text1: #180f1b; --text2: #463c4b; --faint: #716675; --up: #15803d; --down: #c81e1e; --accent: #ae49cb; --hot: #dbbae8; --tip: #180f1b; --tipfg: #f0e1f8; --accentfg: #ffffff; }
+[data-theme="kupina"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(255,255,255,.45); padding: 14px 16px; }
+[data-theme="kupina"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,225,248,0.35); box-shadow: none; }
+[data-theme="kupina"][data-scheme="light"] body { background: linear-gradient(rgba(24,15,27,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(24,15,27,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f0e1f8; background-attachment: fixed; }

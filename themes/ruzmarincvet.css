@@ -1,0 +1,14 @@
+/* tema ruzmarin cvet (Rosemary bloom): generisana, tools/teme.py */
+:root[data-theme="ruzmarincvet"] { color-scheme: light; --back: #f6f7ff; --card: #fcfdff; --head: #eff0f4; --edge: #d4d5e1; --alt: #f5f7f9; --text1: #232542; --text2: #585a71; --faint: #888a9d; --up: #15803d; --down: #c81e1e; --accent: #5f62e7; --hot: #e6e7fc; --tip: #232542; --tipfg: #f6f7ff; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="ruzmarincvet"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ruzmarincvet"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="ruzmarincvet"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ruzmarincvet"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ruzmarincvet"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="ruzmarincvet"] body { background: radial-gradient(ellipse 8px 18px, rgba(95,98,231,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(95,98,231,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f6f7ff; background-attachment: fixed; }
+[data-theme="ruzmarincvet"] .big .value, [data-theme="ruzmarincvet"] .detail .price { font-weight: 700; }
+[data-theme="ruzmarincvet"] .chart .line { stroke-width: 2; }
+[data-theme="ruzmarincvet"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ruzmarincvet"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #424449; --alt: #333539; --text1: #e8e9f6; --text2: #b6b8c2; --faint: #898a93; --up: #4ade80; --down: #f87171; --accent: #696cf2; --hot: #35384e; --tip: #e8e9f6; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="ruzmarincvet"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(105,108,242,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(105,108,242,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222428; background-attachment: fixed; }

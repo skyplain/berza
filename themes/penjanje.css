@@ -1,0 +1,16 @@
+/* tema penjanje (Climbing): generisana, tools/teme.py */
+:root[data-theme="penjanje"] { color-scheme: light; --back: #f5efe5; --card: #fcfaf7; --head: #f0edea; --edge: #d5cfc4; --alt: #f6f4f0; --text1: #2e2418; --text2: #60574b; --faint: #8e857a; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #efe5d5; --tip: #2e2418; --tipfg: #f5efe5; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="penjanje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="penjanje"] .overview .left { align-self: start; }
+[data-theme="penjanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="penjanje"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="penjanje"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="penjanje"] .bar h1 { font-weight: 800; }
+[data-theme="penjanje"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="penjanje"] body { background: radial-gradient(circle, rgba(46,36,24,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(46,36,24,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #f5efe5; background-attachment: fixed; }
+[data-theme="penjanje"] .big .value, [data-theme="penjanje"] .detail .price { font-weight: 700; }
+[data-theme="penjanje"] .chart .line { stroke-width: 1.5; }
+[data-theme="penjanje"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="penjanje"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #39393b; --edge: #424343; --alt: #333435; --text1: #ede8e3; --text2: #bab7b4; --faint: #8c8988; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3d372d; --tip: #ede8e3; --tipfg: #222325; --accentfg: #ffffff; }
+[data-theme="penjanje"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(237,232,227,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(237,232,227,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #222325; background-attachment: fixed; }

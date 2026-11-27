@@ -1,0 +1,15 @@
+/* tema proleće (Spring): generisana, tools/teme.py */
+:root[data-theme="prolece"] { color-scheme: light; --back: #f4fdf4; --card: #f0fcf1; --head: #e3f0e5; --edge: #d1ddd3; --alt: #e9f6eb; --text1: #173628; --text2: #4e685b; --faint: #81968a; --up: #15803d; --down: #c81e1e; --accent: #1b9a49; --hot: #d2eed9; --tip: #173628; --tipfg: #f4fdf4; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="prolece"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="prolece"] .overview .left { align-self: start; }
+[data-theme="prolece"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="prolece"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="prolece"] .bar h1 { font-size: 24px; }
+[data-theme="prolece"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="prolece"] body { background: radial-gradient(circle, rgba(250,204,21,0.5) 0 2px, rgba(27,154,73,0.3) 3px 6px, transparent 7px) 0 0 / 54px 54px, radial-gradient(circle, rgba(255,255,255,0.5) 0 2px, rgba(94,34,197,0.25) 3px 5px, transparent 6px) 27px 27px / 54px 54px; background-color: #f4fdf4; background-attachment: fixed; }
+[data-theme="prolece"] .big .value, [data-theme="prolece"] .detail .price { font-weight: 700; }
+[data-theme="prolece"] .chart .line { stroke-width: 2.5; }
+[data-theme="prolece"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="prolece"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383b3d; --edge: #414546; --alt: #323538; --text1: #e3f0ea; --text2: #b3bdb9; --faint: #868e8c; --up: #4ade80; --down: #f87171; --accent: #22c55e; --hot: #2b4438; --tip: #e3f0ea; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="prolece"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(250,204,21,0.5) 0 2px, rgba(34,197,94,0.3) 3px 6px, transparent 7px) 0 0 / 54px 54px, radial-gradient(circle, rgba(255,255,255,0.5) 0 2px, rgba(94,34,197,0.25) 3px 5px, transparent 6px) 27px 27px / 54px 54px; background-color: #222427; background-attachment: fixed; }

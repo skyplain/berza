@@ -1,0 +1,13 @@
+/* tema sazvežđa (Constellations): generisana, tools/teme.py */
+:root[data-theme="sazvezdja"] { color-scheme: dark; --back: #050816; --card: #121422; --head: #1f212f; --edge: #2b2e3a; --alt: #191b28; --text1: #f2f3f7; --text2: #b7b8bf; --faint: #80828b; --up: #4ade80; --down: #f87171; --accent: #e0e7ff; --hot: #2f3241; --tip: #f2f3f7; --tipfg: #050816; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="sazvezdja"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="sazvezdja"] .overview .left { align-self: start; }
+[data-theme="sazvezdja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sazvezdja"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="sazvezdja"] body { background: radial-gradient(2px 2px at 40px 60px, rgba(242,243,247,0.9), transparent), radial-gradient(2px 2px at 140px 30px, rgba(242,243,247,0.9), transparent), radial-gradient(2px 2px at 220px 120px, rgba(242,243,247,0.9), transparent), linear-gradient(160deg, transparent 49.7%, rgba(224,231,255,0.25) 50%, transparent 50.3%) 40px 30px / 100px 30px no-repeat, radial-gradient(1px 1px at 300px 200px, rgba(242,243,247,0.6), transparent); background-color: #050816; background-attachment: fixed; }
+[data-theme="sazvezdja"] .big .value, [data-theme="sazvezdja"] .detail .price { font-weight: 900; }
+[data-theme="sazvezdja"] .chart .line { stroke-width: 1.5; }
+[data-theme="sazvezdja"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="sazvezdja"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeeff0; --edge: #d3d3d5; --alt: #f4f4f6; --text1: #3a3c45; --text2: #686970; --faint: #84858b; --up: #15803d; --down: #c81e1e; --accent: #7d828f; --hot: #e8e9ec; --tip: #3a3c45; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="sazvezdja"][data-scheme="light"] body { background: radial-gradient(2px 2px at 40px 60px, rgba(58,60,69,0.9), transparent), radial-gradient(2px 2px at 140px 30px, rgba(58,60,69,0.9), transparent), radial-gradient(2px 2px at 220px 120px, rgba(58,60,69,0.9), transparent), linear-gradient(160deg, transparent 49.7%, rgba(125,130,143,0.25) 50%, transparent 50.3%) 40px 30px / 100px 30px no-repeat, radial-gradient(1px 1px at 300px 200px, rgba(58,60,69,0.6), transparent); background-color: #f0f0f1; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema misterioznost (Mysteriousness): generisana, tools/teme.py */
+:root[data-theme="misterioznost"] { color-scheme: dark; --back: #0a0615; --card: #161221; --head: #231f2e; --edge: #2e2a39; --alt: #1c1827; --text1: #e9e4f4; --text2: #b1acbc; --faint: #7e7989; --up: #4ade80; --down: #f87171; --accent: #7939dc; --hot: #24173b; --tip: #e9e4f4; --tipfg: #0a0615; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="misterioznost"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="misterioznost"] .overview .left { align-self: start; }
+[data-theme="misterioznost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="misterioznost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="misterioznost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="misterioznost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="misterioznost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="misterioznost"] body { background: linear-gradient(0deg, rgba(233,228,244,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(233,228,244,0.08), transparent 70%); background-color: #0a0615; background-attachment: fixed; }
+[data-theme="misterioznost"] .big .value, [data-theme="misterioznost"] .detail .price { font-weight: 400; }
+[data-theme="misterioznost"] .chart .line { stroke-width: 2.5; }
+[data-theme="misterioznost"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="misterioznost"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #ededf0; --edge: #d0ced4; --alt: #f4f3f5; --text1: #251a3e; --text2: #58506b; --faint: #868194; --up: #15803d; --down: #c81e1e; --accent: #6d28d9; --hot: #e6ddf6; --tip: #251a3e; --tipfg: #f0f0f1; --accentfg: #ffffff; }
+[data-theme="misterioznost"][data-scheme="light"] body { background: linear-gradient(0deg, rgba(37,26,62,0.1), transparent 45%), radial-gradient(ellipse 80% 30% at 50% 100%, rgba(37,26,62,0.08), transparent 70%); background-color: #f0f0f1; background-attachment: fixed; }

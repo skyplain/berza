@@ -1,0 +1,16 @@
+/* tema dokumentacija (Docs): generisana, tools/teme.py */
+:root[data-theme="dokumentacija"] { color-scheme: light; --back: #f3f8fd; --card: #fbfdfe; --head: #edf0f2; --edge: #cfd6de; --alt: #f4f7f8; --text1: #13263e; --text2: #4b5a6e; --faint: #7f8b9a; --up: #15803d; --down: #c81e1e; --accent: #0969da; --hot: #d9e8f9; --tip: #13263e; --tipfg: #f3f8fd; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="dokumentacija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="dokumentacija"] .overview .left { align-self: start; }
+[data-theme="dokumentacija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dokumentacija"] button { border-radius: 999px; }
+[data-theme="dokumentacija"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="dokumentacija"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="dokumentacija"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="dokumentacija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="dokumentacija"] .big .value, [data-theme="dokumentacija"] .detail .price { font-weight: 200; }
+[data-theme="dokumentacija"] .chart .line { stroke-width: 1.5; }
+[data-theme="dokumentacija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dokumentacija"][data-scheme="dark"] { color-scheme: dark; --back: #0b1422; --card: #17202d; --head: #232c39; --edge: #2d3644; --alt: #1d2633; --text1: #e1e9f4; --text2: #acb4c0; --faint: #7a838f; --up: #4ade80; --down: #f87171; --accent: #0969da; --hot: #152a45; --tip: #e1e9f4; --tipfg: #0b1422; --accentfg: #ffffff; }
+[data-theme="dokumentacija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

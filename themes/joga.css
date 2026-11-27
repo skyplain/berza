@@ -1,0 +1,16 @@
+/* tema joga (Yoga): generisana, tools/teme.py */
+:root[data-theme="joga"] { color-scheme: light; --back: #faf8ff; --card: #fefdff; --head: #f2f0f4; --edge: #dad7e1; --alt: #f8f7f9; --text1: #2f2c44; --text2: #625f73; --faint: #908e9e; --up: #15803d; --down: #c81e1e; --accent: #8e76d4; --hot: #eeeaf9; --tip: #2f2c44; --tipfg: #faf8ff; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="joga"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="joga"] .overview .left { align-self: start; }
+[data-theme="joga"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="joga"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="joga"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="joga"] .bar button { background: transparent; color: var(--back); border-color: rgba(250,248,255,0.35); box-shadow: none; }
+[data-theme="joga"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="joga"] .big .value, [data-theme="joga"] .detail .price { font-weight: 900; }
+[data-theme="joga"] .chart .line { stroke-width: 2; }
+[data-theme="joga"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="joga"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3f; --edge: #434449; --alt: #343539; --text1: #eeecf6; --text2: #bbbac2; --faint: #8d8c93; --up: #4ade80; --down: #f87171; --accent: #a78bfa; --hot: #3f3c4f; --tip: #eeecf6; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="joga"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="joga"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }

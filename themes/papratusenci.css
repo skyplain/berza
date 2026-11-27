@@ -1,0 +1,14 @@
+/* tema paprat u senci (Fern in shade): generisana, tools/teme.py */
+:root[data-theme="papratusenci"] { color-scheme: dark; --back: #06140b; --card: #122017; --head: #1e2c23; --edge: #29362e; --alt: #18261d; --text1: #e2e9e6; --text2: #abb4af; --faint: #78837d; --up: #4ade80; --down: #f87171; --accent: #3a7c53; --hot: #182d1f; --tip: #e2e9e6; --tipfg: #06140b; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="papratusenci"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="papratusenci"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="papratusenci"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="papratusenci"] .bar h1 { font-size: 24px; }
+[data-theme="papratusenci"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="papratusenci"] body { background: radial-gradient(ellipse 8px 18px, rgba(58,124,83,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(58,124,83,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #06140b; background-attachment: fixed; }
+[data-theme="papratusenci"] .big .value, [data-theme="papratusenci"] .detail .price { font-weight: 200; }
+[data-theme="papratusenci"] .chart .line { stroke-width: 2.5; }
+[data-theme="papratusenci"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="papratusenci"][data-scheme="light"] { color-scheme: light; --back: #f0f1f0; --card: #fafbfa; --head: #eceeed; --edge: #cdd0cf; --alt: #f3f5f3; --text1: #152520; --text2: #4c5854; --faint: #7e8784; --up: #15803d; --down: #c81e1e; --accent: #166534; --hot: #dae6de; --tip: #152520; --tipfg: #f0f1f0; --accentfg: #ffffff; }
+[data-theme="papratusenci"][data-scheme="light"] body { background: radial-gradient(ellipse 8px 18px, rgba(22,101,52,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(22,101,52,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f0f1f0; background-attachment: fixed; }

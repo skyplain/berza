@@ -1,0 +1,17 @@
+/* tema srebro: generisana (paleta + oblik 6/1/0/5) */
+:root[data-theme="srebro"] { color-scheme: light; --back: #eef0f3; --card: #fbfcfd; --head: #eeeff1; --edge: #ced0d3; --alt: #f5f6f7; --text1: #23272e; --text2: #5c5f65; --faint: #888c90; --up: #15803d; --down: #c81e1e; --accent: #6b778a; --hot: #e7e9ed; --tip: #23272e; --tipfg: #eef0f3; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 0px; }
+[data-theme="srebro"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="srebro"] .overview .left { align-self: start; }
+[data-theme="srebro"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="srebro"] button { border-radius: 0; }
+[data-theme="srebro"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="srebro"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="srebro"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="srebro"] body { background: linear-gradient(180deg, #e1e4e8, #eef0f3 420px); background-color: #eef0f3; background-attachment: fixed; }
+[data-theme="srebro"] .big .value, [data-theme="srebro"] .detail .price { font-weight: 700; }
+[data-theme="srebro"] .chart .line { stroke-width: 3.5; }
+[data-theme="srebro"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="srebro"][data-scheme="dark"] { color-scheme: dark; --back: #0d0f10; --card: #070708; --head: #0e0f10; --edge: #232527; --alt: #0a0b0b; --text1: #c8cdd7; --text2: #878b91; --faint: #64686b; --up: #4ade80; --down: #f87171; --accent: #6b778a; --hot: #121316; --tip: #c8cdd7; --tipfg: #0d0f10; --accentfg: #ffffff; }
+[data-theme="srebro"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="srebro"][data-scheme="dark"] body { background: linear-gradient(180deg, #151719, #0d0f10 420px); background-color: #0d0f10; background-attachment: fixed; }

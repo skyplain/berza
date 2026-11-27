@@ -1,0 +1,15 @@
+/* tema detektivski roman (Detective novel): generisana, tools/teme.py */
+:root[data-theme="detektivskiroman"] { color-scheme: light; --back: #efe8d8; --card: #faf8f3; --head: #edebe6; --edge: #cdc8bb; --alt: #f3f1ed; --text1: #1c1e22; --text2: #515050; --faint: #817f79; --up: #15803d; --down: #c81e1e; --accent: #3d3d3d; --hot: #e0deda; --tip: #1c1e22; --tipfg: #efe8d8; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 8px; }
+[data-theme="detektivskiroman"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="detektivskiroman"] .overview .left { align-self: start; }
+[data-theme="detektivskiroman"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="detektivskiroman"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="detektivskiroman"] .bar h1 { font-weight: 800; }
+[data-theme="detektivskiroman"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="detektivskiroman"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(61,61,61,0.2) 27px 28px); background-color: #efe8d8; background-attachment: fixed; }
+[data-theme="detektivskiroman"] .big .value, [data-theme="detektivskiroman"] .detail .price { font-weight: 200; }
+[data-theme="detektivskiroman"] .chart .line { stroke-width: 3; }
+[data-theme="detektivskiroman"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="detektivskiroman"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #414143; --alt: #333335; --text1: #e5e5e7; --text2: #b4b4b6; --faint: #878789; --up: #4ade80; --down: #f87171; --accent: #7f7f7f; --hot: #38383a; --tip: #e5e5e7; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="detektivskiroman"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(127,127,127,0.2) 27px 28px); background-color: #222224; background-attachment: fixed; }

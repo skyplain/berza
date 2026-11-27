@@ -1,0 +1,14 @@
+/* tema šahovski pod (Checkered floor): generisana, tools/teme.py */
+:root[data-theme="sahovskipod"] { color-scheme: light; --back: #f4f4f4; --card: #fcfcfc; --head: #eeeeee; --edge: #d0d0d1; --alt: #f5f5f5; --text1: #14161a; --text2: #4c4e50; --faint: #808183; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dbdbdb; --tip: #14161a; --tipfg: #f4f4f4; --accentfg: #ffffff; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 0px; }
+[data-theme="sahovskipod"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="sahovskipod"] .overview .left { align-self: start; }
+[data-theme="sahovskipod"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sahovskipod"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="sahovskipod"] body { background: conic-gradient(rgba(20,22,26,0.07) 25%, transparent 0 50%, rgba(20,22,26,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #f4f4f4; background-attachment: fixed; }
+[data-theme="sahovskipod"] .big .value, [data-theme="sahovskipod"] .detail .price { font-weight: 900; }
+[data-theme="sahovskipod"] .chart .line { stroke-width: 2; }
+[data-theme="sahovskipod"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sahovskipod"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3e; --tip: #e2e2e4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="sahovskipod"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="sahovskipod"][data-scheme="dark"] body { background: conic-gradient(rgba(226,226,228,0.07) 25%, transparent 0 50%, rgba(226,226,228,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #232428; background-attachment: fixed; }

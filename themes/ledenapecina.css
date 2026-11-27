@@ -1,0 +1,12 @@
+/* tema ledena pećina (Ice cave): generisana, tools/teme.py */
+:root[data-theme="ledenapecina"] { color-scheme: dark; --back: #061823; --card: #12242e; --head: #1f303a; --edge: #2a3b45; --alt: #182a34; --text1: #e9f3f6; --text2: #b0bcc1; --faint: #7c8a91; --up: #4ade80; --down: #f87171; --accent: #67e8f9; --hot: #1e3f4a; --tip: #e9f3f6; --tipfg: #061823; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="ledenapecina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ledenapecina"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="ledenapecina"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ledenapecina"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(103,232,249,0.08) 40% 46%, transparent 46%); background-color: #061823; background-attachment: fixed; }
+[data-theme="ledenapecina"] .big .value, [data-theme="ledenapecina"] .detail .price { font-weight: 200; }
+[data-theme="ledenapecina"] .chart .line { stroke-width: 1.5; }
+[data-theme="ledenapecina"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ledenapecina"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #edf0f0; --edge: #cfd4d6; --alt: #f4f5f6; --text1: #243d44; --text2: #576a70; --faint: #7e8c91; --up: #15803d; --down: #c81e1e; --accent: #3f8d97; --hot: #e0eced; --tip: #243d44; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="ledenapecina"][data-scheme="light"] body { background: conic-gradient(from 200deg at 0 0, rgba(239,68,68,.08), rgba(234,179,8,.08), rgba(34,197,94,.08), rgba(59,130,246,.08), rgba(168,85,247,.08), transparent 40%), linear-gradient(120deg, transparent 40%, rgba(63,141,151,0.08) 40% 46%, transparent 46%); background-color: #f0f1f2; background-attachment: fixed; }

@@ -1,0 +1,18 @@
+/* tema nada (Hope): generisana, tools/teme.py */
+:root[data-theme="nada"] { color-scheme: light; --back: #f2fdf5; --card: #eefcf2; --head: #e1f0e6; --edge: #cfddd4; --alt: #e8f6ec; --text1: #173628; --text2: #4e685b; --faint: #80968a; --up: #15803d; --down: #c81e1e; --accent: #1b9a49; --hot: #d0eeda; --tip: #173628; --tipfg: #f2fdf5; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 0px; }
+[data-theme="nada"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="nada"] .overview .left { align-self: start; }
+[data-theme="nada"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nada"] button { border-radius: 999px; }
+[data-theme="nada"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="nada"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="nada"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="nada"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="nada"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(27,154,73,0.08) 0 6deg, transparent 6deg 12deg); background-color: #f2fdf5; background-attachment: fixed; }
+[data-theme="nada"] .big .value, [data-theme="nada"] .detail .price { font-weight: 700; }
+[data-theme="nada"] .chart .line { stroke-width: 1.5; }
+[data-theme="nada"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="nada"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383b3d; --edge: #414546; --alt: #323538; --text1: #e3f0ea; --text2: #b3bdb9; --faint: #868e8c; --up: #4ade80; --down: #f87171; --accent: #22c55e; --hot: #2b4438; --tip: #e3f0ea; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="nada"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="nada"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(34,197,94,0.08) 0 6deg, transparent 6deg 12deg); background-color: #222427; background-attachment: fixed; }

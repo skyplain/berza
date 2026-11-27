@@ -1,0 +1,19 @@
+/* tema kockice (Dice): generisana, tools/teme.py */
+:root[data-theme="kockice"] { color-scheme: light; --back: #fffafa; --card: #fff6f6; --head: #f3e9e9; --edge: #e0d7d8; --alt: #f9f0f0; --text1: #3c1f23; --text2: #6d5659; --faint: #9a888a; --up: #15803d; --down: #c81e1e; --accent: #ef4444; --hot: #fddddd; --tip: #3c1f23; --tipfg: #fffafa; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="kockice"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kockice"] .overview .left { align-self: start; }
+[data-theme="kockice"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kockice"] button { border-radius: 999px; }
+[data-theme="kockice"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kockice"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kockice"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,250,250,0.35); box-shadow: none; }
+[data-theme="kockice"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kockice"] body { background: radial-gradient(rgba(239,68,68,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #fffafa; background-attachment: fixed; }
+[data-theme="kockice"] .big .value, [data-theme="kockice"] .detail .price { font-weight: 900; }
+[data-theme="kockice"] .chart .line { stroke-width: 3; }
+[data-theme="kockice"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kockice"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3e; --edge: #444347; --alt: #343438; --text1: #f4e6e8; --text2: #c0b6b8; --faint: #90898c; --up: #4ade80; --down: #f87171; --accent: #ef4444; --hot: #493235; --tip: #f4e6e8; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="kockice"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kockice"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="kockice"][data-scheme="dark"] body { background: radial-gradient(rgba(239,68,68,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #232428; background-attachment: fixed; }

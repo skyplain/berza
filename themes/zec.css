@@ -1,0 +1,15 @@
+/* tema zec (Rabbit): generisana, tools/teme.py */
+:root[data-theme="zec"] { color-scheme: light; --back: #fbfaf8; --card: #f9f8f6; --head: #edecea; --edge: #dadad8; --alt: #f3f2f0; --text1: #2f3033; --text2: #626264; --faint: #919192; --up: #15803d; --down: #c81e1e; --accent: #8f8985; --hot: #eae8e6; --tip: #2f3033; --tipfg: #fbfaf8; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="zec"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zec"] .overview .left { align-self: start; }
+[data-theme="zec"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zec"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zec"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="zec"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="zec"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="zec"] .big .value, [data-theme="zec"] .detail .price { font-weight: 900; }
+[data-theme="zec"] .chart .line { stroke-width: 1.5; }
+[data-theme="zec"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zec"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #3a3a3d; --edge: #434447; --alt: #343538; --text1: #eeedef; --text2: #bbbbbd; --faint: #8d8d8f; --up: #4ade80; --down: #f87171; --accent: #a8a29e; --hot: #3f3f41; --tip: #eeedef; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="zec"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

@@ -1,0 +1,12 @@
+/* tema tvrđava (Fortress): generisana, tools/teme.py */
+:root[data-theme="tvrdjava"] { color-scheme: light; --back: #ebe5d8; --card: #f9f7f3; --head: #ecebe7; --edge: #ccc7bc; --alt: #f3f1ed; --text1: #282727; --text2: #595653; --faint: #86827c; --up: #15803d; --down: #c81e1e; --accent: #7c6f5b; --hot: #e8e4de; --tip: #282727; --tipfg: #ebe5d8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="tvrdjava"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tvrdjava"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="tvrdjava"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="tvrdjava"] body { background: linear-gradient(rgba(124,111,91,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(124,111,91,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(124,111,91,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #ebe5d8; background-attachment: fixed; }
+[data-theme="tvrdjava"] .big .value, [data-theme="tvrdjava"] .detail .price { font-weight: 900; }
+[data-theme="tvrdjava"] .chart .line { stroke-width: 1.5; }
+[data-theme="tvrdjava"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tvrdjava"][data-scheme="dark"] { color-scheme: dark; --back: #212224; --card: #2c2d2f; --head: #37383a; --edge: #414244; --alt: #323335; --text1: #eae9ea; --text2: #b8b7b8; --faint: #8a898b; --up: #4ade80; --down: #f87171; --accent: #867b68; --hot: #393837; --tip: #eae9ea; --tipfg: #212224; --accentfg: #111111; }
+[data-theme="tvrdjava"][data-scheme="dark"] body { background: linear-gradient(rgba(134,123,104,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(134,123,104,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(134,123,104,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #212224; background-attachment: fixed; }

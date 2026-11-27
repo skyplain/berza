@@ -1,0 +1,26 @@
+/* tema terminal: crno, ćilibar, monospace, gusto, bez zaobljenja */
+:root[data-theme="terminal"] { color-scheme: dark; --back: #050505; --card: #0b0b0b; --head: #141008; --edge: #3a2c10; --alt: #0f0c06; --text1: #ffb000; --text2: #d39a3a; --faint: #8a6d2f; --up: #2bff88; --down: #ff4d3d; --accent: #ffb000; --hot: #2a1f08; --tip: #ffb000; --tipfg: #000; --accentfg: #000; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0; }
+[data-theme="terminal"] body { font-size: 13.5px; }
+[data-theme="terminal"] .bar { border-bottom: 2px solid var(--accent); padding: 8px 0; }
+[data-theme="terminal"] .bar h1 { text-transform: uppercase; letter-spacing: .12em; background: var(--accent); color: #000; padding: 1px 10px; }
+[data-theme="terminal"] .bar h1 span { color: #000; }
+[data-theme="terminal"] .bar h1::after { content: "_"; animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+[data-theme="terminal"] button { text-transform: uppercase; background: transparent; }
+[data-theme="terminal"] button:hover { background: var(--accent); color: #000; }
+[data-theme="terminal"] h2, [data-theme="terminal"] h3, [data-theme="terminal"] .big .label { color: #000; background: var(--text2); display: inline-block; padding: 0 6px; letter-spacing: .1em; }
+[data-theme="terminal"] .detail .price { font-weight: 700; }
+[data-theme="terminal"] .big .value { font-weight: 700; text-shadow: 0 0 12px rgba(255, 176, 0, .45); }
+[data-theme="terminal"] td, [data-theme="terminal"] th { padding: 2px 6px; }
+[data-theme="terminal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="terminal"] tbody tr { border-bottom: 1px dotted var(--edge); }
+[data-theme="terminal"] .chart .line { stroke-width: 1.5; }
+[data-theme="terminal"] .chart .area { opacity: .15; }
+[data-theme="terminal"] .rows, [data-theme="terminal"] #search { border-color: var(--accent); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="terminal"][data-scheme="light"] { color-scheme: light; --back: #ffffff; --card: #f5f5f5; --head: #f2ece0; --edge: #d3c1a1; --alt: #f7f3e9; --text1: #412b05; --text2: #5f3f00; --faint: #907335; --up: #15803d; --down: #c81e1e; --accent: #b88119; --hot: #e2d4b8; --tip: #b88119; --tipfg: #151515; --accentfg: #111111; }
+[data-theme="terminal"][data-scheme="light"] .bar h1 { text-transform: uppercase; letter-spacing: .12em; background: var(--accent); color: #ffffff; padding: 1px 10px; }
+[data-theme="terminal"][data-scheme="light"] .bar h1 span { color: #ffffff; }
+[data-theme="terminal"][data-scheme="light"] button:hover { background: var(--accent); color: #ffffff; }
+[data-theme="terminal"][data-scheme="light"] h2, [data-theme="terminal"][data-scheme="light"] h3, [data-theme="terminal"][data-scheme="light"] .big .label { color: #ffffff; background: var(--text2); display: inline-block; padding: 0 6px; letter-spacing: .1em; }
+[data-theme="terminal"][data-scheme="light"] .big .value { font-weight: 700; text-shadow: 0 0 12px rgba(184,129,25,.45); }

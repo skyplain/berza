@@ -1,0 +1,13 @@
+/* tema neon cev (Neon tube): generisana, tools/teme.py */
+:root[data-theme="neoncev"] { color-scheme: dark; --back: #0b030c; --card: #171018; --head: #241d25; --edge: #302731; --alt: #1e161f; --text1: #f5e4f3; --text2: #baacb9; --faint: #857884; --up: #4ade80; --down: #f87171; --accent: #ff2bd6; --hot: #371433; --tip: #f5e4f3; --tipfg: #0b030c; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="neoncev"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="neoncev"] .overview .left { align-self: start; }
+[data-theme="neoncev"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="neoncev"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="neoncev"] .bar h1 { color: #ffaaef; text-shadow: 0 0 4px #ff2bd6, 0 0 12px #ff2bd6, 0 0 28px rgba(255,43,214,0.8); }
+[data-theme="neoncev"] .big .value, [data-theme="neoncev"] .detail .price { font-weight: 900; }
+[data-theme="neoncev"] .chart .line { stroke-width: 2; }
+[data-theme="neoncev"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="neoncev"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #efedef; --edge: #d4ced3; --alt: #f4f3f4; --text1: #3f1b3d; --text2: #6b506a; --faint: #948193; --up: #15803d; --down: #c81e1e; --accent: #eb28c5; --hot: #f8ddf3; --tip: #3f1b3d; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="neoncev"][data-scheme="light"] .bar h1 { color: #f7a9e8; text-shadow: 0 0 4px #eb28c5, 0 0 12px #eb28c5, 0 0 28px rgba(235,40,197,0.8); }

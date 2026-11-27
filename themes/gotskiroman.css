@@ -1,0 +1,22 @@
+/* tema gotski roman (Gothic novel): generisana, tools/teme.py */
+:root[data-theme="gotskiroman"] { color-scheme: dark; --back: #140a10; --card: #20161c; --head: #2c2228; --edge: #362c32; --alt: #261c22; --text1: #e8e1e6; --text2: #b3abb0; --faint: #827a7f; --up: #4ade80; --down: #f87171; --accent: #935e72; --hot: #302028; --tip: #e8e1e6; --tipfg: #140a10; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="gotskiroman"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="gotskiroman"] .overview .left { align-self: start; }
+[data-theme="gotskiroman"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="gotskiroman"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="gotskiroman"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="gotskiroman"] .bar button { background: transparent; color: var(--back); border-color: rgba(20,10,16,0.35); box-shadow: none; }
+[data-theme="gotskiroman"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="gotskiroman"] :is(.overview .left, .block, .detail, .list) { border: 4px double #935e72; }
+[data-theme="gotskiroman"] .bar h1::before { content: "❦ "; color: #935e72; }
+[data-theme="gotskiroman"] .bar h1::after { content: " ❦"; color: #935e72; }
+[data-theme="gotskiroman"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="gotskiroman"] .big .value, [data-theme="gotskiroman"] .detail .price { font-weight: 700; }
+[data-theme="gotskiroman"] .chart .line { stroke-width: 3; }
+[data-theme="gotskiroman"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="gotskiroman"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #eeecee; --edge: #d0cdcf; --alt: #f4f3f4; --text1: #22151f; --text2: #564c54; --faint: #857e84; --up: #15803d; --down: #c81e1e; --accent: #5c0a2a; --hot: #e5d8de; --tip: #22151f; --tipfg: #f1f0f1; --accentfg: #ffffff; }
+[data-theme="gotskiroman"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,241,0.35); box-shadow: none; }
+[data-theme="gotskiroman"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 4px double #5c0a2a; }
+[data-theme="gotskiroman"][data-scheme="light"] .bar h1::before { content: "❦ "; color: #5c0a2a; }
+[data-theme="gotskiroman"][data-scheme="light"] .bar h1::after { content: " ❦"; color: #5c0a2a; }

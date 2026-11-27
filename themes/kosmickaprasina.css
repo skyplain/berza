@@ -1,0 +1,15 @@
+/* tema kosmička prašina (Cosmic dust): generisana, tools/teme.py */
+:root[data-theme="kosmickaprasina"] { color-scheme: dark; --back: #0d0818; --card: #191424; --head: #262131; --edge: #312c3c; --alt: #1f1a2a; --text1: #f0ebf6; --text2: #b7b2be; --faint: #837e8b; --up: #4ade80; --down: #f87171; --accent: #c084fc; --hot: #302442; --tip: #f0ebf6; --tipfg: #0d0818; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="kosmickaprasina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="kosmickaprasina"] .overview .left { align-self: start; }
+[data-theme="kosmickaprasina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kosmickaprasina"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="kosmickaprasina"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="kosmickaprasina"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kosmickaprasina"] body { background: radial-gradient(rgba(192,132,252,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(252,192,132,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(132,252,192,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #0d0818; background-attachment: fixed; }
+[data-theme="kosmickaprasina"] .big .value, [data-theme="kosmickaprasina"] .detail .price { font-weight: 700; }
+[data-theme="kosmickaprasina"] .chart .line { stroke-width: 1.5; }
+[data-theme="kosmickaprasina"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="kosmickaprasina"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eeeef0; --edge: #d2d0d5; --alt: #f4f4f6; --text1: #342b44; --text2: #635c6f; --faint: #878290; --up: #15803d; --down: #c81e1e; --accent: #9062bc; --hot: #ebe5f2; --tip: #342b44; --tipfg: #f0f0f1; --accentfg: #ffffff; }
+[data-theme="kosmickaprasina"][data-scheme="light"] body { background: radial-gradient(rgba(144,98,188,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(252,192,132,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(132,252,192,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #f0f0f1; background-attachment: fixed; }

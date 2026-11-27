@@ -1,0 +1,15 @@
+/* tema geometrija (Geometry): generisana, tools/teme.py */
+:root[data-theme="geometrija"] { color-scheme: light; --back: #fffcfc; --card: #fff8f8; --head: #f3ebeb; --edge: #e0d9d9; --alt: #f9f1f2; --text1: #3c1f23; --text2: #6d5659; --faint: #9a898b; --up: #15803d; --down: #c81e1e; --accent: #ef4444; --hot: #fddfdf; --tip: #3c1f23; --tipfg: #fffcfc; --accentfg: #111111; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 8px; }
+[data-theme="geometrija"] :is(.overview .left, .block, .detail, .list) { background: #f8f4f4; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="geometrija"] .overview .left { align-self: start; }
+[data-theme="geometrija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="geometrija"] button { border: 0; }
+[data-theme="geometrija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="geometrija"] body { background: repeating-linear-gradient(30deg, rgba(60,31,35,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(60,31,35,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(60,31,35,0.04) 0 1px, transparent 1px 45px); background-color: #fffcfc; background-attachment: fixed; }
+[data-theme="geometrija"] .big .value, [data-theme="geometrija"] .detail .price { font-weight: 900; }
+[data-theme="geometrija"] .chart .line { stroke-width: 3; }
+[data-theme="geometrija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="geometrija"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3e; --edge: #444347; --alt: #343438; --text1: #f4e6e8; --text2: #c0b6b8; --faint: #90898c; --up: #4ade80; --down: #f87171; --accent: #ef4444; --hot: #493235; --tip: #f4e6e8; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="geometrija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2a2b2f; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="geometrija"][data-scheme="dark"] body { background: repeating-linear-gradient(30deg, rgba(244,230,232,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(244,230,232,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(244,230,232,0.04) 0 1px, transparent 1px 45px); background-color: #232428; background-attachment: fixed; }

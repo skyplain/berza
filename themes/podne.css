@@ -1,0 +1,16 @@
+/* tema podne: generisana (paleta + oblik 2/1/0/1) */
+:root[data-theme="podne"] { color-scheme: light; --back: #fffef5; --card: #ffffff; --head: #f2f2f3; --edge: #dbdcd7; --alt: #f8f9f9; --text1: #1f2937; --text2: #5e656c; --faint: #8f9496; --up: #15803d; --down: #c81e1e; --accent: #2563eb; --hot: #e0e9fc; --tip: #1f2937; --tipfg: #fffef5; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 6px; }
+[data-theme="podne"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="podne"] .overview .left { align-self: start; }
+[data-theme="podne"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="podne"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="podne"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="podne"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="podne"] body { background: radial-gradient(#e9e9e2 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #fffef5; background-attachment: fixed; }
+[data-theme="podne"] .big .value, [data-theme="podne"] .detail .price { font-weight: 700; }
+[data-theme="podne"] .chart .line { stroke-width: 2; }
+[data-theme="podne"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="podne"][data-scheme="dark"] { color-scheme: dark; --back: #070703; --card: #060606; --head: #0d0d0d; --edge: #1c1d19; --alt: #080909; --text1: #bfccdf; --text2: #7f868e; --faint: #5c6165; --up: #4ade80; --down: #f87171; --accent: #2563eb; --hot: #0d1320; --tip: #bfccdf; --tipfg: #070703; --accentfg: #ffffff; }
+[data-theme="podne"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="podne"][data-scheme="dark"] body { background: radial-gradient(#14140f 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #070703; background-attachment: fixed; }

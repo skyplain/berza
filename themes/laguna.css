@@ -1,0 +1,17 @@
+/* tema laguna: generisana (paleta + oblik 2/1/2/1) */
+:root[data-theme="laguna"] { color-scheme: light; --back: #e6f7ff; --card: #ffffff; --head: #f0f3f4; --edge: #c3d8e3; --alt: #f8f9fa; --text1: #0a3550; --text2: #486b81; --faint: #7896a8; --up: #15803d; --down: #c81e1e; --accent: #0088c2; --hot: #dbeef6; --tip: #0a3550; --tipfg: #e6f7ff; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 6px; }
+[data-theme="laguna"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="laguna"] .overview .left { align-self: start; }
+[data-theme="laguna"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="laguna"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="laguna"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="laguna"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="laguna"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="laguna"] body { background: radial-gradient(#d0e4ee 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #e6f7ff; background-attachment: fixed; }
+[data-theme="laguna"] .big .value, [data-theme="laguna"] .detail .price { font-weight: 700; }
+[data-theme="laguna"] .chart .line { stroke-width: 3; }
+[data-theme="laguna"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="laguna"][data-scheme="dark"] { color-scheme: dark; --back: #030e13; --card: #060606; --head: #0b0d0e; --edge: #13242c; --alt: #080909; --text1: #9ac5e7; --text2: #65889f; --faint: #486578; --up: #4ade80; --down: #f87171; --accent: #0088c2; --hot: #06141a; --tip: #9ac5e7; --tipfg: #030e13; --accentfg: #111111; }
+[data-theme="laguna"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="laguna"][data-scheme="dark"] body { background: radial-gradient(#0c1b22 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #030e13; background-attachment: fixed; }

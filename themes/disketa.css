@@ -1,0 +1,17 @@
+/* tema disketa (Floppy disk): generisana, tools/teme.py */
+:root[data-theme="disketa"] { color-scheme: light; --back: #eaeff9; --card: #f9fafd; --head: #ecedf1; --edge: #c9cfda; --alt: #f2f4f7; --text1: #1a243a; --text2: #4e576a; --faint: #7e8596; --up: #15803d; --down: #c81e1e; --accent: #2f5ec4; --hot: #dde4f5; --tip: #1a243a; --tipfg: #eaeff9; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="disketa"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="disketa"] .overview .left { align-self: start; }
+[data-theme="disketa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="disketa"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="disketa"] .bar h1 { font-weight: 800; }
+[data-theme="disketa"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="disketa"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="disketa"] :is(.overview .left, .block, .detail, .list) { position: relative; padding-top: 34px; }
+[data-theme="disketa"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #2f5ec4; }
+[data-theme="disketa"] .big .value, [data-theme="disketa"] .detail .price { font-weight: 200; }
+[data-theme="disketa"] .chart .line { stroke-width: 3; }
+[data-theme="disketa"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="disketa"][data-scheme="dark"] { color-scheme: dark; --back: #101729; --card: #1c2334; --head: #282f3f; --edge: #323849; --alt: #22293a; --text1: #e4e8f2; --text2: #afb4c0; --faint: #7e8492; --up: #4ade80; --down: #f87171; --accent: #406bc9; --hot: #212d49; --tip: #e4e8f2; --tipfg: #101729; --accentfg: #ffffff; }
+[data-theme="disketa"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #406bc9; }

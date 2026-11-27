@@ -1,0 +1,17 @@
+/* tema lavanda: ljubičasti tonovi, mek serif, smirena */
+:root[data-theme="lavanda"] { color-scheme: light; --back: #f4f1fa; --card: #fcfbff; --head: #ebe5f6; --edge: #dcd3ee; --alt: #f7f4fc; --text1: #2e2541; --text2: #5d5175; --faint: #9a8fb0; --up: #3e9b74; --down: #c94f6d; --accent: #7a5ab8; --hot: #ece5f8; --tip: #2e2541; --tipfg: #fff; --accentfg: #fff; --font: "Iowan Old Style",Palatino,Georgia,serif; --radius: 8px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: none; --h-color: #7a5ab8; --h-transform: none; --h-spacing: .02em; --h-size: 16px; --h-weight: 600; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="lavanda"] .bar { border-bottom:2px solid var(--edge) }
+[data-theme="lavanda"] .bar h1 { font-style:italic;font-size:24px;color:#5c3f99 }
+[data-theme="lavanda"] .bar h1::before { content:"❁ ";font-style:normal;color:#b49ddc }
+[data-theme="lavanda"] button { background:#ebe5f6;border-color:#dcd3ee;color:#5c3f99 }
+[data-theme="lavanda"] .num,[data-theme="lavanda"] .chg,[data-theme="lavanda"] .kv .v { font-family:system-ui, -apple-system, "Segoe UI", sans-serif }
+[data-theme="lavanda"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="lavanda"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="lavanda"] .overview .left { align-self: start; }
+[data-theme="lavanda"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="lavanda"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="lavanda"][data-scheme="dark"] { color-scheme: dark; --back: #0d0b11; --card: #070709; --head: #15111c; --edge: #221a2e; --alt: #0c0a0f; --text1: #cbc1e6; --text2: #978ab1; --faint: #6a6080; --up: #4ade80; --down: #f87171; --accent: #7a5ab8; --hot: #15101d; --tip: #cbc1e6; --tipfg: #060606; --accentfg: #ffffff; --h-color: #7a5ab8; }
+[data-theme="lavanda"][data-scheme="dark"] .bar h1 { font-style:italic;font-size:24px;color:#9d82e3 }
+[data-theme="lavanda"][data-scheme="dark"] .bar h1::before { content:"❁ ";font-style:normal;color:#4b356c }
+[data-theme="lavanda"][data-scheme="dark"] button { background:#15111c;border-color:#221a2e;color:#9d82e3 }

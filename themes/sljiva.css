@@ -1,0 +1,13 @@
+/* tema šljiva (Plum): generisana, tools/teme.py */
+:root[data-theme="sljiva"] { color-scheme: dark; --back: #140a1a; --card: #201625; --head: #2c2231; --edge: #362d3c; --alt: #261c2b; --text1: #e9e3f0; --text2: #b4adba; --faint: #837b89; --up: #4ade80; --down: #f87171; --accent: #8c52bb; --hot: #2f1e3a; --tip: #e9e3f0; --tipfg: #140a1a; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="sljiva"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="sljiva"] .overview .left { align-self: start; }
+[data-theme="sljiva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sljiva"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="sljiva"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="sljiva"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="sljiva"] .big .value, [data-theme="sljiva"] .detail .price { font-weight: 400; }
+[data-theme="sljiva"] .chart .line { stroke-width: 3; }
+[data-theme="sljiva"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="sljiva"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #eeecef; --edge: #d0ced3; --alt: #f5f3f5; --text1: #241935; --text2: #574f64; --faint: #86808f; --up: #15803d; --down: #c81e1e; --accent: #6b21a8; --hot: #e7dcef; --tip: #241935; --tipfg: #f1f0f1; --accentfg: #ffffff; }

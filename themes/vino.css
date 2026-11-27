@@ -1,0 +1,21 @@
+/* tema vino: bordo i krem, kao vinska karta, kurzivni serif */
+:root[data-theme="vino"] { color-scheme: dark; --back: #1e0a10; --card: #2a0f18; --head: #3a1420; --edge: #5a2333; --alt: #250d15; --text1: #f6e7d8; --text2: #dcbfa8; --faint: #a07a72; --up: #c3d88a; --down: #ff8f8f; --accent: #c9a46a; --hot: #3e1623; --tip: #c9a46a; --tipfg: #1e0a10; --accentfg: #1e0a10; --font: "Hoefler Text",Baskerville,Georgia, "Times New Roman", serif; --radius: 0; --h-color: #c9a46a; --h-transform: none; --h-spacing: .04em; --h-size: 18px; --h-weight: 400; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="vino"] body { background:radial-gradient(ellipse at 50% 0,#4a1424 0,#1e0a10 70%) fixed #1e0a10 }
+[data-theme="vino"] .bar { border-bottom:1px solid #c9a46a;text-align:center }
+[data-theme="vino"] .bar h1 { font-style:italic;font-size:30px;font-weight:400 }
+[data-theme="vino"] button { background:transparent;border-color:#5a2333;color:#c9a46a }
+[data-theme="vino"] h2,[data-theme="vino"] h3 { font-style:italic;border-bottom:1px solid #5a2333;padding-bottom:4px }
+[data-theme="vino"] .num,[data-theme="vino"] .kv .v { font-family:system-ui, -apple-system, "Segoe UI", sans-serif;font-weight:300 }
+[data-theme="vino"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="vino"] .chart .line { stroke:#c9a46a!important;stroke-width:1.5 }
+[data-theme="vino"] .chart .area { fill:#c9a46a!important;opacity:.1 }
+[data-theme="vino"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="vino"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="vino"][data-scheme="light"] { color-scheme: light; --back: #fee4ea; --card: #fcd4de; --head: #f7c2cf; --edge: #e5a1b0; --alt: #fedae3; --text1: #1a1006; --text2: #3e2714; --faint: #7f5b53; --up: #15803d; --down: #c81e1e; --accent: #9a763d; --hot: #f4becb; --tip: #9a763d; --tipfg: #151313; --accentfg: #111111; --h-color: #9a763d; }
+[data-theme="vino"][data-scheme="light"] body { background:radial-gradient(ellipse at 50% 0,#f8b3c0 0,#fee4ea 70%) fixed #fee4ea }
+[data-theme="vino"][data-scheme="light"] .bar { border-bottom:1px solid #9a763d;text-align:center }
+[data-theme="vino"][data-scheme="light"] button { background:transparent;border-color:#e5a1b0;color:#9a763d }
+[data-theme="vino"][data-scheme="light"] h2,[data-theme="vino"][data-scheme="light"] h3 { font-style:italic;border-bottom:1px solid #e5a1b0;padding-bottom:4px }
+[data-theme="vino"][data-scheme="light"] .chart .line { stroke:#9a763d!important;stroke-width:1.5 }
+[data-theme="vino"][data-scheme="light"] .chart .area { fill:#9a763d!important;opacity:.1 }

@@ -1,0 +1,17 @@
+/* tema sparina (Muggy day): generisana, tools/teme.py */
+:root[data-theme="sparina"] { color-scheme: light; --back: #fbf7e8; --card: #fefdf8; --head: #f2f0eb; --edge: #dbd7c7; --alt: #f8f7f1; --text1: #362c18; --text2: #675f4c; --faint: #958d7c; --up: #15803d; --down: #c81e1e; --accent: #ab7504; --hot: #f2ead6; --tip: #362c18; --tipfg: #fbf7e8; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="sparina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="sparina"] .overview .left { align-self: start; }
+[data-theme="sparina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sparina"] button { border-radius: 999px; }
+[data-theme="sparina"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="sparina"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="sparina"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sparina"] body { background: linear-gradient(0deg, rgba(171,117,4,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(171,117,4,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #fbf7e8; background-attachment: fixed; }
+[data-theme="sparina"] .big .value, [data-theme="sparina"] .detail .price { font-weight: 200; }
+[data-theme="sparina"] .chart .line { stroke-width: 2; }
+[data-theme="sparina"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sparina"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f1ece3; --text2: #bebab4; --faint: #8e8c88; --up: #4ade80; --down: #f87171; --accent: #ca8a04; --hot: #443c2b; --tip: #f1ece3; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="sparina"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="sparina"][data-scheme="dark"] body { background: linear-gradient(0deg, rgba(202,138,4,0.2), transparent 55%), radial-gradient(ellipse 60px 8px at 50% 100%, transparent 70%, rgba(202,138,4,0.12) 72% 78%, transparent 80%) 0 0 / 120px 26px; background-color: #232426; background-attachment: fixed; }

@@ -1,0 +1,17 @@
+/* tema badnje veče (Christmas Eve): generisana, tools/teme.py */
+:root[data-theme="badnjevece"] { color-scheme: dark; --back: #140a05; --card: #201612; --head: #2d231f; --edge: #372e29; --alt: #261c18; --text1: #f1eee7; --text2: #bab5ae; --faint: #87817b; --up: #4ade80; --down: #f87171; --accent: #d4af37; --hot: #392b17; --tip: #f1eee7; --tipfg: #140a05; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="badnjevece"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="badnjevece"] .overview .left { align-self: start; }
+[data-theme="badnjevece"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="badnjevece"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="badnjevece"] .bar h1 { font-size: 24px; }
+[data-theme="badnjevece"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="badnjevece"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(241,238,231,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(212,175,55,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(241,238,231,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(241,238,231,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(212,175,55,0.8), transparent); background-color: #140a05; background-attachment: fixed; }
+[data-theme="badnjevece"] .bar { position: relative; }
+[data-theme="badnjevece"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: radial-gradient(circle, #ef4444 0 3px, transparent 4px) 0 0 / 64px 10px, radial-gradient(circle, #facc15 0 3px, transparent 4px) 16px 0 / 64px 10px, radial-gradient(circle, #22c55e 0 3px, transparent 4px) 32px 0 / 64px 10px, radial-gradient(circle, #3b82f6 0 3px, transparent 4px) 48px 0 / 64px 10px; }
+[data-theme="badnjevece"] .big .value, [data-theme="badnjevece"] .detail .price { font-weight: 400; }
+[data-theme="badnjevece"] .chart .line { stroke-width: 2.5; }
+[data-theme="badnjevece"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="badnjevece"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efeeed; --edge: #d3d2cf; --alt: #f5f4f3; --text1: #373221; --text2: #666255; --faint: #89867c; --up: #15803d; --down: #c81e1e; --accent: #987d28; --hot: #ede8dd; --tip: #373221; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="badnjevece"][data-scheme="light"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(55,50,33,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(152,125,40,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(55,50,33,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(55,50,33,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(152,125,40,0.8), transparent); background-color: #f1f0f0; background-attachment: fixed; }

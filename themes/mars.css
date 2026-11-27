@@ -1,0 +1,17 @@
+/* tema mars: generisana (paleta + oblik 3/4/3/0) */
+:root[data-theme="mars"] { color-scheme: dark; --back: #1f0b06; --card: #2b120b; --head: #381f17; --edge: #432e27; --alt: #311811; --text1: #ffe3d6; --text2: #c0a79c; --faint: #8f776e; --up: #4ade80; --down: #f87171; --accent: #e4572e; --hot: #451c10; --tip: #ffe3d6; --tipfg: #1f0b06; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 0px; }
+[data-theme="mars"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="mars"] .overview .left { align-self: start; }
+[data-theme="mars"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mars"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="mars"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mars"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="mars"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="mars"] .bar button { background: transparent; color: var(--back); border-color: rgba(31,11,6,0.35); box-shadow: none; }
+[data-theme="mars"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="mars"] .big .value, [data-theme="mars"] .detail .price { font-weight: 900; }
+[data-theme="mars"] .chart .line { stroke-width: 3; }
+[data-theme="mars"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="mars"][data-scheme="light"] { color-scheme: light; --back: #fee5de; --card: #fad5cb; --head: #e7c5ba; --edge: #d1b6ad; --alt: #f1cec4; --text1: #1f0d05; --text2: #503b32; --faint: #7d665d; --up: #15803d; --down: #c81e1e; --accent: #d94d23; --hot: #f1bbab; --tip: #1f0d05; --tipfg: #fee5de; --accentfg: #111111; }
+[data-theme="mars"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(254,229,222,0.35); box-shadow: none; }

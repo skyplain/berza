@@ -1,0 +1,15 @@
+/* tema plava dubina (Blue deep): generisana, tools/teme.py */
+:root[data-theme="plavadubina"] { color-scheme: dark; --back: #020b24; --card: #0f172f; --head: #1c233b; --edge: #262e45; --alt: #151d35; --text1: #e3e7f4; --text2: #abb0c0; --faint: #777d90; --up: #4ade80; --down: #f87171; --accent: #2f5cdb; --hot: #132147; --tip: #e3e7f4; --tipfg: #020b24; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="plavadubina"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="plavadubina"] .overview .left { align-self: start; }
+[data-theme="plavadubina"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plavadubina"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="plavadubina"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="plavadubina"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="plavadubina"] body { background: radial-gradient(circle, transparent 6px, rgba(47,92,219,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(47,92,219,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #020b24; background-attachment: fixed; }
+[data-theme="plavadubina"] .big .value, [data-theme="plavadubina"] .detail .price { font-weight: 900; }
+[data-theme="plavadubina"] .chart .line { stroke-width: 1.5; }
+[data-theme="plavadubina"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="plavadubina"][data-scheme="light"] { color-scheme: light; --back: #f0f0f2; --card: #fafafb; --head: #ecedf0; --edge: #cdcfd5; --alt: #f3f3f5; --text1: #16213e; --text2: #4c556b; --faint: #7f8494; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dbe2f6; --tip: #16213e; --tipfg: #f0f0f2; --accentfg: #ffffff; }
+[data-theme="plavadubina"][data-scheme="light"] body { background: radial-gradient(circle, transparent 6px, rgba(29,78,216,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(29,78,216,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f0f0f2; background-attachment: fixed; }

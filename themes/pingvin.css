@@ -1,0 +1,17 @@
+/* tema pingvin (Penguin): generisana, tools/teme.py */
+:root[data-theme="pingvin"] { color-scheme: light; --back: #f5f7f9; --card: #fcfdfd; --head: #eeeff0; --edge: #d1d3d6; --alt: #f5f6f6; --text1: #14171e; --text2: #4c4f55; --faint: #808387; --up: #15803d; --down: #c81e1e; --accent: #111827; --hot: #dbdddf; --tip: #14171e; --tipfg: #f5f7f9; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="pingvin"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="pingvin"] .overview .left { align-self: start; }
+[data-theme="pingvin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pingvin"] button { border-radius: 999px; }
+[data-theme="pingvin"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="pingvin"] .bar h1 { font-weight: 800; }
+[data-theme="pingvin"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="pingvin"] body { background: radial-gradient(circle, rgba(17,24,39,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(17,24,39,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(17,24,39,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f5f7f9; background-attachment: fixed; }
+[data-theme="pingvin"] .big .value, [data-theme="pingvin"] .detail .price { font-weight: 400; }
+[data-theme="pingvin"] .chart .line { stroke-width: 2; }
+[data-theme="pingvin"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pingvin"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e5; --text2: #b2b2b6; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #7b7d86; --hot: #393a3f; --tip: #e2e2e5; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="pingvin"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="pingvin"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #232428; background-attachment: fixed; }

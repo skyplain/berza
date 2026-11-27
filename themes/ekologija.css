@@ -1,0 +1,14 @@
+/* tema ekologija (Ecology): generisana, tools/teme.py */
+:root[data-theme="ekologija"] { color-scheme: light; --back: #f5f9ec; --card: #fcfdf9; --head: #eff1ec; --edge: #d3d9ca; --alt: #f5f7f2; --text1: #233019; --text2: #58624e; --faint: #88907e; --up: #15803d; --down: #c81e1e; --accent: #5d960c; --hot: #e6efd8; --tip: #233019; --tipfg: #f5f9ec; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="ekologija"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="ekologija"] .overview .left { align-self: start; }
+[data-theme="ekologija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ekologija"] button { border-radius: 0; }
+[data-theme="ekologija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ekologija"] body { background: radial-gradient(ellipse 8px 18px, rgba(93,150,12,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(93,150,12,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f5f9ec; background-attachment: fixed; }
+[data-theme="ekologija"] .big .value, [data-theme="ekologija"] .detail .price { font-weight: 200; }
+[data-theme="ekologija"] .chart .line { stroke-width: 2; }
+[data-theme="ekologija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ekologija"][data-scheme="dark"] { color-scheme: dark; --back: #222426; --card: #2d2f31; --head: #383a3c; --edge: #424444; --alt: #333536; --text1: #e9eee3; --text2: #b7bcb4; --faint: #898d88; --up: #4ade80; --down: #f87171; --accent: #65a30d; --hot: #353f2c; --tip: #e9eee3; --tipfg: #222426; --accentfg: #111111; }
+[data-theme="ekologija"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(101,163,13,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(101,163,13,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222426; background-attachment: fixed; }

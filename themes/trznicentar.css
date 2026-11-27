@@ -1,0 +1,10 @@
+/* tema tržni centar (Shopping mall): generisana, tools/teme.py */
+:root[data-theme="trznicentar"] { color-scheme: light; --back: #fef5fa; --card: #fffcfe; --head: #f3eff2; --edge: #dfd3da; --alt: #f9f5f8; --text1: #3c2032; --text2: #6c5564; --faint: #998692; --up: #15803d; --down: #c81e1e; --accent: #ec4899; --hot: #fce3f0; --tip: #3c2032; --tipfg: #fef5fa; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="trznicentar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="trznicentar"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="trznicentar"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="trznicentar"] .big .value, [data-theme="trznicentar"] .detail .price { font-weight: 700; }
+[data-theme="trznicentar"] .chart .line { stroke-width: 2; }
+[data-theme="trznicentar"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="trznicentar"][data-scheme="dark"] { color-scheme: dark; --back: #1f111c; --card: #2a1d27; --head: #362933; --edge: #41333e; --alt: #30232d; --text1: #f3e6ef; --text2: #beb1ba; --faint: #8d808a; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #452337; --tip: #f3e6ef; --tipfg: #1f111c; --accentfg: #111111; }

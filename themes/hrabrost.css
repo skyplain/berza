@@ -1,0 +1,12 @@
+/* tema hrabrost (Courage): generisana, tools/teme.py */
+:root[data-theme="hrabrost"] { color-scheme: light; --back: #fff1e3; --card: #fffbf7; --head: #f3eeea; --edge: #e0d0c3; --alt: #f9f5f0; --text1: #3b2319; --text2: #6c564c; --faint: #99867a; --up: #15803d; --down: #c81e1e; --accent: #ea580c; --hot: #fce4d6; --tip: #3b2319; --tipfg: #fff1e3; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 8px; }
+[data-theme="hrabrost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hrabrost"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="hrabrost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="hrabrost"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(234,88,12,0.08) 0 6deg, transparent 6deg 12deg); background-color: #fff1e3; background-attachment: fixed; }
+[data-theme="hrabrost"] .big .value, [data-theme="hrabrost"] .detail .price { font-weight: 700; }
+[data-theme="hrabrost"] .chart .line { stroke-width: 1.5; }
+[data-theme="hrabrost"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="hrabrost"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444343; --alt: #343435; --text1: #f3e8e3; --text2: #bfb7b4; --faint: #8f8988; --up: #4ade80; --down: #f87171; --accent: #ea580c; --hot: #48342b; --tip: #f3e8e3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="hrabrost"][data-scheme="dark"] body { background: repeating-conic-gradient(from 0deg at 50% -10%, rgba(234,88,12,0.08) 0 6deg, transparent 6deg 12deg); background-color: #232325; background-attachment: fixed; }

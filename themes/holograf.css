@@ -1,0 +1,21 @@
+/* tema holograf (Hologram): generisana, tools/teme.py */
+:root[data-theme="holograf"] { color-scheme: dark; --back: #1d2c31; --card: #28373b; --head: #344246; --edge: #3e4c51; --alt: #2e3d41; --text1: #ecf4f7; --text2: #b8c2c6; --faint: #899498; --up: #4ade80; --down: #f87171; --accent: #8af3ff; --hot: #365156; --tip: #ecf4f7; --tipfg: #1d2c31; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="holograf"] :is(.overview .left, .block, .detail, .list) { background: #243338; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="holograf"] .overview .left { align-self: start; }
+[data-theme="holograf"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="holograf"] button { border: 0; }
+[data-theme="holograf"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="holograf"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="holograf"] .bar button { background: transparent; color: var(--back); border-color: rgba(29,44,49,0.35); box-shadow: none; }
+[data-theme="holograf"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="holograf"] :is(.overview .left, .block, .detail, .list) { background: rgba(40,55,59,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(236,244,247,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+[data-theme="holograf"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(138,243,255,0.55), -2px -1px 0 rgba(255,138,243,0.45); }
+[data-theme="holograf"] .big .value, [data-theme="holograf"] .detail .price { font-weight: 200; }
+[data-theme="holograf"] .chart .line { stroke-width: 1.5; }
+[data-theme="holograf"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="holograf"][data-scheme="light"] { color-scheme: light; --back: #f3feff; --card: #f1feff; --head: #e5f3f4; --edge: #d3dfe1; --alt: #ebf8f9; --text1: #2a3f45; --text2: #5c6f74; --faint: #829497; --up: #15803d; --down: #c81e1e; --accent: #54949b; --hot: #dbeff1; --tip: #2a3f45; --tipfg: #f3feff; --accentfg: #111111; }
+[data-theme="holograf"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #ecf7f8; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="holograf"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(243,254,255,0.35); box-shadow: none; }
+[data-theme="holograf"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(241,254,255,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(42,63,69,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+[data-theme="holograf"][data-scheme="light"] :is(.bar h1, h2, .big .value) { text-shadow: 2px 1px 0 rgba(84,148,155,0.55), -2px -1px 0 rgba(255,138,243,0.45); }

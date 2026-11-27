@@ -1,0 +1,15 @@
+/* tema prvi sneg (First snow): generisana, tools/teme.py */
+:root[data-theme="prvisneg"] { color-scheme: dark; --back: #0c1321; --card: #181f2c; --head: #252c38; --edge: #303643; --alt: #1e2532; --text1: #ecf0f7; --text2: #b4b9c2; --faint: #808690; --up: #4ade80; --down: #f87171; --accent: #93c5fd; --hot: #293649; --tip: #ecf0f7; --tipfg: #0c1321; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="prvisneg"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="prvisneg"] .overview .left { align-self: start; }
+[data-theme="prvisneg"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="prvisneg"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="prvisneg"] .bar h1 { font-size: 24px; }
+[data-theme="prvisneg"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="prvisneg"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #0c1321; background-attachment: fixed; }
+[data-theme="prvisneg"] .big .value, [data-theme="prvisneg"] .detail .price { font-weight: 400; }
+[data-theme="prvisneg"] .chart .line { stroke-width: 1.5; }
+[data-theme="prvisneg"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="prvisneg"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #eeeff0; --edge: #d1d3d6; --alt: #f4f5f6; --text1: #2c3644; --text2: #5d6570; --faint: #828991; --up: #15803d; --down: #c81e1e; --accent: #6183a7; --hot: #e5eaef; --tip: #2c3644; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="prvisneg"][data-scheme="light"] body { background: radial-gradient(circle, rgba(147,197,253,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(147,197,253,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(147,197,253,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f0f1f2; background-attachment: fixed; }

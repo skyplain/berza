@@ -1,0 +1,15 @@
+/* tema sneg (Snow): generisana, tools/teme.py */
+:root[data-theme="sneg"] { color-scheme: light; --back: #f7f9fb; --card: #fdfdfe; --head: #f0f0f2; --edge: #d5d8db; --alt: #f6f7f8; --text1: #232830; --text2: #585c63; --faint: #898c91; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e8eaee; --tip: #232830; --tipfg: #f7f9fb; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="sneg"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="sneg"] .overview .left { align-self: start; }
+[data-theme="sneg"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sneg"] button { border-radius: 999px; }
+[data-theme="sneg"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sneg"] body { background: radial-gradient(circle, rgba(100,116,139,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(100,116,139,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(100,116,139,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f7f9fb; background-attachment: fixed; }
+[data-theme="sneg"] .big .value, [data-theme="sneg"] .detail .price { font-weight: 900; }
+[data-theme="sneg"] .chart .line { stroke-width: 2; }
+[data-theme="sneg"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sneg"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #434448; --alt: #343539; --text1: #e8eaed; --text2: #b7b8bc; --faint: #898b8e; --up: #4ade80; --down: #f87171; --accent: #707f94; --hot: #373a41; --tip: #e8eaed; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="sneg"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="sneg"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #232428; background-attachment: fixed; }

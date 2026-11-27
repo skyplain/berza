@@ -1,0 +1,27 @@
+/* tema krem (Cream): generisana, tools/teme.py */
+:root[data-theme="krem"] { color-scheme: light; --back: #fffbef; --card: #fdf9ec; --head: #f1ede0; --edge: #dedacf; --alt: #f7f3e6; --text1: #312c27; --text2: #646059; --faint: #948f87; --up: #15803d; --down: #c81e1e; --accent: #a28250; --hot: #f0e8d6; --tip: #312c27; --tipfg: #fffbef; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="krem"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="krem"] .overview .left { align-self: start; }
+[data-theme="krem"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="krem"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="krem"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="krem"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,251,239,0.35); box-shadow: none; }
+[data-theme="krem"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="krem"] body { background: linear-gradient(180deg, rgba(162,130,80,0.1), transparent 380px); background-color: #fffbef; background-attachment: fixed; }
+[data-theme="krem"] :is(.overview .left, .block, .detail, .list) { background: #f9f4e5; border-color: rgba(162,130,80,0.35); }
+[data-theme="krem"] .chart .line { stroke: #a28250 !important; }
+[data-theme="krem"] .chart .area { fill: #a28250 !important; }
+[data-theme="krem"] .chart .vol { fill: #a28250; }
+[data-theme="krem"] :is(h2, h3, .big .label) { color: #a28250; }
+[data-theme="krem"] .big .value, [data-theme="krem"] .detail .price { font-weight: 400; }
+[data-theme="krem"] .chart .line { stroke-width: 3; }
+[data-theme="krem"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="krem"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444445; --alt: #343537; --text1: #efece9; --text2: #bcbab8; --faint: #8d8c8b; --up: #4ade80; --down: #f87171; --accent: #b08d57; --hot: #403c36; --tip: #efece9; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="krem"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,38,0.35); box-shadow: none; }
+[data-theme="krem"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(176,141,87,0.1), transparent 380px); background-color: #232426; background-attachment: fixed; }
+[data-theme="krem"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #343433; border-color: rgba(176,141,87,0.35); }
+[data-theme="krem"][data-scheme="dark"] .chart .line { stroke: #b08d57 !important; }
+[data-theme="krem"][data-scheme="dark"] .chart .area { fill: #b08d57 !important; }
+[data-theme="krem"][data-scheme="dark"] .chart .vol { fill: #b08d57; }
+[data-theme="krem"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #b08d57; }

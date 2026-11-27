@@ -1,0 +1,13 @@
+/* tema meteorologija (Meteorology): generisana, tools/teme.py */
+:root[data-theme="meteorologija"] { color-scheme: light; --back: #f0f8ff; --card: #fafdff; --head: #ecf0f3; --edge: #ccd7e0; --alt: #f3f7f9; --text1: #122b3b; --text2: #4a5e6c; --faint: #7d8d99; --up: #15803d; --down: #c81e1e; --accent: #0284c7; --hot: #d7ecf7; --tip: #122b3b; --tipfg: #f0f8ff; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="meteorologija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="meteorologija"] .overview .left { align-self: start; }
+[data-theme="meteorologija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="meteorologija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="meteorologija"] body { background: repeating-radial-gradient(ellipse at 30% 40%, transparent 0 28px, rgba(2,132,199,0.18) 28px 29px); background-color: #f0f8ff; background-attachment: fixed; }
+[data-theme="meteorologija"] .big .value, [data-theme="meteorologija"] .detail .price { font-weight: 200; }
+[data-theme="meteorologija"] .chart .line { stroke-width: 1.5; }
+[data-theme="meteorologija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="meteorologija"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414448; --alt: #323539; --text1: #e1ebf2; --text2: #b1b9c0; --faint: #858b91; --up: #4ade80; --down: #f87171; --accent: #0284c7; --hot: #273b48; --tip: #e1ebf2; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="meteorologija"][data-scheme="dark"] body { background: repeating-radial-gradient(ellipse at 30% 40%, transparent 0 28px, rgba(2,132,199,0.18) 28px 29px); background-color: #222428; background-attachment: fixed; }

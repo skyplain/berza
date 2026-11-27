@@ -1,0 +1,17 @@
+/* tema kapućino (Cappuccino): generisana, tools/teme.py */
+:root[data-theme="kapucino"] { color-scheme: light; --back: #f6ede3; --card: #fcfaf7; --head: #f0edea; --edge: #d6cdc4; --alt: #f6f4f1; --text1: #2f2724; --text2: #615854; --faint: #8f8680; --up: #15803d; --down: #c81e1e; --accent: #a47148; --hot: #f0e7de; --tip: #2f2724; --tipfg: #f6ede3; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="kapucino"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="kapucino"] .overview .left { align-self: start; }
+[data-theme="kapucino"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kapucino"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kapucino"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kapucino"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kapucino"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="kapucino"] body { background: radial-gradient(ellipse 50% 220px at 50% 0, rgba(255,255,255,0.6), transparent 70%); background-color: #f6ede3; background-attachment: fixed; }
+[data-theme="kapucino"] .bar h1::before { content: "☕ "; }
+[data-theme="kapucino"] .big .value, [data-theme="kapucino"] .detail .price { font-weight: 400; }
+[data-theme="kapucino"] .chart .line { stroke-width: 2.5; }
+[data-theme="kapucino"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kapucino"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #39383b; --edge: #434244; --alt: #333336; --text1: #eeeae8; --text2: #bbb8b7; --faint: #8c8a8a; --up: #4ade80; --down: #f87171; --accent: #a47148; --hot: #3e3733; --tip: #eeeae8; --tipfg: #222225; --accentfg: #111111; }
+[data-theme="kapucino"][data-scheme="dark"] body { background: radial-gradient(ellipse 50% 220px at 50% 0, rgba(255,255,255,0.1), transparent 70%); background-color: #222225; background-attachment: fixed; }

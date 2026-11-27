@@ -1,0 +1,14 @@
+/* tema tajni dosije (Secret file): generisana, tools/teme.py */
+:root[data-theme="tajnidosije"] { color-scheme: light; --back: #e8d29a; --card: #f8f2e1; --head: #ece6d5; --edge: #cab685; --alt: #f2ecdb; --text1: #2e2418; --text2: #5c5038; --faint: #807151; --up: #15803d; --down: #c81e1e; --accent: #a16207; --hot: #ecdec2; --tip: #2e2418; --tipfg: #e8d29a; --accentfg: #ffffff; --font: "American Typewriter", "Courier New", Courier, monospace; --radius: 10px; }
+[data-theme="tajnidosije"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tajnidosije"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="tajnidosije"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="tajnidosije"] .bar h1 { font-weight: 800; }
+[data-theme="tajnidosije"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="tajnidosije"] :is(h2, h3) { display: inline-block; color: #a16207; border: 2px solid #a16207; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="tajnidosije"] .big .value, [data-theme="tajnidosije"] .detail .price { font-weight: 400; }
+[data-theme="tajnidosije"] .chart .line { stroke-width: 2.5; }
+[data-theme="tajnidosije"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="tajnidosije"][data-scheme="dark"] { color-scheme: dark; --back: #21201e; --card: #2c2b29; --head: #383634; --edge: #42403e; --alt: #32312f; --text1: #ede8e3; --text2: #bab6b2; --faint: #8b8884; --up: #4ade80; --down: #f87171; --accent: #a26b1a; --hot: #3d3427; --tip: #ede8e3; --tipfg: #21201e; --accentfg: #ffffff; }
+[data-theme="tajnidosije"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #a26b1a; border: 2px solid #a26b1a; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

@@ -1,0 +1,17 @@
+/* tema lenjost (Laziness): generisana, tools/teme.py */
+:root[data-theme="lenjost"] { color-scheme: light; --back: #f7f5f2; --card: #fdfcfb; --head: #f1f0ef; --edge: #d7d5d3; --alt: #f7f6f5; --text1: #2f3033; --text2: #616163; --faint: #878788; --up: #15803d; --down: #c81e1e; --accent: #847e7a; --hot: #eceae9; --tip: #2f3033; --tipfg: #f7f5f2; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="lenjost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lenjost"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="lenjost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lenjost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="lenjost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="lenjost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="lenjost"] body { font-size: 16px; }
+[data-theme="lenjost"] td { padding: 7px 8px; }
+[data-theme="lenjost"] .block { margin-bottom: 36px; }
+[data-theme="lenjost"] .overview { gap: 44px; }
+[data-theme="lenjost"] .big .value, [data-theme="lenjost"] .detail .price { font-weight: 200; }
+[data-theme="lenjost"] .chart .line { stroke-width: 1.5; }
+[data-theme="lenjost"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lenjost"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #434347; --alt: #343438; --text1: #eeedef; --text2: #bbbabd; --faint: #8d8c8f; --up: #4ade80; --down: #f87171; --accent: #a8a29e; --hot: #3f3e41; --tip: #eeedef; --tipfg: #232327; --accentfg: #111111; }

@@ -1,0 +1,16 @@
+/* tema pomračenje (Eclipse): generisana, tools/teme.py */
+:root[data-theme="pomracenje"] { color-scheme: dark; --back: #040302; --card: #11100f; --head: #1f1e1c; --edge: #2b2928; --alt: #181716; --text1: #f5f3ed; --text2: #b9b7b2; --faint: #81807c; --up: #4ade80; --down: #f87171; --accent: #fde68a; --hot: #322e20; --tip: #f5f3ed; --tipfg: #040302; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="pomracenje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pomracenje"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="pomracenje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="pomracenje"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(245,243,237,0.9), rgba(245,243,237,0.55)); box-shadow: 0 0 60px rgba(245,243,237,0.35); opacity: .55; }
+[data-theme="pomracenje"] .big .value { text-shadow: 0 0 18px rgba(253,230,138,0.55); }
+[data-theme="pomracenje"] .chart .line { filter: drop-shadow(0 0 5px rgba(253,230,138,0.7)); }
+[data-theme="pomracenje"] .big .value, [data-theme="pomracenje"] .detail .price { font-weight: 700; }
+[data-theme="pomracenje"] .chart .line { stroke-width: 2; }
+[data-theme="pomracenje"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pomracenje"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #efefee; --edge: #d4d3d1; --alt: #f4f4f4; --text1: #3f3c30; --text2: #6b6960; --faint: #87857e; --up: #15803d; --down: #c81e1e; --accent: #8e814d; --hot: #ebe9e2; --tip: #3f3c30; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="pomracenje"][data-scheme="light"] body::before { content: ""; position: fixed; z-index: -1; top: 70px; right: 8%; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, rgba(63,60,48,0.9), rgba(63,60,48,0.55)); box-shadow: 0 0 60px rgba(63,60,48,0.35); opacity: .55; }
+[data-theme="pomracenje"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(142,129,77,0.55); }
+[data-theme="pomracenje"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(142,129,77,0.7)); }

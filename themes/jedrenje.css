@@ -1,0 +1,18 @@
+/* tema jedrenje (Sailing): generisana, tools/teme.py */
+:root[data-theme="jedrenje"] { color-scheme: light; --back: #f3f9fd; --card: #fbfdfe; --head: #edf0f2; --edge: #cfd7dd; --alt: #f4f7f8; --text1: #122634; --text2: #4a5b66; --faint: #7e8b94; --up: #15803d; --down: #c81e1e; --accent: #0369a1; --hot: #d8e8f1; --tip: #122634; --tipfg: #f3f9fd; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="jedrenje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="jedrenje"] .overview .left { align-self: start; }
+[data-theme="jedrenje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="jedrenje"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="jedrenje"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="jedrenje"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="jedrenje"] .bar button { background: transparent; color: var(--back); border-color: rgba(243,249,253,0.35); box-shadow: none; }
+[data-theme="jedrenje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="jedrenje"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(3,105,161,0.14) 9px 10px, transparent 11px 16px, rgba(3,105,161,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f3f9fd; background-attachment: fixed; }
+[data-theme="jedrenje"] .big .value, [data-theme="jedrenje"] .detail .price { font-weight: 400; }
+[data-theme="jedrenje"] .chart .line { stroke-width: 2.5; }
+[data-theme="jedrenje"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="jedrenje"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414448; --alt: #323539; --text1: #e1e9ef; --text2: #b1b8bd; --faint: #858a8f; --up: #4ade80; --down: #f87171; --accent: #3385b3; --hot: #2e3b45; --tip: #e1e9ef; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="jedrenje"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,40,0.35); box-shadow: none; }
+[data-theme="jedrenje"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(51,133,179,0.14) 9px 10px, transparent 11px 16px, rgba(51,133,179,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222428; background-attachment: fixed; }

@@ -1,0 +1,19 @@
+/* tema ruzičasto zlato (Rose gold): generisana, tools/teme.py */
+:root[data-theme="ruzicastozlato"] { color-scheme: light; --back: #fdf3f0; --card: #fefbfa; --head: #f2efee; --edge: #ddd3d1; --alt: #f8f5f4; --text1: #372b2d; --text2: #685d5e; --faint: #968b8b; --up: #15803d; --down: #c81e1e; --accent: #b37267; --hot: #f4e8e5; --tip: #372b2d; --tipfg: #fdf3f0; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 8px; }
+[data-theme="ruzicastozlato"] :is(.overview .left, .block, .detail, .list) { background: #f6ece9; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="ruzicastozlato"] .overview .left { align-self: start; }
+[data-theme="ruzicastozlato"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ruzicastozlato"] button { border: 0; }
+[data-theme="ruzicastozlato"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ruzicastozlato"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ruzicastozlato"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ruzicastozlato"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.4), transparent 40%); background-color: #fdf3f0; background-attachment: fixed; }
+[data-theme="ruzicastozlato"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #fefbfa, #fefbfa); border: 1px solid rgba(55,43,45,0.18); }
+[data-theme="ruzicastozlato"] .big .value, [data-theme="ruzicastozlato"] .detail .price { font-weight: 200; }
+[data-theme="ruzicastozlato"] .chart .line { stroke-width: 2; }
+[data-theme="ruzicastozlato"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ruzicastozlato"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444346; --alt: #343437; --text1: #f1ebec; --text2: #beb9ba; --faint: #8e8b8d; --up: #4ade80; --down: #f87171; --accent: #d4877a; --hot: #453a3b; --tip: #f1ebec; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="ruzicastozlato"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2a2a2d; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="ruzicastozlato"][data-scheme="dark"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.06), transparent 40%); background-color: #232326; background-attachment: fixed; }
+[data-theme="ruzicastozlato"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #3f3f41, #2e2e31); border: 1px solid rgba(241,235,236,0.18); }

@@ -1,0 +1,22 @@
+/* tema žurnal: časopis: ogromni naslovi, crveno-crni, kurziv */
+:root[data-theme="zurnal"] { color-scheme: light; --back: #fff; --card: #fff; --head: #fff; --edge: #111; --alt: #f6f6f6; --text1: #111; --text2: #333; --faint: #777; --up: #111; --down: #e10600; --accent: #e10600; --hot: #ffe9e8; --tip: #111; --tipfg: #fff; --accentfg: #fff; --font: "Helvetica Neue",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0; --h-color: #111; --h-transform: none; --h-spacing: -.02em; --h-size: 26px; --h-weight: 800; --h-font: Didot,"Bodoni 72",Georgia,serif; --big-font: Didot,"Bodoni 72",Georgia,serif; --big-weight: 700; }
+[data-theme="zurnal"] .bar { border-bottom:8px solid #e10600;padding:18px 0 10px }
+[data-theme="zurnal"] .bar h1 { font-family:Didot,"Bodoni 72",Georgia,serif;font-size:48px;font-weight:900;letter-spacing:-.04em;line-height:1 }
+[data-theme="zurnal"] .bar h1 span { font-family:"Helvetica Neue",sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.3em;color:#e10600;margin-left:12px }
+[data-theme="zurnal"] button { background:#111;color:#fff;border:0;text-transform:uppercase;font-size:12px;letter-spacing:.1em }
+[data-theme="zurnal"] button:hover { background:#e10600 }
+[data-theme="zurnal"] h2,[data-theme="zurnal"] h3 { font-style:italic }
+[data-theme="zurnal"] .big .value { font-size:72px;letter-spacing:-.04em }
+[data-theme="zurnal"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="zurnal"] tbody tr { border-bottom:1px solid #ddd }
+[data-theme="zurnal"] th { text-transform:uppercase;font-size:10.5px;letter-spacing:.15em;color:#e10600;border-bottom:2px solid #111 }
+[data-theme="zurnal"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="zurnal"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="zurnal"][data-scheme="dark"] { color-scheme: dark; --back: #060606; --card: #060606; --head: #060606; --edge: #ececec; --alt: #0a0a0a; --text1: #ececec; --text2: #bdbdbd; --faint: #727272; --up: #4ade80; --down: #f87171; --accent: #e10600; --hot: #180b0b; --tip: #ececec; --tipfg: #060606; --accentfg: #ffffff; --h-color: #ececec; }
+[data-theme="zurnal"][data-scheme="dark"] .bar { border-bottom:8px solid #e10600;padding:18px 0 10px }
+[data-theme="zurnal"][data-scheme="dark"] .bar h1 span { font-family:"Helvetica Neue",sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.3em;color:#e10600;margin-left:12px }
+[data-theme="zurnal"][data-scheme="dark"] button { background:#ececec;color:#060606;border:0;text-transform:uppercase;font-size:12px;letter-spacing:.1em }
+[data-theme="zurnal"][data-scheme="dark"] button:hover { background:#e10600 }
+[data-theme="zurnal"][data-scheme="dark"] tbody tr { border-bottom:1px solid #1b1b1b }
+[data-theme="zurnal"][data-scheme="dark"] th { text-transform:uppercase;font-size:10.5px;letter-spacing:.15em;color:#e10600;border-bottom:2px solid #ececec }

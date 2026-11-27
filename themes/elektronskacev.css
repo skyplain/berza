@@ -1,0 +1,20 @@
+/* tema elektronska cev (Vacuum tube): generisana, tools/teme.py */
+:root[data-theme="elektronskacev"] { color-scheme: dark; --back: #2d1e14; --card: #382920; --head: #43352c; --edge: #4d3f36; --alt: #3e2f26; --text1: #f5ece6; --text2: #c3b8b2; --faint: #958981; --up: #4ade80; --down: #f87171; --accent: #ff8c2b; --hot: #543722; --tip: #f5ece6; --tipfg: #2d1e14; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="elektronskacev"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="elektronskacev"] .overview .left { align-self: start; }
+[data-theme="elektronskacev"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="elektronskacev"] button { border-radius: 0; }
+[data-theme="elektronskacev"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="elektronskacev"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="elektronskacev"] .bar button { background: transparent; color: var(--back); border-color: rgba(45,30,20,0.35); box-shadow: none; }
+[data-theme="elektronskacev"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="elektronskacev"] .big .value { text-shadow: 0 0 18px rgba(255,140,43,0.55); }
+[data-theme="elektronskacev"] .chart .line { filter: drop-shadow(0 0 5px rgba(255,140,43,0.7)); }
+[data-theme="elektronskacev"] .big .value, [data-theme="elektronskacev"] .detail .price { font-weight: 400; }
+[data-theme="elektronskacev"] .chart .line { stroke-width: 2; }
+[data-theme="elektronskacev"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="elektronskacev"][data-scheme="light"] { color-scheme: light; --back: #fff4ea; --card: #fffcf9; --head: #f3f0ec; --edge: #e0d4ca; --alt: #f9f6f2; --text1: #3f2c1f; --text2: #6f5e52; --faint: #9b8c80; --up: #15803d; --down: #c81e1e; --accent: #c76d22; --hot: #f7e8db; --tip: #3f2c1f; --tipfg: #fff4ea; --accentfg: #111111; }
+[data-theme="elektronskacev"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,244,234,0.35); box-shadow: none; }
+[data-theme="elektronskacev"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(199,109,34,0.55); }
+[data-theme="elektronskacev"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(199,109,34,0.7)); }

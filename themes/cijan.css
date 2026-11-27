@@ -1,0 +1,23 @@
+/* tema cijan (Cyan): generisana, tools/teme.py */
+:root[data-theme="cijan"] { color-scheme: light; --back: #e1f6fb; --card: #f6fcfe; --head: #e8f0f2; --edge: #c0d6dc; --alt: #eff6f8; --text1: #132d37; --text2: #465f68; --faint: #768d95; --up: #15803d; --down: #c81e1e; --accent: #0891b2; --hot: #d5edf3; --tip: #132d37; --tipfg: #e1f6fb; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="cijan"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="cijan"] .overview .left { align-self: start; }
+[data-theme="cijan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cijan"] button { border-radius: 999px; }
+[data-theme="cijan"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="cijan"] .bar h1 { font-weight: 800; }
+[data-theme="cijan"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="cijan"] body { background: linear-gradient(180deg, rgba(8,145,178,0.1), transparent 380px); background-color: #e1f6fb; background-attachment: fixed; }
+[data-theme="cijan"] :is(.overview .left, .block, .detail, .list) { background: #eaf7fa; border-color: rgba(8,145,178,0.35); }
+[data-theme="cijan"] .chart .line { stroke: #0891b2 !important; }
+[data-theme="cijan"] .chart .area { fill: #0891b2 !important; }
+[data-theme="cijan"] .chart .vol { fill: #0891b2; }
+[data-theme="cijan"] :is(h2, h3, .big .label) { color: #0891b2; }
+[data-theme="cijan"] .big .value, [data-theme="cijan"] .detail .price { font-weight: 700; }
+[data-theme="cijan"] .chart .line { stroke-width: 3; }
+[data-theme="cijan"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="cijan"][data-scheme="dark"] { color-scheme: dark; --back: #202328; --card: #2b2e33; --head: #36393e; --edge: #3f4348; --alt: #303439; --text1: #e1ecf1; --text2: #b1babf; --faint: #848c91; --up: #4ade80; --down: #f87171; --accent: #0891b2; --hot: #263c45; --tip: #e1ecf1; --tipfg: #202328; --accentfg: #111111; }
+[data-theme="cijan"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="cijan"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(8,145,178,0.1), transparent 380px); background-color: #202328; background-attachment: fixed; }
+[data-theme="cijan"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #293339; border-color: rgba(8,145,178,0.35); }

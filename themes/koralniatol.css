@@ -1,0 +1,12 @@
+/* tema koralni atol (Coral atoll): generisana, tools/teme.py */
+:root[data-theme="koralniatol"] { color-scheme: light; --back: #e9fbfb; --card: #f8fefe; --head: #eaf2f2; --edge: #c7dbdd; --alt: #f1f8f8; --text1: #12343d; --text2: #48666c; --faint: #799498; --up: #15803d; --down: #c81e1e; --accent: #068ea5; --hot: #d6eef2; --tip: #12343d; --tipfg: #e9fbfb; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="koralniatol"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="koralniatol"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="koralniatol"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="koralniatol"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(6,142,165,0.14) 9px 10px, transparent 11px 16px, rgba(6,142,165,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #e9fbfb; background-attachment: fixed; }
+[data-theme="koralniatol"] .big .value, [data-theme="koralniatol"] .detail .price { font-weight: 700; }
+[data-theme="koralniatol"] .chart .line { stroke-width: 1.5; }
+[data-theme="koralniatol"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="koralniatol"][data-scheme="dark"] { color-scheme: dark; --back: #212428; --card: #2c2f33; --head: #373b3f; --edge: #404448; --alt: #313539; --text1: #e1eff3; --text2: #b1bcc0; --faint: #858e92; --up: #4ade80; --down: #f87171; --accent: #06b6d4; --hot: #27424a; --tip: #e1eff3; --tipfg: #212428; --accentfg: #111111; }
+[data-theme="koralniatol"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(6,182,212,0.14) 9px 10px, transparent 11px 16px, rgba(6,182,212,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #212428; background-attachment: fixed; }

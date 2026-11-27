@@ -1,0 +1,14 @@
+/* tema most (Bridge): generisana, tools/teme.py */
+:root[data-theme="most"] { color-scheme: light; --back: #eef2f6; --card: #fafbfc; --head: #edeeef; --edge: #ccd0d5; --alt: #f3f4f6; --text1: #1a1f26; --text2: #4f545a; --faint: #80848a; --up: #15803d; --down: #c81e1e; --accent: #334155; --hot: #dee1e5; --tip: #1a1f26; --tipfg: #eef2f6; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="most"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="most"] .overview .left { align-self: start; }
+[data-theme="most"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="most"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="most"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(51,65,85,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #eef2f6; background-attachment: fixed; }
+[data-theme="most"] .big .value, [data-theme="most"] .detail .price { font-weight: 400; }
+[data-theme="most"] .chart .line { stroke-width: 2; }
+[data-theme="most"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="most"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414246; --alt: #333437; --text1: #e5e6e9; --text2: #b4b5b8; --faint: #87888c; --up: #4ade80; --down: #f87171; --accent: #798290; --hot: #383a3f; --tip: #e5e6e9; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="most"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="most"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 18px, rgba(121,130,144,0.13) 19px 21px, transparent 22px) 0 0 / 48px 30px; background-color: #222327; background-attachment: fixed; }

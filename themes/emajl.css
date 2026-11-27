@@ -1,0 +1,18 @@
+/* tema emajl (Enamel): generisana, tools/teme.py */
+:root[data-theme="emajl"] { color-scheme: light; --back: #f6f9ff; --card: #fcfdff; --head: #eef0f3; --edge: #d2d6e0; --alt: #f5f6f9; --text1: #16213e; --text2: #4e576e; --faint: #82899b; --up: #15803d; --down: #c81e1e; --accent: #1d4ed8; --hot: #dde4fa; --tip: #16213e; --tipfg: #f6f9ff; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="emajl"] :is(.overview .left, .block, .detail, .list) { background: #eef1f8; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="emajl"] .overview .left { align-self: start; }
+[data-theme="emajl"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="emajl"] button { border: 0; }
+[data-theme="emajl"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="emajl"] .bar h1 { font-weight: 800; }
+[data-theme="emajl"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="emajl"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.08), -6px -6px 16px rgba(255,255,255,0.8); padding: 18px 20px; }
+[data-theme="emajl"] button { border-radius: 999px; }
+[data-theme="emajl"] .big .value, [data-theme="emajl"] .detail .price { font-weight: 900; }
+[data-theme="emajl"] .chart .line { stroke-width: 3; }
+[data-theme="emajl"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="emajl"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3f; --edge: #414349; --alt: #323539; --text1: #e3e7f4; --text2: #b3b6c1; --faint: #868992; --up: #4ade80; --down: #f87171; --accent: #567be2; --hot: #333a4c; --tip: #e3e7f4; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="emajl"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #292b2f; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="emajl"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.4), -6px -6px 16px rgba(255,255,255,0.03); padding: 18px 20px; }

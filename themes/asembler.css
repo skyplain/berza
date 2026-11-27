@@ -1,0 +1,15 @@
+/* tema asembler (Assembly): generisana, tools/teme.py */
+:root[data-theme="asembler"] { color-scheme: dark; --back: #251f2f; --card: #302a39; --head: #3c3644; --edge: #45404f; --alt: #36303f; --text1: #f0ecf5; --text2: #bdb9c4; --faint: #8f8a96; --up: #4ade80; --down: #f87171; --accent: #c792ea; --hot: #453952; --tip: #f0ecf5; --tipfg: #251f2f; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="asembler"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="asembler"] .overview .left { align-self: start; }
+[data-theme="asembler"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="asembler"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="asembler"] .bar h1 { font-weight: 800; }
+[data-theme="asembler"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="asembler"] :is(h2, h3)::before { content: "> "; color: #c792ea; }
+[data-theme="asembler"] .big .value, [data-theme="asembler"] .detail .price { font-weight: 200; }
+[data-theme="asembler"] .chart .line { stroke-width: 3; }
+[data-theme="asembler"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="asembler"][data-scheme="light"] { color-scheme: light; --back: #f9f4fd; --card: #fdfcfe; --head: #f1f0f3; --edge: #dad4df; --alt: #f7f6f8; --text1: #352d41; --text2: #665f70; --faint: #8b8594; --up: #15803d; --down: #c81e1e; --accent: #9b71b6; --hot: #efe9f4; --tip: #352d41; --tipfg: #f9f4fd; --accentfg: #111111; }
+[data-theme="asembler"][data-scheme="light"] :is(h2, h3)::before { content: "> "; color: #9b71b6; }

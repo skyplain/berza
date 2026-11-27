@@ -1,0 +1,27 @@
+/* tema šuma: zemljani tonovi, krem i tamnozelena, humanistički serif u naslovima */
+:root[data-theme="suma"] { color-scheme: light; --back: #f3efe3; --card: #fbf8ef; --head: #e6e0cc; --edge: #d3cbb2; --alt: #f0ebdc; --text1: #233127; --text2: #4c5a4f; --faint: #8a8f7c; --up: #2f7d32; --down: #b4472d; --accent: #2f5d3a; --hot: #e3ead9; --tip: #233127; --tipfg: #fbf8ef; --accentfg: #fbf8ef; --font: "Gill Sans", "Gill Sans MT", Optima, Candara, sans-serif; --radius: 4px; }
+[data-theme="suma"] .bar { background: #2f5d3a; color: #fbf8ef; margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 14px var(--gut, 16px); border: 0; }
+[data-theme="suma"] .bar h1 { font-family: "Iowan Old Style", Palatino, "Book Antiqua", serif; font-size: 24px; font-weight: 600; }
+[data-theme="suma"] .bar h1 span { color: #cfe0c3; font-style: italic; }
+[data-theme="suma"] .bar h1::before { content: "❦ "; color: #b9d39f; }
+[data-theme="suma"] .bar button { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .3); color: #fbf8ef; }
+[data-theme="suma"] .bar button:hover { background: rgba(255, 255, 255, .2); border-color: #fbf8ef; }
+[data-theme="suma"] h2, [data-theme="suma"] h3, [data-theme="suma"] .big .label { font-family: "Iowan Old Style", Palatino, "Book Antiqua", serif; text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 600; color: #2f5d3a; border-bottom: 2px solid #b9cfa3; padding-bottom: 3px; }
+[data-theme="suma"] .big .value { font-family: "Iowan Old Style", Palatino, serif; font-weight: 400; color: #2f5d3a; }
+[data-theme="suma"] .overview .left { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; align-self: start; }
+[data-theme="suma"] tbody tr:nth-child(even) { background: var(--alt); }
+[data-theme="suma"] .chart .line { stroke-width: 2.5; }
+[data-theme="suma"] .chart .area { opacity: .16; }
+[data-theme="suma"] .chart .vol { fill: #8a7a52; }
+[data-theme="suma"] footer { border-top: 2px solid #b9cfa3; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="suma"][data-scheme="dark"] { color-scheme: dark; --back: #120f07; --card: #0b0905; --head: #1d190a; --edge: #2e2814; --alt: #151107; --text1: #b9cabd; --text2: #8a998d; --faint: #636857; --up: #4ade80; --down: #f87171; --accent: #406e4a; --hot: #12160a; --tip: #b9cabd; --tipfg: #0b0905; --accentfg: #ffffff; }
+[data-theme="suma"][data-scheme="dark"] .bar { background: #406e4a; color: #0b0905; margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 14px var(--gut, 16px); border: 0; }
+[data-theme="suma"][data-scheme="dark"] .bar h1 span { color: #16220c; font-style: italic; }
+[data-theme="suma"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #1e3101; }
+[data-theme="suma"][data-scheme="dark"] .bar button { background: rgba(6,6,6,.1); border-color: rgba(6,6,6,.3); color: #0b0905; }
+[data-theme="suma"][data-scheme="dark"] .bar button:hover { background: rgba(6,6,6,.2); border-color: #0b0905; }
+[data-theme="suma"][data-scheme="dark"] h2, [data-theme="suma"][data-scheme="dark"] h3, [data-theme="suma"][data-scheme="dark"] .big .label { font-family: "Iowan Old Style", Palatino, "Book Antiqua", serif; text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 600; color: #406e4a; border-bottom: 2px solid #22320b; padding-bottom: 3px; }
+[data-theme="suma"][data-scheme="dark"] .big .value { font-family: "Iowan Old Style", Palatino, serif; font-weight: 400; color: #406e4a; }
+[data-theme="suma"][data-scheme="dark"] .chart .vol { fill: #7c6c44; }
+[data-theme="suma"][data-scheme="dark"] footer { border-top: 2px solid #22320b; }

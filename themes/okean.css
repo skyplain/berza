@@ -1,0 +1,16 @@
+/* tema okean: tirkizno plavo, talas u zaglavlju, zaobljeni paneli */
+:root[data-theme="okean"] { color-scheme: light; --back: #eaf6f8; --card: #fff; --head: #d7eef2; --edge: #bfe0e6; --alt: #f3fafb; --text1: #0b3a4a; --text2: #2f6475; --faint: #6f9aa8; --up: #0e9f6e; --down: #e0533d; --accent: #0a8ea8; --hot: #dff3f7; --tip: #0b3a4a; --tipfg: #fff; --accentfg: #fff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 12px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: 0 4px 14px rgba(10,80,100,.08); --h-color: #0a8ea8; --h-transform: none; --h-spacing: 0; --h-size: 15px; --h-weight: 700; --h-font: inherit; }
+[data-theme="okean"] .bar { background:linear-gradient(120deg,#0a8ea8,#14b8c7 60%,#7fdbe4);color:#fff;border:0;margin: 0 calc(-1 * var(--gut, 16px)) 18px;padding:16px var(--gut, 16px);border-radius:0 0 28px 28px }
+[data-theme="okean"] .bar h1 span { color:#dff7fa }
+[data-theme="okean"] .bar h1::before { content:"≈ " }
+[data-theme="okean"] .bar button { background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.45);color:#fff }
+[data-theme="okean"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="okean"] tbody tr { border-bottom:1px solid var(--edge) }
+[data-theme="okean"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="okean"] .overview .left { align-self: start; }
+[data-theme="okean"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="okean"][data-scheme="dark"] { color-scheme: dark; --back: #060e0f; --card: #060606; --head: #051619; --edge: #052327; --alt: #060a0b; --text1: #96c4d7; --text2: #6297a9; --faint: #3d6775; --up: #4ade80; --down: #f87171; --accent: #0a8ea8; --hot: #041215; --tip: #96c4d7; --tipfg: #060606; --accentfg: #111111; --panel-shadow: 0 4px 14px rgba(113,174,197,.08); --h-color: #0a8ea8; }
+[data-theme="okean"][data-scheme="dark"] .bar { background:linear-gradient(120deg,#0a8ea8,#0a535a 60%,#003034);color:#060606;border:0;margin: 0 calc(-1 * var(--gut, 16px)) 18px;padding:16px var(--gut, 16px);border-radius:0 0 28px 28px }
+[data-theme="okean"][data-scheme="dark"] .bar h1 span { color:#011013 }
+[data-theme="okean"][data-scheme="dark"] .bar button { background:rgba(6,6,6,.18);border-color:rgba(6,6,6,.45);color:#060606 }

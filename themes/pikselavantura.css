@@ -1,0 +1,20 @@
+/* tema piksel avantura (Pixel adventure): generisana, tools/teme.py */
+:root[data-theme="pikselavantura"] { color-scheme: dark; --back: #0d1a12; --card: #19251e; --head: #25312a; --edge: #2f3c35; --alt: #1f2b24; --text1: #e3f0ea; --text2: #aebab4; --faint: #7c8982; --up: #4ade80; --down: #f87171; --accent: #22c55e; --hot: #1a3b27; --tip: #e3f0ea; --tipfg: #0d1a12; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="pikselavantura"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="pikselavantura"] .overview .left { align-self: start; }
+[data-theme="pikselavantura"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pikselavantura"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="pikselavantura"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="pikselavantura"] .bar button { background: transparent; color: var(--back); border-color: rgba(13,26,18,0.35); box-shadow: none; }
+[data-theme="pikselavantura"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="pikselavantura"] body { background: linear-gradient(rgba(227,240,234,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(227,240,234,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #0d1a12; background-attachment: fixed; }
+[data-theme="pikselavantura"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #e3f0ea; border-radius: 0; box-shadow: none; }
+[data-theme="pikselavantura"] button { border-radius: 0; border-width: 2px; }
+[data-theme="pikselavantura"] .big .value, [data-theme="pikselavantura"] .detail .price { font-weight: 700; }
+[data-theme="pikselavantura"] .chart .line { stroke-width: 1.5; }
+[data-theme="pikselavantura"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="pikselavantura"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #ecefee; --edge: #cdd3d1; --alt: #f3f5f5; --text1: #173628; --text2: #4d655a; --faint: #778980; --up: #15803d; --down: #c81e1e; --accent: #1b9a49; --hot: #dbede2; --tip: #173628; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="pikselavantura"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,241,241,0.35); box-shadow: none; }
+[data-theme="pikselavantura"][data-scheme="light"] body { background: linear-gradient(rgba(23,54,40,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(23,54,40,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #f0f1f1; background-attachment: fixed; }
+[data-theme="pikselavantura"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #173628; border-radius: 0; box-shadow: none; }

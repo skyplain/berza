@@ -1,0 +1,16 @@
+/* tema lubenica (Watermelon): generisana, tools/teme.py */
+:root[data-theme="lubenica"] { color-scheme: light; --back: #f3fbef; --card: #fbfefa; --head: #eff0ed; --edge: #d5d7cf; --alt: #f5f7f4; --text1: #3a1824; --text2: #685157; --faint: #938585; --up: #15803d; --down: #c81e1e; --accent: #e11d48; --hot: #f7dee1; --tip: #3a1824; --tipfg: #f3fbef; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="lubenica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="lubenica"] .overview .left { align-self: start; }
+[data-theme="lubenica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lubenica"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lubenica"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="lubenica"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="lubenica"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="lubenica"] body { background: radial-gradient(circle, rgba(58,24,36,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(58,24,36,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #f3fbef; background-attachment: fixed; }
+[data-theme="lubenica"] .big .value, [data-theme="lubenica"] .detail .price { font-weight: 900; }
+[data-theme="lubenica"] .chart .line { stroke-width: 1.5; }
+[data-theme="lubenica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lubenica"][data-scheme="dark"] { color-scheme: dark; --back: #222426; --card: #2d2f31; --head: #393a3c; --edge: #434345; --alt: #333436; --text1: #f2e3e8; --text2: #beb3b8; --faint: #8e878b; --up: #4ade80; --down: #f87171; --accent: #e4375e; --hot: #473037; --tip: #f2e3e8; --tipfg: #222426; --accentfg: #111111; }
+[data-theme="lubenica"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(242,227,232,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(242,227,232,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #222426; background-attachment: fixed; }

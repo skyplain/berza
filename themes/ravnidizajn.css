@@ -1,0 +1,13 @@
+/* tema ravni dizajn (Flat design): generisana, tools/teme.py */
+:root[data-theme="ravnidizajn"] { color-scheme: light; --back: #ecf0f1; --card: #f9fafb; --head: #eeedee; --edge: #d0cfd0; --alt: #f3f3f4; --text1: #3b2122; --text2: #675556; --faint: #908485; --up: #15803d; --down: #c81e1e; --accent: #e74c3c; --hot: #f6e2e0; --tip: #3b2122; --tipfg: #ecf0f1; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="ravnidizajn"] :is(.overview .left, .block, .detail, .list) { background: rgba(249,250,251,0.6); border: 1px solid rgba(59,33,34,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="ravnidizajn"] .overview .left { align-self: start; }
+[data-theme="ravnidizajn"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ravnidizajn"] button { border-radius: 999px; background: transparent; }
+[data-theme="ravnidizajn"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ravnidizajn"] .big .value, [data-theme="ravnidizajn"] .detail .price { font-weight: 400; }
+[data-theme="ravnidizajn"] .chart .line { stroke-width: 1.5; }
+[data-theme="ravnidizajn"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ravnidizajn"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #39393c; --edge: #434245; --alt: #333436; --text1: #f3e7e7; --text2: #bfb6b7; --faint: #8f898a; --up: #4ade80; --down: #f87171; --accent: #e74c3c; --hot: #473233; --tip: #f3e7e7; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="ravnidizajn"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(45,46,49,0.6); border: 1px solid rgba(243,231,231,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }

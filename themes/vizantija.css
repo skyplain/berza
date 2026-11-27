@@ -1,0 +1,14 @@
+/* tema vizantija (Byzantium): generisana, tools/teme.py */
+:root[data-theme="vizantija"] { color-scheme: dark; --back: #20103a; --card: #2b1c44; --head: #37294e; --edge: #413355; --alt: #312249; --text1: #f1ede5; --text2: #bdb6ba; --faint: #8d8393; --up: #4ade80; --down: #f87171; --accent: #c9a227; --hot: #412f40; --tip: #f1ede5; --tipfg: #20103a; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="vizantija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="vizantija"] .overview .left { align-self: start; }
+[data-theme="vizantija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vizantija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="vizantija"] body { background: conic-gradient(rgba(212,175,55,.16) 25%, rgba(240,210,110,.1) 0 50%, rgba(212,175,55,.08) 0 75%, rgba(250,230,150,.14) 0) 0 0 / 14px 14px, linear-gradient(rgba(241,237,229,0.08) 1px, transparent 1px) 0 0 / 7px 7px; background-color: #20103a; background-attachment: fixed; }
+[data-theme="vizantija"] .big .value, [data-theme="vizantija"] .detail .price { font-weight: 200; }
+[data-theme="vizantija"] .chart .line { stroke-width: 2.5; }
+[data-theme="vizantija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="vizantija"][data-scheme="light"] { color-scheme: light; --back: #f2f1f3; --card: #fbfbfb; --head: #efefee; --edge: #d4d2d1; --alt: #f5f5f4; --text1: #35301e; --text2: #646053; --faint: #89867c; --up: #15803d; --down: #c81e1e; --accent: #9c7e1e; --hot: #eeeadc; --tip: #35301e; --tipfg: #f2f1f3; --accentfg: #111111; }
+[data-theme="vizantija"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="vizantija"][data-scheme="light"] body { background: conic-gradient(rgba(212,175,55,.16) 25%, rgba(240,210,110,.1) 0 50%, rgba(212,175,55,.08) 0 75%, rgba(250,230,150,.14) 0) 0 0 / 14px 14px, linear-gradient(rgba(53,48,30,0.08) 1px, transparent 1px) 0 0 / 7px 7px; background-color: #f2f1f3; background-attachment: fixed; }

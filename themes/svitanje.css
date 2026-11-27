@@ -1,0 +1,14 @@
+/* tema svitanje (Sunrise): generisana, tools/teme.py */
+:root[data-theme="svitanje"] { color-scheme: light; --back: #fff1f2; --card: #fffbfb; --head: #f3eeef; --edge: #e0d1d3; --alt: #f9f5f5; --text1: #3e272f; --text2: #6e5a60; --faint: #9b888d; --up: #15803d; --down: #c81e1e; --accent: #d56070; --hot: #f9e5e8; --tip: #3e272f; --tipfg: #fff1f2; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="svitanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svitanje"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="svitanje"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="svitanje"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="svitanje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="svitanje"] body { background: linear-gradient(180deg, #fecdd3 0, #f0f2e3 260px, #fff1f2 520px); background-color: #fff1f2; background-attachment: fixed; }
+[data-theme="svitanje"] .big .value, [data-theme="svitanje"] .detail .price { font-weight: 900; }
+[data-theme="svitanje"] .chart .line { stroke-width: 1.5; }
+[data-theme="svitanje"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="svitanje"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #454347; --alt: #343438; --text1: #f5eaed; --text2: #c0b8bc; --faint: #908a8e; --up: #4ade80; --down: #f87171; --accent: #fb7185; --hot: #4b373e; --tip: #f5eaed; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="svitanje"][data-scheme="dark"] body { background: linear-gradient(180deg, #5f3941 0, #2f3d30 260px, #232327 520px); background-color: #232327; background-attachment: fixed; }

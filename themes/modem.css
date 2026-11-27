@@ -1,0 +1,13 @@
+/* tema modem (Dial-up): generisana, tools/teme.py */
+:root[data-theme="modem"] { color-scheme: light; --back: #f0f1f3; --card: #fafbfb; --head: #edeeef; --edge: #cfd1d4; --alt: #f4f5f5; --text1: #232830; --text2: #565a61; --faint: #85888e; --up: #15803d; --down: #c81e1e; --accent: #64748b; --hot: #e5e8eb; --tip: #232830; --tipfg: #f0f1f3; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="modem"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="modem"] .overview .left { align-self: start; }
+[data-theme="modem"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="modem"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="modem"] :is(.overview .left, .block, .detail, .list) { position: relative; padding-top: 34px; }
+[data-theme="modem"] :is(.overview .left, .block, .detail, .list)::before { content: "● ● ●"; position: absolute; left: 12px; top: 8px; font-size: 10px; letter-spacing: 2px; color: #64748b; }
+[data-theme="modem"] .big .value, [data-theme="modem"] .detail .price { font-weight: 200; }
+[data-theme="modem"] .chart .line { stroke-width: 1.5; }
+[data-theme="modem"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="modem"][data-scheme="dark"] { color-scheme: dark; --back: #171b21; --card: #23262c; --head: #2f3238; --edge: #383c42; --alt: #292c32; --text1: #e8eaed; --text2: #b4b6ba; --faint: #84878b; --up: #4ade80; --down: #f87171; --accent: #64748b; --hot: #2c3139; --tip: #e8eaed; --tipfg: #171b21; --accentfg: #ffffff; }

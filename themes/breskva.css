@@ -1,0 +1,18 @@
+/* tema breskva: generisana (paleta + oblik 6/1/2/5) */
+:root[data-theme="breskva"] { color-scheme: light; --back: #fff0e8; --card: #fff8f3; --head: #f4ece6; --edge: #e2d0c7; --alt: #faf2ed; --text1: #4a2a1c; --text2: #7d6155; --faint: #a48d82; --up: #15803d; --down: #c81e1e; --accent: #f07a50; --hot: #fde6dc; --tip: #4a2a1c; --tipfg: #fff0e8; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="breskva"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="breskva"] .overview .left { align-self: start; }
+[data-theme="breskva"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="breskva"] button { border-radius: 0; }
+[data-theme="breskva"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="breskva"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="breskva"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="breskva"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="breskva"] body { background: linear-gradient(180deg, #fee4d9, #fff0e8 420px); background-color: #fff0e8; background-attachment: fixed; }
+[data-theme="breskva"] .big .value, [data-theme="breskva"] .detail .price { font-weight: 700; }
+[data-theme="breskva"] .chart .line { stroke-width: 1.5; }
+[data-theme="breskva"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="breskva"][data-scheme="dark"] { color-scheme: dark; --back: #130a05; --card: #0c0805; --head: #140f0b; --edge: #2b1e18; --alt: #100b08; --text1: #dcb3a2; --text2: #977a6d; --faint: #705b4f; --up: #4ade80; --down: #f87171; --accent: #f07a50; --hot: #1c0d07; --tip: #dcb3a2; --tipfg: #130a05; --accentfg: #111111; }
+[data-theme="breskva"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="breskva"][data-scheme="dark"] body { background: linear-gradient(180deg, #1e0d06, #130a05 420px); background-color: #130a05; background-attachment: fixed; }

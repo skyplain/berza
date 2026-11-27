@@ -1,0 +1,16 @@
+/* tema čikago (Chicago): generisana, tools/teme.py */
+:root[data-theme="cikago"] { color-scheme: light; --back: #f3f4f6; --card: #fbfcfc; --head: #edeff0; --edge: #d0d2d6; --alt: #f4f5f6; --text1: #171d30; --text2: #4e5362; --faint: #81848f; --up: #15803d; --down: #c81e1e; --accent: #1e3a8a; --hot: #dce1ec; --tip: #171d30; --tipfg: #f3f4f6; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="cikago"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="cikago"] .overview .left { align-self: start; }
+[data-theme="cikago"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cikago"] button { border-radius: 0; }
+[data-theme="cikago"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="cikago"] .bar h1 { font-weight: 800; }
+[data-theme="cikago"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="cikago"] body { background: linear-gradient(rgba(23,29,48,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(23,29,48,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f3f4f6; background-attachment: fixed; }
+[data-theme="cikago"] .big .value, [data-theme="cikago"] .detail .price { font-weight: 900; }
+[data-theme="cikago"] .chart .line { stroke-width: 1.5; }
+[data-theme="cikago"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="cikago"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #38393d; --edge: #414247; --alt: #323338; --text1: #e3e5ed; --text2: #b3b4bc; --faint: #86888e; --up: #4ade80; --down: #f87171; --accent: #6b7cb2; --hot: #363944; --tip: #e3e5ed; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="cikago"][data-scheme="dark"] body { background: linear-gradient(rgba(227,229,237,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(227,229,237,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #222327; background-attachment: fixed; }

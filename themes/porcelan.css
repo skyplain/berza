@@ -1,0 +1,17 @@
+/* tema porcelan: generisana (paleta + oblik 2/1/2/1) */
+:root[data-theme="porcelan"] { color-scheme: light; --back: #f6f9fc; --card: #ffffff; --head: #f1f2f4; --edge: #d3d8de; --alt: #f8f9f9; --text1: #1b2a41; --text2: #586475; --faint: #88929e; --up: #15803d; --down: #c81e1e; --accent: #2d5da1; --hot: #e2e8f2; --tip: #1b2a41; --tipfg: #f6f9fc; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 6px; }
+[data-theme="porcelan"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="porcelan"] .overview .left { align-self: start; }
+[data-theme="porcelan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="porcelan"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="porcelan"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="porcelan"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="porcelan"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="porcelan"] body { background: radial-gradient(#e0e4e9 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #f6f9fc; background-attachment: fixed; }
+[data-theme="porcelan"] .big .value, [data-theme="porcelan"] .detail .price { font-weight: 700; }
+[data-theme="porcelan"] .chart .line { stroke-width: 1.5; }
+[data-theme="porcelan"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="porcelan"][data-scheme="dark"] { color-scheme: dark; --back: #07090b; --card: #060606; --head: #0c0d0e; --edge: #1c2024; --alt: #080909; --text1: #b7cbe9; --text2: #7b8799; --faint: #596370; --up: #4ade80; --down: #f87171; --accent: #3363a7; --hot: #10141b; --tip: #b7cbe9; --tipfg: #07090b; --accentfg: #ffffff; }
+[data-theme="porcelan"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="porcelan"][data-scheme="dark"] body { background: radial-gradient(#14171a 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #07090b; background-attachment: fixed; }

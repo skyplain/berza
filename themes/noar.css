@@ -1,0 +1,21 @@
+/* tema noar: crno-beli film: dramatične senke roletni, serif, zrno */
+:root[data-theme="noar"] { color-scheme: dark; --back: #0a0a0a; --card: #111; --head: #1a1a1a; --edge: #3a3a3a; --alt: #141414; --text1: #f2f2f2; --text2: #bdbdbd; --faint: #7a7a7a; --up: #f2f2f2; --down: #9a9a9a; --accent: #f2f2f2; --hot: #222; --tip: #f2f2f2; --tipfg: #0a0a0a; --accentfg: #0a0a0a; --font: Didot,"Bodoni 72",Georgia, "Times New Roman", serif; --radius: 0; --h-color: #f2f2f2; --h-transform: uppercase; --h-spacing: .3em; --h-size: 12px; --h-weight: 400; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="noar"] body { background:repeating-linear-gradient(-28deg,rgba(255,255,255,.045) 0 26px,transparent 26px 60px),radial-gradient(ellipse at 30% 20%,#2a2a2a,#050505 70%) fixed #0a0a0a }
+[data-theme="noar"] .bar { border-bottom:1px solid #f2f2f2 }
+[data-theme="noar"] .bar h1 { font-size:30px;font-style:italic;font-weight:400 }
+[data-theme="noar"] button { background:transparent;border-color:#f2f2f2 }
+[data-theme="noar"] .chg.down { font-style:italic }
+[data-theme="noar"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="noar"] tbody tr { border-bottom:1px solid #222 }
+[data-theme="noar"] .chart .line { stroke:#f2f2f2!important;stroke-width:1.5 }
+[data-theme="noar"] .chart .area { fill:#f2f2f2!important;opacity:.07 }
+[data-theme="noar"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="noar"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="noar"][data-scheme="light"] { color-scheme: light; --back: #f7f7f7; --card: #ececec; --head: #dfdfdf; --edge: #b5b5b5; --alt: #e7e7e7; --text1: #0d0d0d; --text2: #333333; --faint: #6f6f6f; --up: #15803d; --down: #c81e1e; --accent: #868686; --hot: #d3d3d3; --tip: #868686; --tipfg: #151515; --accentfg: #111111; --h-color: #868686; }
+[data-theme="noar"][data-scheme="light"] body { background:repeating-linear-gradient(-28deg,rgba(6,6,6,.045) 0 26px,transparent 26px 60px),radial-gradient(ellipse at 30% 20%,#c9c9c9,#ffffff 70%) fixed #f7f7f7 }
+[data-theme="noar"][data-scheme="light"] .bar { border-bottom:1px solid #868686 }
+[data-theme="noar"][data-scheme="light"] button { background:transparent;border-color:#868686 }
+[data-theme="noar"][data-scheme="light"] tbody tr { border-bottom:1px solid #d3d3d3 }
+[data-theme="noar"][data-scheme="light"] .chart .line { stroke:#868686!important;stroke-width:1.5 }
+[data-theme="noar"][data-scheme="light"] .chart .area { fill:#868686!important;opacity:.07 }

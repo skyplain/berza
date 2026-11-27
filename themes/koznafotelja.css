@@ -1,0 +1,15 @@
+/* tema kožna fotelja (Leather): generisana, tools/teme.py */
+:root[data-theme="koznafotelja"] { color-scheme: dark; --back: #1c0d08; --card: #271914; --head: #332520; --edge: #3d2f2b; --alt: #2d1f1a; --text1: #eae4e4; --text2: #b6aead; --faint: #877d7a; --up: #4ade80; --down: #f87171; --accent: #995b46; --hot: #37221b; --tip: #eae4e4; --tipfg: #1c0d08; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="koznafotelja"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="koznafotelja"] .overview .left { align-self: start; }
+[data-theme="koznafotelja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="koznafotelja"] button { border-radius: 999px; }
+[data-theme="koznafotelja"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="koznafotelja"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(234,228,228,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(234,228,228,0.03) 0 1px, transparent 1px 5px); background-color: #1c0d08; background-attachment: fixed; }
+[data-theme="koznafotelja"] .big .value, [data-theme="koznafotelja"] .detail .price { font-weight: 900; }
+[data-theme="koznafotelja"] .chart .line { stroke-width: 1.5; }
+[data-theme="koznafotelja"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="koznafotelja"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #eeeded; --edge: #d1cece; --alt: #f5f3f3; --text1: #281b1a; --text2: #5a5050; --faint: #888181; --up: #15803d; --down: #c81e1e; --accent: #7c2d12; --hot: #e9ddda; --tip: #281b1a; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="koznafotelja"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="koznafotelja"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 17% 32%, rgba(40,27,26,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(40,27,26,0.03) 0 1px, transparent 1px 5px); background-color: #f1f0f0; background-attachment: fixed; }

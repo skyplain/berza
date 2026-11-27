@@ -1,0 +1,16 @@
+/* tema zoologija (Zoology): generisana, tools/teme.py */
+:root[data-theme="zoologija"] { color-scheme: light; --back: #fbf4e8; --card: #fefcf8; --head: #f2efeb; --edge: #dbd2c7; --alt: #f8f5f1; --text1: #322219; --text2: #64564d; --faint: #92877c; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f4e4d7; --tip: #322219; --tipfg: #fbf4e8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="zoologija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="zoologija"] .overview .left { align-self: start; }
+[data-theme="zoologija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zoologija"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zoologija"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="zoologija"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="zoologija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zoologija"] body { background: radial-gradient(circle, rgba(50,34,25,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(50,34,25,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #fbf4e8; background-attachment: fixed; }
+[data-theme="zoologija"] .big .value, [data-theme="zoologija"] .detail .price { font-weight: 700; }
+[data-theme="zoologija"] .chart .line { stroke-width: 1.5; }
+[data-theme="zoologija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="zoologija"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444244; --alt: #343436; --text1: #efe7e3; --text2: #bcb6b4; --faint: #8d8988; --up: #4ade80; --down: #f87171; --accent: #bd6726; --hot: #42362f; --tip: #efe7e3; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="zoologija"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(239,231,227,0.12) 0 6px, transparent 7px) 0 0 / 50px 46px, radial-gradient(circle, rgba(239,231,227,0.1) 0 4px, transparent 5px) 25px 23px / 50px 46px; background-color: #232326; background-attachment: fixed; }

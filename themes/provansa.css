@@ -1,0 +1,20 @@
+/* tema provansa: generisana (paleta + oblik 5/4/5/6) */
+:root[data-theme="provansa"] { color-scheme: light; --back: #f5f1fa; --card: #fdfbff; --head: #f1eef4; --edge: #d5d0dc; --alt: #f7f5f9; --text1: #2f2541; --text2: #665e75; --faint: #928b9e; --up: #15803d; --down: #c81e1e; --accent: #7d5bb5; --hot: #ebe5f5; --tip: #2f2541; --tipfg: #f5f1fa; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 4px; }
+[data-theme="provansa"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="provansa"] .overview .left { align-self: start; }
+[data-theme="provansa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="provansa"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="provansa"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="provansa"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="provansa"] .bar button { background: transparent; color: var(--back); border-color: rgba(245,241,250,0.35); box-shadow: none; }
+[data-theme="provansa"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="provansa"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="provansa"] body { background: radial-gradient(600px 400px at 0 0, rgba(125,91,181,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(125,91,181,0.12), transparent 70%); background-color: #f5f1fa; background-attachment: fixed; }
+[data-theme="provansa"] .big .value, [data-theme="provansa"] .detail .price { font-weight: 400; }
+[data-theme="provansa"] .chart .line { stroke-width: 3.5; }
+[data-theme="provansa"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="provansa"][data-scheme="dark"] { color-scheme: dark; --back: #0e0b11; --card: #080709; --head: #100e12; --edge: #25212a; --alt: #0b0a0c; --text1: #ccc1e5; --text2: #8a829a; --faint: #675f73; --up: #4ade80; --down: #f87171; --accent: #7d5bb5; --hot: #15111c; --tip: #ccc1e5; --tipfg: #0e0b11; --accentfg: #ffffff; }
+[data-theme="provansa"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="provansa"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(14,11,17,0.35); box-shadow: none; }
+[data-theme="provansa"][data-scheme="dark"] body { background: radial-gradient(600px 400px at 0 0, rgba(125,91,181,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(125,91,181,0.12), transparent 70%); background-color: #0e0b11; background-attachment: fixed; }

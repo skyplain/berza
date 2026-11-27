@@ -1,0 +1,16 @@
+/* tema suprematizam (Suprematism): generisana, tools/teme.py */
+:root[data-theme="suprematizam"] { color-scheme: light; --back: #f4efe5; --card: #fcfaf7; --head: #eeecea; --edge: #d0cdc5; --alt: #f5f3f0; --text1: #16181c; --text2: #4e4e4e; --faint: #817f7c; --up: #15803d; --down: #c81e1e; --accent: #1a1a1a; --hot: #dcdbd8; --tip: #16181c; --tipfg: #f4efe5; --accentfg: #ffffff; --font: Futura, "Century Gothic", "Avenir Next", sans-serif; --radius: 4px; }
+[data-theme="suprematizam"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="suprematizam"] .overview .left { align-self: start; }
+[data-theme="suprematizam"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="suprematizam"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="suprematizam"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="suprematizam"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="suprematizam"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="suprematizam"] body::before { content: ""; position: fixed; z-index: -1; right: 6%; top: 18%; width: 180px; height: 60px; background: #1a1a1a; transform: rotate(-18deg); opacity: .18; box-shadow: -260px 220px 0 -10px #16181c, 120px 340px 0 -20px #1a1a1a; }
+[data-theme="suprematizam"] .big .value, [data-theme="suprematizam"] .detail .price { font-weight: 400; }
+[data-theme="suprematizam"] .chart .line { stroke-width: 3; }
+[data-theme="suprematizam"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="suprematizam"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #414244; --alt: #323335; --text1: #e3e3e4; --text2: #b3b3b4; --faint: #868788; --up: #4ade80; --down: #f87171; --accent: #7f7f7f; --hot: #38393b; --tip: #e3e3e4; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="suprematizam"][data-scheme="dark"] body::before { content: ""; position: fixed; z-index: -1; right: 6%; top: 18%; width: 180px; height: 60px; background: #7f7f7f; transform: rotate(-18deg); opacity: .18; box-shadow: -260px 220px 0 -10px #e3e3e4, 120px 340px 0 -20px #1a1a1a; }

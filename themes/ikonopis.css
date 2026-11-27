@@ -1,0 +1,21 @@
+/* tema ikonopis (Icon painting): generisana, tools/teme.py */
+:root[data-theme="ikonopis"] { color-scheme: dark; --back: #2b100a; --card: #361c16; --head: #412922; --edge: #4b332d; --alt: #3c221c; --text1: #f1ede5; --text2: #c0b6ae; --faint: #92837c; --up: #4ade80; --down: #f87171; --accent: #c9a227; --hot: #4b2f18; --tip: #f1ede5; --tipfg: #2b100a; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="ikonopis"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="ikonopis"] .overview .left { align-self: start; }
+[data-theme="ikonopis"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ikonopis"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ikonopis"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="ikonopis"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="ikonopis"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="ikonopis"] :is(.overview .left, .block, .detail, .list) { border: 4px double #c9a227; }
+[data-theme="ikonopis"] .bar h1::before { content: "❦ "; color: #c9a227; }
+[data-theme="ikonopis"] .bar h1::after { content: " ❦"; color: #c9a227; }
+[data-theme="ikonopis"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="ikonopis"] .big .value, [data-theme="ikonopis"] .detail .price { font-weight: 900; }
+[data-theme="ikonopis"] .chart .line { stroke-width: 2.5; }
+[data-theme="ikonopis"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ikonopis"][data-scheme="light"] { color-scheme: light; --back: #f2f1f0; --card: #fbfbfa; --head: #efefed; --edge: #d4d2ce; --alt: #f5f5f3; --text1: #35301e; --text2: #646052; --faint: #89867b; --up: #15803d; --down: #c81e1e; --accent: #9c7e1e; --hot: #eeeadb; --tip: #35301e; --tipfg: #f2f1f0; --accentfg: #111111; }
+[data-theme="ikonopis"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 4px double #9c7e1e; }
+[data-theme="ikonopis"][data-scheme="light"] .bar h1::before { content: "❦ "; color: #9c7e1e; }
+[data-theme="ikonopis"][data-scheme="light"] .bar h1::after { content: " ❦"; color: #9c7e1e; }

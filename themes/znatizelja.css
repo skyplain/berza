@@ -1,0 +1,15 @@
+/* tema znatiželja (Curiosity): generisana, tools/teme.py */
+:root[data-theme="znatizelja"] { color-scheme: light; --back: #eefcfa; --card: #fafefe; --head: #ecf2f2; --edge: #cbdcda; --alt: #f3f8f8; --text1: #153435; --text2: #4b6666; --faint: #7d9494; --up: #15803d; --down: #c81e1e; --accent: #119b8d; --hot: #d9f0ee; --tip: #153435; --tipfg: #eefcfa; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="znatizelja"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="znatizelja"] .overview .left { align-self: start; }
+[data-theme="znatizelja"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="znatizelja"] button { border-radius: 999px; }
+[data-theme="znatizelja"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="znatizelja"] body { background: linear-gradient(rgba(17,155,141,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(17,155,141,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(17,155,141,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(17,155,141,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #eefcfa; background-attachment: fixed; }
+[data-theme="znatizelja"] .big .value, [data-theme="znatizelja"] .detail .price { font-weight: 400; }
+[data-theme="znatizelja"] .chart .line { stroke-width: 1.5; }
+[data-theme="znatizelja"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="znatizelja"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383b3d; --edge: #414447; --alt: #323538; --text1: #e2eff0; --text2: #b2bcbe; --faint: #868e90; --up: #4ade80; --down: #f87171; --accent: #14b8a6; --hot: #2a4242; --tip: #e2eff0; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="znatizelja"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="znatizelja"][data-scheme="dark"] body { background: linear-gradient(rgba(20,184,166,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(20,184,166,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(20,184,166,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(20,184,166,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #222427; background-attachment: fixed; }

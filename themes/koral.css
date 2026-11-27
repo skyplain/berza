@@ -1,0 +1,15 @@
+/* tema koral: generisana (paleta + oblik 0/1/0/3) */
+:root[data-theme="koral"] { color-scheme: light; --back: #fff1ee; --card: #fff9f7; --head: #f4ecea; --edge: #e2cfcb; --alt: #faf2f0; --text1: #4a1d16; --text2: #7d5852; --faint: #a48782; --up: #15803d; --down: #c81e1e; --accent: #f2594b; --hot: #fde3df; --tip: #4a1d16; --tipfg: #fff1ee; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="koral"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="koral"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="koral"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="koral"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="koral"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="koral"] body { background: repeating-linear-gradient(45deg, rgba(74,29,22,0.03) 0 12px, transparent 12px 24px); background-color: #fff1ee; background-attachment: fixed; }
+[data-theme="koral"] .big .value, [data-theme="koral"] .detail .price { font-weight: 200; }
+[data-theme="koral"] .chart .line { stroke-width: 3; }
+[data-theme="koral"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="koral"][data-scheme="dark"] { color-scheme: dark; --back: #120908; --card: #0a0706; --head: #130e0d; --edge: #2c1e1b; --alt: #0f0a09; --text1: #f0b5aa; --text2: #a37c75; --faint: #785c56; --up: #4ade80; --down: #f87171; --accent: #f2594b; --hot: #1e0d0b; --tip: #f0b5aa; --tipfg: #120908; --accentfg: #111111; }
+[data-theme="koral"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="koral"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(240,181,170,0.03) 0 12px, transparent 12px 24px); background-color: #120908; background-attachment: fixed; }

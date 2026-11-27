@@ -1,0 +1,18 @@
+/* tema šah (Chess): generisana, tools/teme.py */
+:root[data-theme="sah"] { color-scheme: light; --back: #f1ece2; --card: #fbf9f6; --head: #edebe9; --edge: #cecac2; --alt: #f4f2ef; --text1: #14161a; --text2: #4b4c4c; --faint: #7e7d7a; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dad9d6; --tip: #14161a; --tipfg: #f1ece2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="sah"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="sah"] .overview .left { align-self: start; }
+[data-theme="sah"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sah"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="sah"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="sah"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="sah"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,236,226,0.35); box-shadow: none; }
+[data-theme="sah"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="sah"] body { background: conic-gradient(rgba(20,22,26,0.07) 25%, transparent 0 50%, rgba(20,22,26,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #f1ece2; background-attachment: fixed; }
+[data-theme="sah"] .big .value, [data-theme="sah"] .detail .price { font-weight: 200; }
+[data-theme="sah"] .chart .line { stroke-width: 2; }
+[data-theme="sah"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sah"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #414144; --alt: #323235; --text1: #e2e2e4; --text2: #b2b2b4; --faint: #868688; --up: #4ade80; --down: #f87171; --accent: #767676; --hot: #37373a; --tip: #e2e2e4; --tipfg: #222225; --accentfg: #ffffff; }
+[data-theme="sah"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,34,37,0.35); box-shadow: none; }
+[data-theme="sah"][data-scheme="dark"] body { background: conic-gradient(rgba(226,226,228,0.07) 25%, transparent 0 50%, rgba(226,226,228,0.07) 0 75%, transparent 0) 0 0 / 36px 36px; background-color: #222225; background-attachment: fixed; }

@@ -1,0 +1,28 @@
+/* tema braon (Brown): generisana, tools/teme.py */
+:root[data-theme="braon"] { color-scheme: light; --back: #f5e9dc; --card: #fcf8f4; --head: #f0ebe7; --edge: #d5c9bd; --alt: #f6f1ed; --text1: #2c1e19; --text2: #5e514a; --faint: #8c7f77; --up: #15803d; --down: #c81e1e; --accent: #92400e; --hot: #edded4; --tip: #2c1e19; --tipfg: #f5e9dc; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="braon"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="braon"] .overview .left { align-self: start; }
+[data-theme="braon"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="braon"] button { border-radius: 999px; }
+[data-theme="braon"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="braon"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="braon"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="braon"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="braon"] body { background: linear-gradient(180deg, rgba(146,64,14,0.1), transparent 380px); background-color: #f5e9dc; background-attachment: fixed; }
+[data-theme="braon"] :is(.overview .left, .block, .detail, .list) { background: #f7efe8; border-color: rgba(146,64,14,0.35); }
+[data-theme="braon"] .chart .line { stroke: #92400e !important; }
+[data-theme="braon"] .chart .area { fill: #92400e !important; }
+[data-theme="braon"] .chart .vol { fill: #92400e; }
+[data-theme="braon"] :is(h2, h3, .big .label) { color: #92400e; }
+[data-theme="braon"] .big .value, [data-theme="braon"] .detail .price { font-weight: 700; }
+[data-theme="braon"] .chart .line { stroke-width: 2; }
+[data-theme="braon"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="braon"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424143; --alt: #333334; --text1: #ece6e3; --text2: #bab5b3; --faint: #8b8887; --up: #4ade80; --down: #f87171; --accent: #ad704b; --hot: #3f3633; --tip: #ece6e3; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="braon"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="braon"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(173,112,75,0.1), transparent 380px); background-color: #222224; background-attachment: fixed; }
+[data-theme="braon"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #322e2d; border-color: rgba(173,112,75,0.35); }
+[data-theme="braon"][data-scheme="dark"] .chart .line { stroke: #ad704b !important; }
+[data-theme="braon"][data-scheme="dark"] .chart .area { fill: #ad704b !important; }
+[data-theme="braon"][data-scheme="dark"] .chart .vol { fill: #ad704b; }
+[data-theme="braon"][data-scheme="dark"] :is(h2, h3, .big .label) { color: #ad704b; }

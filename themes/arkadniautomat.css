@@ -1,0 +1,21 @@
+/* tema arkadni automat (Arcade cabinet): generisana, tools/teme.py */
+:root[data-theme="arkadniautomat"] { color-scheme: dark; --back: #2d280e; --card: #38331a; --head: #433e26; --edge: #4d4830; --alt: #3e3920; --text1: #f5f1e2; --text2: #c3bfad; --faint: #95917c; --up: #4ade80; --down: #f87171; --accent: #ffd400; --hot: #544a16; --tip: #f5f1e2; --tipfg: #2d280e; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="arkadniautomat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="arkadniautomat"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="arkadniautomat"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="arkadniautomat"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="arkadniautomat"] .bar button { background: transparent; color: var(--back); border-color: rgba(45,40,14,0.35); box-shadow: none; }
+[data-theme="arkadniautomat"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="arkadniautomat"] body { background: linear-gradient(rgba(245,241,226,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(245,241,226,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #2d280e; background-attachment: fixed; }
+[data-theme="arkadniautomat"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #f5f1e2; border-radius: 0; box-shadow: none; }
+[data-theme="arkadniautomat"] button { border-radius: 0; border-width: 2px; }
+[data-theme="arkadniautomat"] .bar h1 { color: #ffee99; text-shadow: 0 0 4px #ffd400, 0 0 12px #ffd400, 0 0 28px rgba(255,212,0,0.8); }
+[data-theme="arkadniautomat"] .big .value, [data-theme="arkadniautomat"] .detail .price { font-weight: 200; }
+[data-theme="arkadniautomat"] .chart .line { stroke-width: 2.5; }
+[data-theme="arkadniautomat"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="arkadniautomat"][data-scheme="light"] { color-scheme: light; --back: #fffbe6; --card: #fffae1; --head: #f3eed5; --edge: #e0dcc5; --alt: #f9f4db; --text1: #3f3917; --text2: #6f6a4b; --faint: #948f72; --up: #15803d; --down: #c81e1e; --accent: #9b8100; --hot: #f1e9c2; --tip: #3f3917; --tipfg: #fffbe6; --accentfg: #111111; }
+[data-theme="arkadniautomat"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,251,230,0.35); box-shadow: none; }
+[data-theme="arkadniautomat"][data-scheme="light"] body { background: linear-gradient(rgba(63,57,23,0.05) 1px, transparent 1px) 0 0 / 6px 6px, linear-gradient(90deg, rgba(63,57,23,0.05) 1px, transparent 1px) 0 0 / 6px 6px; background-color: #fffbe6; background-attachment: fixed; }
+[data-theme="arkadniautomat"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 3px solid #3f3917; border-radius: 0; box-shadow: none; }
+[data-theme="arkadniautomat"][data-scheme="light"] .bar h1 { color: #d7cd99; text-shadow: 0 0 4px #9b8100, 0 0 12px #9b8100, 0 0 28px rgba(155,129,0,0.8); }

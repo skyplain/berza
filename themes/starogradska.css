@@ -1,0 +1,21 @@
+/* tema starogradska (Old town song): generisana, tools/teme.py */
+:root[data-theme="starogradska"] { color-scheme: light; --back: #f6ede0; --card: #fcfaf6; --head: #efede9; --edge: #d5cbc0; --alt: #f6f3ef; --text1: #281b1a; --text2: #5c504c; --faint: #8b8079; --up: #15803d; --down: #c81e1e; --accent: #7c2d12; --hot: #eaddd6; --tip: #281b1a; --tipfg: #f6ede0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="starogradska"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="starogradska"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="starogradska"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="starogradska"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="starogradska"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="starogradska"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="starogradska"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="starogradska"] :is(.overview .left, .block, .detail, .list) { border: 4px double #7c2d12; }
+[data-theme="starogradska"] .bar h1::before { content: "❦ "; color: #7c2d12; }
+[data-theme="starogradska"] .bar h1::after { content: " ❦"; color: #7c2d12; }
+[data-theme="starogradska"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="starogradska"] .big .value, [data-theme="starogradska"] .detail .price { font-weight: 900; }
+[data-theme="starogradska"] .chart .line { stroke-width: 2; }
+[data-theme="starogradska"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="starogradska"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #38383b; --edge: #424144; --alt: #333235; --text1: #eae4e4; --text2: #b8b4b4; --faint: #8a8788; --up: #4ade80; --down: #f87171; --accent: #a16855; --hot: #3d3535; --tip: #eae4e4; --tipfg: #222225; --accentfg: #ffffff; }
+[data-theme="starogradska"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #a16855; }
+[data-theme="starogradska"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #a16855; }
+[data-theme="starogradska"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #a16855; }

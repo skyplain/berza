@@ -1,0 +1,15 @@
+/* tema ljubičica (Violet): generisana, tools/teme.py */
+:root[data-theme="ljubicica"] { color-scheme: dark; --back: #120a20; --card: #1e162b; --head: #2a2237; --edge: #352d42; --alt: #241c31; --text1: #eae5f5; --text2: #b4aec0; --faint: #827c8f; --up: #4ade80; --down: #f87171; --accent: #7c3aed; --hot: #2b1b46; --tip: #eae5f5; --tipfg: #120a20; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="ljubicica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="ljubicica"] .overview .left { align-self: start; }
+[data-theme="ljubicica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ljubicica"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="ljubicica"] .bar h1 { font-size: 24px; }
+[data-theme="ljubicica"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ljubicica"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(124,58,237,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(237,124,58,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #120a20; background-attachment: fixed; }
+[data-theme="ljubicica"] .big .value, [data-theme="ljubicica"] .detail .price { font-weight: 200; }
+[data-theme="ljubicica"] .chart .line { stroke-width: 2; }
+[data-theme="ljubicica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ljubicica"][data-scheme="light"] { color-scheme: light; --back: #f1f0f2; --card: #fbfafb; --head: #eeedf0; --edge: #d1ced6; --alt: #f5f3f5; --text1: #281d42; --text2: #5a526e; --faint: #888296; --up: #15803d; --down: #c81e1e; --accent: #7c3aed; --hot: #e9dff9; --tip: #281d42; --tipfg: #f1f0f2; --accentfg: #ffffff; }
+[data-theme="ljubicica"][data-scheme="light"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(124,58,237,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(237,124,58,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #f1f0f2; background-attachment: fixed; }

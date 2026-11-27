@@ -1,0 +1,19 @@
+/* tema kejptaun (Cape Town): generisana, tools/teme.py */
+:root[data-theme="kejptaun"] { color-scheme: light; --back: #f6fbff; --card: #f1f8fd; --head: #e4ebf1; --edge: #d2d9df; --alt: #eaf2f7; --text1: #122634; --text2: #4b5b67; --faint: #7f8c95; --up: #15803d; --down: #c81e1e; --accent: #0369a1; --hot: #d0e4f0; --tip: #122634; --tipfg: #f6fbff; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="kejptaun"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kejptaun"] .overview .left { align-self: start; }
+[data-theme="kejptaun"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kejptaun"] button { border-radius: 999px; }
+[data-theme="kejptaun"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kejptaun"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kejptaun"] .bar button { background: transparent; color: var(--back); border-color: rgba(246,251,255,0.35); box-shadow: none; }
+[data-theme="kejptaun"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="kejptaun"] body { background: linear-gradient(135deg, transparent 50%, rgba(3,105,161,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(3,105,161,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(3,105,161,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(3,105,161,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #f6fbff; background-attachment: fixed; }
+[data-theme="kejptaun"] .big .value, [data-theme="kejptaun"] .detail .price { font-weight: 200; }
+[data-theme="kejptaun"] .chart .line { stroke-width: 2.5; }
+[data-theme="kejptaun"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kejptaun"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414448; --alt: #323539; --text1: #e1e9ef; --text2: #b1b8bd; --faint: #858a8f; --up: #4ade80; --down: #f87171; --accent: #3385b3; --hot: #2e3b45; --tip: #e1e9ef; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="kejptaun"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kejptaun"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,40,0.35); box-shadow: none; }
+[data-theme="kejptaun"][data-scheme="dark"] body { background: linear-gradient(135deg, transparent 50%, rgba(51,133,179,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(225deg, transparent 50%, rgba(51,133,179,0.13) 50%) 0 100% / 140px 70px repeat-x, linear-gradient(135deg, transparent 50%, rgba(51,133,179,0.08) 50%) 50px 100% / 220px 120px repeat-x, linear-gradient(225deg, transparent 50%, rgba(51,133,179,0.08) 50%) 50px 100% / 220px 120px repeat-x; background-color: #222428; background-attachment: fixed; }

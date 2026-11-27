@@ -1,0 +1,15 @@
+/* tema espreso (Espresso): generisana, tools/teme.py */
+:root[data-theme="espreso"] { color-scheme: dark; --back: #1a0f09; --card: #251b15; --head: #312722; --edge: #3b312c; --alt: #2b211b; --text1: #eae6e6; --text2: #b6b0af; --faint: #867f7c; --up: #4ade80; --down: #f87171; --accent: #90654d; --hot: #34251d; --tip: #eae6e6; --tipfg: #1a0f09; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="espreso"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="espreso"] .overview .left { align-self: start; }
+[data-theme="espreso"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="espreso"] button { border-radius: 999px; }
+[data-theme="espreso"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="espreso"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="espreso"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="espreso"] .big .value, [data-theme="espreso"] .detail .price { font-weight: 900; }
+[data-theme="espreso"] .chart .line { stroke-width: 1.5; }
+[data-theme="espreso"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="espreso"][data-scheme="light"] { color-scheme: light; --back: #f1f1f0; --card: #fbfbfa; --head: #eeeeed; --edge: #d1d0cf; --alt: #f5f4f3; --text1: #28201f; --text2: #5a5453; --faint: #888483; --up: #15803d; --down: #c81e1e; --accent: #7c4a2d; --hot: #e9e2dd; --tip: #28201f; --tipfg: #f1f1f0; --accentfg: #ffffff; }
+[data-theme="espreso"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }

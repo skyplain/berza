@@ -1,0 +1,19 @@
+/* tema jež (Hedgehog): generisana, tools/teme.py */
+:root[data-theme="jez"] { color-scheme: light; --back: #f6f3ef; --card: #fcfbfa; --head: #efeeee; --edge: #d5d2cf; --alt: #f6f5f4; --text1: #27272a; --text2: #5b5a5b; --faint: #8a8989; --up: #15803d; --down: #c81e1e; --accent: #78716c; --hot: #eae8e6; --tip: #27272a; --tipfg: #f6f3ef; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="jez"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="jez"] .overview .left { align-self: start; }
+[data-theme="jez"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="jez"] button { border-radius: 999px; }
+[data-theme="jez"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="jez"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="jez"] .bar button { background: transparent; color: var(--back); border-color: rgba(246,243,239,0.35); box-shadow: none; }
+[data-theme="jez"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="jez"] body { background: linear-gradient(135deg, rgba(120,113,108,0.12) 25%, transparent 25%) 0 0 / 14px 14px, linear-gradient(225deg, rgba(120,113,108,0.12) 25%, transparent 25%) 0 0 / 14px 14px; background-color: #f6f3ef; background-attachment: fixed; }
+[data-theme="jez"] .big .value, [data-theme="jez"] .detail .price { font-weight: 700; }
+[data-theme="jez"] .chart .line { stroke-width: 3; }
+[data-theme="jez"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="jez"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #424346; --alt: #333437; --text1: #eaeaeb; --text2: #b8b8ba; --faint: #8a8a8c; --up: #4ade80; --down: #f87171; --accent: #837c78; --hot: #39393b; --tip: #eaeaeb; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="jez"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="jez"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,38,0.35); box-shadow: none; }
+[data-theme="jez"][data-scheme="dark"] body { background: linear-gradient(135deg, rgba(131,124,120,0.12) 25%, transparent 25%) 0 0 / 14px 14px, linear-gradient(225deg, rgba(131,124,120,0.12) 25%, transparent 25%) 0 0 / 14px 14px; background-color: #222326; background-attachment: fixed; }

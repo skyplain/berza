@@ -1,0 +1,16 @@
+/* tema aerodrom (Airport): generisana, tools/teme.py */
+:root[data-theme="aerodrom"] { color-scheme: dark; --back: #111827; --card: #1d2432; --head: #2a303d; --edge: #353b45; --alt: #232a37; --text1: #f4f1e4; --text2: #bbbbb5; --faint: #878989; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #3c3c2e; --tip: #f4f1e4; --tipfg: #111827; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="aerodrom"] :is(.overview .left, .block, .detail, .list) { background: #19202e; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="aerodrom"] .overview .left { align-self: start; }
+[data-theme="aerodrom"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="aerodrom"] button { border: 0; }
+[data-theme="aerodrom"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="aerodrom"] .bar h1 { font-weight: 800; }
+[data-theme="aerodrom"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="aerodrom"] :is(h2, h3), [data-theme="aerodrom"] .big .value { background: #111111; color: #ffd400; padding: 2px 8px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .08em; display: inline-block; }
+[data-theme="aerodrom"] .big .value, [data-theme="aerodrom"] .detail .price { font-weight: 200; }
+[data-theme="aerodrom"] .chart .line { stroke-width: 1.5; }
+[data-theme="aerodrom"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="aerodrom"][data-scheme="light"] { color-scheme: light; --back: #f1f1f2; --card: #fbfbfb; --head: #f0efee; --edge: #d4d3d0; --alt: #f5f5f4; --text1: #3e381b; --text2: #6b6651; --faint: #8d8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ede9da; --tip: #3e381b; --tipfg: #f1f1f2; --accentfg: #111111; }
+[data-theme="aerodrom"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #ebebea; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 12px; padding: 14px 16px; }

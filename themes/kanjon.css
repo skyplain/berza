@@ -1,0 +1,14 @@
+/* tema kanjon (Canyon): generisana, tools/teme.py */
+:root[data-theme="kanjon"] { color-scheme: light; --back: #f6e3cf; --card: #fcf7f1; --head: #f0eae4; --edge: #d7c4b2; --alt: #f6f1eb; --text1: #341f19; --text2: #645046; --faint: #917d70; --up: #15803d; --down: #c81e1e; --accent: #c2410c; --hot: #f4ded1; --tip: #341f19; --tipfg: #f6e3cf; --accentfg: #ffffff; --font: Rockwell, "Roboto Slab", "Courier New", serif; --radius: 10px; }
+[data-theme="kanjon"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kanjon"] .overview .left { align-self: start; }
+[data-theme="kanjon"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kanjon"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="kanjon"] body { background: repeating-linear-gradient(180deg, rgba(194,65,12,0.07) 0 22px, rgba(194,65,12,0.13) 22px 30px, transparent 30px 52px, rgba(52,31,25,0.05) 52px 60px, transparent 60px 84px); background-color: #f6e3cf; background-attachment: fixed; }
+[data-theme="kanjon"] .big .value, [data-theme="kanjon"] .detail .price { font-weight: 400; }
+[data-theme="kanjon"] .chart .line { stroke-width: 2.5; }
+[data-theme="kanjon"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kanjon"][data-scheme="dark"] { color-scheme: dark; --back: #222223; --card: #2d2d2e; --head: #393839; --edge: #434142; --alt: #333333; --text1: #f0e6e3; --text2: #bcb5b3; --faint: #8d8887; --up: #4ade80; --down: #f87171; --accent: #c7501f; --hot: #43322c; --tip: #f0e6e3; --tipfg: #222223; --accentfg: #ffffff; }
+[data-theme="kanjon"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="kanjon"][data-scheme="dark"] body { background: repeating-linear-gradient(180deg, rgba(199,80,31,0.07) 0 22px, rgba(199,80,31,0.13) 22px 30px, transparent 30px 52px, rgba(240,230,227,0.05) 52px 60px, transparent 60px 84px); background-color: #222223; background-attachment: fixed; }

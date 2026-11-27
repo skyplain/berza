@@ -1,0 +1,17 @@
+/* tema pegaz (Pegasus): generisana, tools/teme.py */
+:root[data-theme="pegaz"] { color-scheme: light; --back: #f6faff; --card: #f4f9ff; --head: #e8edf4; --edge: #d6dbe1; --alt: #eef3f9; --text1: #2c3644; --text2: #5e6773; --faint: #858c97; --up: #15803d; --down: #c81e1e; --accent: #698eb5; --hot: #e1eaf5; --tip: #2c3644; --tipfg: #f6faff; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="pegaz"] :is(.overview .left, .block, .detail, .list) { background: #eff3f8; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="pegaz"] .overview .left { align-self: start; }
+[data-theme="pegaz"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="pegaz"] button { border: 0; }
+[data-theme="pegaz"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="pegaz"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="pegaz"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="pegaz"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.9), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.8), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.7), transparent 70%), radial-gradient(ellipse at 50% 40%, rgba(105,142,181,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(253,147,197,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #f6faff; background-attachment: fixed; }
+[data-theme="pegaz"] .big .value, [data-theme="pegaz"] .detail .price { font-weight: 200; }
+[data-theme="pegaz"] .chart .line { stroke-width: 2; }
+[data-theme="pegaz"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="pegaz"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383b3f; --edge: #424549; --alt: #333539; --text1: #ecf0f7; --text2: #babdc3; --faint: #8b8e94; --up: #4ade80; --down: #f87171; --accent: #93c5fd; --hot: #3b444f; --tip: #ecf0f7; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="pegaz"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #292b2f; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="pegaz"][data-scheme="dark"] body { background: radial-gradient(220px 80px at 15% 12%, rgba(255,255,255,0.12), transparent 70%), radial-gradient(280px 90px at 70% 8%, rgba(255,255,255,0.1), transparent 70%), radial-gradient(240px 70px at 40% 30%, rgba(255,255,255,0.08), transparent 70%), radial-gradient(ellipse at 50% 40%, rgba(147,197,253,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(253,147,197,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #222428; background-attachment: fixed; }

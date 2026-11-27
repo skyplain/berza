@@ -1,0 +1,18 @@
+/* tema grafit: skica olovkom na sivom papiru, dvostruke krive linije */
+:root[data-theme="grafit"] { color-scheme: light; --back: #ecebe8; --card: #f5f4f1; --head: #e3e2de; --edge: #4a4a4a; --alt: transparent; --text1: #2b2b2b; --text2: #4a4a4a; --faint: #7c7c7c; --up: #2b2b2b; --down: #8a2a2a; --accent: #3d3d3d; --hot: #dcdad5; --tip: #2b2b2b; --tipfg: #f5f4f1; --accentfg: #f5f4f1; --font: "Bradley Hand","Segoe Print","Comic Sans MS",cursive; --radius: 4px; --h-color: #2b2b2b; --h-transform: none; --h-spacing: .02em; --h-size: 17px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 700; }
+[data-theme="grafit"] :is(.overview .left,.block,.detail) { border:1.5px solid #4a4a4a;border-radius:255px 15px 225px 15px/15px 225px 15px 255px;padding:14px 18px;box-shadow:2px 3px 0 -1px #ecebe8,2px 3px 0 0 #8a8a8a }
+[data-theme="grafit"] .overview .left { align-self:start }
+[data-theme="grafit"] .bar { border-bottom:1.5px solid #4a4a4a }
+[data-theme="grafit"] button { border:1.5px solid #4a4a4a;border-radius:15px 225px 15px 255px/255px 15px 225px 15px;background:transparent }
+[data-theme="grafit"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="grafit"] .chart .line { stroke:#2b2b2b!important;stroke-width:1.75;stroke-dasharray:30 2 4 2 }
+[data-theme="grafit"] .chart .area { fill:#2b2b2b!important;opacity:.05 }
+[data-theme="grafit"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="grafit"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="grafit"][data-scheme="dark"] { color-scheme: dark; --back: #121210; --card: #0c0c0a; --head: #181815; --edge: #a2a2a2; --text1: #c7c7c7; --text2: #a2a2a2; --faint: #6d6d6d; --up: #4ade80; --down: #f87171; --accent: #666666; --hot: #1f1d1a; --tip: #c7c7c7; --tipfg: #0c0c0a; --accentfg: #ffffff; --h-color: #c7c7c7; }
+[data-theme="grafit"][data-scheme="dark"] :is(.overview .left,.block,.detail) { border:1.5px solid #a2a2a2;border-radius:255px 15px 225px 15px/15px 225px 15px 255px;padding:14px 18px;box-shadow:2px 3px 0 -1px #121210,2px 3px 0 0 #5f5f5f }
+[data-theme="grafit"][data-scheme="dark"] .bar { border-bottom:1.5px solid #a2a2a2 }
+[data-theme="grafit"][data-scheme="dark"] button { border:1.5px solid #a2a2a2;border-radius:15px 225px 15px 255px/255px 15px 225px 15px;background:transparent }
+[data-theme="grafit"][data-scheme="dark"] .chart .line { stroke:#c7c7c7!important;stroke-width:1.75;stroke-dasharray:30 2 4 2 }
+[data-theme="grafit"][data-scheme="dark"] .chart .area { fill:#c7c7c7!important;opacity:.05 }

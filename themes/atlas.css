@@ -1,0 +1,16 @@
+/* tema atlas (Atlas): generisana, tools/teme.py */
+:root[data-theme="atlas"] { color-scheme: light; --back: #eef3ec; --card: #fafbf9; --head: #edeeed; --edge: #ccd2ce; --alt: #f3f5f3; --text1: #1a2731; --text2: #4f5a60; --faint: #80898b; --up: #15803d; --down: #c81e1e; --accent: #2f6f8f; --hot: #dee7ea; --tip: #1a2731; --tipfg: #eef3ec; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="atlas"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="atlas"] .overview .left { align-self: start; }
+[data-theme="atlas"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="atlas"] button { border-radius: 0; }
+[data-theme="atlas"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="atlas"] .bar h1 { font-weight: 800; }
+[data-theme="atlas"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="atlas"] body { background: linear-gradient(rgba(47,111,143,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(47,111,143,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(47,111,143,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(47,111,143,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #eef3ec; background-attachment: fixed; }
+[data-theme="atlas"] .big .value, [data-theme="atlas"] .detail .price { font-weight: 400; }
+[data-theme="atlas"] .chart .line { stroke-width: 1.5; }
+[data-theme="atlas"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="atlas"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414346; --alt: #323437; --text1: #e4e9ee; --text2: #b4b8bc; --faint: #878a8e; --up: #4ade80; --down: #f87171; --accent: #4f86a0; --hot: #323a41; --tip: #e4e9ee; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="atlas"][data-scheme="dark"] body { background: linear-gradient(rgba(79,134,160,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(79,134,160,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(79,134,160,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(79,134,160,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #222326; background-attachment: fixed; }

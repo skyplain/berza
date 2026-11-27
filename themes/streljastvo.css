@@ -1,0 +1,17 @@
+/* tema streljaštvo (Archery): generisana, tools/teme.py */
+:root[data-theme="streljastvo"] { color-scheme: light; --back: #fef9ef; --card: #fdf5eb; --head: #f1e8df; --edge: #ded5ce; --alt: #f7eee5; --text1: #391a1e; --text2: #6a5252; --faint: #988582; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #f8d8cf; --tip: #391a1e; --tipfg: #fef9ef; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="streljastvo"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="streljastvo"] .overview .left { align-self: start; }
+[data-theme="streljastvo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="streljastvo"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="streljastvo"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="streljastvo"] .bar button { background: transparent; color: var(--back); border-color: rgba(254,249,239,0.35); box-shadow: none; }
+[data-theme="streljastvo"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="streljastvo"] body { background: repeating-radial-gradient(circle at 85% 30%, rgba(220,38,38,0.12) 0 16px, transparent 16px 32px); background-color: #fef9ef; background-attachment: fixed; }
+[data-theme="streljastvo"] .big .value, [data-theme="streljastvo"] .detail .price { font-weight: 400; }
+[data-theme="streljastvo"] .chart .line { stroke-width: 2.5; }
+[data-theme="streljastvo"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="streljastvo"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444345; --alt: #343436; --text1: #f2e4e5; --text2: #beb4b5; --faint: #8f8889; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #473234; --tip: #f2e4e5; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="streljastvo"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,38,0.35); box-shadow: none; }
+[data-theme="streljastvo"][data-scheme="dark"] body { background: repeating-radial-gradient(circle at 85% 30%, rgba(225,71,71,0.12) 0 16px, transparent 16px 32px); background-color: #232426; background-attachment: fixed; }

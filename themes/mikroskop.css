@@ -1,0 +1,18 @@
+/* tema mikroskop (Microscope): generisana, tools/teme.py */
+:root[data-theme="mikroskop"] { color-scheme: dark; --back: #041512; --card: #11211e; --head: #1e2d2b; --edge: #283836; --alt: #172724; --text1: #e2eff0; --text2: #aab8b8; --faint: #778685; --up: #4ade80; --down: #f87171; --accent: #14b8a6; --hot: #113631; --tip: #e2eff0; --tipfg: #041512; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="mikroskop"] :is(.overview .left, .block, .detail, .list) { background: #0c1d1a; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="mikroskop"] .overview .left { align-self: start; }
+[data-theme="mikroskop"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mikroskop"] button { border: 0; }
+[data-theme="mikroskop"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="mikroskop"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="mikroskop"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="mikroskop"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="mikroskop"] body { background: radial-gradient(circle, rgba(20,184,166,0.25) 3px, transparent 4px 14px, rgba(20,184,166,0.18) 15px 17px, transparent 18px) 0 0 / 44px 44px, repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(20,184,166,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(20,184,166,0.14), transparent 15%); background-color: #041512; background-attachment: fixed; }
+[data-theme="mikroskop"] .big .value, [data-theme="mikroskop"] .detail .price { font-weight: 200; }
+[data-theme="mikroskop"] .chart .line { stroke-width: 2; }
+[data-theme="mikroskop"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="mikroskop"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #ecefef; --edge: #cdd3d3; --alt: #f3f5f5; --text1: #153435; --text2: #4c6364; --faint: #768888; --up: #15803d; --down: #c81e1e; --accent: #108f82; --hot: #d9ecea; --tip: #153435; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="mikroskop"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #e8eaea; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="mikroskop"][data-scheme="light"] body { background: radial-gradient(circle, rgba(16,143,130,0.25) 3px, transparent 4px 14px, rgba(16,143,130,0.18) 15px 17px, transparent 18px) 0 0 / 44px 44px, repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(16,143,130,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(16,143,130,0.14), transparent 15%); background-color: #f0f1f1; background-attachment: fixed; }

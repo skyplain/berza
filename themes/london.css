@@ -1,0 +1,22 @@
+/* tema london (London): generisana, tools/teme.py */
+:root[data-theme="london"] { color-scheme: light; --back: #f5f5f3; --card: #fcfcfb; --head: #f0eeee; --edge: #d6d1d1; --alt: #f6f5f4; --text1: #35161f; --text2: #654e54; --faint: #918185; --up: #15803d; --down: #c81e1e; --accent: #c8102e; --hot: #f5dbde; --tip: #35161f; --tipfg: #f5f5f3; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="london"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="london"] .overview .left { align-self: start; }
+[data-theme="london"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="london"] button { border-radius: 0; }
+[data-theme="london"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="london"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="london"] .bar button { background: transparent; color: var(--back); border-color: rgba(245,245,243,0.35); box-shadow: none; }
+[data-theme="london"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="london"] body { background: linear-gradient(90deg, transparent 30%, rgba(200,16,46,0.18) 30% calc(30% + 6px), transparent calc(30% + 6px)), linear-gradient(0deg, transparent 62%, rgba(46,200,16,0.16) 62% calc(62% + 6px), transparent calc(62% + 6px)); background-color: #f5f5f3; background-attachment: fixed; }
+[data-theme="london"] :is(h2, h3)::before { content: "● "; color: #c8102e; }
+[data-theme="london"] .bar { border-bottom: 6px solid #c8102e; }
+[data-theme="london"] .big .value, [data-theme="london"] .detail .price { font-weight: 900; }
+[data-theme="london"] .chart .line { stroke-width: 2; }
+[data-theme="london"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="london"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #39393d; --edge: #434246; --alt: #333337; --text1: #f0e2e6; --text2: #bcb2b6; --faint: #8d868a; --up: #4ade80; --down: #f87171; --accent: #d64c63; --hot: #453239; --tip: #f0e2e6; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="london"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,39,0.35); box-shadow: none; }
+[data-theme="london"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent 30%, rgba(214,76,99,0.18) 30% calc(30% + 6px), transparent calc(30% + 6px)), linear-gradient(0deg, transparent 62%, rgba(46,200,16,0.16) 62% calc(62% + 6px), transparent calc(62% + 6px)); background-color: #222327; background-attachment: fixed; }
+[data-theme="london"][data-scheme="dark"] :is(h2, h3)::before { content: "● "; color: #d64c63; }
+[data-theme="london"][data-scheme="dark"] .bar { border-bottom: 6px solid #d64c63; }

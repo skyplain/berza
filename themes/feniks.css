@@ -1,0 +1,22 @@
+/* tema feniks (Phoenix): generisana, tools/teme.py */
+:root[data-theme="feniks"] { color-scheme: dark; --back: #1a0803; --card: #251410; --head: #31211d; --edge: #3d2c27; --alt: #2b1a16; --text1: #f4eae4; --text2: #beb2ac; --faint: #8b7e78; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #432111; --tip: #f4eae4; --tipfg: #1a0803; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="feniks"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="feniks"] .overview .left { align-self: start; }
+[data-theme="feniks"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="feniks"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="feniks"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="feniks"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="feniks"] .bar button { background: transparent; color: var(--back); border-color: rgba(26,8,3,0.35); box-shadow: none; }
+[data-theme="feniks"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="feniks"] body { background: radial-gradient(ellipse at 50% 40%, rgba(249,115,22,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(22,249,115,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #1a0803; background-attachment: fixed; }
+[data-theme="feniks"] .big .value { text-shadow: 0 0 18px rgba(249,115,22,0.55); }
+[data-theme="feniks"] .chart .line { filter: drop-shadow(0 0 5px rgba(249,115,22,0.7)); }
+[data-theme="feniks"] .big .value, [data-theme="feniks"] .detail .price { font-weight: 400; }
+[data-theme="feniks"] .chart .line { stroke-width: 1.5; }
+[data-theme="feniks"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="feniks"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #f0eded; --edge: #d4d0ce; --alt: #f5f4f3; --text1: #3e281b; --text2: #6b5a50; --faint: #948881; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f5e5da; --tip: #3e281b; --tipfg: #f1f0f0; --accentfg: #111111; }
+[data-theme="feniks"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,240,0.35); box-shadow: none; }
+[data-theme="feniks"][data-scheme="light"] body { background: radial-gradient(ellipse at 50% 40%, rgba(211,98,18,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(22,249,115,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="feniks"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(211,98,18,0.55); }
+[data-theme="feniks"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(211,98,18,0.7)); }

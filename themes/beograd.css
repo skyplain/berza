@@ -1,0 +1,16 @@
+/* tema beograd: generisana (paleta + oblik 2/1/0/1) */
+:root[data-theme="beograd"] { color-scheme: light; --back: #f4f1ec; --card: #fdfbf8; --head: #f0eeec; --edge: #d2d0ce; --alt: #f6f5f2; --text1: #1f2430; --text2: #5b5d65; --faint: #8a8a8e; --up: #15803d; --down: #c81e1e; --accent: #c8102e; --hot: #f6dadc; --tip: #1f2430; --tipfg: #f4f1ec; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 6px; }
+[data-theme="beograd"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="beograd"] .overview .left { align-self: start; }
+[data-theme="beograd"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="beograd"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="beograd"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="beograd"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="beograd"] body { background: radial-gradient(#dfdcd9 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #f4f1ec; background-attachment: fixed; }
+[data-theme="beograd"] .big .value, [data-theme="beograd"] .detail .price { font-weight: 700; }
+[data-theme="beograd"] .chart .line { stroke-width: 3.5; }
+[data-theme="beograd"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="beograd"][data-scheme="dark"] { color-scheme: dark; --back: #0f0d0a; --card: #080706; --head: #100f0e; --edge: #252423; --alt: #0c0b09; --text1: #cad1e1; --text2: #8a8c94; --faint: #5f5f62; --up: #4ade80; --down: #f87171; --accent: #c8102e; --hot: #241214; --tip: #cad1e1; --tipfg: #0f0d0a; --accentfg: #ffffff; }
+[data-theme="beograd"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="beograd"][data-scheme="dark"] body { background: radial-gradient(#1d1b19 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #0f0d0a; background-attachment: fixed; }

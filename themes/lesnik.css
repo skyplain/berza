@@ -1,0 +1,20 @@
+/* tema lešnik: generisana (paleta + oblik 1/4/3/2) */
+:root[data-theme="lesnik"] { color-scheme: light; --back: #f3ebe1; --card: #faf5ef; --head: #eee9e3; --edge: #d5ccc2; --alt: #f4efe9; --text1: #3a2c20; --text2: #6e6156; --faint: #968c80; --up: #15803d; --down: #c81e1e; --accent: #8a5c37; --hot: #eae0d5; --tip: #3a2c20; --tipfg: #f3ebe1; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="lesnik"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="lesnik"] .overview .left { align-self: start; }
+[data-theme="lesnik"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lesnik"] button { border-radius: 999px; }
+[data-theme="lesnik"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lesnik"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="lesnik"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="lesnik"] .bar button { background: transparent; color: var(--back); border-color: rgba(243,235,225,0.35); box-shadow: none; }
+[data-theme="lesnik"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="lesnik"] body { background: linear-gradient(rgba(58,44,32,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(58,44,32,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f3ebe1; background-attachment: fixed; }
+[data-theme="lesnik"] .big .value, [data-theme="lesnik"] .detail .price { font-weight: 400; }
+[data-theme="lesnik"] .chart .line { stroke-width: 2; }
+[data-theme="lesnik"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="lesnik"][data-scheme="dark"] { color-scheme: dark; --back: #151009; --card: #0d0a07; --head: #15120e; --edge: #2c251e; --alt: #110e0a; --text1: #d1bfb0; --text2: #918377; --faint: #6d6257; --up: #4ade80; --down: #f87171; --accent: #8a5c37; --hot: #1d170f; --tip: #d1bfb0; --tipfg: #151009; --accentfg: #ffffff; }
+[data-theme="lesnik"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="lesnik"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(21,16,9,0.35); box-shadow: none; }
+[data-theme="lesnik"][data-scheme="dark"] body { background: linear-gradient(rgba(209,191,176,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(209,191,176,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #151009; background-attachment: fixed; }

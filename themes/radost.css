@@ -1,0 +1,16 @@
+/* tema radost (Joy): generisana, tools/teme.py */
+:root[data-theme="radost"] { color-scheme: light; --back: #fffae1; --card: #fff9dd; --head: #f3edd1; --edge: #e0dbc1; --alt: #f9f3d7; --text1: #3e381b; --text2: #6e684c; --faint: #948e72; --up: #15803d; --down: #c81e1e; --accent: #a5860e; --hot: #f2e9c0; --tip: #3e381b; --tipfg: #fffae1; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="radost"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="radost"] .overview .left { align-self: start; }
+[data-theme="radost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="radost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="radost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="radost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="radost"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="radost"] body { background: radial-gradient(rgba(165,134,14,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(21,250,204,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(204,21,250,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #fffae1; background-attachment: fixed; }
+[data-theme="radost"] .big .value, [data-theme="radost"] .detail .price { font-weight: 400; }
+[data-theme="radost"] .chart .line { stroke-width: 2; }
+[data-theme="radost"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="radost"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #3a3b3b; --edge: #444544; --alt: #343535; --text1: #f4f1e4; --text2: #c0beb4; --faint: #908f88; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #4b452c; --tip: #f4f1e4; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="radost"][data-scheme="dark"] body { background: radial-gradient(rgba(250,204,21,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(21,250,204,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(204,21,250,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #232425; background-attachment: fixed; }

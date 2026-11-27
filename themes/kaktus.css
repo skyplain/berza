@@ -1,0 +1,19 @@
+/* tema kaktus: generisana (paleta + oblik 5/4/3/6) */
+:root[data-theme="kaktus"] { color-scheme: light; --back: #edf7ef; --card: #f9fdf9; --head: #ecf1ec; --edge: #ccd9cf; --alt: #f2f7f3; --text1: #1f3a26; --text2: #596f5e; --faint: #86988a; --up: #15803d; --down: #c81e1e; --accent: #2e8d55; --hot: #ddede2; --tip: #1f3a26; --tipfg: #edf7ef; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 4px; }
+[data-theme="kaktus"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kaktus"] .overview .left { align-self: start; }
+[data-theme="kaktus"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kaktus"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kaktus"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kaktus"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="kaktus"] .bar button { background: transparent; color: var(--back); border-color: rgba(237,247,239,0.35); box-shadow: none; }
+[data-theme="kaktus"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="kaktus"] body { background: radial-gradient(600px 400px at 0 0, rgba(46,141,85,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(46,141,85,0.12), transparent 70%); background-color: #edf7ef; background-attachment: fixed; }
+[data-theme="kaktus"] .big .value, [data-theme="kaktus"] .detail .price { font-weight: 400; }
+[data-theme="kaktus"] .chart .line { stroke-width: 3; }
+[data-theme="kaktus"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="kaktus"][data-scheme="dark"] { color-scheme: dark; --back: #070e09; --card: #060806; --head: #0d100d; --edge: #1a241d; --alt: #090c09; --text1: #a8c7ae; --text2: #718776; --faint: #536558; --up: #4ade80; --down: #f87171; --accent: #2e8d55; --hot: #0b170f; --tip: #a8c7ae; --tipfg: #070e09; --accentfg: #111111; }
+[data-theme="kaktus"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="kaktus"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(7,14,9,0.35); box-shadow: none; }
+[data-theme="kaktus"][data-scheme="dark"] body { background: radial-gradient(600px 400px at 0 0, rgba(46,141,85,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(46,141,85,0.12), transparent 70%); background-color: #070e09; background-attachment: fixed; }

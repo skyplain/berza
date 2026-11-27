@@ -1,0 +1,18 @@
+/* tema misterija (Mystery): generisana, tools/teme.py */
+:root[data-theme="misterija"] { color-scheme: dark; --back: #120f1f; --card: #1e1b2a; --head: #2a2736; --edge: #343241; --alt: #242130; --text1: #e9e8f3; --text2: #b3b2be; --faint: #82808d; --up: #4ade80; --down: #f87171; --accent: #6a5acd; --hot: #292441; --tip: #e9e8f3; --tipfg: #120f1f; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="misterija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="misterija"] .overview .left { align-self: start; }
+[data-theme="misterija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="misterija"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="misterija"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="misterija"] .bar button { background: transparent; color: var(--back); border-color: rgba(18,15,31,0.35); box-shadow: none; }
+[data-theme="misterija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="misterija"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(106,90,205,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(205,106,90,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(90,205,106,0.14), transparent 70%); background-color: #120f1f; background-attachment: fixed; }
+[data-theme="misterija"] .big .value, [data-theme="misterija"] .detail .price { font-weight: 700; }
+[data-theme="misterija"] .chart .line { stroke-width: 2.5; }
+[data-theme="misterija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="misterija"][data-scheme="light"] { color-scheme: light; --back: #f1f1f2; --card: #fbfbfb; --head: #eeeef0; --edge: #d0d0d5; --alt: #f5f5f5; --text1: #24233c; --text2: #57566a; --faint: #868693; --up: #15803d; --down: #c81e1e; --accent: #6a5acd; --hot: #e7e4f5; --tip: #24233c; --tipfg: #f1f1f2; --accentfg: #ffffff; }
+[data-theme="misterija"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 0px 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="misterija"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,241,242,0.35); box-shadow: none; }
+[data-theme="misterija"][data-scheme="light"] body { background: radial-gradient(380px 260px at 15% 20%, rgba(106,90,205,0.18), transparent 70%), radial-gradient(420px 300px at 85% 15%, rgba(205,106,90,0.14), transparent 70%), radial-gradient(460px 340px at 70% 85%, rgba(90,205,106,0.14), transparent 70%); background-color: #f1f1f2; background-attachment: fixed; }

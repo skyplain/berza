@@ -1,0 +1,21 @@
+/* tema vanzemaljac (Alien): generisana, tools/teme.py */
+:root[data-theme="vanzemaljac"] { color-scheme: dark; --back: #060d03; --card: #121910; --head: #1f261d; --edge: #2b3127; --alt: #191f16; --text1: #ebf1e4; --text2: #b2b8ac; --faint: #7d8478; --up: #4ade80; --down: #f87171; --accent: #84cc16; --hot: #223211; --tip: #ebf1e4; --tipfg: #060d03; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 8px; }
+[data-theme="vanzemaljac"] :is(.overview .left, .block, .detail, .list) { background: rgba(18,25,16,0.6); border: 1px solid rgba(235,241,228,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="vanzemaljac"] .overview .left { align-self: start; }
+[data-theme="vanzemaljac"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vanzemaljac"] button { border-radius: 999px; background: transparent; }
+[data-theme="vanzemaljac"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="vanzemaljac"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="vanzemaljac"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="vanzemaljac"] :is(.overview .left, .block, .detail, .list) { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+[data-theme="vanzemaljac"] button { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); border-radius: 0; }
+[data-theme="vanzemaljac"] .big .value { text-shadow: 0 0 18px rgba(132,204,22,0.55); }
+[data-theme="vanzemaljac"] .chart .line { filter: drop-shadow(0 0 5px rgba(132,204,22,0.7)); }
+[data-theme="vanzemaljac"] .big .value, [data-theme="vanzemaljac"] .detail .price { font-weight: 400; }
+[data-theme="vanzemaljac"] .chart .line { stroke-width: 2; }
+[data-theme="vanzemaljac"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="vanzemaljac"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #edeeed; --edge: #d0d3ce; --alt: #f4f4f3; --text1: #29381b; --text2: #5b6650; --faint: #818979; --up: #15803d; --down: #c81e1e; --accent: #5e9210; --hot: #e4ebd9; --tip: #29381b; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="vanzemaljac"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,250,250,0.6); border: 1px solid rgba(41,56,27,0.12); border-radius: 8px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="vanzemaljac"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(94,146,16,0.55); }
+[data-theme="vanzemaljac"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(94,146,16,0.7)); }

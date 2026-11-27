@@ -1,0 +1,15 @@
+/* tema krofna (Donut): generisana, tools/teme.py */
+:root[data-theme="krofna"] { color-scheme: light; --back: #fff6f1; --card: #fffcfb; --head: #f3efef; --edge: #e0d4d2; --alt: #f9f5f5; --text1: #3c2032; --text2: #6d5662; --faint: #9a878e; --up: #15803d; --down: #c81e1e; --accent: #ec4899; --hot: #fce3ed; --tip: #3c2032; --tipfg: #fff6f1; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="krofna"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="krofna"] .overview .left { align-self: start; }
+[data-theme="krofna"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="krofna"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="krofna"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="krofna"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="krofna"] body { background: linear-gradient(45deg, transparent 46%, rgba(236,72,153,0.5) 46% 54%, transparent 54%) 0 0 / 26px 26px, linear-gradient(135deg, transparent 46%, rgba(153,236,72,0.5) 46% 54%, transparent 54%) 13px 9px / 31px 31px, linear-gradient(80deg, transparent 46%, rgba(72,153,236,0.45) 46% 54%, transparent 54%) 7px 17px / 37px 37px; background-color: #fff6f1; background-attachment: fixed; }
+[data-theme="krofna"] .big .value, [data-theme="krofna"] .detail .price { font-weight: 400; }
+[data-theme="krofna"] .chart .line { stroke-width: 2.5; }
+[data-theme="krofna"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="krofna"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444346; --alt: #343437; --text1: #f3e6ef; --text2: #bfb6bd; --faint: #8f898f; --up: #4ade80; --down: #f87171; --accent: #ec4899; --hot: #493240; --tip: #f3e6ef; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="krofna"][data-scheme="dark"] body { background: linear-gradient(45deg, transparent 46%, rgba(236,72,153,0.5) 46% 54%, transparent 54%) 0 0 / 26px 26px, linear-gradient(135deg, transparent 46%, rgba(153,236,72,0.5) 46% 54%, transparent 54%) 13px 9px / 31px 31px, linear-gradient(80deg, transparent 46%, rgba(72,153,236,0.45) 46% 54%, transparent 54%) 7px 17px / 37px 37px; background-color: #232426; background-attachment: fixed; }

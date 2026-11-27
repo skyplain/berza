@@ -1,0 +1,21 @@
+/* tema beli patuljak (White dwarf): generisana, tools/teme.py */
+:root[data-theme="belipatuljak"] { color-scheme: dark; --back: #06070a; --card: #121316; --head: #202023; --edge: #2c2d30; --alt: #191a1d; --text1: #f3f3f6; --text2: #b8b8bb; --faint: #818285; --up: #4ade80; --down: #f87171; --accent: #e2e8f0; --hot: #2f3135; --tip: #f3f3f6; --tipfg: #06070a; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="belipatuljak"] :is(.overview .left, .block, .detail, .list) { background: rgba(18,19,22,0.6); border: 1px solid rgba(243,243,246,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="belipatuljak"] .overview .left { align-self: start; }
+[data-theme="belipatuljak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="belipatuljak"] button { border-radius: 999px; background: transparent; }
+[data-theme="belipatuljak"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="belipatuljak"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="belipatuljak"] .bar button { background: transparent; color: var(--back); border-color: rgba(6,7,10,0.35); box-shadow: none; }
+[data-theme="belipatuljak"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="belipatuljak"] .big .value { text-shadow: 0 0 18px rgba(226,232,240,0.55); }
+[data-theme="belipatuljak"] .chart .line { filter: drop-shadow(0 0 5px rgba(226,232,240,0.7)); }
+[data-theme="belipatuljak"] .big .value, [data-theme="belipatuljak"] .detail .price { font-weight: 200; }
+[data-theme="belipatuljak"] .chart .line { stroke-width: 2.5; }
+[data-theme="belipatuljak"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="belipatuljak"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #eeefef; --edge: #d3d3d4; --alt: #f4f4f4; --text1: #3a3d42; --text2: #686a6e; --faint: #848689; --up: #15803d; --down: #c81e1e; --accent: #7e8285; --hot: #e9e9ea; --tip: #3a3d42; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="belipatuljak"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,250,250,0.6); border: 1px solid rgba(58,61,66,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="belipatuljak"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,240,0.35); box-shadow: none; }
+[data-theme="belipatuljak"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(126,130,133,0.55); }
+[data-theme="belipatuljak"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(126,130,133,0.7)); }

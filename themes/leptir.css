@@ -1,0 +1,19 @@
+/* tema leptir (Butterfly): generisana, tools/teme.py */
+:root[data-theme="leptir"] { color-scheme: light; --back: #faf7ff; --card: #fefdff; --head: #f1f0f4; --edge: #d9d5e1; --alt: #f8f6f9; --text1: #2a2343; --text2: #5e5872; --faint: #8e899d; --up: #15803d; --down: #c81e1e; --accent: #8558ec; --hot: #ede6fc; --tip: #2a2343; --tipfg: #faf7ff; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="leptir"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="leptir"] .overview .left { align-self: start; }
+[data-theme="leptir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="leptir"] button { border-radius: 999px; }
+[data-theme="leptir"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="leptir"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="leptir"] .bar button { background: transparent; color: var(--back); border-color: rgba(250,247,255,0.35); box-shadow: none; }
+[data-theme="leptir"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="leptir"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(133,88,236,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(246,139,92,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #faf7ff; background-attachment: fixed; }
+[data-theme="leptir"] .big .value, [data-theme="leptir"] .detail .price { font-weight: 700; }
+[data-theme="leptir"] .chart .line { stroke-width: 1.5; }
+[data-theme="leptir"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="leptir"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3f; --edge: #434349; --alt: #343539; --text1: #ece8f6; --text2: #bab7c2; --faint: #8c8a93; --up: #4ade80; --down: #f87171; --accent: #9063f6; --hot: #3c364e; --tip: #ece8f6; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="leptir"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="leptir"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }
+[data-theme="leptir"][data-scheme="dark"] body { background: radial-gradient(ellipse 6px 12px at 30% 30%, rgba(144,99,246,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(246,139,92,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #232428; background-attachment: fixed; }

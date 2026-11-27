@@ -1,0 +1,17 @@
+/* tema matematika (Mathematics): generisana, tools/teme.py */
+:root[data-theme="matematika"] { color-scheme: light; --back: #f7f8f8; --card: #fdfdfd; --head: #efeff0; --edge: #d3d4d6; --alt: #f6f6f6; --text1: #171a22; --text2: #4f5258; --faint: #838589; --up: #15803d; --down: #c81e1e; --accent: #1e293b; --hot: #dedfe2; --tip: #171a22; --tipfg: #f7f8f8; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="matematika"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="matematika"] .overview .left { align-self: start; }
+[data-theme="matematika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="matematika"] button { border-radius: 999px; }
+[data-theme="matematika"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="matematika"] .bar h1 { font-weight: 800; }
+[data-theme="matematika"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="matematika"] body { background: linear-gradient(rgba(30,41,59,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(30,41,59,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(30,41,59,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(30,41,59,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #f7f8f8; background-attachment: fixed; }
+[data-theme="matematika"] .big .value, [data-theme="matematika"] .detail .price { font-weight: 700; }
+[data-theme="matematika"] .chart .line { stroke-width: 1.5; }
+[data-theme="matematika"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="matematika"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424347; --alt: #333438; --text1: #e3e4e7; --text2: #b3b4b7; --faint: #87888b; --up: #4ade80; --down: #f87171; --accent: #777c87; --hot: #383a3f; --tip: #e3e4e7; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="matematika"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="matematika"][data-scheme="dark"] body { background: linear-gradient(rgba(119,124,135,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(90deg, rgba(119,124,135,0.08) 1px, transparent 1px) 0 0 / 8px 8px, linear-gradient(rgba(119,124,135,0.2) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(119,124,135,0.2) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #232428; background-attachment: fixed; }

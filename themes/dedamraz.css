@@ -1,0 +1,17 @@
+/* tema deda mraz (Santa): generisana, tools/teme.py */
+:root[data-theme="dedamraz"] { color-scheme: light; --back: #fff6f5; --card: #fffcfc; --head: #f3eeef; --edge: #dfd3d3; --alt: #f9f5f5; --text1: #391a1e; --text2: #6a5154; --faint: #988485; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #fadede; --tip: #391a1e; --tipfg: #fff6f5; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="dedamraz"] :is(.overview .left, .block, .detail, .list) { background: rgba(255,252,252,0.6); border: 1px solid rgba(57,26,30,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="dedamraz"] .overview .left { align-self: start; }
+[data-theme="dedamraz"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="dedamraz"] button { border-radius: 999px; background: transparent; }
+[data-theme="dedamraz"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="dedamraz"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="dedamraz"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="dedamraz"] body { background: radial-gradient(circle, rgba(220,38,38,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(220,38,38,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(220,38,38,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #fff6f5; background-attachment: fixed; }
+[data-theme="dedamraz"] .big .value, [data-theme="dedamraz"] .detail .price { font-weight: 700; }
+[data-theme="dedamraz"] .chart .line { stroke-width: 3; }
+[data-theme="dedamraz"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="dedamraz"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #3a393d; --edge: #444245; --alt: #343337; --text1: #f2e4e5; --text2: #beb4b6; --faint: #8f878a; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #473235; --tip: #f2e4e5; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="dedamraz"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(46,46,50,0.6); border: 1px solid rgba(242,228,229,0.12); border-radius: 0px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="dedamraz"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #232327; background-attachment: fixed; }

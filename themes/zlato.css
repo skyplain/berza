@@ -1,0 +1,24 @@
+/* tema zlato: crna i zlatna, tanak elegantan serif, mnogo vazduha */
+:root[data-theme="zlato"] { color-scheme: dark; --back: #0d0c0a; --card: #14120e; --head: #1b1812; --edge: #3b3220; --alt: #12100c; --text1: #f1e6cf; --text2: #c7b998; --faint: #8b7d5e; --up: #9fd5a0; --down: #e59a8c; --accent: #d4af37; --hot: #241e12; --tip: #d4af37; --tipfg: #0d0c0a; --accentfg: #0d0c0a; --font: Didot, "Bodoni 72", "Bodoni MT", "Playfair Display", Georgia, serif; --radius: 0; }
+[data-theme="zlato"] .bar { border-bottom: 1px solid var(--accent); padding: 22px 0 16px; margin-bottom: 26px; }
+[data-theme="zlato"] .bar h1 { font-size: 26px; font-weight: 400; letter-spacing: .35em; text-transform: uppercase; color: var(--accent); }
+[data-theme="zlato"] .bar h1 span { letter-spacing: .1em; font-size: 14px; color: var(--text2); }
+[data-theme="zlato"] button { background: transparent; border-color: var(--edge); color: var(--accent); letter-spacing: .08em; font-size: 13px; }
+[data-theme="zlato"] button:hover { border-color: var(--accent); }
+[data-theme="zlato"] h2, [data-theme="zlato"] h3, [data-theme="zlato"] .big .label { color: var(--accent); font-weight: 400; letter-spacing: .3em; font-size: 12px; }
+[data-theme="zlato"] h2::after, [data-theme="zlato"] h3::after { content: ""; display: block; width: 40px; height: 1px; background: var(--accent); margin-top: 6px; }
+[data-theme="zlato"] .big .value { font-size: 56px; font-weight: 400; color: var(--text1); }
+[data-theme="zlato"] .num, [data-theme="zlato"] .chg, [data-theme="zlato"] .kv .v { font-family: "Helvetica Neue", system-ui, sans-serif; font-weight: 300; }
+[data-theme="zlato"] .block { margin-bottom: 34px; }
+[data-theme="zlato"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zlato"] tbody tr { border-bottom: 1px solid #221d14; }
+[data-theme="zlato"] th { border-bottom: 1px solid var(--edge); letter-spacing: .1em; }
+[data-theme="zlato"] .sym { color: var(--accent); font-weight: 400; letter-spacing: .05em; }
+[data-theme="zlato"] .rows tr.sel .sym { color: var(--accentfg); }
+[data-theme="zlato"] .chart .line { stroke: var(--accent) !important; stroke-width: 1.5; }
+[data-theme="zlato"] .chart .area { fill: var(--accent) !important; opacity: .1; }
+[data-theme="zlato"] .chart .vol { fill: var(--accent); opacity: .3; }
+[data-theme="zlato"] footer { border-top: 1px solid var(--edge); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="zlato"][data-scheme="light"] { color-scheme: light; --back: #f5f3f0; --card: #edeae4; --head: #e5e1d8; --edge: #c7bca6; --alt: #f0ede7; --text1: #1b1303; --text2: #403417; --faint: #77694b; --up: #15803d; --down: #c81e1e; --accent: #a18105; --hot: #dfd7c7; --tip: #a18105; --tipfg: #141413; --accentfg: #111111; }
+[data-theme="zlato"][data-scheme="light"] tbody tr { border-bottom: 1px solid #e0d9cd; }

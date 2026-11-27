@@ -1,0 +1,20 @@
+/* tema kartaška igra (Card game): generisana, tools/teme.py */
+:root[data-theme="kartaskaigra"] { color-scheme: light; --back: #f8f4ec; --card: #fdfcf9; --head: #f0eeec; --edge: #d7d1cb; --alt: #f7f5f2; --text1: #28181c; --text2: #5c4f50; --faint: #8c8280; --up: #15803d; --down: #c81e1e; --accent: #7f1d1d; --hot: #ebddda; --tip: #28181c; --tipfg: #f8f4ec; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="kartaskaigra"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="kartaskaigra"] .overview .left { align-self: start; }
+[data-theme="kartaskaigra"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kartaskaigra"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="kartaskaigra"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kartaskaigra"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="kartaskaigra"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="kartaskaigra"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="kartaskaigra"] :is(h2, h3)::before { content: "♠ "; color: #28181c; }
+[data-theme="kartaskaigra"] .block:nth-child(4n+2) h2::before { content: "♥ "; color: #dc2626; }
+[data-theme="kartaskaigra"] .block:nth-child(4n+3) h2::before { content: "♦ "; color: #dc2626; }
+[data-theme="kartaskaigra"] .block:nth-child(4n) h2::before { content: "♣ "; }
+[data-theme="kartaskaigra"] .big .value, [data-theme="kartaskaigra"] .detail .price { font-weight: 900; }
+[data-theme="kartaskaigra"] .chart .line { stroke-width: 2; }
+[data-theme="kartaskaigra"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kartaskaigra"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #39393c; --edge: #434245; --alt: #343336; --text1: #ebe3e5; --text2: #b9b3b5; --faint: #8b8789; --up: #4ade80; --down: #f87171; --accent: #ad7070; --hot: #40373a; --tip: #ebe3e5; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="kartaskaigra"][data-scheme="dark"] :is(h2, h3)::before { content: "♠ "; color: #ebe3e5; }

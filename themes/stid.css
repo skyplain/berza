@@ -1,0 +1,16 @@
+/* tema stid (Shyness): generisana, tools/teme.py */
+:root[data-theme="stid"] { color-scheme: light; --back: #fff8fb; --card: #fff6fa; --head: #f3eaef; --edge: #e0d8dd; --alt: #f9f0f4; --text1: #3e313d; --text2: #6e636c; --faint: #948991; --up: #15803d; --down: #c81e1e; --accent: #b27998; --hot: #f4e4ec; --tip: #3e313d; --tipfg: #fff8fb; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="stid"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="stid"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="stid"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="stid"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="stid"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="stid"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="stid"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.08), -6px -6px 16px rgba(255,255,255,0.8); padding: 18px 20px; }
+[data-theme="stid"] button { border-radius: 999px; }
+[data-theme="stid"] .big .value, [data-theme="stid"] .detail .price { font-weight: 700; }
+[data-theme="stid"] .chart .line { stroke-width: 2.5; }
+[data-theme="stid"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="stid"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3f; --edge: #444448; --alt: #343539; --text1: #f4eef3; --text2: #c0bcc0; --faint: #908d92; --up: #4ade80; --down: #f87171; --accent: #f9a8d4; --hot: #4a404a; --tip: #f4eef3; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="stid"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.4), -6px -6px 16px rgba(255,255,255,0.03); padding: 18px 20px; }

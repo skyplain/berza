@@ -1,0 +1,15 @@
+/* tema vila ravijojla (Fairy Ravijojla): generisana, tools/teme.py */
+:root[data-theme="vilaravijojla"] { color-scheme: light; --back: #faf6ff; --card: #fefcff; --head: #f2f0f4; --edge: #dad6e1; --alt: #f8f6f9; --text1: #2f2c44; --text2: #625e73; --faint: #908d9e; --up: #15803d; --down: #c81e1e; --accent: #8e76d4; --hot: #eee9f9; --tip: #2f2c44; --tipfg: #faf6ff; --accentfg: #111111; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 10px; }
+[data-theme="vilaravijojla"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="vilaravijojla"] .overview .left { align-self: start; }
+[data-theme="vilaravijojla"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="vilaravijojla"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="vilaravijojla"] .bar h1 { font-size: 24px; }
+[data-theme="vilaravijojla"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="vilaravijojla"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(47,44,68,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(142,118,212,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(47,44,68,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(47,44,68,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(142,118,212,0.8), transparent); background-color: #faf6ff; background-attachment: fixed; }
+[data-theme="vilaravijojla"] .big .value, [data-theme="vilaravijojla"] .detail .price { font-weight: 700; }
+[data-theme="vilaravijojla"] .chart .line { stroke-width: 2; }
+[data-theme="vilaravijojla"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="vilaravijojla"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3f; --edge: #434449; --alt: #343539; --text1: #eeecf6; --text2: #bbbac2; --faint: #8d8c93; --up: #4ade80; --down: #f87171; --accent: #a78bfa; --hot: #3f3c4f; --tip: #eeecf6; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="vilaravijojla"][data-scheme="dark"] body { background: radial-gradient(1px 1px at 20px 30px, rgba(238,236,246,0.9), transparent), radial-gradient(1px 1px at 120px 80px, rgba(167,139,250,0.9), transparent), radial-gradient(1.5px 1.5px at 200px 150px, rgba(238,236,246,0.9), transparent), radial-gradient(1px 1px at 300px 40px, rgba(238,236,246,0.8), transparent), radial-gradient(1px 1px at 360px 210px, rgba(167,139,250,0.8), transparent); background-color: #232428; background-attachment: fixed; }

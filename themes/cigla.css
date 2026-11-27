@@ -1,0 +1,17 @@
+/* tema cigla (Brick): generisana, tools/teme.py */
+:root[data-theme="cigla"] { color-scheme: light; --back: #efe2d6; --card: #faf6f3; --head: #eee9e6; --edge: #d1c3b9; --alt: #f4f0ed; --text1: #321f1f; --text2: #61504d; --faint: #8d7d77; --up: #15803d; --down: #c81e1e; --accent: #b5452a; --hot: #f0ddd7; --tip: #321f1f; --tipfg: #efe2d6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="cigla"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="cigla"] .overview .left { align-self: start; }
+[data-theme="cigla"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cigla"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="cigla"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="cigla"] .bar button { background: transparent; color: var(--back); border-color: rgba(239,226,214,0.35); box-shadow: none; }
+[data-theme="cigla"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="cigla"] body { background: linear-gradient(rgba(181,69,42,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(181,69,42,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(181,69,42,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #efe2d6; background-attachment: fixed; }
+[data-theme="cigla"] .big .value, [data-theme="cigla"] .detail .price { font-weight: 200; }
+[data-theme="cigla"] .chart .line { stroke-width: 3; }
+[data-theme="cigla"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="cigla"][data-scheme="dark"] { color-scheme: dark; --back: #222124; --card: #2d2c2f; --head: #39373a; --edge: #434143; --alt: #333234; --text1: #efe6e6; --text2: #bcb5b6; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #c0624b; --hot: #423433; --tip: #efe6e6; --tipfg: #222124; --accentfg: #111111; }
+[data-theme="cigla"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,33,36,0.35); box-shadow: none; }
+[data-theme="cigla"][data-scheme="dark"] body { background: linear-gradient(rgba(192,98,75,0.18) 2px, transparent 2px) 0 0 / 60px 24px, linear-gradient(90deg, rgba(192,98,75,0.18) 2px, transparent 2px) 0 0 / 60px 48px, linear-gradient(90deg, rgba(192,98,75,0.18) 2px, transparent 2px) 30px 24px / 60px 48px; background-color: #222124; background-attachment: fixed; }

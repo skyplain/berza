@@ -1,0 +1,16 @@
+/* tema los anđeles (Los Angeles): generisana, tools/teme.py */
+:root[data-theme="losandjeles"] { color-scheme: light; --back: #fff7ed; --card: #fffdfa; --head: #f3f0ee; --edge: #e0d6d0; --alt: #f9f7f4; --text1: #3d2738; --text2: #6e5b65; --faint: #9a8b8f; --up: #15803d; --down: #c81e1e; --accent: #ce619a; --hot: #f8e7ed; --tip: #3d2738; --tipfg: #fff7ed; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="losandjeles"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="losandjeles"] .overview .left { align-self: start; }
+[data-theme="losandjeles"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="losandjeles"] button { border-radius: 0; }
+[data-theme="losandjeles"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="losandjeles"] .bar h1 { font-weight: 800; }
+[data-theme="losandjeles"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="losandjeles"] body { background: linear-gradient(180deg, #fcd2de 0, #f6f7de 260px, #fff7ed 520px); background-color: #fff7ed; background-attachment: fixed; }
+[data-theme="losandjeles"] .big .value, [data-theme="losandjeles"] .detail .price { font-weight: 900; }
+[data-theme="losandjeles"] .chart .line { stroke-width: 3; }
+[data-theme="losandjeles"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="losandjeles"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3d; --edge: #444446; --alt: #343537; --text1: #f4eaf1; --text2: #c0b8be; --faint: #908b90; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #4a3844; --tip: #f4eaf1; --tipfg: #232426; --accentfg: #111111; }
+[data-theme="losandjeles"][data-scheme="dark"] body { background: linear-gradient(180deg, #5e3a4e 0, #353d2f 260px, #232426 520px); background-color: #232426; background-attachment: fixed; }

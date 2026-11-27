@@ -1,0 +1,20 @@
+/* tema božić (Christmas): generisana, tools/teme.py */
+:root[data-theme="bozic"] { color-scheme: dark; --back: #0b2414; --card: #172f20; --head: #243a2c; --edge: #304235; --alt: #1e3426; --text1: #f0e2e5; --text2: #b7b2b1; --faint: #828781; --up: #4ade80; --down: #f87171; --accent: #cf4650; --hot: #313227; --tip: #f0e2e5; --tipfg: #0b2414; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="bozic"] :is(.overview .left, .block, .detail, .list) { background: rgba(23,47,32,0.6); border: 1px solid rgba(240,226,229,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="bozic"] .overview .left { align-self: start; }
+[data-theme="bozic"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bozic"] button { border-radius: 999px; background: transparent; }
+[data-theme="bozic"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bozic"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="bozic"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="bozic"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="bozic"] body { background: radial-gradient(circle, rgba(255,255,255,0.7) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #0b2414; background-attachment: fixed; }
+[data-theme="bozic"] .bar { position: relative; }
+[data-theme="bozic"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: radial-gradient(circle, #ef4444 0 3px, transparent 4px) 0 0 / 64px 10px, radial-gradient(circle, #facc15 0 3px, transparent 4px) 16px 0 / 64px 10px, radial-gradient(circle, #22c55e 0 3px, transparent 4px) 32px 0 / 64px 10px, radial-gradient(circle, #3b82f6 0 3px, transparent 4px) 48px 0 / 64px 10px; }
+[data-theme="bozic"] .big .value, [data-theme="bozic"] .detail .price { font-weight: 900; }
+[data-theme="bozic"] .chart .line { stroke-width: 2.5; }
+[data-theme="bozic"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bozic"][data-scheme="light"] { color-scheme: light; --back: #f0f2f1; --card: #fafbfb; --head: #eeedee; --edge: #d2cfcf; --alt: #f4f4f4; --text1: #34161d; --text2: #634d52; --faint: #8e8083; --up: #15803d; --down: #c81e1e; --accent: #c1121f; --hot: #f2dadc; --tip: #34161d; --tipfg: #f0f2f1; --accentfg: #ffffff; }
+[data-theme="bozic"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,251,0.6); border: 1px solid rgba(52,22,29,0.12); border-radius: 12px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="bozic"][data-scheme="light"] body { background: radial-gradient(circle, rgba(193,18,31,0.25) 1.5px, transparent 2px) 0 0 / 40px 40px, radial-gradient(circle, rgba(193,18,31,0.2) 1px, transparent 1.5px) 13px 21px / 27px 27px, radial-gradient(circle, rgba(193,18,31,0.2) 2px, transparent 2.5px) 31px 7px / 61px 61px; background-color: #f0f2f1; background-attachment: fixed; }

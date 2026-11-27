@@ -1,0 +1,18 @@
+/* tema lotos: generisana (paleta + oblik 6/1/4/5) */
+:root[data-theme="lotos"] { color-scheme: light; --back: #fdf2f8; --card: #fffafd; --head: #f3edf1; --edge: #dfd0d8; --alt: #f9f3f7; --text1: #3f1d33; --text2: #74596a; --faint: #9e8896; --up: #15803d; --down: #c81e1e; --accent: #c43a7e; --hot: #f7dfeb; --tip: #3f1d33; --tipfg: #fdf2f8; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 0px; }
+[data-theme="lotos"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="lotos"] .overview .left { align-self: start; }
+[data-theme="lotos"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lotos"] button { border-radius: 0; }
+[data-theme="lotos"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lotos"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="lotos"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="lotos"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="lotos"] body { background: linear-gradient(180deg, #f7e0ec, #fdf2f8 420px); background-color: #fdf2f8; background-attachment: fixed; }
+[data-theme="lotos"] .big .value, [data-theme="lotos"] .detail .price { font-weight: 700; }
+[data-theme="lotos"] .chart .line { stroke-width: 2; }
+[data-theme="lotos"] .chart .area { opacity: 0.18; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="lotos"][data-scheme="dark"] { color-scheme: dark; --back: #0f090c; --card: #090608; --head: #110e10; --edge: #281d23; --alt: #0e0a0c; --text1: #e6b9d3; --text2: #9a7d8f; --faint: #725c69; --up: #4ade80; --down: #f87171; --accent: #c43a7e; --hot: #1e0f17; --tip: #e6b9d3; --tipfg: #0f090c; --accentfg: #ffffff; }
+[data-theme="lotos"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="lotos"][data-scheme="dark"] body { background: linear-gradient(180deg, #1e0e17, #0f090c 420px); background-color: #0f090c; background-attachment: fixed; }

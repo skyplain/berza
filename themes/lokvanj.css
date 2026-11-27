@@ -1,0 +1,17 @@
+/* tema lokvanj (Water lily): generisana, tools/teme.py */
+:root[data-theme="lokvanj"] { color-scheme: light; --back: #eefaf7; --card: #fafefd; --head: #eff1f1; --edge: #d2d8d8; --alt: #f4f8f7; --text1: #3d2738; --text2: #695c68; --faint: #928c94; --up: #15803d; --down: #c81e1e; --accent: #ce619a; --hot: #f4e8ef; --tip: #3d2738; --tipfg: #eefaf7; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="lokvanj"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="lokvanj"] .overview .left { align-self: start; }
+[data-theme="lokvanj"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lokvanj"] button { border-radius: 999px; }
+[data-theme="lokvanj"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="lokvanj"] .bar h1 { font-size: 24px; }
+[data-theme="lokvanj"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="lokvanj"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(206,97,154,0.14) 9px 10px, transparent 11px 16px, rgba(206,97,154,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, radial-gradient(ellipse 6px 12px at 30% 30%, rgba(206,97,154,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(182,244,114,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #eefaf7; background-attachment: fixed; }
+[data-theme="lokvanj"] .big .value, [data-theme="lokvanj"] .detail .price { font-weight: 700; }
+[data-theme="lokvanj"] .chart .line { stroke-width: 2; }
+[data-theme="lokvanj"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lokvanj"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #393a3d; --edge: #444447; --alt: #333538; --text1: #f4eaf1; --text2: #c0b8be; --faint: #8f8b90; --up: #4ade80; --down: #f87171; --accent: #f472b6; --hot: #493844; --tip: #f4eaf1; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="lokvanj"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="lokvanj"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(244,114,182,0.14) 9px 10px, transparent 11px 16px, rgba(244,114,182,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px, radial-gradient(ellipse 6px 12px at 30% 30%, rgba(244,114,182,0.25), transparent 70%) 0 0 / 60px 60px, radial-gradient(ellipse 12px 6px at 70% 60%, rgba(182,244,114,0.18), transparent 70%) 0 0 / 60px 60px; background-color: #222427; background-attachment: fixed; }

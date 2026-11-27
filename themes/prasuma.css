@@ -1,0 +1,14 @@
+/* tema prašuma (Rainforest): generisana, tools/teme.py */
+:root[data-theme="prasuma"] { color-scheme: dark; --back: #071b10; --card: #13261c; --head: #1f3228; --edge: #2a3d33; --alt: #192c22; --text1: #e2eee8; --text2: #abb9b2; --faint: #798980; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #133822; --tip: #e2eee8; --tipfg: #071b10; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="prasuma"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="prasuma"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="prasuma"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="prasuma"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="prasuma"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="prasuma"] body { background: radial-gradient(ellipse 8px 18px, rgba(22,163,74,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(22,163,74,0.14) 60%, transparent 62%) 24px 24px / 48px 48px, repeating-radial-gradient(circle at 17% 32%, rgba(226,238,232,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(226,238,232,0.03) 0 1px, transparent 1px 5px); background-color: #071b10; background-attachment: fixed; }
+[data-theme="prasuma"] .big .value, [data-theme="prasuma"] .detail .price { font-weight: 900; }
+[data-theme="prasuma"] .chart .line { stroke-width: 3; }
+[data-theme="prasuma"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="prasuma"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #ecefee; --edge: #cdd2d0; --alt: #f3f5f5; --text1: #153024; --text2: #4c6057; --faint: #7e8d86; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #daede1; --tip: #153024; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="prasuma"][data-scheme="light"] body { background: radial-gradient(ellipse 8px 18px, rgba(20,150,68,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(20,150,68,0.14) 60%, transparent 62%) 24px 24px / 48px 48px, repeating-radial-gradient(circle at 17% 32%, rgba(21,48,36,0.035) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 71% 63%, rgba(21,48,36,0.03) 0 1px, transparent 1px 5px); background-color: #f0f1f1; background-attachment: fixed; }

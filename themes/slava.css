@@ -1,0 +1,24 @@
+/* tema slava (Slava): generisana, tools/teme.py */
+:root[data-theme="slava"] { color-scheme: light; --back: #fbf3e6; --card: #fefbf8; --head: #f2edeb; --edge: #dbd0c6; --alt: #f8f4f1; --text1: #33181c; --text2: #654f4e; --faint: #93817d; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f4dcd9; --tip: #33181c; --tipfg: #fbf3e6; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="slava"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="slava"] .overview .left { align-self: start; }
+[data-theme="slava"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="slava"] button { border-radius: 999px; }
+[data-theme="slava"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="slava"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="slava"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="slava"] :is(.overview .left, .block, .detail, .list) { border: 4px double #b91c1c; }
+[data-theme="slava"] .bar h1::before { content: "❦ "; color: #b91c1c; }
+[data-theme="slava"] .bar h1::after { content: " ❦"; color: #b91c1c; }
+[data-theme="slava"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="slava"] .bar { position: relative; }
+[data-theme="slava"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: radial-gradient(circle, #ef4444 0 3px, transparent 4px) 0 0 / 64px 10px, radial-gradient(circle, #facc15 0 3px, transparent 4px) 16px 0 / 64px 10px, radial-gradient(circle, #22c55e 0 3px, transparent 4px) 32px 0 / 64px 10px, radial-gradient(circle, #3b82f6 0 3px, transparent 4px) 48px 0 / 64px 10px; }
+[data-theme="slava"] .big .value, [data-theme="slava"] .detail .price { font-weight: 200; }
+[data-theme="slava"] .chart .line { stroke-width: 2.5; }
+[data-theme="slava"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="slava"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444244; --alt: #343335; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #443436; --tip: #efe3e5; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="slava"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="slava"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #cd5c5c; }
+[data-theme="slava"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #cd5c5c; }
+[data-theme="slava"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #cd5c5c; }

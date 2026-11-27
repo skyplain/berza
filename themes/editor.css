@@ -1,0 +1,33 @@
+/* tema editor: tamni editor koda: brojevi redova, boje sintakse, monospace */
+:root[data-theme="editor"] { color-scheme: dark; --back: #1e1e2e; --card: #181825; --head: #24243a; --edge: #313244; --alt: #1b1b2a; --text1: #cdd6f4; --text2: #a6adc8; --faint: #6c7086; --up: #a6e3a1; --down: #f38ba8; --accent: #89b4fa; --hot: #2a2b3f; --tip: #89b4fa; --tipfg: #1e1e2e; --accentfg: #1e1e2e; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 6px; --panel-bg: var(--card); --panel-border: 1px solid var(--edge); --panel-shadow: none; --h-color: #cba6f7; --h-transform: none; --h-spacing: 0; --h-size: 13px; --h-weight: 400; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="editor"] body { font-size:13.5px }
+[data-theme="editor"] h2::before,[data-theme="editor"] h3::before { content:"fn ";color:#f9e2af }
+[data-theme="editor"] h2::after,[data-theme="editor"] h3::after { content:"() {";color:#6c7086 }
+[data-theme="editor"] .bar { background:#181825;margin: 0 calc(-1 * var(--gut, 16px)) 16px;padding:8px var(--gut, 16px);border-bottom:1px solid #313244 }
+[data-theme="editor"] .bar h1::before { content:"// ";color:#6c7086 }
+[data-theme="editor"] .bar h1 { color:#89b4fa }
+[data-theme="editor"] .sym { color:#f9e2af }
+[data-theme="editor"] td.name { color:#a6e3a1 }
+[data-theme="editor"] .num { color:#fab387 }
+[data-theme="editor"] .kv .k { color:#89dceb }
+[data-theme="editor"] .block table tbody { counter-reset:ln }
+[data-theme="editor"] .block table tbody tr td:first-child::before { counter-increment:ln;content:counter(ln);color:#45475a;display:inline-block;width:2em }
+[data-theme="editor"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="editor"] button { background:#24243a;border-color:#313244 }
+[data-theme="editor"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="editor"] .overview .left { align-self: start; }
+[data-theme="editor"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="editor"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="editor"][data-scheme="light"] { color-scheme: light; --back: #d3d4eb; --card: #dddef0; --head: #c9cbe8; --edge: #b9bad1; --alt: #d8d9ee; --text1: #191e34; --text2: #393e55; --faint: #72768c; --up: #15803d; --down: #c81e1e; --accent: #4b73b4; --hot: #c0c3dd; --tip: #4b73b4; --tipfg: #f9f9f9; --accentfg: #ffffff; --h-color: #452066; }
+[data-theme="editor"][data-scheme="light"] h2::before,[data-theme="editor"][data-scheme="light"] h3::before { content:"fn ";color:#1f1400 }
+[data-theme="editor"][data-scheme="light"] h2::after,[data-theme="editor"][data-scheme="light"] h3::after { content:"() {";color:#72768c }
+[data-theme="editor"][data-scheme="light"] .bar { background:#dddef0;margin: 0 calc(-1 * var(--gut, 16px)) 16px;padding:8px var(--gut, 16px);border-bottom:1px solid #b9bad1 }
+[data-theme="editor"][data-scheme="light"] .bar h1::before { content:"// ";color:#72768c }
+[data-theme="editor"][data-scheme="light"] .bar h1 { color:#4b73b4 }
+[data-theme="editor"][data-scheme="light"] .sym { color:#1f1400 }
+[data-theme="editor"][data-scheme="light"] td.name { color:#002f00 }
+[data-theme="editor"][data-scheme="light"] .num { color:#492000 }
+[data-theme="editor"][data-scheme="light"] .kv .k { color:#022d34 }
+[data-theme="editor"][data-scheme="light"] .block table tbody tr td:first-child::before { counter-increment:ln;content:counter(ln);color:#9fa2b8;display:inline-block;width:2em }
+[data-theme="editor"][data-scheme="light"] button { background:#c9cbe8;border-color:#b9bad1 }

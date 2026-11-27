@@ -1,0 +1,18 @@
+/* tema ekskalibur (Excalibur): generisana, tools/teme.py */
+:root[data-theme="ekskalibur"] { color-scheme: dark; --back: #0d1016; --card: #191c22; --head: #26292e; --edge: #313439; --alt: #1f2228; --text1: #eceef1; --text2: #b4b6ba; --faint: #818388; --up: #4ade80; --down: #f87171; --accent: #94a3b8; --hot: #2a2f37; --tip: #eceef1; --tipfg: #0d1016; --accentfg: #111111; --font: "Old English Text MT", "UnifrakturMaguntia", "Luminari", Georgia, serif; --radius: 0px; }
+[data-theme="ekskalibur"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="ekskalibur"] .overview .left { align-self: start; }
+[data-theme="ekskalibur"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ekskalibur"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="ekskalibur"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="ekskalibur"] .bar h1 { font-size: 24px; }
+[data-theme="ekskalibur"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ekskalibur"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.06), transparent 40%); background-color: #0d1016; background-attachment: fixed; }
+[data-theme="ekskalibur"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #2b2e34, #191c22); border: 1px solid rgba(236,238,241,0.18); }
+[data-theme="ekskalibur"] .big .value, [data-theme="ekskalibur"] .detail .price { font-weight: 400; }
+[data-theme="ekskalibur"] .chart .line { stroke-width: 1.5; }
+[data-theme="ekskalibur"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="ekskalibur"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eeefef; --edge: #d1d2d3; --alt: #f4f5f5; --text1: #2c3038; --text2: #5d6066; --faint: #82868a; --up: #15803d; --down: #c81e1e; --accent: #737f8f; --hot: #e7eaec; --tip: #2c3038; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="ekskalibur"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px), linear-gradient(180deg, rgba(255,255,255,0.4), transparent 40%); background-color: #f0f1f1; background-attachment: fixed; }
+[data-theme="ekskalibur"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: linear-gradient(180deg, #fafbfb, #fafbfb); border: 1px solid rgba(44,48,56,0.18); }

@@ -1,0 +1,13 @@
+/* tema uran (Uranus): generisana, tools/teme.py */
+:root[data-theme="uran"] { color-scheme: dark; --back: #06191c; --card: #122427; --head: #1f3033; --edge: #2a3c3e; --alt: #182a2d; --text1: #e8f3f3; --text2: #b0bcbd; --faint: #7c8a8c; --up: #4ade80; --down: #f87171; --accent: #5eead4; --hot: #1d403f; --tip: #e8f3f3; --tipfg: #06191c; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 8px; }
+[data-theme="uran"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="uran"] .overview .left { align-self: start; }
+[data-theme="uran"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="uran"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="uran"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(94,234,212,0.14) 60px 61px); background-color: #06191c; background-attachment: fixed; }
+[data-theme="uran"] .big .value, [data-theme="uran"] .detail .price { font-weight: 700; }
+[data-theme="uran"] .chart .line { stroke-width: 2.5; }
+[data-theme="uran"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="uran"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #edf0f0; --edge: #cfd4d4; --alt: #f4f5f5; --text1: #223d3d; --text2: #566a6a; --faint: #7d8c8c; --up: #15803d; --down: #c81e1e; --accent: #398e81; --hot: #dfecea; --tip: #223d3d; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="uran"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 15%, transparent 0 60px, rgba(57,142,129,0.14) 60px 61px); background-color: #f0f1f1; background-attachment: fixed; }

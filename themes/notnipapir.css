@@ -1,0 +1,13 @@
+/* tema notni papir (Sheet music): generisana, tools/teme.py */
+:root[data-theme="notnipapir"] { color-scheme: light; --back: #fbf9f2; --card: #fefdfb; --head: #f0efee; --edge: #d6d5cf; --alt: #f7f6f4; --text1: #14161a; --text2: #4e4f50; --faint: #838382; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #dddcda; --tip: #14161a; --tipfg: #fbf9f2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="notnipapir"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="notnipapir"] .overview .left { align-self: start; }
+[data-theme="notnipapir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="notnipapir"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="notnipapir"] body { background: linear-gradient(180deg, rgba(20,22,26,0.14) 0 1px, transparent 1px 8px, rgba(20,22,26,0.14) 8px 9px, transparent 9px 16px, rgba(20,22,26,0.14) 16px 17px, transparent 17px 24px, rgba(20,22,26,0.14) 24px 25px, transparent 25px 32px, rgba(20,22,26,0.14) 32px 33px, transparent 33px) 0 20px / 100% 76px; background-color: #fbf9f2; background-attachment: fixed; }
+[data-theme="notnipapir"] .big .value, [data-theme="notnipapir"] .detail .price { font-weight: 200; }
+[data-theme="notnipapir"] .chart .line { stroke-width: 2.5; }
+[data-theme="notnipapir"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="notnipapir"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #424245; --alt: #333437; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #868789; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3d; --tip: #e2e2e4; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="notnipapir"][data-scheme="dark"] body { background: linear-gradient(180deg, rgba(226,226,228,0.14) 0 1px, transparent 1px 8px, rgba(226,226,228,0.14) 8px 9px, transparent 9px 16px, rgba(226,226,228,0.14) 16px 17px, transparent 17px 24px, rgba(226,226,228,0.14) 24px 25px, transparent 25px 32px, rgba(226,226,228,0.14) 32px 33px, transparent 33px) 0 20px / 100% 76px; background-color: #232427; background-attachment: fixed; }

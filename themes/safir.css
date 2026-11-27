@@ -1,0 +1,20 @@
+/* tema safir: generisana (paleta + oblik 1/4/1/2) */
+:root[data-theme="safir"] { color-scheme: dark; --back: #06122e; --card: #0b1a3d; --head: #182749; --edge: #29354f; --alt: #112043; --text1: #e3ecff; --text2: #a5afc4; --faint: #747f96; --up: #4ade80; --down: #f87171; --accent: #2f6bff; --hot: #102558; --tip: #e3ecff; --tipfg: #06122e; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 10px; }
+[data-theme="safir"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="safir"] .overview .left { align-self: start; }
+[data-theme="safir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="safir"] button { border-radius: 999px; }
+[data-theme="safir"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="safir"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="safir"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="safir"] .bar button { background: transparent; color: var(--back); border-color: rgba(6,18,46,0.35); box-shadow: none; }
+[data-theme="safir"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="safir"] body { background: linear-gradient(rgba(227,236,255,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(227,236,255,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #06122e; background-attachment: fixed; }
+[data-theme="safir"] .big .value, [data-theme="safir"] .detail .price { font-weight: 400; }
+[data-theme="safir"] .chart .line { stroke-width: 2; }
+[data-theme="safir"] .chart .area { opacity: 0.12; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="safir"][data-scheme="light"] { color-scheme: light; --back: #dde8fe; --card: #cbdcfd; --head: #b6cbf7; --edge: #abbbdb; --alt: #bfd4fd; --text1: #0b111d; --text2: #373f50; --faint: #606a80; --up: #15803d; --down: #c81e1e; --accent: #2d67f5; --hot: #b1cafd; --tip: #0b111d; --tipfg: #dde8fe; --accentfg: #ffffff; }
+[data-theme="safir"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(255,255,255,.45); padding: 14px 16px; }
+[data-theme="safir"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(221,232,254,0.35); box-shadow: none; }
+[data-theme="safir"][data-scheme="light"] body { background: linear-gradient(rgba(11,17,29,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(11,17,29,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #dde8fe; background-attachment: fixed; }

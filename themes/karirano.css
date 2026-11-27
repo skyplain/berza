@@ -1,0 +1,12 @@
+/* tema karirano (Tartan): generisana, tools/teme.py */
+:root[data-theme="karirano"] { color-scheme: light; --back: #f5ede4; --card: #fcfaf7; --head: #f0ecea; --edge: #d5cbc4; --alt: #f6f3f0; --text1: #2d181c; --text2: #5f4d4e; --faint: #8d7e7c; --up: #15803d; --down: #c81e1e; --accent: #991b1b; --hot: #eedbd8; --tip: #2d181c; --tipfg: #f5ede4; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="karirano"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="karirano"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="karirano"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="karirano"] body { background: repeating-linear-gradient(0deg, rgba(153,27,27,0.14) 0 20px, transparent 20px 40px, rgba(45,24,28,0.06) 40px 44px, transparent 44px 80px), repeating-linear-gradient(90deg, rgba(153,27,27,0.14) 0 20px, transparent 20px 40px, rgba(45,24,28,0.06) 40px 44px, transparent 44px 80px); background-color: #f5ede4; background-attachment: fixed; }
+[data-theme="karirano"] .big .value, [data-theme="karirano"] .detail .price { font-weight: 200; }
+[data-theme="karirano"] .chart .line { stroke-width: 1.5; }
+[data-theme="karirano"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="karirano"][data-scheme="dark"] { color-scheme: dark; --back: #222225; --card: #2d2d30; --head: #39383b; --edge: #424144; --alt: #333235; --text1: #ede3e4; --text2: #bab3b4; --faint: #8c8688; --up: #4ade80; --down: #f87171; --accent: #b65b5b; --hot: #403336; --tip: #ede3e4; --tipfg: #222225; --accentfg: #ffffff; }
+[data-theme="karirano"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(182,91,91,0.14) 0 20px, transparent 20px 40px, rgba(237,227,228,0.06) 40px 44px, transparent 44px 80px), repeating-linear-gradient(90deg, rgba(182,91,91,0.14) 0 20px, transparent 20px 40px, rgba(237,227,228,0.06) 40px 44px, transparent 44px 80px); background-color: #222225; background-attachment: fixed; }

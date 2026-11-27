@@ -1,0 +1,14 @@
+/* tema holandske pločice (Delft tiles): generisana, tools/teme.py */
+:root[data-theme="holandskeplocice"] { color-scheme: light; --back: #f8fbff; --card: #f4f7fd; --head: #e7eaf1; --edge: #d4d8df; --alt: #edf0f7; --text1: #171e36; --text2: #4f5568; --faint: #838896; --up: #15803d; --down: #c81e1e; --accent: #1e40af; --hot: #d6ddf2; --tip: #171e36; --tipfg: #f8fbff; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="holandskeplocice"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="holandskeplocice"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="holandskeplocice"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="holandskeplocice"] .bar h1 { font-weight: 800; }
+[data-theme="holandskeplocice"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="holandskeplocice"] body { background: radial-gradient(circle at 0 0, rgba(30,64,175,0.14) 30%, transparent 31%) 0 0 / 40px 40px, radial-gradient(circle at 100% 100%, rgba(30,64,175,0.14) 30%, transparent 31%) 0 0 / 40px 40px, linear-gradient(rgba(23,30,54,0.06) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(23,30,54,0.06) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #f8fbff; background-attachment: fixed; }
+[data-theme="holandskeplocice"] .big .value, [data-theme="holandskeplocice"] .detail .price { font-weight: 700; }
+[data-theme="holandskeplocice"] .chart .line { stroke-width: 2.5; }
+[data-theme="holandskeplocice"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="holandskeplocice"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424348; --alt: #333439; --text1: #e3e6f0; --text2: #b3b6be; --faint: #878990; --up: #4ade80; --down: #f87171; --accent: #647bc7; --hot: #363a48; --tip: #e3e6f0; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="holandskeplocice"][data-scheme="dark"] body { background: radial-gradient(circle at 0 0, rgba(100,123,199,0.14) 30%, transparent 31%) 0 0 / 40px 40px, radial-gradient(circle at 100% 100%, rgba(100,123,199,0.14) 30%, transparent 31%) 0 0 / 40px 40px, linear-gradient(rgba(227,230,240,0.06) 1px, transparent 1px) 0 0 / 40px 40px, linear-gradient(90deg, rgba(227,230,240,0.06) 1px, transparent 1px) 0 0 / 40px 40px; background-color: #232428; background-attachment: fixed; }

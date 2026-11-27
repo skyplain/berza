@@ -1,0 +1,17 @@
+/* tema sepija: stara fotografija i pisaća mašina, Courier, isprekidane linije */
+:root[data-theme="sepija"] { color-scheme: light; --back: #efe4cf; --card: #f6eddc; --head: #e3d4b8; --edge: #bda988; --alt: #eadcc2; --text1: #3b2e1e; --text2: #5e4b33; --faint: #8c7656; --up: #4e6b2e; --down: #9a3b22; --accent: #6b4f2a; --hot: #e2d2b2; --tip: #3b2e1e; --tipfg: #f6eddc; --accentfg: #f6eddc; --font: "American Typewriter","Courier New",Courier,monospace; --radius: 0; --h-color: #3b2e1e; --h-transform: uppercase; --h-spacing: .1em; --h-size: 13px; --h-weight: 700; --h-font: inherit; --big-font: inherit; --big-weight: 400; }
+[data-theme="sepija"] body { background:radial-gradient(ellipse at center,#f3e9d6 0%,#e4d5b7 100%) fixed #efe4cf }
+[data-theme="sepija"] .bar { border-bottom:2px dashed var(--edge) }
+[data-theme="sepija"] .bar h1 { font-size:24px }
+[data-theme="sepija"] button { background:transparent;border:1px dashed var(--text1) }
+[data-theme="sepija"] h2,[data-theme="sepija"] h3 { border-bottom:1px dashed var(--edge);padding-bottom:3px }
+[data-theme="sepija"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="sepija"] tbody tr { border-bottom:1px dashed #d4c3a3 }
+[data-theme="sepija"] .chart .line { stroke:var(--text1)!important;stroke-width:1.5 }
+[data-theme="sepija"] .chart .area { fill:var(--text1)!important;opacity:.08 }
+[data-theme="sepija"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="sepija"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="sepija"][data-scheme="dark"] { color-scheme: dark; --back: #1c1405; --card: #150f04; --head: #2a1e07; --edge: #503e20; --alt: #231904; --text1: #cebeaa; --text2: #ae997e; --faint: #816b4c; --up: #4ade80; --down: #f87171; --accent: #80633d; --hot: #2c2004; --tip: #cebeaa; --tipfg: #150f04; --accentfg: #ffffff; --h-color: #cebeaa; }
+[data-theme="sepija"][data-scheme="dark"] body { background:radial-gradient(ellipse at center,#181104 0%,#291e05 100%) fixed #1c1405 }
+[data-theme="sepija"][data-scheme="dark"] tbody tr { border-bottom:1px dashed #382b0e }

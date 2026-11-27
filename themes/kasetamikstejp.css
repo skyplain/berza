@@ -1,0 +1,18 @@
+/* tema kaseta mikstejp (Mixtape): generisana, tools/teme.py */
+:root[data-theme="kasetamikstejp"] { color-scheme: light; --back: #f4efe6; --card: #fcfaf8; --head: #f1eeeb; --edge: #d7d0c5; --alt: #f6f4f1; --text1: #3d2f19; --text2: #6b5f4c; --faint: #8e8473; --up: #15803d; --down: #c81e1e; --accent: #af7007; --hot: #f1e7d6; --tip: #3d2f19; --tipfg: #f4efe6; --accentfg: #111111; --font: "Marker Felt", "Segoe Print", "Comic Sans MS", cursive; --radius: 0px; }
+[data-theme="kasetamikstejp"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="kasetamikstejp"] .overview .left { align-self: start; }
+[data-theme="kasetamikstejp"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kasetamikstejp"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="kasetamikstejp"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kasetamikstejp"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kasetamikstejp"] .bar button { background: transparent; color: var(--back); border-color: rgba(244,239,230,0.35); box-shadow: none; }
+[data-theme="kasetamikstejp"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="kasetamikstejp"] :is(.overview .left, .block, .detail, .list) { position: relative; }
+[data-theme="kasetamikstejp"] :is(.overview .left, .block, .detail)::after { content: ""; position: absolute; top: -10px; left: 50%; width: 90px; height: 22px; margin-left: -45px; background: rgba(255,247,194,0.65); transform: rotate(-3deg); box-shadow: 0 1px 2px rgba(0,0,0,.15); }
+[data-theme="kasetamikstejp"] .big .value, [data-theme="kasetamikstejp"] .detail .price { font-weight: 200; }
+[data-theme="kasetamikstejp"] .chart .line { stroke-width: 2.5; }
+[data-theme="kasetamikstejp"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kasetamikstejp"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #39393b; --edge: #444343; --alt: #333435; --text1: #f4ede3; --text2: #c0bab4; --faint: #8f8c88; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #493e2b; --tip: #f4ede3; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="kasetamikstejp"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,37,0.35); box-shadow: none; }

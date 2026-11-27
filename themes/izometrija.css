@@ -1,0 +1,15 @@
+/* tema izometrija (Isometric): generisana, tools/teme.py */
+:root[data-theme="izometrija"] { color-scheme: light; --back: #f3fbfd; --card: #eefafc; --head: #e1eef1; --edge: #cfdbde; --alt: #e7f4f6; --text1: #12343d; --text2: #4a666d; --faint: #7e9499; --up: #15803d; --down: #c81e1e; --accent: #068ea5; --hot: #ceebf0; --tip: #12343d; --tipfg: #f3fbfd; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="izometrija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="izometrija"] .overview .left { align-self: start; }
+[data-theme="izometrija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="izometrija"] button { border-radius: 999px; }
+[data-theme="izometrija"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="izometrija"] body { background: repeating-linear-gradient(30deg, rgba(18,52,61,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(18,52,61,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(18,52,61,0.04) 0 1px, transparent 1px 45px); background-color: #f3fbfd; background-attachment: fixed; }
+[data-theme="izometrija"] .big .value, [data-theme="izometrija"] .detail .price { font-weight: 400; }
+[data-theme="izometrija"] .chart .line { stroke-width: 2.5; }
+[data-theme="izometrija"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="izometrija"][data-scheme="dark"] { color-scheme: dark; --back: #0b1b22; --card: #17262d; --head: #233239; --edge: #2d3d43; --alt: #1d2c33; --text1: #e1eff3; --text2: #acbabf; --faint: #7a898f; --up: #4ade80; --down: #f87171; --accent: #06b6d4; --hot: #153a44; --tip: #e1eff3; --tipfg: #0b1b22; --accentfg: #111111; }
+[data-theme="izometrija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="izometrija"][data-scheme="dark"] body { background: repeating-linear-gradient(30deg, rgba(225,239,243,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(150deg, rgba(225,239,243,0.06) 0 1px, transparent 1px 26px), repeating-linear-gradient(90deg, rgba(225,239,243,0.04) 0 1px, transparent 1px 45px); background-color: #0b1b22; background-attachment: fixed; }

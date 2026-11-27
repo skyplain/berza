@@ -1,0 +1,20 @@
+/* tema kristal: generisana (paleta + oblik 1/4/3/2) */
+:root[data-theme="kristal"] { color-scheme: light; --back: #f0fbff; --card: #ffffff; --head: #f1f2f3; --edge: #ccdadf; --alt: #f8f9f9; --text1: #0f2d3a; --text2: #4e6771; --faint: #80949c; --up: #15803d; --down: #c81e1e; --accent: #0095b3; --hot: #dbf0f4; --tip: #0f2d3a; --tipfg: #f0fbff; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="kristal"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="kristal"] .overview .left { align-self: start; }
+[data-theme="kristal"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kristal"] button { border-radius: 999px; }
+[data-theme="kristal"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="kristal"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="kristal"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="kristal"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,251,255,0.35); box-shadow: none; }
+[data-theme="kristal"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="kristal"] body { background: linear-gradient(rgba(15,45,58,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(15,45,58,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f0fbff; background-attachment: fixed; }
+[data-theme="kristal"] .big .value, [data-theme="kristal"] .detail .price { font-weight: 400; }
+[data-theme="kristal"] .chart .line { stroke-width: 3.5; }
+[data-theme="kristal"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="kristal"][data-scheme="dark"] { color-scheme: dark; --back: #040a0d; --card: #060606; --head: #0d0d0e; --edge: #172125; --alt: #080909; --text1: #afd0e1; --text2: #728c96; --faint: #53666f; --up: #4ade80; --down: #f87171; --accent: #0095b3; --hot: #051417; --tip: #afd0e1; --tipfg: #040a0d; --accentfg: #111111; }
+[data-theme="kristal"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="kristal"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(4,10,13,0.35); box-shadow: none; }
+[data-theme="kristal"][data-scheme="dark"] body { background: linear-gradient(rgba(175,208,225,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(175,208,225,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #040a0d; background-attachment: fixed; }

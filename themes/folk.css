@@ -1,0 +1,19 @@
+/* tema folk (Folk): generisana, tools/teme.py */
+:root[data-theme="folk"] { color-scheme: light; --back: #f5f0e2; --card: #fcfaf6; --head: #efede9; --edge: #d3d0c2; --alt: #f5f4ef; --text1: #1f291a; --text2: #545b4c; --faint: #86897a; --up: #15803d; --down: #c81e1e; --accent: #4d7c0f; --hot: #e4e8d6; --tip: #1f291a; --tipfg: #f5f0e2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="folk"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 16px; padding: 14px 16px; }
+[data-theme="folk"] .overview .left { align-self: start; }
+[data-theme="folk"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="folk"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="folk"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="folk"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="folk"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 16px; }
+[data-theme="folk"] body { background: linear-gradient(135deg, rgba(77,124,15,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(225deg, rgba(77,124,15,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(315deg, rgba(77,124,15,0.11) 25%, transparent 25%) 0 0 / 40px 40px, linear-gradient(45deg, rgba(77,124,15,0.11) 25%, transparent 25%) 0 0 / 40px 40px; background-color: #f5f0e2; background-attachment: fixed; }
+[data-theme="folk"] .bar { position: relative; }
+[data-theme="folk"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #4d7c0f 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(225deg, #4d7c0f 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(90deg, rgba(15,77,124,0.8), rgba(124,15,77,0.8)); }
+[data-theme="folk"] .big .value, [data-theme="folk"] .detail .price { font-weight: 700; }
+[data-theme="folk"] .chart .line { stroke-width: 1.5; }
+[data-theme="folk"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="folk"][data-scheme="dark"] { color-scheme: dark; --back: #222325; --card: #2d2e30; --head: #38393b; --edge: #424344; --alt: #333435; --text1: #e7eae4; --text2: #b6b8b4; --faint: #888a88; --up: #4ade80; --down: #f87171; --accent: #628b2b; --hot: #343b2f; --tip: #e7eae4; --tipfg: #222325; --accentfg: #111111; }
+[data-theme="folk"][data-scheme="dark"] body { background: linear-gradient(135deg, rgba(98,139,43,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(225deg, rgba(98,139,43,0.11) 25%, transparent 25%) -20px 0 / 40px 40px, linear-gradient(315deg, rgba(98,139,43,0.11) 25%, transparent 25%) 0 0 / 40px 40px, linear-gradient(45deg, rgba(98,139,43,0.11) 25%, transparent 25%) 0 0 / 40px 40px; background-color: #222325; background-attachment: fixed; }
+[data-theme="folk"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(135deg, #628b2b 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(225deg, #628b2b 25%, transparent 25%) -6px 0 / 12px 12px, linear-gradient(90deg, rgba(15,77,124,0.8), rgba(124,15,77,0.8)); }

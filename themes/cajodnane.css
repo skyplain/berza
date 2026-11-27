@@ -1,0 +1,15 @@
+/* tema čaj od nane (Mint tea): generisana, tools/teme.py */
+:root[data-theme="cajodnane"] { color-scheme: light; --back: #effbf5; --card: #fafefc; --head: #ecf2ef; --edge: #ccdad5; --alt: #f3f8f6; --text1: #122e2a; --text2: #49615d; --faint: #7c908b; --up: #15803d; --down: #c81e1e; --accent: #059669; --hot: #d8efe7; --tip: #122e2a; --tipfg: #effbf5; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="cajodnane"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="cajodnane"] .overview .left { align-self: start; }
+[data-theme="cajodnane"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cajodnane"] button { border-radius: 999px; }
+[data-theme="cajodnane"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="cajodnane"] .bar h1 { font-weight: 800; }
+[data-theme="cajodnane"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="cajodnane"] .big .value, [data-theme="cajodnane"] .detail .price { font-weight: 200; }
+[data-theme="cajodnane"] .chart .line { stroke-width: 2.5; }
+[data-theme="cajodnane"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="cajodnane"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414446; --alt: #323538; --text1: #e1eceb; --text2: #b1baba; --faint: #858c8d; --up: #4ade80; --down: #f87171; --accent: #059669; --hot: #273d3a; --tip: #e1eceb; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="cajodnane"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

@@ -1,0 +1,24 @@
+/* tema osciloskop (Oscilloscope): generisana, tools/teme.py */
+:root[data-theme="osciloskop"] { color-scheme: dark; --back: #102e27; --card: #1c3832; --head: #28433d; --edge: #324e47; --alt: #223e38; --text1: #e4f5f1; --text2: #afc3be; --faint: #7e9590; --up: #4ade80; --down: #f87171; --accent: #2dffb3; --hot: #1e5444; --tip: #e4f5f1; --tipfg: #102e27; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 0px; }
+[data-theme="osciloskop"] :is(.overview .left, .block, .detail, .list) { background: #17352e; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="osciloskop"] .overview .left { align-self: start; }
+[data-theme="osciloskop"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="osciloskop"] button { border: 0; }
+[data-theme="osciloskop"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="osciloskop"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="osciloskop"] .bar button { background: transparent; color: var(--back); border-color: rgba(16,46,39,0.35); box-shadow: none; }
+[data-theme="osciloskop"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="osciloskop"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="osciloskop"] body { background: linear-gradient(rgba(228,245,241,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(228,245,241,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #102e27; background-attachment: fixed; }
+[data-theme="osciloskop"] .big .value { text-shadow: 0 0 18px rgba(45,255,179,0.55); }
+[data-theme="osciloskop"] .chart .line { filter: drop-shadow(0 0 5px rgba(45,255,179,0.7)); }
+[data-theme="osciloskop"] .big .value, [data-theme="osciloskop"] .detail .price { font-weight: 200; }
+[data-theme="osciloskop"] .chart .line { stroke-width: 3; }
+[data-theme="osciloskop"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="osciloskop"][data-scheme="light"] { color-scheme: light; --back: #eafff7; --card: #e6fff6; --head: #daf4eb; --edge: #c9e1d8; --alt: #e0f9f0; --text1: #194137; --text2: #4d7067; --faint: #75958c; --up: #15803d; --down: #c81e1e; --accent: #1b9b6d; --hot: #caf1e3; --tip: #194137; --tipfg: #eafff7; --accentfg: #111111; }
+[data-theme="osciloskop"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #e3f8f0; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="osciloskop"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(234,255,247,0.35); box-shadow: none; }
+[data-theme="osciloskop"][data-scheme="light"] body { background: linear-gradient(rgba(25,65,55,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(25,65,55,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #eafff7; background-attachment: fixed; }
+[data-theme="osciloskop"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(27,155,109,0.55); }
+[data-theme="osciloskop"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(27,155,109,0.7)); }

@@ -1,0 +1,15 @@
+/* tema plavi sat (Blue hour): generisana, tools/teme.py */
+:root[data-theme="plavisat"] { color-scheme: dark; --back: #0f1230; --card: #1b1e3a; --head: #272a45; --edge: #323450; --alt: #212440; --text1: #e8e9f6; --text2: #b2b3c4; --faint: #808297; --up: #4ade80; --down: #f87171; --accent: #5f62e7; --hot: #252852; --tip: #e8e9f6; --tipfg: #0f1230; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="plavisat"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="plavisat"] .overview .left { align-self: start; }
+[data-theme="plavisat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plavisat"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="plavisat"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="plavisat"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="plavisat"] body { background: linear-gradient(180deg, #272a66 0, #2a1c36 260px, #0f1230 520px); background-color: #0f1230; background-attachment: fixed; }
+[data-theme="plavisat"] .big .value, [data-theme="plavisat"] .detail .price { font-weight: 400; }
+[data-theme="plavisat"] .chart .line { stroke-width: 1.5; }
+[data-theme="plavisat"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="plavisat"][data-scheme="light"] { color-scheme: light; --back: #f1f1f3; --card: #fbfbfb; --head: #eeeef0; --edge: #d0d0d7; --alt: #f5f5f5; --text1: #232542; --text2: #56586e; --faint: #868797; --up: #15803d; --down: #c81e1e; --accent: #5f62e7; --hot: #e5e6f8; --tip: #232542; --tipfg: #f1f1f3; --accentfg: #ffffff; }
+[data-theme="plavisat"][data-scheme="light"] body { background: linear-gradient(180deg, #c9caf2 0, #f1e0e2 260px, #f1f1f3 520px); background-color: #f1f1f3; background-attachment: fixed; }

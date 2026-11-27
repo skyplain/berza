@@ -1,0 +1,17 @@
+/* tema domine (Dominoes): generisana, tools/teme.py */
+:root[data-theme="domine"] { color-scheme: light; --back: #e9e9e9; --card: #f8f8f8; --head: #eaeaeb; --edge: #c7c7c8; --alt: #f1f1f1; --text1: #14161a; --text2: #494b4e; --faint: #7a7b7d; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #d8d8d8; --tip: #14161a; --tipfg: #e9e9e9; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="domine"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="domine"] .overview .left { align-self: start; }
+[data-theme="domine"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="domine"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="domine"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="domine"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="domine"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="domine"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="domine"] body { background: radial-gradient(rgba(17,17,17,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #e9e9e9; background-attachment: fixed; }
+[data-theme="domine"] .big .value, [data-theme="domine"] .detail .price { font-weight: 700; }
+[data-theme="domine"] .chart .line { stroke-width: 2.5; }
+[data-theme="domine"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="domine"][data-scheme="dark"] { color-scheme: dark; --back: #232427; --card: #2e2f32; --head: #393a3d; --edge: #424245; --alt: #333437; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #868789; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3d; --tip: #e2e2e4; --tipfg: #232427; --accentfg: #111111; }
+[data-theme="domine"][data-scheme="dark"] body { background: radial-gradient(rgba(128,128,128,0.18) 2px, transparent 2.5px) 0 0 / 14px 14px; background-color: #232427; background-attachment: fixed; }

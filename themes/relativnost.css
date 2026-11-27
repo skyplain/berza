@@ -1,0 +1,18 @@
+/* tema relativnost (Relativity): generisana, tools/teme.py */
+:root[data-theme="relativnost"] { color-scheme: dark; --back: #050a18; --card: #121624; --head: #1e2331; --edge: #282e3b; --alt: #181c2a; --text1: #e2eef5; --text2: #abb5be; --faint: #78818b; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #112a40; --tip: #e2eef5; --tipfg: #050a18; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="relativnost"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="relativnost"] .overview .left { align-self: start; }
+[data-theme="relativnost"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="relativnost"] button { border-radius: 999px; }
+[data-theme="relativnost"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="relativnost"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="relativnost"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="relativnost"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="relativnost"] body { background: repeating-radial-gradient(ellipse 120% 60% at 50% 50%, transparent 0 22px, rgba(14,165,233,0.12) 22px 23px); background-color: #050a18; background-attachment: fixed; }
+[data-theme="relativnost"] .big .value, [data-theme="relativnost"] .detail .price { font-weight: 400; }
+[data-theme="relativnost"] .chart .line { stroke-width: 2; }
+[data-theme="relativnost"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="relativnost"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eceef0; --edge: #cdd1d5; --alt: #f3f4f5; --text1: #143141; --text2: #4b616d; --faint: #7e8d95; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #d9ebf3; --tip: #143141; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="relativnost"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="relativnost"][data-scheme="light"] body { background: repeating-radial-gradient(ellipse 120% 60% at 50% 50%, transparent 0 22px, rgba(12,140,197,0.12) 22px 23px); background-color: #f0f0f1; background-attachment: fixed; }

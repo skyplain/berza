@@ -1,0 +1,14 @@
+/* tema magnolija (Magnolia): generisana, tools/teme.py */
+:root[data-theme="magnolija"] { color-scheme: light; --back: #fff6fa; --card: #fffcfe; --head: #f3eef1; --edge: #dfd3d9; --alt: #f9f5f8; --text1: #391a2c; --text2: #6a5160; --faint: #98848f; --up: #15803d; --down: #c81e1e; --accent: #db2777; --hot: #fadeeb; --tip: #391a2c; --tipfg: #fff6fa; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 8px; }
+[data-theme="magnolija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="magnolija"] .overview .left { align-self: start; }
+[data-theme="magnolija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="magnolija"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="magnolija"] .bar h1 { font-size: 24px; }
+[data-theme="magnolija"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="magnolija"] .big .value, [data-theme="magnolija"] .detail .price { font-weight: 900; }
+[data-theme="magnolija"] .chart .line { stroke-width: 2.5; }
+[data-theme="magnolija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="magnolija"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #3a3a3e; --edge: #444347; --alt: #343439; --text1: #f2e4ec; --text2: #beb4bb; --faint: #8f888e; --up: #4ade80; --down: #f87171; --accent: #df4087; --hot: #47313f; --tip: #f2e4ec; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="magnolija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 8px 8px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

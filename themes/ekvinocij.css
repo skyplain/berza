@@ -1,0 +1,16 @@
+/* tema ekvinocij: generisana (paleta + oblik 0/1/4/3) */
+:root[data-theme="ekvinocij"] { color-scheme: light; --back: #f3f1ff; --card: #fdfcff; --head: #f0eff4; --edge: #d2d0e2; --alt: #f6f5fa; --text1: #24204a; --text2: #5e5b7d; --faint: #8c88a4; --up: #15803d; --down: #c81e1e; --accent: #5b4cdb; --hot: #e6e3fa; --tip: #24204a; --tipfg: #f3f1ff; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 4px; }
+[data-theme="ekvinocij"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ekvinocij"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="ekvinocij"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ekvinocij"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="ekvinocij"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="ekvinocij"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="ekvinocij"] body { background: repeating-linear-gradient(45deg, rgba(36,32,74,0.03) 0 12px, transparent 12px 24px); background-color: #f3f1ff; background-attachment: fixed; }
+[data-theme="ekvinocij"] .big .value, [data-theme="ekvinocij"] .detail .price { font-weight: 200; }
+[data-theme="ekvinocij"] .chart .line { stroke-width: 3; }
+[data-theme="ekvinocij"] .chart .area { opacity: 0.06; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="ekvinocij"][data-scheme="dark"] { color-scheme: dark; --back: #0d0b14; --card: #070708; --head: #0f0e11; --edge: #23212e; --alt: #0b0a0d; --text1: #c7c7fd; --text2: #8885a9; --faint: #66637f; --up: #4ade80; --down: #f87171; --accent: #5b4cdb; --hot: #151222; --tip: #c7c7fd; --tipfg: #0d0b14; --accentfg: #ffffff; }
+[data-theme="ekvinocij"][data-scheme="dark"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="ekvinocij"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(199,199,253,0.03) 0 12px, transparent 12px 24px); background-color: #0d0b14; background-attachment: fixed; }

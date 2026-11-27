@@ -1,0 +1,17 @@
+/* tema svemirski teleskop (Space telescope): generisana, tools/teme.py */
+:root[data-theme="svemirskiteleskop"] { color-scheme: dark; --back: #05070d; --card: #121319; --head: #202025; --edge: #2b2c2f; --alt: #191a1f; --text1: #f3efe3; --text2: #b8b5ae; --faint: #81807c; --up: #4ade80; --down: #f87171; --accent: #eab308; --hot: #302917; --tip: #f3efe3; --tipfg: #05070d; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 10px; }
+[data-theme="svemirskiteleskop"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svemirskiteleskop"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="svemirskiteleskop"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="svemirskiteleskop"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="svemirskiteleskop"] .bar button { background: transparent; color: var(--back); border-color: rgba(5,7,13,0.35); box-shadow: none; }
+[data-theme="svemirskiteleskop"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="svemirskiteleskop"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="svemirskiteleskop"] body { background: linear-gradient(30deg, rgba(234,179,8,0.14) 12%, transparent 12.5% 87%, rgba(234,179,8,0.14) 87.5%) 0 0 / 40px 70px, linear-gradient(150deg, rgba(234,179,8,0.14) 12%, transparent 12.5% 87%, rgba(234,179,8,0.14) 87.5%) 0 0 / 40px 70px, linear-gradient(30deg, rgba(234,179,8,0.14) 12%, transparent 12.5% 87%, rgba(234,179,8,0.14) 87.5%) 20px 35px / 40px 70px, linear-gradient(150deg, rgba(234,179,8,0.14) 12%, transparent 12.5% 87%, rgba(234,179,8,0.14) 87.5%) 20px 35px / 40px 70px; background-color: #05070d; background-attachment: fixed; }
+[data-theme="svemirskiteleskop"] .big .value, [data-theme="svemirskiteleskop"] .detail .price { font-weight: 200; }
+[data-theme="svemirskiteleskop"] .chart .line { stroke-width: 3; }
+[data-theme="svemirskiteleskop"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="svemirskiteleskop"][data-scheme="light"] { color-scheme: light; --back: #f0f0f0; --card: #fafafa; --head: #efeeec; --edge: #d3d2cd; --alt: #f4f4f3; --text1: #3b3318; --text2: #68624e; --faint: #8b8778; --up: #15803d; --down: #c81e1e; --accent: #9a7706; --hot: #ede8d8; --tip: #3b3318; --tipfg: #f0f0f0; --accentfg: #111111; }
+[data-theme="svemirskiteleskop"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,240,240,0.35); box-shadow: none; }
+[data-theme="svemirskiteleskop"][data-scheme="light"] body { background: linear-gradient(30deg, rgba(154,119,6,0.14) 12%, transparent 12.5% 87%, rgba(154,119,6,0.14) 87.5%) 0 0 / 40px 70px, linear-gradient(150deg, rgba(154,119,6,0.14) 12%, transparent 12.5% 87%, rgba(154,119,6,0.14) 87.5%) 0 0 / 40px 70px, linear-gradient(30deg, rgba(154,119,6,0.14) 12%, transparent 12.5% 87%, rgba(154,119,6,0.14) 87.5%) 20px 35px / 40px 70px, linear-gradient(150deg, rgba(154,119,6,0.14) 12%, transparent 12.5% 87%, rgba(154,119,6,0.14) 87.5%) 20px 35px / 40px 70px; background-color: #f0f0f0; background-attachment: fixed; }

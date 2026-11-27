@@ -1,0 +1,22 @@
+/* tema poker (Poker): generisana, tools/teme.py */
+:root[data-theme="poker"] { color-scheme: dark; --back: #07361d; --card: #134028; --head: #1f4a34; --edge: #2a533d; --alt: #19452e; --text1: #e2eee8; --text2: #abc0b5; --faint: #799687; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #134e2d; --tip: #e2eee8; --tipfg: #07361d; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="poker"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="poker"] .overview .left { align-self: start; }
+[data-theme="poker"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="poker"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="poker"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="poker"] .bar button { background: transparent; color: var(--back); border-color: rgba(7,54,29,0.35); box-shadow: none; }
+[data-theme="poker"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="poker"] body { background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.35) 100%), repeating-radial-gradient(circle at 37% 53%, rgba(226,238,232,0.03) 0 1px, transparent 1px 3px); background-color: #07361d; background-attachment: fixed; }
+[data-theme="poker"] :is(h2, h3)::before { content: "♠ "; color: #e2eee8; }
+[data-theme="poker"] .block:nth-child(4n+2) h2::before { content: "♥ "; color: #dc2626; }
+[data-theme="poker"] .block:nth-child(4n+3) h2::before { content: "♦ "; color: #dc2626; }
+[data-theme="poker"] .block:nth-child(4n) h2::before { content: "♣ "; }
+[data-theme="poker"] .big .value, [data-theme="poker"] .detail .price { font-weight: 900; }
+[data-theme="poker"] .chart .line { stroke-width: 1.5; }
+[data-theme="poker"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="poker"][data-scheme="light"] { color-scheme: light; --back: #f0f3f1; --card: #fafbfb; --head: #ecefee; --edge: #cdd4d0; --alt: #f3f5f5; --text1: #153024; --text2: #4c6157; --faint: #7e8e86; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #daede1; --tip: #153024; --tipfg: #f0f3f1; --accentfg: #111111; }
+[data-theme="poker"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,243,241,0.35); box-shadow: none; }
+[data-theme="poker"][data-scheme="light"] body { background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.35) 100%), repeating-radial-gradient(circle at 37% 53%, rgba(21,48,36,0.03) 0 1px, transparent 1px 3px); background-color: #f0f3f1; background-attachment: fixed; }
+[data-theme="poker"][data-scheme="light"] :is(h2, h3)::before { content: "♠ "; color: #153024; }

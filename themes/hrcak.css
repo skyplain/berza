@@ -1,0 +1,14 @@
+/* tema hrčak (Hamster): generisana, tools/teme.py */
+:root[data-theme="hrcak"] { color-scheme: light; --back: #fff8ee; --card: #fffdfa; --head: #f3f1ec; --edge: #e0d8cc; --alt: #f9f7f3; --text1: #3d2f19; --text2: #6e614e; --faint: #9a8f7f; --up: #15803d; --down: #c81e1e; --accent: #be7a08; --hot: #f6ebd8; --tip: #3d2f19; --tipfg: #fff8ee; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="hrcak"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="hrcak"] .overview .left { align-self: start; }
+[data-theme="hrcak"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hrcak"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="hrcak"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="hrcak"] .bar h1 { font-weight: 800; }
+[data-theme="hrcak"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="hrcak"] .big .value, [data-theme="hrcak"] .detail .price { font-weight: 200; }
+[data-theme="hrcak"] .chart .line { stroke-width: 3; }
+[data-theme="hrcak"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="hrcak"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f4ede3; --text2: #c0bbb4; --faint: #908d88; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #4a3f2c; --tip: #f4ede3; --tipfg: #232426; --accentfg: #111111; }

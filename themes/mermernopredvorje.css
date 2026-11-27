@@ -1,0 +1,12 @@
+/* tema mermerno predvorje (Marble lobby): generisana, tools/teme.py */
+:root[data-theme="mermernopredvorje"] { color-scheme: light; --back: #f7f6f3; --card: #fdfcfb; --head: #f0efef; --edge: #d6d6d3; --alt: #f7f6f5; --text1: #2a2b2e; --text2: #5d5e5f; --faint: #8c8c8d; --up: #15803d; --down: #c81e1e; --accent: #8b8680; --hot: #edebea; --tip: #2a2b2e; --tipfg: #f7f6f3; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 4px; }
+[data-theme="mermernopredvorje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mermernopredvorje"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="mermernopredvorje"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="mermernopredvorje"] body { background: linear-gradient(115deg, transparent 40%, rgba(42,43,46,0.06) 41%, transparent 43%) 0 0 / 300px 300px, linear-gradient(35deg, transparent 60%, rgba(42,43,46,0.05) 61%, transparent 62.5%) 0 0 / 420px 420px; background-color: #f7f6f3; background-attachment: fixed; }
+[data-theme="mermernopredvorje"] .big .value, [data-theme="mermernopredvorje"] .detail .price { font-weight: 200; }
+[data-theme="mermernopredvorje"] .chart .line { stroke-width: 1.5; }
+[data-theme="mermernopredvorje"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mermernopredvorje"][data-scheme="dark"] { color-scheme: dark; --back: #232327; --card: #2e2e32; --head: #39393d; --edge: #434347; --alt: #343438; --text1: #ecebed; --text2: #bab9bc; --faint: #8c8b8e; --up: #4ade80; --down: #f87171; --accent: #8b8680; --hot: #3b3a3d; --tip: #ecebed; --tipfg: #232327; --accentfg: #111111; }
+[data-theme="mermernopredvorje"][data-scheme="dark"] body { background: linear-gradient(115deg, transparent 40%, rgba(236,235,237,0.06) 41%, transparent 43%) 0 0 / 300px 300px, linear-gradient(35deg, transparent 60%, rgba(236,235,237,0.05) 61%, transparent 62.5%) 0 0 / 420px 420px; background-color: #232327; background-attachment: fixed; }

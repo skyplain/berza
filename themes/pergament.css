@@ -1,0 +1,24 @@
+/* tema pergament: stari rukopis: požuteli pergament, inicijali, mastilo */
+:root[data-theme="pergament"] { color-scheme: light; --back: #e9dcb8; --card: #f1e6c6; --head: #e2d2a6; --edge: #b89c62; --alt: transparent; --text1: #2c1d0e; --text2: #4f3a1f; --faint: #866b42; --up: #3f6b2a; --down: #8b1e1e; --accent: #8b1e1e; --hot: #e0cf9f; --tip: #2c1d0e; --tipfg: #f1e6c6; --accentfg: #f1e6c6; --font: "Palatino","Book Antiqua",Georgia, "Times New Roman", serif; --radius: 0; --h-color: #8b1e1e; --h-transform: none; --h-spacing: .03em; --h-size: 19px; --h-weight: 700; --h-font: "Luminari","Apple Chancery",Palatino,serif; --big-font: inherit; --big-weight: 400; }
+[data-theme="pergament"] body { background:radial-gradient(ellipse at center,#f2e7c7 0,#e2d1a3 70%,#c9b07a 100%) fixed #e9dcb8 }
+[data-theme="pergament"] .bar { border-bottom:3px double #8b1e1e }
+[data-theme="pergament"] .bar h1 { font-family:"Luminari","Apple Chancery",Palatino,serif;font-size:32px;color:#2c1d0e }
+[data-theme="pergament"] .bar h1::first-letter { color:#8b1e1e;font-size:44px }
+[data-theme="pergament"] h2::first-letter,[data-theme="pergament"] h3::first-letter { font-size:1.4em }
+[data-theme="pergament"] button { background:transparent;border-color:#8b6b3a }
+[data-theme="pergament"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="pergament"] tbody tr { border-bottom:1px solid #d3bf8c }
+[data-theme="pergament"] .chart .line { stroke:#2c1d0e!important;stroke-width:1.5 }
+[data-theme="pergament"] .chart .area { fill:#2c1d0e!important;opacity:.07 }
+[data-theme="pergament"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="pergament"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="pergament"][data-scheme="dark"] { color-scheme: dark; --back: #241a00; --card: #1c1400; --head: #2d2100; --edge: #614704; --text1: #e6d2bf; --text2: #c4ab8d; --faint: #8f744b; --up: #4ade80; --down: #f87171; --accent: #b74842; --hot: #2f2300; --tip: #e6d2bf; --tipfg: #1c1400; --accentfg: #ffffff; --h-color: #b74842; }
+[data-theme="pergament"][data-scheme="dark"] body { background:radial-gradient(ellipse at center,#1b1300 0,#2e2100 70%,#4c3800 100%) fixed #241a00 }
+[data-theme="pergament"][data-scheme="dark"] .bar { border-bottom:3px double #b74842 }
+[data-theme="pergament"][data-scheme="dark"] .bar h1 { font-family:"Luminari","Apple Chancery",Palatino,serif;font-size:32px;color:#e6d2bf }
+[data-theme="pergament"][data-scheme="dark"] .bar h1::first-letter { color:#b74842;font-size:44px }
+[data-theme="pergament"][data-scheme="dark"] button { background:transparent;border-color:#927240 }
+[data-theme="pergament"][data-scheme="dark"] tbody tr { border-bottom:1px solid #3d2e00 }
+[data-theme="pergament"][data-scheme="dark"] .chart .line { stroke:#e6d2bf!important;stroke-width:1.5 }
+[data-theme="pergament"][data-scheme="dark"] .chart .area { fill:#e6d2bf!important;opacity:.07 }

@@ -1,0 +1,18 @@
+/* tema veslanje (Rowing): generisana, tools/teme.py */
+:root[data-theme="veslanje"] { color-scheme: light; --back: #f0f9fb; --card: #fafdfe; --head: #ecf0f2; --edge: #cdd8db; --alt: #f3f7f8; --text1: #142831; --text2: #4b5c64; --faint: #7e8c92; --up: #15803d; --down: #c81e1e; --accent: #0e7490; --hot: #d9eaef; --tip: #142831; --tipfg: #f0f9fb; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="veslanje"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="veslanje"] .overview .left { align-self: start; }
+[data-theme="veslanje"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="veslanje"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="veslanje"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="veslanje"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,249,251,0.35); box-shadow: none; }
+[data-theme="veslanje"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="veslanje"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(14,116,144,0.14) 9px 10px, transparent 11px 16px, rgba(14,116,144,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f0f9fb; background-attachment: fixed; }
+[data-theme="veslanje"] .big .value, [data-theme="veslanje"] .detail .price { font-weight: 700; }
+[data-theme="veslanje"] .chart .line { stroke-width: 2.5; }
+[data-theme="veslanje"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="veslanje"][data-scheme="dark"] { color-scheme: dark; --back: #222428; --card: #2d2f33; --head: #383a3e; --edge: #414448; --alt: #323539; --text1: #e2eaee; --text2: #b2b8bc; --faint: #868b8f; --up: #4ade80; --down: #f87171; --accent: #3389a1; --hot: #2e3c42; --tip: #e2eaee; --tipfg: #222428; --accentfg: #111111; }
+[data-theme="veslanje"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 16px 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="veslanje"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,36,40,0.35); box-shadow: none; }
+[data-theme="veslanje"][data-scheme="dark"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(51,137,161,0.14) 9px 10px, transparent 11px 16px, rgba(51,137,161,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #222428; background-attachment: fixed; }

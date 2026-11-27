@@ -1,0 +1,21 @@
+/* tema tropik: sočno zelena i narandžasta, lišće u pozadini, veselo */
+:root[data-theme="tropik"] { color-scheme: light; --back: #effaf1; --card: #fff; --head: #e0f5e4; --edge: #bfe5c7; --alt: #f6fcf7; --text1: #103a22; --text2: #3c6b4c; --faint: #7da58a; --up: #12a150; --down: #ff5a36; --accent: #ff8a00; --hot: #fff1dc; --tip: #103a22; --tipfg: #fff; --accentfg: #fff; --font: "Avenir Next Rounded","Avenir Next",system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 14px; --panel-bg: var(--card); --panel-border: 2px solid var(--edge); --panel-shadow: none; --h-color: #12a150; --h-transform: none; --h-spacing: 0; --h-size: 16px; --h-weight: 800; --h-font: inherit; --big-font: inherit; --big-weight: 800; }
+[data-theme="tropik"] body { background:radial-gradient(600px 400px at 100% 0,rgba(18,161,80,.18),transparent 70%),radial-gradient(500px 400px at 0 100%,rgba(255,138,0,.15),transparent 70%) fixed #effaf1 }
+[data-theme="tropik"] .bar { border:0 }
+[data-theme="tropik"] .bar h1 { font-size:24px;font-weight:900;color:#12a150 }
+[data-theme="tropik"] .bar h1::before { content:"☘ ";color:#ff8a00 }
+[data-theme="tropik"] button { background:#ff8a00;border:0;color:#fff;font-weight:700 }
+[data-theme="tropik"] button:hover { background:#12a150 }
+[data-theme="tropik"] tbody tr:nth-child(even) { background:transparent }
+[data-theme="tropik"] .chart .line { stroke-width:3;stroke-linecap:round }
+[data-theme="tropik"] :is(.overview .left, .block, .detail, .list) { background: var(--panel-bg); border: var(--panel-border); box-shadow: var(--panel-shadow); border-radius: var(--radius); padding: 14px 16px; }
+[data-theme="tropik"] .overview .left { align-self: start; }
+[data-theme="tropik"] :is(h2, h3, .big .label) { color: var(--h-color); text-transform: var(--h-transform); letter-spacing: var(--h-spacing); font-size: var(--h-size); font-weight: var(--h-weight); font-family: var(--h-font); }
+[data-theme="tropik"] :is(.big .value, .detail .price) { font-family: var(--big-font); font-weight: var(--big-weight); }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="tropik"][data-scheme="dark"] { color-scheme: dark; --back: #060c07; --card: #060606; --head: #051308; --edge: #03250f; --alt: #060907; --text1: #a1cdaf; --text2: #689877; --faint: #466c54; --up: #4ade80; --down: #f87171; --accent: #ff8a00; --hot: #140a00; --tip: #a1cdaf; --tipfg: #060606; --accentfg: #111111; --h-color: #0a7639; }
+[data-theme="tropik"][data-scheme="dark"] body { background:radial-gradient(600px 400px at 100% 0,rgba(10,118,57,.18),transparent 70%),radial-gradient(500px 400px at 0 100%,rgba(255,138,0,.15),transparent 70%) fixed #060c07 }
+[data-theme="tropik"][data-scheme="dark"] .bar h1 { font-size:24px;font-weight:900;color:#0a7639 }
+[data-theme="tropik"][data-scheme="dark"] .bar h1::before { content:"☘ ";color:#ff8a00 }
+[data-theme="tropik"][data-scheme="dark"] button { background:#ff8a00;border:0;color:#060606;font-weight:700 }
+[data-theme="tropik"][data-scheme="dark"] button:hover { background:#0a7639 }

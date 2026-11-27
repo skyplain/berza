@@ -1,0 +1,16 @@
+/* tema retro web (Retro web): generisana, tools/teme.py */
+:root[data-theme="retroweb"] { color-scheme: light; --back: #c0c0c0; --card: #ececec; --head: #dfdfe2; --edge: #a4a4ac; --alt: #e5e5e7; --text1: #111342; --text2: #3d3e62; --faint: #65667e; --up: #116d34; --down: #b81c1c; --accent: #0000ee; --hot: #cbcbec; --tip: #111342; --tipfg: #c0c0c0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 8px; }
+[data-theme="retroweb"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="retroweb"] .overview .left { align-self: start; }
+[data-theme="retroweb"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="retroweb"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="retroweb"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="retroweb"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="retroweb"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 8px; }
+[data-theme="retroweb"] button, [data-theme="retroweb"] :is(.overview .left, .block, .detail) { border: 0; box-shadow: inset -1px -1px rgba(0,0,0,.45), inset 1px 1px rgba(255,255,255,.7), inset -2px -2px rgba(0,0,0,.2), inset 2px 2px rgba(255,255,255,.35); border-radius: 0; }
+[data-theme="retroweb"] :is(.overview .left, .block, .detail) { padding: 12px 14px; background: var(--card); }
+[data-theme="retroweb"] .big .value, [data-theme="retroweb"] .detail .price { font-weight: 700; }
+[data-theme="retroweb"] .chart .line { stroke-width: 2.5; }
+[data-theme="retroweb"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="retroweb"][data-scheme="dark"] { color-scheme: dark; --back: #1d1e22; --card: #28292d; --head: #333439; --edge: #3c3d44; --alt: #2e2e33; --text1: #e0e0f5; --text2: #afb0c0; --faint: #828390; --up: #4ade80; --down: #f87171; --accent: #6060ea; --hot: #303147; --tip: #e0e0f5; --tipfg: #1d1e22; --accentfg: #ffffff; }

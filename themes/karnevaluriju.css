@@ -1,0 +1,17 @@
+/* tema karneval u riju (Carnival in Rio): generisana, tools/teme.py */
+:root[data-theme="karnevaluriju"] { color-scheme: light; --back: #fcf9e4; --card: #fefdf7; --head: #f0f1ea; --edge: #d7d9c5; --alt: #f7f7f1; --text1: #153024; --text2: #4f6254; --faint: #849080; --up: #15803d; --down: #c81e1e; --accent: #149644; --hot: #ddefde; --tip: #153024; --tipfg: #fcf9e4; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="karnevaluriju"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="karnevaluriju"] .overview .left { align-self: start; }
+[data-theme="karnevaluriju"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="karnevaluriju"] button { border-radius: 999px; }
+[data-theme="karnevaluriju"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="karnevaluriju"] .bar h1 { font-size: 24px; }
+[data-theme="karnevaluriju"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="karnevaluriju"] body { background: radial-gradient(rgba(20,150,68,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(74,22,163,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(163,74,22,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px, radial-gradient(ellipse at 50% 40%, rgba(20,150,68,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(74,22,163,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #fcf9e4; background-attachment: fixed; }
+[data-theme="karnevaluriju"] .big .value, [data-theme="karnevaluriju"] .detail .price { font-weight: 400; }
+[data-theme="karnevaluriju"] .chart .line { stroke-width: 3; }
+[data-theme="karnevaluriju"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="karnevaluriju"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #393a3b; --edge: #424444; --alt: #333536; --text1: #e2eee8; --text2: #b2bcb7; --faint: #868d8a; --up: #4ade80; --down: #f87171; --accent: #16a34a; --hot: #2b3f34; --tip: #e2eee8; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="karnevaluriju"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="karnevaluriju"][data-scheme="dark"] body { background: radial-gradient(rgba(22,163,74,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(74,22,163,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(163,74,22,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px, radial-gradient(ellipse at 50% 40%, rgba(22,163,74,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(74,22,163,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #232425; background-attachment: fixed; }

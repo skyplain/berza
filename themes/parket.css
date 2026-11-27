@@ -1,0 +1,17 @@
+/* tema parket (Parquet): generisana, tools/teme.py */
+:root[data-theme="parket"] { color-scheme: light; --back: #efe2d2; --card: #faf6f2; --head: #eee9e5; --edge: #d0c3b5; --alt: #f4f0ec; --text1: #2d231f; --text2: #5e534c; --faint: #8a7f75; --up: #15803d; --down: #c81e1e; --accent: #9a5b2e; --hot: #ede0d7; --tip: #2d231f; --tipfg: #efe2d2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="parket"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="parket"] .overview .left { align-self: start; }
+[data-theme="parket"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="parket"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="parket"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="parket"] .bar button { background: transparent; color: var(--back); border-color: rgba(239,226,210,0.35); box-shadow: none; }
+[data-theme="parket"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="parket"] body { background: repeating-linear-gradient(45deg, rgba(154,91,46,0.12) 0 10px, rgba(154,91,46,0.04) 10px 20px) 0 0 / 40px 40px, repeating-linear-gradient(-45deg, rgba(154,91,46,0.1) 0 10px, rgba(154,91,46,0.03) 10px 20px) 20px 20px / 40px 40px; background-color: #efe2d2; background-attachment: fixed; }
+[data-theme="parket"] .big .value, [data-theme="parket"] .detail .price { font-weight: 700; }
+[data-theme="parket"] .chart .line { stroke-width: 3; }
+[data-theme="parket"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="parket"][data-scheme="dark"] { color-scheme: dark; --back: #222123; --card: #2d2c2e; --head: #393739; --edge: #424142; --alt: #333234; --text1: #ede8e6; --text2: #bab6b5; --faint: #8c8888; --up: #4ade80; --down: #f87171; --accent: #a2683f; --hot: #3d3430; --tip: #ede8e6; --tipfg: #222123; --accentfg: #ffffff; }
+[data-theme="parket"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,33,35,0.35); box-shadow: none; }
+[data-theme="parket"][data-scheme="dark"] body { background: repeating-linear-gradient(45deg, rgba(162,104,63,0.12) 0 10px, rgba(162,104,63,0.04) 10px 20px) 0 0 / 40px 40px, repeating-linear-gradient(-45deg, rgba(162,104,63,0.1) 0 10px, rgba(162,104,63,0.03) 10px 20px) 20px 20px / 40px 40px; background-color: #222123; background-attachment: fixed; }

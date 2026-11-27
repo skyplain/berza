@@ -1,0 +1,21 @@
+/* tema art deko (Art Deco): generisana, tools/teme.py */
+:root[data-theme="artdeko"] { color-scheme: dark; --back: #111418; --card: #1d2024; --head: #2a2c30; --edge: #353739; --alt: #23262a; --text1: #f1eee7; --text2: #b9b8b3; --faint: #858584; --up: #4ade80; --down: #f87171; --accent: #d4af37; --hot: #373427; --tip: #f1eee7; --tipfg: #111418; --accentfg: #111111; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 0px; }
+[data-theme="artdeko"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="artdeko"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="artdeko"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="artdeko"] .bar h1 { font-size: 24px; }
+[data-theme="artdeko"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="artdeko"] body { background: repeating-linear-gradient(90deg, rgba(212,175,55,0.05) 0 1px, transparent 1px 26px); background-color: #111418; background-attachment: fixed; }
+[data-theme="artdeko"] :is(.overview .left, .block, .detail, .list) { border: 1px solid #d4af37; outline: 1px solid rgba(212,175,55,0.5); outline-offset: 4px; }
+[data-theme="artdeko"] .bar h1::before { content: "◆ "; color: #d4af37; }
+[data-theme="artdeko"] .bar h1::after { content: " ◆"; color: #d4af37; }
+[data-theme="artdeko"] :is(h2, h3) { letter-spacing: .3em; text-transform: uppercase; }
+[data-theme="artdeko"] .big .value, [data-theme="artdeko"] .detail .price { font-weight: 400; }
+[data-theme="artdeko"] .chart .line { stroke-width: 2; }
+[data-theme="artdeko"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="artdeko"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefee; --edge: #d3d2d0; --alt: #f5f5f4; --text1: #373221; --text2: #666255; --faint: #89877d; --up: #15803d; --down: #c81e1e; --accent: #987d28; --hot: #ede9dd; --tip: #373221; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="artdeko"][data-scheme="light"] body { background: repeating-linear-gradient(90deg, rgba(152,125,40,0.05) 0 1px, transparent 1px 26px); background-color: #f1f1f1; background-attachment: fixed; }
+[data-theme="artdeko"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { border: 1px solid #987d28; outline: 1px solid rgba(152,125,40,0.5); outline-offset: 4px; }
+[data-theme="artdeko"][data-scheme="light"] .bar h1::before { content: "◆ "; color: #987d28; }
+[data-theme="artdeko"][data-scheme="light"] .bar h1::after { content: " ◆"; color: #987d28; }

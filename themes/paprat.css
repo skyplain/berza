@@ -1,0 +1,16 @@
+/* tema paprat: generisana (paleta + oblik 2/1/0/1) */
+:root[data-theme="paprat"] { color-scheme: dark; --back: #0f1d12; --card: #16291a; --head: #223526; --edge: #313f34; --alt: #1c2f20; --text1: #e2f3e5; --text2: #a7b7aa; --faint: #78887c; --up: #4ade80; --down: #f87171; --accent: #4caf50; --hot: #1e3c22; --tip: #e2f3e5; --tipfg: #0f1d12; --accentfg: #ffffff; --font: "Gill Sans", Optima, Candara, sans-serif; --radius: 6px; }
+[data-theme="paprat"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 6px; padding: 14px 16px; }
+[data-theme="paprat"] .overview .left { align-self: start; }
+[data-theme="paprat"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="paprat"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="paprat"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="paprat"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="paprat"] body { background: radial-gradient(#243227 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #0f1d12; background-attachment: fixed; }
+[data-theme="paprat"] .big .value, [data-theme="paprat"] .detail .price { font-weight: 700; }
+[data-theme="paprat"] .chart .line { stroke-width: 1.5; }
+[data-theme="paprat"] .chart .area { opacity: 0.18; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="paprat"][data-scheme="light"] { color-scheme: light; --back: #d3e6d6; --card: #c1d9c4; --head: #b2c9b6; --edge: #a8b9ab; --alt: #b9d1bd; --text1: #07130a; --text2: #334036; --faint: #5b6b5f; --up: #15803d; --down: #c81e1e; --accent: #1b8626; --hot: #a4c7a7; --tip: #07130a; --tipfg: #d3e6d6; --accentfg: #ffffff; }
+[data-theme="paprat"][data-scheme="light"] .bar button { background: rgba(6,6,6,0.18); border-color: rgba(6,6,6,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="paprat"][data-scheme="light"] body { background: radial-gradient(#b8c9bb 1px, transparent 1.5px) 0 0 / 22px 22px; background-color: #d3e6d6; background-attachment: fixed; }

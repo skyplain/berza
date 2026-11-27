@@ -1,0 +1,17 @@
+/* tema podmornica (Submarine): generisana, tools/teme.py */
+:root[data-theme="podmornica"] { color-scheme: dark; --back: #0b1c2c; --card: #172737; --head: #243341; --edge: #303e49; --alt: #1e2d3c; --text1: #f4f1e4; --text2: #babcb6; --faint: #848b8c; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #373e32; --tip: #f4f1e4; --tipfg: #0b1c2c; --accentfg: #111111; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 10px; }
+[data-theme="podmornica"] :is(.overview .left, .block, .detail, .list) { background: rgba(23,39,55,0.6); border: 1px solid rgba(244,241,228,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="podmornica"] .overview .left { align-self: start; }
+[data-theme="podmornica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="podmornica"] button { border-radius: 999px; background: transparent; }
+[data-theme="podmornica"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="podmornica"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="podmornica"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="podmornica"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(250,204,21,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(250,204,21,0.14), transparent 15%); background-color: #0b1c2c; background-attachment: fixed; }
+[data-theme="podmornica"] .big .value, [data-theme="podmornica"] .detail .price { font-weight: 200; }
+[data-theme="podmornica"] .chart .line { stroke-width: 2; }
+[data-theme="podmornica"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="podmornica"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #efefee; --edge: #d4d3d0; --alt: #f4f5f4; --text1: #3e381b; --text2: #6a6651; --faint: #8c8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ece9da; --tip: #3e381b; --tipfg: #f0f1f2; --accentfg: #111111; }
+[data-theme="podmornica"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(250,251,251,0.6); border: 1px solid rgba(62,56,27,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="podmornica"][data-scheme="light"] body { background: repeating-radial-gradient(circle at 85% 20%, transparent 0 58px, rgba(152,123,13,0.16) 58px 59px), conic-gradient(from 0deg at 85% 20%, rgba(152,123,13,0.14), transparent 15%); background-color: #f0f1f2; background-attachment: fixed; }

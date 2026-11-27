@@ -1,0 +1,15 @@
+/* tema fintek (Fintech): generisana, tools/teme.py */
+:root[data-theme="fintek"] { color-scheme: light; --back: #f3fbfb; --card: #effaf9; --head: #e2eeed; --edge: #cfdbdb; --alt: #e8f4f3; --text1: #153435; --text2: #4c6666; --faint: #809494; --up: #15803d; --down: #c81e1e; --accent: #119b8d; --hot: #d0edea; --tip: #153435; --tipfg: #f3fbfb; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 4px; }
+[data-theme="fintek"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="fintek"] .overview .left { align-self: start; }
+[data-theme="fintek"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fintek"] button { border-radius: 999px; }
+[data-theme="fintek"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="fintek"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }
+[data-theme="fintek"] .big .value, [data-theme="fintek"] .detail .price { font-weight: 700; }
+[data-theme="fintek"] .chart .line { stroke-width: 2; }
+[data-theme="fintek"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="fintek"][data-scheme="dark"] { color-scheme: dark; --back: #0c1b1e; --card: #182629; --head: #243235; --edge: #2e3d40; --alt: #1e2c2f; --text1: #e2eff0; --text2: #acbabc; --faint: #7b898b; --up: #4ade80; --down: #f87171; --accent: #14b8a6; --hot: #173a3a; --tip: #e2eff0; --tipfg: #0c1b1e; --accentfg: #111111; }
+[data-theme="fintek"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="fintek"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }

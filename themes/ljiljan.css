@@ -1,0 +1,12 @@
+/* tema ljiljan (Lily): generisana, tools/teme.py */
+:root[data-theme="ljiljan"] { color-scheme: light; --back: #fffbf0; --card: #fff9eb; --head: #f3edde; --edge: #e0dace; --alt: #f9f3e5; --text1: #3d2f19; --text2: #6e624f; --faint: #9a9180; --up: #15803d; --down: #c81e1e; --accent: #be7a08; --hot: #f6e7cb; --tip: #3d2f19; --tipfg: #fffbf0; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="ljiljan"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ljiljan"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="ljiljan"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="ljiljan"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="ljiljan"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="ljiljan"] .big .value, [data-theme="ljiljan"] .detail .price { font-weight: 700; }
+[data-theme="ljiljan"] .chart .line { stroke-width: 1.5; }
+[data-theme="ljiljan"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="ljiljan"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444444; --alt: #343536; --text1: #f4ede3; --text2: #c0bbb4; --faint: #908d88; --up: #4ade80; --down: #f87171; --accent: #f59e0b; --hot: #4a3f2c; --tip: #f4ede3; --tipfg: #232426; --accentfg: #111111; }

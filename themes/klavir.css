@@ -1,0 +1,16 @@
+/* tema klavir (Piano): generisana, tools/teme.py */
+:root[data-theme="klavir"] { color-scheme: light; --back: #ededed; --card: #fafafa; --head: #ececed; --edge: #cacbcb; --alt: #f3f3f3; --text1: #14161a; --text2: #4a4c4f; --faint: #7c7d7f; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #d9d9d9; --tip: #14161a; --tipfg: #ededed; --accentfg: #ffffff; --font: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif; --radius: 10px; }
+[data-theme="klavir"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="klavir"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="klavir"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="klavir"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="klavir"] .bar button { background: transparent; color: var(--back); border-color: rgba(237,237,237,0.35); box-shadow: none; }
+[data-theme="klavir"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="klavir"] .bar { position: relative; }
+[data-theme="klavir"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -22px; height: 22px; background: linear-gradient(90deg, #111111 0 55%, transparent 55%) 15px 0 / 24px 62% repeat-x, #ffffff; }
+[data-theme="klavir"] .big .value, [data-theme="klavir"] .detail .price { font-weight: 700; }
+[data-theme="klavir"] .chart .line { stroke-width: 2.5; }
+[data-theme="klavir"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="klavir"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3e; --edge: #424246; --alt: #333438; --text1: #e2e2e4; --text2: #b2b2b5; --faint: #86878a; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #393a3e; --tip: #e2e2e4; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="klavir"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(35,36,40,0.35); box-shadow: none; }

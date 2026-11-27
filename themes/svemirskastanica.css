@@ -1,0 +1,19 @@
+/* tema svemirska stanica (Space station): generisana, tools/teme.py */
+:root[data-theme="svemirskastanica"] { color-scheme: dark; --back: #0a0f1a; --card: #161b25; --head: #232832; --edge: #2f333d; --alt: #1d212b; --text1: #f3f3f6; --text2: #b9babf; --faint: #83868c; --up: #4ade80; --down: #f87171; --accent: #e2e8f0; --hot: #333841; --tip: #f3f3f6; --tipfg: #0a0f1a; --accentfg: #111111; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 10px; }
+[data-theme="svemirskastanica"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="svemirskastanica"] .overview .left { align-self: start; }
+[data-theme="svemirskastanica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="svemirskastanica"] button { border-radius: 999px; }
+[data-theme="svemirskastanica"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="svemirskastanica"] .bar h1 { font-weight: 800; }
+[data-theme="svemirskastanica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="svemirskastanica"] body { background: linear-gradient(rgba(243,243,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(243,243,246,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #0a0f1a; background-attachment: fixed; }
+[data-theme="svemirskastanica"] :is(.overview .left, .block, .detail, .list) { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+[data-theme="svemirskastanica"] button { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); border-radius: 0; }
+[data-theme="svemirskastanica"] .big .value, [data-theme="svemirskastanica"] .detail .price { font-weight: 400; }
+[data-theme="svemirskastanica"] .chart .line { stroke-width: 2.5; }
+[data-theme="svemirskastanica"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="svemirskastanica"][data-scheme="light"] { color-scheme: light; --back: #f0f1f1; --card: #fafbfb; --head: #eef0f0; --edge: #d3d4d5; --alt: #f4f5f5; --text1: #3a3d42; --text2: #686a6e; --faint: #848689; --up: #15803d; --down: #c81e1e; --accent: #7e8285; --hot: #e9eaea; --tip: #3a3d42; --tipfg: #f0f1f1; --accentfg: #111111; }
+[data-theme="svemirskastanica"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="svemirskastanica"][data-scheme="light"] body { background: linear-gradient(rgba(58,61,66,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(58,61,66,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f0f1f1; background-attachment: fixed; }

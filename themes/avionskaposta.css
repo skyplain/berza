@@ -1,0 +1,14 @@
+/* tema avionska pošta (Airmail): generisana, tools/teme.py */
+:root[data-theme="avionskaposta"] { color-scheme: light; --back: #fbf8ef; --card: #fefdfa; --head: #f2efed; --edge: #dbd4ce; --alt: #f8f6f3; --text1: #35161f; --text2: #664e53; --faint: #948283; --up: #15803d; --down: #c81e1e; --accent: #c8102e; --hot: #f6dcdd; --tip: #35161f; --tipfg: #fbf8ef; --accentfg: #ffffff; --font: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; --radius: 0px; }
+[data-theme="avionskaposta"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="avionskaposta"] .overview .left { align-self: start; }
+[data-theme="avionskaposta"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="avionskaposta"] button { border-radius: 0; }
+[data-theme="avionskaposta"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="avionskaposta"] .bar h1 { font-weight: 800; }
+[data-theme="avionskaposta"] :is(.overview .left, .block, .detail, .list) { border: 6px solid transparent; border-image: repeating-linear-gradient(45deg, #c8102e 0 10px, #ffffff 10px 20px, #1d4ed8 20px 30px, #ffffff 30px 40px) 6; }
+[data-theme="avionskaposta"] .big .value, [data-theme="avionskaposta"] .detail .price { font-weight: 700; }
+[data-theme="avionskaposta"] .chart .line { stroke-width: 2; }
+[data-theme="avionskaposta"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="avionskaposta"][data-scheme="dark"] { color-scheme: dark; --back: #232426; --card: #2e2f31; --head: #3a3a3c; --edge: #444245; --alt: #343436; --text1: #f0e2e6; --text2: #bdb2b6; --faint: #8e878a; --up: #4ade80; --down: #f87171; --accent: #d64c63; --hot: #463338; --tip: #f0e2e6; --tipfg: #232426; --accentfg: #111111; }

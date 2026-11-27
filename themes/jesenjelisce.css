@@ -1,0 +1,15 @@
+/* tema jesenje lišće (Autumn leaves): generisana, tools/teme.py */
+:root[data-theme="jesenjelisce"] { color-scheme: light; --back: #fbf1e2; --card: #fefbf6; --head: #f2eee9; --edge: #dbd0c2; --alt: #f8f4ef; --text1: #322219; --text2: #64564b; --faint: #928579; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f4e3d5; --tip: #322219; --tipfg: #fbf1e2; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 4px; }
+[data-theme="jesenjelisce"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="jesenjelisce"] .overview .left { align-self: start; }
+[data-theme="jesenjelisce"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="jesenjelisce"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="jesenjelisce"] .bar h1 { font-size: 24px; }
+[data-theme="jesenjelisce"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="jesenjelisce"] body { background: radial-gradient(ellipse 8px 18px, rgba(180,83,9,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(180,83,9,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #fbf1e2; background-attachment: fixed; }
+[data-theme="jesenjelisce"] .big .value, [data-theme="jesenjelisce"] .detail .price { font-weight: 700; }
+[data-theme="jesenjelisce"] .chart .line { stroke-width: 2; }
+[data-theme="jesenjelisce"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="jesenjelisce"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #3a393b; --edge: #444243; --alt: #343435; --text1: #efe7e3; --text2: #bcb6b4; --faint: #8d8988; --up: #4ade80; --down: #f87171; --accent: #bd6726; --hot: #42362f; --tip: #efe7e3; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="jesenjelisce"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(189,103,38,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(189,103,38,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #232325; background-attachment: fixed; }

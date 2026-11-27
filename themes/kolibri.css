@@ -1,0 +1,15 @@
+/* tema kolibri (Hummingbird): generisana, tools/teme.py */
+:root[data-theme="kolibri"] { color-scheme: light; --back: #f0fdf8; --card: #ecfcf6; --head: #dff0ea; --edge: #cdddd8; --alt: #e6f6f0; --text1: #14342e; --text2: #4b6660; --faint: #7e948f; --up: #15803d; --down: #c81e1e; --accent: #0e9c6d; --hot: #cdefe3; --tip: #14342e; --tipfg: #f0fdf8; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="kolibri"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="kolibri"] .overview .left { align-self: start; }
+[data-theme="kolibri"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="kolibri"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="kolibri"] .bar h1 { font-weight: 800; }
+[data-theme="kolibri"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="kolibri"] body { background: radial-gradient(ellipse at 50% 40%, rgba(14,156,109,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(129,16,185,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #f0fdf8; background-attachment: fixed; }
+[data-theme="kolibri"] .big .value, [data-theme="kolibri"] .detail .price { font-weight: 900; }
+[data-theme="kolibri"] .chart .line { stroke-width: 3; }
+[data-theme="kolibri"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="kolibri"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383b3d; --edge: #414447; --alt: #323538; --text1: #e2efed; --text2: #b2bcbc; --faint: #868e8e; --up: #4ade80; --down: #f87171; --accent: #10b981; --hot: #29423d; --tip: #e2efed; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="kolibri"][data-scheme="dark"] body { background: radial-gradient(ellipse at 50% 40%, rgba(16,185,129,0.35) 0 4px, rgba(212,175,55,.25) 5px 8px, transparent 9px) 0 0 / 40px 56px, radial-gradient(ellipse at 50% 40%, rgba(129,16,185,0.2) 0 3px, transparent 4px) 20px 28px / 40px 56px; background-color: #222427; background-attachment: fixed; }

@@ -1,0 +1,16 @@
+/* tema njujork (New York): generisana, tools/teme.py */
+:root[data-theme="njujork"] { color-scheme: dark; --back: #131312; --card: #1f1f1e; --head: #2c2c2a; --edge: #373734; --alt: #252524; --text1: #f4f1e4; --text2: #bcbab0; --faint: #88867f; --up: #4ade80; --down: #f87171; --accent: #facc15; --hot: #3e371d; --tip: #f4f1e4; --tipfg: #131312; --accentfg: #111111; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="njujork"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="njujork"] .overview .left { align-self: start; }
+[data-theme="njujork"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="njujork"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="njujork"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="njujork"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="njujork"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="njujork"] body { background: linear-gradient(rgba(244,241,228,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(244,241,228,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #131312; background-attachment: fixed; }
+[data-theme="njujork"] .big .value, [data-theme="njujork"] .detail .price { font-weight: 400; }
+[data-theme="njujork"] .chart .line { stroke-width: 3; }
+[data-theme="njujork"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="njujork"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #f0efee; --edge: #d4d3cf; --alt: #f5f5f4; --text1: #3e381b; --text2: #6b6650; --faint: #8d8a7a; --up: #15803d; --down: #c81e1e; --accent: #987b0d; --hot: #ede9da; --tip: #3e381b; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="njujork"][data-scheme="light"] body { background: linear-gradient(rgba(62,56,27,0.06) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(62,56,27,0.06) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #f1f1f1; background-attachment: fixed; }

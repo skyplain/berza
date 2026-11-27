@@ -1,0 +1,17 @@
+/* tema perun (Perun): generisana, tools/teme.py */
+:root[data-theme="perun"] { color-scheme: dark; --back: #0e0e14; --card: #1a1a20; --head: #27272c; --edge: #333235; --alt: #212026; --text1: #f3efe3; --text2: #bab7af; --faint: #858380; --up: #4ade80; --down: #f87171; --accent: #eab308; --hot: #372f1d; --tip: #f3efe3; --tipfg: #0e0e14; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="perun"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="perun"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="perun"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="perun"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="perun"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="perun"] .bar h1::after { content: " ↯"; color: #eab308; }
+[data-theme="perun"] .bar { position: relative; }
+[data-theme="perun"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #eab308 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #eab308 25%, transparent 25%) -10px 0 / 20px 10px; }
+[data-theme="perun"] .big .value, [data-theme="perun"] .detail .price { font-weight: 400; }
+[data-theme="perun"] .chart .line { stroke-width: 2; }
+[data-theme="perun"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="perun"][data-scheme="light"] { color-scheme: light; --back: #f1f1f1; --card: #fbfbfb; --head: #efefed; --edge: #d4d3ce; --alt: #f5f5f4; --text1: #3b3318; --text2: #68624e; --faint: #8b8778; --up: #15803d; --down: #c81e1e; --accent: #a78106; --hot: #efead9; --tip: #3b3318; --tipfg: #f1f1f1; --accentfg: #111111; }
+[data-theme="perun"][data-scheme="light"] .bar h1::after { content: " ↯"; color: #a78106; }
+[data-theme="perun"][data-scheme="light"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px; background: linear-gradient(135deg, #a78106 25%, transparent 25%) -10px 0 / 20px 10px, linear-gradient(225deg, #a78106 25%, transparent 25%) -10px 0 / 20px 10px; }

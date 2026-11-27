@@ -1,0 +1,15 @@
+/* tema sombor (Sombor): generisana, tools/teme.py */
+:root[data-theme="sombor"] { color-scheme: light; --back: #f6f6ec; --card: #fcfcf9; --head: #eeefec; --edge: #d2d5cc; --alt: #f5f6f3; --text1: #152a22; --text2: #4d5d54; --faint: #818c83; --up: #15803d; --down: #c81e1e; --accent: #15803d; --hot: #dcebdf; --tip: #152a22; --tipfg: #f6f6ec; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="sombor"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 16px; }
+[data-theme="sombor"] .overview .left { align-self: start; }
+[data-theme="sombor"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="sombor"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="sombor"] .bar h1 { font-weight: 800; }
+[data-theme="sombor"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="sombor"] body { background: radial-gradient(ellipse 8px 18px, rgba(21,128,61,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(21,128,61,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #f6f6ec; background-attachment: fixed; }
+[data-theme="sombor"] .big .value, [data-theme="sombor"] .detail .price { font-weight: 900; }
+[data-theme="sombor"] .chart .line { stroke-width: 2; }
+[data-theme="sombor"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="sombor"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414345; --alt: #323436; --text1: #e2ebe7; --text2: #b2b9b7; --faint: #868b8a; --up: #4ade80; --down: #f87171; --accent: #318f54; --hot: #2e3c36; --tip: #e2ebe7; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="sombor"][data-scheme="dark"] body { background: radial-gradient(ellipse 8px 18px, rgba(49,143,84,0.18) 60%, transparent 62%) 0 0 / 48px 48px, radial-gradient(ellipse 18px 8px, rgba(49,143,84,0.14) 60%, transparent 62%) 24px 24px / 48px 48px; background-color: #222326; background-attachment: fixed; }

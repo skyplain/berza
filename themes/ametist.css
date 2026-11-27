@@ -1,0 +1,18 @@
+/* tema ametist: generisana (paleta + oblik 3/4/5/0) */
+:root[data-theme="ametist"] { color-scheme: dark; --back: #160b24; --card: #211233; --head: #2d1f3f; --edge: #392e47; --alt: #271839; --text1: #f1e6ff; --text2: #b4a9c2; --faint: #847892; --up: #4ade80; --down: #f87171; --accent: #9b5de5; --hot: #321c4c; --tip: #f1e6ff; --tipfg: #160b24; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="ametist"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="ametist"] .overview .left { align-self: start; }
+[data-theme="ametist"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="ametist"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="ametist"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="ametist"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="ametist"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="ametist"] .bar button { background: transparent; color: var(--back); border-color: rgba(22,11,36,0.35); box-shadow: none; }
+[data-theme="ametist"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="ametist"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="ametist"] .big .value, [data-theme="ametist"] .detail .price { font-weight: 900; }
+[data-theme="ametist"] .chart .line { stroke-width: 3; }
+[data-theme="ametist"] .chart .area { opacity: 0.24; }
+/* druga varijanta (svetla): preslikana iz originala, tools/teme.py */
+:root[data-theme="ametist"][data-scheme="light"] { color-scheme: light; --back: #efe6fe; --card: #e4d5fe; --head: #d4c4ee; --edge: #c3b6d5; --alt: #ddccf8; --text1: #150d1e; --text2: #443a4f; --faint: #71657e; --up: #15803d; --down: #c81e1e; --accent: #9256d9; --hot: #d4bdf9; --tip: #150d1e; --tipfg: #efe6fe; --accentfg: #ffffff; }
+[data-theme="ametist"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(239,230,254,0.35); box-shadow: none; }

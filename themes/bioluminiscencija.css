@@ -1,0 +1,21 @@
+/* tema bioluminiscencija (Bioluminescence): generisana, tools/teme.py */
+:root[data-theme="bioluminiscencija"] { color-scheme: dark; --back: #01080f; --card: #0e141b; --head: #1b2128; --edge: #252d34; --alt: #141b22; --text1: #e3f1f5; --text2: #aab7bc; --faint: #778187; --up: #4ade80; --down: #f87171; --accent: #22d3ee; --hot: #112f39; --tip: #e3f1f5; --tipfg: #01080f; --accentfg: #111111; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 0px; }
+[data-theme="bioluminiscencija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="bioluminiscencija"] .overview .left { align-self: start; }
+[data-theme="bioluminiscencija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bioluminiscencija"] button { border-radius: 999px; }
+[data-theme="bioluminiscencija"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="bioluminiscencija"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="bioluminiscencija"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="bioluminiscencija"] body { background: radial-gradient(circle, transparent 6px, rgba(34,211,238,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(34,211,238,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #01080f; background-attachment: fixed; }
+[data-theme="bioluminiscencija"] .big .value { text-shadow: 0 0 18px rgba(34,211,238,0.55); }
+[data-theme="bioluminiscencija"] .chart .line { filter: drop-shadow(0 0 5px rgba(34,211,238,0.7)); }
+[data-theme="bioluminiscencija"] .big .value, [data-theme="bioluminiscencija"] .detail .price { font-weight: 400; }
+[data-theme="bioluminiscencija"] .chart .line { stroke-width: 3; }
+[data-theme="bioluminiscencija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bioluminiscencija"][data-scheme="light"] { color-scheme: light; --back: #f0f0f1; --card: #fafafb; --head: #eceef0; --edge: #cdd3d5; --alt: #f3f4f5; --text1: #173942; --text2: #4d676e; --faint: #778a8f; --up: #15803d; --down: #c81e1e; --accent: #178b9c; --hot: #daeaee; --tip: #173942; --tipfg: #f0f0f1; --accentfg: #111111; }
+[data-theme="bioluminiscencija"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 0px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="bioluminiscencija"][data-scheme="light"] body { background: radial-gradient(circle, transparent 6px, rgba(23,139,156,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(23,139,156,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f0f0f1; background-attachment: fixed; }
+[data-theme="bioluminiscencija"][data-scheme="light"] .big .value { text-shadow: 0 0 18px rgba(23,139,156,0.55); }
+[data-theme="bioluminiscencija"][data-scheme="light"] .chart .line { filter: drop-shadow(0 0 5px rgba(23,139,156,0.7)); }

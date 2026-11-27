@@ -1,0 +1,15 @@
+/* tema material (Material): generisana, tools/teme.py */
+:root[data-theme="material"] { color-scheme: light; --back: #f7f2fe; --card: #fdfbff; --head: #f0edf4; --edge: #d5cee0; --alt: #f6f4f9; --text1: #231342; --text2: #584b71; --faint: #897e9c; --up: #15803d; --down: #c81e1e; --accent: #6200ee; --hot: #e7d8fd; --tip: #231342; --tipfg: #f7f2fe; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 4px; }
+[data-theme="material"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="material"] .overview .left { align-self: start; }
+[data-theme="material"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="material"] button { border-radius: 999px; }
+[data-theme="material"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="material"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }
+[data-theme="material"] .big .value, [data-theme="material"] .detail .price { font-weight: 700; }
+[data-theme="material"] .chart .line { stroke-width: 2.5; }
+[data-theme="material"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="material"][data-scheme="dark"] { color-scheme: dark; --back: #130b24; --card: #1f172f; --head: #2b233b; --edge: #352d45; --alt: #251d35; --text1: #e8e0f5; --text2: #b3abc1; --faint: #827a91; --up: #4ade80; --down: #f87171; --accent: #8638f1; --hot: #2d1c4a; --tip: #e8e0f5; --tipfg: #130b24; --accentfg: #ffffff; }
+[data-theme="material"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="material"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }

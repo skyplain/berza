@@ -1,0 +1,19 @@
+/* tema mapa metroa (Metro map): generisana, tools/teme.py */
+:root[data-theme="mapametroa"] { color-scheme: light; --back: #f3fafe; --card: #fbfeff; --head: #edf2f4; --edge: #cfdae0; --alt: #f4f8f9; --text1: #143141; --text2: #4c6370; --faint: #7f919c; --up: #15803d; --down: #c81e1e; --accent: #0c8cc5; --hot: #daeef7; --tip: #143141; --tipfg: #f3fafe; --accentfg: #111111; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 0px; }
+[data-theme="mapametroa"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="mapametroa"] .overview .left { align-self: start; }
+[data-theme="mapametroa"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="mapametroa"] button { border-radius: 0; }
+[data-theme="mapametroa"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="mapametroa"] .bar h1 { font-weight: 800; }
+[data-theme="mapametroa"] body { background: linear-gradient(90deg, transparent 30%, rgba(12,140,197,0.18) 30% calc(30% + 6px), transparent calc(30% + 6px)), linear-gradient(0deg, transparent 62%, rgba(233,14,165,0.16) 62% calc(62% + 6px), transparent calc(62% + 6px)); background-color: #f3fafe; background-attachment: fixed; }
+[data-theme="mapametroa"] :is(h2, h3)::before { content: "● "; color: #0c8cc5; }
+[data-theme="mapametroa"] .bar { border-bottom: 6px solid #0c8cc5; }
+[data-theme="mapametroa"] .big .value, [data-theme="mapametroa"] .detail .price { font-weight: 900; }
+[data-theme="mapametroa"] .chart .line { stroke-width: 2; }
+[data-theme="mapametroa"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="mapametroa"][data-scheme="dark"] { color-scheme: dark; --back: #0b1a24; --card: #17252f; --head: #23313b; --edge: #2d3c45; --alt: #1d2b35; --text1: #e2eef5; --text2: #acb9c1; --faint: #7b8891; --up: #4ade80; --down: #f87171; --accent: #0ea5e9; --hot: #163749; --tip: #e2eef5; --tipfg: #0b1a24; --accentfg: #111111; }
+[data-theme="mapametroa"][data-scheme="dark"] body { background: linear-gradient(90deg, transparent 30%, rgba(14,165,233,0.18) 30% calc(30% + 6px), transparent calc(30% + 6px)), linear-gradient(0deg, transparent 62%, rgba(233,14,165,0.16) 62% calc(62% + 6px), transparent calc(62% + 6px)); background-color: #0b1a24; background-attachment: fixed; }
+[data-theme="mapametroa"][data-scheme="dark"] :is(h2, h3)::before { content: "● "; color: #0ea5e9; }
+[data-theme="mapametroa"][data-scheme="dark"] .bar { border-bottom: 6px solid #0ea5e9; }

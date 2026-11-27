@@ -1,0 +1,20 @@
+/* tema fluent (Fluent): generisana, tools/teme.py */
+:root[data-theme="fluent"] { color-scheme: light; --back: #f2f8fd; --card: #fbfdfe; --head: #edf0f2; --edge: #ced7de; --alt: #f4f7f8; --text1: #11283d; --text2: #495c6d; --faint: #7d8c99; --up: #15803d; --down: #c81e1e; --accent: #0078d4; --hot: #d8eaf8; --tip: #11283d; --tipfg: #f2f8fd; --accentfg: #ffffff; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 4px; }
+[data-theme="fluent"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="fluent"] .overview .left { align-self: start; }
+[data-theme="fluent"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="fluent"] button { border-radius: 999px; }
+[data-theme="fluent"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="fluent"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="fluent"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="fluent"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="fluent"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,253,254,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(17,40,61,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+[data-theme="fluent"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }
+[data-theme="fluent"] .big .value, [data-theme="fluent"] .detail .price { font-weight: 900; }
+[data-theme="fluent"] .chart .line { stroke-width: 3; }
+[data-theme="fluent"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="fluent"][data-scheme="dark"] { color-scheme: dark; --back: #0a1622; --card: #16222d; --head: #222e39; --edge: #2c3843; --alt: #1c2833; --text1: #e0eaf3; --text2: #aab5bf; --faint: #79848f; --up: #4ade80; --down: #f87171; --accent: #0078d4; --hot: #132e44; --tip: #e0eaf3; --tipfg: #0a1622; --accentfg: #ffffff; }
+[data-theme="fluent"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="fluent"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: rgba(22,34,45,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(224,234,243,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+[data-theme="fluent"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }

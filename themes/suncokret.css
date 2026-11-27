@@ -1,0 +1,20 @@
+/* tema suncokret: generisana (paleta + oblik 1/4/1/2) */
+:root[data-theme="suncokret"] { color-scheme: light; --back: #fff9db; --card: #fffdf0; --head: #f3f1e2; --edge: #dfd9b8; --alt: #f9f7e9; --text1: #3a2e00; --text2: #71673d; --faint: #9c946e; --up: #15803d; --down: #c81e1e; --accent: #d99400; --hot: #faeece; --tip: #3a2e00; --tipfg: #fff9db; --accentfg: #111111; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="suncokret"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="suncokret"] .overview .left { align-self: start; }
+[data-theme="suncokret"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="suncokret"] button { border-radius: 999px; }
+[data-theme="suncokret"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="suncokret"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="suncokret"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="suncokret"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,249,219,0.35); box-shadow: none; }
+[data-theme="suncokret"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="suncokret"] body { background: linear-gradient(rgba(58,46,0,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(58,46,0,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #fff9db; background-attachment: fixed; }
+[data-theme="suncokret"] .big .value, [data-theme="suncokret"] .detail .price { font-weight: 400; }
+[data-theme="suncokret"] .chart .line { stroke-width: 3.5; }
+[data-theme="suncokret"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="suncokret"][data-scheme="dark"] { color-scheme: dark; --back: #0e0900; --card: #080702; --head: #100e05; --edge: #241f03; --alt: #0c0b03; --text1: #d0c294; --text2: #8d8358; --faint: #68603b; --up: #4ade80; --down: #f87171; --accent: #d99400; --hot: #170e00; --tip: #d0c294; --tipfg: #0e0900; --accentfg: #111111; }
+[data-theme="suncokret"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="suncokret"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(14,9,0,0.35); box-shadow: none; }
+[data-theme="suncokret"][data-scheme="dark"] body { background: linear-gradient(rgba(208,194,148,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(208,194,148,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #0e0900; background-attachment: fixed; }

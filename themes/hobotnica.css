@@ -1,0 +1,15 @@
+/* tema hobotnica (Octopus): generisana, tools/teme.py */
+:root[data-theme="hobotnica"] { color-scheme: dark; --back: #160a1a; --card: #221625; --head: #2e2231; --edge: #392d3d; --alt: #281c2b; --text1: #f0e4f3; --text2: #baaebd; --faint: #877b8b; --up: #4ade80; --down: #f87171; --accent: #c026d3; --hot: #38183d; --tip: #f0e4f3; --tipfg: #160a1a; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="hobotnica"] :is(.overview .left, .block, .detail, .list) { background: rgba(34,22,37,0.6); border: 1px solid rgba(240,228,243,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="hobotnica"] .overview .left { align-self: start; }
+[data-theme="hobotnica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="hobotnica"] button { border-radius: 999px; background: transparent; }
+[data-theme="hobotnica"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="hobotnica"] body { background: radial-gradient(circle, transparent 6px, rgba(192,38,211,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(192,38,211,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #160a1a; background-attachment: fixed; }
+[data-theme="hobotnica"] .big .value, [data-theme="hobotnica"] .detail .price { font-weight: 400; }
+[data-theme="hobotnica"] .chart .line { stroke-width: 2; }
+[data-theme="hobotnica"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="hobotnica"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #efedf0; --edge: #d3ced4; --alt: #f5f3f5; --text1: #341a3d; --text2: #63506a; --faint: #8f8193; --up: #15803d; --down: #c81e1e; --accent: #c026d3; --hot: #f3dcf5; --tip: #341a3d; --tipfg: #f1f0f1; --accentfg: #ffffff; }
+[data-theme="hobotnica"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(251,250,251,0.6); border: 1px solid rgba(52,26,61,0.12); border-radius: 16px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="hobotnica"][data-scheme="light"] body { background: radial-gradient(circle, transparent 6px, rgba(192,38,211,0.2) 7px 8px, transparent 9px) 0 0 / 60px 60px, radial-gradient(circle, transparent 3px, rgba(192,38,211,0.18) 4px 5px, transparent 6px) 30px 20px / 34px 34px; background-color: #f1f0f1; background-attachment: fixed; }

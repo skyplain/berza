@@ -1,0 +1,16 @@
+/* tema lavirint (Maze): generisana, tools/teme.py */
+:root[data-theme="lavirint"] { color-scheme: light; --back: #f4faf8; --card: #fcfefd; --head: #eef1f0; --edge: #d0d8d7; --alt: #f5f8f7; --text1: #14282b; --text2: #4c5c5e; --faint: #808d8d; --up: #15803d; --down: #c81e1e; --accent: #0f766e; --hot: #dbebe9; --tip: #14282b; --tipfg: #f4faf8; --accentfg: #ffffff; --font: ui-monospace, "SF Mono", Menlo, Consolas, monospace; --radius: 4px; }
+[data-theme="lavirint"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="lavirint"] .overview .left { align-self: start; }
+[data-theme="lavirint"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="lavirint"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="lavirint"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="lavirint"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="lavirint"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="lavirint"] body { background: linear-gradient(90deg, rgba(15,118,110,0.16) 2px, transparent 2px) 0 0 / 24px 48px, linear-gradient(rgba(15,118,110,0.16) 2px, transparent 2px) 12px 12px / 48px 24px; background-color: #f4faf8; background-attachment: fixed; }
+[data-theme="lavirint"] .big .value, [data-theme="lavirint"] .detail .price { font-weight: 200; }
+[data-theme="lavirint"] .chart .line { stroke-width: 2.5; }
+[data-theme="lavirint"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="lavirint"][data-scheme="dark"] { color-scheme: dark; --back: #222427; --card: #2d2f32; --head: #383a3d; --edge: #414446; --alt: #323538; --text1: #e2eaeb; --text2: #b2b8ba; --faint: #868b8d; --up: #4ade80; --down: #f87171; --accent: #348b85; --hot: #2e3c3e; --tip: #e2eaeb; --tipfg: #222427; --accentfg: #111111; }
+[data-theme="lavirint"][data-scheme="dark"] body { background: linear-gradient(90deg, rgba(52,139,133,0.16) 2px, transparent 2px) 0 0 / 24px 48px, linear-gradient(rgba(52,139,133,0.16) 2px, transparent 2px) 12px 12px / 48px 24px; background-color: #222427; background-attachment: fixed; }

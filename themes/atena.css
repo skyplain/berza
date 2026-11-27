@@ -1,0 +1,15 @@
+/* tema atena (Athena): generisana, tools/teme.py */
+:root[data-theme="atena"] { color-scheme: light; --back: #f5f5f0; --card: #fcfcfa; --head: #efefee; --edge: #d4d4d1; --alt: #f6f6f4; --text1: #24272e; --text2: #585a5e; --faint: #888a8b; --up: #15803d; --down: #c81e1e; --accent: #6b7280; --hot: #e8e9e9; --tip: #24272e; --tipfg: #f5f5f0; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="atena"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="atena"] tbody tr { border-bottom: 1px solid var(--edge); }
+[data-theme="atena"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="atena"] .bar h1 { font-size: 24px; }
+[data-theme="atena"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="atena"] .bar { position: relative; }
+[data-theme="atena"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #6b7280 0 3px, transparent 3px 12px, #6b7280 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#6b7280 0 3px, transparent 3px 9px, #6b7280 9px 12px) 0 0 / 24px 12px; }
+[data-theme="atena"] .big .value, [data-theme="atena"] .detail .price { font-weight: 400; }
+[data-theme="atena"] .chart .line { stroke-width: 2; }
+[data-theme="atena"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="atena"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #424346; --alt: #333437; --text1: #e9eaed; --text2: #b7b8bb; --faint: #898a8d; --up: #4ade80; --down: #f87171; --accent: #777d8a; --hot: #37393d; --tip: #e9eaed; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="atena"][data-scheme="dark"] .bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -12px; height: 12px; background: linear-gradient(90deg, #777d8a 0 3px, transparent 3px 12px, #777d8a 12px 15px, transparent 15px) 0 0 / 24px 12px, linear-gradient(#777d8a 0 3px, transparent 3px 9px, #777d8a 9px 12px) 0 0 / 24px 12px; }

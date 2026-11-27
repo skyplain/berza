@@ -1,0 +1,20 @@
+/* tema lego kocke (Building bricks): generisana, tools/teme.py */
+:root[data-theme="legokocke"] { color-scheme: light; --back: #fff9e6; --card: #fffdf8; --head: #f3efeb; --edge: #dfd5c6; --alt: #f9f6f1; --text1: #391a1e; --text2: #6a5250; --faint: #98857e; --up: #15803d; --down: #c81e1e; --accent: #dc2626; --hot: #fadfdb; --tip: #391a1e; --tipfg: #fff9e6; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 10px; }
+[data-theme="legokocke"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="legokocke"] .overview .left { align-self: start; }
+[data-theme="legokocke"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="legokocke"] button { border-radius: 999px; }
+[data-theme="legokocke"] .bar { background: var(--accent); color: var(--accentfg); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="legokocke"] .bar h1 span { color: var(--accentfg); opacity: .8; }
+[data-theme="legokocke"] .bar button { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.4); color: var(--accentfg); box-shadow: none; }
+[data-theme="legokocke"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 12px; }
+[data-theme="legokocke"] body { background: radial-gradient(circle, rgba(255,255,255,0.35) 28%, rgba(220,38,38,0.12) 30% 40%, transparent 42%) 0 0 / 24px 24px; background-color: #fff9e6; background-attachment: fixed; }
+[data-theme="legokocke"] :is(.overview .left, .block, .detail, .list) { border-top: 8px solid #dc2626; border-radius: 4px; }
+[data-theme="legokocke"] .big .value, [data-theme="legokocke"] .detail .price { font-weight: 200; }
+[data-theme="legokocke"] .chart .line { stroke-width: 2.5; }
+[data-theme="legokocke"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="legokocke"][data-scheme="dark"] { color-scheme: dark; --back: #232425; --card: #2e2f30; --head: #3a3a3b; --edge: #444344; --alt: #343435; --text1: #f2e4e5; --text2: #beb4b5; --faint: #8f8889; --up: #4ade80; --down: #f87171; --accent: #e14747; --hot: #473233; --tip: #f2e4e5; --tipfg: #232425; --accentfg: #111111; }
+[data-theme="legokocke"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }
+[data-theme="legokocke"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(255,255,255,0.35) 28%, rgba(225,71,71,0.12) 30% 40%, transparent 42%) 0 0 / 24px 24px; background-color: #232425; background-attachment: fixed; }
+[data-theme="legokocke"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border-top: 8px solid #e14747; border-radius: 4px; }

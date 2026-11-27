@@ -1,0 +1,16 @@
+/* tema plastika (Plastic): generisana, tools/teme.py */
+:root[data-theme="plastika"] { color-scheme: light; --back: #fefeff; --card: #fafcff; --head: #edeff4; --edge: #dadce1; --alt: #f3f6f9; --text1: #1c2a43; --text2: #545f72; --faint: #88909d; --up: #15803d; --down: #c81e1e; --accent: #3b82f6; --hot: #dfebfe; --tip: #1c2a43; --tipfg: #fefeff; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="plastika"] :is(.overview .left, .block, .detail, .list) { background: #f6f7f8; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="plastika"] .overview .left { align-self: start; }
+[data-theme="plastika"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="plastika"] button { border: 0; }
+[data-theme="plastika"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="plastika"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.08), -6px -6px 16px rgba(255,255,255,0.8); padding: 18px 20px; }
+[data-theme="plastika"] button { border-radius: 999px; }
+[data-theme="plastika"] .big .value, [data-theme="plastika"] .detail .price { font-weight: 700; }
+[data-theme="plastika"] .chart .line { stroke-width: 3; }
+[data-theme="plastika"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="plastika"][data-scheme="dark"] { color-scheme: dark; --back: #232428; --card: #2e2f33; --head: #393a3f; --edge: #424449; --alt: #333539; --text1: #e5ebf6; --text2: #b4b9c2; --faint: #888b93; --up: #4ade80; --down: #f87171; --accent: #3b82f6; --hot: #303b4e; --tip: #e5ebf6; --tipfg: #232428; --accentfg: #111111; }
+[data-theme="plastika"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: #2a2b2f; box-shadow: inset 0 0 0 1px var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="plastika"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 0; border-radius: 20px; background: var(--card); box-shadow: 8px 8px 20px rgba(0,0,0,0.4), -6px -6px 16px rgba(255,255,255,0.03); padding: 18px 20px; }

@@ -1,0 +1,17 @@
+/* tema astronaut (Astronaut): generisana, tools/teme.py */
+:root[data-theme="astronaut"] { color-scheme: light; --back: #f4f5f9; --card: #fcfcfd; --head: #f1efef; --edge: #d7d4d5; --alt: #f6f6f6; --text1: #3e281b; --text2: #6c5b52; --faint: #958a86; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f6e6dc; --tip: #3e281b; --tipfg: #f4f5f9; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 8px; }
+[data-theme="astronaut"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 8px; padding: 14px 16px; }
+[data-theme="astronaut"] .overview .left { align-self: start; }
+[data-theme="astronaut"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="astronaut"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="astronaut"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="astronaut"] .bar button { background: transparent; color: var(--back); border-color: rgba(244,245,249,0.35); box-shadow: none; }
+[data-theme="astronaut"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="astronaut"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.07); padding: 16px 18px; }
+[data-theme="astronaut"] .big .value, [data-theme="astronaut"] .detail .price { font-weight: 200; }
+[data-theme="astronaut"] .chart .line { stroke-width: 2; }
+[data-theme="astronaut"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="astronaut"][data-scheme="dark"] { color-scheme: dark; --back: #222327; --card: #2d2e32; --head: #39393d; --edge: #444345; --alt: #333437; --text1: #f4eae4; --text2: #c0b8b5; --faint: #8f8a89; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #4a382e; --tip: #f4eae4; --tipfg: #222327; --accentfg: #111111; }
+[data-theme="astronaut"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,39,0.35); box-shadow: none; }
+[data-theme="astronaut"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 0; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.35); padding: 16px 18px; }

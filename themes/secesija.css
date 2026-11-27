@@ -1,0 +1,21 @@
+/* tema secesija (Art Nouveau): generisana, tools/teme.py */
+:root[data-theme="secesija"] { color-scheme: light; --back: #f3ecd7; --card: #fbf9f3; --head: #eeede7; --edge: #d1cdba; --alt: #f4f3ed; --text1: #1f2923; --text2: #545a50; --faint: #858779; --up: #15803d; --down: #c81e1e; --accent: #4f7942; --hot: #e3e7da; --tip: #1f2923; --tipfg: #f3ecd7; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="secesija"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="secesija"] .overview .left { align-self: start; }
+[data-theme="secesija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="secesija"] button { border-radius: 0; }
+[data-theme="secesija"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="secesija"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="secesija"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 0px; }
+[data-theme="secesija"] :is(.overview .left, .block, .detail, .list) { border: 4px double #4f7942; }
+[data-theme="secesija"] .bar h1::before { content: "❦ "; color: #4f7942; }
+[data-theme="secesija"] .bar h1::after { content: " ❦"; color: #4f7942; }
+[data-theme="secesija"] :is(h2, h3) { font-variant: small-caps; }
+[data-theme="secesija"] .big .value, [data-theme="secesija"] .detail .price { font-weight: 200; }
+[data-theme="secesija"] .chart .line { stroke-width: 1.5; }
+[data-theme="secesija"] .chart .area { opacity: 0.14; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="secesija"][data-scheme="dark"] { color-scheme: dark; --back: #222224; --card: #2d2d2f; --head: #38383a; --edge: #424243; --alt: #333335; --text1: #e7eae8; --text2: #b6b8b7; --faint: #888a8a; --up: #4ade80; --down: #f87171; --accent: #638958; --hot: #353a35; --tip: #e7eae8; --tipfg: #222224; --accentfg: #111111; }
+[data-theme="secesija"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { border: 4px double #638958; }
+[data-theme="secesija"][data-scheme="dark"] .bar h1::before { content: "❦ "; color: #638958; }
+[data-theme="secesija"][data-scheme="dark"] .bar h1::after { content: " ❦"; color: #638958; }

@@ -1,0 +1,17 @@
+/* tema tamno staklo (Dark glass): generisana, tools/teme.py */
+:root[data-theme="tamnostaklo"] { color-scheme: dark; --back: #131a25; --card: #1f2530; --head: #2b313c; --edge: #353c46; --alt: #252b36; --text1: #e8eef6; --text2: #b3b9c2; --faint: #828892; --up: #4ade80; --down: #f87171; --accent: #60a5fa; --hot: #28374c; --tip: #e8eef6; --tipfg: #131a25; --accentfg: #111111; --font: "Avenir Next", "Segoe UI", system-ui, sans-serif; --radius: 4px; }
+[data-theme="tamnostaklo"] :is(.overview .left, .block, .detail, .list) { background: rgba(31,37,48,0.6); border: 1px solid rgba(232,238,246,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="tamnostaklo"] .overview .left { align-self: start; }
+[data-theme="tamnostaklo"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="tamnostaklo"] button { border-radius: 999px; background: transparent; }
+[data-theme="tamnostaklo"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="tamnostaklo"] .bar h1 { font-weight: 800; }
+[data-theme="tamnostaklo"] :is(h2, h3, .big .label) { color: var(--text1); text-transform: none; letter-spacing: 0; font-size: 17px; font-weight: 700; }
+[data-theme="tamnostaklo"] :is(.overview .left, .block, .detail, .list) { background: rgba(31,37,48,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(232,238,246,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+[data-theme="tamnostaklo"] .big .value, [data-theme="tamnostaklo"] .detail .price { font-weight: 200; }
+[data-theme="tamnostaklo"] .chart .line { stroke-width: 1.5; }
+[data-theme="tamnostaklo"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="tamnostaklo"][data-scheme="light"] { color-scheme: light; --back: #f7faff; --card: #f4f8ff; --head: #e7ecf4; --edge: #d5dae1; --alt: #eef2f9; --text1: #223144; --text2: #576373; --faint: #88919e; --up: #15803d; --down: #c81e1e; --accent: #518cd4; --hot: #dde9f9; --tip: #223144; --tipfg: #f7faff; --accentfg: #111111; }
+[data-theme="tamnostaklo"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(244,248,255,0.6); border: 1px solid rgba(34,49,68,0.12); border-radius: 4px; backdrop-filter: blur(10px); padding: 14px 16px; }
+[data-theme="tamnostaklo"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: rgba(244,248,255,0.55); backdrop-filter: blur(14px); border: 1px solid rgba(34,49,68,0.14); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }

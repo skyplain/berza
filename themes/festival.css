@@ -1,0 +1,21 @@
+/* tema festival (Festival): generisana, tools/teme.py */
+:root[data-theme="festival"] { color-scheme: dark; --back: #100a1c; --card: #1c1627; --head: #292332; --edge: #342e3c; --alt: #221c2d; --text1: #f4eae4; --text2: #bbb2b2; --faint: #877e84; --up: #4ade80; --down: #f87171; --accent: #f97316; --hot: #3b2325; --tip: #f4eae4; --tipfg: #100a1c; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="festival"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="festival"] .overview .left { align-self: start; }
+[data-theme="festival"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="festival"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="festival"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="festival"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="festival"] .bar button { background: transparent; color: var(--back); border-color: rgba(16,10,28,0.35); box-shadow: none; }
+[data-theme="festival"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="festival"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="festival"] body { background: radial-gradient(rgba(249,115,22,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(22,249,115,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(115,22,249,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #100a1c; background-attachment: fixed; }
+[data-theme="festival"] .bar h1 { color: #fdc7a2; text-shadow: 0 0 4px #f97316, 0 0 12px #f97316, 0 0 28px rgba(249,115,22,0.8); }
+[data-theme="festival"] .big .value, [data-theme="festival"] .detail .price { font-weight: 400; }
+[data-theme="festival"] .chart .line { stroke-width: 2.5; }
+[data-theme="festival"] .chart .area { opacity: 0.14; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="festival"][data-scheme="light"] { color-scheme: light; --back: #f1f0f1; --card: #fbfafb; --head: #f0edee; --edge: #d4d0cf; --alt: #f5f4f4; --text1: #3e281b; --text2: #6b5a50; --faint: #948882; --up: #15803d; --down: #c81e1e; --accent: #d36212; --hot: #f5e5da; --tip: #3e281b; --tipfg: #f1f0f1; --accentfg: #111111; }
+[data-theme="festival"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(241,240,241,0.35); box-shadow: none; }
+[data-theme="festival"][data-scheme="light"] body { background: radial-gradient(rgba(211,98,18,0.4) 2px, transparent 2.5px) 0 0 / 37px 41px, radial-gradient(rgba(22,249,115,0.4) 2px, transparent 2.5px) 11px 19px / 43px 37px, radial-gradient(rgba(115,22,249,0.4) 2px, transparent 2.5px) 23px 7px / 31px 47px; background-color: #f1f0f1; background-attachment: fixed; }
+[data-theme="festival"][data-scheme="light"] .bar h1 { color: #edc0a0; text-shadow: 0 0 4px #d36212, 0 0 12px #d36212, 0 0 28px rgba(211,98,18,0.8); }

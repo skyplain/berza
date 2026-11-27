@@ -1,0 +1,15 @@
+/* tema nar (Pomegranate flower): generisana, tools/teme.py */
+:root[data-theme="nar"] { color-scheme: light; --back: #fdf1ee; --card: #fefbfa; --head: #f2eded; --edge: #ddcecc; --alt: #f8f4f3; --text1: #33181c; --text2: #664e50; --faint: #948081; --up: #15803d; --down: #c81e1e; --accent: #b91c1c; --hot: #f4dcdb; --tip: #33181c; --tipfg: #fdf1ee; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 10px; }
+[data-theme="nar"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="nar"] .overview .left { align-self: start; }
+[data-theme="nar"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="nar"] button { border-radius: 999px; }
+[data-theme="nar"] .bar h1 { font-size: 22px; letter-spacing: .22em; text-transform: uppercase; font-weight: 400; }
+[data-theme="nar"] .bar h1 span { letter-spacing: .05em; }
+[data-theme="nar"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="nar"] .big .value, [data-theme="nar"] .detail .price { font-weight: 700; }
+[data-theme="nar"] .chart .line { stroke-width: 1.5; }
+[data-theme="nar"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="nar"][data-scheme="dark"] { color-scheme: dark; --back: #232326; --card: #2e2e31; --head: #3a393c; --edge: #444245; --alt: #343336; --text1: #efe3e5; --text2: #bcb3b5; --faint: #8d8789; --up: #4ade80; --down: #f87171; --accent: #cd5c5c; --hot: #443437; --tip: #efe3e5; --tipfg: #232326; --accentfg: #111111; }
+[data-theme="nar"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.45); padding: 14px 16px; }

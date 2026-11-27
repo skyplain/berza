@@ -1,0 +1,21 @@
+/* tema bakarna (Copper color): generisana, tools/teme.py */
+:root[data-theme="bakarna"] { color-scheme: dark; --back: #160a03; --card: #221610; --head: #2e231d; --edge: #392d27; --alt: #281c16; --text1: #efe7e3; --text2: #b9b0ab; --faint: #877d77; --up: #4ade80; --down: #f87171; --accent: #b45309; --hot: #361f0f; --tip: #efe7e3; --tipfg: #160a03; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="bakarna"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 4px; padding: 14px 16px; }
+[data-theme="bakarna"] .overview .left { align-self: start; }
+[data-theme="bakarna"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bakarna"] .bar { border-bottom: 4px solid var(--accent); }
+[data-theme="bakarna"] .bar h1 { font-weight: 800; }
+[data-theme="bakarna"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="bakarna"] body { background: linear-gradient(180deg, rgba(180,83,9,0.1), transparent 380px); background-color: #160a03; background-attachment: fixed; }
+[data-theme="bakarna"] :is(.overview .left, .block, .detail, .list) { background: #291910; border-color: rgba(180,83,9,0.35); }
+[data-theme="bakarna"] .chart .line { stroke: #b45309 !important; }
+[data-theme="bakarna"] .chart .area { fill: #b45309 !important; }
+[data-theme="bakarna"] .chart .vol { fill: #b45309; }
+[data-theme="bakarna"] :is(h2, h3, .big .label) { color: #b45309; }
+[data-theme="bakarna"] .big .value, [data-theme="bakarna"] .detail .price { font-weight: 700; }
+[data-theme="bakarna"] .chart .line { stroke-width: 1.5; }
+[data-theme="bakarna"] .chart .area { opacity: 0.08; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="bakarna"][data-scheme="light"] { color-scheme: light; --back: #f1f0f0; --card: #fbfafa; --head: #efedec; --edge: #d2cfce; --alt: #f5f4f3; --text1: #322219; --text2: #62564f; --faint: #8e8580; --up: #15803d; --down: #c81e1e; --accent: #b45309; --hot: #f1e3d8; --tip: #322219; --tipfg: #f1f0f0; --accentfg: #ffffff; }
+[data-theme="bakarna"][data-scheme="light"] body { background: linear-gradient(180deg, rgba(180,83,9,0.1), transparent 380px); background-color: #f1f0f0; background-attachment: fixed; }
+[data-theme="bakarna"][data-scheme="light"] :is(.overview .left, .block, .detail, .list) { background: #f7f2ee; border-color: rgba(180,83,9,0.35); }

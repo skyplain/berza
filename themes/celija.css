@@ -1,0 +1,13 @@
+/* tema ćelija (Cell): generisana, tools/teme.py */
+:root[data-theme="celija"] { color-scheme: light; --back: #f8fcf1; --card: #f6fbed; --head: #eaefe0; --edge: #d7ddcf; --alt: #f0f5e7; --text1: #29381b; --text2: #5d6950; --faint: #848e7a; --up: #15803d; --down: #c81e1e; --accent: #5e9210; --hot: #e1ecce; --tip: #29381b; --tipfg: #f8fcf1; --accentfg: #111111; --font: ui-rounded, "SF Pro Rounded", "Nunito", "Varela Round", system-ui, sans-serif; --radius: 0px; }
+[data-theme="celija"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 1px solid var(--edge); border-radius: 0px; padding: 14px 16px; }
+[data-theme="celija"] .overview .left { align-self: start; }
+[data-theme="celija"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="celija"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="celija"] body { background: radial-gradient(circle, rgba(94,146,16,0.25) 3px, transparent 4px 14px, rgba(94,146,16,0.18) 15px 17px, transparent 18px) 0 0 / 44px 44px; background-color: #f8fcf1; background-attachment: fixed; }
+[data-theme="celija"] .big .value, [data-theme="celija"] .detail .price { font-weight: 700; }
+[data-theme="celija"] .chart .line { stroke-width: 3; }
+[data-theme="celija"] .chart .area { opacity: 0.08; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="celija"][data-scheme="dark"] { color-scheme: dark; --back: #171f11; --card: #232a1d; --head: #2f3629; --edge: #394133; --alt: #293023; --text1: #ebf1e4; --text2: #b6bcaf; --faint: #858c7f; --up: #4ade80; --down: #f87171; --accent: #84cc16; --hot: #31411c; --tip: #ebf1e4; --tipfg: #171f11; --accentfg: #111111; }
+[data-theme="celija"][data-scheme="dark"] body { background: radial-gradient(circle, rgba(132,204,22,0.25) 3px, transparent 4px 14px, rgba(132,204,22,0.18) 15px 17px, transparent 18px) 0 0 / 44px 44px; background-color: #171f11; background-attachment: fixed; }

@@ -1,0 +1,17 @@
+/* tema razglednica (Postcard): generisana, tools/teme.py */
+:root[data-theme="razglednica"] { color-scheme: light; --back: #fbf3e2; --card: #fefbf6; --head: #f0eeea; --edge: #d7d3c6; --alt: #f7f5f0; --text1: #192a33; --text2: #525c5f; --faint: #858a87; --up: #15803d; --down: #c81e1e; --accent: #2a7f9e; --hot: #e0eaea; --tip: #192a33; --tipfg: #fbf3e2; --accentfg: #ffffff; --font: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; --radius: 0px; }
+[data-theme="razglednica"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="razglednica"] .overview .left { align-self: start; }
+[data-theme="razglednica"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="razglednica"] button { border-radius: 0; }
+[data-theme="razglednica"] .bar { border-bottom: 3px double var(--text1); padding: 16px 0 12px; }
+[data-theme="razglednica"] .bar h1 { font-size: 24px; }
+[data-theme="razglednica"] :is(h2, h3, .big .label) { color: var(--text1); border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+[data-theme="razglednica"] :is(h2, h3) { display: inline-block; color: #2a7f9e; border: 2px solid #2a7f9e; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }
+[data-theme="razglednica"] :is(.overview .left, .block, .detail, .list) { border: 6px solid transparent; border-image: repeating-linear-gradient(45deg, #c8102e 0 10px, #ffffff 10px 20px, #1d4ed8 20px 30px, #ffffff 30px 40px) 6; }
+[data-theme="razglednica"] .big .value, [data-theme="razglednica"] .detail .price { font-weight: 400; }
+[data-theme="razglednica"] .chart .line { stroke-width: 3; }
+[data-theme="razglednica"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="razglednica"][data-scheme="dark"] { color-scheme: dark; --back: #232325; --card: #2e2e30; --head: #39393b; --edge: #424345; --alt: #333436; --text1: #e4ebef; --text2: #b4b9bc; --faint: #878b8e; --up: #4ade80; --down: #f87171; --accent: #3b89a6; --hot: #303b41; --tip: #e4ebef; --tipfg: #232325; --accentfg: #111111; }
+[data-theme="razglednica"][data-scheme="dark"] :is(h2, h3) { display: inline-block; color: #3b89a6; border: 2px solid #3b89a6; padding: 1px 8px; transform: rotate(-2deg); text-transform: uppercase; letter-spacing: .12em; }

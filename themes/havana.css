@@ -1,0 +1,19 @@
+/* tema havana: generisana (paleta + oblik 5/4/3/6) */
+:root[data-theme="havana"] { color-scheme: light; --back: #fff4e6; --card: #fffaf2; --head: #f3ede5; --edge: #ded3c5; --alt: #f9f4eb; --text1: #2f2418; --text2: #695e52; --faint: #978c7f; --up: #15803d; --down: #c81e1e; --accent: #008f8f; --hot: #dbebe4; --tip: #2f2418; --tipfg: #fff4e6; --accentfg: #ffffff; --font: system-ui, -apple-system, "Segoe UI", sans-serif; --radius: 4px; }
+[data-theme="havana"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="havana"] .overview .left { align-self: start; }
+[data-theme="havana"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="havana"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="havana"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="havana"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="havana"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,244,230,0.35); box-shadow: none; }
+[data-theme="havana"] :is(h2, h3, .big .label) { background: var(--accent); color: var(--accentfg); display: inline-block; padding: 1px 9px; border-radius: 4px; }
+[data-theme="havana"] body { background: radial-gradient(600px 400px at 0 0, rgba(0,143,143,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(0,143,143,0.12), transparent 70%); background-color: #fff4e6; background-attachment: fixed; }
+[data-theme="havana"] .big .value, [data-theme="havana"] .detail .price { font-weight: 400; }
+[data-theme="havana"] .chart .line { stroke-width: 2.5; }
+[data-theme="havana"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="havana"][data-scheme="dark"] { color-scheme: dark; --back: #100902; --card: #0a0704; --head: #130f0a; --edge: #282015; --alt: #0e0b06; --text1: #dacbbc; --text2: #93877b; --faint: #6d6357; --up: #4ade80; --down: #f87171; --accent: #008f8f; --hot: #0c1813; --tip: #dacbbc; --tipfg: #100902; --accentfg: #111111; }
+[data-theme="havana"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-top: 4px solid var(--accent); border-radius: 0 0 4px 4px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="havana"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(16,9,2,0.35); box-shadow: none; }
+[data-theme="havana"][data-scheme="dark"] body { background: radial-gradient(600px 400px at 0 0, rgba(0,143,143,0.12), transparent 70%), radial-gradient(600px 400px at 100% 100%, rgba(0,143,143,0.12), transparent 70%); background-color: #100902; background-attachment: fixed; }

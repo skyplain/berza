@@ -1,0 +1,20 @@
+/* tema cirkus: generisana (paleta + oblik 1/4/1/2) */
+:root[data-theme="cirkus"] { color-scheme: light; --back: #fff7f0; --card: #ffffff; --head: #f2f1f1; --edge: #ddd4ce; --alt: #f9f8f8; --text1: #2b1a1a; --text2: #665856; --faint: #958885; --up: #15803d; --down: #c81e1e; --accent: #d62e3a; --hot: #f9e2e3; --tip: #2b1a1a; --tipfg: #fff7f0; --accentfg: #ffffff; --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif; --radius: 10px; }
+[data-theme="cirkus"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="cirkus"] .overview .left { align-self: start; }
+[data-theme="cirkus"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="cirkus"] button { border-radius: 999px; }
+[data-theme="cirkus"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="cirkus"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="cirkus"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="cirkus"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,247,240,0.35); box-shadow: none; }
+[data-theme="cirkus"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="cirkus"] body { background: linear-gradient(rgba(43,26,26,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(43,26,26,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #fff7f0; background-attachment: fixed; }
+[data-theme="cirkus"] .big .value, [data-theme="cirkus"] .detail .price { font-weight: 400; }
+[data-theme="cirkus"] .chart .line { stroke-width: 2.5; }
+[data-theme="cirkus"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="cirkus"][data-scheme="dark"] { color-scheme: dark; --back: #0d0805; --card: #060606; --head: #0e0d0d; --edge: #251f1a; --alt: #090909; --text1: #e9d1d0; --text2: #998a88; --faint: #675b58; --up: #4ade80; --down: #f87171; --accent: #d62e3a; --hot: #1d0f10; --tip: #e9d1d0; --tipfg: #0d0805; --accentfg: #ffffff; }
+[data-theme="cirkus"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="cirkus"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(13,8,5,0.35); box-shadow: none; }
+[data-theme="cirkus"][data-scheme="dark"] body { background: linear-gradient(rgba(233,209,208,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(233,209,208,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #0d0805; background-attachment: fixed; }

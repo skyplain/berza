@@ -1,0 +1,18 @@
+/* tema posejdon (Poseidon): generisana, tools/teme.py */
+:root[data-theme="posejdon"] { color-scheme: dark; --back: #031a22; --card: #10252d; --head: #1d3139; --edge: #273b43; --alt: #162b33; --text1: #e2eaee; --text2: #aab6bb; --faint: #77868c; --up: #4ade80; --down: #f87171; --accent: #217f99; --hot: #12323c; --tip: #e2eaee; --tipfg: #031a22; --accentfg: #ffffff; --font: Georgia, "Times New Roman", serif; --radius: 0px; }
+[data-theme="posejdon"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="posejdon"] .overview .left { align-self: start; }
+[data-theme="posejdon"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="posejdon"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="posejdon"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="posejdon"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="posejdon"] .bar button { background: transparent; color: var(--back); border-color: rgba(3,26,34,0.35); box-shadow: none; }
+[data-theme="posejdon"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="posejdon"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(33,127,153,0.14) 9px 10px, transparent 11px 16px, rgba(33,127,153,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #031a22; background-attachment: fixed; }
+[data-theme="posejdon"] .big .value, [data-theme="posejdon"] .detail .price { font-weight: 900; }
+[data-theme="posejdon"] .chart .line { stroke-width: 2.5; }
+[data-theme="posejdon"] .chart .area { opacity: 0.2; }
+/* druga varijanta (svetla): generisana, tools/teme.py */
+:root[data-theme="posejdon"][data-scheme="light"] { color-scheme: light; --back: #f0f1f2; --card: #fafbfb; --head: #eceeef; --edge: #cdd1d3; --alt: #f3f5f5; --text1: #142831; --text2: #4b5a61; --faint: #7e888e; --up: #15803d; --down: #c81e1e; --accent: #0e7490; --hot: #d9e8ec; --tip: #142831; --tipfg: #f0f1f2; --accentfg: #ffffff; }
+[data-theme="posejdon"][data-scheme="light"] .bar button { background: transparent; color: var(--back); border-color: rgba(240,241,242,0.35); box-shadow: none; }
+[data-theme="posejdon"][data-scheme="light"] body { background: radial-gradient(circle at 50% 100%, transparent 8px, rgba(14,116,144,0.14) 9px 10px, transparent 11px 16px, rgba(14,116,144,0.11) 17px 18px, transparent 19px) 0 0 / 40px 20px; background-color: #f0f1f2; background-attachment: fixed; }

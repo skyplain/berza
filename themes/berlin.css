@@ -1,0 +1,19 @@
+/* tema berlin (Berlin): generisana, tools/teme.py */
+:root[data-theme="berlin"] { color-scheme: light; --back: #efefef; --card: #fafafa; --head: #ececed; --edge: #cccccd; --alt: #f3f3f3; --text1: #14161a; --text2: #4b4c4f; --faint: #7d7e80; --up: #15803d; --down: #c81e1e; --accent: #111111; --hot: #d9d9d9; --tip: #14161a; --tipfg: #efefef; --accentfg: #ffffff; --font: "Avenir Next Condensed", "Arial Narrow", "Roboto Condensed", sans-serif; --radius: 0px; }
+[data-theme="berlin"] :is(.overview .left, .block, .detail, .list) { border-left: 4px solid var(--accent); background: transparent; padding: 14px 16px; }
+[data-theme="berlin"] .overview .left { align-self: start; }
+[data-theme="berlin"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="berlin"] button { border-radius: 0; }
+[data-theme="berlin"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="berlin"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="berlin"] .bar button { background: transparent; color: var(--back); border-color: rgba(239,239,239,0.35); box-shadow: none; }
+[data-theme="berlin"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="berlin"] body { background: repeating-linear-gradient(0deg, rgba(20,22,26,0.05) 0 1px, transparent 1px 120px), repeating-radial-gradient(circle at 23% 41%, rgba(20,22,26,0.04) 0 1px, transparent 1px 3px); background-color: #efefef; background-attachment: fixed; }
+[data-theme="berlin"] :is(.overview .left, .block, .detail, .list) { border-radius: 0; }
+[data-theme="berlin"] .big .value, [data-theme="berlin"] .detail .price { font-weight: 900; }
+[data-theme="berlin"] .chart .line { stroke-width: 2.5; }
+[data-theme="berlin"] .chart .area { opacity: 0.2; }
+/* druga varijanta (tamna): generisana, tools/teme.py */
+:root[data-theme="berlin"][data-scheme="dark"] { color-scheme: dark; --back: #222326; --card: #2d2e31; --head: #38393c; --edge: #414244; --alt: #323336; --text1: #e2e2e4; --text2: #b2b2b4; --faint: #868689; --up: #4ade80; --down: #f87171; --accent: #808080; --hot: #39393c; --tip: #e2e2e4; --tipfg: #222326; --accentfg: #111111; }
+[data-theme="berlin"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(34,35,38,0.35); box-shadow: none; }
+[data-theme="berlin"][data-scheme="dark"] body { background: repeating-linear-gradient(0deg, rgba(226,226,228,0.05) 0 1px, transparent 1px 120px), repeating-radial-gradient(circle at 23% 41%, rgba(226,226,228,0.04) 0 1px, transparent 1px 3px); background-color: #222326; background-attachment: fixed; }

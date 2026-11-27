@@ -1,0 +1,18 @@
+/* tema bombona: generisana (paleta + oblik 3/4/5/0) */
+:root[data-theme="bombona"] { color-scheme: light; --back: #fff0f8; --card: #ffffff; --head: #f3f1f3; --edge: #e0ced8; --alt: #f9f8f9; --text1: #3d1a33; --text2: #73566a; --faint: #9e8596; --up: #15803d; --down: #c81e1e; --accent: #e6338a; --hot: #fce2ef; --tip: #3d1a33; --tipfg: #fff0f8; --accentfg: #ffffff; --font: Palatino, "Book Antiqua", Georgia, serif; --radius: 0px; }
+[data-theme="bombona"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border: 2px solid var(--text1); box-shadow: 5px 5px 0 var(--accent); padding: 14px 16px; }
+[data-theme="bombona"] .overview .left { align-self: start; }
+[data-theme="bombona"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="bombona"] button { border: 2px solid var(--text1); box-shadow: 2px 2px 0 var(--accent); }
+[data-theme="bombona"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="bombona"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="bombona"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="bombona"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,240,248,0.35); box-shadow: none; }
+[data-theme="bombona"] :is(h2, h3)::before { content: "[ "; color: var(--accent); }
+[data-theme="bombona"] :is(h2, h3)::after { content: " ]"; color: var(--accent); }
+[data-theme="bombona"] .big .value, [data-theme="bombona"] .detail .price { font-weight: 900; }
+[data-theme="bombona"] .chart .line { stroke-width: 3.5; }
+[data-theme="bombona"] .chart .area { opacity: 0.24; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="bombona"][data-scheme="dark"] { color-scheme: dark; --back: #11080d; --card: #060606; --head: #0e0d0e; --edge: #2a1d25; --alt: #090909; --text1: #e9bbd9; --text2: #9d7e93; --faint: #755c6d; --up: #4ade80; --down: #f87171; --accent: #e6338a; --hot: #1c0c15; --tip: #e9bbd9; --tipfg: #11080d; --accentfg: #111111; }
+[data-theme="bombona"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(17,8,13,0.35); box-shadow: none; }

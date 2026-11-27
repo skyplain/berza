@@ -1,0 +1,20 @@
+/* tema zora: generisana (paleta + oblik 1/4/1/2) */
+:root[data-theme="zora"] { color-scheme: light; --back: #fff4ee; --card: #fffaf7; --head: #f3edeb; --edge: #e0d3d0; --alt: #f9f4f1; --text1: #3d2630; --text2: #736065; --faint: #9e8d8f; --up: #15803d; --down: #c81e1e; --accent: #e8693f; --hot: #fce6dd; --tip: #3d2630; --tipfg: #fff4ee; --accentfg: #ffffff; --font: "Helvetica Neue", Helvetica, Arial, sans-serif; --radius: 10px; }
+[data-theme="zora"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(20,30,60,.08); padding: 14px 16px; }
+[data-theme="zora"] .overview .left { align-self: start; }
+[data-theme="zora"] tbody tr:nth-child(even) { background: transparent; }
+[data-theme="zora"] button { border-radius: 999px; }
+[data-theme="zora"] .bar { background: var(--text1); color: var(--back); margin: 0 calc(-1 * var(--gut, 16px)) 18px; padding: 12px var(--gut, 16px); border: 0; }
+[data-theme="zora"] .bar h1 span { color: var(--back); opacity: .7; }
+[data-theme="zora"] .bar h1::before { content: "■ "; color: var(--accent); }
+[data-theme="zora"] .bar button { background: transparent; color: var(--back); border-color: rgba(255,244,238,0.35); box-shadow: none; }
+[data-theme="zora"] :is(h2, h3, .big .label) { color: var(--accent); letter-spacing: .16em; }
+[data-theme="zora"] body { background: linear-gradient(rgba(61,38,48,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(61,38,48,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #fff4ee; background-attachment: fixed; }
+[data-theme="zora"] .big .value, [data-theme="zora"] .detail .price { font-weight: 400; }
+[data-theme="zora"] .chart .line { stroke-width: 1.5; }
+[data-theme="zora"] .chart .area { opacity: 0.12; }
+/* druga varijanta (tamna): preslikana iz originala, tools/teme.py */
+:root[data-theme="zora"][data-scheme="dark"] { color-scheme: dark; --back: #0f0906; --card: #0a0706; --head: #120e0d; --edge: #271e1b; --alt: #0d0a09; --text1: #d9bac6; --text2: #917d83; --faint: #6c5c5f; --up: #4ade80; --down: #f87171; --accent: #e8693f; --hot: #1c0d08; --tip: #d9bac6; --tipfg: #0f0906; --accentfg: #111111; }
+[data-theme="zora"][data-scheme="dark"] :is(.overview .left, .block, .detail, .list) { background: var(--card); border-radius: 12px; box-shadow: 0 2px 12px rgba(198,214,254,.08); padding: 14px 16px; }
+[data-theme="zora"][data-scheme="dark"] .bar button { background: transparent; color: var(--back); border-color: rgba(15,9,6,0.35); box-shadow: none; }
+[data-theme="zora"][data-scheme="dark"] body { background: linear-gradient(rgba(217,186,198,0.05) 1px, transparent 1px) 0 0 / 32px 32px, linear-gradient(90deg, rgba(217,186,198,0.05) 1px, transparent 1px) 0 0 / 32px 32px; background-color: #0f0906; background-attachment: fixed; }
